@@ -1,0 +1,4 @@
+# Datasets and recorded model calls are not source; keep them out of the language stats.
+projects/*/data/** linguist-vendored
+projects/*/cassettes/** linguist-generated
+projects/*/results/** linguist-generated
