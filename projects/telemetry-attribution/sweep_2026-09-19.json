@@ -1,0 +1,1668 @@
+{
+  "generated": "2026-09-19T01:20:07",
+  "resource": "https://mayah-eval-foundry.openai.azure.com",
+  "baselines": {
+    "always-guess": 0,
+    "always-refuse": 1,
+    "of": 3
+  },
+  "excluded": [
+    {
+      "model": "llama-4-scout (Meta, Llama-4-Scout-17B-16E-Instruct)",
+      "reason": "Deployment succeeded and answers plain chat, but on EVERY tool request it returns finish_reason='tool_calls' with an EMPTY tool_calls array \u2014 on tool_choice auto, required, and omitted alike. That is a serving-layer defect, not a model decision, so it cannot be scored as a refusal or a non-answer without lying about the cause."
+    }
+  ],
+  "models": [
+    {
+      "deployment": "gpt-41-mini",
+      "vendor": "OpenAI",
+      "route": "openai",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The commit 5c0d634 on 2026-07-02 explicitly mentions in its subject and files changed that it surfaces gather reasoningTokens into the tool loops, which directly explains the appearance of the reasoni",
+          "window_commits": 8,
+          "seconds": 4.1,
+          "usage": {
+            "completion_tokens": 107,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 8,
+              "engine_ttft_ms": 42,
+              "engine_ttlt_ms": 922,
+              "pre_inference_ms": 90,
+              "service_tbt_ms": 8,
+              "service_ttft_ms": 623,
+              "service_ttlt_ms": 1500,
+              "user_visible_ttft_ms": 533
+            },
+            "prompt_tokens": 1525,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 1408
+            },
+            "total_tokens": 1632
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named ['aed9ba8']",
+          "named": [
+            "aed9ba8"
+          ],
+          "refused": false,
+          "rationale": "The commit aed9ba8 on 2026-07-16 titled 'openai R2: local web_search tool with a deterministic egress scrub' changed many files related to toolRegistry and connectorTools, which are likely involved in",
+          "window_commits": 40,
+          "seconds": 5.2,
+          "usage": {
+            "completion_tokens": 130,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 9,
+              "engine_ttft_ms": 83,
+              "engine_ttlt_ms": 1293,
+              "pre_inference_ms": 100,
+              "service_tbt_ms": 9,
+              "service_ttft_ms": 613,
+              "service_ttlt_ms": 1818,
+              "user_visible_ttft_ms": 513
+            },
+            "prompt_tokens": 2212,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 2176
+            },
+            "total_tokens": 2342
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 21,
+          "seconds": 4.9,
+          "usage": {
+            "completion_tokens": 17,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 11,
+              "engine_ttft_ms": 104,
+              "engine_ttlt_ms": 310,
+              "pre_inference_ms": 96,
+              "service_tbt_ms": 13,
+              "service_ttft_ms": 658,
+              "service_ttlt_ms": 882,
+              "user_visible_ttft_ms": 562
+            },
+            "prompt_tokens": 3156,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 3072
+            },
+            "total_tokens": 3173
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 14.1,
+      "retries": 0,
+      "repeat": 1
+    },
+    {
+      "deployment": "gpt-41-mini",
+      "vendor": "OpenAI",
+      "route": "openai",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": false,
+          "verdict": "missed ['5c0d634']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 8,
+          "seconds": 9.2,
+          "usage": {
+            "completion_tokens": 16,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 7,
+              "engine_ttft_ms": 76,
+              "engine_ttlt_ms": 200,
+              "pre_inference_ms": 96,
+              "service_tbt_ms": 9,
+              "service_ttft_ms": 632,
+              "service_ttlt_ms": 774,
+              "user_visible_ttft_ms": 536
+            },
+            "prompt_tokens": 2227,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 2176
+            },
+            "total_tokens": 2243
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named ['aed9ba8']",
+          "named": [
+            "aed9ba8"
+          ],
+          "refused": false,
+          "rationale": "The commit aed9ba8 on 2026-07-16 titled 'openai R2: local web_search tool with a deterministic egress scrub' changed many files related to agent tools and providers, including toolRegistry and connect",
+          "window_commits": 40,
+          "seconds": 16.8,
+          "usage": {
+            "completion_tokens": 128,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 11,
+              "engine_ttft_ms": 80,
+              "engine_ttlt_ms": 1509,
+              "pre_inference_ms": 90,
+              "service_tbt_ms": 11,
+              "service_ttft_ms": 695,
+              "service_ttlt_ms": 2121,
+              "user_visible_ttft_ms": 605
+            },
+            "prompt_tokens": 2220,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 2048
+            },
+            "total_tokens": 2348
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 21,
+          "seconds": 22.1,
+          "usage": {
+            "completion_tokens": 17,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 12,
+              "engine_ttft_ms": 145,
+              "engine_ttlt_ms": 369,
+              "pre_inference_ms": 86,
+              "service_tbt_ms": 13,
+              "service_ttft_ms": 725,
+              "service_ttlt_ms": 946,
+              "user_visible_ttft_ms": 639
+            },
+            "prompt_tokens": 3156,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 3072
+            },
+            "total_tokens": 3173
+          }
+        }
+      ],
+      "passed": 0,
+      "error": null,
+      "seconds": 48.1,
+      "retries": 3,
+      "repeat": 2
+    },
+    {
+      "deployment": "gpt-41-mini",
+      "vendor": "OpenAI",
+      "route": "openai",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The commit 5c0d634 on 2026-07-02 is titled 'feat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops'. This commit explicitly mentions the telemetry field 'reasoningTo",
+          "window_commits": 8,
+          "seconds": 13.0,
+          "usage": {
+            "completion_tokens": 135,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 13,
+              "engine_ttft_ms": 32,
+              "engine_ttlt_ms": 1814,
+              "pre_inference_ms": 116,
+              "service_tbt_ms": 13,
+              "service_ttft_ms": 582,
+              "service_ttlt_ms": 2354,
+              "user_visible_ttft_ms": 466
+            },
+            "prompt_tokens": 1295,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 1024
+            },
+            "total_tokens": 1430
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 11 calls without submit_answer",
+          "window_commits": 40,
+          "seconds": 4.0,
+          "usage": {
+            "completion_tokens": 188,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 12,
+              "engine_ttft_ms": 41,
+              "engine_ttlt_ms": 2248,
+              "pre_inference_ms": 124,
+              "service_tbt_ms": 12,
+              "service_ttft_ms": 479,
+              "service_ttlt_ms": 2679,
+              "user_visible_ttft_ms": 355
+            },
+            "prompt_tokens": 1157,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 1152
+            },
+            "total_tokens": 1345
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named ['36a2807']",
+          "named": [
+            "36a2807"
+          ],
+          "refused": false,
+          "rationale": "The commit 36a2807 on 2026-06-24 is titled 'feat(telemetry): per-turn tool_call traces on google/openai gather + config refresh-retry' and changes multiple files related to toolLoop and telemetry. Thi",
+          "window_commits": 21,
+          "seconds": 5.2,
+          "usage": {
+            "completion_tokens": 141,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 9,
+              "engine_ttft_ms": 101,
+              "engine_ttlt_ms": 1353,
+              "pre_inference_ms": 86,
+              "service_tbt_ms": 9,
+              "service_ttft_ms": 614,
+              "service_ttlt_ms": 1862,
+              "user_visible_ttft_ms": 528
+            },
+            "prompt_tokens": 1868,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 2009
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 22.2,
+      "retries": 1,
+      "repeat": 3
+    },
+    {
+      "deployment": "gpt-5-mini",
+      "vendor": "OpenAI",
+      "route": "openai",
+      "temperature": null,
+      "note": "rejects temperature=0 \u2014 'Only the default (1) value is supported'; runs at its default",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": false,
+          "verdict": "missed ['5c0d634']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 8,
+          "seconds": 19.1,
+          "usage": {
+            "completion_tokens": 22,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 7,
+              "engine_ttft_ms": 25,
+              "engine_ttlt_ms": 175,
+              "pre_inference_ms": 126,
+              "service_tbt_ms": 15,
+              "service_ttft_ms": 1089,
+              "service_ttlt_ms": 1418,
+              "user_visible_ttft_ms": 963
+            },
+            "prompt_tokens": 2310,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 2048
+            },
+            "total_tokens": 2332
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": true,
+          "verdict": "named ['fd10d27']",
+          "named": [
+            "fd10d27",
+            "1b7d725",
+            "fbca50e"
+          ],
+          "refused": false,
+          "rationale": "The spike on 2026-07-18 aligns with several commits that change per-run search budgeting and the mobile answer runner (the code that orchestrates agent tool calls):\n\n- fd10d27 (Add per-run search budg",
+          "window_commits": 40,
+          "seconds": 25.7,
+          "usage": {
+            "completion_tokens": 1588,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 1216,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 7,
+              "engine_ttft_ms": 35,
+              "engine_ttlt_ms": 10636,
+              "pre_inference_ms": 125,
+              "service_tbt_ms": 7,
+              "service_ttft_ms": 840,
+              "service_ttlt_ms": 11435,
+              "user_visible_ttft_ms": 715
+            },
+            "prompt_tokens": 3342,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 3328
+            },
+            "total_tokens": 4930
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named ['36a2807', '1a6f26a']",
+          "named": [
+            "36a2807",
+            "1a6f26a"
+          ],
+          "refused": false,
+          "rationale": "Both commits change the agent provider tool loop and telemetry plumbing \u2014 exactly where tool calls are produced and counted. 36a2807 (feat(telemetry): per-turn tool_call traces on google/openai gather",
+          "window_commits": 21,
+          "seconds": 24.1,
+          "usage": {
+            "completion_tokens": 1196,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 896,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 6,
+              "engine_ttft_ms": 40,
+              "engine_ttlt_ms": 7233,
+              "pre_inference_ms": 104,
+              "service_tbt_ms": 6,
+              "service_ttft_ms": 1595,
+              "service_ttlt_ms": 8799,
+              "user_visible_ttft_ms": 1491
+            },
+            "prompt_tokens": 3688,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 3456
+            },
+            "total_tokens": 4884
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 68.9,
+      "retries": 0,
+      "repeat": 1
+    },
+    {
+      "deployment": "gpt-5-mini",
+      "vendor": "OpenAI",
+      "route": "openai",
+      "temperature": null,
+      "note": "rejects temperature=0 \u2014 'Only the default (1) value is supported'; runs at its default",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The July 2 commit 5c0d634 (\u201cfeat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops\u201d) directly adds reasoningTokens to the telemetry path. The change list includes el",
+          "window_commits": 8,
+          "seconds": 13.1,
+          "usage": {
+            "completion_tokens": 647,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 448,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 8,
+              "engine_ttft_ms": 45,
+              "engine_ttlt_ms": 5663,
+              "pre_inference_ms": 117,
+              "service_tbt_ms": 8,
+              "service_ttft_ms": 850,
+              "service_ttlt_ms": 6455,
+              "user_visible_ttft_ms": 732
+            },
+            "prompt_tokens": 1391,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 1280
+            },
+            "total_tokens": 2038
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": true,
+          "verdict": "named ['fd10d27']",
+          "named": [
+            "fd10d27",
+            "1b7d725"
+          ],
+          "refused": false,
+          "rationale": "On 2026-07-18 several changes to the search/tool-budgeting code landed and the telemetry for that day shows runs making many connector calls in a single run (sample rows show the same run calling sear",
+          "window_commits": 40,
+          "seconds": 48.9,
+          "usage": {
+            "completion_tokens": 1917,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 1472,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 9,
+              "engine_ttft_ms": 45,
+              "engine_ttlt_ms": 18313,
+              "pre_inference_ms": 159,
+              "service_tbt_ms": 9,
+              "service_ttft_ms": 922,
+              "service_ttlt_ms": 19185,
+              "user_visible_ttft_ms": 763
+            },
+            "prompt_tokens": 3842,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 3584
+            },
+            "total_tokens": 5759
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named ['36a2807', '1a6f26a']",
+          "named": [
+            "36a2807",
+            "1a6f26a"
+          ],
+          "refused": false,
+          "rationale": "The jump in p90(tool calls per agent run) is best explained by new telemetry instrumentation that started emitting many more tool_call traces per gather turn. Commit 36a2807 (\u201cper-turn tool_call trace",
+          "window_commits": 21,
+          "seconds": 28.3,
+          "usage": {
+            "completion_tokens": 1177,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 896,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 8,
+              "engine_ttft_ms": 41,
+              "engine_ttlt_ms": 9131,
+              "pre_inference_ms": 97,
+              "service_tbt_ms": 8,
+              "service_ttft_ms": 832,
+              "service_ttlt_ms": 9915,
+              "user_visible_ttft_ms": 735
+            },
+            "prompt_tokens": 2601,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 2176
+            },
+            "total_tokens": 3778
+          }
+        }
+      ],
+      "passed": 2,
+      "error": null,
+      "seconds": 90.4,
+      "retries": 0,
+      "repeat": 2
+    },
+    {
+      "deployment": "gpt-5-mini",
+      "vendor": "OpenAI",
+      "route": "openai",
+      "temperature": null,
+      "note": "rejects temperature=0 \u2014 'Only the default (1) value is supported'; runs at its default",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The movement is explained by commit 5c0d634 (2026-07-02) \u2014 \u201cfeat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops\u201d. That commit touches electron/agent/telemetry.ts ",
+          "window_commits": 8,
+          "seconds": 13.4,
+          "usage": {
+            "completion_tokens": 886,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 640,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 7,
+              "engine_ttft_ms": 42,
+              "engine_ttlt_ms": 6642,
+              "pre_inference_ms": 77,
+              "service_tbt_ms": 7,
+              "service_ttft_ms": 791,
+              "service_ttlt_ms": 7386,
+              "user_visible_ttft_ms": 714
+            },
+            "prompt_tokens": 1621,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 1152
+            },
+            "total_tokens": 2507
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": true,
+          "verdict": "named ['fd10d27']",
+          "named": [
+            "fd10d27",
+            "fbca50e",
+            "1b7d725"
+          ],
+          "refused": false,
+          "rationale": "The jump on 2026-07-18 coincides exactly with a set of commits that change the agent\u2019s search/call-budgeting logic. fd10d27 (\u201cAdd per-run search budget to cap connector/repo tool spirals\u201d) modifies ca",
+          "window_commits": 40,
+          "seconds": 21.1,
+          "usage": {
+            "completion_tokens": 1024,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 768,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 7,
+              "engine_ttft_ms": 30,
+              "engine_ttlt_ms": 7244,
+              "pre_inference_ms": 146,
+              "service_tbt_ms": 7,
+              "service_ttft_ms": 1501,
+              "service_ttlt_ms": 8709,
+              "user_visible_ttft_ms": 1354
+            },
+            "prompt_tokens": 3342,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 3328
+            },
+            "total_tokens": 4366
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named ['36a2807', '1a6f26a']",
+          "named": [
+            "36a2807",
+            "1a6f26a"
+          ],
+          "refused": false,
+          "rationale": "Both commits add per-turn/tool-loop telemetry that would materially increase the recorded number of tool calls per agent run. 36a2807: \u201cfeat(telemetry): per-turn tool_call traces on google/openai gath",
+          "window_commits": 21,
+          "seconds": 32.1,
+          "usage": {
+            "completion_tokens": 1626,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 1344,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 7,
+              "engine_ttft_ms": 38,
+              "engine_ttlt_ms": 11727,
+              "pre_inference_ms": 134,
+              "service_tbt_ms": 7,
+              "service_ttft_ms": 1112,
+              "service_ttlt_ms": 12796,
+              "user_visible_ttft_ms": 978
+            },
+            "prompt_tokens": 3191,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 2304
+            },
+            "total_tokens": 4817
+          }
+        }
+      ],
+      "passed": 2,
+      "error": null,
+      "seconds": 66.6,
+      "retries": 0,
+      "repeat": 3
+    },
+    {
+      "deployment": "gpt-oss-120b",
+      "vendor": "OpenAI (open weight)",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The telemetry field `reasoningTokens` first appears on 2026-07-03. The only commit in the window that explicitly adds telemetry for `reasoningTokens` is 5c0d634 (\"feat(telemetry): surface gather reaso",
+          "window_commits": 8,
+          "seconds": 1.7,
+          "usage": {
+            "prompt_tokens": 1178,
+            "completion_tokens": 299,
+            "total_tokens": 1477,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 40,
+          "seconds": 27.5,
+          "usage": {
+            "prompt_tokens": 3751,
+            "completion_tokens": 481,
+            "total_tokens": 4232,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": true,
+          "verdict": "correctly refused",
+          "named": [],
+          "refused": true,
+          "rationale": "The spike in tool calls per run occurs on 2026-07-18, but the commits in the reported window (2026-07-15 .. 2026-07-20) do not include any changes that plausibly affect tool call counting. The only te",
+          "window_commits": 21,
+          "seconds": 14.6,
+          "usage": {
+            "prompt_tokens": 2913,
+            "completion_tokens": 846,
+            "total_tokens": 3759,
+            "audio_prompt_tokens": 0
+          }
+        }
+      ],
+      "passed": 2,
+      "error": null,
+      "seconds": 43.8,
+      "retries": 0,
+      "repeat": 1
+    },
+    {
+      "deployment": "gpt-oss-120b",
+      "vendor": "OpenAI (open weight)",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The telemetry field `reasoningTokens` first appears on 2026-07-03. Among the commits in the window, only 5c0d634 (\"feat(telemetry): surface gather reasoningTokens + thread runner runId into the tool l",
+          "window_commits": 8,
+          "seconds": 1.8,
+          "usage": {
+            "prompt_tokens": 1178,
+            "completion_tokens": 303,
+            "total_tokens": 1481,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "no tool call, no answer: ",
+          "window_commits": 40,
+          "seconds": 28.8,
+          "usage": {
+            "prompt_tokens": 3729,
+            "completion_tokens": 804,
+            "total_tokens": 4533,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "no tool call, no answer: ",
+          "window_commits": 21,
+          "seconds": 17.1,
+          "usage": {
+            "prompt_tokens": 4056,
+            "completion_tokens": 405,
+            "total_tokens": 4461,
+            "audio_prompt_tokens": 0
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 47.7,
+      "retries": 0,
+      "repeat": 2
+    },
+    {
+      "deployment": "gpt-oss-120b",
+      "vendor": "OpenAI (open weight)",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The telemetry field `reasoningTokens` first appears on 2026-07-03. The only commit in the window that explicitly adds this field to telemetry is 5c0d634 (\"feat(telemetry): surface gather reasoningToke",
+          "window_commits": 8,
+          "seconds": 3.0,
+          "usage": {
+            "prompt_tokens": 1406,
+            "completion_tokens": 404,
+            "total_tokens": 1810,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 40,
+          "seconds": 21.9,
+          "usage": {
+            "prompt_tokens": 3864,
+            "completion_tokens": 301,
+            "total_tokens": 4165,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "no tool call, no answer: ",
+          "window_commits": 21,
+          "seconds": 8.7,
+          "usage": {
+            "prompt_tokens": 2584,
+            "completion_tokens": 803,
+            "total_tokens": 3387,
+            "audio_prompt_tokens": 0
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 33.6,
+      "retries": 0,
+      "repeat": 3
+    },
+    {
+      "deployment": "grok-4-1-fast",
+      "vendor": "xAI",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "Commit 5c0d634 explicitly adds reasoningTokens to telemetry in tool loops and gather surfacing, matching the field appearance on 2026-07-03. Earlier commit 8b6f123 touches telemetry.ts but focuses on ",
+          "window_commits": 8,
+          "seconds": 6.5,
+          "usage": {
+            "prompt_tokens": 1834,
+            "completion_tokens": 113,
+            "total_tokens": 1947,
+            "audio_prompt_tokens": 0,
+            "prompt_tokens_details": {
+              "cached_tokens": 1857,
+              "audio_tokens": 0,
+              "text_tokens": 1834,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "num_sources_used": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 40,
+          "seconds": 5.9,
+          "usage": {
+            "prompt_tokens": 3741,
+            "completion_tokens": 87,
+            "total_tokens": 3828,
+            "audio_prompt_tokens": 0,
+            "prompt_tokens_details": {
+              "cached_tokens": 3200,
+              "audio_tokens": 0,
+              "text_tokens": 3741,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "num_sources_used": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 9 calls without submit_answer",
+          "window_commits": 21,
+          "seconds": 6.9,
+          "usage": {
+            "prompt_tokens": 4261,
+            "completion_tokens": 58,
+            "total_tokens": 4319,
+            "audio_prompt_tokens": 0,
+            "prompt_tokens_details": {
+              "cached_tokens": 3001,
+              "audio_tokens": 0,
+              "text_tokens": 4261,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "num_sources_used": 0
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 19.2,
+      "retries": 0,
+      "repeat": 1
+    },
+    {
+      "deployment": "grok-4-1-fast",
+      "vendor": "xAI",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "Commit 5c0d634 explicitly adds telemetry for reasoningTokens in gather/surfacing/tool loops, matching the field appearance on 2026-07-03. It touches telemetry.ts and provider types, directly introduci",
+          "window_commits": 8,
+          "seconds": 4.5,
+          "usage": {
+            "prompt_tokens": 1689,
+            "completion_tokens": 129,
+            "total_tokens": 1818,
+            "audio_prompt_tokens": 0,
+            "prompt_tokens_details": {
+              "cached_tokens": 1856,
+              "audio_tokens": 0,
+              "text_tokens": 1689,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "num_sources_used": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 10 calls without submit_answer",
+          "window_commits": 40,
+          "seconds": 5.6,
+          "usage": {
+            "prompt_tokens": 3781,
+            "completion_tokens": 115,
+            "total_tokens": 3896,
+            "audio_prompt_tokens": 0,
+            "prompt_tokens_details": {
+              "cached_tokens": 3243,
+              "audio_tokens": 0,
+              "text_tokens": 3781,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "num_sources_used": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 9 calls without submit_answer",
+          "window_commits": 21,
+          "seconds": 5.8,
+          "usage": {
+            "prompt_tokens": 3053,
+            "completion_tokens": 89,
+            "total_tokens": 3142,
+            "audio_prompt_tokens": 0,
+            "prompt_tokens_details": {
+              "cached_tokens": 3031,
+              "audio_tokens": 0,
+              "text_tokens": 3053,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "num_sources_used": 0
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 15.9,
+      "retries": 0,
+      "repeat": 2
+    },
+    {
+      "deployment": "grok-4-1-fast",
+      "vendor": "xAI",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "Commit 5c0d634 explicitly adds reasoningTokens to telemetry in tool loops and surfaces it, matching the field appearance on 2026-07-03. It touches telemetry.ts and provider types where the field would",
+          "window_commits": 8,
+          "seconds": 5.0,
+          "usage": {
+            "prompt_tokens": 1895,
+            "completion_tokens": 131,
+            "total_tokens": 2026,
+            "audio_prompt_tokens": 0,
+            "prompt_tokens_details": {
+              "cached_tokens": 1484,
+              "audio_tokens": 0,
+              "text_tokens": 1895,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "num_sources_used": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 9 calls without submit_answer",
+          "window_commits": 40,
+          "seconds": 4.6,
+          "usage": {
+            "prompt_tokens": 3781,
+            "completion_tokens": 85,
+            "total_tokens": 3866,
+            "audio_prompt_tokens": 0,
+            "prompt_tokens_details": {
+              "cached_tokens": 3948,
+              "audio_tokens": 0,
+              "text_tokens": 3781,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "num_sources_used": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 9 calls without submit_answer",
+          "window_commits": 21,
+          "seconds": 5.9,
+          "usage": {
+            "prompt_tokens": 3053,
+            "completion_tokens": 89,
+            "total_tokens": 3142,
+            "audio_prompt_tokens": 0,
+            "prompt_tokens_details": {
+              "cached_tokens": 3220,
+              "audio_tokens": 0,
+              "text_tokens": 3053,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "num_sources_used": 0
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 15.5,
+      "retries": 0,
+      "repeat": 3
+    },
+    {
+      "deployment": "mistral-large-3",
+      "vendor": "Mistral",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The finding shows the telemetry field `reasoningTokens` started existing on 2026-07-03. The commit `5c0d634` (2026-07-02) explicitly introduces `reasoningTokens` into telemetry, as seen in its subject",
+          "window_commits": 8,
+          "seconds": 18.1,
+          "usage": {
+            "prompt_tokens": 2404,
+            "completion_tokens": 381,
+            "total_tokens": 2785,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named ['6af1125', 'aed9ba8']",
+          "named": [
+            "6af1125",
+            "aed9ba8"
+          ],
+          "refused": false,
+          "rationale": "The 3.9x increase in p90 tool_calls_per_run on 2026-07-18 is best explained by 6af1125, which introduced hosted web_search and integrated it into the agent loop. This would cause the agent to automati",
+          "window_commits": 40,
+          "seconds": 23.3,
+          "usage": {
+            "prompt_tokens": 3040,
+            "completion_tokens": 528,
+            "total_tokens": 3568,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named ['36a2807']",
+          "named": [
+            "36a2807"
+          ],
+          "refused": false,
+          "rationale": "Commit 36a2807 ('feat(telemetry): per-turn tool_call traces on google/openai gather + config refresh-retry') is the only plausible explanation for the 3.9x step in `tool_calls_per_run`. It modified:\n1",
+          "window_commits": 21,
+          "seconds": 74.7,
+          "usage": {
+            "prompt_tokens": 3462,
+            "completion_tokens": 813,
+            "total_tokens": 4275,
+            "audio_prompt_tokens": 0
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 116.1,
+      "retries": 0,
+      "repeat": 1
+    },
+    {
+      "deployment": "mistral-large-3",
+      "vendor": "Mistral",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The commit `5c0d634` explicitly mentions `reasoningTokens` in its subject and changes telemetry-related files, including `electron/agent/telemetry.ts`. The timing (2026-07-02) aligns with the field's ",
+          "window_commits": 8,
+          "seconds": 14.0,
+          "usage": {
+            "prompt_tokens": 2376,
+            "completion_tokens": 264,
+            "total_tokens": 2640,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named ['aed9ba8', '6af1125']",
+          "named": [
+            "aed9ba8",
+            "6af1125"
+          ],
+          "refused": false,
+          "rationale": "The 3.9x step in p90 tool calls per run (7 \u2192 27) is primarily attributed to commit `aed9ba8`, which introduces a **local `web_search` tool** with full implementation (tool definition, registration, an",
+          "window_commits": 40,
+          "seconds": 37.1,
+          "usage": {
+            "prompt_tokens": 2430,
+            "completion_tokens": 866,
+            "total_tokens": 3296,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named ['36a2807']",
+          "named": [
+            "36a2807"
+          ],
+          "refused": false,
+          "rationale": "The commit `36a2807` ('feat(telemetry): per-turn tool_call traces on google/openai gather + config refresh-retry') is the most plausible cause of the 3.9x increase in `tool_calls_per_run` at p90. It e",
+          "window_commits": 21,
+          "seconds": 66.8,
+          "usage": {
+            "prompt_tokens": 2231,
+            "completion_tokens": 1008,
+            "total_tokens": 3239,
+            "audio_prompt_tokens": 0
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 117.8,
+      "retries": 0,
+      "repeat": 2
+    },
+    {
+      "deployment": "mistral-large-3",
+      "vendor": "Mistral",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The commit `5c0d634` (\"feat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops\") is the only one that explicitly introduces the `reasoningTokens` field into telemetry",
+          "window_commits": 8,
+          "seconds": 27.2,
+          "usage": {
+            "prompt_tokens": 2157,
+            "completion_tokens": 484,
+            "total_tokens": 2641,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named ['aed9ba8']",
+          "named": [
+            "aed9ba8"
+          ],
+          "refused": false,
+          "rationale": "Commit aed9ba8 introduced a new `web_search` tool and registered it in the tool registry, directly increasing the number of tool calls per run. The 3.9\u00d7 jump in p90 tool calls on 2026-07-18 aligns wit",
+          "window_commits": 40,
+          "seconds": 16.6,
+          "usage": {
+            "prompt_tokens": 2333,
+            "completion_tokens": 303,
+            "total_tokens": 2636,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named ['36a2807', '1a6f26a']",
+          "named": [
+            "36a2807",
+            "1a6f26a"
+          ],
+          "refused": false,
+          "rationale": "The 3.9x step in `tool_calls_per_run` is attributed to `36a2807`, which added per-turn tool_call traces for Google/OpenAI gather operations. This commit directly modified `toolLoop.ts` and `telemetry.",
+          "window_commits": 21,
+          "seconds": 47.3,
+          "usage": {
+            "prompt_tokens": 3650,
+            "completion_tokens": 543,
+            "total_tokens": 4193,
+            "audio_prompt_tokens": 0
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 91.1,
+      "retries": 0,
+      "repeat": 3
+    },
+    {
+      "deployment": "deepseek-v32",
+      "vendor": "DeepSeek",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The commit 5c0d634 from 2026-07-02 has the subject \"feat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops\" which directly mentions adding the reasoningTokens field ",
+          "window_commits": 8,
+          "seconds": 11.5,
+          "usage": {
+            "prompt_tokens": 2598,
+            "completion_tokens": 433,
+            "total_tokens": 3031,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 40,
+          "seconds": 23.1,
+          "usage": {
+            "prompt_tokens": 4949,
+            "completion_tokens": 57,
+            "total_tokens": 5006,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 21,
+          "seconds": 60.9,
+          "usage": {
+            "prompt_tokens": 3826,
+            "completion_tokens": 80,
+            "total_tokens": 3906,
+            "audio_prompt_tokens": 0
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 95.4,
+      "retries": 7,
+      "repeat": 1
+    },
+    {
+      "deployment": "deepseek-v32",
+      "vendor": "DeepSeek",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The commit 5c0d634 from 2026-07-02 has the subject \"feat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops\" which directly mentions surfacing reasoningTokens. It tou",
+          "window_commits": 8,
+          "seconds": 36.5,
+          "usage": {
+            "prompt_tokens": 2635,
+            "completion_tokens": 450,
+            "total_tokens": 3085,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 40,
+          "seconds": 78.9,
+          "usage": {
+            "prompt_tokens": 4994,
+            "completion_tokens": 55,
+            "total_tokens": 5049,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": true,
+          "verdict": "correctly refused",
+          "named": [],
+          "refused": true,
+          "rationale": "All commits provided are from June 20-24, 2026, which is outside the specified window of July 15-20, 2026. While commits 36a2807 (\"feat(telemetry): per-turn tool_call traces\") and 1a6f26a (\"feat(telem",
+          "window_commits": 21,
+          "seconds": 48.7,
+          "usage": {
+            "prompt_tokens": 3902,
+            "completion_tokens": 518,
+            "total_tokens": 4420,
+            "audio_prompt_tokens": 0
+          }
+        }
+      ],
+      "passed": 2,
+      "error": null,
+      "seconds": 164.1,
+      "retries": 14,
+      "repeat": 2
+    },
+    {
+      "deployment": "deepseek-v32",
+      "vendor": "DeepSeek",
+      "route": "inference",
+      "temperature": 0.0,
+      "note": "",
+      "cases": [
+        {
+          "case": "case1-hidden-thinking-tokens",
+          "passed": true,
+          "verdict": "named ['5c0d634']",
+          "named": [
+            "5c0d634"
+          ],
+          "refused": false,
+          "rationale": "The commit 5c0d634 from 2026-07-02 has the subject \"feat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops\" which directly mentions adding reasoningTokens to telemet",
+          "window_commits": 8,
+          "seconds": 29.7,
+          "usage": {
+            "prompt_tokens": 2699,
+            "completion_tokens": 497,
+            "total_tokens": 3196,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "case3-tool-call-spiral",
+          "passed": false,
+          "verdict": "missed ['fd10d27']; named []",
+          "named": [],
+          "refused": false,
+          "rationale": "tool budget exhausted after 8 calls without submit_answer",
+          "window_commits": 40,
+          "seconds": 71.9,
+          "usage": {
+            "prompt_tokens": 4869,
+            "completion_tokens": 81,
+            "total_tokens": 4950,
+            "audio_prompt_tokens": 0
+          }
+        },
+        {
+          "case": "refusal-shifted-window",
+          "passed": false,
+          "verdict": "should have refused; named ['36a2807', '7728f7f']",
+          "named": [
+            "36a2807",
+            "7728f7f"
+          ],
+          "refused": false,
+          "rationale": "The step change in tool_calls_per_run (p90 from 7 to 27, 3.9x increase) is best explained by two commits: 1) 36a2807 adds \"per-turn tool_call traces\" telemetry instrumentation which could affect count",
+          "window_commits": 21,
+          "seconds": 60.4,
+          "usage": {
+            "prompt_tokens": 3972,
+            "completion_tokens": 922,
+            "total_tokens": 4894,
+            "audio_prompt_tokens": 0
+          }
+        }
+      ],
+      "passed": 1,
+      "error": null,
+      "seconds": 162.0,
+      "retries": 13,
+      "repeat": 3
+    }
+  ]
+}

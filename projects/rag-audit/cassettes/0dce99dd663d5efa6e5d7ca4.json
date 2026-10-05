@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app8-025] (APP 8, paras 8.60\u20138.63, When is an APP entity accountable for personal information that it discloses to )\n8.60 An APP entity that discloses personal information to an overseas recipient is accountable, in certain circumstances, for an act or practice of the overseas recipient in relation to the information that would breach the APPs (s 16C(1)). Accountable means that the act or practice is taken to have been done by the APP entity and to be a breach of the APPs by that entity (s 16C(2)).\n8.61 This accountability provision applies where:\nAPP 8.1 applies to the disclosure. That is, none of the exceptions in APP 8.2 apply to the disclosure\nthe APPs do not apply to the overseas recipient in relation to the personal information (for more information about when the APPs will apply see Chapter A (Introductory matters)), and\nan act or practice by the overseas recipient would breach the APPs (other than APP 1) if they had applied (s 16C(1)).\n8.62 Under the accountability provision, an APP entity may be liable for the acts or practices of the overseas recipient (and the individual will have a means of redress) even where:\nthe entity has taken reasonable steps to ensure the overseas recipient complies with the APPs (see APP 8.1) and the overseas recipient subsequently does an act or practice that would breach the APPs\nthe overseas recipient discloses the individual\u2019s personal information to a subcontractor and the subcontractor breaches the APPs, [21] or\nthe overseas recipient inadvertently breaches the APPs in relation to the information.\n8.63 However, an APP entity will not be accountable where, for example, it discloses personal information to an overseas recipient under an exception in APP 8.2 (see paragraphs 8.20 8.59 above), or where personal information is disclosed to an overseas recipient with an \u2018Australian link\u2019. A recipient that has an \u2018Australian link\u2019 will be covered by the Privacy Act. \u2018Australian link\u2019 is defined in s 5B(2) and discussed in more detail in Chapter B (Key concepts).\n\n[app8-026] (APP 8, paras 8.64\u20138.68, When is an APP entity accountable for personal information that it discloses to )\n8.64 Section 6A(4) provides that an act or practice required by an applicable law of a foreign country will not breach the APPs if it is done, or engaged in, outside Australia and the external Territories. The meaning of \u2018required\u2019 by a law is discussed in Chapter B (Key concepts).\n8.65 The effect of this provision is that where an overseas recipient of personal information does an act or practice that is required by an applicable foreign law, this will not breach the APPs. The APP entity will also not be responsible for the act or practice under the accountability provision.\n8.66 For example, the USA PATRIOT Act may require the overseas recipient to disclose personal information to the Government of the United States of America. [22] In these circumstances, the APP entity would not be responsible under the accountability provision for the disclosure required by that Act.\n8.67 An APP entity could consider notifying an individual, if applicable, that the overseas recipient may be required to disclose their personal information under a foreign law. The entity could also explain that the disclosure will not breach the APPs. This information could be included in the APP entity\u2019s APP 5 notice, particularly if the entity usually discloses personal information to overseas recipients (see APP 5.2(i), Chapter 5), or in its APP Privacy Policy (see Chapter 1 (APP 1)).\n8.68 This provision does not apply to acts or practices that are done or engaged in, within Australia. Where a foreign law requires an APP entity in Australia to disclose personal information to an overseas recipient the entity must comply with APPs 6 and 8.\n[1] An accountability approach was adopted in the Asia-Pacific Economic Cooperation (APEC) Privacy Framework in 2004, Information Privacy Principle IX (Accountability), see APEC website <publications.apec.org>. The accountability concept in the APEC Privacy Framework was in turn derived from the accountability principle from the Organisation for Economic Cooperation and Development (OECD) Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data of 1980, see OECD website <https://www.oecd.org>.\n[2] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n\n[app8-027] (APP 8, paras n/a, When is an APP entity accountable for personal information that it discloses to )\n[3] Section 6(8) provides \u2018for the purposes of this Act, the question whether bodies corporate are related to each other is determined in the manner in which that question is determined under the Corporations Act 2001.\u2019\n[4] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012 states \u2018APP 8 will apply where an organisation sends personal information to a \u2018related body corporate\u2019 located outside Australia\u2019 (p 83). While s 13B(1) permits related bodies corporate to share personal information (unless an exception applies), it does not exempt an APP entity from complying with APP 8 before it discloses personal information to a related body corporate located overseas.\n[5] An APP entity is taken to have \u2018disclosed\u2019 personal information where an employee carries out an unauthorised disclosure \u2018in the performance of the duties of the person\u2019s employment\u2019 (s 8(1)).\n[6] See OAIC, Sony PlayStation Network / Qriocity: Own Motion Investigation Report, September 2011, OAIC website <https://www.oaic.gov.au>.\n[7] The actions of an employee will be attributed to the APP entity where it was carried out \u2018in the performance of the duties of the person\u2019s employment\u2019 (s 8(1)).\n[8] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[9] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[10] For further discussion of cloud computing considerations for agencies, see Secure Cloud Strategy, Digital Transformation Agency website <https://www.dta.gov.au>.\n[11] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[12] See OAIC, Data Breach Preparation and Response, OAIC website <https://www.oaic.gov.au>.\n[13] European Commission website <https://ec.europa.eu/info/law/law-topic/data-protection_en>.\n[14] Available at European Commission website <https://ec.europa.eu/info/law/law-topic/data-protection_en>. See in particular documents WP 133 (2007), WP 153 (2008), WP 154 (2008), WP 155 (2008).\n[15] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[16] See the Federal Register of Legislation for up-to-date versions of the regulations made under the Privacy Act.\n[17] This exception was introduced by the Privacy and Other Legislation Amendment Act 2024 . It applies to information disclosed from 11 December 2024 regardless of whether the information was acquired or created before or after that date.\n[18] See the Federal Register of Legislation for up-to-date versions of regulations made under the Privacy Act.\n\n[app8-012] (APP 8, paras 8.28\u20138.30, Exception 2 \u2014 Disclosing personal information to an overseas recipient where the)\n8.28 An APP entity may disclose personal information to an overseas recipient without complying with APP 8.1 where the overseas recipient of the relevant personal information is:\nsubject to the laws of a country prescribed by regulations, or a participant in a binding scheme prescribed by regulations, [16] and\nif the country or binding scheme is prescribed subject to conditions, those conditions are satisfied. [17]\n8.29 Laws and binding schemes are discussed above at paragraphs 8.22\u20138.23.\n8.30 The Governor-General may make regulations under the Privacy Act to prescribe these matters. [18]\n\n[app5-013] (APP 5, paras 5.28\u20135.31, Matters about which an individual must be notified or made aware > Likely cross-)\n5.28 The matters set out in APP 5.2(i) and (j) are:\nwhether the APP entity is likely to disclose the personal information to overseas recipients (APP 5.2(i)), and\nif so, the countries in which such recipients are likely to be located if it is practicable to specify those counties in the notice or to otherwise make the individual aware of them (APP 5.2(j)).\n5.29 This requirement only applies to a likely disclosure of personal information to an overseas recipient. It does not apply to a use of personal information by an APP entity that does not constitute a disclosure. For example, routing personal information, in transit, through servers located outside Australia would usually be considered a \u2018use\u2019 and not a \u2018disclosure\u2019. [2] Similarly, if an entity makes personal information accessible to an overseas office of the entity (for example, a consular office), this is a use and not a disclosure. [3] For further discussion of the requirements applying to a cross-border disclosure of personal information, and what is considered a disclosure, see Chapter 8 (APP 8).\n5.30 An example of when it may be impracticable to specify the countries in which overseas recipients of personal information are likely to be located is where personal information is likely to be disclosed to numerous overseas recipients and the burden of determining where those recipients are located is excessively time-consuming, costly or inconvenient in all the circumstances. However, an APP entity is not excused from specifying the countries by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it impracticable to specify the countries will depend on whether the burden is excessive in all the circumstances. In this, as in other examples, it is the responsibility of the entity to be able to justify that this is impracticable.\n5.31 The requirement to notify an individual or ensure awareness if information being collected is likely to be disclosed to overseas recipients, and the location of those recipients, complements the obligation on APP entities under APP 1.4(f) and (g) to describe overseas disclosure practices in an APP Privacy Policy (see Chapter 1 (APP 1)).\n\nQuestion: Which section makes an Australian entity accountable for what an overseas recipient does with personal information it disclosed?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Twvf29cjqCUn60sndYqole0LQe",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Section 16C(1) of the Privacy Act makes an Australian APP entity accountable for acts or practices of an overseas recipient in relation to personal information it disclosed, if those acts or practices would breach the APPs (other than APP 1) if the APPs applied to the overseas recipient.\",\"citations\":[\"app8-025\"] ,\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089480,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 78,
+   "prompt_tokens": 2437,
+   "total_tokens": 2515,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 159,
+    "engine_ttlt_ms": 632,
+    "pre_inference_ms": 87,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 761,
+    "service_ttlt_ms": 1229,
+    "user_visible_ttft_ms": 674
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102744-c1ac330c-default-r2-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app7-000] (APP 7, paras n/a, Key points)\nAPP 7 provides that an organisation must not use or disclose personal information it holds for the purpose of direct marketing unless an exception applies. APP 7 may also apply to an agency in the circumstances set out in s 7A.\nDirect marketing involves the use or disclosure of personal information to communicate directly with an individual to promote goods and services.\nWhere an organisation is permitted to use or disclose personal information for the purpose of direct marketing, it must always: allow an individual to request not to receive direct marketing communications (also known as \u2018opting out\u2019), and comply with that request.\nallow an individual to request not to receive direct marketing communications (also known as \u2018opting out\u2019), and\ncomply with that request.\nAn organisation must, on request, provide its source for an individual\u2019s personal information, unless it is impracticable or unreasonable to do so.\n\n[app7-001] (APP 7, paras 7.1\u20137.6, What does APP 7 say?)\n7.1 An organisation must not use or disclose the personal information that it holds about an individual for the purpose of direct marketing (APP 7.1). The term \u2018holds\u2019 is discussed in Chapter B (Key concepts).\n7.2 There are a number of exceptions to this requirement. The exceptions in APP 7.2 and 7.3 apply to personal information other than sensitive information. They draw a distinction between the use or disclosure of personal information by an organisation where:\nthe personal information has been collected directly from an individual, and the individual would reasonably expect their personal information to be used for the purpose of direct marketing (APP 7.2), and\nthe personal information has been collected from a third party, or from the individual directly but the individual does not have a reasonable expectation that their personal information will be used for the purpose of direct marketing (APP 7.3). Sources of third party data include data list providers, third party mobile applications, third party lead generation and enhancement data.\n7.3 Both of these exceptions require an organisation to provide a simple means by which an individual can request not to receive direct marketing communications (also known as \u2018opting out\u2019). However, in the circumstances where the organisation has not obtained personal information from the individual, or the individual would not reasonably expect their personal information to be used in this way, there are additional requirements to ensure that the individual is made aware of their right to opt out of receiving direct marketing communications from the organisation.\n7.4 Exceptions to this principle also apply in relation to:\nsensitive information (APP 7.4), and\nan organisation that is a contracted service provider for a Commonwealth contract (APP 7.5).\n7.5 APP 7 may apply to an agency in the circumstances set out in s 7A (see paragraph 7.13 below).\n7.6 An individual may request an organisation not to use or disclose their personal information for the purpose of direct marketing, or for the purpose of facilitating direct marketing by other organisations (APP 7.6). The organisation must give effect to any such request by an individual within a reasonable period of time and for free (APP 7.7).\n\n[app7-014] (APP 7, paras 7.40\u20137.42, Requests by an individual to stop facilitating direct marketing)\n7.40 An individual may request an organisation not to use or disclose personal information about the individual for the purpose of facilitating direct marketing by a second organisation (APP 7.6(d)).\n7.41 The organisation must not charge the individual for making or giving effect to the request (APP 7.7). It must also stop using or disclosing the personal information for the purpose of facilitating direct marketing by a second organisation within a reasonable period after the request is made (APP 7.7(a)). A \u2018reasonable period\u2019 would be no more than 30 days. However, an organisation could give effect to an opt-out request in a shorter timeframe, particularly when digital communication channels are being utilised.\n7.42 Where the second organisation is an APP entity, an individual can also make a separate request to not receive direct marketing communications from that organisation (APP 7.6(c)).\n\n[app7-016] (APP 7, paras 7.45\u20137.47, Requests by an individual to identify the source of the personal information)\n7.45 An individual may ask an organisation to identify the source of the personal information that it uses or discloses for the purpose of direct marketing, or for the purpose of facilitating direct marketing by other organisations (APP 7.6(e)).\n7.46 The organisation must then notify the individual of its source, unless this is impracticable or unreasonable (APP 7.7(b)). It is the responsibility of the organisation to be able to justify that it is impracticable or unreasonable to provide this notification. Relevant considerations may include:\nthe possible adverse consequences for the individual if they are not notified of the source\nthe length of time that has elapsed since the personal information was collected by the organisation\nfor personal information collected before commencement of APP 7, whether the source of the personal information was recorded\nthe time and cost involved. However, an organisation is not excused from notifying an individual by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to do so will depend on whether the burden is excessive in all the circumstances.\n7.47 Notification of the source of the personal information must be given within a reasonable period after the request is made (APP 7.7(b)). A \u2018reasonable period\u2019 would generally be 30 days unless special circumstances apply.\n\n[app7-004] (APP 7, paras 7.14, Using and disclosing personal information for the purpose of direct marketing wh)\n7.14 APP 7.2 provides that an organisation may use or disclose personal information (other than sensitive information) about an individual for the purpose of direct marketing if:\nthe organisation collected the personal information from the individual\nthe individual would reasonably expect the organisation to use or disclose the personal information for that purpose\nthe organisation provides a simple way for the individual to request not to receive direct marketing communications from the organisation (also known as \u2018opting out\u2019), and\nthe individual has not made such a request to the organisation.\n\nQuestion: What must an organisation provide so people can ask not to receive direct marketing?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SlpbOisxDa8DE0DqMp2u5wcJtv",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"An organisation must provide a simple means by which an individual can request not to receive direct marketing communications (also known as 'opting out'), and must comply with that request within a reasonable period and for free.\",\"citations\":[\"app7-000\",\"app7-001\",\"app7-004\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089407,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 1500,
+   "total_tokens": 1570,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 36,
+    "engine_ttlt_ms": 458,
+    "pre_inference_ms": 89,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 507,
+    "service_ttlt_ms": 938,
+    "user_visible_ttft_ms": 418
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930085949-0e4d2f0f-default-r1-dp0-default"
+  }
+ }
+}

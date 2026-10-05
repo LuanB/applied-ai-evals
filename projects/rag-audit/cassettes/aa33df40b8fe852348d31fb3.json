@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app6-011] (APP 6, paras 6.23\u20136.26, Using or disclosing personal information for a secondary purpose > Using or disc)\nthe entity has notified the individual of the particular secondary purpose under APP 5.1 (see Chapter 5 (APP 5))\nthe secondary purpose is a normal internal business practice, such as as auditing, business planning, billing or de-identifying the personal information.\n6.23 This exception is limited to using or disclosing personal information for a secondary purpose that is \u2018related\u2019, or for sensitive information \u2018directly related\u2019, to the primary purpose of collection.\n6.24 A related secondary purpose is one which is connected to or associated with the primary purpose. There must be more than a tenuous link. [10]\n6.25 Examples of where a secondary purpose is related to the primary purpose of collection include:\nAn organisation collects personal information about an individual for the primary purpose of collecting a debt. A law firm, acting on behalf of that organisation in relation to the debt collection, contacts the individual\u2019s neighbour and seeks information from the neighbour about the individual\u2019s whereabouts (but does not disclose any specific information about the debt). This disclosure to the neighbour, for the secondary purpose of locating the individual, is related to the primary purpose of debt collection and would be within the individual\u2019s reasonable expectations. [11]\nAn agency collects personal information to include in an employee\u2019s personnel file for the primary purpose of administering that individual\u2019s employment. [12] It then uses this personal information as part of an investigation into complaints by the individual about working conditions. In these circumstances, the use for the secondary purpose of investigating a complaint in the workplace is related to the primary purpose of collection, and would be within the individual\u2019s reasonable expectations. [13]\nAn APP entity uses personal information for the purpose of de-identifying the information.\n6.26 For the use or disclosure of sensitive information, the secondary purpose must be \u2018directly related\u2019 to the primary purpose of collection. A directly related secondary purpose is one which is closely associated with the primary purpose, even if it is not strictly necessary to achieve that primary purpose. This requirement for a direct relationship recognises that the use and disclosure of sensitive information can have serious ramifications for the individual or their associates, including humiliation, embarrassment or loss of dignity.\n\n[app6-012] (APP 6, paras 6.27\u20136.28, Using or disclosing personal information for a secondary purpose > Using or disc)\n6.27 An example of where a secondary purpose is directly related to the primary purpose of collection is:\nA health service provider collects health information about an individual for the purpose of providing treatment, and then decides, for ethical and therapeutic reasons, that they cannot treat the individual. The health service provider then advises another provider at the medical clinic of the individual\u2019s need for treatment and of the provider\u2019s inability to provide that treatment. This disclosure to the other provider is directly related to the purpose for which the information was collected, and would be within the individual\u2019s reasonable expectations. [14]\n6.28 The use of sensitive information for the purpose of de-identifying the information will also be directly related to the primary purpose of collection.\n\n[app6-010] (APP 6, paras 6.18\u20136.22, Using or disclosing personal information for a secondary purpose > Using or disc)\n6.18 APP 6.2(a) permits an APP entity to use or disclose personal information for a secondary purpose if the individual would reasonably expect the entity to use or disclose the information for that secondary purpose, and:\nif the information is sensitive information, the secondary purpose is directly related to the primary purpose of collection, or\nif the information is not sensitive information, the secondary purpose is related to the primary purpose of collection.\n6.19 This exception creates a two-limb test which focuses both on the reasonable expectations of the individual, and the relationship between the primary and secondary purposes.\n6.20 The \u2018reasonably expects\u2019 test is an objective one that has regard to what a reasonable person, who is properly informed, would expect in the circumstances. This is a question of fact in each individual case. It is the responsibility of the APP entity to be able to justify its conduct.\n6.21 An APP entity should consider whether an individual would reasonably expect it to use or disclose for a secondary purpose only some of the personal information it holds about the individual, rather than all of the personal information it holds. The entity should only use or disclose the minimum amount of personal information sufficient for the secondary purpose. For example, an individual may not reasonably expect an entity that is investigating their complaint against a contractor to disclose the individual\u2019s residential address and home contact details to the contractor as part of its investigation. The individual would reasonably expect the entity to give the contractor only the minimum amount of personal information necessary to enable them to respond to the complaint. [7]\n6.22 Examples of where an individual may reasonably expect their personal information to be used or disclosed for a secondary purpose include where:\nthe individual makes adverse comments in the media about the way an APP entity has treated them. In these circumstances, it may be reasonable to expect that the entity may respond publicly to these comments in a way that reveals personal information specifically relevant to the issues that the individual has raised [8]\nan agency discloses to another agency a query, view or representation that an individual has made to the first-mentioned agency [9]\n\n[app6-008] (APP 6, paras 6.14\u20136.15, Using or disclosing personal information for a secondary purpose)\n6.14 A \u2018secondary purpose\u2019 is any purpose other than the primary purpose for which the APP entity collected the personal information.\n6.15 The grounds on which an APP entity may use or disclose personal information for a secondary purpose are outlined below. It is nevertheless open to an entity not to rely on any such ground and to decide not to use or disclose personal information, unless the use or disclosure is required by law (see paragraphs 6.29\u20136.31 below).\n\n[app3-014] (APP 3, paras 3.42\u20133.48, Collecting sensitive information > Collecting sensitive information where a perm)\n3.42 An APP entity may collect sensitive information if a \u2018permitted general situation\u2019 exists in relation to the collection (APP 3.4(b)).\n3.43 Section 16A lists seven permitted general situations (two of which apply only to agencies). The seven situations are set out below, and are discussed further in Chapter C (Permitted general situations), including the meaning of relevant terms.\n3.44 An APP entity may collect sensitive information if:\nit is unreasonable or impracticable to obtain the individual\u2019s consent to the collection, and\nthe entity reasonably believes the collection is necessary to lessen or prevent a serious threat to the life, health or safety of any individual, or to public health or safety (s 16A(1), Item 1).\n3.45 For guidance on \u2018unreasonable or impracticable to obtain consent\u2019, see Chapter C (Permitted general situations).\n3.46 The following factors are relevant to whether an APP entity reasonably believes the collection of sensitive information is necessary: [26]\nthe suitability of the proposed collection, including its efficacy in addressing the serious threat\nthe alternatives available to lessen or prevent the serious threat, including whether less privacy-intrusive alternatives are available to address the serious threat,\nwhether the proposed collection is proportionate. This involves balancing the privacy impacts resulting from the collection of sensitive information against the benefits to be gained from doing so.\n3.47 For further guidance on \u2018reasonably believes the collection is necessary\u2019, see Chapter C (Permitted general situations).\n3.48 Examples of where this permitted general situation might apply are:\ncollecting health information about an individual who is seriously injured, requires treatment and, due to their injuries, cannot give informed consent, on the basis that it is impracticable to obtain the individual\u2019s consent\ncollecting sensitive information about a parent that is required to provide assistance to a child who may be at risk of physical or sexual abuse by the parent, on the basis that it would be unreasonable to obtain the parent\u2019s consent\ncollecting sensitive information using a facial recognition system for the limited purpose of combatting very significant retail crime, violence, abuse and intimidation, in a security environment that poses unique challenges such as products on sale that can be readily accessed by individuals and used as a weapon (e.g. axes, screwdrivers). [27]\n\nQuestion: For a secondary use of sensitive information based on reasonable expectation, how closely must it relate to the primary purpose?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TwfLsDOdnS794JBr4VyoGnlYqV",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"For a secondary use of sensitive information based on reasonable expectation, the secondary purpose must be 'directly related' to the primary purpose of collection, meaning it must be closely associated with the primary purpose, even if not strictly necessary to achieve it.\",\"citations\":[\"app6-010\",\"app6-011\",\"app6-012\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089480,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 77,
+   "prompt_tokens": 1939,
+   "total_tokens": 2016,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 61,
+    "engine_ttlt_ms": 533,
+    "pre_inference_ms": 87,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 527,
+    "service_ttlt_ms": 992,
+    "user_visible_ttft_ms": 440
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260823114745-bbc5cbf3-default-r2-dp0-default"
+  }
+ }
+}

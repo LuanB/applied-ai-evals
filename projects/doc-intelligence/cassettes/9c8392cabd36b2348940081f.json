@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-011",
+  "markdown": false
+ },
+ "response": {
+  "content": "19/08 '91 10:23 332 272 51209 CRC\n--- INBIFO Koeln \u00d8001\n#2453\nEingegangen\n....\n1 9. AUG. 199 1\n2 3\n4\nCRC CONTRACT RESEARCH CENTER B.V.B.A./S.P.R.L.\nTelefax message no .: 1516\nNumber of following pages: 3\nVan: Do: Von: From :\nM. Merckx\nVoor: Pour: Frau B. Viol\nAn: To:\nRe: Projektinformationen B1019/Date: P 3165 und B1021/P 3169, CRC Abwesenheitsliste\n19.Aug.91\nAddress:\nINBIFO\nFuggerstr. 3\nD-5000 K\u00f6ln 90\nRemarks: Sehr geehrte Frau Viol,\nanbei finden Sie die genannten Informationen.\nViele Gr\u00fcsse\nB-1949 Zaventem (Sint-Stevens-Woluwe) Tollaani / Avenue du P\u00e9age.101c Telefoon / T\u00e9l\u00e9phone: 02 - 720 81 74 Telefax / T\u00e9l\u00e9fax: 02 - 725 12 09\nMaatschappelijke zetel: Zaventem, Belgi\u00eb Siege social: Zaventem, Belgique H.R.B. / R.C.B .: 509.306 B.T.W. / T.V.A .: 435.085.085 Generale Bank / G\u00e9n\u00e9rale de Banque : 210-0233000-58 -\n2026000102",
+  "pages": 1,
+  "fields": {}
+ }
+}

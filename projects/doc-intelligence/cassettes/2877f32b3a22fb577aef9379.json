@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B00-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - TURKEY\nCERTIFICATE OF ORIGIN\nCertificate No .:\nFC223514\nExporter:\nHanseatic Furniture GmbH\nConsignee:\nWattle & Co Wholesale Pty Ltd\nMeans of transport:\nMSC ARIANNA from Izmir\nHS heading:\n0813.10\nGoods:\nDried apricots\nCountry of origin:\nTurkey\nWe certify the goods described in invoice INV-86387 originate in Turkey.",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B01-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# MEDITERRANEAN LINES\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MEDU48520.404</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Nordic Pine Sawmills AB</td>\n</tr>\n<tr>\n<td>Consignee;</td>\n<td>Southern Cross Imports Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>EVER GIVEN II / 149W</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Izmir</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Sydney</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>MSKU3069294 / SL894747</td>\n</tr>\n</table>\n\n\n1047 PACKAGES SAID TO CONTAIN DRIED APRICOTS\nGROSS WEIGHT 21640.1 KG$\nINVOICE INV-37060\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

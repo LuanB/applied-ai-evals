@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B12-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# CHAMBER OF COMMERCE - SPAIN\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>CO340275</td>\n</tr>\n<tr>\n<td>Exporter:</td>\n<td>Hanseatic Furniture GmbH</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Means of transport:</td>\n<td>ONE HARMONY from Valencia</td>\n</tr>\n<tr>\n<td>HS heading:</td>\n<td>0805.10</td>\n</tr>\n<tr>\n<td>Goods:</td>\n<td>Fresh oranges, navel</td>\n</tr>\n<tr>\n<td>Country of origin:</td>\n<td>Spain</td>\n</tr>\n</table>\n\n\nWe certify the goods described in invoice INV-70494 originate in Spain.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

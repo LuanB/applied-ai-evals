@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-040",
+  "markdown": false
+ },
+ "response": {
+  "content": "M-238\n112\n\u20bc-a3r\nCAMEL\nWhere a man belongs.\nCAMEL\nCAMEL\nG\u00e5mehLig\nAD DO .: 12-CF-QUART-20\nHITTING PROCHES OFPEUT",
+  "pages": 1,
+  "fields": {}
+ }
+}

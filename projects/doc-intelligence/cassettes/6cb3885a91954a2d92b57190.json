@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B06-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "OCEANIC CONTAINER LINE\nSEA WAYBILL\nB/L No .:\nONEY49383924\nShipper:\nLanka Spice Mills (Pvt) Ltd\nConsignee:\nBluegum Food Distributors Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nEVER GIVEN II / 284S\nPort of loading:\nValencia\nPort of discharge:\nBrisbane\nContainer / Seal:\nTGHU2162297 / SL711161\n1289 PACKAGES SAID TO CONTAIN FRESH ORANGES, NAVEL GROSS WEIGHT 23134.6 KGS INVOICE INV-94446 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

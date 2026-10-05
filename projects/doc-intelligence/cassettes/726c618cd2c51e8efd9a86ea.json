@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B05-06",
+  "markdown": false
+ },
+ "response": {
+  "content": "NATIONAL PLANT PROTECTION ORGANIZATION OF TURKEY\nPHYTOSANITARY CERTIFICATE\nNo .:\nCO91-5766\nName of exporter:\nNordic Pine Sawmills AB\nDeclared consignee:\nHarbourside Fresh Pty Ltd\nBotanical name of plants:\nPrunus armeniaca\nPlace of origin:\nTurkey\nDeclared means of conveyance:CMA CGM TAGE\nPoint of entry:\nBrisbane\nThe plants or plant products described herein have been inspected and are considered free from quarantine pests of the importing contracting party.",
+  "pages": 1,
+  "fields": {}
+ }
+}

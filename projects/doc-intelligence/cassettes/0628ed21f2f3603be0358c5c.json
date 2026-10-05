@@ -1,0 +1,50 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-invoice",
+  "doc": "test-B03-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB\n386 Industrial Rd, Sri Lanka\nCOMMERCIAL INVOICE\nInvoice No .:\nINV-64463\nDate:\n16/09/2026\nSold to:\nWattle & Co Wholesale Pty Ltd\nPacking List No .:\nPL-42760\nTerms of delivery:\nCIF\nCurrency:\nUSD\nDescription\nHS Code\nQty\nUnit price\nAmount\nBlack pepper, whole\n0904.11\n268\n2.06\n552.08\nTOTAL USD:\n552.08\nCountry of origin: Sri Lanka",
+  "pages": 1,
+  "fields": {
+   "CustomerName": {
+    "value": "Wattle & Co Wholesale Pty Ltd",
+    "confidence": 0.889
+   },
+   "InvoiceDate": {
+    "value": "2026-09-16",
+    "confidence": 0.981
+   },
+   "InvoiceId": {
+    "value": "INV-64463",
+    "confidence": 0.981
+   },
+   "InvoiceTotal": {
+    "value": 552.08,
+    "confidence": 0.976
+   },
+   "Items": {
+    "value": null,
+    "confidence": null
+   },
+   "PaymentTerm": {
+    "value": "CIF",
+    "confidence": 0.974
+   },
+   "VendorAddress": {
+    "value": "386 Industrial Rd, Sri Lanka",
+    "confidence": 0.888
+   },
+   "VendorAddressRecipient": {
+    "value": "NORDIC PINE SAWMILLS AB",
+    "confidence": 0.915
+   },
+   "VendorName": {
+    "value": "NORDIC PINE SAWMILLS AB",
+    "confidence": 0.915
+   }
+  }
+ }
+}

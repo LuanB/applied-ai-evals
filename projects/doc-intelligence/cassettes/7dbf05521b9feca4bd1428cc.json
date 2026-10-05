@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-025",
+  "markdown": false
+ },
+ "response": {
+  "content": "2078318192\nNote for McCormick, Brendan\nFrom: McCormick, Brendan\nDate:\nFri, Jan 30, 1998 1:33 PM\nSubject : RE: Wash Post story on VA\nTo: Beauchemin, Ed; Chaikin, Karen; Daragan, Karen; Lenzi, Jack -\nPMC/PMCUSNY/LENZIJ; Quast, David\nHere's the full article. I think reporter (probably based on anti info) overestimates the number of states with licensing. I think it's 35 or 36. While we can call or send a letter to put PM on record in support of reasonable statewide licensing, it's Ed's call because of the position it will put Gilmore in.\nI think the bigger question is: should TI be commenting (or lobbying) on behalf of the industry on state legislation where the companies are not unified in their position? We've been in a similar position in KY on this issue. If no one addresses this with TI, we will face similar mischaracterizations of PM's position on licensing in the media and with legislators. Thoughts?",
+  "pages": 1,
+  "fields": {}
+ }
+}

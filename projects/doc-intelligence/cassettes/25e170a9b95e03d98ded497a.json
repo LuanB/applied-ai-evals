@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B03-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\nB/L No .:\nCMDU38462634\nShipper:\nNordic Pine Sawmills AB\nConsignee:\nWattle & Co Wholesale Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCOSCO LIBRA / 325N\nPort of loading:\nColombo\nPort of discharge:\nFremantle\nContainer / Seal:\nOOLU6530326 / SL132384\n268 PACKAGES SAID TO CONTAIN BLACK PEPPER, WHOLE GROSS WEIGHT 4543.5 KGS INVOICE INV-64463",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,1814 @@
+{
+ "suite": "telemetry-attribution",
+ "headline": "balanced_accuracy",
+ "mode": "replay",
+ "generated": "2026-10-05T16:10:31",
+ "gate": {
+  "passed": true,
+  "reasons": [
+   "info agent-v1-raw:gpt-41-mini: ungated reference, balanced_accuracy 0.250",
+   "info agent-v1-raw:gpt-5-mini: ungated reference, balanced_accuracy 0.167",
+   "ok   agent-v2:gpt-41-mini: balanced_accuracy 0.750 beats best baseline 0.500 (margin 0.05)",
+   "ok   agent-v2:gpt-41-mini: within tolerance of floor 0.750",
+   "ok   agent-v2:gpt-5-mini: balanced_accuracy 0.750 beats best baseline 0.500 (margin 0.05)",
+   "ok   agent-v2:gpt-5-mini: within tolerance of floor 0.750"
+  ]
+ },
+ "runs": [
+  {
+   "system": "always-guess",
+   "is_baseline": true,
+   "results": [
+    {
+     "case_id": "case1-hidden-thinking-tokens#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['5c0d634']; named ['8b6f123'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "8b6f123"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['5c0d634']; named ['8b6f123'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "8b6f123"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['5c0d634']; named ['8b6f123'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "8b6f123"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['aed9ba8'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "aed9ba8"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['aed9ba8'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "aed9ba8"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['aed9ba8'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "aed9ba8"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['7b99e09'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [
+       "7b99e09"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['7b99e09'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [
+       "7b99e09"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['7b99e09'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [
+       "7b99e09"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['fc44797'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [
+       "fc44797"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['fc44797'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [
+       "fc44797"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['fc44797'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [
+       "fc44797"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['6d2b408'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [
+       "6d2b408"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['6d2b408'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [
+       "6d2b408"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['6d2b408'] \u2014 largest changeset in window",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [
+       "6d2b408"
+      ],
+      "refused": false
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "balanced_accuracy": 0.0,
+    "attribution_precision": 0.0,
+    "model_refusal": 0.0,
+    "accuracy": 0.0,
+    "attribution_recall": 0.0,
+    "correct_refusal": 0.0,
+    "pass_all_trials": 0.0,
+    "budget_exhausted": 0.0
+   },
+   "cost_usd": 0.0,
+   "wall_s": 0.0,
+   "gated": true
+  },
+  {
+   "system": "always-refuse",
+   "is_baseline": true,
+   "results": [
+    {
+     "case_id": "case1-hidden-thinking-tokens#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused a case with a real cause \u2014 declines to attribute",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused a case with a real cause \u2014 declines to attribute",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused a case with a real cause \u2014 declines to attribute",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused a case with a real cause \u2014 declines to attribute",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused a case with a real cause \u2014 declines to attribute",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused a case with a real cause \u2014 declines to attribute",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 declines to attribute",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 declines to attribute",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 declines to attribute",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 declines to attribute",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 declines to attribute",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 declines to attribute",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 declines to attribute",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 declines to attribute",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 declines to attribute",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "balanced_accuracy": 0.5,
+    "attribution_precision": 0.0,
+    "model_refusal": 0.0,
+    "accuracy": 0.6,
+    "attribution_recall": 0.0,
+    "correct_refusal": 1.0,
+    "pass_all_trials": 0.6,
+    "budget_exhausted": 0.0
+   },
+   "cost_usd": 0.0,
+   "wall_s": 0.0,
+   "gated": true
+  },
+  {
+   "system": "agent-v1-raw:gpt-41-mini",
+   "is_baseline": false,
+   "results": [
+    {
+     "case_id": "case1-hidden-thinking-tokens#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "named ['5c0d634'] \u2014 The movement is the appearance of the telemetry field 'reasoningTokens' starting on 2026-07-03. The commit 5c0d634 on 2026-07-02 has the subject 'feat(telemetry",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "5c0d634"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 3
+     },
+     "cost_usd": 0.001555,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "named ['5c0d634'] \u2014 The commit 5c0d634 on 2026-07-02 titled 'feat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops' explicitly mentions 'reasoni",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "5c0d634"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 4
+     },
+     "cost_usd": 0.001485,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "named ['5c0d634'] \u2014 The movement is the appearance of the telemetry field 'reasoningTokens' starting on 2026-07-03. The commit 5c0d634 on 2026-07-02 is titled 'feat(telemetry): sur",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "5c0d634"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 3
+     },
+     "cost_usd": 0.001162,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named [] \u2014 tool budget exhausted after 11 calls without submit_answer",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [],
+      "refused": false,
+      "tool_calls": 11,
+      "budget_exhausted": true
+     },
+     "cost_usd": 0.001183,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named [] \u2014 tool budget exhausted after 11 calls without submit_answer",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [],
+      "refused": false,
+      "tool_calls": 11,
+      "budget_exhausted": true
+     },
+     "cost_usd": 0.000815,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named [] \u2014 tool budget exhausted after 11 calls without submit_answer",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [],
+      "refused": false,
+      "tool_calls": 11,
+      "budget_exhausted": true
+     },
+     "cost_usd": 0.000815,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['36a2807'] \u2014 The movement is a sharp increase in tool calls per agent run. The commit 36a2807 (2026-06-24) explicitly adds per-turn tool_call traces on google/openai gather,",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [
+       "36a2807"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.003416,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['36a2807'] \u2014 The movement is a sharp rise in tool calls per agent run on 2026-07-18. Among commits in the window, commit 36a2807 (dated 2026-06-24) explicitly mentions \"per-",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [
+       "36a2807"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.002527,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['36a2807'] \u2014 The movement is a large step increase in tool calls per run. The commit 36a2807 (2026-06-24) explicitly added per-turn tool_call traces on google/openai gather,",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [
+       "36a2807"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.002316,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['7b99e09'] \u2014 The movement is the appearance of the telemetry field 'reasoningTokens' starting 2026-07-03. Among the commits in the window, commit 7b99e09 dated 2026-06-22 is",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [
+       "7b99e09"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.002041,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['7b99e09'] \u2014 The movement is the appearance of the telemetry field 'reasoningTokens' starting 2026-07-03. Among the commits in the window, commit 7b99e09 dated 2026-06-22 is",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [
+       "7b99e09"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.002399,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['7b99e09'] \u2014 The movement is the appearance of the telemetry field 'reasoningTokens' starting 2026-07-03. Among the commits in the window, commit 7b99e09 dated 2026-06-22 is",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [
+       "7b99e09"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.001588,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['52a5e8b', '0cacdb5', 'a119a87'] \u2014 The movement in tool calls per agent run (p90 rose from 7 to 27 on 2026-07-18) is plausibly explained by the cluster of alpha-telemetry related commits in the w",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [
+       "52a5e8b",
+       "0cacdb5",
+       "a119a87"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 5
+     },
+     "cost_usd": 0.002781,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['52a5e8b', '0cacdb5'] \u2014 The movement in tool calls per agent run (p90 rose from 7 to 27 on 2026-07-18) falls within the window 2026-07-15 to 2026-07-20. Among the commits in this windo",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [
+       "52a5e8b",
+       "0cacdb5"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 5
+     },
+     "cost_usd": 0.001798,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['52a5e8b', '0cacdb5'] \u2014 The movement in tool calls per agent run (p90 rose from 7 to 27 on 2026-07-18) is best explained by commits related to telemetry and agent run tooling in the wi",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [
+       "52a5e8b",
+       "0cacdb5"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 5
+     },
+     "cost_usd": 0.001775,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "balanced_accuracy": 0.25,
+    "attribution_precision": 1.0,
+    "model_refusal": 0.0,
+    "accuracy": 0.2,
+    "attribution_recall": 0.5,
+    "correct_refusal": 0.0,
+    "pass_all_trials": 0.2,
+    "budget_exhausted": 0.2
+   },
+   "cost_usd": 0.027656,
+   "wall_s": 0.01,
+   "gated": false
+  },
+  {
+   "system": "agent-v1-raw:gpt-5-mini",
+   "is_baseline": false,
+   "results": [
+    {
+     "case_id": "case1-hidden-thinking-tokens#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['5c0d634']; named [] \u2014 tool budget exhausted after 8 calls without submit_answer",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [],
+      "refused": false,
+      "tool_calls": 8,
+      "budget_exhausted": true
+     },
+     "cost_usd": 0.003587,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['5c0d634']; named [] \u2014 tool budget exhausted after 8 calls without submit_answer",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [],
+      "refused": false,
+      "tool_calls": 8,
+      "budget_exhausted": true
+     },
+     "cost_usd": 0.002124,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['5c0d634']; named [] \u2014 tool budget exhausted after 8 calls without submit_answer",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [],
+      "refused": false,
+      "tool_calls": 8,
+      "budget_exhausted": true
+     },
+     "cost_usd": 0.003801,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['fd10d27', '1b7d725', 'fbca50e'] \u2014 All three July 18 commits touch the agent runtime and search-budget code paths that control how many connector/repo search tools an agent run may call:\n- fd10d2",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "fd10d27",
+       "1b7d725",
+       "fbca50e"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 4
+     },
+     "cost_usd": 0.005233,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['fd10d27', 'fbca50e', '1b7d725'] \u2014 All three commits on 2026-07-18 touch the agent search-budget and run-time budgeting code that directly controls how many connector/repo (search) tool calls an ",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "fd10d27",
+       "fbca50e",
+       "1b7d725"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 4
+     },
+     "cost_usd": 0.005286,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['fd10d27', 'fbca50e', '1b7d725'] \u2014 All three commits on 2026-07-18 change the agent\u2019s search/call-budget logic or the runner that consumes it: \n- fd10d27 (\u201cAdd per-run search budget to cap connec",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "fd10d27",
+       "fbca50e",
+       "1b7d725"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.006273,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['36a2807', '1a6f26a', '7b99e09'] \u2014 Primary suspect: 36a2807 (2026-06-24) \u2014 touches electron/agent/providers/*/toolLoop.ts and electron/config/configCache.ts and its subject explicitly mentions \u201cp",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [
+       "36a2807",
+       "1a6f26a",
+       "7b99e09"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.00954,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['36a2807', '7b99e09'] \u2014 Why these commits: the p90 jump in \"tool calls per agent run\" means many runs began invoking more tools (or the instrumented count increased). Two June commits ",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [
+       "36a2807",
+       "7b99e09"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 4
+     },
+     "cost_usd": 0.007523,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['36a2807', '7b99e09', '7728f7f'] \u2014 All three commits in the window touch the agent providers\u2019 tool-loop logic and telemetry and therefore plausibly change the measured per-run tool_call count. Ev",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [
+       "36a2807",
+       "7b99e09",
+       "7728f7f"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 4
+     },
+     "cost_usd": 0.009522,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named [] \u2014 tool budget exhausted after 8 calls without submit_answer",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [],
+      "refused": false,
+      "tool_calls": 8,
+      "budget_exhausted": true
+     },
+     "cost_usd": 0.005949,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['7b99e09', '03d07b1'] \u2014 Reasoning: the new telemetry field reasoningTokens looks like a token-count / cost-instrumentation metric emitted by the desktop agent. The 2026-06-22 commit 7b",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [
+       "7b99e09",
+       "03d07b1"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.007758,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "should have refused; named ['7b99e09', '03d07b1'] \u2014 The most plausible cause is commit 7b99e09 (2026-06-22): its subject is \u201ccost-instrument ASR/detect/enrichment\u201d and it modifies electron/agent/telemetry.ts plus",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [
+       "7b99e09",
+       "03d07b1"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.005793,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 I inspected the 26 commits returned for the window. The p90 step-up occurred on 2026-07-18, but every commit in the provided list is dated 2026-07-25 or later (",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [],
+      "model_refused": true,
+      "tool_calls": 1
+     },
+     "cost_usd": 0.004766,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 All 26 commits returned for the stated window are dated 2026-07-25 or later. The metric movement occurred on 2026-07-18; a commit dated after that movement cann",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [],
+      "model_refused": true,
+      "tool_calls": 1
+     },
+     "cost_usd": 0.001257,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 All 26 commits returned by list_commits_in_window are dated after the movement (the earliest listed commit is 2026-07-25). The detected step in tool-calls-per-r",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [],
+      "model_refused": true,
+      "tool_calls": 1
+     },
+     "cost_usd": 0.002437,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "balanced_accuracy": 0.16666666666666666,
+    "attribution_precision": 0.0,
+    "model_refusal": 0.3333333333333333,
+    "accuracy": 0.2,
+    "attribution_recall": 0.0,
+    "correct_refusal": 0.3333333333333333,
+    "pass_all_trials": 0.2,
+    "budget_exhausted": 0.26666666666666666
+   },
+   "cost_usd": 0.080849,
+   "wall_s": 0.02,
+   "gated": false
+  },
+  {
+   "system": "agent-v2:gpt-41-mini",
+   "is_baseline": false,
+   "results": [
+    {
+     "case_id": "case1-hidden-thinking-tokens#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "named ['5c0d634'] \u2014 The movement is the appearance of the telemetry field 'reasoningTokens' starting on 2026-07-03. The commit 5c0d634 on 2026-07-02 has the subject 'feat(telemetry",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "5c0d634"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 3
+     },
+     "cost_usd": 0.001555,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "named ['5c0d634'] \u2014 The commit 5c0d634 on 2026-07-02 titled 'feat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops' explicitly mentions 'reasoni",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "5c0d634"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 4
+     },
+     "cost_usd": 0.001485,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "named ['5c0d634'] \u2014 The movement is the appearance of the telemetry field 'reasoningTokens' starting on 2026-07-03. The commit 5c0d634 on 2026-07-02 is titled 'feat(telemetry): sur",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "5c0d634"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 3
+     },
+     "cost_usd": 0.001162,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['aed9ba8'] \u2014 The commit aed9ba8 on 2026-07-16 titled 'openai R2: local web_search tool with a deterministic egress scrub' changed 16 files including 'electron/agent/connecto",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "aed9ba8"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.002093,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['aed9ba8'] \u2014 The commit aed9ba8 on 2026-07-16 titled 'openai R2: local web_search tool with a deterministic egress scrub' changed many files related to tool registry and con",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "aed9ba8"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.001348,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['aed9ba8'] \u2014 The commit aed9ba8 on 2026-07-16 titled 'openai R2: local web_search tool with a deterministic egress scrub' changed many files related to tool registry and con",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "aed9ba8"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.001346,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['36a2807']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "36a2807"
+      ],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.001388,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['36a2807']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "36a2807"
+      ],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.001413,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['36a2807']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "36a2807"
+      ],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.001319,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['7b99e09']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "7b99e09"
+      ],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.001575,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['7b99e09']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "7b99e09"
+      ],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.00155,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['7b99e09']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "7b99e09"
+      ],
+      "model_refused": false,
+      "tool_calls": 7
+     },
+     "cost_usd": 0.001556,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['52a5e8b', '0cacdb5', 'a119a87']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "52a5e8b",
+       "0cacdb5",
+       "a119a87"
+      ],
+      "model_refused": false,
+      "tool_calls": 5
+     },
+     "cost_usd": 0.002781,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['52a5e8b', '0cacdb5']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "52a5e8b",
+       "0cacdb5"
+      ],
+      "model_refused": false,
+      "tool_calls": 5
+     },
+     "cost_usd": 0.001798,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['52a5e8b', '0cacdb5']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "52a5e8b",
+       "0cacdb5"
+      ],
+      "model_refused": false,
+      "tool_calls": 5
+     },
+     "cost_usd": 0.001775,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "balanced_accuracy": 0.75,
+    "attribution_precision": 0.5,
+    "model_refusal": 0.0,
+    "accuracy": 0.8,
+    "attribution_recall": 0.5,
+    "correct_refusal": 1.0,
+    "pass_all_trials": 0.8,
+    "budget_exhausted": 0.0
+   },
+   "cost_usd": 0.024144,
+   "wall_s": 0.01,
+   "gated": true
+  },
+  {
+   "system": "agent-v2:gpt-5-mini",
+   "is_baseline": false,
+   "results": [
+    {
+     "case_id": "case1-hidden-thinking-tokens#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "named ['5c0d634'] \u2014 The movement is the appearance of the telemetry field reasoningTokens on 2026-07-03. The commit that most directly explains this is 5c0d634 (2026-07-02) whose s",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "5c0d634",
+       "8b6f123"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.005562,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "named ['5c0d634'] \u2014 Commit 5c0d634 (2026-07-02) is titled \u201cfeat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops\u201d and modifies telemetry.ts and ",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "5c0d634"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.004051,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case1-hidden-thinking-tokens#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "named ['5c0d634'] \u2014 The telemetry field reasoningTokens appears in production rows on 2026-07-03. The most direct match is commit 5c0d634 (2026-07-02) whose subject explicitly says",
+     "tags": {
+      "case": "case1-hidden-thinking-tokens",
+      "refusal_case": false,
+      "named": [
+       "5c0d634",
+       "8b6f123"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.00605,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#0",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['fd10d27', '1b7d725', 'fbca50e'] \u2014 All three July 18 commits touch the agent runtime and search-budget code paths that control how many connector/repo search tools an agent run may call:\n- fd10d2",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "fd10d27",
+       "1b7d725",
+       "fbca50e"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 4
+     },
+     "cost_usd": 0.005233,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#1",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['fd10d27', 'fbca50e', '1b7d725'] \u2014 All three commits on 2026-07-18 touch the agent search-budget and run-time budgeting code that directly controls how many connector/repo (search) tool calls an ",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "fd10d27",
+       "fbca50e",
+       "1b7d725"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 4
+     },
+     "cost_usd": 0.005286,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "case3-tool-call-spiral#2",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missed ['77d9c90']; named ['fd10d27', 'fbca50e', '1b7d725'] \u2014 Deterministic detector flagged a step increase in tool calls on 2026-07-18. Three commits on that same day directly change per-run search budgeting and the agen",
+     "tags": {
+      "case": "case3-tool-call-spiral",
+      "refusal_case": false,
+      "named": [
+       "fd10d27",
+       "fbca50e",
+       "1b7d725"
+      ],
+      "refused": false,
+      "date_rejected": [],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.007431,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['36a2807', '1a6f26a', '7b99e09']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "36a2807",
+       "1a6f26a",
+       "7b99e09"
+      ],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.010234,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['36a2807', '7b99e09']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "36a2807",
+       "7b99e09"
+      ],
+      "model_refused": false,
+      "tool_calls": 4
+     },
+     "cost_usd": 0.007523,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-shifted-window#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['36a2807', '7b99e09', '7728f7f']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-shifted-window",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "36a2807",
+       "7b99e09",
+       "7728f7f"
+      ],
+      "model_refused": false,
+      "tool_calls": 4
+     },
+     "cost_usd": 0.009522,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['7b99e09']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "7b99e09"
+      ],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.005827,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['7b99e09']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "7b99e09"
+      ],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.008173,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-before-field-existed#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 date check rejected ['7b99e09']: none lands just before the movement",
+     "tags": {
+      "case": "refusal-before-field-existed",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [
+       "7b99e09"
+      ],
+      "model_refused": false,
+      "tool_calls": 6
+     },
+     "cost_usd": 0.005498,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#0",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 I inspected the 26 commits returned for the window. The p90 step-up occurred on 2026-07-18, but every commit in the provided list is dated 2026-07-25 or later (",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [],
+      "model_refused": true,
+      "tool_calls": 1
+     },
+     "cost_usd": 0.004766,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#1",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 All 26 commits returned for the stated window are dated 2026-07-25 or later. The metric movement occurred on 2026-07-18; a commit dated after that movement cann",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [],
+      "model_refused": true,
+      "tool_calls": 1
+     },
+     "cost_usd": 0.001257,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "refusal-window-after-movement#2",
+     "passed": true,
+     "score": 1.0,
+     "detail": "correctly refused \u2014 All 26 commits returned by list_commits_in_window are dated after the movement (the earliest listed commit is 2026-07-25). The detected step in tool-calls-per-r",
+     "tags": {
+      "case": "refusal-window-after-movement",
+      "refusal_case": true,
+      "named": [],
+      "refused": true,
+      "date_rejected": [],
+      "model_refused": true,
+      "tool_calls": 1
+     },
+     "cost_usd": 0.002437,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "balanced_accuracy": 0.75,
+    "attribution_precision": 0.21428571428571427,
+    "model_refusal": 0.3333333333333333,
+    "accuracy": 0.8,
+    "attribution_recall": 0.5,
+    "correct_refusal": 1.0,
+    "pass_all_trials": 0.8,
+    "budget_exhausted": 0.0
+   },
+   "cost_usd": 0.08885,
+   "wall_s": 0.02,
+   "gated": true
+  }
+ ]
+}

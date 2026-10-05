@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nFrom:\nSont:\nTo:\nBender, Rafaella; Sonville, Magda S.\nSubject:\nArbetter, Louis\nThursday, January 14, 1999 4:46 PM\nCet Murillo, Joe; Mulligan, Kathleen; Gilbert, Jacquie RE: Madden POS\n2064978465A\nAs long as instructions are provided on where the item can and cannot be placed at retail, item number 11971 can be taken off shipping-hold and made available for use in the field.\nPlease call me with any questions regarding the above. - Lou (2554)"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV894JkwGTQcUI0PjzX8SVN3lYLTa",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"email\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088186,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 324,
+   "total_tokens": 333,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 33,
+    "engine_ttlt_ms": 94,
+    "pre_inference_ms": 86,
+    "service_tbt_ms": 16,
+    "service_ttft_ms": 543,
+    "service_ttlt_ms": 683,
+    "user_visible_ttft_ms": 457
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927120206-23bb4efb-default-r2-dp0-default"
+  }
+ }
+}

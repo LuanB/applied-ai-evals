@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+traces/*.jsonl
+!traces/.gitkeep
+data/raw/
+cdk.out/
+node_modules/
+data/raw/
+data/synthetic/
+data/synthetic_train/

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-075",
+  "markdown": false
+ },
+ "response": {
+  "content": "(\n\u2018Baker,\nCHEMICALS\nMATERIAL SAFETY DATA SHEET\nJ. T. Baker Chemical Co., 222 Red School Lane, Phillipsburg, N.J. 08865\nSECTION 1@ IDENTIFICATION OF PRODUCT\nCHEMICAL NAME\nFORMULA\nK2Cr207\nSYNONYM OR CROSS REFERENCE Bichromate of Potash; Potassium Bichromate\nCAS NO: 007778509\nSECTION ID HAZARDOUS INGREDIENTS\nMATERIAL\nNATURE OF HAZARD\nSECTION IILE PHYSICAL DATA\nBOILING POINT Decomposes at 500\u00bac. \"\nMELTING POINT\n398\u00baC.\nVAPOR PRESSURE\nSPECIFIC GRAVITY 2.68\nVAPOR DENSITY (AIR=1)\nPERCENT VOLATILE BY VOLUME (%)\nWATER SOLUBILITY Soluble\nEVAPORATION RATE _= 1)\nAPPEARANCE Transparent crystals\nSECTION IV - FIRE AND EXPLOSION HAZARD DATA\nFLAMMABLE LIMITS\nLower\nUpper\nFLASH POINT (method used)\nFIRE EXTINGUISHING MEDIA\nSPECIAL FIRE-FIGHTING PROCEDURES\nUNUSUAL FIRE AND EXPLOSION HAZARD\nSECTION V\"HEALTH HAZARD\nTHRESHOLD LIMIT VALUE 5 mg/M3 scu-nky LDLO: 40 mg/kg\nHEALTH HAZARDS Causes irrication. Harmful if inhaled. May cause rash or external ulcers.\nFIRST AID PROCEDURES In case of contact, immediately flush eyes or skin with plenty of water for at least 15 minutes. Call a physician. If inhaled, remove fresh air, If not breathing, give artificial respiration. If breathing is difficult, give oxygen. Call a physician,\nL\n1\n1 \u0130\nCHEMICAL NAME_\n\u20ac\n2000416673\nC",
+  "pages": 1,
+  "fields": {}
+ }
+}

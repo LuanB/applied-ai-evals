@@ -1,0 +1,153 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: commercial_invoice, packing_list, bill_of_lading, certificate_of_origin, phytosanitary_certificate, fumigation_certificate\n\nOCR text of the page:\nGOLDEN VALLEY EXPORTS CO. LTD 165 Industrial Rd, Sweden\nPACKING SPECIFICATION\nRef No .:\nPL-11896\nInvoice No .:\nINV-84536\nConsignee:\nSouthern Cross Imports Pty Ltd\nContainer:\nMSCU4284394\nMarks:\nSOUTHERN/ FREMANTLE\nPkgs\nDescription\nNet kg Gross kg\n21009.4 22220.8\n1375 Sawn timber, pine, kiln\nTotal packages:\n1375\nTotal gross weight (kg):\n22220.8\nTotal net weight (kg):\n21009.4"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "commercial_invoice",
+        "packing_list",
+        "bill_of_lading",
+        "certificate_of_origin",
+        "phytosanitary_certificate",
+        "fumigation_certificate"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89Sr6d89oXpRzirBv0wPLOfkw8w",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"packing_list\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088210,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 296,
+   "total_tokens": 306,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 22,
+    "engine_ttlt_ms": 113,
+    "pre_inference_ms": 73,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 701,
+    "service_ttlt_ms": 841,
+    "user_visible_ttft_ms": 627
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927111935-e948106b-default-r1-dp0-default"
+  }
+ }
+}

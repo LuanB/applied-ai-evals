@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B01-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB 233 Industrial Rd, Turkey\nWEIGHT & PACKING NOTE\nRef No .:\nPL-95134\nInvoice No .:\nINV-3.7060\nConsignee:\nSouthern Cross Imports Pty Ltd\nContainer:\nMSKU3069294\nMarks:\nSOUTHERN/SYDNEY\nPkgs\nDescription\nNet kg Gross kg\n1047 Dried apricots\n19590.0\n21640.1\nTotal packages:\n1047\nTotal gross weight (kg):\n21640.1\nTotal net weight (kg):\n19590.0",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app6-022] (APP 6, paras 6.68\u20136.70, Using or disclosing personal information for a secondary purpose > Disclosing bi)\n6.68 An agency may disclose biometric information or biometric templates for a secondary purpose if:\nthe agency is not an enforcement body, and\nthe recipient of the information is an enforcement body, and\nthe disclosure is conducted in accordance with guidelines made by the Commissioner for the purposes of APP 6.3 (see APP 6.3, Chapter 6).\n6.69 This exception does not apply to organisations.\n6.70 \u2018Biometric information\u2019 and \u2018biometric templates\u2019 are types of \u2018sensitive information\u2019 (defined in s 6(1)). \u2018Enforcement body\u2019 is defined in s 6(1) and is discussed in more detail in Chapter B (Key concepts).\n\n[b-034] (B, paras B.141\u2013B.144, Key concepts R to Z > Sensitive information)\nB.141 \u2018Sensitive information\u2019 is a subset of personal information and is defined as:\ninformation or an opinion (that is also personal information) about an individual\u2019s: racial or ethnic origin political opinions membership of a political association religious beliefs or affiliations philosophical beliefs membership of a professional or trade association membership of a trade union sexual orientation or practices, or criminal record\nracial or ethnic origin\npolitical opinions\nmembership of a political association\nreligious beliefs or affiliations\nphilosophical beliefs\nmembership of a professional or trade association\nmembership of a trade union\nsexual orientation or practices, or\ncriminal record\nhealth information about an individual (see paragraphs B.74\u2013B.78)\ngenetic information (that is not otherwise health information)\nbiometric information that is to be used for the purpose of automated biometric verification or biometric identification, or\nbiometric templates (s 6(1)).\nB.142 Information may be sensitive information where it clearly implies one of these matters. For example, many surnames have a particular racial or ethnic origin, but that alone will not constitute sensitive information that clearly indicates the racial or ethnic origin of an individual with that surname.\nB.143 Terms such as \u2018political opinions\u2019 and \u2018philosophical beliefs\u2019 are not defined in the Privacy Act. They take their ordinary meaning and should be interpreted broadly. However, not every value, belief or opinion of an individual will be considered to be a political opinion or philosophical belief.\nB.144 Sensitive information is generally afforded a higher level of privacy protection under the APPs than other personal information (for example, see APPs 3, 6 and 7). This recognises that inappropriate handling of sensitive information can have adverse consequences for an individual or those associated with the individual. For example, discrimination or mistreatment is sometimes based on a person\u2019s race or ethnic origin or union membership. Mishandling of sensitive information may also cause humiliation or embarrassment or undermine an individual\u2019s dignity.\n\n[app6-001] (APP 6, paras n/a, Key points)\nthe APP entity is an agency (other than an enforcement body) and discloses biometric information or biometric templates to an enforcement body, and the disclosure is conducted in accordance with guidelines made by the Information Commissioner for the purposes of APP 6.3.\n\n[app6-002] (APP 6, paras 6.1\u20136.4, What does APP 6 say?)\n6.1 APP 6 outlines when an APP entity may use or disclose personal information. The intent is that an entity will generally use and disclose an individual\u2019s personal information only in ways the individual would expect or where one of the exceptions applies.\n6.2 An APP entity that holds personal information about an individual can only use or disclose the information for a particular purpose for which it was collected (known as the \u2018primary purpose\u2019 of collection), unless an exception applies. Where an exception applies the entity may use or disclose personal information for another purpose (known as the \u2018secondary purpose\u2019). Exceptions include:\nthe individual consented to a secondary use or disclosure (APP 6.1(a))\nthe individual would reasonably expect the secondary use or disclosure, and that is related to the primary purpose of collection or, in the case of sensitive information, directly related to the primary purpose (APP 6.2(a))\nthe secondary use or disclosure of the personal information is required or authorised by or under an Australian law or a court/tribunal order (APP 6.2(b))\na permitted general situation exists in relation to the secondary use or disclosure of the personal information by the APP entity (APP 6.2(c))\nthe APP entity is an organisation and a permitted health situation exists in relation to the secondary use or disclosure of the personal information by the organisation (APP 6.2(d))\nthe APP entity reasonably believes that the secondary use or disclosure is reasonably necessary for one or more enforcement related activities conducted by, or on behalf of, an enforcement body (APP 6.2(e))\nthe APP entity is an agency (other than an enforcement body) and discloses personal information that is biometric information or biometric templates to an enforcement body, and the disclosure is conducted in accordance with guidelines made by the Information Commissioner for the purposes of APP 6.3 (APP 6.3).\n6.3 An APP entity may disclose personal information, other than sensitive information, to a related body corporate (s 13B(1)(b)).\n6.4 APP 6 does not apply to the use or disclosure by an organisation of:\npersonal information for the purpose of direct marketing (this is covered by APP 7), or\n\n[app3-025] (APP 3, paras n/a, Collecting by lawful and fair means > Collecting by fair means)\nWhat the risk of harm would be to individuals as a result of the collection\nThe risk of harm increases with the sensitivity of the information. Inappropriate collection and handling of personal information, including sensitive information, can have adverse consequences for an individual or those associated with the individual.\nFor example, when considering collecting biometric templates and biometric information via facial recognition technology, an APP entity should consider if this would lead to unjustified adverse effects, such as unjust discrimination. [57]\nThe risk of harm also increases with the amount of personal information collected. Over-collection can increase risks for the security of personal information.\nWhether the individual is in, or is perceived to be in, a vulnerable or at-risk situation This includes whether the collection is seeking to capitalise on the vulnerability, or perceived vulnerability, of an individual. Vulnerability can be defined as heightened susceptibility to harm. Factors that may put an individual at higher risk of experiencing negative outcomes include age, language barriers, literacy barriers (including digital literacy barriers), cognitive impairment, remote location, financial distress, family or domestic violence, disability and health conditions. [58] \u2018At-risk\u2019 groups could include children, older people, people from culturally and linguistically diverse communities, and people lacking digital resources such as appropriate device and internet access. [59] For example, it may be unfair to collect from an individual who is traumatised, in a state of shock or intoxicated. It may further be unfair to collect in a way that disrespects cultural differences. An individual may also be vulnerable due to inherent and significant power imbalances. For example, the power imbalance in the rental property market results in individuals feeling that they have no choice but to engage with and submit personal information to rental platforms, even if they are not comfortable doing so, for fear that their applications may be rejected. [60]\nThis includes whether the collection is seeking to capitalise on the vulnerability, or perceived vulnerability, of an individual.\nVulnerability can be defined as heightened susceptibility to harm. Factors that may put an individual at higher risk of experiencing negative outcomes include age, language barriers, literacy barriers (including digital literacy barriers), cognitive impairment, remote location, financial distress, family or domestic violence, disability and health conditions. [58]\n\nQuestion: Do biometric templates count as sensitive information?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SmF5M7ZJmAMyonc05XLKml9Lkk",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, biometric templates are considered a type of sensitive information under the Privacy Act.\",\"citations\":[\"app6-022\",\"b-034\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089408,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 38,
+   "prompt_tokens": 1804,
+   "total_tokens": 1842,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 33,
+    "engine_ttlt_ms": 239,
+    "pre_inference_ms": 91,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 546,
+    "service_ttlt_ms": 829,
+    "user_visible_ttft_ms": 454
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927065148-66615b65-default-r1-dp0-default"
+  }
+ }
+}

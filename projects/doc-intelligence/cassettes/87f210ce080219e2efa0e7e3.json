@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\n9/12/80\n1980 NEW YORK ADVERTISING & PROMOTION SPECIFICS\nTELEVISION\nCASH\nTRADE\n#TIX\n#SPOTS\nTOTAL VALUE\nCASH/TRADE/PROMO\nWNEW\n$12,000 $10,500\n1,000\n56 /\n/336\n$150,000 **\nRADIO\nWELS\n$10,140\n$2,700\n-200\n26 / 26\n/125\n$ 43,715\nWKTU\n9,720\n3,248\n224\n54 / 18\n1-\n12,968\nWABC\n3,675\n3,668\n253\n20 / 20\n/125\n14,606\nWNJR\n2,880\n2,075\n150\n36 / 36\n/100\n11,026\nWUSS\n574\n493\n34\n55 / 55\n/ 55\n1,722\nWWRL\n3,065\n$2,464\n120\n36 / 36\n/ -\n4,080\n$30,065 $14,648\n981\n227 /191 /405\n$ 87,657 **\nNEWSPAPER\nNew York Times\n7/27 & 3/17\n1,500 lines\n$12,135\nAmsterdam Recorder 7/26 & 8/9\n1,500\n435\nVillage Voice\n7/30 & 8/13\n1,500\n3,945\nNewark Star Ledger 7/27,8/17,8/23\n8/3,8/10,8/22\n2,300\n7,669\nBlack American\n7/27,8/3,8/10 8/17\n800\n960\nNY Daily News\n7/10,7/17,8/22\n800\n10,080\nPROMOTIONS\nFrasier's Clothing Store DOOPS Disco\n3,200\n$ 7,700\n$ 7,700 **\nTOTAL ADVERTISING & PROMOTION\n$280,581 ****\n660037245\n- 8/23\n$35,224\n$ 35,224 **\n$ 4,500"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89DQKJ9vWRjOySTyVFPkvN966MW",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"specification\",\"confidence\":\"medium\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088195,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 670,
+   "total_tokens": 680,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 42,
+    "engine_ttlt_ms": 125,
+    "pre_inference_ms": 71,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 1409,
+    "service_ttlt_ms": 1555,
+    "user_visible_ttft_ms": 1337
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102805-0f6bfd6a-default-r1-dp0-default"
+  }
+ }
+}

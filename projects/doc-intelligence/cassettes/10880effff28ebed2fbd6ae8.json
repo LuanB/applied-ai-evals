@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-088",
+  "markdown": false
+ },
+ "response": {
+  "content": "2057768153",
+  "pages": 1,
+  "fields": {}
+ }
+}

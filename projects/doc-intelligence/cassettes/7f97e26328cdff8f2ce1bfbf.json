@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nider EPA Fellowship ). Pui and\ndings of a\niversity of\nJ. Aerosol Sel. Vol. 11, pp. 435-438. Pergamon Press Lid. 1080. Printed in Great Britain,\nEXPERIMENTAL FILTRATION EFFICIENCIES FOR LARGE PORE NUCLEPORE FILTERS\nG. H. BUZZARD Department of Mechanical Engineering and Materials Science, Duke University, Durham, NC 27706, U.S.A.\nand\nJ. P. BELL Environmental Sciences Research Laboratory, U.S. Environmental Protection Agency, Research Triangle Park, NC 27711, U.S.A.\n(Received 3 December 1979)\nAbstract - Experimental filtration data were collected in an effort to validate an impaction model previously developed and presented. Using a sampler with a 9.5 um pore diameter Nuclepore filter, collection efficiencies were measured for both liquid and solid aerosols over a size range of 2-9 um. Data for the liquid aerosol showed good agreement with the impaction model; however, data for the solid aerosol indicated an appreciably lower collection efficiency than predicted by the model. The liquid aerosol data validate the impaction model. The solid aerosol data indicate particle bounce or reintrainment subsequent to impact and underscore particle capture as a problem to be dealt with if the Nuclepore surface is to be used as a size selective filter.\nINTRODUCTION\nCurrent needs in the field of air pollution monitoring have prompted several investigators to consider the size selective character of Nuclepore surfaces (Melo and Phillips, 1974, 1975; Cahill et al., 1977; Parker et al., 1977; and John et al., 1978). The simplicity of assembling a stacked series of size selective Nuclepore surfaces makes this an ideal means for collecting fractionated samples of atmospheric particulate matter. Parker and Buzzard (1978) presented a theoretical model for the impaction mechanism of aerosol particles upon a Nuclepore surface and show theoretical collection efficiencies based upon the hypothesis that particles which impact upon the filter surface are captured. This hypothesis seems plausible in the case of a sticky or wet aerosol but may be suspect in the case of dry or solid aerosols. The experimental data of Parker and Buzzard were not conclusive, and an attempt was made in the present work to improve upon the experimental data. A limited amount of data was also collected on the loading characteristics of the filter.\nEXPERIMENTAL PROCEDURES\nUsing a 9.5 um pore diameter Nuclepore surface as a primary filter and a 0.4 pm pore diameter Nuclepore surface as a secondary back-up filter, collection efficiencies were measured for both liquid and solid aerosols with particle diameters ranging from 2 to 9 pm. All particles not captured by the primary filter were assumed captured by the secondary filter. Collection efficiencies were determined for the primary filter. Particles were collected by a sampler operating at a face velocity of 10 and 20 cm sec\"1. Face velocity is defined as the volumetric flow rate divided by the total frontal area of the filter. Both aerosols were generated using a vibrating orifice generator, as described by Berglund and Liu (1973), and equipped with a 20 pm orifice. The liquid aerosol was generated from oleic acid and in solution with a mixture of four parts 95% ethyl alcohol and one part distilled water by volume. A satisfactory solid aerosol was difficult to generate. The difficulty seemed to be related to the selection of the proper dye material and the appropriate solvent. Neither laboratory grade nor technical grade methylene blue (supplied by Fisher Scientific) was\ni\n2072211077\n435"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV899q0dDOqYWhMs6V3J7ZsjO9FWP",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"scientific publication\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088191,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 11,
+   "prompt_tokens": 964,
+   "total_tokens": 975,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 45,
+    "engine_ttlt_ms": 125,
+    "pre_inference_ms": 101,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 588,
+    "service_ttlt_ms": 662,
+    "user_visible_ttft_ms": 487
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044527-a048ae24-default-r0-dp0-default"
+  }
+ }
+}

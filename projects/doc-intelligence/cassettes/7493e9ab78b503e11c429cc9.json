@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B04-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD 229 Industrial Rd, Turkey\nRef No .:\nPL-53215.\nInvoice No .:\nINV-53940\nConsignee:\nRiverina Trading Pty Ltd\nContainer:\nTGHU4492083\nMarks:\nRIVERINA/SYDNEY\nPkgs\nDescription\nNet kg\nGross kg\n1213\nDried apricots\n25585.2\n2.6611.9\nTotal packages:\n1213\nTotal gross weight (kg):\n26611.9\nTotal net weight (kg):\n25585.2",
+  "pages": 1,
+  "fields": {}
+ }
+}

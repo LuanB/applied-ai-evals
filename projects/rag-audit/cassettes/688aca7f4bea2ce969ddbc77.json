@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app11-006] (APP 11, paras 11.18, What are the security considerations?)\n11.18 The six terms listed in APP 11, \u2018misuse\u2019, \u2018interference\u2019, \u2018loss\u2019, \u2018unauthorised access\u2019, \u2018unauthorised modification\u2019 and \u2018unauthorised disclosure\u2019, are not defined in the Privacy Act. The following analysis and examples of each term draws on the ordinary meaning of the terms. As the analysis indicates, there is overlap in the meaning of the terms.\n\n[app11-021] (APP 11, paras 11.54\u201311.58, Taking reasonable steps to destroy or deidentify personal information > De-ident)\n11.54 Personal information is de-identified \u2018if the information is no longer about an identifiable individual or an individual who is reasonably identifiable\u2019 (s 6(1)). De-identification is discussed in more detail in Chapter B (Key concepts).\n11.55 An organisation that intends to comply with APP 11.2 by taking reasonable steps to ensure that personal information is de-identified should consider whether de-identification is appropriate in the circumstances. For more information on when and how to de-identify information, and how to manage and mitigate the risk of re-identification, see De-identification and the Privacy Act. [13]\n11.56 De-identification of personal information may be more appropriate than destruction where the de-identified information could provide further value or utility to the organisation or a third party. For example, where:\nan organisation shares de-identified information with researchers, or\nan organisation uses de-identified information to develop new products.\n11.57 Regardless of the de-identification technique chosen, the risk of re-identification must be actively assessed and managed to mitigate this risk. Where it is not possible for the risk of re-identification to be appropriately minimised, the organisation could instead consider taking reasonable steps to destroy the personal information (see paragraphs 11.49 \u2013 11.55 above).\n11.58 Where the personal information is held on a third party\u2019s hardware, such as cloud storage, and the organisation has instructed the third party to de-identify the personal information, reasonable steps to de-identify the personal information would include taking steps to verify that this has occurred.\n[1] See OAIC website <https://www.oaic.gov.au>.\n[2] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012 (Cth), p 86.\n[3] APP 11.3 was introduced by the Privacy and Other Legislation Amendment Act 2024 . APP 11.3 applies to personal information held from 11 December 2024, regardless of whether the information was acquired or created before or after this date. APP 11.3 does not limit APP 11.1, APP 11.2 or any other provision in the Privacy Act.\n[4] Explanatory Memorandum, Privacy and Other Legislation Amendment Bill 2024 (Cth), paragraph 101.\n[5] Explanatory Memorandum, Privacy and Other Legislation Amendment Bill 2024 (Cth), paragraph 102.\n[6] See OAIC website <https://www.oaic.gov.au>. Agencies should also see the Attorney-General\u2019s Department\u2019s Protective Security Policy Framework and the Australian Signals Directorate\u2019s Australian Government Information Security Manual , which set out the Australian Government\u2019s requirements for protective security and standardise information security practices across government.\n\n[app13-011] (APP 13, paras 13.30\u201313.32, Grounds for correcting personal information)\n13.30 The five grounds listed in APP 13 \u2014 \u2018accurate\u2019, \u2018up-to-date\u2019, \u2018complete\u2019, \u2018relevant\u2019 and \u2018not misleading\u2019 \u2014 are not defined in the Privacy Act. The first four terms are listed in APP 10.1, which deals with the quality of personal information that an APP entity can collect, use and disclose. Similar terms are used also in Part V of the FOI Act concerning a person\u2019s right to apply to an agency to amend or annotate personal information (see paragraph 13.26 above).\n13.31 The following analysis of each term draws on the ordinary dictionary meaning of the terms, as well as case law concerning the meaning of those terms in the Privacy Act, FOI Act and other legislation. [5] As the analysis indicates, there is considerable overlap in the meaning of the terms.\n13.32 In applying the terms to personal information, it is necessary to have regard to \u2018the purpose for which it is held\u2019. Personal information may be incorrect having regard to one purpose for which it is held, but not another. For a discussion of relevant considerations where personal information is held for multiple purposes, see paragraph 13.47.\n\n[app9-013] (APP 9, paras 9.35\u20139.39, Using and disclosing government related identifiers > Using or disclosing a gove)\n9.35 An organisation may use or disclose a government related identifier of an individual if a \u2018permitted general situation\u2019 (other than the situations referred to in Items 3, 4 or 5 of the table in subsection 16A(1)) exists in relation to the use or disclosure of the identifier (APP 9.2(d)).\n9.36 Section 16A lists two permitted general situations that apply to the use or disclosure of government related identifiers. The two situations are set out below, and are discussed in Chapter C (Permitted general situations) (including the meaning of relevant terms).\n9.37 An organisation may use or disclose a government related identifier of an individual if:\nthe organisation reasonably believes the use or disclosure is necessary to lessen or prevent a serious threat to the life, health or safety of any individual, or to public health or safety, and\nit is unreasonable or impracticable to obtain consent (s 16A(1), Item 1).\n9.38 An organisation may use or disclose a government related identifier of an individual if:\nthe organisation has reason to suspect that unlawful activity, or misconduct of a serious nature, that relates to the organisation\u2019s functions or activities has been, is being or may be engaged in, and\nthe organisation reasonably believes that the use or disclosure is necessary in order for the organisation to take appropriate action in relation to the matter (s 16A(1), Item 2).\n9.39 For example, this permitted general situation might apply where the organisation uses or discloses a government related identifier, such as a customer\u2019s Centrelink number, as part of an investigation into suspected fraud by a client in relation to the organisation\u2019s functions or activities.\n\n[app13-019] (APP 13, paras 13.48, Being satisfied and taking reasonable steps > Reasonable steps to correct)\n13.48 Special considerations apply to Commonwealth records. The term \u2018Commonwealth record\u2019 is defined in s 3 of the Archives Act and is discussed in more detail in Chapter B (Key concepts). [9] The definition is likely to include, in almost all cases, all personal information held by agencies. It may also include personal information held by contracted service providers. A Commonwealth record can, as a general rule, only be destroyed or altered in accordance with s 24 of the Archives Act. Further, s 26 of the Archives Act makes it an offence to alter a Commonwealth record that is over 15 years old. [10] In relation to such records, and more generally, it may be reasonable (and consistent with statutory requirements) to:\nretain a version of a record which contains incorrect personal information (see paragraph 13.47)\nassociate a statement to clarify that, having regard to the purpose for which the personal information is held, the personal information is not accurate, up-to-date, complete, relevant or is misleading, and either including the correct personal information in the note or cross referencing where it is held (such as in an attachment to the record).\n\nQuestion: What is the maximum civil penalty for a serious interference with privacy under the Privacy Act?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TyJRSO1Jvsamed4ioY8oAARhox",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not contain information about the maximum civil penalty for a serious interference with privacy under the Privacy Act.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089482,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 36,
+   "prompt_tokens": 1812,
+   "total_tokens": 1848,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 41,
+    "engine_ttlt_ms": 251,
+    "pre_inference_ms": 84,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 750,
+    "service_ttlt_ms": 954,
+    "user_visible_ttft_ms": 665
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822214445-b466cd4e-default-r2-dp0-default"
+  }
+ }
+}

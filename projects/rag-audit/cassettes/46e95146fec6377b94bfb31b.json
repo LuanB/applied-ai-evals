@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app13-024] (APP 13, paras 13.63\u201313.64, APP 13 minimum procedural requirements > Timeframe for responding to a request f)\n13.63 APP 13.5 provides that an agency must respond to a request to correct a record or to associate a statement within 30 calendar days. The 30 day time period commences on the day after the day the agency receives the request. An organisation must respond within a reasonable period after the request is made. As a general guide, a reasonable period should not exceed 30 calendar days.\n13.64 The APP entity must respond by correcting the personal information as requested by the individual, or by notifying the individual of its refusal to correct it.\n\n[app12-024] (APP 12, paras 12.66, APP 12 minimum access requirements > Timeframe for responding to a request for a)\n12.66 APP 12.4(a)(i) provides that an agency must \u2018respond\u2019 to a request for access within 30 calendar days. The 30 day time period commences on the day after the day the agency receives the request. The agency must respond by giving access to the personal information that is requested, or by notifying its refusal to give access. If this is impracticable (for example, there is a justifiable need to clarify the scope of an individual\u2019s request, or to locate and assemble the requested information, or to consult a third party), the agency is expected to contact the individual to explain the delay and provide an expected timeframe for finalising the request. These are matters the Information Commissioner may examine if a complaint is made about an agency\u2019s failure to comply with the timeframe in APP 12.4(a).\n\n[app13-000] (APP 13, paras n/a, Key points)\nAPP 13 requires an APP entity to take reasonable steps to correct personal information to ensure that, having regard to the purpose for which it is held, it is accurate, up-to-date, complete, relevant and not misleading.\nThis requirement applies where: the APP entity is satisfied the personal information is inaccurate, out-of-date, incomplete, irrelevant or misleading, having regard to a purpose for which it is held, or the individual requests the entity to correct the personal information.\nthe APP entity is satisfied the personal information is inaccurate, out-of-date, incomplete, irrelevant or misleading, having regard to a purpose for which it is held, or\nthe individual requests the entity to correct the personal information.\nSpecial considerations apply to Commonwealth records, which can only be destroyed or altered in accordance with the Archives Act 1983 (Archives Act).\nAPP 13 also sets out other minimum procedural requirements in relation to correcting personal information, including when an APP entity must: take reasonable steps to notify other APP entities of a correction give notice to the individual which includes reasons and available complaint mechanisms if correction is refused take reasonable steps to associate a statement with personal information it refuses to correct respond to a request for correction or to associate a statement, and not charge an individual for making a request, correcting personal information or associating a statement.\ntake reasonable steps to notify other APP entities of a correction\ngive notice to the individual which includes reasons and available complaint mechanisms if correction is refused\ntake reasonable steps to associate a statement with personal information it refuses to correct\nrespond to a request for correction or to associate a statement, and\nnot charge an individual for making a request, correcting personal information or associating a statement.\nAPP 13 operates alongside and does not replace other informal or legal procedures by which an individual can seek correction of their personal information, including informal arrangements and, for agencies, the Freedom of Information Act 1982 (FOI Act).\n\n[app13-001] (APP 13, paras 13.1\u201313.4, What does APP 13 say?)\n13.1 APP 13.1 provides that an APP entity must take reasonable steps to correct personal information it holds, to ensure it is accurate, up-to-date, complete, relevant and not misleading, having regard to the purpose for which it is held. The shorthand expression used in this chapter is that an APP entity is required to correct \u2018incorrect personal information\u2019.\n13.2 The requirement to take reasonable steps applies in two circumstances:\nwhere an APP entity is satisfied, independently of any request, that personal information it holds is incorrect, or\nwhere an individual requests an APP entity to correct their personal information.\n13.3 Special considerations apply to Commonwealth records. A Commonwealth record can, as a general rule, only be destroyed or altered in accordance with the Archives Act (see paragraph 13.48).\n13.4 APP 13 also sets out other minimum procedural requirements in relation to correcting personal information. An APP entity must:\nupon request by an individual whose personal information has been corrected, take reasonable steps to notify another APP entity of a correction made to personal information that was previously provided to that other entity (APP 13.2)\ngive a written notice to an individual when a correction request is refused, including the reasons for the refusal and the complaint mechanisms available to the individual (APP 13.3)\nupon request by an individual whose correction request has been refused, take reasonable steps to associate a statement with the personal information that the individual believes it to be inaccurate, out-of-date, incomplete, irrelevant or misleading (APP 13.4)\nrespond in a timely manner to an individual\u2019s request to correct personal information or to associate a statement with the personal information (APP 13.5(a))\nnot charge an individual for making a request to correct personal information or associate a statement, or for making a correction or associating a statement (APP 13.5(b)).\n\n[app13-022] (APP 13, paras 13.54\u201313.58, APP 13 minimum procedural requirements > Giving written notice where correction )\n13.54 APP 13.3 provides that if an APP entity refuses to correct personal information as requested by an individual, the entity must give the individual a written notice setting out:\nthe reasons for the refusal, except to the extent that it would be unreasonable to do so\nthe complaint mechanisms available to the individual, and\nany other matters prescribed by regulations made under the Privacy Act.\n13.55 The reasons for refusal should explain, where applicable:\nthat the APP entity does not hold the personal information that the individual wishes to correct\nthat the entity is satisfied that the personal information it holds is accurate, up-to-date, complete, relevant and not misleading having regard to the purposes for which it is held, or\nthat the steps necessary to correct the personal information as requested are not reasonable in the circumstances.\n13.56 An APP entity is not required to provide its reasons for refusing to correct personal information to the extent that it would be unreasonable to do so. This course should be adopted only in justifiable circumstances. An example would be where providing reasons would prejudice an investigation of unlawful activity, or prejudice enforcement action by an enforcement body.\n13.57 The description of the complaint mechanisms available to an individual should explain the internal and external complaint options, and the steps that should be followed. In particular, the individual should be advised that:\na complaint should first be made in writing to the APP entity (s 40(1A))\nthe entity should be given a reasonable time (usually 30 days) to respond\na complaint may then be taken to a recognised external dispute resolution scheme of which the entity is a member (if any), and\nlastly, that a complaint may be made to the Information Commissioner (s 36).\n13.58 Other information can also be included in the notice advising an individual that a request to correct personal information has been refused. The individual should be advised of the right under APP 13.4 to request the APP entity to associate a statement with the personal information (see paragraphs 13.59\u201313.62). An agency could also advise an individual of the parallel right under the FOI Act to apply for a record to be amended or annotated, and of the right to Information Commissioner review of an adverse decision under that Act (see paragraphs 13.25\u201313.29).\n\nQuestion: How long does a federal government agency have to respond to a request to correct someone's personal information?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U0OYnui9sFVyKXdRpRzg1B3I41",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"A federal government agency must respond to a request to correct personal information within 30 calendar days, starting the day after the agency receives the request.\",\"citations\":[\"app13-024\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089484,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 47,
+   "prompt_tokens": 1850,
+   "total_tokens": 1897,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 36,
+    "engine_ttlt_ms": 300,
+    "pre_inference_ms": 106,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 509,
+    "service_ttlt_ms": 797,
+    "user_visible_ttft_ms": 403
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927061419-0a32e689-default-r1-dp0-default"
+  }
+ }
+}

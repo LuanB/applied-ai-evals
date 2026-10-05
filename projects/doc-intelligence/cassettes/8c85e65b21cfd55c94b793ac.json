@@ -1,0 +1,50 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-invoice",
+  "doc": "test-B18-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB\n81 Industrial Rd, Vietnam\nCOMMERCIAL INVOICE\nInvoice No .:\nINV-91474\nDate:\n17/09/2026\nSold to:\nBluegum Food Distributors Pty Ltd\nPacking List No .:\nPL-55216\nTerms of delivery:\nEXW\nCurrency:\nEUR\n**\nDescription\nHS Code\nQty\nUnit price\nAmount\nCashew kernels\n0801.32\n781\n7.14\n5,576.34\nTOTAL EUR:\n5,576.34\nCountry of origin: Vietnam",
+  "pages": 1,
+  "fields": {
+   "CustomerName": {
+    "value": "Bluegum Food Distributors Pty Ltd",
+    "confidence": 0.916
+   },
+   "InvoiceDate": {
+    "value": "2026-09-17",
+    "confidence": 0.977
+   },
+   "InvoiceId": {
+    "value": "INV-91474",
+    "confidence": 0.977
+   },
+   "InvoiceTotal": {
+    "value": 5576.34,
+    "confidence": 0.974
+   },
+   "Items": {
+    "value": null,
+    "confidence": null
+   },
+   "PaymentTerm": {
+    "value": "EXW",
+    "confidence": 0.967
+   },
+   "VendorAddress": {
+    "value": "81 Industrial Rd, Vietnam",
+    "confidence": 0.93
+   },
+   "VendorAddressRecipient": {
+    "value": "NORDIC PINE SAWMILLS AB",
+    "confidence": 0.927
+   },
+   "VendorName": {
+    "value": "NORDIC PINE SAWMILLS AB",
+    "confidence": 0.927
+   }
+  }
+ }
+}

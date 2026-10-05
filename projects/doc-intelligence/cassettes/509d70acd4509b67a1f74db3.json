@@ -1,0 +1,196 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: commercial_invoice\n\nPage (markdown from layout analysis):\n# LANKA SPICE MILLS (PVT) LTD 206 Industrial Rd, Vietnam\n\n\n<table>\n<tr>\n<td>Invoice No .:</td>\n<td>INV-12449</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Date:</td>\n<td colspan=\"2\">01/09/2026</td>\n<td></td>\n</tr>\n<tr>\n<td>Sold to:</td>\n<td colspan=\"2\">Southern Cross Imports Pty Ltd</td>\n<td></td>\n</tr>\n<tr>\n<td>Packing List No .:</td>\n<td colspan=\"2\">PL-18107</td>\n<td></td>\n</tr>\n<tr>\n<td>Terms of delivery:</td>\n<td>FOB</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Currency:</td>\n<td>USD</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Description</td>\n<td>HS Code. Qty</td>\n<td>Unit price</td>\n<td>Amount</td>\n</tr>\n<tr>\n<td>Cashew kernels</td>\n<td>0801.32 888</td>\n<td>21.1</td>\n<td>18,736.80</td>\n</tr>\n<tr>\n<td>TOTAL USD:</td>\n<td>18,736.80</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Country of origin: Vietnam</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</table>\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "invoice_number",
+      "invoice_date",
+      "seller",
+      "buyer",
+      "currency",
+      "total_amount",
+      "incoterm",
+      "hs_code"
+     ],
+     "properties": {
+      "invoice_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "invoice number"
+      },
+      "invoice_date": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "invoice date"
+      },
+      "seller": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "seller / exporter name"
+      },
+      "buyer": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "buyer / importer name"
+      },
+      "currency": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "ISO currency code"
+      },
+      "total_amount": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "invoice total"
+      },
+      "incoterm": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "Incoterm (e.g. FOB, CIF)"
+      },
+      "hs_code": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "HS tariff code"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8CCaoDHSfZ0hS3Gs5QYpIrvQow3",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"invoice_number\":\"INV-12449\",\"invoice_date\":\"01/09/2026\",\"seller\":\"LANKA SPICE MILLS (PVT) LTD 206 Industrial Rd, Vietnam\",\"buyer\":\"Southern Cross Imports Pty Ltd\",\"currency\":\"USD\",\"total_amount\":\"18,736.80\",\"incoterm\":\"FOB\",\"hs_code\":\"0801.32\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088380,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 76,
+   "prompt_tokens": 558,
+   "total_tokens": 634,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 24,
+    "engine_ttlt_ms": 509,
+    "pre_inference_ms": 112,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 561,
+    "service_ttlt_ms": 1039,
+    "user_visible_ttft_ms": 449
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927061522-508530a8-default-r1-dp0-default"
+  }
+ }
+}

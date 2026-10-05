@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-158",
+  "markdown": false
+ },
+ "response": {
+  "content": "1\nPHILIP MORRIS COMPANIES INC.\nINTER-OFFICE CORRESPONDENCE 120 PARK AVENUE, NEW YORK, N.Y 10017\n.\nTO,\nHamish Maxwell\nFROM, George Weissman\nDATE January 25, 1991\nSUBJECT. TELEPHONE CALL FROM JIM BURKE\nJim Burke, from Partnership for a Drug Free America, just called me to say that he had received my letter, and after thinking about it, has decided not to use the cigarette analogy any more in his speeches, and particularly in a large presentation he is going to make in Washington next week.\nHe said he may use the cigarette quitting rate sometime in the future, as an indication that people with a will, can stop a habit. But, he would not in any way, compare it to addiction or drug abuse.\nHe asked me to communicate this to you.\n88-888\n2024300776",
+  "pages": 1,
+  "fields": {}
+ }
+}

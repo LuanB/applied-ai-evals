@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-157",
+  "markdown": false
+ },
+ "response": {
+  "content": "2/9/98 Via FAX CC: JACK Lenzi David Laufer Jin Spector Ellen Muerto KYI ASHI\nNOTE\nDATE:\nFebruary 6, 1998\nTO:\nDistribution\nFROM:\nDavid Nicoli\nRE: Attachment\nThe attached is FYI.\nAttachment\nDISTRIBUTION Bartlett, Tuckie Bushong, David Carney, Alfonso\nLiebengood, Howard McAleer, Dorothy McKittrick, Beverly\nCarothers, Paul Colegrove, Dan Donner, Sally Duggan, Juanita\nNelson, Don Ostronic, John\nReese, Bobby Rothstein, Amy\nGainer, Margaret\nScott, Greg\nScully, Tim\nSmith, Dan\nGraef, Jason Hoel, John\nSorrells, John\nGimbel, Tod Goldman, Rochelle\nWashington, Shuamse\n2074031511",
+  "pages": 1,
+  "fields": {}
+ }
+}

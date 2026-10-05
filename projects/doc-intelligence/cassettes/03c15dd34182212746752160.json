@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-054",
+  "markdown": false
+ },
+ "response": {
+  "content": "Philip Morris USA Confidential\nPARENTAL SMOKING and CHILDHOOD CANCERS\nWalter Hempfling\nA Scientific Information Status Summary April 1997\nDoc. Code:, P0622 SISSChCan\n2505938806",
+  "pages": 1,
+  "fields": {}
+ }
+}

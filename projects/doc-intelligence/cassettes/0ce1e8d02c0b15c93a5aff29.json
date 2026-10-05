@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B00-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "OCEANIC CONTAINER LINE\nSEA WAYBILL\nB/L No .:\nONEY96150123\nShipper:\nMekong Agri Trading Jsc\nConsignee:\nHarbourside Fresh Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nONE HARMONY / 499W\nPort of loading:\nIzmir\nPort of discharge:\nAdelaide\nContainer / Seal:\nTGHU5151370 / SL219255\n458 PACKAGES SAID TO CONTAIN DRIED APRICOTS GROSS WEIGHT 5115.6 KGS INVOICE INV-76369 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

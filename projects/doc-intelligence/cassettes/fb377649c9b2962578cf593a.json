@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B16-05",
+  "markdown": false
+ },
+ "response": {
+  "content": "SAFEHOLD QUARANTINE TREATMENTS\nCertificate No .:\nFC453348\nFumigant:\nSulfuryl fluoride\nDosage rate:\n1500 g-h/m3\nExposure period (hrs):\n24\nDate of fumigation:\n19/08/2026\nContainer No .:\nMSCU4284394\nCommodity :.\nSawn timber, pine, kiln dried\nConsignment link:\nB/L MAEU35625917",
+  "pages": 1,
+  "fields": {}
+ }
+}

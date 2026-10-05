@@ -1,0 +1,51 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-invoice",
+  "doc": "test-B00-01",
+  "markdown": false,
+  "locale": "en-AU"
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH\n115.Industrial Rd, Turkey\nInvoice No .:\nINV-86387\nDate:\n14/07/2026\nSold to:\nWattle & Co Wholesale Pty Ltd\nPacking List No .:\nPL-17602\nTerms of delivery:\nDAP\nCurrency:\nEUR\nDescription\nHS Code\nQty\nUnit price\nAmount\nDried apricots\n0813.10\n1533\n4.81\n7,373.73\nTOTAL EUR:\n7,373.73\nCountry of origin: Turkey",
+  "pages": 1,
+  "fields": {
+   "CustomerName": {
+    "value": "Wattle & Co Wholesale Pty Ltd",
+    "confidence": 0.891
+   },
+   "InvoiceDate": {
+    "value": "2026-07-14",
+    "confidence": 0.985
+   },
+   "InvoiceId": {
+    "value": "INV-86387",
+    "confidence": 0.984
+   },
+   "InvoiceTotal": {
+    "value": 7373.73,
+    "confidence": 0.437
+   },
+   "Items": {
+    "value": null,
+    "confidence": null
+   },
+   "PaymentTerm": {
+    "value": "DAP",
+    "confidence": 0.975
+   },
+   "VendorAddress": {
+    "value": "115.Industrial Rd, Turkey",
+    "confidence": 0.918
+   },
+   "VendorAddressRecipient": {
+    "value": "HANSEATIC FURNITURE GMBH",
+    "confidence": 0.89
+   },
+   "VendorName": {
+    "value": "HANSEATIC FURNITURE GMBH",
+    "confidence": 0.89
+   }
+  }
+ }
+}

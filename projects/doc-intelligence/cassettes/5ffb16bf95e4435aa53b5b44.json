@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B14-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# NATIONAL PLANT PROTECTION ORGANIZATION OF SRI LANKA\n\n\n## PHYTOSANITARY CERTIFICATE\n\nNo .:\n\nPC297333\n\nName of exporter:\n\nAnatolia Dried Fruits A.S ..\n\nDeclared consignee:\n\nKookaburra Home Furnishings Pty Ltd\n\nBotanical name of plants:\n\nPiper nigrum\n\nPlace of origin:\n\nSri Lanka\n\nDeclared means of conveyanceMAERSK KOWLOON\n\nPoint of entry:\n\nSydney\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

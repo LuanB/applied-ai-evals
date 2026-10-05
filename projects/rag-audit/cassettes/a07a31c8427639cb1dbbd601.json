@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[b-007] (B, paras B.37\u2013B.43, Key concepts A to D > Consent)\nB.37 Consent is relevant to the operation of a number of APPs. In some, consent is an exception to a general prohibition against personal information being handled in a particular way (for example, APPs 3.3(a) and 6.1(a)). In others, consent provides authority to handle personal information in a particular way (for example, APPs 7.3, 7.4 and 8.2(b)).\nB.38 Consent means \u2018express consent or implied consent\u2019 (s 6(1)). The four key elements of consent are:\nthe individual is adequately informed before giving consent\nthe individual gives consent voluntarily\nthe consent is current and specific, and\nthe individual has the capacity to understand and communicate their consent.\nB.39 Express consent is given explicitly, either orally or in writing. This could include a handwritten signature, an oral statement, or use of an electronic medium or voice signature to signify agreement.\nB.40 Implied consent arises where consent may reasonably be inferred in the circumstances from the conduct of the individual and the APP entity.\nB.41 An APP entity should not assume that an individual has consented to a collection, use or disclosure that appears to be advantageous to that person. Nor can an entity establish implied consent by asserting that if the individual knew about the benefits of the collection, use or disclosure, they would probably consent to it.\nB.42 Generally, it should not be assumed that an individual has given consent on the basis alone that they did not object to a proposal to handle personal information in a particular way. An APP entity cannot infer consent simply because it provided an individual with notice of a proposed collection, use or disclosure of personal information. It will be difficult for an entity to establish that an individual\u2019s silence can be taken as consent. Consent may not be implied if an individual\u2019s intent is ambiguous or there is reasonable doubt about the individual\u2019s intention.\nB.43 Use of an opt-out mechanism to infer an individual\u2019s consent will only be appropriate in limited circumstances, as the individual\u2019s intention in failing to opt-out may be ambiguous. An APP entity will be in a better position to establish the individual\u2019s implied consent the more that the following factors, where relevant, are met:\n\n[app7-008] (APP 7, paras 7.23, Using and disclosing personal information for the purpose of direct marketing wh)\n7.23 Consent is defined in s 6(1) as \u2018express consent or implied consent\u2019 and is discussed generally in Chapter B (Key concepts). The four key elements of consent are:\nthe individual is adequately informed before giving consent\nthe individual gives consent voluntarily\nthe consent is current and specific, and\nthe individual has the capacity to understand and communicate their consent.\n\n[b-008] (B, paras B.44\u2013B.49, Key concepts A to D > Consent)\nthe opt out option was clearly and prominently presented\nit is likely that the individual received and read the information about the proposed collection, use or disclosure, and the option to opt out\nthe individual was given information on the implications of not opting out\nthe opt out option was freely available and not bundled with other purposes\nit was easy for the individual to exercise the option to opt out, for example, there was little or no financial cost or effort required by the individual\nthe consequences of failing to opt out are not serious\nan individual who opts out at a later time will, as far as practicable, be placed in the position as if they had opted out earlier.\nB.44 An APP entity should generally seek express consent from an individual before handling the individual\u2019s sensitive information, given the greater privacy impact this could have.\nB.45 An APP entity should as far as practicable implement procedures and systems to obtain and record consent. This may resolve any doubt about whether consent was given (either on the basis of express or implied consent).\nB.46 Consent is voluntary if an individual has a genuine opportunity to provide or withhold consent. Consent is not voluntary where there is duress, coercion or pressure that could overpower the person\u2019s will.\nB.47 Factors relevant to deciding whether consent is voluntary include:\nthe alternatives open to the individual, if they choose not to consent\nthe seriousness of any consequences if an individual refuses to consent\nany adverse consequences for family members or associates of the individual if the individual refuses to consent.\nB.48 Bundled consent refers to the practice of an APP entity \u2018bundling\u2019 together multiple requests for an individual\u2019s consent to a wide range of collections, uses and disclosures of personal information, without giving the individual the opportunity to choose which collections, uses and disclosures they agree to and which they do not.\nB.49 This practice has the potential to undermine the voluntary nature of the consent. If a bundled consent is contemplated, an APP entity could consider whether:\nit is practicable and reasonable to give the individual the opportunity to refuse consent to one or more proposed collections, uses and/or disclosures\n\n[b-010] (B, paras B.55\u2013B.59, Key concepts A to D > Consent)\nB.55 An individual must have the capacity to consent. This means that the individual is capable of understanding the nature of a consent decision, including the effect of giving or withholding consent, forming a view based on reasoned judgement and how to communicate a consent decision. An APP entity can ordinarily presume that an individual has the capacity to consent, unless there is something to alert it otherwise, for example, the individual is a child or young person (see below). If an entity is uncertain as to whether an individual has capacity to consent at a particular time, it should not rely on any statement of consent given by the individual at that time.\nB.56 Issues that could affect an individual\u2019s capacity to consent include:\nage\nphysical or mental disability\ntemporary incapacity, for example during a psychotic episode, a temporary psychiatric illness, or because the individual is unconscious, in severe distress or suffering dementia\nlimited understanding of English.\nB.57 An APP entity should consider whether any such issue could be addressed by providing the individual with appropriate support to enable them to have capacity to consent. If an individual does not have capacity to consent, even with support or the provision of additional resources such as an interpreter or alternative communication methods, and consent is required, an entity should consider who can act on the individual\u2019s behalf. Options include:\na guardian\nsomeone with an enduring power of attorney\na person recognised by other relevant laws, for example in NSW, a \u2018person responsible\u2019 under the Guardianship Act 1987 (NSW) (this may be an individual\u2019s spouse, partner, carer, family member or close friend), or\na person who has been nominated in writing by the individual while they were capable of giving consent.\nB.58 An individual who lacks the capacity to consent should nevertheless be involved, as far as practicable, in any decision-making process. To the extent practicable in the circumstances, an APP entity should ensure that privacy issues are discussed with individuals who have impaired decision-making capacity in a way that is understandable and comprehensible.\nB.59 The Privacy Act does not specify an age after which individuals can make their own privacy decisions. An APP entity will need to determine on a case-by-case basis whether an individual under the age of 18 has the capacity to consent.\n\n[app3-012] (APP 3, paras 3.31\u20133.36, Collecting sensitive information)\n3.31 APP 3.3 imposes an additional requirement of consent for collecting sensitive information about an individual. Unless an exception applies, an APP entity must:\nsatisfy the criteria above, i.e. the collection of the sensitive information must be reasonably necessary for (or, for agencies, directly related to) one or more of the entity\u2019s functions or activities, and\nthe individual about whom the sensitive information relates must consent to the collection (APP 3.3(a)).\n3.32 \u2018Sensitive information\u2019 is defined in s 6(1), and is discussed in more detail in Chapter B (Key concepts). \u2018Consent\u2019 is defined in s 6(1) as \u2018express consent or implied consent\u2019, and is discussed in more detail in Chapter B (Key concepts). The four key elements of consent are:\nthe individual is adequately informed before giving consent\nthe individual gives consent voluntarily\nthe consent is current and specific, and\nthe individual has the capacity to understand and communicate their consent.\n3.33 An APP entity should generally seek express consent from an individual before collecting the individual\u2019s sensitive information, given the greater privacy impact this could have.\n3.34 Generally, it should not be assumed that an individual has given consent on the basis alone that they did not object to a proposal to handle personal information in a particular way. An APP entity cannot infer consent simply because they have provided individuals with notice of a proposed collection of personal information (including sensitive information). This is because all four elements of consent are unlikely to have been satisfied. Further notice is required to ensure informed consent can be provided.\n3.35 An APP entity should exercise particular caution when using automated collection methods such as data scraping or third-party tracking pixels, as these could inadvertently be configured to collect sensitive information.\n3.36 APP 3.4 lists five exceptions to the requirements outlined in paragraph 3.31. These are considered below.\n\nQuestion: What are the four key elements of valid consent under the privacy guidelines?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TqXK6EXRX5VetokDWeyEyjPXSU",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The four key elements of valid consent are: the individual is adequately informed before giving consent; the individual gives consent voluntarily; the consent is current and specific; and the individual has the capacity to understand and communicate their consent.\",\"citations\":[\"b-007\",\"app7-008\",\"app3-012\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089474,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 71,
+   "prompt_tokens": 2118,
+   "total_tokens": 2189,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 64,
+    "engine_ttlt_ms": 596,
+    "pre_inference_ms": 106,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 721,
+    "service_ttlt_ms": 1137,
+    "user_visible_ttft_ms": 616
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930073022-65635bb1-default-r1-dp0-default"
+  }
+ }
+}

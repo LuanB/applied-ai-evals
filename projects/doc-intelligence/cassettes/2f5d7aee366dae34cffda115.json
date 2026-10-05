@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B15-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\nSEA WAYBILL\nB/L No .:\nHanseatic Furniture GmbH\nShipper:\nWattle & Co Wholesale Pty Ltd\nConsignee:\nSame as consignee\nNotify party:\nVessel / Voyage:\nEVER GIVEN II / 218E\nPort of loading:\nColombo\nPort of discharge:\nBrisbane\nTGHU8859774 / SL354631\nContainer / Seal:\nONEY66948127\n456 PACKAGES SAID TO CONTAIN BLACK PEPPER, WHOLE\nGROSS WEIGHT 9447.3. KGS INVOICE INV-69686",
+  "pages": 1,
+  "fields": {}
+ }
+}

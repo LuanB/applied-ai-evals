@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app12-014] (APP 12, paras 12.40\u201312.41, Refusing to give access under APP 12 \u2014 organisations > The request for access is)\n12.40 A request should not be refused on this ground unless there is a clear and convincing basis for deciding that a request is frivolous or vexatious. It is not a sufficient basis, for example, that a request would cause inconvenience or irritation to an organisation.\n12.41 The following are given as examples of requests that may be treated as frivolous or vexatious:\nRepeated requests for access to personal information that has already been provided to the requester.\nA request that contains offensive or abusive language, or that does not appear to be a genuine request for personal information.\nA repeat request for personal information that an organisation has earlier explained to an individual it does not hold, has been destroyed, or cannot be located after a reasonable search.\nA request made for the apparent purpose of harassing or intimidating the staff of an organisation, or interfering unreasonably with its operations.\n\n[app12-011] (APP 12, paras 12.33\u201312.34, Refusing to give access under APP 12 \u2014 organisations)\n12.33 APP 12.3 lists ten grounds on which an organisation can refuse to give access to personal information. It is nevertheless open to an organisation not to rely on any such ground and to provide access upon request, unless disclosure is prohibited. Before relying on any of these grounds an organisation should consider whether redacting some information would enable access to be provided (for example, redacting personal information about another person).\n12.34 The grounds, which are considered separately below, are:\nthe organisation reasonably believes that giving access would pose a serious threat to the life, health or safety of any individual, or to public health or public safety (APP 12.3(a))\ngiving access would have an unreasonable impact on the privacy of other individuals (APP 12.3(b))\nthe request for access is frivolous or vexatious (APP 12.3(c))\nthe information relates to existing or anticipated legal proceedings between the organisation and the individual, and would not be accessible by the process of discovery in those proceedings (APP 12.3(d))\ngiving access would reveal the intentions of the organisation in relation to negotiations with the individual in such a way as to prejudice those negotiations (APP 12.3(e))\ngiving access would be unlawful (APP 12.3(f))\ndenying access is required or authorised by or under an Australian law or a court/tribunal order (APP 12.3(g))\nthe organisation has reason to suspect that unlawful activity, or misconduct of a serious nature, that relates to the organisation\u2019s functions or activities has been, is being or may be engaged in and giving access would be likely to prejudice the taking of appropriate action in relation to the matter (APP 12.3(h))\ngiving access would be likely to prejudice one or more enforcement related activities conducted by, or on behalf of, an enforcement body (APP 12.3(i))\ngiving access would reveal evaluative information generated within the organisation in connection with a commercially sensitive decision\u2011making process (APP 12.3(j)).\n\n[app12-008] (APP 12, paras 12.25\u201312.26, Refusing to give access under APP 12 \u2014 agencies)\n12.25 An agency is not required by APP 12 to give access to personal information if the agency is required or authorised to refuse access to that information by or under:\nthe FOI Act (APP 12.2(b)(i))\nany other Act of the Commonwealth, or a Norfolk Island enactment, that provides for access by persons to documents (APP 12.2(b)(ii)).\n12.26 The meaning of \u2018required or authorised\u2019 is discussed in Chapter B (Key concepts). In summary, an agency is \u2018required\u2019 to refuse access by an Act that prohibits the disclosure of the personal information; and an agency is \u2018authorised\u2019 to refuse access by an Act that authorises or confers discretion on the agency to refuse a request for access to the personal information.\n\n[app12-010] (APP 12, paras 12.31\u201312.32, Refusing to give access under APP 12 \u2014 agencies > Required or authorised to refu)\n12.31 APP 12.2(b)(ii) provides that an agency is not required to give access to personal information if it is required or authorised to refuse to give access by another Act that provides for access by persons to documents. An example is a statutory secrecy provision that requires or authorises that access be refused in certain circumstances.\n12.32 A further example is that the National Archives of Australia (NAA) is authorised to refuse access to certain \u2018exempt records\u2019 under the Archives Act 1983 (the Archives Act). The Archives Act provides that the NAA must make available for public access Commonwealth records in the open access period that are in the care of the NAA and that are not exempt records (s 31 of the Archives Act). The categories of exempt records include information whose disclosure would constitute a breach of confidence, would involve the unreasonable disclosure of information relating to the personal affairs of any person, or would unreasonably affect a person adversely in relation to his or her business, financial or professional affairs (s 33 of the Archives Act). [9]\n\n[app12-009] (APP 12, paras 12.27\u201312.30, Refusing to give access under APP 12 \u2014 agencies > Authority to refuse access und)\n12.27 The FOI Act lists several grounds on which an agency can refuse a request under the Act for access to documents. An agency may rely on any of those grounds to refuse access under APP 12. It is nevertheless open to an agency not to rely on any such ground and to provide access upon request, unless disclosure is prohibited, for example, by a secrecy provision. [7]\n12.28 The grounds on which an access request can be declined under the FOI Act include: [8]\na document is an exempt document under Part IV, Division 2 of the FOI Act, for example, the document is a Cabinet document, is subject to legal professional privilege, contains material obtained in confidence, or a secrecy provision applies\na document is a conditionally exempt document under Part IV, Division 3 of the FOI Act, for example, the document contains deliberative matter, or disclosure of the document would involve the unreasonable disclosure of personal information about another person and it would be contrary to the public interest to release the document at that time\nthe individual is not entitled to obtain access to a document of the kind requested, for example, the document is available for purchase from an agency (FOI Act, ss 12, 13)\nproviding access in the terms requested by a person would substantially and unreasonably divert an agency\u2019s resources from its other operations (s 24AA)\nprocessing a person\u2019s request would require an agency to disclose the existence or non\u2011existence of a document, where that would otherwise be exempt information (s 25).\n12.29 The FOI Act specifies consultation processes that may apply to requests made under that Act, for example, where a \u2018practical refusal reason\u2019 may apply (FOI Act, s 24) to the request, or where a requested document contains a third party\u2019s personal or business information (FOI Act, ss 27, 27A). An agency is not required to undertake any of those consultation processes before refusing access on any of those grounds under APP 12. This is required only if the person decides to make a request under the FOI Act.\n12.30 A decision to refuse access under APP 12.2(b)(i) (on one of the FOI grounds listed above) is a decision made under the Privacy Act, not the FOI Act. As required by APP 12.9, the agency must provide the individual with a written notice that sets out the reasons for the refusal and the complaint mechanisms available to the individual (see paragraph 12.87 below). The individual may have a right to complain to the Information Commissioner under the Privacy Act. After investigation, the Commissioner may make a determination that the agency has failed to comply with APP 12 and require, for example, that the agency give access (Privacy Act, s 52). However, the individual will not have a right to seek internal review or Information Commissioner review under the FOI Act.\n\nQuestion: Can an organisation refuse an access request that is frivolous or vexatious?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U6DSBO2vE2jvGXY0vmxQg3GX6j",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, an organisation can refuse an access request if it is frivolous or vexatious, but there must be a clear and convincing basis for this decision. Examples include repeated requests for the same information, requests with offensive language, or requests made to harass staff. It is not sufficient to refuse simply because the request causes inconvenience or irritation.\",\"citations\":[\"app12-014\",\"app12-011\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089490,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 92,
+   "prompt_tokens": 1934,
+   "total_tokens": 2026,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 48,
+    "engine_ttlt_ms": 627,
+    "pre_inference_ms": 83,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 654,
+    "service_ttlt_ms": 1229,
+    "user_visible_ttft_ms": 571
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102744-d420b45c-default-r2-dp0-default"
+  }
+ }
+}

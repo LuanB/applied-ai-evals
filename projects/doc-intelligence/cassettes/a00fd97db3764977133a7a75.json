@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nCommercial Analysts Company 352 Park Avenue South New York, NY \" 10010\nJob # 4464 August, 1984\nVSLO TRACKING STUDY MAIN QUESTIONNAIRE-\n4a. Now, I'd like you to think about all the cigarette brands that come in a shape different from the standard round shape cigarette. Please tell me the names of all the cigarette brands that you can think of that come in a shape different from the standard round shape. (PROBE) Any others? (RECORD ON GRID BELOW UNDER Q. 4a)\nAnd, what brands of cigarettes that come in a shape different from the standard round shape cigarette have you seen advertising for in the past 3 months? (PROBE) Any others? (RECORD ON GRID BELOW UNDER Q. 4b)\n5a. Now, I'd like you to think about all the hundred millimeter or longer cigarette brands, that is, those that are longer than King size, that you've ever heard of. Please tell me the names of all of them that you can think of. (PROBE) Any others? (RECORD ON GRID BELOW UNDER Q. 5a)\nAnd, what hundred millimeter or longer brands do you remember seeing advertising for in the past 3 months? (PROBE) Any others? (RECORD ON GRID BELOW UNDER Q. 5b)\n(ASK Q. 6 FOR EACH LISTED \"A\" BRAND NOT MENTIONED IN Q. 4a - 5b)\n6. Have you ever heard of. . . (READ BRAND)? (RECORD ON GRID BELOW UNDER Q. 6)\n(ASK Q. 7 FOR EACH LISTED \"A\" BRAND NOT MENTIONED IN Q. 46 OR Q. 5b, BUT MENTIONED IN Q. 4a, Q. 5a OR Q. 6)\n7. In the last three months or so, do you remember any advertising for (BRAND) ? How about: . . (REPEAT FOR ALL APPROPRIATE BRANDS) (RECORD ON GRID BELOW UDNER Q. 7)\n(ASK Q. 8 FOR EACH LISTED \"A\" BRAND MENTIONED IN 0. 4a - 0. 6)\nAnd, in the last 3 months, have you tried. . (BRAND)? How about. . . (REPEAT FOR ALL APPROPRIATE BRANDS) (RECORD ON GRID BELOW UNDER Q. 8)\n(ASK Q. 9 FOR EACH LISTED \"A\" BRAND \"YES\" IN 0. 8)\n9. In the last 3 months have you bought one or more packs of (READ BRAND) ? How about. . . (REPEAT FOR ALL APPROPRIATE BRANDS) (RECORD ON GRID BELOW UNDER Q. 9)\nLIST \"A\" START AT:\n0. 4a Unaided Shape\n9. 4b Shape Adver.\n0. 5a Unaided 100's\n0. 5b 100's Adver.\n9. 6 Ai ded Aware Yes No\n0. 7 Ai ded Adver. Yes No Yes No\n0. 8 Tried\n0. 9 Bought 3 Mos. Yes No\n[ ] Benson & Hedges (Deluxe) Ultra\nLights. . Benson & Hedges 100's Lights Benson & Hedges 100's\n[ ] Eve Slim Lights.\nEve Lights 120's\n797 94 95\n-5\n-4\n-4\n$13 $13 $13 $ 63\n[ ] More Lights. More . .\nSaratoga\n-8\n-9\n.9\n[ ] Virginia Slims Ovals\n-0\n-U\n-0\n-0\n-X\n-X\n-x\n-y\n-y\n-y\nLIST \"B\" UNAIDED ONLY\nCarTton 100's. .\nKent 100's .\n-2\n\u0e2a\u0e38\u0e02\n-- Ad Aware Q. 4b,5b,7. . . [ ]\nKool 100's .\n.4\nMarlboro 100's\n-5\n-- Trier (Q. 8) . . . . . [ ]\nMarlboro Lights 100's.\n-6\n-6\n-- Aware and Not Tried. . . [ ]\nPall Mall 100's.\n-8\n-9\n-9\nVantage 100's.\n-0\n-0\nWinston 100's.\nWinston Lights 100's\nOther (SPECIFY)\nNone\n-0\n-0\n747199799917 -4\nCHECK IF VSLO:\nKent III 100's\nMerit 100's.\n-7\nParliament 100's\n== Not Aware. . .[]\n-2\n3838 38 38\n[ ] Satin.\nVirginia Slims Lights. Virginia Slims . .\n-y\n-8\n-9\n\u0baa\u0b9f\n2040094436"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89HDlGxp5XVvwjmFhsgjt92OcCB",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"questionnaire\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088199,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 1236,
+   "total_tokens": 1246,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 31,
+    "engine_ttlt_ms": 103,
+    "pre_inference_ms": 86,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 739,
+    "service_ttlt_ms": 892,
+    "user_visible_ttft_ms": 653
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822214445-dc6f8bc1-default-r1-dp0-default"
+  }
+ }
+}

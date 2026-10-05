@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B16-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - SWEDEN\nCertificate No .:\nEX200984\nExporter:\nGolden Valley Exports Co. Ltd\nConsignee:\nSouthern Cross Imports Pty Ltd\nMeans of transport:\nMSC ARIANNA from Gothenburg\nHS heading:\n4407.11\nGoods:\nSawn timber, pine, kiln dried\nCountry of origin:\nSweden\nWe certify the goods described in invoice INV-84536 originate in Sweden.",
+  "pages": 1,
+  "fields": {}
+ }
+}

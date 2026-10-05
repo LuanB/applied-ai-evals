@@ -1,0 +1,153 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: commercial_invoice, packing_list, bill_of_lading, certificate_of_origin, phytosanitary_certificate, fumigation_certificate\n\nOCR text of the page:\nLANKA SPICE MILLS (PVT) LTD 112 Industrial Rd, Vietnam\nPACKING LIST\nRef No .:\nPL-98454\nInvoice No .:\nINV-10420\nConsignee:\nHarbourside Fresh Pty Ltd.\nContainer:\nMSKU7382045\nMarks:\nHARBOURSIDE/MELBOURNE\nPkgs\nDescription\nNet kg\nGross kg\n1436 Cashew kernels\n15803.5 17487.8\nTotal packages:\n1436\nTotal gross weight (kg):\n17487.8\nTotal net weight (kg):\n15803.5."
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "commercial_invoice",
+        "packing_list",
+        "bill_of_lading",
+        "certificate_of_origin",
+        "phytosanitary_certificate",
+        "fumigation_certificate"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8AN8x6SD0E4F4tHBLwEEQQcgZcs",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"packing_list\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088267,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 297,
+   "total_tokens": 307,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 34,
+    "engine_ttlt_ms": 115,
+    "pre_inference_ms": 90,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 434,
+    "service_ttlt_ms": 577,
+    "user_visible_ttft_ms": 344
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044429-7adf8486-default-r1-dp0-default"
+  }
+ }
+}

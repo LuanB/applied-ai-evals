@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nDATE - IN 2 5. JAN. 1991\nP romaco\nAGENCEMENT ET EQUIPEMENT .QE MAGASINS\nIMPORTATION\nDEPORTATION\nREPRESENTATIONS\nINE ( ** ) 660.24.21 POSTAL 248.34 -**\n...\n. N\u00ba 310-1595900-45\n400.428 ....\n.RE N\u00ba\n0121/4036\nC.R.C. s.p.r.l. \" (Contracting Research Center) \u00b7 Avenue du P\u00e9age 1Clc 1932 ZAVENTEM\n-\nT. V. A.\n435 Q85\n085\nBRUXELLES, LE 21 Janvier 1991\nD\u00c9SIGNATION\nPRIX UNITAIRE\nPRIX TOTAL\nVotre Commande !! \u00ba 282 du 21/12/90\n1\n1\nKit comprenant .1. tube de remplacement 1 adaptateur et un starter pour Insectaflash\". Appareil Insectoflash type 40C.T\n700,- 8.500 .-_ 9.200,-\nBTW ? ?\n0\nMat\u00e9riel livr\u00e9 le 7 Janvier 1991\n2028697458"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89E7KkMNhOFowLP8R0dMtWVOWhu",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"invoice\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088196,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 447,
+   "total_tokens": 456,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 24,
+    "engine_ttlt_ms": 83,
+    "pre_inference_ms": 71,
+    "service_tbt_ms": 16,
+    "service_ttft_ms": 678,
+    "service_ttlt_ms": 820,
+    "user_visible_ttft_ms": 607
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260925051450-1f645003-default-r0-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-126",
+  "markdown": false
+ },
+ "response": {
+  "content": "L\nFTR project \"PLEIADE\"\n2023185230",
+  "pages": 1,
+  "fields": {}
+ }
+}

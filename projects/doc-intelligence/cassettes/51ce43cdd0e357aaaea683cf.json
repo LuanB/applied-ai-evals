@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B11-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\nOCEAN BILL OF LADING\nB/L No .:\nMEDU15819713\nShipper:\nSierra Citrus Cooperativa\nConsignee:\nHarbourside Fresh Pty Ltd.\nNotify party:\n\"Same as consignee\nVessel / Voyage:\nONE HARMONY / 489N\nPort of loading:\nOakland\nPort of discharge:\nBrisbane\nContainer / Seal:\nTGHU6289625 / SL42.6825\n1015 PACKAGES. SAID TO CONTAIN WALNUTS, IN SHELL GROSS WEIGHT 13658.9 KGS INVOICE INV-13579 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

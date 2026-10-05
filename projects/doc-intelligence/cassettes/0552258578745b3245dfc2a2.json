@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nCIGARETTE_SPECIFICATION.\nMANUFACTURING CENTER MARLBORO 100 REGULAR FTB BRAND CODE-00530 (STD)\nEFFECTIVE DATE: 02/12/1997 STANDARD PRODUCTION\nCIGARETTE LENGTH -\n98.0\nMM FTC TAR\n16.0 MG/CIGT 15.5 - 16.4 :\nTOBACCO ROD CIRCUM.\n24.80\nMM\nTOBACCO ROD LENGTH\n71.0\nMM\nFILTER LENGTH\n27.0\nMM\nTIPPING LENGTH\n31.500\nMM\nTOTAL R.T.D.\n-\n117\nMM H20\nDILUTION TARGET\n14.0 +/- 5.0 %\nTIPPING PAPER 1 63MM X 3500M CORK DGL KC GSR-757 M2 14-240-A LASER PERF.\nGLUE ROLLER/ : REFER TO ENGINEERINGS GLUE ROLLER VARIABLE PARTS CATALOG -\nTIPPING INFORMATION : BY TYPE-TIPPER AND CIGARETTE BRAND-CODE-SPECIFICATION\n: BETWEEN ROWS/ DILUTION TYPE /BAND WIDTH/ TPR. CUT LENGTH/DRY PATCH SIZE 24.00 PRE-PERF TIPPING NA: 1 ROW 27.00 8.5 X 20MM\nTIPPING ADHESIVE : NATIONAL 32-2037\nEVA 61-065-A\nSEAM ADHESIVE : NATIONAL 32-2100 (PROTOS 100/MK 10) EVA 61-490-A\nSTD. FILLER - PACK O.V. : A0012 - 13.25% MARLBORO REGULAR FTB\nCIGARETTE PAPER : 27.00MM X 6700M 33CU/0.6%/100% FLAX 10-774-A\nINK *INK FOR PRINT DIE AND EXPORT OVERPRINTS* : MARLBORO BLACK +37077CMK 9/MK 10/PROTOS) 60-915-A\nPRINT DIE : MARLBORO\nSAP CROSS REFERENCE #: CIGT : CG0011 FILTER: 07016A\n1\n2069720953\nREASON FOR CHANGE : CIGARETTE TOTAL RTD TARGET CHANGED FROM 121MM H20 : TO 117MM H20 TO REFLECT CURRENT PRODUCTION : AVERAGE. NO OTHER CHANGES. OK TO MIX FINISHED : CIGTS.\nPREPARED BY PREPARATION DATE : 2/11/97\n: ALLYSON M. MILBURN\nPRINTING DATE\n-\n1/19/02\nPRINTING TIME\n: 12:58:40\nAPPROVED BY:\nSUPERCEDES SPECIFICATION DATED: 3/13/96"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV899m6fyYzJs3FKwkrwGXl8AqkSF",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"specification\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088191,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 797,
+   "total_tokens": 807,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 16,
+    "engine_ttft_ms": 55,
+    "engine_ttlt_ms": 226,
+    "pre_inference_ms": 89,
+    "service_tbt_ms": 16,
+    "service_ttft_ms": 567,
+    "service_ttlt_ms": 732,
+    "user_visible_ttft_ms": 478
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927152840-13a18399-default-r2-dp0-default"
+  }
+ }
+}

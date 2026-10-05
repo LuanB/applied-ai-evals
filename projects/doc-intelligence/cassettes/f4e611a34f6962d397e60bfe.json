@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nInvoice\nRemit To: Clarion Marketing and Communications P.O. Box 77204 Detroit, MI 48273\nClarion Marketing and Communication 340 Pemberwick Road Greenwich, Connecticut 06831\n203.531.3600 FAX: 203.532.0116\nAPPROVALS\nDLU 12/16\nvig. 2/17 R-65 00065\nClarion\nJanuary 27, 1993\nMr. Charles Brown\nProduct Manager, Misty\nThe American Tobacco Company Six Stamford Forum P.O. Box 10380 Stamford, CT 06904-2380\nInvoice #01-0273 Job #DAM-M-4781, 4998ACCOUNT #\nHIS-DRM-PRO\nMisty Look Book - Data Entry Processing\nData Entry \"Look Book\" Requests (4,384 pcs. @ $470.60/M)\n$2,063.11\nOutput labvels for fulfillment\n58.82\nProgramming for data entry\n346.48\nManagement Fee covering supervision of data entry and reporting\n- A. Kominsky (19.75 hrs.)\n1,659.00\nMisc. (copies, freight, faxes, etc.)\n317.44\n$4,444.85\nConn. Tax - 6% (On $1659.00)\n99.54\nTotal Due & Payable Upon Receipt\n$4,544.39\n(As per ATCo. authorization R-65/Misty Trial #4 Direct Marketing)\nPlease remit to: Clarion Marketing and Communications, P.O. Box 77204, Detroit, MI 48278"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89ENBBq409w7W4Axik5aKDDD4Xp",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"invoice\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088196,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 540,
+   "total_tokens": 549,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 35,
+    "engine_ttlt_ms": 114,
+    "pre_inference_ms": 90,
+    "service_tbt_ms": 21,
+    "service_ttft_ms": 1608,
+    "service_ttlt_ms": 1797,
+    "user_visible_ttft_ms": 1518
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044438-3c9641ef-default-r2-dp0-default"
+  }
+ }
+}

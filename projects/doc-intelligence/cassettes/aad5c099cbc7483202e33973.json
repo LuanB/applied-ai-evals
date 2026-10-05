@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B19-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\n\n\n# OCEAN BILL OF LADING\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MEDU38929507</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Pacific Rim Timber Pte Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Wattle &amp; Co Wholesale Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>EVER GIVEN II / 586S</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Hamburg</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Fremantle</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>MSKU9489387 / SL321547</td>\n</tr>\n</table>\n\n\n254 PACKAGES SAID TO CONTAIN WOODEN DINING CHAIRS\n\nGROSS WEIGHT 3372.3 KGS\nINVOICE INV-76393.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

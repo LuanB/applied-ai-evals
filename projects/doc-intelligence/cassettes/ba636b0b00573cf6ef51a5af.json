@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-001",
+  "markdown": false
+ },
+ "response": {
+  "content": "RJR INTER-OFFICE MEMORANDUM\nSUJBECT: WINCHESTER TOP DRESSING\nCHANGE\nDATE: March 26, 1985\nTO: Mr. Donald Royal 64 Blending\nFROM: C. D. McGee\nFlavor Technology Division\nApplied R&D\nEffective April 1, 1985 the top dressing for WINCHESTER will change from S-39 to S-59. The change is necessary for meet- ing the flavor protocol requested by management.\nThe application rate remains the same (8.82 lbs). The pounds per gallon has changed slightly. S-39 is 8.64 pounds/ gallon and S-59 is 8.61.\nC.D.M. Ju C. D. McGee\n/mpm\nXc: Dr. B. M. Lawrence Mr. K. W. Swicegood Mr. G. W. Fearrington IMr. F. E. Pope\n50508 2090",
+  "pages": 1,
+  "fields": {}
+ }
+}

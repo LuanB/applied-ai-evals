@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B09-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\nOCEAN BILL OF LADING\nB/L No .: \"\nMAEU75999823\nShipper:\nCascade: Orchards LLC\nConsignee:\nWattle & Co Wholesale Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nMSC ARIANNA / 407N\nPort of loading:\nGothenburg\nPort of discharge:\nFremantle\nContainer / Seal:\nTGHU9416753 / SL768757\n526 PACKAGES SAID TO CONTAIN SAWN TIMBER, PINE, KILN DRIED GROSS WEIGHT 11039.2 KGS INVOICE INV-25096 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

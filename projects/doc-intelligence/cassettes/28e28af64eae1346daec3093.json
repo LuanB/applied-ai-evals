@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B03-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "ANATOLIA DRIED FRUITS A.S. 259 Industrial Rd, Turkey\nWEIGHT & PACKING NOTE\nRef No .;\nPL-94837\nInvoice No .:\nINV-24735\nConsignee:\nRiverina Trading Pty Ltd\nContainer:\nTGHU6646257\nMarks:\nRIVERINA/ADELAIDE\nPkgs\nDescription\nNet kg Gross kg\n20539.0 21595.9\n1453 Dried apricots\nTotal packages:\n1453\nTotal gross weight (kg):\n21595.9\nTotal net weight (kg):\n20539.0",
+  "pages": 1,
+  "fields": {}
+ }
+}

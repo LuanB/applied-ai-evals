@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B08-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\nB/L No ::\nCMDU50801816\nShipper:\n: Cascade Orchards LLC\nConsignee:\nSouthern Cross Imports Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCMA CGM TAGE /. 554S\nPort of loading:\nHo Chi Minh City\nPort of discharge:\nBrisbane\nContainer / Seal:\nMSKU7375393 / SL230238\n547 PACKAGES SAID TO CONTAIN CASHEW KERNELS GROSS WEIGHT 5559.9 KGS INVOICE INV-65533",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-139",
+  "markdown": false
+ },
+ "response": {
+  "content": "1\nCROSSLEY, S-D SURVEYS, INC. 405 Park Avenue New York 22, New York\nRespondent's Name\nInterviewer's Name\n#13382 February, 1964\nCluster Frame #\nCIGARETTE STUDY \"SMOKER\" QUESTIONNAIRE\n(SECTION \"A\" CONTINUED)\n1. CURRENT SMOKING BEHAVIOR\n3. About how long have you been smoking cigarettes on a regular basis?\nOne month or less . . 7-1\nOver one month to 3 months -2\nOver 3 months to 6 months . -3 Over 6 months to 1 year . .\nOver 1 year to 2 years -5\nOver 2 years to 3 years -6\nOver 3 years to 5 years -7\nOver 5 years to 10 years -8\nOver 10 years\n.9\n10 cigarettes or less 8-1\nOver 10 to 19 cigarettes -2\nTwenty cigarettes (one pack) -3 Over 20 to 30 cigarettes .\nOver 30 to 39 cigarettes .\n-5\nForty cigarettes (two packs) -6 Over forty cigarettes . . .\nba. Is this more, about the same, or less than the number of cigarettes you were smoking daily at this time last year? \u00b7Same Fx Less -0\nMore -9\nSKIP TO QUESTION 6a\nb. Why are you smoking more/less cigarettes? (PROBE)\n9-\n10-\nCURRENT BRAND\n11-\n6a What brand of cigarettes are you smoking at present ... 12- that is, the brand you have on hand? 13-\n14.\n(BRAND)\nb. Is that a regular or king size cigarette?\nRegular\n15-]\nKing -2\nc. Is that a filter tip or non-filter tip cigarette?\nNon-filter tip .5\nd. Is that a mentholated or\nnon-mentholated cigarette?\nFilter tip . .\n75\nMentholated . . -7\nNon-mentholated .8\nwhy are you Surething (current Brand) at Insent, Instead of some other Brand\n4. On the average, about how many cigarettes do you smoke each day?",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-135",
+  "markdown": false
+ },
+ "response": {
+  "content": "FILTER CIGARETTE REPORT FORM\nPART A\nTo Be Filled Out After You Have Smoked All Of The 072 Cigarettes, Or At The End Of 5 Days.\nNow that you have tried Cigarette O72, we would like you to tell us how you think they compare with other cigarettes you have tried. For each of the following, simply check the box that comes closest to describing how you feel about Test Cigarette O72.\nTASTE\nVery Strong Taste\nStrong Taste\nAverage Taste\nMild Taste\nVery Mild Taste\nHOW DID YOU LIKE THE TASTE?\nLike It Very Much\nLike It Fairly Well\nIt's Just OK\nDon't Like it Very Much\nDon't Like It At All\nHARSH OR SMOOTH TO MOUTH OR THROAT\nVery Harsh\nHarsh\nNeither Harsh nor Smooth\nSmooth\nVery Smooth\nOVERALL ... HOW DID YOU LIKE THEM?\nLike Them Very Much\nLike Them Fairly Well\nIt's Just OK\nDon't Like Them Don't Like Them Very Much At All\nWHAT DID YOU DISLIKE ABOUT THEM?\nWHAT DID YOU LIKE ABOUT THEM?\nPART B\nTo Be Filled Out After You Have Smoked All Of The T31 Cigarettes, Or At The End Of 5 Days.\nNow that you have tried Cigarette T31 , we would like you to tell us how you think they compare with other cigarettes you have tried. For each of the following, simply check the box that comes closest to describing how you feel about Test Cigarette. T31.\nTASTE\nVery Strong Taste\nStrong Taste\nAverage Taste\nMild Taste\nVery Mild Taste\nHOW DID YOU LIKE THE TASTE?\nLike It Very Much\nLike It Fairly Well\nIt's Just OK\nDon't Like It Don't Like It Very Much At All\nHARSH OR SMOOTH TO MOUTH OR THROAT\nVery Harsh\nHarsh\nNeither Harsh Nor Smooth\nSmooth\nVery Smooth\nOVERALL ... HOW DID YOU LIKE THEM?\nLike Them Very Much\nLike Them Fairly Well\nIt's Just OK\nDon't Like Them Don't Like Them Very Much At All\nWHAT DID YOU DISLIKE ABOUT THEM?\nWHAT DID YOU LIKE ABOUT THEM?\n2040462672\nIMPORTANT:\nPLEASE KEEP THIS REPORT FORM HANDY UNTIL WE TELEPHONE YOU. DO NOT RETURN IT TO US.",
+  "pages": 1,
+  "fields": {}
+ }
+}

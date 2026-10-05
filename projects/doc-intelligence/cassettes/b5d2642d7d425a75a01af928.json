@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-052",
+  "markdown": false
+ },
+ "response": {
+  "content": "55\n5\nMEAN SCORES\n* : sham\n0 : 1R4F\nO : 1R5F\n4 -\n3 -\n2-\n1-\n$\nI\n0-\n*\n8807/980602\n-\n-\n0\n20\n40\n60\n80\n100\n120\nTPM CONCENTRATION (\u00b5g/1)\n2505217497\nL\nP-/3271 LEFT LUNG,ALV. ALVEOLAR MACROPHAGES,90D ( 1H 6.600/ 7.565 ) (c)",
+  "pages": 1,
+  "fields": {}
+ }
+}

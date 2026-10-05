@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B02-06",
+  "markdown": false
+ },
+ "response": {
+  "content": "NATIONAL PLANT PROTECTION ORGANIZATION OF SWEDEN\nPHYTOSANITARY CERTIFICATE\nNo .:\nAU763072\nName of exporter:\nGolden Valley Exports Co. Ltd\nDeclared consignee:\nSouthern Cross Imports Pty Ltd\nBotanical name of plants:\nPinus sylvestris\nPlace of origin:\nSweden\nDeclared means of conveyanceMSC ARIANNA\nPoint of entry:\nBrisbane\nThe plants or plant products described herein have been inspected and are considered free from quarantine pests of the importing contracting party.",
+  "pages": 1,
+  "fields": {}
+ }
+}

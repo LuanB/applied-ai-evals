@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-083",
+  "markdown": false
+ },
+ "response": {
+  "content": "TOBACCO - SMOKING ISSUE\n2024371693",
+  "pages": 1,
+  "fields": {}
+ }
+}

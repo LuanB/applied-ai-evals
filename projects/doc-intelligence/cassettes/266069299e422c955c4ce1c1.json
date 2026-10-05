@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-096",
+  "markdown": false
+ },
+ "response": {
+  "content": "Workplace Smoking Restrictions:\nSome Considerations\nTI0411-0247",
+  "pages": 1,
+  "fields": {}
+ }
+}

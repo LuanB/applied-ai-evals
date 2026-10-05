@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app9-003] (APP 9, paras 9.7\u20139.9, \u2018Government related identifier\u2019 > \u2018Government related identifiers\u2019)\n9.7 A \u2018government related identifier\u2019 of an individual is defined in s 6(1) as an identifier that has been assigned by:\nan agency\na State or Territory authority\nan agent of an agency, or a State or Territory authority, acting in its capacity as agent, or\na contracted service provider for a Commonwealth contract, or a State contract, acting in its capacity as contracted service provider for that contract.\n9.8 The following are given as examples of government related identifiers:\nMedicare numbers\nCentrelink Reference numbers\ndriver licence numbers issued by State and Territory authorities\nAustralian passport numbers.\n9.9 Some government related identifiers are regulated by other laws that restrict the way that entities can collect, use or disclose the particular identifier and related personal information. Examples include tax file numbers and individual healthcare identifiers. [2]\n\n[app9-006] (APP 9, paras 9.13\u20139.16, Adopting government related identifiers > \u2018Adoption\u2019)\n9.13 The term \u2018adopt\u2019 is not defined in the Privacy Act and so it is appropriate to refer to its ordinary meaning. An organisation adopts a government related identifier if it collects a particular government related identifier of an individual and organises the personal information that it holds about that individual with reference to that identifier.\n9.14 The following are examples of when an organisation will be considered to have adopted a government related identifier of an individual:\na health service provider uses an individual\u2019s Medicare number as the basis for the provider\u2019s own identification system\nan accountant uses an individual\u2019s tax file number as the basis of the accountant\u2019s own identification system.\n9.15 Adoption is to be distinguished from merely collecting, using or disclosing a government related identifier. APP 9 does not specifically address the collection of government related identifiers. However, as noted in paragraph 9.4, if an organisation collects a government related identifier that is considered to be personal information, the organisation must comply with other APPs, including APP 3 (collection of solicited personal information) and APP 4 (dealing with unsolicited personal information). These APPs are discussed in Chapters 3 and 4 respectively.\n9.16 APP 3 provides that an organisation must only collect personal information that is reasonably necessary for one or more of the organisation\u2019s functions or activities. If an organisation collects an identifier that it cannot lawfully use or disclose under APP 9.2 (see paragraphs 9.22\u20139.46), then the collection is not reasonably necessary for one of the organisation\u2019s functions or activities. This means that the collection would not be permitted under APP 3.2.\n\n[app9-007] (APP 9, paras 9.17\u20139.19, Adopting government related identifiers > Adopting a government related identifi)\n9.17 An organisation may adopt a government related identifier of an individual as its own identifier of the individual if the adoption is required or authorised by or under an Australian law or a court/tribunal order (APP 9.1(a)). The meaning of \u2018required or authorised by or under an Australian law or a court/tribunal order\u2019 is discussed in Chapter B (Key concepts).\n9.18 The Australian law or court/tribunal order should specify a particular government related identifier, the organisations or classes of organisations permitted to adopt it, and the particular circumstances in which they may do so.\n9.19 For example, healthcare providers are authorised by law to adopt the individual healthcare identifiers of their patients as their own identifier. [5] That is, they may organise the personal information of their patients by reference to the patients\u2019 individual healthcare identifiers.\n\n[app9-001] (APP 9, paras 9.1\u20139.4, What does APP 9 say?)\n9.1 An organisation must not adopt, use or disclose a government related identifier unless an exception applies. APP 9 may apply to an agency in the circumstances set out in s 7A (see paragraphs 9.10\u20139.11 below).\n9.2 The objective of APP 9 is to restrict general use of government related identifiers by organisations so that they do not become universal identifiers. That could jeopardise privacy by enabling personal information from different sources to be matched and linked in ways that an individual may not agree with or expect.\n9.3 An individual cannot consent to the adoption, use or disclosure of their government related identifier.\n9.4 APP 9 restricts how an organisation is permitted to handle government related identifiers, irrespective of whether a particular identifier is the personal information of an individual. An identifier will be personal information if the individual is identifiable or reasonably identifiable from the identifier, including from other information held by, or available to, the entity that holds the identifier. If it is personal information, the identifier must be handled by the entity in accordance with other APPs. \u2018Personal information\u2019 is discussed in more detail in Chapter B (Key concepts), including examples of when an individual may be \u2018reasonably identifiable\u2019.\n\n[app9-008] (APP 9, paras 9.20\u20139.21, Adopting government related identifiers > Adopting a government related identifi)\n9.20 An organisation may adopt a government related identifier of an individual as its own identifier of the individual if:\nthe identifier is prescribed by regulations\nthe organisation, or a class of organisations that includes the organisation, is prescribed by regulations, and\nthe adoption occurs in the circumstances prescribed by the regulations (APP 9.1(b)).\n9.21 Regulations may be made under the Privacy Act to prescribe these matters. [6]\n\nQuestion: Why do the privacy principles restrict private organisations from adopting government identifiers like tax file or Medicare numbers?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Si0ECD2sJ7WaQOrfIenzMeWUE5",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The privacy principles restrict private organisations from adopting government related identifiers to prevent these identifiers from becoming universal identifiers, which could jeopardise privacy by enabling personal information from different sources to be matched and linked in ways that an individual may not agree with or expect. Additionally, individuals cannot consent to the adoption, use, or disclosure of their government related identifiers, reinforcing these restrictions.\",\"citations\":[\"app9-001\",\"app9-003\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089404,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 95,
+   "prompt_tokens": 1363,
+   "total_tokens": 1458,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 31,
+    "engine_ttlt_ms": 642,
+    "pre_inference_ms": 87,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 491,
+    "service_ttlt_ms": 1096,
+    "user_visible_ttft_ms": 404
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260928213240-060f2aac-default-r1-dp0-default"
+  }
+ }
+}

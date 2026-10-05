@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nCOMPARISON OF HUMAN UPTAKE AMONG CIGARETTE BRANDS RATED AS ONE MILLIGRAM TAR YIELD.\nT. D. DARBY, PH.D., J. E. McNAMEE, PH.D., AND J. VAN ROSSUM, PH.D.\nSUMMARY\nSeveral reports have shown the trend toward reduced carbon monoxide, nicotine, and tar yields of cigarettes over approximately the last 30 years. Concomitantly, reports of epidemiological studies have shown that individuals who have selected cigarette brands which standard smoking machine tests classify as ultra low yield brands have significantly fewer diseases related to smoking. While the smokers of the ultra low yield brands seem to benefit, the non-smoker benefits substantially from. not smoking.\nThis report presents an analysis of data gathered from a large sample of regular smokers of ultra low tar yield cigarette brands. Since smoking behavior is recognized as a determinant of an individual smoker's uptake of both nicotine and tar, the large number of subjects studied greatly increases the value of the data derived from these studies. The experimental design allowed comparison of the plasma cotinine concen- tration obtained from smokers who were only minimally influenced by factors other than those normal to their own natural environment. Only those factos which normally affect smoking behavior and thus nicotine uptake would be expected to operate. The plasma cotinine concentra- tions used in the analysis represent the total smoking experience of the individual during the period of smoking each brand represented in the study.\nThe major points made as a result of this analysis are:\n1. Individuals differ greatly in their plasma cotinine concen- tration despite comparable consumption of numbers of cigarettes. Reasons are presented for this difference in the discussion section of the report.\n2. Individuals with high plasma cotinine concentrations while smoking one brand tend to have high plasma cotinine concentrations on all brands investigated. The same statement is true for individuals. with low plasma cotinine concentrations.\n3. On the average, a smoker's plasma cotinine concentration is proportional to the brand yield values obtained by measurement utilizing. the standard smoking machine procedures.\n4. If the individuals who obtain greater than average yield are considered to be a problem then these data support the conclusion that all ventilated filter cigarette brands share in the problem.\n5. The large number of smokers who obtain lower than average plasma cotinine concentrations while smoking ultra low tar cigarette brands benefit from the reduced nicotine and thus the reduced tar intake.\n2023101720"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV898Q8OWwPuofxPMN5ozIPdNqYGC",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"scientific report\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088190,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 11,
+   "prompt_tokens": 691,
+   "total_tokens": 702,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 69,
+    "engine_ttlt_ms": 149,
+    "pre_inference_ms": 73,
+    "service_tbt_ms": 13,
+    "service_ttft_ms": 517,
+    "service_ttlt_ms": 658,
+    "user_visible_ttft_ms": 444
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260823111336-d1b2fb9c-default-r1-dp0-default"
+  }
+ }
+}

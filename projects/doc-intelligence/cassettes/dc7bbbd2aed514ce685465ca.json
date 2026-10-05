@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B15-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# CHAMBER OF COMMERCE - SRI LANKA\n\n\n## CERTIFICATE OF ORIGIN\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>FC956096</td>\n</tr>\n<tr>\n<td>Exporter:</td>\n<td>Hanseatic Furniture GmbH</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Wattle &amp; Co Wholesale Pty Ltd</td>\n</tr>\n<tr>\n<td>Means of transport:</td>\n<td>EVER GIVEN II from Colombo</td>\n</tr>\n<tr>\n<td>HS heading:</td>\n<td>0904.11</td>\n</tr>\n<tr>\n<td>Goods:</td>\n<td>Black pepper, whole</td>\n</tr>\n<tr>\n<td>Country of origin:</td>\n<td>Sri Lanka</td>\n</tr>\n</table>\n\nWe certify the goods described in invoice INV-69686 originate in Sri Lanka.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,196 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: commercial_invoice\n\nPage (markdown from layout analysis):\nCASCADE ORCHARDS LLC\n170 Industrial Rd, Vietnam\n\n\n# EXPORT INVOICE\n\nInvoice No .:\n\nINV-65533\n\nDate:\n\n07/07/2026\n\nSold to:\n\nSouthern Cross Imports Pty Ltd.\n\nPacking List No .:\n\nPL-49298\n\nTerms of delivery:\n\nFOB\n\nCurrency:\n\nEUR\n\n\n<table>\n<tr>\n<th>Description</th>\n<th>HS Code</th>\n<th>Qty</th>\n<th>Unit price</th>\n<th>Amount</th>\n</tr>\n<tr>\n<td>Cashew kernels</td>\n<td>0801.32</td>\n<td>547</td>\n<td>35.07</td>\n<td>19,183.29</td>\n</tr>\n</table>\n\n\nTOTAL EUR:\n\n19,183.29\n\nCountry of origin: Vietnam\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "invoice_number",
+      "invoice_date",
+      "seller",
+      "buyer",
+      "currency",
+      "total_amount",
+      "incoterm",
+      "hs_code"
+     ],
+     "properties": {
+      "invoice_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "invoice number"
+      },
+      "invoice_date": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "invoice date"
+      },
+      "seller": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "seller / exporter name"
+      },
+      "buyer": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "buyer / importer name"
+      },
+      "currency": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "ISO currency code"
+      },
+      "total_amount": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "invoice total"
+      },
+      "incoterm": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "Incoterm (e.g. FOB, CIF)"
+      },
+      "hs_code": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "HS tariff code"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8CJpUu4O4ENcNvJF0lODOMGCNT9",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"invoice_number\":\"INV-65533\",\"invoice_date\":\"07/07/2026\",\"seller\":\"CASCADE ORCHARDS LLC\",\"buyer\":\"Southern Cross Imports Pty Ltd.\",\"currency\":\"EUR\",\"total_amount\":\"19,183.29\",\"incoterm\":\"FOB\",\"hs_code\":\"0801.32\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088387,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 64,
+   "prompt_tokens": 400,
+   "total_tokens": 464,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 29,
+    "engine_ttlt_ms": 465,
+    "pre_inference_ms": 72,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 527,
+    "service_ttlt_ms": 956,
+    "user_visible_ttft_ms": 455
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927091721-9c05c910-default-r2-dp0-default"
+  }
+ }
+}

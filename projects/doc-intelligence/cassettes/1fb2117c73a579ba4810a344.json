@@ -1,0 +1,184 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "vision_extract": "test-B16-05",
+  "schema": {
+   "certificate_number": "certificate number",
+   "fumigant": "fumigant",
+   "dosage": "dosage rate",
+   "exposure_hours": "exposure period in hours",
+   "date_of_fumigation": "date of fumigation",
+   "container_number": "container number"
+  },
+  "prompt": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to.",
+  "_salt": "",
+  "_params": {
+   "temperature": 0.0,
+   "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+     "name": "fields",
+     "strict": true,
+     "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "certificate_number",
+       "fumigant",
+       "dosage",
+       "exposure_hours",
+       "date_of_fumigation",
+       "container_number"
+      ],
+      "properties": {
+       "certificate_number": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "certificate number"
+       },
+       "fumigant": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "fumigant"
+       },
+       "dosage": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "dosage rate"
+       },
+       "exposure_hours": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "exposure period in hours"
+       },
+       "date_of_fumigation": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "date of fumigation"
+       },
+       "container_number": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "container number"
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8DKJxVhi5BfSLKnHZnFdK7A1Bmd",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"certificate_number\":\"FC453348\",\"fumigant\":\"Sulfuryl fluoride\",\"dosage\":\"1500 g-h/m3\",\"exposure_hours\":\"24\",\"date_of_fumigation\":\"19/08/2026\",\"container_number\":\"MSCU4284394\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088450,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 55,
+   "prompt_tokens": 1514,
+   "total_tokens": 1569,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": 816
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 627,
+    "engine_ttlt_ms": 1087,
+    "pre_inference_ms": 148,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 1866,
+    "service_ttlt_ms": 2321,
+    "user_visible_ttft_ms": 1719
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822211338-80914c89-default-r2-dp0-default"
+  }
+ }
+}

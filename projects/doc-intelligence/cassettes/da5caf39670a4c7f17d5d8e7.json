@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B17-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD 112 Industrial Rd, Vietnam\nPACKING LIST\nRef No .:\nPL-98454\nInvoice No .:\nINV-10420\nConsignee:\nHarbourside Fresh Pty Ltd.\nContainer:\nMSKU7382045\nMarks:\nHARBOURSIDE/MELBOURNE\nPkgs\nDescription\nNet kg\nGross kg\n1436 Cashew kernels\n15803.5 17487.8\nTotal packages:\n1436\nTotal gross weight (kg):\n17487.8\nTotal net weight (kg):\n15803.5.",
+  "pages": 1,
+  "fields": {}
+ }
+}

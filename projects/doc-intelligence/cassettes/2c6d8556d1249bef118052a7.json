@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B06-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# TRANS-PACIFIC CARRIERS\n\n\n## OCEAN BILL OF LADING\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MAEU35794888</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Lanka Spice Mills (Pvt) Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Southern Cross Imports Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>COSCO LIBRA / 797W</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Ho Chi Minh City</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Sydney</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>CMAU7244107 / SL492396</td>\n</tr>\n</table>\n\n\n888 PACKAGES. SAID TO CONTAIN CASHEW KERNELS\nGROSS WEIGHT 19858.2 KGS\nINVOICE INV-12449\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

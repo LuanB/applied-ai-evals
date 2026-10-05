@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-150",
+  "markdown": false
+ },
+ "response": {
+  "content": "910 9\nB&W\nBROWN & WILLIAMSON TOBACCO CORPORATION RESEARCH & DEVELOPMENT\nOur Telecopier Number is (502) 568-8225 - An Automatic PANAFAX PX-100 - Set on 3 Minutes\nTO: Juan Jose Barraza Morazan, El Salvador\nCC: P. Mazariegos Guatemala\nFROM: Pedro J. Martinez\nDATE: December 15, 1993\nRE: PRODUCT MONITORING RESULTS\nEnclosed you will find our monitoring results on your LUCKY STRIKE, VICEROY KSSC, VICEROY Lights and KOOL received here in June,\nPlease note that the tar and nicotine targets need to be revised to reflect the ISO method. We recommend the following targets:\nTar\nNic.\nLUCKY STRIKE 80 mm Box\n15.0 mg\n1.0 mg\nKOOL 80 mm Box\n15.0 mg\n1.0 mg\nVICEROY KSSC\n15.0 mg\n1.0 mg\nVICEROY Lights 80 mm Box\n13.0 mg\n0.8 mg\nIt was also noted that the blend alkaloid of LUCKY STRIKE, VICEROY and VICEROY Lights increased significantly. We are not aware of any blend changes and will appreciate any explanation that you may provide.\nBest regards,\nPedro Je Martinez PJM/smpp9f2264.wp .4 Enc.\n583217729",
+  "pages": 1,
+  "fields": {}
+ }
+}

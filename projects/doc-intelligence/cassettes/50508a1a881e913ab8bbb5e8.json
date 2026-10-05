@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nARGUS 412-002\nPURITY - STANDARD\nLABORATORIES - WATER IMPROVEMENT\n[27 S. Limekila Pike Chalfont, Pa. 18914\nFOR. -Laboratory Report-\nArgus Research Inc. Shechy Rd., Horsham, Pa:\nThe following results are observed in the examination of the sample of water collected by this laboratory :-\nSample No 9759-3 Type of Sample\nPicked up by. S.S.\nDate 4/9/87 Point of Sampling Animal Room\nTime 12:35 PM.\nBACTERIOLOGICAL WATER ANALYSIS\nPeriod of Incubation\n24 Hours 48 Hours\nTotal bacteria per ml.\non Nutrient Agar at 35\u00baC.\n3\nPresumptive Tests ( Collform Group )\"\nNEGATIVE\nNEGATIVE\nCHEMICAL WATER ANALYSIS\nHardness as CaCOa 0.5 g. p. g.\nIron (Total as Fe) 0.0 p. p. m.\nPH\n7.5\nChlorine = 0.0 ppm.\nThe bacteriological quality of this sample of water at the time of examination conforms with the U.S. Public Health Service Drinking Water Standards and the results indicate the water is in :-\nPURITY-STANDARD LABORATORIES is approved by the UNITED STATES ENVIRONMENTAL PROTECTION AGENCY to perform bacteriological examinations of water under Laboratory #18-130\nExcellent Sanitary Condition Good Sanitary Condition Fair Sanitary Condition\n(xxx\n(\nVery truly yours,\nEXACT COPY\nSE0 7/13/87\nGeorge R. Get? Laboratory Director\n87506928\nBACTERIOLOGICAL & CHEMICAL ANALYSIS . CHLORINATORS . NEUTRALIZERS . FILTERS . SOFTENERS\n117\n343-2222 822-3337\n.. ."
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV897eZnV7ttlYyrSTeF2kHZJdzRp",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"scientific report\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088189,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 11,
+   "prompt_tokens": 592,
+   "total_tokens": 603,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 43,
+    "engine_ttlt_ms": 138,
+    "pre_inference_ms": 84,
+    "service_tbt_ms": 13,
+    "service_ttft_ms": 445,
+    "service_ttlt_ms": 586,
+    "user_visible_ttft_ms": 361
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044429-bbbf78fc-default-r0-dp0-default"
+  }
+ }
+}

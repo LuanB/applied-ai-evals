@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app11-008] (APP 11, paras 11.21, What are the security considerations? > Interference)\n11.21 \u2018Interference\u2019 with personal information occurs where there is an attack on personal information that an APP entity holds that interferes with the personal information but does not necessarily modify its content. \u2018Interference\u2019 includes an attack on a computer system that, for example, leads to exposure of personal information.\n\n[app3-021] (APP 3, paras 3.81\u20133.82, Collecting by lawful and fair means > Collecting by lawful means)\n3.81 The term \u2018lawful\u2019 is not defined in the Privacy Act. It is lawful for an organisation to destroy or de-identify unsolicited personal information if it is not unlawful to do so. That is, if the destruction or de-identification is not criminal, illegal or prohibited or proscribed by law. Unlawful activity does not include breach of a contract.\n3.82 Examples of collection that would not be lawful include:\ncollecting in breach of legislation, for example: collecting via computer hacking [40] collecting using telephone interception or a listening device except under the authority of a warrant [41] requesting or requiring information in connection with, or for the purpose of, an act of discrimination [42]\ncollecting via computer hacking [40]\ncollecting using telephone interception or a listening device except under the authority of a warrant [41]\nrequesting or requiring information in connection with, or for the purpose of, an act of discrimination [42]\ncollecting by a means that would constitute a civil wrong, for example, by trespassing on private property or threatening damage to a person unless information is provided\ncollecting information contrary to a court or tribunal order, for example, contrary to an injunction issued against the collector.\n\n[app3-016] (APP 3, paras 3.54\u20133.61, Collecting sensitive information > Collecting sensitive information where a perm)\n3.54 An APP entity may collect sensitive information if:\nthe entity reasonably believes that the collection is reasonably necessary to assist any APP entity, body or person to locate a person who has been reported as missing, and\nthe collection complies with rules made by the Information Commissioner under s 16A(2) (s 16A(1), Item 3).\n3.55 An APP entity may collect sensitive information if the collection is reasonably necessary to establish, exercise or defend a legal or equitable claim (s 16A(1), Item 4).\n3.56 An example of where this permitted general situation might apply is an insurer collecting health information about an individual who has made an insurance compensation claim but is suspected of misrepresenting their claim or the extent of their injuries. [32]\n3.57 An APP entity may collect sensitive information if the collection is reasonably necessary for the purposes of a confidential alternative dispute resolution (ADR) process (s 16A(1), Item 5).\n3.58 An example of where this permitted general situation might apply is an alternative dispute resolution practitioner making a record of a party recounting their version of events, where that account includes the disclosure of sensitive information about an individual who is directly or indirectly involved in the dispute. This permitted general situation will only apply where the parties to the dispute and the ADR provider are bound by confidentiality obligations.\n3.59 An agency may collect sensitive information if the agency reasonably believes the collection is necessary for the agency\u2019s diplomatic or consular functions or activities (s 16A(1), Item 6). This permitted general situation applies only to agencies, and not to organisations.\n3.60 An example of where this permitted general situation might apply is where an agency with diplomatic or consular functions collects sensitive information about an individual who is overseas and in need of consular assistance because the individual is in distress, for example due to being detained or a victim of crime, going missing, or needing repatriation in the case of death or serious illness.\n3.61 The Defence Force (as defined in s 6(1)) may collect sensitive information if it reasonably believes the collection to be necessary for a warlike operation, peacekeeping, civil aid, humanitarian assistance, a medical emergency, a civil emergency or disaster relief occurring outside Australia and the external Territories (s 16A(1), Item 7).\n\n[app3-015] (APP 3, paras 3.49\u20133.53, Collecting sensitive information > Collecting sensitive information where a perm)\n3.49 An APP entity may collect sensitive information if the entity:\nhas reason to suspect that unlawful activity, or misconduct of a serious nature, that relates to the entity\u2019s functions or activities has been, is being, or may be engaged in, and\nreasonably believes that the collection is necessary in order for the entity to take appropriate action in relation to the matter (s 16A(1), Item 2).\n3.50 This permitted general situation is intended to apply to an APP entity\u2019s internal investigations about activities within or related to the entity. [28] The focus is on the internal investigation with respect to its objective or outcome, for example, to form a view about a breach of an employment contract, or to make a report to police where indicated by the investigation. The nature of the \u2018appropriate action\u2019 is the investigation with a view to its objectives and its outcomes. [29] The \u2018appropriate action\u2019 is not the underlying methodology chosen to undertake this internal investigation. [30]\n3.51 For guidance on \u2018reason to suspect\u2019, \u2018unlawful activity\u2019, \u2018misconduct\u2019 and \u2018serious\u2019 misconduct, see Chapter C (Permitted general situations).\n3.52 The following factors are relevant to whether an APP entity reasonably believes the collection of sensitive information is necessary in order for the entity to take appropriate action to address suspected unlawful activity or serious misconduct: [31]\nthe suitability of the proposed collection, including its efficacy in allowing the entity to take appropriate action in relation to the suspected unlawful activity or serious misconduct\nthe alternatives available to the entity to take appropriate action in relation to the suspected unlawful activity or serious misconduct, including whether less privacy-intrusive alternatives are available\nwhether the proposed collection is proportionate. This involves balancing the privacy impacts resulting from the collection of sensitive information against the benefits to be gained from doing so.\n3.53 Examples of where this permitted general situation might apply are the collection of sensitive information by:\nan APP entity that is investigating fraudulent conduct by a professional adviser or a client in relation to the entity\u2019s functions or activities\nan agency that is investigating a suspected serious breach by a staff member of the Australian Public Service Code of Conduct.\n\n[app6-016] (APP 6, paras 6.44\u20136.46, Using or disclosing personal information for a secondary purpose > Using or disc)\n6.44 An example of where this permitted general situation might apply is where an agency with diplomatic or consular functions uses or discloses personal information to grant a diplomatic visa to a foreign national accredited as a member of the diplomatic staff of a mission to Australia.\n6.45 The Defence Force (as defined in s 6(1)) may use or disclose personal information for a secondary purpose where it reasonably believes that the use or disclosure is necessary for a warlike operation, peacekeeping, civil aid, humanitarian assistance, a medical emergency, a civil emergency or disaster relief occurring outside Australia and the external Territories (s 16A(1), Item 7).\n6.46 An example of where this permitted general situation might apply is where the Defence Force uses and discloses personal information about an enemy or other hostile adversary in order to support military operations.\n\nQuestion: What is the maximum civil penalty for a serious interference with privacy under the Privacy Act?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SnqLCCzpoN6NL3kiwDjfgyIYSd",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not contain information about the maximum civil penalty for a serious interference with privacy under the Privacy Act.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089409,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 36,
+   "prompt_tokens": 1756,
+   "total_tokens": 1792,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 9,
+    "engine_ttft_ms": 155,
+    "engine_ttlt_ms": 488,
+    "pre_inference_ms": 72,
+    "service_tbt_ms": 12,
+    "service_ttft_ms": 820,
+    "service_ttlt_ms": 1235,
+    "user_visible_ttft_ms": 748
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260929073827-4182793a-default-r2-dp0-default"
+  }
+ }
+}

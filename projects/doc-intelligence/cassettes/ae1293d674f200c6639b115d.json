@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-136",
+  "markdown": false
+ },
+ "response": {
+  "content": ". .....\nWR #40915 AH/ER/bw 5/18/87\nVALID EDIT\nTOTHERS\nRespondent #: Name: Telephone #: ( ) Age : Sex: M F Usual Brand:\nM NM FF FFLT ULT 85 100 120\nAROMA SCREENING STUDY SCREENER\nHello, I'm of Walker Research, and independent marketing research com- pany. We are conducting a survey about various consumer products.\nREFUSED TO BEGIN\nTOTAL\n1. Are you, yourself, 18 years of age or older?\nNO\nYES ---- CONTINUE\nREFUSED\n-TERMINATE AND TALLY\nIF NO, ASK FOR SOMEONE ELSE IN HH 18+. REPEAT INTRODUCTION.\nTERM <18/REFUSED TOTAL\n2. Which of the following age categories best represents your age? (READ LIST) 18 - 24 years of age. 1\n[CHECK QUOTAS]\n35 - 49 years of age. 3\n50 - 60 years of age.\nTERMINATE ----- 61 years of age or older ..\nIF QUOTA FILLED, ASK FOR SOMEONE ELSE IN HH 18+. REPEAT INTRODUCTION.\n[TERM-AGE /QUOTA TOTAL\nWhich of the following products do you use daily? (READ ENTIRE LIST) (MULTIPLE ANSWERS ACCEPTABLE )\nCONTINUE WITH Q.4\nCigarettes 3\nToothpaste in a tube 4\nToothpaste in a pump. 5\nNOT MENTIONED. ASK FOR\nDeodorant Soap ... 6\nSOMEONE ELSE IN HH 18+.\nAromatic or Scented Shampoo.\n7\nREPEAT INTRODUCTION.\nTERM NON- SMOKER 101AL\n4a. Previous surveys have shown that people who work in certain jobs may have different reactions or opinions to certain products and ideas. Are you, or anyone in your immediate family or friends employed in any of the following industries or professions? [READ LIST: PAUSE FOR ANSWER AFTER EACH ITEM. CIRCLE IF YES]\nIF ONLY THESE CIRCLED, SKIP TO Q.4d UNLESS TERMINATED BELOW\nPharmaceuticals .. .1\nA Health and Beauty Aids. Medicine. 3\n2\nB Food Manufacturer. 4\nManufacturer or Distributor of Beer/Liquor. .5\n- State/Federal Government 6\nJournalism ..\nTobacco Manufacturer or Distributor\nC\nAdvertising ... 9 Market Consulting.\nMarket Research. 0 Radio/TV Station. Sales Person at Grocery/Drug/Convenience/ Discount Store .. \"TOTAL\n1-5 6-0 7-1 8-4\n9-0 10-9 11-1\"\n12-5\nCIRCLED Questions to be tabbed !\n13- 14- 15- 16- 17-\n50591 2862\n[TERM-EMPLOYMENT\nTERMINATE IF ANY OF THESE CIRCLED\nIF ANY OF THESE CIRCLED, GO TO Q.4b UNLESS TERMINATED BELOW\nIF CIRCLED, SKIP TO Q.4c UNLESS TERMINATED BELOW\nMouthwash. Breathmints.\n2\nTERMINATE IF CIGARETTES\n25 - 34 years of age. 2\n5",
+  "pages": 1,
+  "fields": {}
+ }
+}

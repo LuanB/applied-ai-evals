@@ -1,0 +1,95 @@
+cd0426104a32ebe637d07d0c2cfc4f5fb36eb6a6|2026-07-30 00:52:40 +1000|Luan Bui|feat(corpus): bake-off recorder default ON (temporary — remove at production)
+4d467a7e1f157682a5d3c8cf4f8c1d1475848155|2026-07-29 18:27:31 +1000|Luan Bui|fix(asr): keep fused perception when a window has no meetingId
+0cacdb56bd37e04f0061894630155ee9009f56ee|2026-07-26 13:07:52 +1000|Luan Bui|alpha-telemetry: one telemetry envelope, agent_run role/provider attribution, drop tier
+a119a87f5194d0d1947ba79ed699a1aff10e7388|2026-07-26 12:52:05 +1000|Luan Bui|RED: telemetry envelope at all three construction sites + agent_run role attribution
+2105175cac7c2e414502b482302d293ef832c36b|2026-07-26 12:43:05 +1000|Luan Bui|fix(tests): repair 11 stale pins left red by the registry flattening
+18fd59927aa3fdebe99bf461b007eb6841dc3706|2026-07-26 11:40:39 +1000|Luan Bui|registry: chat is a PAID surface, not vestigial -- tier it accordingly; decouple enrichment env
+1353a79f562678dd2f61b15b4a8bafd7b7e7cb50|2026-07-26 11:26:19 +1000|Luan Bui|registry: enrichment runs the FLAGSHIP model in both tiers
+02662ed39ee6162b1af89f7ecdfbb3e1e1004cff|2026-07-25 15:39:58 +1000|Luan Bui|bakeoff: per-window latency + real-time gate in the fused report
+6c4e8a2c93b4d2c80f66866c1b297fb584b44785|2026-07-25 14:50:39 +1000|Luan Bui|google: map thinkingBudget -> thinkingLevel per model (unblocks 3.6 / 3.5-flash-lite)
+f313dd914ad67751fe97699b24d812d6e6a9eee6|2026-07-25 14:31:56 +1000|Luan Bui|pricing: add gemini-3.6-flash + gemini-3.5-flash-lite rows (model-upgrade-2026-07)
+4a5aab7cb85a92c121b13878d6293dc6c4e2fc31|2026-07-25 14:20:24 +1000|Luan Bui|alpha-telemetry: capture_session stamps perceptionMode + inferenceMode (both call sites)
+addc28c7ed7697f7360672e9d097e48e91f9ad57|2026-07-25 14:12:26 +1000|Luan Bui|RED: capture_session must stamp perceptionMode + inferenceMode (both call sites)
+6cb52e8465496ee3cf19f8f2367dcc9348536ca0|2026-07-25 13:49:46 +1000|Luan Bui|fix: attendee-roster seeding must not cache an empty roster (early capture start)
+71fff2c95ee2503149e9594bdc1b616a9c89636c|2026-07-25 13:46:22 +1000|Luan Bui|RED: attendee-roster seeding must not cache an empty roster (early capture start)
+7d1486e73382be75142e6a1b575184e7d20da1a9|2026-07-25 13:19:56 +1000|Luan Bui|alpha-telemetry: card_event.surface — sanitizer whitelist for live vs review
+f15449e50508aef50ec727f45c472ad2da2c7fed|2026-07-25 13:10:59 +1000|Luan Bui|alpha-telemetry: RED for card_event.surface (live vs review sightings)
+f1fe97eb39faf3e5daa8f6b310a9e6fda882ca1c|2026-07-25 12:55:51 +1000|Luan Bui|alpha-telemetry S7c/G11: per-window ASR channel-health stamp + telemetry off the live path
+1a4bdc5f14267883586d5df823e2ec37ad0a1137|2026-07-25 12:48:50 +1000|Luan Bui|alpha-telemetry: RED for per-window ASR channel-health stamp (G11)
+98ecd00d3f9bfb3af39b14d8c5dcc16d2810c99e|2026-07-25 12:16:05 +1000|Luan Bui|S6.5 (alpha-telemetry): fix the two joinability defects + de-bias the value metric
+b2ad2727c64b3c13d37c162fa16e2e421d79580b|2026-07-25 11:31:03 +1000|Luan Bui|S6: offline scorers (spoke-it-aloud, chat-missed-detect, calendar diff)
+6aabb5f711b1bce6e5238fce24f3382977d7f504|2026-07-25 11:19:06 +1000|Luan Bui|alpha-telemetry S5 (G3): detect negatives — reason taxonomy + skeleton event
+e91cfa07afefeccb6bfd96a9d7f80d02d13fb6fd|2026-07-25 02:14:02 +1000|Luan Bui|S4 (alpha-telemetry G4): interactions dump — the content twin + unified question corpus
+7be66a8793cb54725c95ef17320646e08da47199|2026-07-25 01:47:12 +1000|Luan Bui|alpha-telemetry S3: label event kinds + sanitizer + smoke verifier
+986b4763c10a9124f488d11c816f05a0ecb8d905|2026-07-25 00:52:41 +1000|Luan Bui|alpha-telemetry S2: renderer UX events — bridge + kinds + main-side sanitizer
+52a5e8b175cd84e32e40250e60cb6049b25b68df|2026-07-25 00:14:08 +1000|Luan Bui|S1 alpha-telemetry: trace threading + version stamps (bundles in-tree workstream WIP)
+66b8282e84db48b1dc6b031e3ab2fee7929c5e54|2026-07-18 17:32:57 +1000|Luan Bui|Grounding: exclude mobile-qa answer cards + tag Confluence results stale
+ea63b26321455595c198a7e663ea58063ed7ac6e|2026-07-18 17:17:08 +1000|Luan Bui|Q&A: teach source-authority hierarchy (spoken decisions > stale Confluence)
+1b7d72591e7b731e03e3ca36e39358d2da166fba|2026-07-18 17:02:14 +1000|Luan Bui|Make search-budget caps env-tunable (MAYAH_SEARCH_HARD/SOFT_LIMIT)
+fbca50e89b67da7d15c8072ea9042ff6d80fe755|2026-07-18 16:55:01 +1000|Luan Bui|Extend search budget to the meeting index (hard-cap only)
+fd10d2774a9dcc5bdec9f103e1944620dd29fcd2|2026-07-18 16:43:29 +1000|Luan Bui|Add per-run search budget to cap connector/repo tool spirals
+acfafda8f47911b6aa2c0d4de2f73f05a48777a3|2026-07-18 15:07:44 +1000|Luan Bui|Flip conversationAnswer google to gemini-3.5-flash (production)
+89f0481ef1aef1ef7830e1e85f6bb95802020dae|2026-07-18 15:03:10 +1000|Luan Bui|replayIngest: stamp enrichment records at capture time, not ingest time
+0370d88a8bed8fe50cf4d69d3602384200780dcf|2026-07-18 14:50:39 +1000|Luan Bui|Add contextLines + offset drill-downs to search_transcript
+31729ab7be2bb44b1fe3bcfc5e6c56f125d76c4a|2026-07-18 14:06:48 +1000|Luan Bui|Bakeoff replay-ingest: rebuild a meeting's transcript from its capture dump
+534634875af041be71f2b91cfc42546a38454adc|2026-07-18 12:18:47 +1000|Luan Bui|Replace substring meeting search with stemmed ranked FTS5 index
+77d9c9054c7ff921ce8932d6a4d7bae561194cf6|2026-07-18 00:54:47 +1000|Luan Bui|feat(mobile): conversationAnswer role — conversation consults one tier up
+f89c793ed82677f70b752cedb500fe2656844195|2026-07-17 19:22:34 +1000|Luan Bui|Bakeoff frame-extraction width defaults to 2048 (match live sends)
+df0d38a781b22b962524dc34c8872c518675a867|2026-07-17 19:11:00 +1000|Luan Bui|Capture vision frames at native resolution, cap sends at 2048/q92
+c7b4dc4ab4a428ab6c8ea77a515aca1424efdc04|2026-07-17 18:36:42 +1000|Luan Bui|feat(capture): record capture-dump + persist frames ON by default
+6af1125cdf27f7912e542d60668804588f610b5b|2026-07-16 18:42:15 +1000|Luan Bui|feat(openai): hosted web_search on the BYOK key (R2 Option 1)
+fbbc2400c9a1beab5c054df20614ebed7440e21d|2026-07-16 15:31:24 +1000|Luan Bui|bench R5: reasoning.effort A/B dimension in runProviderBench
+84f253ae0cda867961eccc671752bf57cd01bd95|2026-07-16 15:24:43 +1000|Luan Bui|openai R5 (seam): optional per-role reasoning.effort, default unset
+bb96f946c4b30551213cbe6057d7b53d8db7fec0|2026-07-16 15:15:20 +1000|Luan Bui|openai R7: surface structured-output refusals instead of mis-parsing empty text
+aed9ba87eeeb3b1371229dcc8758f216cf47ee72|2026-07-16 15:06:08 +1000|Luan Bui|openai R2: local web_search tool with a deterministic egress scrub
+5798c60f0ece98c588255d528b3583c7b2805627|2026-07-16 14:41:06 +1000|Luan Bui|openai R1: Flex processing for enrichment (~50% off the priciest role)
+e06e9b5ccf5e7b2d94f6a10635c812284b0504f1|2026-07-16 14:31:46 +1000|Luan Bui|openai cache: diagnose 0% live cache-hit + add cache-prefix instrumentation
+ebdf512c37ace1171dc1333b1c6b3eb5e134a827|2026-07-16 11:55:24 +1000|Luan Bui|capture: persist vision frames on the plain (OpenAI/two-stage) ASR path too
+fe3bcfc263d690a189f02f3b2a23ef9b9473560b|2026-07-16 11:43:56 +1000|Luan Bui|capture: wire the corpus dump into the plain (OpenAI/two-stage) ASR path
+c2518598b858f0386d670380f816d78975a8f3a2|2026-07-16 11:02:43 +1000|Luan Bui|openai: fix key-validation ping for gpt-5.6 reasoning models (max_output_tokens floor)
+ca7349fe822411366cfc8dfdc76bfb1a6dc76315|2026-07-16 10:49:51 +1000|Luan Bui|capture: serialize dump appends + unblock build:electron (pre-capture prep)
+060d70dd69493831c21ea16128594b63274413a5|2026-07-16 02:52:27 +1000|Luan Bui|openai: pin vision frame to detail:'high' (guardrail)
+b3ef5ce025ff924207e2ebcf4de11d0b67c50cd4|2026-07-16 02:12:24 +1000|Luan Bui|openai: prompt_cache_key on all Responses calls (gather cost lever)
+0f552d2122d1d675b27e497db88d52ecf3580444|2026-07-16 01:59:43 +1000|Luan Bui|models: retune OpenAI chat + enrichment onto the 5.6 generation
+028ba86bbb16e134291aff14d1946831fbc4b17c|2026-07-16 01:42:23 +1000|Luan Bui|models: default OpenAI brain roles gpt-5.4 → gpt-5.6-luna
+f3e597e5b4b4619c0bdfd7c2c7caec11d9ad08a2|2026-07-16 01:32:30 +1000|Luan Bui|openai: support gpt-5.6 tiers (reject temperature) + pricing rows
+40311dbdc167c7cbbef2bda7dcd3be87a3a93b31|2026-07-16 00:11:57 +1000|Luan Bui|asr: calibrate OpenAI isAlex — user mic on channel 1, dominance margin
+5cfc84e0ac61d08a6e4b29e4718b4e2eb440d427|2026-07-15 23:59:59 +1000|Luan Bui|asr: wire production OpenAI ASR provider (diarized, plain/non-fused)
+1f058a45603abbf793171cbbfc32705f0689cdc4|2026-07-15 23:01:11 +1000|Luan Bui|bakeoff: fix OpenAI diarized ASR — use diarized_json response format
+72c2e17596858b6c68277c07d9a733cb7485d994|2026-07-15 22:49:41 +1000|Luan Bui|bakeoff: add detect-prompt override + fired-only mode to providerBench
+2bbd2dd4d6ea2ad7582a1d5f9d7b74a617f34025|2026-07-15 22:41:32 +1000|Luan Bui|bakeoff: add provider brain bench (OpenAI/Gemini/Anthropic cost+quality)
+88b213e4c829a25548bd70d747db658154ed6481|2026-07-15 17:58:07 +1000|Luan Bui|bakeoff: replay frames from video.webm at any fps/res (raw-capture slice 3)
+cb6bb607c0bf283747cc4ca780189d9ee257fccb|2026-07-15 15:44:52 +1000|Luan Bui|bakeoff: stream raw screen video to video.webm (raw-capture slice 2)
+678f3103d597fd5d5ff6a5742c4d0b3d27797d19|2026-07-15 01:35:46 +1000|Luan Bui|reliability: break the ASR contamination loop in the rolling prior transcript
+a7bd7bbdef8c6cc51e131c89ddc66a39f27769e4|2026-07-15 01:04:14 +1000|Luan Bui|reliability: bound gather + all Google fetches with explicit timeouts
+c72bf463e897124e43aa1a8c92b1092ef91b474f|2026-07-15 00:08:21 +1000|Luan Bui|cost-modes: gather fixed-floor trim + prompt-A/B gate seam
+e6a61d198c03ec07ceafce70d3c663c09d7a4bca|2026-07-03 21:13:27 +1000|Luan Bui|Wire mobile bundle producer into main: store-bound providers + scheduler
+176be9e07b3c03c9aeccb4c5614c7db1721f0233|2026-07-02 16:48:18 +1000|Luan Bui|fix(pricing): bill Gemini AUDIO input at the audio rate (ASR under-billed ~2x)
+5c0d6341888597d275ddca224ddb57f43ff0c3f8|2026-07-02 16:41:10 +1000|Luan Bui|feat(telemetry): surface gather reasoningTokens + thread runner runId into the tool loops
+477573bc8ee0b6c0b054cef3aacfea8d45d92bdd|2026-07-02 15:28:13 +1000|Luan Bui|Wire fused perception into the live pump (PATH1 BUILD, google-first)
+476e721faf6f2714f2ef4c91d42d5481fa4256bd|2026-07-02 09:39:35 +1000|Luan Bui|Tier google gather model by cost mode (flash-preview for non-ultra)
+8b6f123643ca3ce8766ad1eed6532add82e3267b|2026-06-26 19:14:33 +1000|Luan Bui|fix(cost): disable ASR thinking + capture thinking tokens (the hidden ~$1/mtg)
+dd6b6f41a11f41609af4bea6de6f46d1a9505958|2026-06-26 01:03:54 +1000|Luan Bui|feat(asr): instrument audio geometry on live_asr_window for cost attribution
+df961d8be04965095b9de45d0b369142b777cd3d|2026-06-26 00:51:08 +1000|Luan Bui|refactor(asr): extract AsrService seam behind runAsrWindow (Path 1 trunk)
+9cddd1dd1972846ec5fdcba7af291b3f7d90c79e|2026-06-24 19:09:51 +1000|Luan Bui|perf(surfacing): pre-load static discovery lists into the gather prompt (cost-modes Task 1)
+5056a1f937a4997a6c89c1c03948a439e7078b13|2026-06-24 18:20:58 +1000|Luan Bui|test(asr): update gemini-3-flash-preview cost expectation to published 0.50/3.00 rates
+cb08a470dbc56a69be620bd74dd3d57c47bcd560|2026-06-24 18:20:53 +1000|Luan Bui|fix(provider): resolve briefing + chat models from the active provider (first-gather 404)
+0b296671e88fa25fa6fc08073fa988643e502d5b|2026-06-24 13:53:22 +1000|Luan Bui|fix(pricing): bill google flash-family cache at full input rate (implicit discount not engaging)
+f48757ac24441beee6cc10b88d807293b548bff5|2026-06-24 11:34:50 +1000|Luan Bui|test(cost-modes): pin workhorse→6 reaches the gather loop end-to-end
+1a6f26abff1780488d6b59c92ea9ac46a0f41bd0|2026-06-24 03:37:23 +1000|Luan Bui|feat(telemetry): bake-off instrumentation on the google gather (turn-trace + decisiveness)
+7728f7fb3dfe7823cb2bb3b7a406ad829a439085|2026-06-24 03:21:27 +1000|Luan Bui|feat(cost-modes): global Light/Workhorse/Ultra gather turn-cap + published Google rates
+36a2807cb7b70e6af2fd945bdb2e77282d6a7a1b|2026-06-24 03:21:05 +1000|Luan Bui|feat(telemetry): per-turn tool_call traces on google/openai gather + config refresh-retry
+7b99e092265cd753a38dfed80ace8ad157d77b3b|2026-06-22 14:53:30 +1000|Luan Bui|feat(telemetry): cost-instrument ASR/detect/enrichment + fix cost overestimate
+48758b5bcfe0aa3951c2f5cbab0a9894be971435|2026-06-22 12:04:33 +1000|Luan Bui|feat(surfacing): materiality bar + one-card-per-theme (built-in default)
+fe7124c3c8364bc1dae582c11adaca2aac61aa49|2026-06-22 01:12:05 +1000|Luan Bui|fix(figma): distinguish a bad nodeId from a true view-only file
+9c300a09539116c8dec54e6ffeb20d9a404b155f|2026-06-22 01:08:16 +1000|Luan Bui|fix(validate): ping the real gather model + log validation failures
+03d07b16fbfc6dd5bf8b7cafd1b308aa4561c1dc|2026-06-21 23:35:36 +1000|Luan Bui|feat(asr): emit live_asr_window structural telemetry
+6b68f1e748d20e59f05bd8b7f08e89e22b273268|2026-06-21 20:09:01 +1000|Luan Bui|Phase 2+3 (desktop): delete fused/Live machinery + Deepgram/flag remnants
+5f893a91aaac32d26909526dbdb2c67b05c0efe3|2026-06-21 19:14:40 +1000|Luan Bui|Phase 1d: on-device ASR names (project memory) + real-API validation test
+b7ac13eac9651b1a5b68bf73c910492cf0ea3fa8|2026-06-21 19:04:02 +1000|Luan Bui|Phase 1c: live-asr:enabled flag IPC (MAYAH_GEMINI_ASR), mirrors live-meeting:enabled
+352d47a9e68f0cfa889fa637be51a1c649fdcd62|2026-06-21 18:52:26 +1000|Luan Bui|Phase 1b: live-asr:window IPC + runAsrWindow orchestration + preload bridge
+c907e5ce2dbfdbac1a14d92de000a018a8259531|2026-06-21 18:45:21 +1000|Luan Bui|Phase 1a: geminiAsr module — windowed stereo audio + frame → diarized named transcript
+f39b0092bcad187ce163018c116e3d2cdb8646f4|2026-06-20 13:26:27 +1000|Luan Bui|Gate fused-frame stream: change-detection dedup + per-meeting ceiling
+a51d262411d67dfa1a414698b9faa0b959bea7dc|2026-06-20 12:18:48 +1000|Luan Bui|Fix card timestamp corruption ('NaNh ago')
+5770708b56adb0327649fc9c573bd49410738695|2026-06-17 08:27:06 +1000|Luan Bui|Add Approach B (fused) bake-off sink: one Gemini Live session = ear+eye+brain
+fc447972f132c6dd06d6f632ff37f0ed704f8014|2026-06-17 03:15:04 +1000|Luan Bui|Add shared bake-off harness (Phase 0) — corpus, replay rig, telemetry, scorer, oracle, recorder

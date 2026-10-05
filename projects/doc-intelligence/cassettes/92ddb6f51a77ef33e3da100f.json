@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B05-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - TURKEY\nCERTIFICATE OF ORIGIN\nCertificate No .:\nFC477115\nExporter:\nNordic Pine Sawmills AB.\nConsignee:\nHarbourside Fresh Pty Ltd\nMeans of transport:\nCMA CGM TAGE from Izmir\nHS heading:\n0813.10\nGoods:\nDried apricots:\nCountry of origin:\nTurkey\nWe certify the goods described in invoice INV-33924 originate in Turkey.",
+  "pages": 1,
+  "fields": {}
+ }
+}

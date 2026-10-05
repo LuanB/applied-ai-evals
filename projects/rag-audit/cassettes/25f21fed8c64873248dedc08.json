@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app8-004] (APP 8, paras 8.12\u20138.14, When does an APP entity \u2018disclose\u2019 personal information about an individual to a)\n8.12 Where an APP entity engages a contractor located overseas to perform services on its behalf, in most circumstances, the provision of personal information to that contractor is a disclosure. This means that the entity will need to comply with APP 8 before making that disclosure. Where a subcontractor may be engaged, the entity should also take reasonable steps to ensure that the subcontractor does not breach the APPs in relation to the personal information. [9]\n8.13 For example, the provision of personal information to a contractor is generally considered a \u2018disclosure\u2019 where:\nan Australian based retailer outsources the processing of online purchases through its website to an overseas contractor and, in order to facilitate this, provides the overseas contractor with personal information about its customers\nan Australian entity, as part of a recruitment drive, provides the personal information of job applicants to an overseas services provider to perform reference checks on behalf of the Australian entity, or\nan Australian organisation relies on its overseas parent company to provide technical and billing support, and as part of this, provides the overseas parent company with access to its Australian customer database (which includes personal information).\n8.14 However, in limited circumstances providing personal information to an overseas contractor to perform services on behalf of the APP entity may be a use, rather than a disclosure. This occurs where the entity does not release the subsequent handling of personal information from its effective control. In these circumstances, the entity would not need to comply with APP 8. For example, where an APP entity provides personal information to a cloud service provider located overseas for the limited purpose of performing the services of storing and ensuring the entity may access the personal information, this may be a \u2018use\u2019 by the entity in the following circumstances:\na binding contract between the entity and the provider requires the provider only to handle the personal information for these limited purposes\nthe contract requires any subcontractors to agree to the same obligations, and\nthe contract gives the entity effective control of how the personal information is handled by the overseas recipient. Issues to consider include whether the entity retains the right or power to access, change or retrieve the personal information, who else will be able to access the personal information and for what purposes, what type of security measures will be used for the storage and management of the personal information (see also APP 11.1, Chapter 11) and whether the personal information can be retrieved or permanently deleted by the entity when no longer required or at the end of the contract. [10]\n\n[b-019] (B, paras B.82\u2013B.85, Health information > Holds)\nB.82 An APP entity \u2018holds\u2019 personal information if \u2018the entity has possession or control of a record that contains the personal information\u2019 (s 6(1)).\nB.83 The term \u2018record\u2019 is defined in s 6(1) and includes a document or an electronic or other device. Some items are excluded from the definition, such as anything kept in a library, art gallery or museum for the purposes of reference study or exhibition and Commonwealth records in the open access period.\nB.84 The term \u2018holds\u2019 extends beyond physical possession of a record to include a record that an APP entity has the right or power to deal with. Whether an APP entity \u2018holds\u2019 a particular item of personal information may therefore depend on the particular information collection, management and storage arrangements it has adopted. For example, an APP entity \u2018holds\u2019 personal information where:\nit physically possesses a record containing the personal information and can access that information physically or by use of an electronic device (such as decryption software)\nit has the right or power to deal with the personal information, even if it does not physically possess or own the medium on which the personal information is stored. For example, the entity has outsourced the storage of personal information to a third party but it retains the right to deal with it, including to access and amend that information.\nB.85 An agency that has placed a record of personal information in the care of the National Archives of Australia, or in the custody of the Australian War Memorial, is considered to be the agency that holds the record for the purposes of the Privacy Act (s 10(4)).\n\n[app6-004] (APP 6, paras 6.6\u20136.7, \u2018Holds\u2019, \u2018use\u2019, \u2018disclose\u2019 and \u2018purpose\u2019 > \u2018Holds\u2019)\n6.6 APP 6 only applies to personal information that an APP entity \u2018holds\u2019. An APP entity \u2018holds\u2019 personal information \u2018if the entity has possession or control of a record that contains the personal information\u2019 (s 6(1)).\n6.7 The term \u2018holds\u2019 extends beyond physical possession of a record to include a record that an entity has the right or power to deal with. For example, an APP entity that outsources the storage of personal information to a third party, but retains the right to deal with that information, including to access and amend it, holds that personal information. The term \u2018holds\u2019 is discussed further in Chapter B (Key concepts).\n\n[app11-003] (APP 11, paras 11.5\u201311.7, \u2018Holds\u2019)\n11.5 APP 11 only applies to personal information that an APP entity holds. An entity holds personal information \u2018if the entity has possession or control of a record that contains the personal information\u2019 (s 6(1)).\n11.6 The term \u2018holds\u2019 extends beyond physical possession of a record to include a record that an APP entity has the right or power to deal with. For example, an entity that outsources the storage of personal information to a third party, but retains the right to deal with that information, including to access and amend it, holds that personal information.\n11.7 The term \u2018holds\u2019 is discussed in more detail in Chapter B (Key concepts).\n\n[app13-004] (APP 13, paras 13.10\u201313.14, \u2018Holds\u2019)\n13.10 APP 13 only applies to personal information that an APP entity \u2018holds\u2019. An entity \u2018holds\u2019 personal information \u2018if the entity has possession or control of a record that contains the personal information\u2019 (s 6(1)).\n13.11 The term \u2018holds\u2019 extends beyond physical possession of a record to include a record that an entity has the right or power to deal with. For example, an APP entity that has outsourced the storage of personal information to a third party, but retains the right to deal with that information, including to access and amend it, holds that personal information and must comply with APP 13 (see paragraph 13.47 below). In addition, the individual has a separate right to request correction of the information by the third party, if the third party is an APP entity.\n13.12 An agency that has placed a record of personal information in the care of the National Archives of Australia, or in the custody of the Australian War Memorial, is considered to be the agency that holds the record for the purposes of the Privacy Act (s 10(4)).\n13.13 Upon receiving a request for correction, an APP entity should search the records that it possesses or controls to assess whether the personal information to be corrected is contained in those records. For example, an entity may search hard copy records and electronic databases and make enquiries of staff or contractors with relevant knowledge. A discussion with the individual may assist the entity to locate the information.\n13.14 The term \u2018holds\u2019 is discussed in more detail in Chapter B (Key concepts).\n\nQuestion: If a company outsources storage of customer records to a third-party provider but can still access and amend them, does it still hold that information?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Tq4FWZzD28xZ3GVqI6MQg7TWOK",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, a company that outsources the storage of customer records to a third-party provider but retains the right to access and amend those records is considered to hold that personal information under the Privacy Act.\",\"citations\":[\"b-019\",\"app6-004\",\"app11-003\",\"app13-004\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089474,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 71,
+   "prompt_tokens": 1767,
+   "total_tokens": 1838,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 53,
+    "engine_ttlt_ms": 451,
+    "pre_inference_ms": 98,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 534,
+    "service_ttlt_ms": 956,
+    "user_visible_ttft_ms": 436
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260823114745-bbc5cbf3-default-r2-dp0-default"
+  }
+ }
+}

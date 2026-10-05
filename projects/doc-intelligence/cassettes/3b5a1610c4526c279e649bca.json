@@ -1,0 +1,180 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: packing_list\n\nPage (markdown from layout analysis):\nNORDIC PINE SAWMILLS AB\n233 Industrial Rd, Turkey\n\nWEIGHT & PACKING NOTE\n\n\n<table>\n<tr>\n<td>Ref No .:</td>\n<td>PL-95134</td>\n</tr>\n<tr>\n<td>Invoice No .:</td>\n<td>INV-3.7060</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Southern Cross Imports Pty Ltd</td>\n</tr>\n<tr>\n<td>Container:</td>\n<td>MSKU3069294</td>\n</tr>\n<tr>\n<td>Marks:</td>\n<td>SOUTHERN/SYDNEY</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<th>Pkgs</th>\n<th>Description</th>\n<th>Net kg</th>\n<th>Gross kg</th>\n</tr>\n<tr>\n<td>1047</td>\n<td>Dried apricots</td>\n<td>19590.0</td>\n<td>21640.1</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>Total packages:</td>\n<td>1047</td>\n</tr>\n<tr>\n<td>Total gross weight (kg):</td>\n<td>21640.1</td>\n</tr>\n<tr>\n<td>Total net weight (kg):</td>\n<td>19590. 0</td>\n</tr>\n</table>\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "packing_list_number",
+      "invoice_number",
+      "total_packages",
+      "gross_weight_kg",
+      "net_weight_kg",
+      "container_number"
+     ],
+     "properties": {
+      "packing_list_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "packing list number"
+      },
+      "invoice_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "referenced invoice number"
+      },
+      "total_packages": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "total packages"
+      },
+      "gross_weight_kg": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "total gross weight in kg"
+      },
+      "net_weight_kg": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "total net weight in kg"
+      },
+      "container_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "container number"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Bvw0WaKoEwTXNRNQd9rxaDuS66",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"packing_list_number\":\"PL-95134\",\"invoice_number\":\"INV-3.7060\",\"total_packages\":\"1047\",\"gross_weight_kg\":\"21640.1\",\"net_weight_kg\":\"19590. 0\",\"container_number\":\"MSKU3069294\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088363,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 56,
+   "prompt_tokens": 486,
+   "total_tokens": 542,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 37,
+    "engine_ttlt_ms": 426,
+    "pre_inference_ms": 84,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 1131,
+    "service_ttlt_ms": 1544,
+    "user_visible_ttft_ms": 1046
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260823111400-79cf9456-default-r0-dp0-default"
+  }
+ }
+}

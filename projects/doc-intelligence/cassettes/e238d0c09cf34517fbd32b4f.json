@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\n1\nMICROBIOLOGICAL ASSOCIATES INCORPORATED\n4733 BETHESDA AVENUE WASHINGTON, D. C. 20014\nm\nSOLD TO The Council for Tobacco Research, U.S.A., Inc. 110 Fast 59th Street New York, New York 10022\nSHIPPED TO\nCIR-278-2225-3\nPLEASE REFER TO OUR INVOICE NUMBER ON ALL PAYMENTS AND CORRESPONDENCE\nINVOICE DATE\nMODA.BYR 11 13: 74\nDISCOUNT OF 145% ON NET AMOUNT IF PAID WITHIN 20 DAYS. NET 30 DAYS\nCUSTOMER NUMBER\nCUSTOVER P. O NUMBER\nCUST. P. O. DATE\nDATE SHIPPED\nPACKING SLIP NO\nMO. DAYR.\nMO. DA.YR.\nQUANTITY\nUNI MEAS\nPRODUCT NUMBER\nDESCRIPTION\nUNIT PRICE\nAMOUNT\nThis voucher represents reimburseable costs for period Getober 5, 1974 thru October 31, 1974\n16.\n1\n13599\napprend Jer 15,19,24 JAKreicher\nTAX\nNET AMOUNT\nFREIGHT CHARGES\nRATE\nAMOUNT\nTOTAL AMOUNT DUE\n$3,496.18\nFORM-900-003-3\nDUPLICATE INVOICE\n(REMIT IN U.S. CURRENCY ONLY\nCTR CONTRACTS 003655"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89Egr9JfOpdVp6mJRpgm4JKoJqA",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"invoice\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088196,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 509,
+   "total_tokens": 518,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 58,
+    "engine_ttlt_ms": 120,
+    "pre_inference_ms": 100,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 612,
+    "service_ttlt_ms": 742,
+    "user_visible_ttft_ms": 512
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003053040-8a14068b-default-r2-dp0-default"
+  }
+ }
+}

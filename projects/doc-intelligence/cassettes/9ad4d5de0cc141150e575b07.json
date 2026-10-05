@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B02-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "<!-- PageHeader=\"NATIONAL PLANT PROTECTION ORGANIZATION OF TURKEY\" -->\n\n\n# PHYTOSANITARY CERTIFICATE\n\n\n<table>\n<tr>\n<td>No .:</td>\n<td>PC591692</td>\n</tr>\n<tr>\n<td>Name of exporter:</td>\n<td>Lanka Spice Mills (Pvt) Ltd.</td>\n</tr>\n<tr>\n<td>Declared consignee:</td>\n<td>Riverina Trading Pty Ltd</td>\n</tr>\n<tr>\n<td>Botanical name of plants:</td>\n<td>Prunus armeniaca</td>\n</tr>\n<tr>\n<td>Place of origin:</td>\n<td>Turkey</td>\n</tr>\n<tr>\n<td colspan=\"2\">Declared means of conveyanceDNE HARMONY</td>\n</tr>\n<tr>\n<td>Point of entry:</td>\n<td>Fremantle</td>\n</tr>\n</table>\n\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

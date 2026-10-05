@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B01-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - TURKEY\nORIGIN DECLARATION\nCertificate No .:\nCO589528\nExporter: Nordic Pine Sawmills AB\nConsignee:\nSouthern Cross Imports Pty Ltd\nMeans of transport:\nEVER GIVEN II from Izmir\nHS heading:\n0813.10\nGoods:\nDried apricots\nCountry of origin:\nTurkey\nWe certify the goods described in invoice INV-37060 originate in Turkey.",
+  "pages": 1,
+  "fields": {}
+ }
+}

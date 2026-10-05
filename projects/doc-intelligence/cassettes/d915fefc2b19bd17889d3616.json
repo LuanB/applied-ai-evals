@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-010",
+  "markdown": false
+ },
+ "response": {
+  "content": "1989-10-26 14:40\nSALCOM RABBIT SOFTWARE\n31 35 63746\nP.01\nTelefax Copy\nSALCOM\n#841\nSALCOM RABBIT SOFTWARE B.V.\nKeenthof 15 1241 CP KORTENHOEF The Netherlands\nPHONE : 31-(0) 35-62444 TELEFAX: 31-(0) 35-63746\n26. Okt. 1989\nTO : Institut fur Biologische Forschung GmbH\nATTN. 1 Herr Dr. W. Gomm\nTELEFAX: 09.49.2203.303362\nFROM Salcom RABBIT Software B. V. - Cor Ruger DATE 26. Oktober 1989\nTOTALL OF PAGES: 3 MESSAGE :\nSchr gechrter Herr Gomm,\nanbei finden Sie das Preisangebot Nr. 8910545.\nMit freundlichen Gr\u00fcssen C. Pagar Salcom RABBIT Software B. V. Cor Ruger Sales Representative\n2024474730",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,196 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: bill_of_lading\n\nPage (markdown from layout analysis):\n# TRANS-PACIFIC CARRIERS\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MAEU35625917</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Golden Valley Exports Co. Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Southern Cross Imports Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>MSC ARIANNA 574E</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Gothenburg</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Fremantle</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>MSCU4284394 SL628311</td>\n</tr>\n</table>\n\n\n1375 PACKAGES SAID TO CONTAIN SAWN TIMBER, PINE, KILN DRIED\nGROSS WEIGHT 22220.8 KGS\nINVOICE INV-84536\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "bl_number",
+      "shipper",
+      "consignee",
+      "vessel",
+      "voyage",
+      "port_of_loading",
+      "port_of_discharge",
+      "container_number"
+     ],
+     "properties": {
+      "bl_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "bill of lading number"
+      },
+      "shipper": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "shipper"
+      },
+      "consignee": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "consignee"
+      },
+      "vessel": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "vessel name"
+      },
+      "voyage": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "voyage number"
+      },
+      "port_of_loading": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "port of loading"
+      },
+      "port_of_discharge": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "port of discharge"
+      },
+      "container_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "container number (without seal)"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8ClU5TC181CUBGPGixqrdD3tYKL",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"bl_number\":\"MAEU35625917\",\"shipper\":\"Golden Valley Exports Co. Ltd\",\"consignee\":\"Southern Cross Imports Pty Ltd\",\"vessel\":\"MSC ARIANNA\",\"voyage\":\"574E\",\"port_of_loading\":\"Gothenburg\",\"port_of_discharge\":\"Fremantle\",\"container_number\":\"MSCU4284394\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088415,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 71,
+   "prompt_tokens": 477,
+   "total_tokens": 548,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 33,
+    "engine_ttlt_ms": 554,
+    "pre_inference_ms": 81,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 419,
+    "service_ttlt_ms": 937,
+    "user_visible_ttft_ms": 338
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044429-7db5e9fb-default-r0-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-109",
+  "markdown": false
+ },
+ "response": {
+  "content": "THE TOBACCO INSTITUTE CHECK REQUEST\nRECEIVED\nNOV 1 3 1991 ACCOUNTING\nAMOUNT: $2.500.00\nPAY TO:\nPeterson & Ross\n8695 South Archer. Unit 20\nWillow Springs, IL 60480\nEXPLANATION: Statement of Expenses\nDISTRIBUTION OF CHARGES\nCost Center\nAccount\nJob Cost\nNumber\nNumber\nNumber\nExplanation\nAmount\n1401\n7310\nIL-232\nConsulting\n$2,500.00\nCy\nREQUESTED BY: BiWY Trisley\nAPPROVED BY:\nRETURN CHECK TO: YES\nMAIL CHECK TO VENDOR: SPECIFY DATE THE CHECK IS TO BE MAILED:\nTIILBC 022776\nTVND 0065116\n2\nDATE: November 12 1991",
+  "pages": 1,
+  "fields": {}
+ }
+}

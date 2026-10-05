@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-017",
+  "markdown": false
+ },
+ "response": {
+  "content": "staple\nLIMIT REVISION REQUEST FORM\nRev 1/94\n1. Requested By:\nD. Mertz\nExt\n3189\nDate Requested:\n1-4-95\nDate Required:\n2. SPC System:\nTOM\nOn-Line\nOff-Line (not TQM) Dept: RL LS ME EE\nOP ER PH Prod\nSystem Report Form #:\n05\n3. Quality Measure:\nL3\nSize Prep Ureg\n4. Reason For Change:\nNew Limiti\n5. Data Range (dates):\n1/7/95- 2/19/95\nExclude:\n6. Current Limits:\nUCL\nCL\nLCL\n**\n1 Through 6 To Be Filled Out By The Requestor **\nRecommendation:\nImplement New\nReviewer Comments:\nCenterline\nVariation\nHold Until\nBecause:\nChart Type:\nX-Bar\nS\nX\nP\nC\nOther:\nProposed Limits:\nUCL\n3. 089\nCL\n2,833\nLCL 2.577\nAnalyst: CSB , DTL,\nDate:\n3-1-95\nQuality Plan:\nInitials:\nDate:\nReviewed By:\nDate:\n-\nFile System:\nSPC\nFile Number: 33. 413\nData Coordinator: (TJH,\n19H\nDate:\n3/9/95\nDate:\n3-16-95\nInitials:\nAK\nAutoCad changes made (date):\nMaster Printed (date): 11\" X 17\" printed (date):\nAnalysis Summary: Data Removed:\nSuspect: 14 dati pts.\nTrimmed: I data of\nDistribution: Normal\nK-S\nChi-Sq\nNormality Test:\nOriginal Data -\n1,19\nNormal\nNon-Normal\nSample #:\n641\nTrimmed Data - -\n20\nNormal\nNon-Normal\nSample #: 640\nPercent Trimmed: < 19.\nPercent OOC (data against proposed limits): 24 %\nT-Test Results:\nSignificant difference in the means\nNo significant difference in the means\nF-Test Results:\nDetectable difference in the variation\nNo detectable difference in the variation\nDrive, Subdirectories (or Floppy Disk) and data filename: JAGROUPSIQSIDATAANALYSIS\\ (online) (offline) \\ L3\nLISPUREA.st\nDiscussions and History (use back if needed):\n2050314356",
+  "pages": 1,
+  "fields": {}
+ }
+}

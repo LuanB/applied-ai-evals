@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-038",
+  "markdown": false
+ },
+ "response": {
+  "content": "Mr. Tim Cahill Room 222 Jessie - CSW\n50059 9950",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,6261 @@
+{
+ "suite": "rag-audit",
+ "headline": "grounded_balanced",
+ "mode": "replay",
+ "generated": "2026-10-04T15:52:18",
+ "gate": {
+  "passed": true,
+  "reasons": [
+   "ok   rag-bm25: grounded_balanced 0.900 beats best baseline 0.500 (margin 0.05)",
+   "ok   rag-vector: grounded_balanced 0.963 beats best baseline 0.500 (margin 0.05)",
+   "ok   rag-hybrid: grounded_balanced 0.900 beats best baseline 0.500 (margin 0.05)"
+  ]
+ },
+ "runs": [
+  {
+   "system": "always-refuse",
+   "is_baseline": true,
+   "results": [
+    {
+     "case_id": "q01",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "b-001"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q02",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app9-001"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q03",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app13-024"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q04",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app13-024"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q05",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app10-002"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q06",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app11-019",
+       "app11-020"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q07",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app3-012",
+       "app6-009",
+       "app7-008",
+       "app8-015",
+       "b-007"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.12,
+     "error": ""
+    },
+    {
+     "case_id": "q08",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app11-003",
+       "app11-015",
+       "app12-002",
+       "app13-004",
+       "app6-004",
+       "b-019"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.12,
+     "error": ""
+    },
+    {
+     "case_id": "q09",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app6-018",
+       "app6-019"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q10",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app7-011"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q11",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app12-009",
+       "app12-031"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q12",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app5-001",
+       "app5-015"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q13",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app3-021"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q14",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app3-014",
+       "app6-014"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q15",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app3-031"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q16",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app2-001",
+       "app2-007"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q17",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app9-001"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q18",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app9-007"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q19",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app8-005"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.04,
+     "error": ""
+    },
+    {
+     "case_id": "q20",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app11-006",
+       "app11-011"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q21",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app10-003"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q22",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app10-007",
+       "app13-013"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q23",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app7-005"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q24",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app3-017",
+       "app3-018",
+       "app6-017"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q25",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app7-013",
+       "app7-014"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q26",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app12-023",
+       "app12-024",
+       "app12-025",
+       "app12-027"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q27",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app12-030"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q28",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app1-000",
+       "app1-001",
+       "app1-021",
+       "app1-022"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q29",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app11-001",
+       "app11-013",
+       "app11-014",
+       "app11-015"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q30",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app7-001",
+       "app7-006",
+       "app7-010"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q31",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app7-000",
+       "app7-002",
+       "app7-016"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q32",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app8-000",
+       "app8-001",
+       "app8-007",
+       "app8-025"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q33",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app8-008",
+       "app8-010"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q34",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app3-002",
+       "app3-012",
+       "app4-003"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q35",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app6-000",
+       "app6-002",
+       "app6-010",
+       "app6-012"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q36",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app1-006",
+       "app1-008",
+       "app1-009"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q37",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app1-018",
+       "app3-025",
+       "app6-000",
+       "app6-001",
+       "app6-002",
+       "app6-022",
+       "b-034"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q38",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app11-021",
+       "app6-023",
+       "b-012",
+       "b-021"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q39",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app12-011",
+       "app12-014"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q40",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app13-000",
+       "app13-001",
+       "app13-012",
+       "app13-019",
+       "app13-022",
+       "app13-023",
+       "app13-024"
+      ]
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "x01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": ""
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "x02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": ""
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": ""
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": ""
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": ""
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": ""
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x07",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": ""
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x08",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": ""
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x09",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": ""
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x10",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": ""
+     },
+     "cost_usd": 0.0,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "grounded_balanced": 0.5,
+    "answer_balanced": 0.5,
+    "grounded_accuracy": 0.0,
+    "answer_accuracy": 0.0,
+    "correct_refusal": 1.0,
+    "false_refusal": 1.0
+   },
+   "cost_usd": 0.0,
+   "wall_s": 0.55,
+   "gated": true
+  },
+  {
+   "system": "no-retrieval",
+   "is_baseline": true,
+   "results": [
+    {
+     "case_id": "q01",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 6C",
+       "Office of the Australian Information Commissioner (OAIC) guidance"
+      ],
+      "answer": "A business with an annual turnover of $3 million or less is generally considered a small business operator and is exempt from the Privacy Act, except in certain circumstances such as handling health information or providing a contracted service to the Australian Government.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "b-001"
+      ]
+     },
+     "cost_usd": 0.000215,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q02",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth)",
+       "Australian Privacy Principles (APPs)"
+      ],
+      "answer": "Under Australian privacy law, a company can use a customer's Medicare number as their own customer ID only if the customer consents and the use complies with the Privacy Act 1988, including the Australian Privacy Principles. However, since Medicare numbers are sensitive personal information, their u",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app9-001"
+      ]
+     },
+     "cost_usd": 0.000234,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "q03",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Section 40"
+      ],
+      "answer": "A federal government agency in Australia must respond to a request to correct personal information within 30 days of receiving the request, as stipulated under the Privacy Act 1988 (Cth).",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app13-024"
+      ]
+     },
+     "cost_usd": 0.000174,
+     "wall_s": 0.04,
+     "error": ""
+    },
+    {
+     "case_id": "q04",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 26G(3)"
+      ],
+      "answer": "Under the Australian Privacy Act 1988, a private-sector organisation must respond to a correction request within 30 days of receiving it.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app13-024"
+      ]
+     },
+     "cost_usd": 0.000158,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q05",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) - Australian Privacy Principle 10"
+      ],
+      "answer": "An entity must take reasonable steps to ensure personal information is accurate and up to date when it collects the information and before it uses or discloses the information.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app10-002"
+      ]
+     },
+     "cost_usd": 0.00017,
+     "wall_s": 0.03,
+     "error": ""
+    },
+    {
+     "case_id": "q06",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Australian Privacy Principle 11"
+      ],
+      "answer": "If a company cannot permanently erase personal data held electronically, it is expected to take reasonable steps to de-identify the data so that individuals are no longer identifiable. This approach aligns with the Australian Privacy Principles under the Privacy Act 1988.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app11-019",
+       "app11-020"
+      ]
+     },
+     "cost_usd": 0.000197,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q07",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Office of the Australian Information Commissioner (OAIC) - Australian Privacy Principles Guidelines"
+      ],
+      "answer": "The four key elements of valid consent under Australian privacy guidelines are: it must be voluntary, informed, current, and specific to the purpose for which the information is collected or used.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app3-012",
+       "app6-009",
+       "app7-008",
+       "app8-015",
+       "b-007"
+      ]
+     },
+     "cost_usd": 0.000174,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q08",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Australian Privacy Principles (APP) 8.1"
+      ],
+      "answer": "Yes, the company still holds the information because it controls access and amendment rights, even if storage is outsourced to a third party.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app11-003",
+       "app11-015",
+       "app12-002",
+       "app13-004",
+       "app6-004",
+       "b-019"
+      ]
+     },
+     "cost_usd": 0.000169,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q09",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth)",
+       "Australian Privacy Principles",
+       "Health Records and Information Privacy Act 2002 (NSW)"
+      ],
+      "answer": "Under Australian privacy law, a carer may disclose information about an unconscious patient's condition to their family if it is necessary to provide care or in the patient's best interests, but generally must consider the patient's privacy and any prior consent. Specific circumstances and state law",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app6-018",
+       "app6-019"
+      ]
+     },
+     "cost_usd": 0.000251,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q10",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Australian Privacy Principles (APP) 6.1 and 6.2"
+      ],
+      "answer": "Under the Australian Privacy Act, organisations generally need consent to use sensitive information for direct marketing, even if there is an existing relationship, unless an exception applies. However, sensitive information is subject to stricter rules, and direct marketing using such information t",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app7-011"
+      ]
+     },
+     "cost_usd": 0.000228,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q11",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 24D",
+       "OAIC Guidelines on Access and Correction"
+      ],
+      "answer": "A written notice refusing access to personal information must include the reasons for the refusal, information about the individual's right to make a complaint to the Office of the Australian Information Commissioner (OAIC), and details on how to lodge such a complaint.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app12-009",
+       "app12-031"
+      ]
+     },
+     "cost_usd": 0.000206,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q12",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 13"
+      ],
+      "answer": "Under the Australian Privacy Act 1988, an entity must notify an individual about the collection of their personal information at or before the time of collection, or if that is not practicable, as soon as possible afterwards. This notification typically includes the purpose of collection, the entity",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app5-001",
+       "app5-015"
+      ]
+     },
+     "cost_usd": 0.000234,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q13",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Australian Privacy Principles"
+      ],
+      "answer": "No, gathering personal information by hacking into a computer is not considered collecting by lawful means under Australian privacy law, as it involves unauthorized access and breaches legal protections.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app3-021"
+      ]
+     },
+     "cost_usd": 0.000161,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q14",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 16A"
+      ],
+      "answer": "Section 16A of the Privacy Act 1988 lists 11 permitted general situations for the use or disclosure of personal information, of which 6 apply only to agencies.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app3-014",
+       "app6-014"
+      ]
+     },
+     "cost_usd": 0.000171,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q15",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) Schedule 1 - Australian Privacy Principles",
+       "Office of the Australian Information Commissioner (OAIC) Guidelines on APP 3"
+      ],
+      "answer": "Under the Australian Privacy Principles (APPs), a company must comply with APP 3 when collecting personal information, including from related companies within a corporate group. However, if the collection is for a permitted purpose and the information is collected in a manner consistent with the APP",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app3-031"
+      ]
+     },
+     "cost_usd": 0.000295,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q16",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Australian Privacy Principle 2.1"
+      ],
+      "answer": "Under Australian privacy law, a person may not have the option to deal anonymously or under a pseudonym when it is impracticable for the entity to deal with them without identifying information, or when the entity is required or authorized by law to deal with identified individuals.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app2-001",
+       "app2-007"
+      ]
+     },
+     "cost_usd": 0.000214,
+     "wall_s": 0.16,
+     "error": ""
+    },
+    {
+     "case_id": "q17",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) - Australian Privacy Principles (APP) 9"
+      ],
+      "answer": "The privacy principles restrict private organisations from adopting government identifiers like tax file or Medicare numbers to prevent misuse and reduce the risk of identity theft, ensuring these sensitive identifiers are only used for their intended government purposes.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app9-001"
+      ]
+     },
+     "cost_usd": 0.00019,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q18",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth)",
+       "Healthcare Identifiers Act 2010 (Cth)"
+      ],
+      "answer": "Yes, healthcare providers in Australia are permitted to use patients' individual healthcare identifiers to identify patients, as these identifiers are designed to uniquely and securely identify individuals within the healthcare system, facilitating accurate and efficient information exchange.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app9-007"
+      ]
+     },
+     "cost_usd": 0.0002,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q19",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Australian Privacy Principles (APP) 8.1"
+      ],
+      "answer": "Yes, under the Australian Privacy Act, if an overseas contractor mishandles personal information, the Australian entity can be held responsible even if the transfer is considered a use rather than a disclosure, as the entity must ensure the contractor complies with privacy obligations.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app8-005"
+      ]
+     },
+     "cost_usd": 0.000217,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q20",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Australian Privacy Principles (APP) 11.1"
+      ],
+      "answer": "Unauthorised modification of personal information occurs when personal data is altered, deleted, or tampered with without the consent or knowledge of the individual or the data controller, potentially compromising data integrity and privacy.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app11-006",
+       "app11-011"
+      ]
+     },
+     "cost_usd": 0.000188,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q21",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Australian Privacy Principle 10"
+      ],
+      "answer": "The circumstances affecting which reasonable steps an entity should take to ensure the quality of personal information include the purpose for which the information is collected, the sensitivity of the information, the potential impact on individuals if the information is inaccurate, and the context",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app10-003"
+      ]
+     },
+     "cost_usd": 0.000212,
+     "wall_s": 0.12,
+     "error": ""
+    },
+    {
+     "case_id": "q22",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth)",
+       "Office of the Australian Information Commissioner (OAIC) guidelines"
+      ],
+      "answer": "A record about a past event is not automatically out of date; its relevance depends on the context and purpose for which it is used under Australian privacy law.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app10-007",
+       "app13-013"
+      ]
+     },
+     "cost_usd": 0.000175,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "q23",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) - Australian Privacy Principles, particularly APP 7"
+      ],
+      "answer": "The 'reasonably expect' test for direct marketing under Australian privacy law assesses whether an individual would reasonably expect their personal information to be used for direct marketing purposes, considering the context in which the information was collected. This test helps determine if cons",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app7-005"
+      ]
+     },
+     "cost_usd": 0.000215,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q24",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 16B",
+       "Office of the Australian Information Commissioner (OAIC) Guidelines on Health Privacy",
+       "Health Records and Information Privacy Act 2002 (NSW)"
+      ],
+      "answer": "An organisation can use health information for public health research without the person's consent if the use is permitted under the Privacy Act's research exemptions, typically requiring that the use is necessary for research in the public interest, the information is de-identified where possible, ",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app3-017",
+       "app3-018",
+       "app6-017"
+      ]
+     },
+     "cost_usd": 0.000306,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q25",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) - Australian Privacy Principles (APP 7)"
+      ],
+      "answer": "Under the Australian Privacy Act, an organisation must stop sending direct marketing to a person within a reasonable period after receiving a request to stop, typically within 7 working days.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app7-013",
+       "app7-014"
+      ]
+     },
+     "cost_usd": 0.000179,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q26",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 24A"
+      ],
+      "answer": "Under the Australian Privacy Act 1988, a federal agency must respond to a request for access to personal information within 30 calendar days of receiving the request.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app12-023",
+       "app12-024",
+       "app12-025",
+       "app12-027"
+      ]
+     },
+     "cost_usd": 0.000163,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q27",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Schedule 1, Australian Privacy Principle 12"
+      ],
+      "answer": "Yes, under the Australian Privacy Act 1988, an organisation can charge a reasonable fee for providing access to personal information, but the fee must not be excessive and should only cover the cost of making the information available.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app12-030"
+      ]
+     },
+     "cost_usd": 0.000195,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q28",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Australian Privacy Principle 1.4"
+      ],
+      "answer": "Yes, under the Australian Privacy Act 1988, entities covered by the Act must make their privacy policies available free of charge to individuals.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app1-000",
+       "app1-001",
+       "app1-021",
+       "app1-022"
+      ]
+     },
+     "cost_usd": 0.00016,
+     "wall_s": 0.04,
+     "error": ""
+    },
+    {
+     "case_id": "q29",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) Australian Privacy Principle 11.2"
+      ],
+      "answer": "An organisation must take reasonable steps to destroy or de-identify personal information it no longer needs for any purpose related to its functions or activities, unless required by law to retain it.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app11-001",
+       "app11-013",
+       "app11-014",
+       "app11-015"
+      ]
+     },
+     "cost_usd": 0.000177,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q30",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) - Australian Privacy Principles (APP 7)",
+       "Spam Act 2003 (Cth)"
+      ],
+      "answer": "An organisation must provide a simple and accessible way for individuals to opt out of receiving direct marketing communications, such as an unsubscribe link in emails or a clear opt-out mechanism in other forms of communication, as required under the Australian Privacy Act and the Spam Act 2003.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app7-001",
+       "app7-006",
+       "app7-010"
+      ]
+     },
+     "cost_usd": 0.000234,
+     "wall_s": 0.03,
+     "error": ""
+    },
+    {
+     "case_id": "q31",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) - Australian Privacy Principle 5.1(c)",
+       "Office of the Australian Information Commissioner (OAIC) - APP Guidelines"
+      ],
+      "answer": "Under the Australian Privacy Act, if a company collects personal information directly from an individual, it must inform them about the collection, including the source of their details. However, if the information was obtained from a third party, the company is generally required to disclose the so",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app7-000",
+       "app7-002",
+       "app7-016"
+      ]
+     },
+     "cost_usd": 0.000293,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q32",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 16C"
+      ],
+      "answer": "Section 16C of the Privacy Act 1988 (Cth) makes an Australian entity accountable for the acts and practices of overseas recipients to whom it discloses personal information, ensuring the entity takes reasonable steps to ensure the overseas recipient does not breach the Australian Privacy Principles.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app8-000",
+       "app8-001",
+       "app8-007",
+       "app8-025"
+      ]
+     },
+     "cost_usd": 0.000211,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q33",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) APP 8.1(c)"
+      ],
+      "answer": "An entity can disclose personal information overseas without taking reasonable steps to ensure the recipient complies with the Australian Privacy Principles (APPs) if it reasonably believes that the recipient is subject to a law or binding scheme that provides similar protections to the APPs, and th",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app8-008",
+       "app8-010"
+      ]
+     },
+     "cost_usd": 0.000255,
+     "wall_s": 0.12,
+     "error": ""
+    },
+    {
+     "case_id": "q34",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 6",
+       "Australian Privacy Principles (APP) 3.3"
+      ],
+      "answer": "Before collecting sensitive information, an entity must obtain the individual's consent, which is a higher standard than for ordinary personal information, where collection must simply be reasonably necessary and lawful.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app3-002",
+       "app3-012",
+       "app4-003"
+      ]
+     },
+     "cost_usd": 0.000188,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q35",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) - Australian Privacy Principle 6.1",
+       "Office of the Australian Information Commissioner (OAIC) Guidelines"
+      ],
+      "answer": "For a secondary use of sensitive information based on reasonable expectation under the Australian Privacy Act, the secondary use must be closely related to the primary purpose for which the information was collected, such that an individual would reasonably expect the information to be used in that ",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app6-000",
+       "app6-002",
+       "app6-010",
+       "app6-012"
+      ]
+     },
+     "cost_usd": 0.000233,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q36",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Australian Privacy Principle 8.1"
+      ],
+      "answer": "Yes, under the Australian Privacy Act 1988, a privacy policy must include information about whether the entity is likely to disclose personal information to overseas recipients.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app1-006",
+       "app1-008",
+       "app1-009"
+      ]
+     },
+     "cost_usd": 0.000168,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q37",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Schedule 1, Part 1, definition of sensitive information"
+      ],
+      "answer": "Yes, biometric templates are considered sensitive information under Australian privacy law as they relate to biometric data, which is classified as sensitive information under the Privacy Act 1988.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app1-018",
+       "app3-025",
+       "app6-000",
+       "app6-001",
+       "app6-002",
+       "app6-022",
+       "b-034"
+      ]
+     },
+     "cost_usd": 0.000177,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q38",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth)",
+       "Office of the Australian Information Commissioner (OAIC) Guidelines on De-identification"
+      ],
+      "answer": "Personal information is considered de-identified when it no longer identifies an individual and there is no reasonable likelihood that the information can be used, alone or with other information, to identify the individual. This means the data has been processed to remove or obscure identifiers so ",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app11-021",
+       "app6-023",
+       "b-012",
+       "b-021"
+      ]
+     },
+     "cost_usd": 0.000237,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q39",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Schedule 1, Australian Privacy Principles 12.3"
+      ],
+      "answer": "Yes, under the Australian Privacy Act 1988, an organisation can refuse an access request if it is frivolous or vexatious, meaning it is made without serious purpose or is intended to cause annoyance. However, the organisation must provide reasons for the refusal.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app12-011",
+       "app12-014"
+      ]
+     },
+     "cost_usd": 0.000217,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q40",
+     "passed": false,
+     "score": 0.0,
+     "detail": "no valid citation",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 19B"
+      ],
+      "answer": "If an entity refuses to correct a record, the person can request that the entity attach a statement to the record outlining the correction sought and the reasons for the correction.",
+      "correct": true,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app13-000",
+       "app13-001",
+       "app13-012",
+       "app13-019",
+       "app13-022",
+       "app13-023",
+       "app13-024"
+      ]
+     },
+     "cost_usd": 0.000168,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "x01",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: A business has 30 calendar days to assess a suspected eligible data breach before notifying the Office of the Australian",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth), Part IIIC, Division 3, Section 26W"
+      ],
+      "answer": "A business has 30 calendar days to assess a suspected eligible data breach before notifying the Office of the Australian Information Commissioner (OAIC)."
+     },
+     "cost_usd": 0.000173,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "x02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [
+       "https://gdpr-info.eu/art-83-gdpr/"
+      ],
+      "answer": "The maximum fine under the EU General Data Protection Regulation (GDPR) is up to \u20ac20 million or 4% of the annual global turnover of the preceding financial year, whichever is higher."
+     },
+     "cost_usd": 0.000175,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "x03",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: The California Consumer Privacy Act (CCPA) defines a sale of personal information as selling, renting, releasing, disclo",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "California Consumer Privacy Act, Cal. Civ. Code \u00a7 1798.140(t)"
+      ],
+      "answer": "The California Consumer Privacy Act (CCPA) defines a sale of personal information as selling, renting, releasing, disclosing, disseminating, making available, transferring, or otherwise communicating a consumer's personal information to another business or third party for monetary or other valuable "
+     },
+     "cost_usd": 0.000214,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "x04",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: Under the Spam Act 2003 (Cth), a business must action an unsubscribe request within 5 working days.",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "Spam Act 2003 (Cth), Section 11"
+      ],
+      "answer": "Under the Spam Act 2003 (Cth), a business must action an unsubscribe request within 5 working days."
+     },
+     "cost_usd": 0.000147,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "x05",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: The Children's Online Privacy Code requires social media platforms to obtain verifiable parental consent before collecti",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "Children's Online Privacy Code, Office of the Australian Information Commissioner (OAIC)"
+      ],
+      "answer": "The Children's Online Privacy Code requires social media platforms to obtain verifiable parental consent before collecting personal information from children under 13, ensure transparency about data practices, and implement reasonable security measures to protect children's data."
+     },
+     "cost_usd": 0.000185,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "x06",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: A plaintiff must prove that there was a serious invasion of their privacy that would be highly offensive to a reasonable",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "Australian Law Reform Commission, Serious Invasions of Privacy in the Digital Era, Report 123 (2014)",
+       "Australian Capital Television Pty Ltd v Commonwealth (1992) 177 CLR 106"
+      ],
+      "answer": "A plaintiff must prove that there was a serious invasion of their privacy that would be highly offensive to a reasonable person, that the defendant caused or was responsible for the invasion, and that the invasion resulted in loss or damage. The invasion must be of private facts or private affairs, "
+     },
+     "cost_usd": 0.000274,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "x07",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: The maximum civil penalty for a serious interference with privacy under the Privacy Act 1988 (Cth) is 2,000 penalty unit",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) s 13G(5)",
+       "Australian Government, Office of the Australian Information Commissioner (OAIC)"
+      ],
+      "answer": "The maximum civil penalty for a serious interference with privacy under the Privacy Act 1988 (Cth) is 2,000 penalty units for individuals and 10,000 penalty units for bodies corporate. As of 2024, one penalty unit is $330, so the maximum penalty can be up to $660,000 for individuals and $3,300,000 f"
+     },
+     "cost_usd": 0.000285,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x08",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: Under the Australian data retention scheme, telecommunications providers must retain customer metadata for a minimum per",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "Telecommunications (Interception and Access) Act 1979, Part 13, Division 4",
+       "Australian Government, Data Retention Overview"
+      ],
+      "answer": "Under the Australian data retention scheme, telecommunications providers must retain customer metadata for a minimum period of two years."
+     },
+     "cost_usd": 0.00017,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x09",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: Under Part IIIA of the Privacy Act 1988, credit reporting bodies must correct credit information within 30 days after re",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "Privacy Act 1988 (Cth) Part IIIA, Section 21F"
+      ],
+      "answer": "Under Part IIIA of the Privacy Act 1988, credit reporting bodies must correct credit information within 30 days after receiving a request for correction, unless an extension is granted. If the correction is not made within this period, the individual can notify the credit reporting body, which must "
+     },
+     "cost_usd": 0.000244,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x10",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: Under the Fair Work Act 2009, employers must keep employee records for at least 7 years after the record is made.",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "Fair Work Act 2009, Section 535"
+      ],
+      "answer": "Under the Fair Work Act 2009, employers must keep employee records for at least 7 years after the record is made."
+     },
+     "cost_usd": 0.000145,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "grounded_balanced": 0.05,
+    "answer_balanced": 0.33749999999999997,
+    "grounded_accuracy": 0.0,
+    "answer_accuracy": 0.575,
+    "correct_refusal": 0.1,
+    "false_refusal": 0.0
+   },
+   "cost_usd": 0.010221,
+   "wall_s": 0.54,
+   "gated": true
+  },
+  {
+   "system": "rag-bm25",
+   "is_baseline": false,
+   "results": [
+    {
+     "case_id": "q01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "b-001"
+      ],
+      "answer": "A small business operator is generally defined as an individual, body corporate, partnership, unincorporated association or trust that has an annual turnover of $3,000,000 or less for a financial year, and such small business operators are generally not covered by the Privacy Act unless exceptions a",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "b-001"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001357,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q02",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app9-006"
+      ],
+      "answer": "No, a company cannot simply use a customer's Medicare number as its own customer ID without complying with APP 9. Adoption of a government related identifier, such as a Medicare number, means organizing personal information with reference to that identifier, which is regulated under APP 9. The compa",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app9-001"
+      ],
+      "hit_at_k": false,
+      "rr": 0.023809523809523808
+     },
+     "cost_usd": 0.001224,
+     "wall_s": 0.03,
+     "error": ""
+    },
+    {
+     "case_id": "q03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-024"
+      ],
+      "answer": "A federal government agency must respond to a request to correct personal information within 30 calendar days, starting the day after the request is received. This timeframe is considered a reasonable period and should not be exceeded.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app13-024"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001035,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "q04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-024"
+      ],
+      "answer": "A private-sector organisation must respond to a correction request within a reasonable period, which as a general guide should not exceed 30 calendar days from the day after the request is received.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app13-024"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000779,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app10-002"
+      ],
+      "answer": "An APP entity must take reasonable steps to ensure the quality of personal information at two distinct points: first, at the time the information is collected, and second, at the time the information is used or disclosed.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app10-002"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000796,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app11-020"
+      ],
+      "answer": "If a company cannot irretrievably destroy personal information held electronically, it is expected to take reasonable steps to put the personal information 'beyond use', which includes not using or disclosing the information, preventing access by others, securing it with appropriate controls, and co",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-019",
+       "app11-020"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001186,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q07",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-008",
+       "app3-012",
+       "app6-009",
+       "app8-015",
+       "b-007"
+      ],
+      "answer": "The four key elements of valid consent under the privacy guidelines are: the individual is adequately informed before giving consent; the individual gives consent voluntarily; the consent is current and specific; and the individual has the capacity to understand and communicate their consent.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-012",
+       "app6-009",
+       "app7-008",
+       "app8-015",
+       "b-007"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000923,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q08",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-002",
+       "app6-004",
+       "app11-003",
+       "app13-004",
+       "b-019"
+      ],
+      "answer": "Yes, a company that outsources the storage of customer records to a third-party provider but retains the right to access and amend those records still 'holds' that personal information under the Privacy Act.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-003",
+       "app11-015",
+       "app12-002",
+       "app13-004",
+       "app6-004",
+       "b-019"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000909,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q09",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-019",
+       "app6-018"
+      ],
+      "answer": "Yes, a carer can disclose health information to an unconscious patient's family members about the patient's condition if the carer is satisfied that the disclosure is necessary for compassionate reasons, and the disclosure is limited to what is reasonable and necessary for those reasons.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app6-018",
+       "app6-019"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001157,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q10",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-011"
+      ],
+      "answer": "Yes, an organisation must obtain consent to use or disclose sensitive information for direct marketing purposes, even if there is a pre-existing relationship with the individual.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-011"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000945,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q11",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-021",
+       "app12-022",
+       "app12-001"
+      ],
+      "answer": "A written notice refusing access to personal information must include the reasons for the refusal and may include an explanation for the commercially sensitive decision if applicable. The notice must comply with the minimum access requirements under APP 12, including providing reasons for refusal as",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app12-009",
+       "app12-031"
+      ],
+      "hit_at_k": false,
+      "rr": 0.1111111111111111
+     },
+     "cost_usd": 0.00089,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q12",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app5-001",
+       "app5-015"
+      ],
+      "answer": "An entity must take reasonable steps to notify an individual about the collection of their personal information at or before the time of collection, or if that is not practicable, as soon as practicable after the collection occurs. This ensures the individual can make an informed choice about provid",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app5-001",
+       "app5-015"
+      ],
+      "hit_at_k": true,
+      "rr": 0.3333333333333333
+     },
+     "cost_usd": 0.00106,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q13",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app3-021"
+      ],
+      "answer": "No, collecting personal information by hacking into a computer would not count as collecting by lawful means, as it is considered unlawful under the Privacy Act.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-021"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001099,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q14",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app3-014",
+       "app6-014"
+      ],
+      "answer": "Section 16A lists seven permitted general situations, two of which apply only to agencies.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-014",
+       "app6-014"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001119,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q15",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app3-031"
+      ],
+      "answer": "Yes, under section 13B(1)(a), a company may collect non-sensitive personal information from a related body corporate without needing to satisfy the usual APP 3.1 or 3.2 requirements, provided the related body corporate is an organisation.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-031"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.000991,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q16",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app2-001"
+      ],
+      "answer": "A person may not have the option to deal anonymously or by pseudonym with an APP entity if the entity is required or authorised by or under an Australian law or a court/tribunal order to deal with identified individuals, or if it is impracticable for the entity to deal with individuals who have not ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app2-001",
+       "app2-007"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001115,
+     "wall_s": 0.13,
+     "error": ""
+    },
+    {
+     "case_id": "q17",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app9-001",
+       "app9-003"
+      ],
+      "answer": "The privacy principles restrict private organisations from adopting government related identifiers to prevent these identifiers from becoming universal identifiers, which could jeopardise privacy by enabling personal information from different sources to be matched and linked in ways that an individ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app9-001"
+      ],
+      "hit_at_k": true,
+      "rr": 0.25
+     },
+     "cost_usd": 0.000837,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q18",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app9-007"
+      ],
+      "answer": "Yes, healthcare providers are authorised by law to adopt the individual healthcare identifiers of their patients as their own identifier to organise the personal information of their patients.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app9-007"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000758,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q19",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app8-005"
+      ],
+      "answer": "Yes, if the provision of personal information to an overseas contractor is considered a use rather than a disclosure, the Australian entity may still be in breach of the APPs if the information is mishandled while in the contractor's physical possession, as the entity is considered to still hold the",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app8-005"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001311,
+     "wall_s": 0.12,
+     "error": ""
+    },
+    {
+     "case_id": "q20",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app11-011"
+      ],
+      "answer": "Unauthorised modification of personal information occurs when personal information held by an APP entity is altered by someone not permitted to do so, or altered in a way not permitted under the Privacy Act, such as unauthorised alteration by an employee or following unauthorised access by an extern",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-006",
+       "app11-011"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000608,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q21",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app10-003"
+      ],
+      "answer": "The reasonable steps an APP entity should take depend on the sensitivity of the personal information, the nature of the entity (including size, resources, and business model), the possible adverse consequences for an individual if the information quality is not ensured, and the practicability includ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app10-003"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00102,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q22",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-013",
+       "app10-007"
+      ],
+      "answer": "A record about a past event is not automatically out-of-date; whether it is out-of-date depends on the purpose for which the information is held or used. If current information is required for the particular purpose, the record may be out-of-date to that extent, but if information from a past point ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app10-007",
+       "app13-013"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001117,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q23",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-005",
+       "app6-010"
+      ],
+      "answer": "The 'reasonably expect' test for direct marketing is an objective test that considers what a reasonable person, who is properly informed, would expect in the circumstances. It is a question of fact in each individual case, and the organisation must be able to justify its conduct.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-005"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001295,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q24",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-017"
+      ],
+      "answer": "An organisation may use or disclose health information for public health research without the individual's consent if it is impracticable to obtain consent, the use or disclosure is necessary for research relevant to public health or safety, it is conducted in accordance with guidelines approved und",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-017",
+       "app3-018",
+       "app6-017"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001095,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q25",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-013",
+       "app7-014"
+      ],
+      "answer": "An organisation must stop sending direct marketing communications within a reasonable period after the request is made, which would generally be no more than 30 days. However, the organisation could give effect to an opt-out request in a shorter timeframe, especially when digital communication chann",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-013",
+       "app7-014"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001015,
+     "wall_s": 0.15,
+     "error": ""
+    },
+    {
+     "case_id": "q26",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-024"
+      ],
+      "answer": "A federal agency must respond to a request for access to personal information within 30 calendar days, starting the day after the agency receives the request. The agency must either provide access or notify the refusal within this timeframe, or if impracticable, explain the delay and provide an expe",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-023",
+       "app12-024",
+       "app12-025",
+       "app12-027"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000907,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q27",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-030"
+      ],
+      "answer": "An organisation may impose a charge for giving access to requested personal information, but the charge must not be excessive and should only cover actual costs such as staff time and postage. The organisation should also consider waiving or reducing the charge and must not use the charge to discour",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-030"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001073,
+     "wall_s": 0.04,
+     "error": ""
+    },
+    {
+     "case_id": "q28",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app1-000",
+       "app1-021",
+       "app1-022"
+      ],
+      "answer": "Yes, an APP entity must take reasonable steps to make its APP Privacy Policy available free of charge, as part of ensuring personal information is managed in an open and transparent way. The cost of providing the policy should be treated as part of the entity's normal operating costs, and if a charg",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app1-000",
+       "app1-001",
+       "app1-021",
+       "app1-022"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001157,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q29",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app11-013",
+       "app11-015"
+      ],
+      "answer": "An organisation must take reasonable steps to destroy or de-identify personal information it no longer needs for any purpose for which it may be used or disclosed under the APPs. This includes all copies of the information, even archived or backup copies, unless retention is required by law or a cou",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-001",
+       "app11-013",
+       "app11-014",
+       "app11-015"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000924,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q30",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-000",
+       "app7-001",
+       "app7-004"
+      ],
+      "answer": "An organisation must provide a simple means by which an individual can request not to receive direct marketing communications (also known as 'opting out'), and must comply with that request within a reasonable period and for free.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-001",
+       "app7-006",
+       "app7-010"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.000854,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q31",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not specifically address whether a company must disclose the source of personal details used for a marketing message when asked by an individual.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app7-000",
+       "app7-002",
+       "app7-016"
+      ],
+      "hit_at_k": false,
+      "rr": 0.0
+     },
+     "cost_usd": 0.001152,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q32",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app8-001",
+       "app8-025"
+      ],
+      "answer": "Section 16C makes an Australian APP entity accountable for acts or practices of an overseas recipient in relation to personal information disclosed to them that would breach the APPs if they applied. This accountability applies when APP 8.1 applies to the disclosure and the overseas recipient is not",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app8-000",
+       "app8-001",
+       "app8-007",
+       "app8-025"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00141,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q33",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "The guidelines provided do not cover an exception to the requirement to take reasonable steps based on the overseas recipient's own legal regime. The excerpts discuss exceptions under APP 8.2 and specific cases like locating missing persons, but do not mention an exception due to the recipient's leg",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app8-008",
+       "app8-010"
+      ],
+      "hit_at_k": false,
+      "rr": 0.14285714285714285
+     },
+     "cost_usd": 0.000999,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q34",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app3-012",
+       "app3-001",
+       "app10-011"
+      ],
+      "answer": "Before collecting sensitive information, an APP entity must obtain the individual's consent in addition to ensuring the collection is reasonably necessary for the entity's functions or activities. This consent must be informed, voluntary, current, specific, and the individual must have the capacity ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-002",
+       "app3-012",
+       "app4-003"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001083,
+     "wall_s": 0.15,
+     "error": ""
+    },
+    {
+     "case_id": "q35",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-010",
+       "app6-011"
+      ],
+      "answer": "For a secondary use of sensitive information based on reasonable expectation, the secondary purpose must be 'directly related' to the primary purpose of collection, meaning it must be closely associated with the primary purpose, even if not strictly necessary to achieve it.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app6-000",
+       "app6-002",
+       "app6-010",
+       "app6-012"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001231,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q36",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app1-006",
+       "app1-008",
+       "app1-009"
+      ],
+      "answer": "Yes, an APP Privacy Policy must state whether the entity is likely to disclose personal information to overseas recipients and, if practicable, specify the countries where those recipients are likely to be located.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app1-006",
+       "app1-008",
+       "app1-009"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001361,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q37",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-022",
+       "b-034"
+      ],
+      "answer": "Yes, biometric templates are considered a type of sensitive information under the Privacy Act.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app1-018",
+       "app3-025",
+       "app6-000",
+       "app6-001",
+       "app6-002",
+       "app6-022",
+       "b-034"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000939,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q38",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "b-012",
+       "app11-021"
+      ],
+      "answer": "Personal information is considered de-identified if the information is no longer about an identifiable individual or an individual who is reasonably identifiable, meaning personal identifiers and other information that could reasonably identify an individual have been removed or altered.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-021",
+       "app6-023",
+       "b-012",
+       "b-021"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001154,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q39",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-014",
+       "app12-011"
+      ],
+      "answer": "Yes, an organisation can refuse an access request if it is frivolous or vexatious, but there must be a clear and convincing basis for this decision. Examples include repeated requests for information already provided, requests with offensive language, or requests made to harass staff.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-011",
+       "app12-014"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000911,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q40",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-023",
+       "app13-022"
+      ],
+      "answer": "If an entity refuses to correct a record, the person can request the entity to associate a statement that the individual believes the personal information to be inaccurate, out-of-date, incomplete, irrelevant or misleading. The entity must take reasonable steps to associate this statement in a way t",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app13-000",
+       "app13-001",
+       "app13-012",
+       "app13-019",
+       "app13-022",
+       "app13-023",
+       "app13-024"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001392,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "x01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not specify the number of days a business has to assess a suspected eligible data breach before notifying the OAIC."
+     },
+     "cost_usd": 0.001108,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "x02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided guidelines do not cover the maximum fine under the EU General Data Protection Regulation."
+     },
+     "cost_usd": 0.001171,
+     "wall_s": 0.03,
+     "error": ""
+    },
+    {
+     "case_id": "x03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided guidelines do not cover the definition of a sale of personal information under the California Consumer Privacy Act."
+     },
+     "cost_usd": 0.001222,
+     "wall_s": 0.03,
+     "error": ""
+    },
+    {
+     "case_id": "x04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [
+       "app7-017",
+       "app7-002"
+      ],
+      "answer": "The guidelines provided do not cover the specific timeframe under the Spam Act for actioning an unsubscribe request."
+     },
+     "cost_usd": 0.000877,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "x05",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: The Children's Online Privacy Code, as referenced in the context of the Online Safety Act 2021, requires age-restricted ",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "app3-013"
+      ],
+      "answer": "The Children's Online Privacy Code, as referenced in the context of the Online Safety Act 2021, requires age-restricted social media platforms to take 'reasonable steps' to prevent users under 16 years of age from having an account with the platform. This may include the collection of sensitive info"
+     },
+     "cost_usd": 0.00127,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "x06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided guidelines do not cover what a plaintiff must prove to succeed under the statutory tort for serious invasions of privacy."
+     },
+     "cost_usd": 0.0012,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x07",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not contain information about the maximum civil penalty for a serious interference with privacy under the Privacy Act."
+     },
+     "cost_usd": 0.000912,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x08",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover the duration for which telecommunications providers must retain customer metadata under the data retention scheme."
+     },
+     "cost_usd": 0.001055,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x09",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover the time limits that apply to credit reporting bodies correcting credit information under Part IIIA."
+     },
+     "cost_usd": 0.000918,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x10",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover the duration for which an employer must keep employee records under the Fair Work Act."
+     },
+     "cost_usd": 0.001175,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "grounded_balanced": 0.9,
+    "answer_balanced": 0.9,
+    "grounded_accuracy": 0.9,
+    "answer_accuracy": 0.9,
+    "correct_refusal": 0.9,
+    "false_refusal": 0.05,
+    "recall_at_5": 0.9,
+    "mrr": 0.7840277777777778
+   },
+   "cost_usd": 0.053096,
+   "wall_s": 0.57,
+   "gated": true
+  },
+  {
+   "system": "rag-vector",
+   "is_baseline": false,
+   "results": [
+    {
+     "case_id": "q01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "b-001"
+      ],
+      "answer": "A small business operator is generally defined as an individual, body corporate, partnership, unincorporated association, or trust that has an annual turnover of $3,000,000 or less for a financial year, unless an exception applies.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "b-001"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001433,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q02",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app9-003",
+       "app9-011",
+       "app9-013"
+      ],
+      "answer": "The guidelines do not explicitly address whether a customer can agree to let a company use their Medicare number as the company's own customer ID. However, government related identifiers like Medicare numbers are regulated and their use or disclosure is limited to specific permitted situations, such",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app9-001"
+      ],
+      "hit_at_k": false,
+      "rr": 0.0
+     },
+     "cost_usd": 0.003138,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-024"
+      ],
+      "answer": "A federal government agency must respond to a request to correct personal information within 30 calendar days, starting the day after the agency receives the request. The agency must either correct the information as requested or notify the individual of its refusal to correct it.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app13-024"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000696,
+     "wall_s": 0.03,
+     "error": ""
+    },
+    {
+     "case_id": "q04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-024"
+      ],
+      "answer": "A private-sector organisation must respond to a correction request within a reasonable period after the request is made, and as a general guide, this reasonable period should not exceed 30 calendar days.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app13-024"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.000795,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app10-002"
+      ],
+      "answer": "An APP entity must take reasonable steps to ensure the quality of personal information at two distinct points: first, at the time the information is collected, and second, at the time the information is used or disclosed.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app10-002"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000728,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app11-020",
+       "app11-019"
+      ],
+      "answer": "If a company cannot irretrievably destroy personal information held electronically, it is expected to take reasonable steps to put the personal information 'beyond use' or consider whether de-identifying the data would be appropriate and take reasonable steps to de-identify it.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-019",
+       "app11-020"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001033,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q07",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "b-007",
+       "app7-008",
+       "app3-012"
+      ],
+      "answer": "The four key elements of valid consent are: the individual is adequately informed before giving consent; the individual gives consent voluntarily; the consent is current and specific; and the individual has the capacity to understand and communicate their consent.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-012",
+       "app6-009",
+       "app7-008",
+       "app8-015",
+       "b-007"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001153,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q08",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "b-019",
+       "app6-004",
+       "app11-003",
+       "app13-004"
+      ],
+      "answer": "Yes, a company that outsources the storage of customer records to a third-party provider but retains the right to access and amend those records is considered to hold that personal information under the Privacy Act.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-003",
+       "app11-015",
+       "app12-002",
+       "app13-004",
+       "app6-004",
+       "b-019"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.000985,
+     "wall_s": 0.12,
+     "error": ""
+    },
+    {
+     "case_id": "q09",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-019",
+       "app6-018"
+      ],
+      "answer": "Yes, a carer can disclose health information to an unconscious patient's family members about the patient's condition if the carer is satisfied that the disclosure is necessary for compassionate reasons, and the disclosure is limited to what is reasonable and necessary for those reasons.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app6-018",
+       "app6-019"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001117,
+     "wall_s": 0.14,
+     "error": ""
+    },
+    {
+     "case_id": "q10",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-011"
+      ],
+      "answer": "Yes, an organisation must obtain consent to use or disclose sensitive information for direct marketing purposes even if there is a pre-existing relationship with the individual.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-011"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000782,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q11",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-031",
+       "app12-082",
+       "app12-087"
+      ],
+      "answer": "A written notice refusing access to personal information must include the reasons for the refusal (except where it would be unreasonable to do so), the complaint mechanisms available to the individual, and any other matters prescribed by regulations under the Privacy Act. The reasons should explain,",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-009",
+       "app12-031"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001362,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q12",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app5-001",
+       "app5-015",
+       "app5-004"
+      ],
+      "answer": "An entity must take reasonable steps to notify an individual about the collection of their personal information at or before the time of collection, or if that is not practicable, as soon as practicable after the collection occurs. This is to allow the individual to make an informed choice about pro",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app5-001",
+       "app5-015"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001197,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q13",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app3-021"
+      ],
+      "answer": "No, collecting personal information by hacking into a computer would not be considered collecting by lawful means as it is unlawful under the Privacy Act.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-021"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00106,
+     "wall_s": 0.03,
+     "error": ""
+    },
+    {
+     "case_id": "q14",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app8-017",
+       "app8-021"
+      ],
+      "answer": "Section 16A lists five permitted general situations for cross-border disclosures under APP 8. Of these, only one permitted general situation applies exclusively to agencies, which is where the disclosure is necessary for the agency's diplomatic or consular functions or activities.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app3-014",
+       "app6-014"
+      ],
+      "hit_at_k": false,
+      "rr": 0.08333333333333333
+     },
+     "cost_usd": 0.000841,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q15",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app3-031"
+      ],
+      "answer": "Yes, a company can collect non-sensitive personal information from a related body corporate without meeting the usual APP 3 collection requirements, as this is generally not considered an interference with privacy under section 13B(1)(a).",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-031"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00078,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q16",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app2-000",
+       "app2-007"
+      ],
+      "answer": "A person may not have the option to deal with an entity anonymously or under a pseudonym if the entity is required or authorised by law or a court or tribunal order to deal with identified individuals, or if it is impracticable for the entity to deal with individuals who have not identified themselv",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app2-001",
+       "app2-007"
+      ],
+      "hit_at_k": true,
+      "rr": 0.25
+     },
+     "cost_usd": 0.000938,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q17",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app9-003",
+       "app9-005",
+       "app9-006",
+       "app9-008",
+       "app9-015"
+      ],
+      "answer": "The privacy principles restrict private organisations from adopting government related identifiers like tax file or Medicare numbers to ensure that such identifiers are only used or adopted in circumstances prescribed by regulations, preventing misuse and protecting individuals' privacy. Adoption me",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app9-001"
+      ],
+      "hit_at_k": false,
+      "rr": 0.07142857142857142
+     },
+     "cost_usd": 0.000748,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q18",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app9-007"
+      ],
+      "answer": "Yes, healthcare providers are authorised by law to adopt the individual healthcare identifiers of their patients as their own identifier, allowing them to organise patient information by reference to these identifiers.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app9-007"
+      ],
+      "hit_at_k": true,
+      "rr": 0.3333333333333333
+     },
+     "cost_usd": 0.000585,
+     "wall_s": 0.16,
+     "error": ""
+    },
+    {
+     "case_id": "q19",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app8-005"
+      ],
+      "answer": "Yes, if the provision of personal information to an overseas contractor is considered a use rather than a disclosure, the Australian entity may still breach the APPs if the information is mishandled while in the overseas contractor's physical possession, as the entity is considered to still 'hold' t",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app8-005"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001129,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q20",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app11-011"
+      ],
+      "answer": "Unauthorised modification of personal information occurs when personal information held by an APP entity is altered by someone who is not permitted to do so, or is altered in a way that is not permitted under the Privacy Act. This can include unauthorised alteration by an employee or following unaut",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-006",
+       "app11-011"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000698,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q21",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app10-003"
+      ],
+      "answer": "The reasonable steps an APP entity should take to ensure the quality of personal information depend on the sensitivity of the personal information, the nature of the APP entity (including size, resources, and business model), the possible adverse consequences for an individual if the quality is not ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app10-003"
+      ],
+      "hit_at_k": true,
+      "rr": 0.3333333333333333
+     },
+     "cost_usd": 0.001066,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q22",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-013",
+       "app10-007"
+      ],
+      "answer": "A record about a past event is not automatically out-of-date; whether it is out-of-date depends on the purpose for which the information is held or collected. If current information is required for the particular purpose, the information will be out-of-date to that extent, but if information from a ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app10-007",
+       "app13-013"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000975,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q23",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-005"
+      ],
+      "answer": "The 'reasonably expect' test is an objective test that considers what a reasonable person, who is properly informed, would expect in the circumstances. It is a question of fact in each individual case, and the organisation must be able to justify its conduct.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-005"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000885,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q24",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-017",
+       "app6-018"
+      ],
+      "answer": "An organisation may use or disclose health information for public health research without the individual's consent if it is impracticable to obtain consent, the use or disclosure is necessary for research relevant to public health or public safety, the use or disclosure is conducted in accordance wi",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-017",
+       "app3-018",
+       "app6-017"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00121,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q25",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-013",
+       "app7-014"
+      ],
+      "answer": "An organisation must stop sending direct marketing communications within a reasonable period after the request is made, which would generally be no more than 30 days.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-013",
+       "app7-014"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000895,
+     "wall_s": 0.12,
+     "error": ""
+    },
+    {
+     "case_id": "q26",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-024"
+      ],
+      "answer": "A federal agency must respond to a request for access to personal information within 30 calendar days, starting the day after the agency receives the request. The agency must either provide access or notify the refusal within this timeframe, and if impracticable, it should explain the delay and prov",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-023",
+       "app12-024",
+       "app12-025",
+       "app12-027"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000723,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q27",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-030"
+      ],
+      "answer": "An organisation may impose a charge for giving access to requested personal information, but the charge must not be excessive and should only cover actual costs such as staff time and postage. The organisation should also consider waiving or reducing the charge in certain circumstances and must not ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-030"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00104,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q28",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app1-021",
+       "app1-022"
+      ],
+      "answer": "Yes, an APP entity is generally expected to make its APP Privacy Policy available free of charge as part of taking reasonable steps to make it accessible. If a charge is imposed, it must be clearly communicated and calculated at the lowest reasonable cost.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app1-000",
+       "app1-001",
+       "app1-021",
+       "app1-022"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001143,
+     "wall_s": 0.14,
+     "error": ""
+    },
+    {
+     "case_id": "q29",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app11-013",
+       "app11-015"
+      ],
+      "answer": "An organisation must take reasonable steps to destroy or de-identify personal information it no longer needs for any purpose permitted under the APPs. This includes destroying or de-identifying all copies it holds, including archived or backup copies, and implementing practices to identify such info",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-001",
+       "app11-013",
+       "app11-014",
+       "app11-015"
+      ],
+      "hit_at_k": true,
+      "rr": 0.3333333333333333
+     },
+     "cost_usd": 0.00125,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q30",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-006",
+       "app7-010",
+       "app7-007"
+      ],
+      "answer": "An organisation must provide a simple means for individuals to opt out of receiving direct marketing communications, including a prominent statement in each direct marketing communication that the individual may request to opt out. The opt out mechanism should be easy to understand, accessible, free",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-001",
+       "app7-006",
+       "app7-010"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000991,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q31",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-002",
+       "app7-016",
+       "app7-000"
+      ],
+      "answer": "Yes, an organisation must notify an individual of the source of their personal information used or disclosed for direct marketing upon request, unless it is unreasonable or impracticable to do so. The organisation must justify if it claims it is impracticable or unreasonable and generally should res",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-000",
+       "app7-002",
+       "app7-016"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001009,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q32",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app8-025"
+      ],
+      "answer": "Section 16C(1) of the Privacy Act makes an Australian APP entity accountable for acts or practices of an overseas recipient in relation to personal information it disclosed, if those acts or practices would breach the APPs (other than APP 1) if the APPs applied to the overseas recipient.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app8-000",
+       "app8-001",
+       "app8-007",
+       "app8-025"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00132,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q33",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app8-008"
+      ],
+      "answer": "An entity can disclose personal information overseas without taking reasonable steps to ensure the recipient complies with the APPs if it reasonably believes that the overseas recipient is subject to a law or binding scheme that protects the information in a way that is at least substantially simila",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app8-008",
+       "app8-010"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000592,
+     "wall_s": 0.13,
+     "error": ""
+    },
+    {
+     "case_id": "q34",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app3-012"
+      ],
+      "answer": "Generally, before an entity collects sensitive information, it must obtain the individual's consent in addition to ensuring the collection is reasonably necessary for the entity's functions or activities. This is an extra requirement compared to the collection of ordinary personal information. Conse",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-002",
+       "app3-012",
+       "app4-003"
+      ],
+      "hit_at_k": true,
+      "rr": 0.3333333333333333
+     },
+     "cost_usd": 0.00138,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q35",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-010",
+       "app6-011",
+       "app6-012"
+      ],
+      "answer": "For a secondary use of sensitive information based on reasonable expectation, the secondary purpose must be 'directly related' to the primary purpose of collection, meaning it must be closely associated with the primary purpose, even if not strictly necessary to achieve it.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app6-000",
+       "app6-002",
+       "app6-010",
+       "app6-012"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001079,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q36",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app1-009",
+       "app5-013"
+      ],
+      "answer": "Yes, a privacy policy must include whether the entity is likely to disclose personal information to overseas recipients and specify the countries where practicable. If it is impracticable to specify the countries, general regions may be identified instead.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app1-006",
+       "app1-008",
+       "app1-009"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000532,
+     "wall_s": 0.14,
+     "error": ""
+    },
+    {
+     "case_id": "q37",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-022",
+       "b-034"
+      ],
+      "answer": "Yes, biometric templates are considered a type of sensitive information under the Privacy Act.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app1-018",
+       "app3-025",
+       "app6-000",
+       "app6-001",
+       "app6-002",
+       "app6-022",
+       "b-034"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00114,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q38",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "b-012",
+       "app11-021",
+       "b-021"
+      ],
+      "answer": "Personal information is considered de-identified if the information is no longer about an identifiable individual or an individual who is reasonably identifiable. This involves removing or altering information that identifies an individual or is reasonably likely to do so, including personal identif",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-021",
+       "app6-023",
+       "b-012",
+       "b-021"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001355,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q39",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-014",
+       "app12-011"
+      ],
+      "answer": "Yes, an organisation can refuse an access request if it is frivolous or vexatious, but there must be a clear and convincing basis for this decision. Examples include repeated requests for the same information, requests with offensive language, or requests made to harass staff.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-011",
+       "app12-014"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001114,
+     "wall_s": 0.13,
+     "error": ""
+    },
+    {
+     "case_id": "q40",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-022"
+      ],
+      "answer": "If an entity refuses to correct personal information as requested, the individual has the right under APP 13.4 to request the entity to associate a statement with the personal information.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app13-000",
+       "app13-001",
+       "app13-012",
+       "app13-019",
+       "app13-022",
+       "app13-023",
+       "app13-024"
+      ],
+      "hit_at_k": true,
+      "rr": 0.3333333333333333
+     },
+     "cost_usd": 0.001216,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "x01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover the timeframe a business has to assess a suspected eligible data breach before notifying the OAIC."
+     },
+     "cost_usd": 0.000778,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "x02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The guidelines provided do not cover the maximum fine under the EU General Data Protection Regulation."
+     },
+     "cost_usd": 0.001116,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "x03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not contain information about the California Consumer Privacy Act or its definition of a sale of personal information."
+     },
+     "cost_usd": 0.000945,
+     "wall_s": 0.04,
+     "error": ""
+    },
+    {
+     "case_id": "x04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover the specific timeframe under the Spam Act for a business to action an unsubscribe request."
+     },
+     "cost_usd": 0.000645,
+     "wall_s": 0.04,
+     "error": ""
+    },
+    {
+     "case_id": "x05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not contain information about the Children's Online Privacy Code or its requirements for social media platforms."
+     },
+     "cost_usd": 0.001281,
+     "wall_s": 0.03,
+     "error": ""
+    },
+    {
+     "case_id": "x06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover what a plaintiff must prove to succeed under the statutory tort for serious invasions of privacy."
+     },
+     "cost_usd": 0.000978,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "x07",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not contain information about the maximum civil penalty for a serious interference with privacy under the Privacy Act."
+     },
+     "cost_usd": 0.000939,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "x08",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided guidelines do not cover the duration for which telecommunications providers must retain customer metadata under the data retention scheme."
+     },
+     "cost_usd": 0.001114,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x09",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover the time limits for credit reporting bodies correcting credit information under Part IIIA."
+     },
+     "cost_usd": 0.000749,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x10",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided guidelines do not cover the duration for which an employer must keep employee records under the Fair Work Act."
+     },
+     "cost_usd": 0.001253,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "grounded_balanced": 0.9625,
+    "answer_balanced": 0.9625,
+    "grounded_accuracy": 0.925,
+    "answer_accuracy": 0.925,
+    "correct_refusal": 1.0,
+    "false_refusal": 0.0,
+    "recall_at_5": 0.925,
+    "mrr": 0.7642857142857143
+   },
+   "cost_usd": 0.051911,
+   "wall_s": 0.57,
+   "gated": true
+  },
+  {
+   "system": "rag-hybrid",
+   "is_baseline": false,
+   "results": [
+    {
+     "case_id": "q01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "b-001"
+      ],
+      "answer": "A small business operator is generally defined as an individual, body corporate, partnership, unincorporated association or trust that has an annual turnover of $3,000,000 or less for a financial year, and such small business operators are generally not covered by the Privacy Act unless exceptions a",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "b-001"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000674,
+     "wall_s": 0.05,
+     "error": ""
+    },
+    {
+     "case_id": "q02",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app9-006"
+      ],
+      "answer": "Yes, a company can adopt a customer's Medicare number as its own customer ID if it collects that government related identifier and organises the personal information it holds about the individual with reference to that identifier, effectively adopting it as its own identification system.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app9-001"
+      ],
+      "hit_at_k": false,
+      "rr": 0.0
+     },
+     "cost_usd": 0.001094,
+     "wall_s": 0.13,
+     "error": ""
+    },
+    {
+     "case_id": "q03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-024"
+      ],
+      "answer": "A federal government agency must respond to a request to correct personal information within 30 calendar days, starting the day after the agency receives the request.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app13-024"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000979,
+     "wall_s": 0.03,
+     "error": ""
+    },
+    {
+     "case_id": "q04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-024"
+      ],
+      "answer": "A private-sector organisation must respond to a request to correct personal information within a reasonable period, which as a general guide should not exceed 30 calendar days from the day after the request is received.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app13-024"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00074,
+     "wall_s": 0.04,
+     "error": ""
+    },
+    {
+     "case_id": "q05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app10-002"
+      ],
+      "answer": "An APP entity must take reasonable steps to ensure the quality of personal information at two distinct points: first, at the time the information is collected, and second, at the time the information is used or disclosed.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app10-002"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000823,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app11-020",
+       "app11-019"
+      ],
+      "answer": "If a company cannot irretrievably destroy personal information held electronically, it is expected to take reasonable steps to put the personal information 'beyond use' by ensuring it is not used or disclosed, cannot be accessed by others, is secured with appropriate controls, and commits to destroy",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-019",
+       "app11-020"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00101,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q07",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-008",
+       "b-007",
+       "app3-012",
+       "app8-015",
+       "app6-009"
+      ],
+      "answer": "The four key elements of valid consent under the privacy guidelines are: the individual is adequately informed before giving consent; the individual gives consent voluntarily; the consent is current and specific; and the individual has the capacity to understand and communicate their consent.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-012",
+       "app6-009",
+       "app7-008",
+       "app8-015",
+       "b-007"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000923,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q08",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-004",
+       "b-019",
+       "app11-003",
+       "app12-002"
+      ],
+      "answer": "Yes, a company that outsources the storage of customer records to a third-party provider but retains the right to access and amend those records is considered to hold that personal information under the Privacy Act.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-003",
+       "app11-015",
+       "app12-002",
+       "app13-004",
+       "app6-004",
+       "b-019"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000994,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q09",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-019",
+       "app6-018"
+      ],
+      "answer": "Yes, a carer can disclose health information to an unconscious patient's family members about the patient's condition if the carer is satisfied that the disclosure is necessary for compassionate reasons, and the disclosure is limited to what is reasonable and necessary for those reasons.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app6-018",
+       "app6-019"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000818,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q10",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-011"
+      ],
+      "answer": "Yes, an organisation must obtain consent to use or disclose sensitive information for direct marketing purposes even if there is a pre-existing relationship with the individual.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-011"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000782,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q11",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-031"
+      ],
+      "answer": "A written notice refusing access to personal information must include the reasons for the refusal (except where it would be unreasonable to do so), the complaint mechanisms available to the individual, and any other matters prescribed by regulations under the Privacy Act. The reasons should explain,",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-009",
+       "app12-031"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001344,
+     "wall_s": 0.16,
+     "error": ""
+    },
+    {
+     "case_id": "q12",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app5-001",
+       "app5-015",
+       "app5-004",
+       "app5-005"
+      ],
+      "answer": "An entity must take reasonable steps to notify an individual about the collection of their personal information at or before the time of collection, or if not practicable, as soon as practicable afterwards. Notification may not be required if the individual is already aware, or if notification would",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app5-001",
+       "app5-015"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001244,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q13",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app3-021"
+      ],
+      "answer": "No, gathering personal information by hacking into a computer would not count as collecting by lawful means because it is considered unlawful under the Privacy Act.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-021"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000694,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q14",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app8-017",
+       "app8-021",
+       "app3-054",
+       "app6-015"
+      ],
+      "answer": "Section 16A lists five permitted general situations in total, with one of these situations (Item 6) applying only to agencies and not to organisations.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app3-014",
+       "app6-014"
+      ],
+      "hit_at_k": false,
+      "rr": 0.16666666666666666
+     },
+     "cost_usd": 0.001006,
+     "wall_s": 0.14,
+     "error": ""
+    },
+    {
+     "case_id": "q15",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app3-031"
+      ],
+      "answer": "Yes, a company can collect non-sensitive personal information from a related body corporate without satisfying the usual APP 3.1 or 3.2 requirements, as this is generally not considered an interference with privacy under section 13B(1)(a).",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-031"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.000911,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q16",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app2-000",
+       "app2-001",
+       "app2-007"
+      ],
+      "answer": "A person may not have the option to deal anonymously or by pseudonym with an entity if the entity is required or authorised by law or a court/tribunal order to deal with identified individuals, or if it is impracticable for the entity to deal with individuals who have not identified themselves.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app2-001",
+       "app2-007"
+      ],
+      "hit_at_k": true,
+      "rr": 0.25
+     },
+     "cost_usd": 0.001021,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q17",
+     "passed": false,
+     "score": 0.0,
+     "detail": "missing key fact",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app9-003",
+       "app9-005",
+       "app9-006",
+       "app9-008",
+       "app9-015"
+      ],
+      "answer": "The privacy principles restrict private organisations from adopting government related identifiers like tax file or Medicare numbers to prevent misuse and protect individuals' privacy, as these identifiers are assigned by government agencies and regulated by other laws. Organisations can only adopt ",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": false,
+      "gold": [
+       "app9-001"
+      ],
+      "hit_at_k": false,
+      "rr": 0.1111111111111111
+     },
+     "cost_usd": 0.000757,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q18",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app9-007"
+      ],
+      "answer": "Yes, healthcare providers are authorised by law to adopt the individual healthcare identifiers of their patients as their own identifier, allowing them to organise patient information by reference to these identifiers.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app9-007"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.000892,
+     "wall_s": 0.14,
+     "error": ""
+    },
+    {
+     "case_id": "q19",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app8-005"
+      ],
+      "answer": "Yes, if the provision of personal information to an overseas contractor is considered a use rather than a disclosure, the Australian entity may still breach the APPs if the information is mishandled while in the overseas contractor's physical possession, as the entity is considered to still hold the",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app8-005"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001302,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q20",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app11-011"
+      ],
+      "answer": "Unauthorised modification of personal information occurs when personal information held by an APP entity is altered by someone not permitted to do so, or altered in a way not permitted under the Privacy Act. Examples include unauthorised alteration by an employee or following unauthorised access by ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-006",
+       "app11-011"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000608,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q21",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app10-003"
+      ],
+      "answer": "The reasonable steps an APP entity should take to ensure the quality of personal information depend on the sensitivity of the personal information, the nature of the APP entity (including size, resources, and business model), the possible adverse consequences for an individual if the quality is not ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app10-003"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001066,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "q22",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-013",
+       "app10-007"
+      ],
+      "answer": "A record about a past event is not automatically out-of-date; whether it is out-of-date depends on the purpose for which the information is held or collected. If current information is required for the particular purpose, the record may be out-of-date to that extent, but if information from a past p",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app10-007",
+       "app13-013"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000973,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q23",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-005"
+      ],
+      "answer": "The 'reasonably expect' test is an objective test that considers what a reasonable person, who is properly informed, would expect in the circumstances. It is a question of fact in each individual case, and the organisation must be able to justify its conduct.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-005"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001125,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q24",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-017"
+      ],
+      "answer": "An organisation may use or disclose health information for public health research without the individual's consent if it is impracticable to obtain consent, the use or disclosure is necessary for research relevant to public health or safety, it is conducted in accordance with guidelines approved und",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-017",
+       "app3-018",
+       "app6-017"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000674,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "q25",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-013",
+       "app7-014"
+      ],
+      "answer": "An organisation must stop sending direct marketing communications within a reasonable period after the request is made, which would generally be no more than 30 days. However, the organisation could give effect to an opt-out request in a shorter timeframe, especially when digital communication chann",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-013",
+       "app7-014"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000969,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q26",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-024"
+      ],
+      "answer": "A federal agency must respond to a request for access to personal information within 30 calendar days, starting the day after the agency receives the request. The agency must either provide access or notify the refusal within this timeframe.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-023",
+       "app12-024",
+       "app12-025",
+       "app12-027"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00091,
+     "wall_s": 0.15,
+     "error": ""
+    },
+    {
+     "case_id": "q27",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-030"
+      ],
+      "answer": "Yes, an organisation can impose a charge for giving access to requested personal information, but the charge must not be excessive and should only cover actual costs such as staff time, copying, postage, or intermediary costs. The organisation should also consider waiving or reducing the charge in c",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-030"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001044,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q28",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app1-021",
+       "app1-022"
+      ],
+      "answer": "Yes, an APP entity is generally expected to make its APP Privacy Policy available free of charge as part of its normal operating costs. If a charge is imposed, it must be clearly communicated and calculated at the lowest reasonable cost.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app1-000",
+       "app1-001",
+       "app1-021",
+       "app1-022"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00076,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q29",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app11-013",
+       "app11-015",
+       "app11-017"
+      ],
+      "answer": "An organisation must take reasonable steps to destroy or de-identify personal information it no longer needs for any purpose permitted under the APPs, including all copies it holds, even if it does not physically possess the information but has the right or power to deal with it. This includes imple",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-001",
+       "app11-013",
+       "app11-014",
+       "app11-015"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001157,
+     "wall_s": 0.13,
+     "error": ""
+    },
+    {
+     "case_id": "q30",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app7-010",
+       "app7-001",
+       "app7-000"
+      ],
+      "answer": "An organisation must provide a simple means for an individual to opt out of receiving direct marketing communications, including a prominent statement in each direct marketing communication that the individual may request to opt out. This statement should be clear, easy to read, and prominently posi",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app7-001",
+       "app7-006",
+       "app7-010"
+      ],
+      "hit_at_k": true,
+      "rr": 0.3333333333333333
+     },
+     "cost_usd": 0.001053,
+     "wall_s": 0.04,
+     "error": ""
+    },
+    {
+     "case_id": "q31",
+     "passed": false,
+     "score": 0.0,
+     "detail": "refused an answerable question",
+     "tags": {
+      "ooc": false,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not specifically address whether a company must disclose the source of personal information used for direct marketing when asked by an individual.",
+      "correct": false,
+      "cited_ok": false,
+      "grounded": false,
+      "false_refusal": true,
+      "gold": [
+       "app7-000",
+       "app7-002",
+       "app7-016"
+      ],
+      "hit_at_k": false,
+      "rr": 0.05555555555555555
+     },
+     "cost_usd": 0.001197,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q32",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app8-001",
+       "app8-025"
+      ],
+      "answer": "Section 16C makes an Australian APP entity accountable for acts or practices of an overseas recipient in relation to personal information it disclosed that would breach the APPs, as outlined in APP 8 and s 16C framework.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app8-000",
+       "app8-001",
+       "app8-007",
+       "app8-025"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001056,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "q33",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app8-008",
+       "app8-000"
+      ],
+      "answer": "An entity can disclose personal information overseas without taking reasonable steps to ensure the recipient complies with the APPs if it reasonably believes that the overseas recipient is subject to a law or binding scheme that protects the information in a way that is at least substantially simila",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app8-008",
+       "app8-010"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000793,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "q34",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app3-012",
+       "app3-001"
+      ],
+      "answer": "Before collecting sensitive information, an APP entity must obtain the individual's consent in addition to ensuring the collection is reasonably necessary for the entity's functions or activities, unless an exception applies. This consent must be informed, voluntary, current, specific, and given by ",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app3-002",
+       "app3-012",
+       "app4-003"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001222,
+     "wall_s": 0.11,
+     "error": ""
+    },
+    {
+     "case_id": "q35",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-010",
+       "app6-011",
+       "app6-012"
+      ],
+      "answer": "For a secondary use of sensitive information based on reasonable expectation, the secondary purpose must be 'directly related' to the primary purpose of collection, meaning it must be closely associated with the primary purpose even if not strictly necessary to achieve it.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app6-000",
+       "app6-002",
+       "app6-010",
+       "app6-012"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.000585,
+     "wall_s": 0.12,
+     "error": ""
+    },
+    {
+     "case_id": "q36",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app1-008",
+       "app1-009"
+      ],
+      "answer": "Yes, an APP Privacy Policy must set out whether personal information is likely to be disclosed to overseas recipients and the countries in which such recipients are likely to be located if it is practicable to specify those countries in the policy.",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app1-006",
+       "app1-008",
+       "app1-009"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000872,
+     "wall_s": 0.15,
+     "error": ""
+    },
+    {
+     "case_id": "q37",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app6-022",
+       "b-034"
+      ],
+      "answer": "Yes, biometric templates are considered a type of sensitive information under the Privacy Act, as they are specifically listed as sensitive information in section 6(1).",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app1-018",
+       "app3-025",
+       "app6-000",
+       "app6-001",
+       "app6-002",
+       "app6-022",
+       "b-034"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.000951,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q38",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "b-012",
+       "app11-021",
+       "b-021"
+      ],
+      "answer": "Personal information is considered de-identified if the information is no longer about an identifiable individual or an individual who is reasonably identifiable. This involves removing or altering information that identifies an individual or is reasonably likely to do so, including personal identif",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app11-021",
+       "app6-023",
+       "b-012",
+       "b-021"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.00091,
+     "wall_s": 0.12,
+     "error": ""
+    },
+    {
+     "case_id": "q39",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app12-014",
+       "app12-011"
+      ],
+      "answer": "Yes, an organisation can refuse an access request if it is frivolous or vexatious, but there must be a clear and convincing basis for this decision. Examples include repeated requests for the same information, requests with offensive language, or requests made to harass staff. It is not sufficient t",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app12-011",
+       "app12-014"
+      ],
+      "hit_at_k": true,
+      "rr": 1.0
+     },
+     "cost_usd": 0.001105,
+     "wall_s": 0.1,
+     "error": ""
+    },
+    {
+     "case_id": "q40",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": false,
+      "refused": false,
+      "citations": [
+       "app13-023"
+      ],
+      "answer": "If an APP entity refuses to correct personal information as requested by an individual, the individual can request the entity to associate a statement that the individual believes the personal information to be inaccurate, out-of-date, incomplete, irrelevant or misleading. The entity must take reaso",
+      "correct": true,
+      "cited_ok": true,
+      "grounded": true,
+      "false_refusal": false,
+      "gold": [
+       "app13-000",
+       "app13-001",
+       "app13-012",
+       "app13-019",
+       "app13-022",
+       "app13-023",
+       "app13-024"
+      ],
+      "hit_at_k": true,
+      "rr": 0.5
+     },
+     "cost_usd": 0.001368,
+     "wall_s": 0.09,
+     "error": ""
+    },
+    {
+     "case_id": "x01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not specify the number of days a business has to assess a suspected eligible data breach before notifying the OAIC."
+     },
+     "cost_usd": 0.000917,
+     "wall_s": 0.08,
+     "error": ""
+    },
+    {
+     "case_id": "x02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The guidelines provided do not cover the maximum fine under the EU General Data Protection Regulation."
+     },
+     "cost_usd": 0.001088,
+     "wall_s": 0.07,
+     "error": ""
+    },
+    {
+     "case_id": "x03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided guidelines do not cover the definition of a sale of personal information under the California Consumer Privacy Act."
+     },
+     "cost_usd": 0.001318,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "x04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided guidelines do not specify the number of working days a business has to action an unsubscribe request under the Spam Act."
+     },
+     "cost_usd": 0.000575,
+     "wall_s": 0.06,
+     "error": ""
+    },
+    {
+     "case_id": "x05",
+     "passed": false,
+     "score": 0.0,
+     "detail": "answered an out-of-corpus question: The Children's Online Privacy Code requires age-restricted social media platforms to take 'reasonable steps' to prevent ",
+     "tags": {
+      "ooc": true,
+      "refused": false,
+      "citations": [
+       "app3-013"
+      ],
+      "answer": "The Children's Online Privacy Code requires age-restricted social media platforms to take 'reasonable steps' to prevent users under 16 years of age from having an account with the platform, which may include collecting sensitive information inputs necessary to achieve this objective, while minimisin"
+     },
+     "cost_usd": 0.00109,
+     "wall_s": 0.03,
+     "error": ""
+    },
+    {
+     "case_id": "x06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover the requirements a plaintiff must prove to succeed under the statutory tort for serious invasions of privacy."
+     },
+     "cost_usd": 0.001378,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "x07",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not specify the maximum civil penalty for a serious interference with privacy under the Privacy Act."
+     },
+     "cost_usd": 0.000708,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "x08",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover the duration for which telecommunications providers must retain customer metadata under the data retention scheme."
+     },
+     "cost_usd": 0.000858,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "x09",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover the time limits for credit reporting bodies correcting credit information under Part IIIA of the Privacy Act."
+     },
+     "cost_usd": 0.000947,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "x10",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "ooc": true,
+      "refused": true,
+      "citations": [],
+      "answer": "The provided excerpts do not cover the duration for which an employer must keep employee records under the Fair Work Act."
+     },
+     "cost_usd": 0.00119,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "grounded_balanced": 0.9,
+    "answer_balanced": 0.9,
+    "grounded_accuracy": 0.9,
+    "answer_accuracy": 0.9,
+    "correct_refusal": 0.9,
+    "false_refusal": 0.025,
+    "recall_at_5": 0.9,
+    "mrr": 0.7854166666666667
+   },
+   "cost_usd": 0.048475,
+   "wall_s": 0.59,
+   "gated": true
+  }
+ ]
+}

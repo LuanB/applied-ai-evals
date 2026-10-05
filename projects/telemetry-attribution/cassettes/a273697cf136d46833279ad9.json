@@ -1,0 +1,251 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-5-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You explain movements in software telemetry by attributing them to a commit.\n\nTHE NUMBERS ARE ALREADY COMPUTED AND ARE NOT YOURS TO RECOMPUTE.\nThe finding was produced by a deterministic detector. Treat its numbers as fact. Your\njob is judgement, not arithmetic: given that this movement happened, which commit in\nthe window explains it, and what is the evidence?\n\nMethod:\n- Start with list_commits_in_window. You get subjects and file-change counts.\n- Use describe_commit on the few that plausibly relate. Look at which files changed.\n- Use sample_telemetry_rows only if you need to see the shape of the raw data.\n- Then call submit_answer. You MUST finish by calling submit_answer.\n\nREFUSAL IS A CORRECT ANSWER AND IS EXPECTED SOMETIMES.\nThere is always a commit in a window. That does not mean one of them caused the\nmovement. If no commit plausibly explains it, call submit_answer with refused=true and\ncommits=[]. A confident wrong attribution is worse than an honest refusal, because it\nwill be believed. Check dates: a commit after the movement cannot have caused it.\n\nName at most 3 commits.\n"
+   },
+   {
+    "role": "user",
+    "content": "FINDING step:tool_calls_per_run\n  metric : tool calls per agent run\n  movement: p90 rose from 7 (median of the 5 preceding active days) to 27 on 2026-07-18 \u2014 a 3.9x step.\n  window : 2026-07-15 .. 2026-07-20\n\n40 commits are in this window. Attribute the movement, or refuse."
+   },
+   {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+     {
+      "id": "call_NXoE7pFiniGYUpgTj1kq6QK5",
+      "function": {
+       "arguments": "{}",
+       "name": "list_commits_in_window"
+      },
+      "type": "function"
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_NXoE7pFiniGYUpgTj1kq6QK5",
+    "content": "[{\"sha\": \"5cfc84e\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"asr: wire production OpenAI ASR provider (diarized, plain/non-fused)\", \"files_changed\": 7}, {\"sha\": \"1f058a4\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"bakeoff: fix OpenAI diarized ASR \\u2014 use diarized_json response format\", \"files_changed\": 1}, {\"sha\": \"72c2e17\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"bakeoff: add detect-prompt override + fired-only mode to providerBench\", \"files_changed\": 2}, {\"sha\": \"2bbd2dd\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"bakeoff: add provider brain bench (OpenAI/Gemini/Anthropic cost+quality)\", \"files_changed\": 4}, {\"sha\": \"88b213e\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"bakeoff: replay frames from video.webm at any fps/res (raw-capture slice 3)\", \"files_changed\": 4}, {\"sha\": \"cb6bb60\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"bakeoff: stream raw screen video to video.webm (raw-capture slice 2)\", \"files_changed\": 5}, {\"sha\": \"678f310\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"reliability: break the ASR contamination loop in the rolling prior transcript\", \"files_changed\": 4}, {\"sha\": \"a7bd7bb\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"reliability: bound gather + all Google fetches with explicit timeouts\", \"files_changed\": 11}, {\"sha\": \"c72bf46\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"cost-modes: gather fixed-floor trim + prompt-A/B gate seam\", \"files_changed\": 5}, {\"sha\": \"6af1125\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(openai): hosted web_search on the BYOK key (R2 Option 1)\", \"files_changed\": 7}, {\"sha\": \"fbbc240\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"bench R5: reasoning.effort A/B dimension in runProviderBench\", \"files_changed\": 2}, {\"sha\": \"84f253a\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai R5 (seam): optional per-role reasoning.effort, default unset\", \"files_changed\": 5}, {\"sha\": \"bb96f94\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai R7: surface structured-output refusals instead of mis-parsing empty text\", \"files_changed\": 3}, {\"sha\": \"aed9ba8\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai R2: local web_search tool with a deterministic egress scrub\", \"files_changed\": 16}, {\"sha\": \"5798c60\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai R1: Flex processing for enrichment (~50% off the priciest role)\", \"files_changed\": 5}, {\"sha\": \"e06e9b5\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai cache: diagnose 0% live cache-hit + add cache-prefix instrumentation\", \"files_changed\": 3}, {\"sha\": \"ebdf512\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"capture: persist vision frames on the plain (OpenAI/two-stage) ASR path too\", \"files_changed\": 1}, {\"sha\": \"fe3bcfc\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"capture: wire the corpus dump into the plain (OpenAI/two-stage) ASR path\", \"files_changed\": 1}, {\"sha\": \"c251859\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai: fix key-validation ping for gpt-5.6 reasoning models (max_output_tokens floor)\", \"files_changed\": 1}, {\"sha\": \"ca7349f\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"capture: serialize dump appends + unblock build:electron (pre-capture prep)\", \"files_changed\": 4}, {\"sha\": \"060d70d\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai: pin vision frame to detail:'high' (guardrail)\", \"files_changed\": 2}, {\"sha\": \"b3ef5ce\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai: prompt_cache_key on all Responses calls (gather cost lever)\", \"files_changed\": 6}, {\"sha\": \"0f552d2\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"models: retune OpenAI chat + enrichment onto the 5.6 generation\", \"files_changed\": 6}, {\"sha\": \"028ba86\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"models: default OpenAI brain roles gpt-5.4 \\u2192 gpt-5.6-luna\", \"files_changed\": 5}, {\"sha\": \"f3e597e\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai: support gpt-5.6 tiers (reject temperature) + pricing rows\", \"files_changed\": 3}, {\"sha\": \"40311db\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"asr: calibrate OpenAI isAlex \\u2014 user mic on channel 1, dominance margin\", \"files_changed\": 1}, {\"sha\": \"f89c793\", \"date\": \"2026-07-17\", \"repo\": \"mayah-desktop\", \"subject\": \"Bakeoff frame-extraction width defaults to 2048 (match live sends)\", \"files_changed\": 2}, {\"sha\": \"df0d38a\", \"date\": \"2026-07-17\", \"repo\": \"mayah-desktop\", \"subject\": \"Capture vision frames at native resolution, cap sends at 2048/q92\", \"files_changed\": 4}, {\"sha\": \"c7b4dc4\", \"date\": \"2026-07-17\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(capture): record capture-dump + persist frames ON by default\", \"files_changed\": 5}, {\"sha\": \"66b8282\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Grounding: exclude mobile-qa answer cards + tag Confluence results stale\", \"files_changed\": 4}, {\"sha\": \"ea63b26\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Q&A: teach source-authority hierarchy (spoken decisions > stale Confluence)\", \"files_changed\": 2}, {\"sha\": \"1b7d725\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Make search-budget caps env-tunable (MAYAH_SEARCH_HARD/SOFT_LIMIT)\", \"files_changed\": 1}, {\"sha\": \"fbca50e\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Extend search budget to the meeting index (hard-cap only)\", \"files_changed\": 2}, {\"sha\": \"fd10d27\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Add per-run search budget to cap connector/repo tool spirals\", \"files_changed\": 3}, {\"sha\": \"acfafda\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Flip conversationAnswer google to gemini-3.5-flash (production)\", \"files_changed\": 2}, {\"sha\": \"89f0481\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"replayIngest: stamp enrichment records at capture time, not ingest time\", \"files_changed\": 1}, {\"sha\": \"0370d88\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Add contextLines + offset drill-downs to search_transcript\", \"files_changed\": 3}, {\"sha\": \"31729ab\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Bakeoff replay-ingest: rebuild a meeting's transcript from its capture dump\", \"files_changed\": 1}, {\"sha\": \"5346348\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Replace substring meeting search with stemmed ranked FTS5 index\", \"files_changed\": 6}, {\"sha\": \"77d9c90\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(mobile): conversationAnswer role \\u2014 conversation consults one tier up\", \"files_changed\": 5}]"
+   },
+   {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+     {
+      "id": "call_lPxsfIYHVG17COEFjx4iKamT",
+      "function": {
+       "arguments": "{\"sha\":\"fd10d27\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_lPxsfIYHVG17COEFjx4iKamT",
+    "content": "{\"sha\": \"fd10d27\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Add per-run search budget to cap connector/repo tool spirals\", \"files_changed\": 3, \"files\": [\"electron/agent/callBudget.test.ts\", \"electron/agent/callBudget.ts\", \"electron/agent/mobile/mobileAnswerRunner.ts\"], \"files_truncated\": 0}"
+   }
+  ],
+  "tools": [
+   {
+    "type": "function",
+    "function": {
+     "name": "list_commits_in_window",
+     "description": "Commits in the finding's window: sha, date, subject, files_changed.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "only_touching": {
+        "type": "string",
+        "description": "Optional path substring filter, e.g. 'telemetry'."
+       }
+      }
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "describe_commit",
+     "description": "One commit in detail: subject, file count, and the file list (truncated).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "sha": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "sha"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "sample_telemetry_rows",
+     "description": "A few raw telemetry rows of a given kind on a given day (YYYY-MM-DD).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "kind": {
+        "type": "string"
+       },
+       "day": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "kind",
+       "day"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "submit_answer",
+     "description": "Terminal. Submit the attribution, or refuse.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "commits": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "description": "Short SHAs. Empty if refusing."
+       },
+       "refused": {
+        "type": "boolean"
+       },
+       "rationale": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "commits",
+       "refused",
+       "rationale"
+      ]
+     }
+    }
+   }
+  ],
+  "_salt": "trial0"
+ },
+ "response": {
+  "id": "chatcmpl-EV7qIRrBVbyHtPCFcBh06s9x1DBhO",
+  "choices": [
+   {
+    "finish_reason": "tool_calls",
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "annotations": [],
+     "tool_calls": [
+      {
+       "id": "call_Y9GGrKKaqeiAz6w1kZgsMStM",
+       "function": {
+        "arguments": "{\"sha\":\"1b7d725\"}",
+        "name": "describe_commit"
+       },
+       "type": "function"
+      }
+     ]
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791087022,
+  "model": "gpt-5-mini-2025-08-07",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "usage": {
+   "completion_tokens": 21,
+   "prompt_tokens": 3073,
+   "total_tokens": 3094,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 2944
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 39,
+    "engine_ttlt_ms": 167,
+    "pre_inference_ms": 103,
+    "service_tbt_ms": 9,
+    "service_ttft_ms": 1513,
+    "service_ttlt_ms": 1707,
+    "user_visible_ttft_ms": 1410
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260929185156-4424d4af-default-r0-dp0-default"
+  }
+ }
+}

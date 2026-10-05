@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app11-021] (APP 11, paras 11.54\u201311.58, Taking reasonable steps to destroy or deidentify personal information > De-ident)\n11.54 Personal information is de-identified \u2018if the information is no longer about an identifiable individual or an individual who is reasonably identifiable\u2019 (s 6(1)). De-identification is discussed in more detail in Chapter B (Key concepts).\n11.55 An organisation that intends to comply with APP 11.2 by taking reasonable steps to ensure that personal information is de-identified should consider whether de-identification is appropriate in the circumstances. For more information on when and how to de-identify information, and how to manage and mitigate the risk of re-identification, see De-identification and the Privacy Act. [13]\n11.56 De-identification of personal information may be more appropriate than destruction where the de-identified information could provide further value or utility to the organisation or a third party. For example, where:\nan organisation shares de-identified information with researchers, or\nan organisation uses de-identified information to develop new products.\n11.57 Regardless of the de-identification technique chosen, the risk of re-identification must be actively assessed and managed to mitigate this risk. Where it is not possible for the risk of re-identification to be appropriately minimised, the organisation could instead consider taking reasonable steps to destroy the personal information (see paragraphs 11.49 \u2013 11.55 above).\n11.58 Where the personal information is held on a third party\u2019s hardware, such as cloud storage, and the organisation has instructed the third party to de-identify the personal information, reasonable steps to de-identify the personal information would include taking steps to verify that this has occurred.\n[1] See OAIC website <https://www.oaic.gov.au>.\n[2] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012 (Cth), p 86.\n[3] APP 11.3 was introduced by the Privacy and Other Legislation Amendment Act 2024 . APP 11.3 applies to personal information held from 11 December 2024, regardless of whether the information was acquired or created before or after this date. APP 11.3 does not limit APP 11.1, APP 11.2 or any other provision in the Privacy Act.\n[4] Explanatory Memorandum, Privacy and Other Legislation Amendment Bill 2024 (Cth), paragraph 101.\n[5] Explanatory Memorandum, Privacy and Other Legislation Amendment Bill 2024 (Cth), paragraph 102.\n[6] See OAIC website <https://www.oaic.gov.au>. Agencies should also see the Attorney-General\u2019s Department\u2019s Protective Security Policy Framework and the Australian Signals Directorate\u2019s Australian Government Information Security Manual , which set out the Australian Government\u2019s requirements for protective security and standardise information security practices across government.\n\n[app10-012] (APP 10, paras 10.22, Interaction with other APPs > APP 11 (security of personal information))\n10.22 Where an APP entity amends personal information or adds new personal information to a record to comply with APP 10, it should consider whether it needs to take action under APP 11 to destroy or de-identify other personal information that it holds (for example a copy of that information). APP 11 requires an APP entity to take reasonable steps to destroy or de\u2011identify personal information that it no longer needs, unless it is contained in a Commonwealth record or the entity is required by or under an Australian law, or a court/tribunal order, to retain it (see Chapter 11 (APP 11)).\n\n[app10-003] (APP 10, paras 10.6\u201310.7, Taking reasonable steps)\n10.6 The reasonable steps that an APP entity should take will depend upon circumstances that include:\nthe sensitivity of the personal information. More rigorous steps may be required if the information collected, used or disclosed is \u2018sensitive information\u2019 (defined in s 6(1) and discussed in Chapter B (Key concepts)) or other personal information of a sensitive nature.\nthe nature of the APP entity holding the personal information. Relevant considerations include an entity\u2019s size, resources and its business model. For example, the reasonable steps expected of an entity that operates through franchises or dealerships, or gives database and network access to contractors, may differ from the reasonable steps required of a centralised entity.\nthe possible adverse consequences for an individual if the quality of personal information is not ensured. More rigorous steps may be required as the risk of adversity increases.\nthe practicability, including time and cost involved. However an entity is not excused from taking particular steps by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take particular steps will depend on whether the burden is excessive in all the circumstances.\n10.7 In some circumstances it will be reasonable for an APP entity to take no steps to ensure the quality of personal information. For example, where an entity collects personal information from a source known to be reliable (such as the individual concerned) it may be reasonable to take no steps to ensure the quality of personal information. It is the responsibility of the entity to be able to justify that this is reasonable.\n\n[app10-004] (APP 10, paras 10.8, Taking reasonable steps > Examples of reasonable steps)\n10.8 The following are given as examples of reasonable steps that an APP entity could consider:\nimplementing internal practices, procedures and systems to audit, monitor, identify and correct poor quality personal information (including training staff in these practices, procedures and systems). For example, if the entity commonly uses or discloses personal information in time-critical situations such that it may not be possible to take steps to ensure quality at the time of the use or disclosure, the entity might take steps to ensure the quality of personal information at regular intervals\nimplementing protocols that ensure personal information is collected and recorded in a consistent format. For example, to help assess whether personal information is up-to-date, an entity might, where practicable, note on a record when the personal information was collected and the point in time to which it relates, and if it is an opinion, that fact\nensuring updated or new personal information is promptly added to relevant existing records\nproviding individuals with a simple means to review and update their personal information on an on-going basis, for example through an online portal\nreminding individuals to update their personal information each time the entity engages with the individual\ncontacting the individual to verify the quality of personal information when it is used or disclosed, particularly if there has been a lengthy period since collection\nchecking that a third party, from whom personal information is collected, has implemented appropriate practices, procedures and systems to ensure the quality of personal information. Depending on the circumstances, this could include: making an enforceable contractual arrangement to ensure that the third party implements appropriate measures to ensure the quality of personal information the entity collects from the third party undertaking due diligence in relation to the third party\u2019s quality practices prior to the collection\nmaking an enforceable contractual arrangement to ensure that the third party implements appropriate measures to ensure the quality of personal information the entity collects from the third party\nundertaking due diligence in relation to the third party\u2019s quality practices prior to the collection\nif personal information is to be used or disclosed for a new purpose that is not the primary purpose of collection, assessing the quality of the personal information having regard to that new purpose before the use or disclosure.\n\n[app11-004] (APP 11, paras 11.8\u201311.10, Taking reasonable steps to ensure the security of personal information)\n11.8 The \u2018reasonable steps\u2019 that an APP entity must take to ensure the security of personal information will depend upon circumstances, including:\nthe nature of the APP entity. Relevant considerations include an APP entity\u2019s size, resources, the complexity of its operations and its business model. For example, the reasonable steps expected of an entity that operates through franchises or dealerships, or that outsources its personal information handling to a third party may be different to those it would take if it did not operate in this manner\nthe amount and sensitivity of the personal information held. Generally, as the amount and/or sensitivity of personal information that is held increases, so too will the steps that it is reasonable to take to protect it. \u2018Sensitive information\u2019 (defined in s 6(1)) is discussed in more detail in Chapter B (Key concepts)\nthe possible adverse consequences for an individual in the case of a breach. More rigorous steps may be required as the risks and adverse consequences increase\nthe practical implications of implementing the security measure, including time and cost involved. However an entity is not excused from taking particular steps to protect information by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take particular steps will depend on whether the burden is excessive in all the circumstances, and\nwhether a security measure is in itself privacy invasive. For example, while an APP entity should ensure that an individual is authorised to access information, it should not require an individual to supply more information than is necessary to identify themselves when dealing with the entity (see also Chapter 12 (APP 12)).\n11.9 In all cases, reasonable steps should include taking steps and implementing strategies in relation to the following:\ngovernance, culture and training\ninternal policies, procedures and systems\nICT security\naccess security\nthird party providers (including cloud computing)\ndata breaches\nphysical security\ndestruction and de-identification, and\nstandards.\n11.10 The reasonable steps an APP entity must take for the purposes of ensuring the security of personal information include both technical and organisational measures (APP 11.3).\n\nQuestion: What is the maximum fine under the EU General Data Protection Regulation?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TyUoPIzmvokAMQNUTv8j3Qj2Ef",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The guidelines provided do not cover the maximum fine under the EU General Data Protection Regulation.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089482,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 30,
+   "prompt_tokens": 2204,
+   "total_tokens": 2234,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 68,
+    "engine_ttlt_ms": 237,
+    "pre_inference_ms": 79,
+    "service_tbt_ms": 9,
+    "service_ttft_ms": 451,
+    "service_ttlt_ms": 728,
+    "user_visible_ttft_ms": 371
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003055525-929f9fcc-default-r0-dp0-default"
+  }
+ }
+}

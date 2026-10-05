@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app2-003] (APP 2, paras 2.6\u20132.8, The difference between anonymity and pseudonymity > Pseudonymity)\n2.6 Pseudonymity requires that an individual may deal with an APP entity by using a name, term or descriptor that is different to the person\u2019s actual name. Examples include an email address that does not contain the person\u2019s actual name, a user name that a person uses when participating in an online forum, or an artist who uses a \u2018pen-name\u2019 or \u2018screen-name\u2019.\n2.7 The use of a pseudonym does not necessarily mean that an individual cannot be identified. The individual may choose to divulge their identity, or to volunteer personal information necessary to implement a particular transaction, such as credit information or an address at which goods can be delivered. Similarly, an APP entity may have in place a registration system that enables a person to participate by pseudonym in a moderated online discussion forum, on condition that the person is identifiable to the forum moderator or the entity.\n2.8 An APP entity should bear in mind that the object of APP 2 is to provide individuals with the opportunity to deal with the entity without revealing their identity. Personal information should only be linked to a pseudonym if this is required or authorised by law, it is impracticable for the entity to act differently, or the individual has consented to providing or linking the additional personal information. An entity could also restrict access to personal information that is linked to a pseudonym to authorised personnel (for a discussion of the security requirements for personal information, see Chapter 11 (APP 11)).\n\n[app2-005] (APP 2, paras 2.12\u20132.14, Providing anonymous and pseudonymous options)\n2.12 It is implicit in APP 2 that an APP entity should ensure that, if applicable, individuals are made aware of their opportunity to deal anonymously or by pseudonym with the entity. If anonymity or pseudonymity is the default setting, this does not apply.\n2.13 The steps an APP entity should take to draw both options to the attention of individuals will depend on the nature of the dealing between the entity and an individual. For example, an entity\u2019s APP Privacy Policy could explain the circumstances in which an individual may deal anonymously or by pseudonym with the entity, and the procedures for doing so (see Chapter 1 (APP 1)). The policy could go further and explain how the entity manages pseudonyms and any linked personal information, and if there will be any consequences for an individual if they deal with the entity anonymously or through a pseudonym (for example, where only a limited service can be provided).\n2.14 Other measures that could be adopted by an APP entity to facilitate anonymous and pseudonymous dealings include:\nif the entity provides a facility on its website for online communication, stating prominently that an individual may use that facility without providing personal information\nif telephone calls to the entity are routed through an automated message, informing callers in that message that they are not required to provide personal information\nif individuals can contact the entity by using an online or printed form, stating on the form that personal identification boxes (such as name and address) are not mandatory fields\nif the entity solicits public submissions or comments from individuals, allowing participants to use a pseudonym that will be published, even if the individual\u2019s name is supplied confidentially to the entity\nin other dealings between the entity and individuals, informing individuals at the beginning of a dealing that they may interact anonymously or by pseudonym.\n\n[app2-000] (APP 2, paras n/a, Key points)\nAPP 2 provides that individuals must have the option of dealing anonymously or by pseudonym with an APP entity.\nAn APP entity is not required to provide those options where: the entity is required or authorised by law or a court or tribunal order to deal with identified individuals, or it is impracticable for the entity to deal with individuals who have not identified themselves\nthe entity is required or authorised by law or a court or tribunal order to deal with identified individuals, or\nit is impracticable for the entity to deal with individuals who have not identified themselves\nAnonymity means that an individual dealing with an APP entity cannot be identified and the entity does not collect personal information or identifiers.\nA pseudonym is a name, term or descriptor that is different to an individual\u2019s actual name. Where applicable, an APP entity must ensure that individuals are made aware of their opportunity to deal anonymously or by pseudonym with the entity.\n\n[app2-007] (APP 2, paras 2.19\u20132.22, Requiring identification \u2014 impracticability)\n2.19 APP 2.2(b) provides that an individual may not have the option of dealing anonymously or by pseudonym with an APP entity if \u2018it is impracticable for the APP entity to deal with individuals who have not identified themselves\u2019.\n2.20 The following are given as examples of where it may be impracticable to deal with an individual who is not identified:\nin dispute resolution, it may be impracticable to investigate and resolve an individual\u2019s particular complaint about how their case was handled or how the staff of an APP entity behaved unless the complainant provides their name or similar information\nwhere an entity is delivering purchased goods to an individual, it may not be able to do so without knowing that individual\u2019s address, or their name (for example, where the individual needs to sign for delivery of the goods).\n2.21 In special circumstances it may be open to an APP entity to rely on the \u2018impracticability\u2019 exception where the burden of the inconvenience, time and cost of dealing with an unidentified or pseudonymous individual, or of changing an existing system or practice to include the option of anonymous or pseudonymous dealings, would be excessive in all the circumstances. However, this is more likely to be a transitional rather than an ongoing justification. Unless an entity is required or authorised by or under an Australian law, or a court/tribunal order, to deal with individuals who have identified themselves (see paragraphs 2.15\u20132.18 above), entities are expected to design and maintain information collection systems that incorporate anonymous and pseudonymous options.\n2.22 An APP entity that is relying on APP 2.2(b) should not collect more personal information than is required to facilitate the dealing with an individual (see paragraph 2.18 above).\n\n[app2-002] (APP 2, paras 2.4\u20132.5, The difference between anonymity and pseudonymity > Anonymity)\n2.4 Anonymity requires that an individual may deal with an APP entity without providing any personal information or identifiers. The entity should not be able to identify the individual at the time of the dealing or subsequently.\n2.5 Examples of anonymous dealings include an unidentified individual telephoning an APP entity to inquire generally about its goods or services, and an individual completing a retail transaction and paying for goods in cash.\n\nQuestion: What are the two situations in which a person may not have the option to deal with an entity anonymously or under a pseudonym?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Ts19U5T5pZEwa1UzuRZkrKhTAo",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"A person may not have the option to deal with an entity anonymously or under a pseudonym if the entity is required or authorised by law or a court or tribunal order to deal with identified individuals, or if it is impracticable for the entity to deal with individuals who have not identified themselves.\",\"citations\":[\"app2-000\",\"app2-007\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089476,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 82,
+   "prompt_tokens": 1624,
+   "total_tokens": 1706,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 52,
+    "engine_ttlt_ms": 594,
+    "pre_inference_ms": 90,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 576,
+    "service_ttlt_ms": 1113,
+    "user_visible_ttft_ms": 485
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044527-a048ae24-default-r0-dp0-default"
+  }
+ }
+}

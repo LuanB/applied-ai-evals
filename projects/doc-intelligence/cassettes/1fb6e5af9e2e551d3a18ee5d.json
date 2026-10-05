@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B07-06",
+  "markdown": true
+ },
+ "response": {
+  "content": "# NATIONAL PLANT PROTECTION ORGANIZATION OF SRI LANKA\n\n\n## PHYTOSANITARY CERTIFICATE\n\nNo .:\n\nCO931747\n\nName of exporter:\n\nHanseatic Furniture GmbH\n\nDeclared consignee:\n\nKookaburra Home Furnishings Pty Ltd\n\nBotanical name of plants:\n\nPiper nigrum\n\nPlace of origin:\n\nSri Lanka\n\nDeclared means of conveyanceMSC ARIANNA\n\nPoint of entry:\n\nBrisbane\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

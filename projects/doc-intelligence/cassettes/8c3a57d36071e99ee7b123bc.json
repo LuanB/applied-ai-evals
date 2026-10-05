@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B06-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD 265 Industrial Rd, Spain\nInvoice No .:\nINV-94446\nDate:\n09/08/2026\nSold to:\nBluegum Food Distributors Pty Ltd\nPacking List No .:\nPL-13169\nTerms of delivery:\nFOB\nCurrency:\nUSD\nDescription HS Code\nQty\nUnit price Amount\nFresh oranges, navel\n0805.10\n.1289\n.37.94\n48,904.66.\nTOTAL USD: 48,904.66\nCountry of origin: Spain",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B08-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "CASCADE ORCHARDS LLC 170 Industrial Rd, Vietnam\nEXPORT INVOICE\nInvoice No .:\nINV-65533\nDate:\n07/07/2026\nSold to:\nSouthern Cross Imports Pty Ltd.\nPacking List No .:\nPL-49298\nTerms of delivery: FOB\nCurrency:\nEUR\nDescription\nHS Code\nQty\nUnit price Amount\nCashew kernels\n0801.32\n547\n35.07\n19,183.29\nTOTAL EUR: 19,183.29\nCountry of origin: Vietnam",
+  "pages": 1,
+  "fields": {}
+ }
+}

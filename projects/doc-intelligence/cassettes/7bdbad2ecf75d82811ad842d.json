@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-073",
+  "markdown": false
+ },
+ "response": {
+  "content": "TEST MARKET\nEffective Date: July 16, 1975\nSPECIFICATIONS FOR BENSON & HEDGES 100'S \"Y\"\nLength - 99.4 mm. Circumference - 24.8 mm.\nFilter - 27.0 mn.\nCigarette Rod:\nFiller - Benson & Iledges 100's \"Y\" Formula\nCuts - 32/ Inch\nPaper - Schweitzer +f6: 27.0 mm. Wide; P. M. Material Code - 10-115 .A Print Die - Benson & ledges\nInk - J. M. Fry Type 22191 (B & H' Ochre)\nCircumference: - 24.8 men.\nLength - 72.4 mun.\nCigarette:\nTipping - 64 rua. x 2700 m. White Double Gold Line 5-367-D ;. P. M. Material Code - 12-650-A.\nTipping Adhesive - Bulk: Fuller 3928 RC or Findley 336-360-15\nRod Moisture - Summer 12.50, Winter 12.75\nTotal K. T.D. - 4.70 inches of water\nPlug R. T.D. - 2.95 inches of water\nPrepared By :\n, Approved By : Operations Services\nMHF/vc\n2031317959",
+  "pages": 1,
+  "fields": {}
+ }
+}

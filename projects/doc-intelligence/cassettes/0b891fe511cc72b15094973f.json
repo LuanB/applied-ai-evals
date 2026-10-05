@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B00-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEKONG AGRI TRADING JSC 267 Industrial Rd. Turkey\nPACKING SPECIFICATION\nRef No .:\nPL-37446\nInvoice No .:\nINV-76369\nConsignee:\nHarbourside Fresh Pty Ltd\nContainer:\nTGHU5151370\nMarks:\n'HARBOURSIDE/ADELAIDE\nPkgs Description\nNet kg\nGross kg.\n4902.3 5115.6\n458 Dried apricots\nTotal packages:\n458\nTotal gross weight (kg): 5115.6\nTotal net weight (kg):\n4902.3",
+  "pages": 1,
+  "fields": {}
+ }
+}

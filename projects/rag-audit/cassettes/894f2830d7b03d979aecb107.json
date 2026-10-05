@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app3-024] (APP 3, paras n/a, Collecting by lawful and fair means > Collecting by fair means)\nWhere personal information is publicly available on the internet, that does not allow it to be collected and used in whatever way the APP entity chooses without regard to the knowledge and reasonable expectations of the person whose information it concerns. [51]\nWhether the individual's choice is being distorted, manipulated or undermined, for example through poorly designed or misused \u2018online choice architecture\u2019 [52] The way that information is presented and choices are structured (\u2018online choice architecture\u2019) plays an important role in shaping individuals\u2019 decision-making and behaviour online. [53] Poor online choice architecture practices include \u2018harmful nudges and sludge\u2019, \u2018confirmshaming\u2019, \u2018biased framing\u2019, \u2018bundled consent\u2019 and \u2018default settings\u2019. [54] Such practices can steer individuals towards making choices that are otherwise misaligned with their preferences or choices they would normally voluntarily make. They may also force individuals to take multiple steps to find a privacy policy, log out or delete their account, or present them with repetitive prompts aimed at frustrating them and ultimately pushing them to give up more of their personal information than they would like. [55] An individual\u2019s choice can also be undermined due to being provided with limited options. For example, where they cannot choose which platform to use to access a service and are not provided with alternative pathways. [56]\nThe way that information is presented and choices are structured (\u2018online choice architecture\u2019) plays an important role in shaping individuals\u2019 decision-making and behaviour online. [53] Poor online choice architecture practices include \u2018harmful nudges and sludge\u2019, \u2018confirmshaming\u2019, \u2018biased framing\u2019, \u2018bundled consent\u2019 and \u2018default settings\u2019. [54] Such practices can steer individuals towards making choices that are otherwise misaligned with their preferences or choices they would normally voluntarily make. They may also force individuals to take multiple steps to find a privacy policy, log out or delete their account, or present them with repetitive prompts aimed at frustrating them and ultimately pushing them to give up more of their personal information than they would like. [55]\nAn individual\u2019s choice can also be undermined due to being provided with limited options. For example, where they cannot choose which platform to use to access a service and are not provided with alternative pathways. [56]\n\n[app1-001] (APP 1, paras 1.1\u20131.3, What does APP 1 say?)\n1.1 The declared object of APP 1 is \u2018to ensure that APP entities manage personal information in an open and transparent way\u2019 (APP 1.1). This enhances the accountability of APP entities for their personal information handling practices and can build community trust and confidence in those practices.\n1.2 APP 1 imposes obligations upon an APP entity to:\ntake reasonable steps to implement practices, procedures and systems that will ensure the entity complies with the APPs and any binding registered APP code, and is able to deal with related inquiries and complaints (APP 1.2)\nhave a clearly expressed and up-to-date APP Privacy Policy about how the entity manages personal information (APP 1.3 and 1.4)\ntake reasonable steps to make its APP Privacy Policy available free of charge in an appropriate form (APP 1.5) and, upon request, in a particular form (APP 1.6)\nrequire entities to include additional information relating to automated decisions in an entity\u2019s privacy policy (APP 1.7-1.9).\n1.3 APP 1 lays down the first step in the information lifecycle \u2013 planning and explaining how personal information will be handled before it is collected. APP entities will be better placed to meet their privacy obligations under the Privacy Act if they embed privacy protections in the design of their information handling practices.\n\n[app3-013] (APP 3, paras 3.37\u20133.41, Collecting sensitive information > Collecting sensitive information as required )\n3.37 An APP entity may collect sensitive information if the collection \u2018is required or authorised by or under an Australian law or a court/tribunal order\u2019 (APP 3.4(a)). The meaning of \u2018required or authorised by or under an Australian law or a court/tribunal order\u2019 is discussed in more detail in Chapter B (Key concepts).\n3.38 An example of where a law or order may require or authorise collection of sensitive information is the collection by an authorised officer under the Migration Act 1958 of personal identifiers (that may include biometric information) from a non-citizen who is in immigration detention. [23]\n3.39 Where an APP entity has discretion as to what and/or how they will collect information under the relevant law, they should collect only what sensitive information is reasonably necessary to fulfil their obligation under that law. The entity should, in addition, ensure their handling of the information is proportionate to the aim of fulfilling the legal obligation.\n3.40 For example, the Online Safety Act 2021 authorises the collection of personal information through requiring age-restricted social media platforms to take \u2018reasonable steps\u2019 to prevent users under 16 years of age from having an account with the platform. [24] In narrow circumstances and depending on the deployment context, this may extend to the collection of sensitive information inputs that are necessary to achieve the objective of preventing users under 16 years of age from having accounts. The entity should minimise what it collects to fulfil this obligation. The entity should further process information temporarily, for example use technology solutions that temporarily process personal information inputs as part of age assurance and do not retain them. [25]\n3.41 Where this exception is not engaged, the requirements outlined in paragraph 3.31 including for the collection of personal or sensitive information to be \u2018reasonably necessary\u2019 will apply to collection of any such information. This limits what information may be collected to those steps that would fulfil an APP entity\u2019s function to comply with the relevant law.\n\n[app1-021] (APP 1, paras 1.81\u20131.83, Making an APP Privacy Policy publicly available > Making an APP Privacy Policy a)\n1.81 APP 1.5 requires an APP entity to take reasonable steps to make its APP Privacy Policy available free of charge and in an appropriate form. This furthers the objective of APP 1 of ensuring personal information is managed in an open and transparent way.\n1.82 An APP entity is generally expected to make its policy available by publishing it on its website (see Note to APP 1.5). The information in the policy may be provided using a layered approach (see paragraph 1.12 above). The policy should be prominently displayed, accessible and easy to download. For example, a prominent link or privacy icon, displayed on each page of the entity\u2019s website, could provide a direct link to the APP Privacy Policy. If it is foreseeable that the policy may be accessed by individuals with special needs (such as individuals with a vision impairment, or individuals from a non-English speaking background), appropriate accessibility measures should be available. Agencies are also required to comply with any applicable government or statutory accessibility requirements. [20]\n1.83 Online publication may not be appropriate in some circumstances, for example, where the APP entity does not have an online presence or where individuals who regularly interact with the entity may not have internet access. In these circumstances, options an entity should consider include:\ndisplaying the policy on a stand at the entity\u2019s premises so it can be seen by members of the public\ndistributing a printout of the policy on request\nincluding details about how to access the policy at the bottom of all correspondence to individuals\nwhere the entity interacts with individuals by telephone, informing them during the telephone call of how the policy may be accessed in a particular form.\n\n[app5-012] (APP 5, paras 5.26\u20135.27, Matters about which an individual must be notified or made aware > Information a)\n5.26 The matters set out in APP 5.2(g) and (h) are that the APP entity\u2019s APP Privacy Policy contains information about how the individual may:\naccess and seek correction of their personal information held by the entity (APP 5.2(g))\ncomplain to the entity about a breach of the APPs, or any registered APP code that binds the entity, and how the entity will deal with such a complaint (APP 5.2(h)).\n5.27 Where practicable, an APP 5 notice could include a prominent and accessible link to the APP Privacy Policy on the entity\u2019s website or explain how it may be accessed. The APP Privacy Policy requirements are discussed in Chapter 1 (APP 1).\n\nQuestion: What does the Children's Online Privacy Code require of social media platforms?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U6RAWtUYdXSlxyqkTw4q22082j",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The Children's Online Privacy Code requires age-restricted social media platforms to take 'reasonable steps' to prevent users under 16 years of age from having an account with the platform, which may include collecting sensitive information inputs necessary to achieve this objective, while minimising what is collected and processing information temporarily without retention.\",\"citations\":[\"app3-013\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089490,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 79,
+   "prompt_tokens": 1955,
+   "total_tokens": 2034,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 69,
+    "engine_ttlt_ms": 526,
+    "pre_inference_ms": 80,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 572,
+    "service_ttlt_ms": 1022,
+    "user_visible_ttft_ms": 492
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927120206-23bb4efb-default-r2-dp0-default"
+  }
+ }
+}

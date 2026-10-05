@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-110",
+  "markdown": false
+ },
+ "response": {
+  "content": "DATE - IN 2 5. JAN. 1991\nP romaco\nAGENCEMENT ET EQUIPEMENT .QE MAGASINS\nIMPORTATION\nDEPORTATION\nREPRESENTATIONS\nINE ( ** ) 660.24.21 POSTAL 248.34 -**\n...\n. N\u00ba 310-1595900-45\n400.428 ....\n.RE N\u00ba\n0121/4036\nC.R.C. s.p.r.l. \" (Contracting Research Center) \u00b7 Avenue du P\u00e9age 1Clc 1932 ZAVENTEM\n-\nT. V. A.\n435 Q85\n085\nBRUXELLES, LE 21 Janvier 1991\nD\u00c9SIGNATION\nPRIX UNITAIRE\nPRIX TOTAL\nVotre Commande !! \u00ba 282 du 21/12/90\n1\n1\nKit comprenant .1. tube de remplacement 1 adaptateur et un starter pour Insectaflash\". Appareil Insectoflash type 40C.T\n700,- 8.500 .-_ 9.200,-\nBTW ? ?\n0\nMat\u00e9riel livr\u00e9 le 7 Janvier 1991\n2028697458",
+  "pages": 1,
+  "fields": {}
+ }
+}

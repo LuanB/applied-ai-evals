@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app13-013] (APP 13, paras 13.36\u201313.37, Grounds for correcting personal information > Up-to-date)\n13.36 Personal information is out-of-date if it contains facts, opinions or other information that is no longer current. An example is a statement that an individual lacks a particular qualification or accreditation that the individual has subsequently obtained.\n13.37 Personal information about a past event may have been accurate at the time it was recorded, but has been overtaken by a later development. Whether that information is out-of-date will depend on the purpose for which it is held. If current information is required for the particular purpose, the information will to that extent be out-of-date. By contrast, if information from a past point in time is required for the particular purpose, the information may not be out-of-date for that purpose. Personal information held by an APP entity that is no longer needed for any purpose may need to be destroyed or de-identified under APP 11.2 (Chapter 11 (APP 11)).\n\n[app10-007] (APP 10, paras 10.15\u201310.16, What are the quality considerations? > Up-to-date)\n10.15 Personal information is out-of-date if it contains facts, opinions or other information that is no longer current. An example is a statement that an individual lacks a particular qualification or accreditation that the individual has subsequently obtained.\n10.16 Personal information about a past event may have been accurate at the time it was recorded, but has been overtaken by a later development. Whether that personal information is out-of-date will depend on the purpose for which it is collected, used or disclosed. If current personal information is required for the particular purpose, the personal information will, to that extent, be out-of-date. Personal information held by an APP entity that is no longer needed for any purpose, may need to be destroyed or de\u2011identified under APP 11.2 (Chapter 11 (APP 11)).\n\n[app13-009] (APP 13, paras 13.25\u201313.27, Taking reasonable steps to correct personal information > Agencies \u2014 comparison )\n13.25 For agencies, APP 13 operates alongside the right to amend or annotate personal information in Part V of the FOI Act. There is substantial overlap between the APP 13 and the FOI Act procedures, but also some noteworthy differences.\n13.26 The FOI Act provides that a person may apply to an agency [2] to amend or annotate a record of personal information about that person, to which they have lawfully had access under the FOI Act or otherwise (FOI Act, s 48). The application must be in writing, specify as far as practicable how and why the record should be amended or annotated, and provide a return address to which notices can be sent (FOI Act, ss 49, 51A). The grounds on which such an application may be made are that the record of personal information \u2018is incomplete, incorrect, out of date or misleading\u2019 (FOI Act, s 48(a)). The record must also have been used or be available for use by the agency \u2018for an administrative purpose\u2019 (FOI Act, s 48(b)). The agency may act upon an application by altering or adding a note to a record, but as far as practicable must not obliterate the text of the record as it existed prior to the amendment (FOI Act, s 50). An applicant whose application is not accepted may provide a statement specifying their disagreement with the decision, and the agency must annotate the record by attaching that statement (FOI Act, ss 51, 51B). The time period for making a decision on an applicant\u2019s application is 30 calendar days. An applicant may apply for internal review or Information Commissioner review of an adverse decision.\n13.27 While APP 13 sets out minimum procedural requirements (see paragraph 13.24), these are not as detailed as in the FOI Act. However, in two respects APP 13 goes further than the FOI Act:\nThe grounds for correction in APP 13 are that the personal information is \u2018inaccurate, out-of-date, incomplete, irrelevant or misleading\u2019. The main additional ground in this list is that the information is \u2018irrelevant\u2019. The other wording difference \u2014 \u2018inaccurate\u2019 in APP 13, \u2018incorrect\u2019 in the FOI Act \u2014 is not substantive.\n\n[app13-012] (APP 13, paras 13.33\u201313.35, Grounds for correcting personal information > Accurate)\n13.33 Personal information is inaccurate if it contains an error or defect. An example is incorrect factual information about an individual\u2019s name, date of birth, residential address or current or former employment. [6]\n13.34 An opinion about an individual given by a third party is not inaccurate by reason only that the individual disagrees with that opinion or advice. [7] For APP 13 purposes, the opinion may be \u2018accurate\u2019 if it is presented as an opinion and not objective fact, it accurately records the view held by the third party, and is an informed assessment that takes into account competing facts and views. Other matters to consider under APP 13, where there is disagreement with the soundness of an opinion, are whether the opinion is \u2018up-to-date\u2019, \u2018complete\u2019, \u2018not misleading\u2019 or \u2018relevant\u2019. If an individual disagrees with an opinion that is otherwise not incorrect, the individual may associate a statement with the record of the opinion (see paragraphs 13.59\u201313.62).\n13.35 In relation to a similar issue, s 55M of the FOI Act provides that the Information Commissioner (in conducting an IC review) cannot alter a record of opinion unless satisfied that it was based on a mistake of fact, or the author of the opinion was biased, unqualified to form the opinion or acted improperly in conducting the factual inquiries that led to the formation of the opinion.\n\n[app1-013] (APP 1, paras 1.46\u20131.52, Developing an APP Privacy Policy > Information that must be included in an APP P)\nan employer permits or directs employees to use an AI chat tool to draft performance assessments that determine promotion decisions\nan entity contracts a third-party software company to automatically approve or decline refunds on its behalf\nan entity has a case management system that automatically escalates particular types of complaints.\n1.46 The meaning of computer program is intended to be interpreted broadly.\n1.47 The term \u2018computer program\u2019 is intended to take its ordinary meaning and encompass a broad range of matters, including pre-programmed rule-based processes, artificial intelligence and machine learning processes to make a computer execute a task. [12]\nA wide range of technologies are likely to fall within the definition of computer program, including commonly-used software, apps, or word-processing tools. Generative AI tools used to generate text, images, videos, code or synthesis, including chatbots and other types of AI all fall within the definition of computer program for the purpose of the APP 1.7-1.9 transparency obligation.\n1.48 Under APP 1.7, an APP Privacy Policy must contain the information outlined in APP 1.8 if, amongst other things, the entity has arranged for a computer program to make, or do a thing that is substantially and directly related to making a decision (APP 1.7(a)).\n1.49 The use of the words \u2018do a thing that is substantially and directly related to making a decision\u2019 in APP 1.7(a) reflects that a computer program may be used to recommend a decision to a human decision-maker or guide a human decision-maker. [13]\n1.50 Where a computer program is used to recommend a decision to a human decision-maker, or guide a human decision-maker, the thing must be substantially and directly related to making a decision to be captured:\nsubstantially means where it is a key factor in facilitating the human\u2019s decision making\ndirectly means where the thing has a direct connection with making the decision. [14]\n1.51 In addition, the OAIC considers that substantial means \u2018real or of substance and not insubstantial or nominal\u2019. [15]\n1.52 A computer program may be substantially and directly related to making a decision regardless of whether the nature of the output is advisory or determinative. When considering if an advisory output is within scope of this limb of the APP 1.7-1.9 transparency obligation, APP entities should consider factors including:\n\nQuestion: Is a record about a past event automatically out of date?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Sj1PnlPq58q0da8YcRMhhSn7HN",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"A record about a past event is not automatically out-of-date; whether it is out-of-date depends on the purpose for which the information is held or used. If current information is required for the particular purpose, the record may be out-of-date to that extent, but if information from a past point in time is required, it may not be out-of-date for that purpose.\",\"citations\":[\"app13-013\",\"app10-007\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089405,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 99,
+   "prompt_tokens": 1932,
+   "total_tokens": 2031,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 62,
+    "engine_ttlt_ms": 768,
+    "pre_inference_ms": 80,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 656,
+    "service_ttlt_ms": 1381,
+    "user_visible_ttft_ms": 576
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102744-c1ac330c-default-r1-dp0-default"
+  }
+ }
+}

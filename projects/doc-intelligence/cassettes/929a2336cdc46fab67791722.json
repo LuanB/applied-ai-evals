@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B00-01",
+  "markdown": true
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH\n115.Industrial Rd, Turkey\n\nInvoice No .:\n\nINV-86387\n\nDate:\n\n14/07/2026\n\nSold to:\n\nWattle & Co Wholesale Pty Ltd\n\nPacking List No .:\n\nPL-17602\n\nTerms of delivery:\n\nDAP\n\nCurrency:\n\nEUR\n\n\n<table>\n<tr>\n<th>Description</th>\n<th>HS Code</th>\n<th>Qty</th>\n<th>Unit price</th>\n<th>Amount</th>\n</tr>\n<tr>\n<td>Dried apricots</td>\n<td>0813.10</td>\n<td>1533</td>\n<td>4.81</td>\n<td>7,373.73</td>\n</tr>\n</table>\n\n\nTOTAL EUR:\n\n7,373.73\n\nCountry of origin: Turkey\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

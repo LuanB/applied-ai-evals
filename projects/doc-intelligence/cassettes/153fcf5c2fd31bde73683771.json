@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B17-06",
+  "markdown": false
+ },
+ "response": {
+  "content": "PESTGUARD FUMIGATION SERVICES\nCertificate No .:\nAU150253\nFumigant:\nSulfuryl fluoride\nDosage rate:\n1500 g-h/m3\nExposure period (hrs):\n24\nDate of fumigation:\n24/08/2026\nContainer No .:\nMSKU7382045\nCommodity:\nCashew kernels\nConsignment link:\nB/L MAEU92571902",
+  "pages": 1,
+  "fields": {}
+ }
+}

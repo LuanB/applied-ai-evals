@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-089",
+  "markdown": false
+ },
+ "response": {
+  "content": "Agreement Between Lorillard and the Supplier\n91780674",
+  "pages": 1,
+  "fields": {}
+ }
+}

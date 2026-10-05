@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B19-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "PACIFIC RIM TIMBER PTE LTD 211 Industrial Rd, Germany\nRef No .:\nPL-10330\nInvoice No .:\nINV-76393\nConsignee:\nWattle & Co Wholesale Pty Ltd\nContainer:\nMSKU9489387\nMarks:\nWATTLE/FREMANTLE\nPkgs Description\nNet kg\nGross. kg\n254 Wooden dining chairs 3205.3 3372.3\nTotal packages:\n254\nTotal gross weight (kg):\n3372.3\nTotal net weight (kg):\n3205.3",
+  "pages": 1,
+  "fields": {}
+ }
+}

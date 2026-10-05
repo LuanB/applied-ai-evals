@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-128",
+  "markdown": false
+ },
+ "response": {
+  "content": "Superslims Qualivue Study\nNovember, 1991\n2062362527",
+  "pages": 1,
+  "fields": {}
+ }
+}

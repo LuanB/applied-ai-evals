@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B08-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# TRANS-PACIFIC CARRIERS\n\n\n<table>\n<tr>\n<td>B/L No ::</td>\n<td>CMDU50801816</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Cascade Orchards LLC</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Southern Cross Imports Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>CMA CGM TAGE / 554S</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Ho Chi Minh. City</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Brisbane</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>MSKU7375393 / SL230238</td>\n</tr>\n</table>\n\n\n547 PACKAGES SAID TO CONTAIN CASHEW KERNELS\nGROSS WEIGHT 5559.9 KGS\nINVOICE INV-65533\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nSelective Promotion\nMOLECULAR CARCINOGENESIS 11:42-48 (1994)\nKi-ras Mutations in 4-(Methylnitrosamino)-1-(3-pyridyl)- 1-butanone-Initiated and Butylated Hydroxytoluene- Promoted Lung Tumors in A/J Mice\nSteve A. Matzinger, William T. Gunning, Ming You, and Andre Castonguay1\nDepartment of Pathology (SAM, WTG, MY), Medical Coliege of Ohio, Toledo, Ohio; and Laboratory of Cancer Etiology and Chemoprevention (AC), School of Pharmacy, Laval University, Quebec City, Quebec, Canada\nThe promotional effects of butylated hydroxytoluene (BHT) on tung tumorigenesis induced by 4- (methylnitrosamino)-1-(3-pyridyl)-1-butanone (NNK) was evaluated in a two-stage model of lung tumori- genesis in the A/J mouse. Mice were treated in two separate experiments with 1.54 mmol/kg (9.1 mg/mouse) NNK, which induced an average of 8.4 and 9.1 tumors/mouse in the experiments. Animals fed a diet that contained 1 g/kg BHT after administration of the carcinogen in these two experiments demonstrated an increase of the tumor multiplicity by 63% and 43%. Multiplicity of forestomach tumors was not effected by BHT in the diet. No differences in lung tumor morphology were seen as a result of the promoting effect of BHT. Mutations in the Ki-ras oncogene from lung tumors induced by NNK (19 tumors) or by NNK plus a diet containing BHT (34 tumors) were characterized by polymerase chain reaction, single-strand conformational polymorphism, and direct sequencing. All 19 NNK-induced tumors not promoted with BHT contained acti- vated Ki-ras genes with GC-+AT transitions at the second base of codon 12. Only 11 of 34 NNK-induced and BHT-promoted tumors (32%) had this characteristic Ki-ras alteration. These data suggest that the NNK- initiated mouse lung tumorigenesis pathway, which involves the specific mutation of the Ki-ras oncogene, is altered to a predominantly non-ras mechanism when these tumors are promoted by BHT in the diet. 0 1994 Wiley.Liss, Inc.\nKey words: Tobacco, gastric tumors, Of-methylguanine, Clara cells, Type Il pneumocytes\nINTRODUCTION\nImportant environmental factors associated with the development of human cancers include tobacco smoking and diet [1]. Tobacco smoking is a well-established risk factor for lung cancer [2] as tobacco smoke contains more than 4,000 compounds, of which 43 have been shown to induce tumors in laboratory animals [3,4]. The most potent carcinogenic agent contained in cigarette smoke is the nitrosamine 4-(methylnitrosamino)-1-(3 pyridyl)-1- butanone (NNK), which has a remarkable specificity for lung tissues in laboratory animais [5] and has been sug- gested to be an important etiological factor in tobacco smoke-related human cancer [6]. NNK requires activa- tion, which occurs by a-hydroxylation and results in the formation of methylated DNA adducts [5,7]. Lung tumors induced by NNK, in strain A/l mice primarily have Ki-ras mutations (GC-+AT transitions) at the second base of codon 12, although mutations have also been found at codon 61 with high doses of NNK [8,9], The specific GC-+AT transitions at the second base of codon 12 have been reported to be the result of Of-methylguanine ad- duct formation [10], In addition to inducing tumors of the lung, NNK was shown by Wattenberg and Coccia [11] to induce tumors of the forestomach in the A/J mouse at a dose level of 8 mg/mouse administered intragastrically.\nBesides tobacco and tobacco smoke, some components of the human diet are established risk factors for the de-\nvelopment of cancer [12]. Many foods in the North Ameri- can diet contain the antioxidant butylated hydroxytolu- ene (BHT). This antioxidant prevents oxygen-induced lipid deterioration by acting as a chain terminator of free radi- cal reactions. Therefore, BHT is used by the food process- ing industry as a preservative to prevent rancidity. It has been estimated that the average U.S. citizen consumes 1-2 mg BHT/d [13], This compound has been known to be toxic in laboratory animals for more than 30 yr [14]. BHT has also been shown to promote lung tumors in mice /14-16]; however, its mechanism of action is unknown.\nThe purpose of the study presented here was to de- velop a two-stage model of mouse lung tumorigenesis using NNK, an environmentally important lung carcino- gen; to determine the effects of BHT on NNK carcino- genesis; and to investigate possible differences in oncogene activation in mouse lung tumors induced solely by NNK and from lung tumors induced by NNK and promoted by BHT.\n89636147\n'Corresponding author: Laboratory of Cancer Etiology and Chemcprevention, School of Pharmacy, Laval University, Quebec City, Quebec, Canada, G1K 7P4.\nAbbreviations: BHT, butylated hydroxytoluene; NNK, 4- [methylnitrosamino]-1-(3.pyndyf)-1-butanone; PCR, polymerase chain reaction; SSCP, single-strand conformation polymorphism.\n\u00b7 1994 WILEY-LISS, INC."
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8994Vi9ad0gDxE3MRjBvlB4LInb",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"scientific publication\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088191,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 11,
+   "prompt_tokens": 1422,
+   "total_tokens": 1433,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 31,
+    "engine_ttlt_ms": 91,
+    "pre_inference_ms": 113,
+    "service_tbt_ms": 13,
+    "service_ttft_ms": 682,
+    "service_ttlt_ms": 826,
+    "user_visible_ttft_ms": 569
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260926054342-015cec21-default-r0-dp0-default"
+  }
+ }
+}

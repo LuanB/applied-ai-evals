@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B18-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB 249 Industrial Rd, Vietnam\nRef No .:\nPL-55216\nInvoice No .:\nINV-91.474\nConsignee:\nBluegum Food Distributors Pty Ltd\nContainer:\nMSKU7072385\nMarks:\nBLUE\u0122UM/SYDNEY\nPkgs : Description\nNet kg Gross. kg\n781. Cashew kernels\n8902.0 9843.0\n.Total packages:\n.781\nTotal gross weight (kg): 9843.0\nTotal net weight (kg):\n8902.0",
+  "pages": 1,
+  "fields": {}
+ }
+}

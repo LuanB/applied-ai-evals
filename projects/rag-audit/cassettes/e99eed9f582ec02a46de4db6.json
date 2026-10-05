@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app13-013] (APP 13, paras 13.36\u201313.37, Grounds for correcting personal information > Up-to-date)\n13.36 Personal information is out-of-date if it contains facts, opinions or other information that is no longer current. An example is a statement that an individual lacks a particular qualification or accreditation that the individual has subsequently obtained.\n13.37 Personal information about a past event may have been accurate at the time it was recorded, but has been overtaken by a later development. Whether that information is out-of-date will depend on the purpose for which it is held. If current information is required for the particular purpose, the information will to that extent be out-of-date. By contrast, if information from a past point in time is required for the particular purpose, the information may not be out-of-date for that purpose. Personal information held by an APP entity that is no longer needed for any purpose may need to be destroyed or de-identified under APP 11.2 (Chapter 11 (APP 11)).\n\n[app10-007] (APP 10, paras 10.15\u201310.16, What are the quality considerations? > Up-to-date)\n10.15 Personal information is out-of-date if it contains facts, opinions or other information that is no longer current. An example is a statement that an individual lacks a particular qualification or accreditation that the individual has subsequently obtained.\n10.16 Personal information about a past event may have been accurate at the time it was recorded, but has been overtaken by a later development. Whether that personal information is out-of-date will depend on the purpose for which it is collected, used or disclosed. If current personal information is required for the particular purpose, the personal information will, to that extent, be out-of-date. Personal information held by an APP entity that is no longer needed for any purpose, may need to be destroyed or de\u2011identified under APP 11.2 (Chapter 11 (APP 11)).\n\n[app13-019] (APP 13, paras 13.48, Being satisfied and taking reasonable steps > Reasonable steps to correct)\n13.48 Special considerations apply to Commonwealth records. The term \u2018Commonwealth record\u2019 is defined in s 3 of the Archives Act and is discussed in more detail in Chapter B (Key concepts). [9] The definition is likely to include, in almost all cases, all personal information held by agencies. It may also include personal information held by contracted service providers. A Commonwealth record can, as a general rule, only be destroyed or altered in accordance with s 24 of the Archives Act. Further, s 26 of the Archives Act makes it an offence to alter a Commonwealth record that is over 15 years old. [10] In relation to such records, and more generally, it may be reasonable (and consistent with statutory requirements) to:\nretain a version of a record which contains incorrect personal information (see paragraph 13.47)\nassociate a statement to clarify that, having regard to the purpose for which the personal information is held, the personal information is not accurate, up-to-date, complete, relevant or is misleading, and either including the correct personal information in the note or cross referencing where it is held (such as in an attachment to the record).\n\n[b-006] (B, paras B.32\u2013B.36, Key concepts A to D > Commonwealth record)\nB.32 A \u2018Commonwealth record\u2019 has the same meaning as in the Archives Act 1983 (s 6(1)).\nB.33 The Archives Act states that a \u2018Commonwealth record\u2019 means:\na record [15] that is the property of the Commonwealth or a Commonwealth institution, or\na record that is deemed to be a Commonwealth record either by a regulation made under the Archives Act or under s 22 of the Archives Act (which applies to records kept by a Royal Commission or Commission of inquiry) (s 3(1)).\nB.34 Some categories of records are excluded from that definition:\n\u2018exempt material\u2019, which includes, for example, material included in the memorial collection of the Australian War Memorial, and material included in the collections maintained by the National Library of Australia, the National Gallery of Australia, the National Portrait Gallery of Australia, and the National Museum of Australia\na register or guide maintained by the Archives, namely, the Australian National Register of Records, Australian National Guide to Archival Material or Australian National Register of Research Involving Archives (see Part VIII, Archives Act).\nB.35 It is likely that all or most personal information collected or received by an agency will be included in a \u2018Commonwealth record\u2019. Where an organisation is a contracted service provider under a Commonwealth contract, the records collected, received or held by that organisation under the contract may also be Commonwealth records.\nB.36 APPs 4.3 and 11.2 require the destruction or de-identification of personal information in certain circumstances (see Chapters 4 and 11). These requirements do not apply to information contained in a Commonwealth record. Retention, destruction and alteration of Commonwealth records is governed by the Archives Act. A Commonwealth record can, as a general rule, only be destroyed or altered in accordance with s 24 of the Archives Act. The grounds on which this may be done include with the permission of the National Archives of Australia (as set out in a records disposal authority) or in accordance with \u2018normal administrative practice\u2019. Further information about Archives Act requirements is available from the National Archives of Australia at <www.naa.gov.au>.\n\n[app4-005] (APP 4, paras 4.15\u20134.18, Dealing with unsolicited personal information that could not have been collected)\n4.15 The term \u2018Commonwealth record\u2019 in s 6(1) has the same meaning as in s 3 of the Archives Act 1983 (the Archives Act) and is discussed in more detail in Chapter B (Key concepts). [1] The term is likely to include all or most personal information received by agencies. It may also include personal information received by contracted service providers.\n4.16 If the unsolicited personal information is contained in a Commonwealth record, the agency is not required to destroy or de-identify the personal information under APP 4.3, even if it determines that it could not have collected the information under APP 3. The agency will instead be required to comply with the provisions of the Archives Act in relation to the Commonwealth record.\n4.17 A Commonwealth record can, as a general rule, only be destroyed or altered in accordance with s 24 of the Archives Act. The grounds on which this may be done include with the permission of the National Archives of Australia (as set out in a records disposal authority) or in accordance with \u2018normal administrative practice\u2019. See Chapter B (Key concepts) for more information about Commonwealth records.\n4.18 Unsolicited personal information held by an agency in a Commonwealth record must be dealt with in accordance with APPs 5\u201313 (APP 4.4) (see paragraphs 4.28 to 4.30 below).\n\nQuestion: Is a record about a past event automatically out of date?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Tt0NtkIyrkwBmTiQwI6kUzPzoy",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"A record about a past event is not automatically out-of-date; whether it is out-of-date depends on the purpose for which the information is held or collected. If current information is required for the particular purpose, the information will be out-of-date to that extent, but if information from a past point in time is required, it may not be out-of-date for that purpose.\",\"citations\":[\"app13-013\",\"app10-007\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089477,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 99,
+   "prompt_tokens": 1635,
+   "total_tokens": 1734,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 64,
+    "engine_ttlt_ms": 764,
+    "pre_inference_ms": 78,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 660,
+    "service_ttlt_ms": 1356,
+    "user_visible_ttft_ms": 582
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102744-c1ac330c-default-r0-dp0-default"
+  }
+ }
+}

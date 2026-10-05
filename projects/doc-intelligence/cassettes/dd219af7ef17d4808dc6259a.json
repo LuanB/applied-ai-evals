@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B18-02",
+  "markdown": true
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB\n249 Industrial Rd, Vietnam\n\n\n<table>\n<tr>\n<td>Ref No .:</td>\n<td>PL-55216</td>\n</tr>\n<tr>\n<td>Invoice No .:</td>\n<td>INV-91474</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Bluegum Food Distributors Pty Ltd</td>\n</tr>\n<tr>\n<td>Container:</td>\n<td>MSKU7072385</td>\n</tr>\n<tr>\n<td>Marks:</td>\n<td>BLUE\u0122UM/SYDNEY</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<th>Pkgs ..</th>\n<th>Description</th>\n<th>Net kg</th>\n<th>Gross. kg</th>\n</tr>\n<tr>\n<td>781.</td>\n<td>Cashew kernels</td>\n<td>8902.0</td>\n<td>9843.0</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>.Total packages:</td>\n<td>781</td>\n</tr>\n<tr>\n<td>Total gross weight (kg):</td>\n<td>9843.0</td>\n</tr>\n<tr>\n<td>Total net weight (kg):</td>\n<td>8902.0</td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

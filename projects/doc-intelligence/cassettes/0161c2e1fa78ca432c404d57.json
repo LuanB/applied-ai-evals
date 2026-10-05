@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B02-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "NATIONAL PLANT PROTECTION ORGANIZATION OF TURKEY\nPHYTOSANITARY CERTIFICATE\nNo.\nPC591692\nName of exporter:\nLanka Spice Mills (Pvt) Ltd.\nDeclared consignee:\nRiverina Trading Pty Ltd\nBotanical name of plants:\nPrunus armeniaca\nPlace of origin:\nTurkey\nDeclared means of conveyanceDNE HARMONY\nPoint of entry:\nFremantle\nThe plants or plant products described herein have been inspected and are considered free from quarantine pests of the importing contracting party.",
+  "pages": 1,
+  "fields": {}
+ }
+}

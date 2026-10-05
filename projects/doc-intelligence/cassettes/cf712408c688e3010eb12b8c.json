@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B02-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "OCEANIC CONTAINER LINE\nBILL OF LADING\nB/L No .:\nMEDU86081470\nShipper:\nGolden Valley Exports Co. Ltd\nConsignee:\nSouthern Cross Imports Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nMSC ARIANNA / 267S\nPort of loading:\nGothenburg\nPort of discharge:\nBrisbane\nContainer / Seal:\nOOLU4849033 /SL299006\n410 PACKAGES SAID TO CONTAIN SAWN TIMBER, PINE, KILN DRIED GROSS WEIGHT 7054.1 KGS INVOICE INV-76282 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

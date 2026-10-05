@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-083",
+  "markdown": false
+ },
+ "response": {
+  "content": "VDC\n1984\n2023539353",
+  "pages": 1,
+  "fields": {}
+ }
+}

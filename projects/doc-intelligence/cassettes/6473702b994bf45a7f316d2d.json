@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-125",
+  "markdown": false
+ },
+ "response": {
+  "content": "OBJECTIVE\n\u00b7 to investigate possible changes in the aryl hydrocarbon monooxygenase (AHM) ac- tivity in rat\nlungs, kidneys, and liver\nfollowing a 3-week glycerol inhalation in or- der to answer the following questions:\n- Is the determination of the AHM specific activity useful to biochemically monitor ultrastructural changes in these organs?\n- Is glycerol an inducer of monooxygenase reactions?\n2029230553",
+  "pages": 1,
+  "fields": {}
+ }
+}

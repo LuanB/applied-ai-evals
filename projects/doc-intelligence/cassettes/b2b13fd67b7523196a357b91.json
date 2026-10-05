@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B12-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - SPAIN\nCertificate No .:\nCO340275\nExporter:\nHanseatic Furniture GmbH\nConsignee:\nHarbourside Fresh Pty Ltd\nMeans of transport:\nONE HARMONY from Valencia\nHS heading:\n0805.10\nGoods:\nFresh oranges, navel\nCountry of origin:\nSpain\u00ae\nWe certify the goods described in invoice INV-70494 originate in Spain.",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B07-05",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - SRI LANKA\nORIGIN DECLARATION\nCertificate No .:\nAU330068\nExporter:\nHanseatic Furniture GmbH\nConsignee:\nKookaburra Home Furnishings Pty Ltd\nMeans of transport:\nMSC. ARIANNA from Colombo\nHS heading:\n0904.11\nGoods:\nBlack pepper, whole.\nCountry of origin: Sri Lanka\nWe certify the goods described in invoice INV-38675 originate in Sri Lanka.",
+  "pages": 1,
+  "fields": {}
+ }
+}

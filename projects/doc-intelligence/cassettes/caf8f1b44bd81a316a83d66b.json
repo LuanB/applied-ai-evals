@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B16-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# TRANS-PACIFIC CARRIERS\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MAEU35625917</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Golden Valley Exports Co. Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Southern Cross Imports Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>MSC ARIANNA 574E</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Gothenburg</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Fremantle</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>MSCU4284394 SL628311</td>\n</tr>\n</table>\n\n\n1375 PACKAGES SAID TO CONTAIN SAWN TIMBER, PINE, KILN DRIED\nGROSS WEIGHT 22220.8 KGS\nINVOICE INV-84536\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

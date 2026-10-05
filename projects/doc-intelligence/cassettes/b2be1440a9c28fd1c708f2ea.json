@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-058",
+  "markdown": false
+ },
+ "response": {
+  "content": "8501\n3\nPHILIP MORRIS PRODUCTS, INC.\nSENEGAL TEST #74\nDISTRIBUTION\nDr. M. Bourlas\nMr. A. Confer\nMr. L. Dediot\nMr. O. W. Dudley, III\nMr. F. A. Lowman\nMr. D. Maeder\nMr. D. Milby\nMr. D. Schulthess\nCTSD Data File\nCentral File\nPREPARED BY :\nS. V. Haffron\nS. W. Laffoon\nK.a. Mitchell\nK. A. Mitchell\nRaJenner @\nAPPROVED BY :\nR. A. Fenner\nDATE: December 9, 1991\n2050627797\nPHILIP MORRIS",
+  "pages": 1,
+  "fields": {}
+ }
+}

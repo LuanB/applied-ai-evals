@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-021",
+  "markdown": false
+ },
+ "response": {
+  "content": "2078345376\nFrom: Woodward, Ellis on Wed, Feb 5, 1997 9:39 AM Subject: RE: Ingredient Disclosure Seminar To: Portnoy, Sharon Cc: Berlind, Mark; Laufer, David; Mihas, Tracy We will plan to do this next week.",
+  "pages": 1,
+  "fields": {}
+ }
+}

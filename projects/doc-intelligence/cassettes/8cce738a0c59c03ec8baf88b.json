@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B08-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "CASCADE ORCHARDS LLC 34 Industrial Rd, Germany\nPACKING LIST\nRef No .:\nPL-45982\nInvoice No .:\nINV-23089\nConsignee:\nRiverina Trading Pty Ltd\nContainer:\nCMAU5583718\nMarks:\nRIVERINA/BRISBANE\nPkgs\nDescription\nNet kg Gross kg\n289 Wooden dining chairs 5356.5 59.73.2\nTotal packages:\n289\nTotal gross weight (kg):\n.5973.2\nTotal net weight (kg):\n5356.5",
+  "pages": 1,
+  "fields": {}
+ }
+}

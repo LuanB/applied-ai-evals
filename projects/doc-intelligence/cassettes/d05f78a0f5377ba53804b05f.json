@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-005",
+  "markdown": false
+ },
+ "response": {
+  "content": "RJR INTER-OFFICE MEMORANDUM\nJune 18, 1986\nTo: Dr. Bob Suber\nFrom: Or. Deborah A. Lee Ms. Cindy Fulp\nSubject: Ames results on sample H81 from Hazleton Biotechnologies, Inc.\nThe following results were obtained for sample H81 (Firnova Powder 850.005):\n0% S9 ACTIVATION\nstrain TA9B strain TA100 strain 1535 strain 1537 strain 1538 (rev/mg sample) {rev/mg sample) (rev/mg sample) (rev/mg sample) (rev/mg sample)\n.350 ( neg) 5.30 (neg)\n. 118 (neg)\n.0887 (neg) negative\n10% 59 ACTIVATION\nstrain TA98 strain TA100 strain 1535 strain 1537 strain 1538 (rev/mg sample ) (rev/mg sample ) (rev/mg sample ) (rev/mg sample ) (rev/mq sample)\n.183 (neg) .692 (neg)\n1.03 (neg)\n1.05 (neg)\n.816 (neg)\nConclusions : The dose range tested was 0, 100, 500, 1000, 2500, 5000, and 10000 ug in 50 ul. There was no significant increase in revertant number with an increase in dose level for sample H81 with or without 59 activation for any of the 5 strains.\nPlease feel free to discuss these results with our lab.\nCindy\nCindy Fulp\nxc: Dr. C.K. Lee\nDr. G.T. Burger\nDr. J.R. Hayes\n51833 4135",
+  "pages": 1,
+  "fields": {}
+ }
+}

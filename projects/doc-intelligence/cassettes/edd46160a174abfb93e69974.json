@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B06-02",
+  "markdown": true
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD\n220 Industrial Rd, Vietnam\n\n\n# PACKING SPECIFICATION\n\n\n<table>\n<tr>\n<td>Ref No .:</td>\n<td>PL-18107</td>\n</tr>\n<tr>\n<td>Invoice No .:</td>\n<td>INV-12449</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Southern Cross Imports Pty Ltd</td>\n</tr>\n<tr>\n<td>Container:</td>\n<td>CMAU7244107</td>\n</tr>\n<tr>\n<td>Marks:</td>\n<td>SOUTHERN/SYDNEY</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<th>Pkgs</th>\n<th>Description</th>\n<th>Net kg</th>\n<th>Gross kg</th>\n</tr>\n<tr>\n<td>888</td>\n<td>Cashew\u00b7 kernels</td>\n<td>18408.5</td>\n<td>19858.2</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>Total packages:</td>\n<td>888</td>\n</tr>\n<tr>\n<td>Total gross weight (kg):</td>\n<td>19858.2</td>\n</tr>\n<tr>\n<td>Total net weight (kg):</td>\n<td>18408.5.</td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

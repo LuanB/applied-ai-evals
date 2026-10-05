@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B06-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\nOCEAN BILL OF LADING\nB/L No .:\nMAEU35794888\nShipper:\nLanka Spice Mills (Pvt). Ltd\nConsignee:\nSouthern Cross Imports Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCOSCO LIBRA / 797W\nPort of loading:\nHo Chi Minh City\nPort of discharge:\nSydney\nContainer / Seal:\nCMAU7244107 / SL492396\n888 PACKAGES. SAID TO CONTAIN CASHEW KERNELS GROSS WEIGHT 19858.2 KGS INVOICE INV-12449 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

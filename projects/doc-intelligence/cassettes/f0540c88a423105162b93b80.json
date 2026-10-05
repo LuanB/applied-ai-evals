@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-039",
+  "markdown": false
+ },
+ "response": {
+  "content": "Lung cancer\nRefers to \"Labor Union of Medicine.\" Says their conclusion that tobacco causes lung cancer is \"murder by the occupation of medicine.\"\nThinks no one died from lung cancer, but from the operations -- cutting into the lung.\nMr. Gerald von Spectro 218 Elm Street Albany, N. Y.\n50239 5382",
+  "pages": 1,
+  "fields": {}
+ }
+}

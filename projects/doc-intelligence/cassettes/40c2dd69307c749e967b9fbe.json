@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\n# 85 768\nDoral Co. I have been smoking Dorato for 6th 20 years of will not smoke to obles brand, even though I have to drive is miles one way, thats 26 miles just to get my Dorals, Cause our community stove sometimes un out of these I have always been very satisfied with Doral, And my Entire family smokes Don't, me, my husband, my 3 children, my 4 broches, 2 of my sisters and both my Ltmarlboro parents . He all welt smoke Winston, But like\nI said I tried my first Dound, 20 yrs ago, and I quit winster & marlboro because the Dores write a lot cheaper and even better. I have has a few problems , like broken cigarettes , Rome that the Paper care unglued, some with holes in them. And I never complainit to you become I know that those kind of Things happen. But I am on a fuad income and we only get a small social Security check, & the last carter I bought, all of the Vignettes were dried out so bad tout the blocco fall out als sending you one of chez and I paid 11.00 and something for the Carton of the stone would not tale then back, so I had & by to smoke them. The tobacco is so aly, that the fire salles out the end of the Cigarette and burns mt.\nof do not like to complain, because It Love Doil and don't want to change, but I have had to the away several packs over the years, but Now we can't afford to do that. Thank you Mrs. Michael Bragg\n51822 8966"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV895Lo4wku1LEhbiUMn7q8p3JSnT",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"letter\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088187,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 551,
+   "total_tokens": 560,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 27,
+    "engine_ttlt_ms": 84,
+    "pre_inference_ms": 88,
+    "service_tbt_ms": 16,
+    "service_ttft_ms": 978,
+    "service_ttlt_ms": 1118,
+    "user_visible_ttft_ms": 890
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927120206-23bb4efb-default-r0-dp0-default"
+  }
+ }
+}

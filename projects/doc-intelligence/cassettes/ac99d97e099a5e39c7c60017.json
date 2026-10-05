@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B06-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD 81 Industrial Rd, Spain\nPACKING LIST\nRef No .:\nPL-13169\nInvoice No .:\nINV-9444.6\nConsignee:\nBluegum Food Distributors Pty Ltd\nContainer:\nTGHU2162297\nMarks:\nBLUEGUM/BRISBANE\nPkgs\nDescription\nNet kg\nGross kg\n1289 Fresh oranges, navel 20931.7 23134.6\nTotal packages: 1289\nTotal gross weight (kg):\n23134.6\nTotal net weight (kg):\n20931.7",
+  "pages": 1,
+  "fields": {}
+ }
+}

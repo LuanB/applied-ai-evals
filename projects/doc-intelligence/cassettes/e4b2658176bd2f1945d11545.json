@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B03-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>CMDU38462634</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Nordic Pine Sawmills AB</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Wattle &amp; Co Wholesale Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>COSCO LIBRA / 325N</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Colombo</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Fremantle</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>OOLU6530326 / SL132384</td>\n</tr>\n</table>\n\n\n268 PACKAGES SAID TO CONTAIN BLACK PEPPER, WHOLE\nGROSS WEIGHT 4543.5 KGS\nINVOICE INV-64463\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

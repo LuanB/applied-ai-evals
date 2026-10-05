@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-127",
+  "markdown": false
+ },
+ "response": {
+  "content": "1\n1952 $\nNEWS\nfrom BUREAU OF INDUSTRIAL SERVICE INC. 205 MADISON AVE., NEW YORK 17, N. Y.\nMURRAY HILL 9-5000\nfor Release\nImmediately\nWAR-BORN FILTER USED TO REMOVE TARS AND NICOTINE IN CIGARETTE\nLorillard Introduces Kent Cigarettes With Built-In Filter Using Similar Ingredient To Atomic Plants -- Eliminates 7 Times More Tars and Nicotine Than Heretofore --\nNew York, March 19: A new cigarette with a built-in filter which removes seven times more tars and nicotine than any cigarette filter heretofore developed was introduced here today by P. Lorillard Company under the brand name Kent.\nThe ingredient which accomplishes this unprecedented degree of filtration is currently used to remove radio-active materials from the air at plants of the Atomic Energy Commission and is said to be the most effective filter material yet commercially available. Its adaptation to a cigarette is the culmination of months of intensive research and development work in Lorillard's Research Laboratories under the direction of Dr. Harris B. Parmele, research director of the company. Research consultants from abroad and from American colleges assisted in this work.\n(more)\n85087568\nSubsidiary of YOUNG & RUBICAM, INC. . 285 Madison Ave., New York 17, N. Y.",
+  "pages": 1,
+  "fields": {}
+ }
+}

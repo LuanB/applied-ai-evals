@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app10-003] (APP 10, paras 10.6\u201310.7, Taking reasonable steps)\n10.6 The reasonable steps that an APP entity should take will depend upon circumstances that include:\nthe sensitivity of the personal information. More rigorous steps may be required if the information collected, used or disclosed is \u2018sensitive information\u2019 (defined in s 6(1) and discussed in Chapter B (Key concepts)) or other personal information of a sensitive nature.\nthe nature of the APP entity holding the personal information. Relevant considerations include an entity\u2019s size, resources and its business model. For example, the reasonable steps expected of an entity that operates through franchises or dealerships, or gives database and network access to contractors, may differ from the reasonable steps required of a centralised entity.\nthe possible adverse consequences for an individual if the quality of personal information is not ensured. More rigorous steps may be required as the risk of adversity increases.\nthe practicability, including time and cost involved. However an entity is not excused from taking particular steps by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take particular steps will depend on whether the burden is excessive in all the circumstances.\n10.7 In some circumstances it will be reasonable for an APP entity to take no steps to ensure the quality of personal information. For example, where an entity collects personal information from a source known to be reliable (such as the individual concerned) it may be reasonable to take no steps to ensure the quality of personal information. It is the responsibility of the entity to be able to justify that this is reasonable.\n\n[app10-004] (APP 10, paras 10.8, Taking reasonable steps > Examples of reasonable steps)\n10.8 The following are given as examples of reasonable steps that an APP entity could consider:\nimplementing internal practices, procedures and systems to audit, monitor, identify and correct poor quality personal information (including training staff in these practices, procedures and systems). For example, if the entity commonly uses or discloses personal information in time-critical situations such that it may not be possible to take steps to ensure quality at the time of the use or disclosure, the entity might take steps to ensure the quality of personal information at regular intervals\nimplementing protocols that ensure personal information is collected and recorded in a consistent format. For example, to help assess whether personal information is up-to-date, an entity might, where practicable, note on a record when the personal information was collected and the point in time to which it relates, and if it is an opinion, that fact\nensuring updated or new personal information is promptly added to relevant existing records\nproviding individuals with a simple means to review and update their personal information on an on-going basis, for example through an online portal\nreminding individuals to update their personal information each time the entity engages with the individual\ncontacting the individual to verify the quality of personal information when it is used or disclosed, particularly if there has been a lengthy period since collection\nchecking that a third party, from whom personal information is collected, has implemented appropriate practices, procedures and systems to ensure the quality of personal information. Depending on the circumstances, this could include: making an enforceable contractual arrangement to ensure that the third party implements appropriate measures to ensure the quality of personal information the entity collects from the third party undertaking due diligence in relation to the third party\u2019s quality practices prior to the collection\nmaking an enforceable contractual arrangement to ensure that the third party implements appropriate measures to ensure the quality of personal information the entity collects from the third party\nundertaking due diligence in relation to the third party\u2019s quality practices prior to the collection\nif personal information is to be used or disclosed for a new purpose that is not the primary purpose of collection, assessing the quality of the personal information having regard to that new purpose before the use or disclosure.\n\n[app10-001] (APP 10, paras 10.1\u201310.3, What does APP 10 say?)\n10.1 An APP entity must take reasonable steps to ensure that the personal information it collects is accurate, up-to-date and complete (APP 10.1).\n10.2 An APP entity must also take reasonable steps to ensure that the personal information it uses or discloses is, having regard to the purpose of the use or disclosure, accurate, up-to-date, complete and relevant (APP 10.2). It is implicit that this requirement only applies to personal information \u2018held\u2019 by an entity (see Chapter 6 (APP 6)). \u2018Holds\u2019 is discussed in Chapter B (Key concepts).\n10.3 Handling poor quality personal information can have significant privacy impacts for individuals. The requirements in APP 10 ensure that an APP entity takes reasonable steps to only handle high quality personal information, which builds community trust and confidence in an entity\u2019s information handling practices.\n\n[app13-003] (APP 13, paras 13.7\u201313.9, What does APP 13 say? > Interaction of APP 13 and other APPs)\n13.7 The correction requirements in APP 13 complement and overlap with the requirements in other APPs, including APP 10 (quality of personal information) and APP 11 (security of personal information).\n13.8 APP 10 provides that an APP entity must take reasonable steps to ensure the quality of personal information it collects, uses or discloses (see Chapter 10 (APP 10)). If reasonable steps are taken to comply with APP 10, this reduces the likelihood that personal information will need correction under APP 13. Similarly, by taking reasonable steps to correct personal information under APP 13, an entity can better ensure that it complies with APP 10 by ensuring that information is accurate, up-to-date, complete and relevant when it is used or disclosed.\n13.9 APP 11.1 provides that an APP entity must take reasonable steps to protect the personal information it holds, including from interference, loss and unauthorised modification. If reasonable steps are taken to comply with APP 11.1, this reduces the likelihood that personal information will need correction under APP 13. APP 11.2 provides that an entity must take reasonable steps to destroy or de-identify personal information that it no longer needs for any purpose for which it may be used or disclosed. This requirement does not apply where the information is contained in a Commonwealth record or where the entity is required by law or a court/tribunal order to retain the personal information (see Chapter 11 (APP 11)). When taking steps to identify and correct incorrect personal information under APP 13, an entity should consider whether it still needs the personal information for a permitted purpose, or whether reasonable steps must be taken to destroy or de-identify the information under APP 11.2.\n\n[app10-002] (APP 10, paras 10.4\u201310.5, When an APP entity must take reasonable steps to ensure the quality of personal )\n10.4 An APP entity must take reasonable steps to ensure the quality of personal information at two distinct points in the information handling cycle. The first is at the time the information is collected. The second is at the time the information is used or disclosed.\n10.5 Regular reviews, at other times, of the quality of personal information held by the APP entity may also assist in ensuring it is accurate, up-to-date, complete and relevant at the time it is used or disclosed.\n\nQuestion: What circumstances affect which reasonable steps an entity should take to ensure the quality of personal information?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SjwPF2jPABafiXh1p6xiBYi7GH",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The reasonable steps an APP entity should take depend on the sensitivity of the personal information, the nature of the entity (including size, resources, and business model), the possible adverse consequences for an individual if the information quality is not ensured, and the practicability including time and cost involved. However, inconvenience, time consumption, or cost alone do not excuse an entity from taking particular steps unless the burden is excessive in all circumstances.\",\"citations\":[\"app10-003\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089405,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 103,
+   "prompt_tokens": 1714,
+   "total_tokens": 1817,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 89,
+    "engine_ttlt_ms": 762,
+    "pre_inference_ms": 142,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 709,
+    "service_ttlt_ms": 1361,
+    "user_visible_ttft_ms": 567
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044527-a048ae24-default-r0-dp0-default"
+  }
+ }
+}

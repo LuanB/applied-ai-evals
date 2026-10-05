@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B05-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "OCEANIC CONTAINER LINE\nOCEAN BILL OF LADING\nB/L No .:\nMAEU13424936\nShipper:\nCascade Orchards LLC\nConsignee:\nKookaburra Home Furnishings Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCMA CGM TAGE / 782N\nPort of loading:\nColombo\nPort of discharge:\nBrisbane\nContainer / Seal:\nMSKU2038146 / SL816765\n1677 PACKAGES SAID. TO CONTAIN BLACK PEPPER, WHOLE GROSS WEIGHT 25254. 6 KGS INVOICE INV-60119\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

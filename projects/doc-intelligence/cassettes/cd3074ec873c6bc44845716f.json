@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-076",
+  "markdown": false
+ },
+ "response": {
+  "content": "RESEARCH AND DEVELOPMENT SERVICE REQUEST AND DATA SHEET\nSubmitter: Dave Rockwell\nDate Submitted: 08-25-88\nDate Completed: 09-01-88.\nComments:\n8.0mg tar; PMSL F.T.B.\nRequest Code: 0883167 Sample Code: PH6B Project Code: 88-012-JPN\nPH6B SPEC\nSmoke\nButt Length, mm\n28\n28\n-\nCigarette\nTotal RTD, mm of H20\n114\n120\n\u00b1 8,0\nCircumference, mm\n24.9\n24.8\n2 0.1\nDiameter, mm\n7.9\n7.9\n-\nFilter\nRTD, mm of H20\n91\n94\n\u00b1 8.0\nTipping Paper Length, mm\n25\n25\n-\nVentilation, %\n31\n33\n\u00b15.0\nFiller\nTotal Alkaloids, % (DWB)\n2.01\n1.75\n1 0.2\nTotal Red. Sugars, % (DWB)\n9.3\n11.5\n+2.0\nExpanded Tob., &\n18\n15\nWt. of Tob., g (12.5% O.V.)\n0.660\n0.673\nOven Volatiles, %\n13.1\nOven Volatiles, & (Pack)\n11.7\n12.5\n\u20be 0.3\nPropylene Glycol, &\n-1.1\n1.0\n\u00b1 0.2\nGlycerine, \u20ba\n1.0\n0.9\n\u00b1 0.2\n7.6\n8.0\n+ 1.0\nFTC Tar, mg/cigt.\n9.1\n10.0\n+0.8\nTPM, mg/cigt.\n0.57\n0.65\nto, 1\nNicotine, mg/cigt.\n0.86\n0.95\n\u00b1 0.15\nWater, mg/cigt.\nPuffs/Cigt.\n7.3\n7.5\n$0.4\n2057640816",
+  "pages": 1,
+  "fields": {}
+ }
+}

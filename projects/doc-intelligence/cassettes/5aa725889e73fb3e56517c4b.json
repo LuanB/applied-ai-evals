@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B05-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# OCEANIC CONTAINER LINE\n\nSEA WAYBILL\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MEDU91747120</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Nordic Pine Sawmills AB</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>CMA CGM TAGE / 444N</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Izmir</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Brisbane</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>CMAU3435592 / SL436599</td>\n</tr>\n</table>\n\n\n1302 PACKAGES SAID TO CONTAIN DRIED APRICOTS\nGROSS WEIGHT 31476.3 KGS\nINVOICE .INV-33924\n\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,232 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-5-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You explain movements in software telemetry by attributing them to a commit.\n\nTHE NUMBERS ARE ALREADY COMPUTED AND ARE NOT YOURS TO RECOMPUTE.\nThe finding was produced by a deterministic detector. Treat its numbers as fact. Your\njob is judgement, not arithmetic: given that this movement happened, which commit in\nthe window explains it, and what is the evidence?\n\nMethod:\n- Start with list_commits_in_window. You get subjects and file-change counts.\n- Use describe_commit on the few that plausibly relate. Look at which files changed.\n- Use sample_telemetry_rows only if you need to see the shape of the raw data.\n- Then call submit_answer. You MUST finish by calling submit_answer.\n\nREFUSAL IS A CORRECT ANSWER AND IS EXPECTED SOMETIMES.\nThere is always a commit in a window. That does not mean one of them caused the\nmovement. If no commit plausibly explains it, call submit_answer with refused=true and\ncommits=[]. A confident wrong attribution is worse than an honest refusal, because it\nwill be believed. Check dates: a commit after the movement cannot have caused it.\n\nName at most 3 commits.\n"
+   },
+   {
+    "role": "user",
+    "content": "FINDING field_appearance:reasoningTokens\n  metric : telemetry field `reasoningTokens`\n  movement: absent from every row before 2026-07-03, then present on 190 rows on 2026-07-03 itself (190 of them non-zero). The field did not start being non-zero \u2014 it started EXISTING.\n  window : 2026-06-26 .. 2026-07-03\n\n6 commits are in this window. Attribute the movement, or refuse."
+   },
+   {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+     {
+      "id": "call_20ByV2p6buSoNxTFZDwIfL0q",
+      "function": {
+       "arguments": "{}",
+       "name": "list_commits_in_window"
+      },
+      "type": "function"
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_20ByV2p6buSoNxTFZDwIfL0q",
+    "content": "[{\"sha\": \"5770708\", \"date\": \"2026-06-17\", \"repo\": \"mayah-desktop\", \"subject\": \"Add Approach B (fused) bake-off sink: one Gemini Live session = ear+eye+brain\", \"files_changed\": 5}, {\"sha\": \"fc44797\", \"date\": \"2026-06-17\", \"repo\": \"mayah-desktop\", \"subject\": \"Add shared bake-off harness (Phase 0) \\u2014 corpus, replay rig, telemetry, scorer, oracle, recorder\", \"files_changed\": 27}, {\"sha\": \"03d07b1\", \"date\": \"2026-06-21\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(asr): emit live_asr_window structural telemetry\", \"files_changed\": 4}, {\"sha\": \"6b68f1e\", \"date\": \"2026-06-21\", \"repo\": \"mayah-desktop\", \"subject\": \"Phase 2+3 (desktop): delete fused/Live machinery + Deepgram/flag remnants\", \"files_changed\": 15}, {\"sha\": \"7b99e09\", \"date\": \"2026-06-22\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(telemetry): cost-instrument ASR/detect/enrichment + fix cost overestimate\", \"files_changed\": 20}, {\"sha\": \"d05fad4\", \"date\": \"2026-06-22\", \"repo\": \"mayah\", \"subject\": \"feat(telemetry): cover live JIRA SDK 429s + attribute calls to meetingId\", \"files_changed\": 7}]"
+   }
+  ],
+  "tools": [
+   {
+    "type": "function",
+    "function": {
+     "name": "list_commits_in_window",
+     "description": "Commits in the finding's window: sha, date, subject, files_changed.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "only_touching": {
+        "type": "string",
+        "description": "Optional path substring filter, e.g. 'telemetry'."
+       }
+      }
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "describe_commit",
+     "description": "One commit in detail: subject, file count, and the file list (truncated).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "sha": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "sha"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "sample_telemetry_rows",
+     "description": "A few raw telemetry rows of a given kind on a given day (YYYY-MM-DD).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "kind": {
+        "type": "string"
+       },
+       "day": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "kind",
+       "day"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "submit_answer",
+     "description": "Terminal. Submit the attribution, or refuse.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "commits": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "description": "Short SHAs. Empty if refusing."
+       },
+       "refused": {
+        "type": "boolean"
+       },
+       "rationale": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "commits",
+       "refused",
+       "rationale"
+      ]
+     }
+    }
+   }
+  ],
+  "_salt": "trial0"
+ },
+ "response": {
+  "id": "chatcmpl-EV7shYruk8BEY4yUq3KUtabSHA9OT",
+  "choices": [
+   {
+    "finish_reason": "tool_calls",
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "annotations": [],
+     "tool_calls": [
+      {
+       "id": "call_ZZAMHSXSjDsAiGkeE1MIcuFa",
+       "function": {
+        "arguments": "{\"sha\":\"fc44797\"}",
+        "name": "describe_commit"
+       },
+       "type": "function"
+      }
+     ]
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791087171,
+  "model": "gpt-5-mini-2025-08-07",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "usage": {
+   "completion_tokens": 345,
+   "prompt_tokens": 1014,
+   "total_tokens": 1359,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 320,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 34,
+    "engine_ttlt_ms": 2406,
+    "pre_inference_ms": 99,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 1070,
+    "service_ttlt_ms": 3435,
+    "user_visible_ttft_ms": 971
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260824015353-3eeb65e0-default-r2-dp0-default"
+  }
+ }
+}

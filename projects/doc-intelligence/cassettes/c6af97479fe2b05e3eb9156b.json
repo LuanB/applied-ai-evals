@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-138",
+  "markdown": false
+ },
+ "response": {
+  "content": "Bellomy-Carrigg, Inc. 2025 UNIVERSITY PARKWAY WINSTON-SALEM. N.C. 27106.\n1262\nX\nJob #0906 October, 1984\n(1 - 4)\n5-1\nAA EXTENDED USE CONCEPT/PRODUCT TEST\nSCREENER\nRESPONDENT'S NAME :\nKarenLauson\nADDRESS :\n250\nMonTpIce CITY: Kenmir-\nSTATE: 14:43\nAREA CODE: (\n716\n) PHONE :\n837-2670\nDATE: 1/7\nINTERVIEWED BY :\n(INTERVIEW WOMEN ONLY)\nHello, I'm from (YOUR COMPANY) , an independent marketing research company. We're conducting a survey with women about various consumer products. (ASK TO SPEAK TO FEMALE 18+ YEARS OR OLDER. )\n1. Into which of the following age groups does your age belong? Are you. . . . (READ LIST)\nUnder 18.\nTERMINATE, ERASE AND RE-USE\n18-24.\nX\n6-1\n25-34.\n-2\n35-49\n-3\n50+ ..\n-4\nRefused\nTERMINATE,. ERASE AND RE-USE\n2. Which of the following products do you use daily?\nBreathmints.\nMouthwash.\nCigarettes. X Gel toothpaste.\nCream toothpaste.\nCONTINUE ONLY IF CIGARETTES CHECKED ABOVE IN Q.2. OTHERWISE, ASK FOR ANOTHER FEMALE HOUSEHOLD MEMBER 18+ AND GO BACK TO Q.1. IF NONE, TERMINATE, ERASE AND RE-USE.\n3. Which of the following brands have you used in the past week?\nCerts breathmints.\nClorets breathmints.\nTopal toothpaste. Aqua Fresh toothpaste.\nClinomint.\nScope.\nListerine.\n50552 6678\nCHECK QUOTA TO DETERMINE IF NEEDED. IF OVER QUOTA, ASK FOR ANOTHER FEMALE IN AGE GROUP NEEDED.",
+  "pages": 1,
+  "fields": {}
+ }
+}

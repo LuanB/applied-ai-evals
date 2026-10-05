@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B15-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# TRANS-PACIFIC CARRIERS\n\nSEA WAYBILL\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>ONEY66948127</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Hanseatic Furniture GmbH</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Wattle &amp; Co Wholesale Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>EVER GIVEN II / 218E</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Colombo</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Brisbane</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>TGHU8859774 / SL354631</td>\n</tr>\n</table>\n\n\n456 PACKAGES SAID TO CONTAIN BLACK PEPPER, WHOLE\nGROSS WEIGHT 9447.3. KGS\nINVOICE INV-69686\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

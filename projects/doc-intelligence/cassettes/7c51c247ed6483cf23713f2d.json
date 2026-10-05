@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-102",
+  "markdown": false
+ },
+ "response": {
+  "content": "29= $24.15\n8 Reportable\n$198.03\n2063118582",
+  "pages": 1,
+  "fields": {}
+ }
+}

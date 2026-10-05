@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nHKK\nLANGNER, PARRY, CARD & LANGNER 10 COLUMBUS CIRCLE NEW YORK 19, N. Y.\nDated\nMAY 5 1967\nOUR REGISTER No. NT-09-25-033\nPATENTEE (OR APPLICANT) PHILIP MORRIS INCORPORATED\nAPPLN, No.\nCOUNTRY MEXICO PAT. No. 77862\nCASE\nFILE 582-338 FOR.\n7TH\nTAX\nTAX DATE SEPT 25, 1967\nFIRST NOTICE PATENT TAX PAYMENT DUE\nTHE TAX PAYMENT FOR THE PATENT (OR APPLICATION THEREFOR) IDENTIFIED ABOVE IS DUE ON THE DATE INDICATED.\nCOPY OF INSTRUCTIONS SENT TO LANGNER, PARRY, CARD & LANGNER ON FORM 3\nLANGNER, PARRY, CARD & LANGNER AUTHORIZED TO PAY THIS TAX\nSignature\nHoward K. Kothe\nDate June 15, 1967\nLANGNER, PARRY, CARD & LANGNER INSTRUCTED NOT TO PAY THIS TAX AND TO REMOVE PATENT (OR APPLICATION THEREFOR) FROM THEIR RECORDS.\nSignature\nDate\nSPECIAL INSTRUCTIONS to Langner, Parry, Card & Langner\nDUE DATE Sept 25 1967\nDOCKETED. previoush\nBY\nNOTED\n2026368781\n2\n.\nMESSRS. WATSON, LEAVENWORTH, KELTON & TAGGERT 100 PARK AVENUE NEW YORK 17, NEW YORK W-29\nWe shall be pleased to have your instructions regarding the tax payment on this patent (or application therefor]. If you instruct us to pay the tax we should be advised well in advance of the mentioned date. For your convenience we have provided the attached sheet on which please send us your instructions. The corresponding space below can then be completed for your own records.\nThe cost of this tax payment (subject to any increase in official fees) will be $ 33.00\nRECEIVED WLK & T MAY 8 1967 FILE 582-338 Fr AK\nHK"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89EG5YkUbJLBMD6mx8P0rd0XxIf",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"memo\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088196,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 642,
+   "total_tokens": 651,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 29,
+    "engine_ttlt_ms": 78,
+    "pre_inference_ms": 86,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 590,
+    "service_ttlt_ms": 656,
+    "user_visible_ttft_ms": 504
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260928220809-de4ad82b-default-r1-dp0-default"
+  }
+ }
+}

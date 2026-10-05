@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B02-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# MEDITERRANEAN LINES\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MEDU24776678</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Lanka Spice Mills (Pvt) Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Riverina Trading Pty. Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>ONE HARMONY / 234S</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Izmir</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Fremantle.</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>MSCU4989904 / SL841480</td>\n</tr>\n</table>\n\n\n1181 PACKAGES SAID TO CONTAIN DRIED APRICOTS\nGROSS WEIGHT 20296.2 KGS\nINVOICE INV-44231\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

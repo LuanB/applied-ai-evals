@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B03-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\nSEA WAYBILL\nB/L No .:\nMAEU44687811\nShipper:\nAnatolia. Dried Fruits A.S.\nConsignee:\nRiverina Trading Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nMAERSK KOWLOON / 398N\nPort of loading:\nIzmir\nPort of discharge:\nAdelaide\nContainer / Seal:\nTGHU6646257 / SL267563\n1453 PACKAGES SAID TO CONTAIN DRIED APRICOTS GROSS WEIGHT 21595.9 KGS INVOICE INV-24735",
+  "pages": 1,
+  "fields": {}
+ }
+}

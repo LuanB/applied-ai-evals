@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B12-05",
+  "markdown": true
+ },
+ "response": {
+  "content": "# NATIONAL PLANT PROTECTION ORGANIZATION OF SPAIN\n\nNo .:\n\nCO666697\n\nName of exporter:\n\nHanseatic Furniture GmbH\n\nDeclared consignee:\n\nHarbourside Fresh Pty Ltd\n\nBotanical name of plants:\n\nCitrus sinensis\n\nPlace of origin:\n\nSpain\n\nDeclared means of conveyance DNE HARMONY\n\nPoint of entry:\n\nBrisbane\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

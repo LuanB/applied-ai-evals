@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B06-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "SAFEHOLD QUARANTINE TREATMENTS\nCertificate No .:\nFC447118\n\u00b7Fumigant:\nSulfuryl fluoride\nDosage rate:\n1500 g-h/m3.\nExposure period (hrs):\n'24\nDate of fumigation:\n23/08/2026\nContainer No .:\nTGHU2162297\nCommodity:\nFresh oranges, navel\nConsignment link:\nB/L ONEY49383924",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-013",
+  "markdown": false
+ },
+ "response": {
+  "content": "Proposed Change Form\nConfidential Philip Morris v. ABG\nDate:\nNumber:\n82-0058\n1. Originator: Jack Dillon\n2. Proposed change to: . A. Parameters (Prep Sols. Batch Make-Up)\nA. Parameters B. Standards C. Control Moves\n3. Problem Statement: Prep Sols. Batch Make-up Matrix was not revised when we went to low humectant (January, 1993)\n4. List evidence, provide data to support need for change:\nPrep Sols. X & S TOM's, Line 3\n5. Describe what will be improved if problem is resolved: What is the objective of making this change?\nReduced variation in Prep Sols.\n6. Identify probable causes of problem (attach C&E).\nLack of follow-up to ensure systems were updated upon implementing lower humectant levels.\n7. Describe proposed SPC system change.\nChange the water/DN make-up matrix for Prep Sols. per the attached.\n8. Recommend measurements of effectiveness of proposed change.\nPrep Sols. X & S TOM's, Line 3\n9. Describe action plan for implementing proposed change (attach if need more space).\nDistribute New Matrix to #1 & Upgrade #1 Operators & MR Supvs.\n10. List personnel affected by change:\n#1 & Upgrade #1 Operators Machine Room Supvs. SPC Specialists\nSIT Lab Services Process Stage Accountable Quality Services\n2024795599",
+  "pages": 1,
+  "fields": {}
+ }
+}

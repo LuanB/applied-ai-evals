@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-117",
+  "markdown": false
+ },
+ "response": {
+  "content": "VENDOR NO.\nPHILIP MORRIS INCORPOR ATED RICHMOND, VIRGINIA 23261\nCHECK NO.\n3482440000\n011 11\n03-OVR\n200371\nVENDOR NAME\nDATE\nPAGE\nDR RAGNAR RYLANDER\n05/31/94\n1\nDATE\nINVOICE NO.\nVOUCHER\nGROSS\nDISCOUNT\nNET\n05/23/94\n2ND QTR EXP M OPOCENSKY R&D\n0506979\n6,253.94\n.00\n6,253.94\n2063591148\n* TOTAL *\n6,253.94\n.00\n6,253.94\nV DETACH HERE BEFORE DEPOSITING",
+  "pages": 1,
+  "fields": {}
+ }
+}

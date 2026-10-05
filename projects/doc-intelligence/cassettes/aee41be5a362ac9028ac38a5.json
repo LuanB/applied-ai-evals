@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nPHILIP MORRIS U. S. A. INTER - OFFICE CORRESPONDENCE Richmond, Virginia\nCommunity Relations\nDate: August 22, 1990\nTo: Distribution\nFrom: J. G. Jones\nSubject : 1990 Virginia State Fair Plans\nPM USA will again participate in the Virginia State Fair which is September 20 through October 1, 1990. This year we have joined with Sales and Marketing, Marlboro Brand Group, Marlboro Motorsports, Marlboro Music, PM USA Event Promotions, and Government Relations to provide a unique Marlboro exhibit along with a special preview reception.\nThe exhibit will include a Marlboro display with sampling units, a Marlboro Indy Race Car, monitors and displays highlighting Marlboro racing and a PM Richmond Tour display.\nThe special preview reception will be held September 19 at the Fairgrounds between the hours of 6:00 and 9:00 P.M. in the Exhibition Hall lobby area where our exhibit will be on display. Your invitation will be forthcoming. Other invited guests will include key customers, government officials, media, local corporate CEO's, PM friends and State Fair board members and guests. Entertainment will be provided by the local winner of the Marlboro Music Talent Roundup (Mark Daniel & the Homeboys) . Guests will be offered a souvenir photograph of themselves with the Marlboro Indy car.\nI hope your schedule will permit you to join us on the 19th.\ngulf\n/sa Distribution: O. M. Buchanan\nG. W. Holmes\nw. J. Campbell\nF. D. Caravetta\nB. J. Case\nW. R. Moore\nS. C. Darrah\nR. J. Moore\nR. E. Davis A. Dixon O. W. Dudley A. French\nP. F. Nolan T. S. Osdene\nB. C. Perkinson\nw. w. Goodman\nW. P. Taylor\nW. J. Harrisl\nF. M. Watson, III\nR. M. Hassell\nJ. M. Whitman\n2053299024\nC. E. Horner\nK. S. Houghton\nD. B. Knudson"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89IkZ4CKOpQ9LPabtDP4W5odn6s",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"memo\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088200,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 657,
+   "total_tokens": 666,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 30,
+    "engine_ttlt_ms": 93,
+    "pre_inference_ms": 79,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 533,
+    "service_ttlt_ms": 672,
+    "user_visible_ttft_ms": 454
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927104321-429cb62f-default-r1-dp0-default"
+  }
+ }
+}

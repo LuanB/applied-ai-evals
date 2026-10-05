@@ -1,0 +1,7032 @@
+{
+ "suite": "extract",
+ "headline": "field_accuracy",
+ "mode": "replay",
+ "generated": "2026-10-04T15:35:00",
+ "gate": {
+  "passed": true,
+  "reasons": [
+   "ok   llm-layout: field_accuracy 0.974 beats best baseline 0.474 (margin 0.05)",
+   "ok   llm-vision: field_accuracy 0.979 beats best baseline 0.474 (margin 0.05)"
+  ]
+ },
+ "runs": [
+  {
+   "system": "regex-on-ocr",
+   "is_baseline": true,
+   "results": [
+    {
+     "case_id": "test-B00-01",
+     "passed": false,
+     "score": 0.0,
+     "detail": "invoice_number: got '.:' want 'INV-86387'; invoice_date: got 'Wattle & Co Wholesale Pty Ltd' want '14/07/2026'; seller: got None want 'Hanseatic Furniture GmbH'",
+     "tags": {
+      "right": 0,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "invoice_date",
+       "seller",
+       "buyer",
+       "currency",
+       "total_amount",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "Wattle & Co Wholesale Pty Ltd",
+       "seller": null,
+       "buyer": null,
+       "currency": "HS Code",
+       "total_amount": "EUR: Country of origin: Turkey",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-02",
+     "passed": false,
+     "score": 0.3333333333333333,
+     "detail": "packing_list_number: got None want 'PL-17602'; invoice_number: got '.:' want 'INV-86387'; gross_weight_kg: got '.14706.2' want '14706.2'",
+     "tags": {
+      "right": 2,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number",
+       "gross_weight_kg",
+       "container_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1533",
+       "gross_weight_kg": ".14706.2",
+       "net_weight_kg": "13300.3",
+       "container_number": "'"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'MAEU15032582'; vessel: got '/ Voyage:' want 'MSC ARIANNA'; voyage: got 'MSC ARIANNA / 346N' want '346N'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "MSC ARIANNA / 346N",
+       "port_of_loading": "Izmir.",
+       "port_of_discharge": "Adelaide",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'FC223514'; hs_code: got None want '0813.10'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-01",
+     "passed": false,
+     "score": 0.25,
+     "detail": "invoice_number: got '.:' want 'INV-37060'; invoice_date: got '\u00b711/07/2026' want '11/07/2026'; seller: got None want 'Nordic Pine Sawmills AB'",
+     "tags": {
+      "right": 2,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "invoice_date",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "\u00b711/07/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "AUD",
+       "total_amount": "AUD: 25,148.94",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-95134'; invoice_number: got '.:' want 'INV-37060'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1047",
+       "gross_weight_kg": "21640.1",
+       "net_weight_kg": "19590.0",
+       "container_number": "MSKU3069294"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-03",
+     "passed": false,
+     "score": 0.375,
+     "detail": "bl_number: got '.:' want 'MEDU48520404'; consignee: got ';' want 'Southern Cross Imports Pty Ltd'; vessel: got '/ Voyage:' want 'EVER GIVEN II'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "consignee",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": ";",
+       "vessel": "/ Voyage:",
+       "voyage": "EVER GIVEN II / 149W",
+       "port_of_loading": "Izmir.",
+       "port_of_discharge": "Sydney",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'CO589528'; hs_code: got None want '0813.10'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-05",
+     "passed": false,
+     "score": 0.5,
+     "detail": "certificate_number: got '.:' want 'CO500802'; exposure_hours: got '(hrs):' want '24'; container_number: got '.:' want 'MSKU3069294'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "exposure_hours",
+       "container_number"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "(hrs):",
+       "date_of_fumigation": "05/07/2026",
+       "container_number": ".:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-06",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'PC914013'; botanical_name: got 'of plants:' want 'Prunus armeniaca'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-01",
+     "passed": false,
+     "score": 0.375,
+     "detail": "invoice_number: got '.:' want 'INV-44231'; seller: got None want 'Lanka Spice Mills (Pvt) Ltd'; buyer: got None want 'Riverina Trading Pty Ltd'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "28/08/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "USD",
+       "total_amount": "USD: 7,204.10",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-42911'; invoice_number: got '.:' want 'INV-44231'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1181",
+       "gross_weight_kg": "20296.2",
+       "net_weight_kg": "18867.4",
+       "container_number": "MSCU4989904"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'MEDU24776678'; vessel: got '/ Voyage:' want 'ONE HARMONY'; voyage: got 'ONE HARMONY / 234S' want '234S'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Riverina Trading Pty. Ltd.",
+       "vessel": "/ Voyage:",
+       "voyage": "ONE HARMONY / 234S",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Fremantle",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "botanical_name: got 'of plants:' want 'Prunus armeniaca'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": "PC591692",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd.",
+       "consignee": "Riverina Trading Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-01",
+     "passed": false,
+     "score": 0.375,
+     "detail": "invoice_number: got '.:' want 'INV-64463'; seller: got None want 'Nordic Pine Sawmills AB'; buyer: got None want 'Wattle & Co Wholesale Pty Ltd'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "16/09/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "USD",
+       "total_amount": "USD: 552.08",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-42760'; invoice_number: got '.:' want 'INV-64463'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "268:",
+       "gross_weight_kg": "4543.5",
+       "net_weight_kg": "4324.0",
+       "container_number": "OOLU6530326"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'CMDU38462634'; vessel: got '/ Voyage:' want 'COSCO LIBRA'; voyage: got 'COSCO LIBRA / 325N' want '325N'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "COSCO LIBRA / 325N",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Fremantle",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'CO294523'; botanical_name: got 'of plants:' want 'Piper nigrum'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Sri Lanka"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-01",
+     "passed": false,
+     "score": 0.375,
+     "detail": "invoice_number: got '.:' want 'INV-53940'; seller: got None want 'Lanka Spice Mills (Pvt) Ltd'; buyer: got None want 'Riverina Trading Pty Ltd'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "27/09/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "USD",
+       "total_amount": "USD: 32,605.44",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-53215'; invoice_number: got '.:' want 'INV-53940'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1213",
+       "gross_weight_kg": "26611.9",
+       "net_weight_kg": "25585.2",
+       "container_number": "TGHU4492083"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'ONEY17833133'; vessel: got '/ Voyage:' want 'MSC ARIANNA'; voyage: got 'MSC ARIANNA / 669N' want '669N'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": ".Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Riverina Trading Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "MSC ARIANNA / 669N",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Sydney",
+       "container_number": "/ Seal;"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'PC354523'; hs_code: got None want '0813.10'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Riverina Trading Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-01",
+     "passed": false,
+     "score": 0.375,
+     "detail": "invoice_number: got '.:' want 'INV-33924'; seller: got None want 'Nordic Pine Sawmills AB'; buyer: got None want 'Harbourside Fresh Pty Ltd'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "08/08/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "EUR",
+       "total_amount": "EUR: 35,271.18",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-02",
+     "passed": false,
+     "score": 0.5,
+     "detail": "packing_list_number: got None want 'PL-41670'; invoice_number: got '.:' want 'INV-33924'; container_number: got 'CMAU34.35592' want 'CMAU3435592'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number",
+       "container_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1302",
+       "gross_weight_kg": "31476.3",
+       "net_weight_kg": "28118.7",
+       "container_number": "CMAU34.35592"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'MEDU91747120'; vessel: got '/ Voyage:' want 'CMA CGM TAGE'; voyage: got 'CMA CGM TAGE / 444N' want '444N'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "CMA CGM TAGE / 444N",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Brisbane",
+       "container_number": "LINE"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'FC477115'; hs_code: got None want '0813.10'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Nordic Pine Sawmills AB.",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-05",
+     "passed": false,
+     "score": 0.5,
+     "detail": "certificate_number: got '.:' want 'PC721725'; exposure_hours: got '(hrs):' want '24'; container_number: got '.:' want 'CMAU3435592'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "exposure_hours",
+       "container_number"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "fumigant": "Methyl bromide",
+       "dosage": "48 g/m3",
+       "exposure_hours": "(hrs):",
+       "date_of_fumigation": "08/08/2026",
+       "container_number": ".:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-06",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'CO915766'; botanical_name: got 'of plants:' want 'Prunus armeniaca'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-01",
+     "passed": false,
+     "score": 0.25,
+     "detail": "invoice_number: got '.:' want 'INV-12449'; seller: got None want 'Lanka Spice Mills (Pvt) Ltd'; buyer: got None want 'Southern Cross Imports Pty Ltd'",
+     "tags": {
+      "right": 2,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "total_amount",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "01/09/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "USD",
+       "total_amount": "USD;",
+       "incoterm": null,
+       "hs_code": "Qty Unit price Amount"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-18107'; invoice_number: got '.:' want 'INV-12449'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "888",
+       "gross_weight_kg": "19858.2",
+       "net_weight_kg": "18408.5",
+       "container_number": "CMAU7244107"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'MAEU35794888'; vessel: got '/ Voyage:' want 'COSCO LIBRA'; voyage: got 'COSCO LIBRA / 797W' want '797W'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Lanka Spice Mills (Pvt). Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "COSCO LIBRA / 797W",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Sydney",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'CO844521'; botanical_name: got 'of plants:' want 'Anacardium occidentale'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Lanka Spice. Mills (Pvt) Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Vietnam"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-01",
+     "passed": false,
+     "score": 0.25,
+     "detail": "invoice_number: got '.:' want 'INV-38675'; seller: got None want 'Hanseatic Furniture GmbH'; buyer: got None want 'Kookaburra Home Furnishings Pty Ltd'",
+     "tags": {
+      "right": 2,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "total_amount",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "14/08/2026.",
+       "seller": null,
+       "buyer": null,
+       "currency": "AUD",
+       "total_amount": "AUD:",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-77110'; invoice_number: got '.:' want 'INV-38675'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "561",
+       "gross_weight_kg": "9423.0",
+       "net_weight_kg": "8873.3",
+       "container_number": "MSCU8477661"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'MEDU97399860'; vessel: got '/ Voyage:' want 'MSC ARIANNA'; voyage: got 'MSC ARIANNA / 173N' want '173N'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "MSC ARIANNA / 173N",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Brisbane",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-04",
+     "passed": false,
+     "score": 0.5,
+     "detail": "certificate_number: got '.:' want 'FC269264'; exposure_hours: got '(hrs):' want '24'; container_number: got '.:' want 'MSCU8477661'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "exposure_hours",
+       "container_number"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "(hrs):",
+       "date_of_fumigation": "09/09/2026",
+       "container_number": ".:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-05",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'AU330068'; hs_code: got None want '0904.11'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "country_of_origin": "Sri Lanka",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-06",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'CO931747'; botanical_name: got 'of plants:' want 'Piper nigrum'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Sri Lanka"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-01",
+     "passed": false,
+     "score": 0.375,
+     "detail": "invoice_number: got '.:' want 'INV-65533'; seller: got None want 'Cascade Orchards LLC'; buyer: got None want 'Southern Cross Imports Pty Ltd'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "07/07/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "EUR",
+       "total_amount": "EUR: 19,183.29",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-02",
+     "passed": false,
+     "score": 0.5,
+     "detail": "packing_list_number: got None want 'PL-49298'; invoice_number: got '.:' want 'INV-65533'; container_number: got 'MSKU7375393 *' want 'MSKU7375393'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number",
+       "container_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "547",
+       "gross_weight_kg": "5559.9",
+       "net_weight_kg": "4978.9",
+       "container_number": "MSKU7375393 *"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-03",
+     "passed": false,
+     "score": 0.375,
+     "detail": "bl_number: got ':' want 'CMDU50801816'; shipper: got ': Cascade Orchards LLC' want 'Cascade Orchards LLC'; vessel: got '/ Voyage:' want 'CMA CGM TAGE'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "shipper",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ":",
+       "shipper": ": Cascade Orchards LLC",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "CMA CGM TAGE /. 554S",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Brisbane",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'PC416181'; hs_code: got None want '0801.32'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Cascade Orchards LLC",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "country_of_origin": "Vietnam",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-05",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'CO771879'; botanical_name: got 'of plants:' want 'Anacardium occidentale'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Cascade Orchards LLC",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Vietnam."
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-01",
+     "passed": false,
+     "score": 0.375,
+     "detail": "invoice_number: got '.:' want 'INV-59341'; seller: got None want 'Golden Valley Exports Co. Ltd'; buyer: got None want 'Southern Cross Imports Pty Ltd'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "01/08/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "USD",
+       "total_amount": "USD: 35,031.36",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-49148'; invoice_number: got '.:' want 'INV-59341'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1203",
+       "gross_weight_kg": "13217.4",
+       "net_weight_kg": "12268.9",
+       "container_number": "CMAU5744210"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'CMDU60686170'; vessel: got '/ Voyage:' want 'ONE HARMONY'; voyage: got 'ONE HARMONY / 898W' want '898W'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "ONE HARMONY / 898W",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Fremantle",
+       "container_number": "LINE"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'EX867941'; botanical_name: got 'of plants:' want 'Prunus armeniaca'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-01",
+     "passed": false,
+     "score": 0.25,
+     "detail": "invoice_number: got '.:' want 'INV-50762'; seller: got None want 'Lanka Spice Mills (Pvt) Ltd'; buyer: got None want 'Harbourside Fresh Pty Ltd'",
+     "tags": {
+      "right": 2,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "total_amount",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "02/07/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "USD",
+       "total_amount": "USD:",
+       "incoterm": null,
+       "hs_code": "Qty-"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-02",
+     "passed": false,
+     "score": 0.5,
+     "detail": "packing_list_number: got None want 'PL-31376'; invoice_number: got '.:' want 'INV-50762'; net_weight_kg: got '3.5650.8' want '35650.8'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number",
+       "net_weight_kg"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1699",
+       "gross_weight_kg": "39694.4",
+       "net_weight_kg": "3.5650.8",
+       "container_number": "MSCU7345092"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'CMDU28874090'; vessel: got '/ Voyage:' want 'MSC ARIANNA'; voyage: got 'MSC ARIANNA / 501W' want '501W'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "MSC ARIANNA / 501W",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Brisbane",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-04",
+     "passed": false,
+     "score": 0.5,
+     "detail": "certificate_number: got '.:' want 'EX571873'; exposure_hours: got '(hrs):' want '120'; container_number: got '.:' want 'MSCU7345092'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "exposure_hours",
+       "container_number"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "fumigant": "Phosphine",
+       "dosage": "2 g/m3",
+       "exposure_hours": "(hrs):",
+       "date_of_fumigation": "06/09/2026",
+       "container_number": ".:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-05",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'EX992268'; hs_code: got None want '0801.32'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Vietnam",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-01",
+     "passed": false,
+     "score": 0.25,
+     "detail": "invoice_number: got '.:' want 'INV-13579'; seller: got None want 'Sierra Citrus Cooperativa'; buyer: got None want 'Harbourside Fresh Pty Ltd'",
+     "tags": {
+      "right": 2,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "total_amount",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "19/09/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "USD",
+       "total_amount": "USD:",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-39126'; invoice_number: got '.:' want 'INV-13579'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1015",
+       "gross_weight_kg": "13658.9",
+       "net_weight_kg": "12240. 2",
+       "container_number": "TGHU6289625"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'MEDU15819713'; vessel: got '/ Voyage:' want 'ONE HARMONY'; voyage: got 'ONE HARMONY / 489N' want '489N'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Sierra Citrus Cooperativa",
+       "consignee": "Harbourside Fresh Pty Ltd.",
+       "vessel": "/ Voyage:",
+       "voyage": "ONE HARMONY / 489N",
+       "port_of_loading": "Oakland",
+       "port_of_discharge": "Brisbane",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got None want 'CO893597'; botanical_name: got 'of plants:' want 'Juglans regia'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": null,
+       "exporter": "Sierra Citrus Cooperativa",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "United States"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-01",
+     "passed": false,
+     "score": 0.25,
+     "detail": "invoice_number: got '.:' want 'INV-70494'; invoice_date: got 'Harbourside Fresh Pty Ltd' want '25/07/2026'; seller: got None want 'Hanseatic Furniture GmbH'",
+     "tags": {
+      "right": 2,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "invoice_date",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "Harbourside Fresh Pty Ltd",
+       "seller": null,
+       "buyer": null,
+       "currency": "AUD",
+       "total_amount": "AUD: 41,630.52",
+       "incoterm": null,
+       "hs_code": "Qty Unit price Amount"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-02",
+     "passed": false,
+     "score": 0.5,
+     "detail": "packing_list_number: got None want 'PL-49914'; invoice_number: got '.:' want 'INV-70494'; net_weight_kg: got ';' want '12470.0'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number",
+       "net_weight_kg"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1083",
+       "gross_weight_kg": "12987.7",
+       "net_weight_kg": ";",
+       "container_number": "OOLU3552106"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'MAEU58970940'; vessel: got '/ Voyage:' want 'ONE HARMONY'; voyage: got 'ONE HARMONY / 554W' want '554W'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "ONE HARMONY / 554W",
+       "port_of_loading": "Valencia",
+       "port_of_discharge": "Brisbane",
+       "container_number": "LINE"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-04",
+     "passed": false,
+     "score": 0.4,
+     "detail": "certificate_number: got '.:' want 'CO340275'; country_of_origin: got 'Spain\u00ae' want 'Spain'; hs_code: got None want '0805.10'",
+     "tags": {
+      "right": 2,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "country_of_origin",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Spain\u00ae",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-05",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got None want 'CO666697'; botanical_name: got 'of plants:' want 'Citrus sinensis'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": null,
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Spain"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-01",
+     "passed": false,
+     "score": 0.375,
+     "detail": "invoice_number: got '.:' want 'INV-96972'; seller: got None want 'Nordic Pine Sawmills AB'; buyer: got None want 'Riverina Trading Pty Ltd'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "12/07/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "EUR",
+       "total_amount": "EUR: 35,721.28",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-92091'; invoice_number: got '.:' want 'INV-96972'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1184",
+       "gross_weight_kg": "25210.0",
+       "net_weight_kg": "22815.7",
+       "container_number": "TGHU1770200"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'ONEY24431385'; vessel: got '/ Voyage:' want 'CMA CGM TAGE'; voyage: got 'CMA CGM TAGE / 315N' want '315N'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Riverina Trading Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "CMA CGM TAGE / 315N",
+       "port_of_loading": "Gothenburg",
+       "port_of_discharge": "Brisbane",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'AU759255'; hs_code: got None want '4407.11'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Riverina Trading Pty Ltd",
+       "country_of_origin": "Sweden",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-01",
+     "passed": false,
+     "score": 0.125,
+     "detail": "invoice_number: got '.:' want 'INV-90180'; invoice_date: got 'Kookaburra Home Furnishings Pty Ltd' want '11/08/2026'; seller: got None want 'Anatolia Dried Fruits A.S.'",
+     "tags": {
+      "right": 1,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "invoice_date",
+       "seller",
+       "buyer",
+       "currency",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "Kookaburra Home Furnishings Pty Ltd",
+       "seller": null,
+       "buyer": null,
+       "currency": "HS Code",
+       "total_amount": "USD: 28,761.60",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-91991'; invoice_number: got '.:' want 'INV-90180'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1344",
+       "gross_weight_kg": "18261.5",
+       "net_weight_kg": "16719.3",
+       "container_number": "OOLU8561634"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-03",
+     "passed": false,
+     "score": 0.375,
+     "detail": "bl_number: got '.:' want 'CMDU92109642'; consignee: got 'Vessel / Voyage: MAERSK KOWLOON / 972E' want 'Kookaburra Home Furnishings Pty Ltd'; vessel: got '/ Voyage: MAERSK KOWLOON / 972E' want 'MAERSK KOWLOON'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "consignee",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Anatolia Dried Fruits A.S.",
+       "consignee": "Vessel / Voyage: MAERSK KOWLOON / 972E",
+       "vessel": "/ Voyage: MAERSK KOWLOON / 972E",
+       "voyage": "MAERSK KOWLOON / 972E",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Sydney",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'PC297333'; botanical_name: got 'of plants:' want 'Piper nigrum'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Anatolia Dried Fruits A.S.",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Sri Lanka"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-01",
+     "passed": false,
+     "score": 0.375,
+     "detail": "invoice_number: got '.:' want 'INV-69686'; seller: got None want 'Hanseatic Furniture GmbH'; buyer: got None want 'Wattle & Co Wholesale Pty Ltd'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "01/09/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "EUR",
+       "total_amount": "EUR: 15,914.40",
+       "incoterm": null,
+       "hs_code": "Qt\u1ef7 Unit price Amount"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-38663'; invoice_number: got '.:' want 'INV-69686'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "456",
+       "gross_weight_kg": "9447.3",
+       "net_weight_kg": "9051.3",
+       "container_number": "TGHU8859774"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-03",
+     "passed": false,
+     "score": 0.25,
+     "detail": "bl_number: got '.:' want 'ONEY66948127'; shipper: got 'Wattle & Co Wholesale Pty Ltd' want 'Hanseatic Furniture GmbH'; consignee: got 'Same as consignee' want 'Wattle & Co Wholesale Pty Ltd'",
+     "tags": {
+      "right": 2,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "shipper",
+       "consignee",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Wattle & Co Wholesale Pty Ltd",
+       "consignee": "Same as consignee",
+       "vessel": "/ Voyage:",
+       "voyage": "EVER GIVEN II / 218E",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Brisbane",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-04",
+     "passed": false,
+     "score": 0.0,
+     "detail": "certificate_number: got '.:' want 'FC956096'; exporter: got 'Wattle & Co Wholesale Pty Ltd' want 'Hanseatic Furniture GmbH'; consignee: got 'EVER GIVEN II from Colombo' want 'Wattle & Co Wholesale Pty Ltd'",
+     "tags": {
+      "right": 0,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "exporter",
+       "consignee",
+       "country_of_origin",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Wattle & Co Wholesale Pty Ltd",
+       "consignee": "EVER GIVEN II from Colombo",
+       "country_of_origin": "Hanseatic Furniture GmbH",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-01",
+     "passed": false,
+     "score": 0.25,
+     "detail": "invoice_number: got '.:' want 'INV-84536'; seller: got None want 'Golden Valley Exports Co. Ltd'; buyer: got None want 'Southern Cross Imports Pty Ltd'",
+     "tags": {
+      "right": 2,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "total_amount",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "12/07/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "AUD",
+       "total_amount": "AUD:",
+       "incoterm": null,
+       "hs_code": "Qty Unit price Amount"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-11896'; invoice_number: got '.:' want 'INV-84536'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1375",
+       "gross_weight_kg": "22220.8",
+       "net_weight_kg": "21009.4",
+       "container_number": "MSCU4284394"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'MAEU35625917'; vessel: got '/ Voyage:' want 'MSC ARIANNA'; voyage: got 'MSC ARIANNA / 574E' want '574E'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "MSC ARIANNA / 574E",
+       "port_of_loading": "Gothenburg",
+       "port_of_discharge": "Fremantle",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'EX200984'; hs_code: got None want '4407.11'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "country_of_origin": "Sweden",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-05",
+     "passed": false,
+     "score": 0.5,
+     "detail": "certificate_number: got '.:' want 'FC453348'; exposure_hours: got '(hrs):' want '24'; container_number: got '.:' want 'MSCU4284394'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "exposure_hours",
+       "container_number"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "(hrs):",
+       "date_of_fumigation": "19/08/2026",
+       "container_number": ".:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-01",
+     "passed": false,
+     "score": 0.25,
+     "detail": "invoice_number: got '.:' want 'INV-10420'; seller: got None want 'Lanka Spice Mills (Pvt) Ltd'; buyer: got None want 'Harbourside Fresh Pty Ltd'",
+     "tags": {
+      "right": 2,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "total_amount",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "15/07/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "USD",
+       "total_amount": "USD:",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-98454'; invoice_number: got '.:' want 'INV-10420'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "1436",
+       "gross_weight_kg": "17487.8",
+       "net_weight_kg": "15803.5.",
+       "container_number": "MSKU7382045"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'MAEU92571902'; vessel: got '/ Voyage:' want 'EVER GIVEN II'; voyage: got 'EVER GIVEN II / 653W' want '653W'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "EVER GIVEN II / 653W",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Melbourne",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got None want 'FC256619'; botanical_name: got 'of plants:' want 'Anacardium occidentale'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": null,
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Vietnam"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-05",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'AU367506'; hs_code: got None want '0801.32'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd.",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Vietnam",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-06",
+     "passed": false,
+     "score": 0.5,
+     "detail": "certificate_number: got '.:' want 'AU150253'; exposure_hours: got '(hrs):' want '24'; container_number: got '.:' want 'MSKU7382045'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "exposure_hours",
+       "container_number"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "(hrs):",
+       "date_of_fumigation": "24/08/2026",
+       "container_number": ".:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-01",
+     "passed": false,
+     "score": 0.25,
+     "detail": "invoice_number: got '.:' want 'INV-91474'; seller: got None want 'Nordic Pine Sawmills AB'; buyer: got None want 'Bluegum Food Distributors Pty Ltd'",
+     "tags": {
+      "right": 2,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "total_amount",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "17/09/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "EUR",
+       "total_amount": "EUR:",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-02",
+     "passed": false,
+     "score": 0.5,
+     "detail": "packing_list_number: got None want 'PL-55216'; invoice_number: got '.:' want 'INV-91474'; total_packages: got '.781' want '781'",
+     "tags": {
+      "right": 3,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number",
+       "total_packages"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": ".781",
+       "gross_weight_kg": "9843.0",
+       "net_weight_kg": "8902.0",
+       "container_number": "MSKU7072385"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'CMDU50265103'; vessel: got '/ Voyage:' want 'COSCO LIBRA'; voyage: got 'COSCO LIBRA / 222N' want '222N'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Bluegum Food Distributors Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "COSCO LIBRA / 222N",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Sydney",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'CO713515'; botanical_name: got 'of plants:' want 'Anacardium occidentale'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number",
+       "botanical_name"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Bluegum Food Distributors Pty Ltd",
+       "botanical_name": "of plants:",
+       "place_of_origin": "Vietnam."
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-01",
+     "passed": false,
+     "score": 0.375,
+     "detail": "invoice_number: got '.:' want 'INV-76393'; seller: got None want 'Pacific Rim Timber Pte Ltd'; buyer: got None want 'Wattle & Co Wholesale Pty Ltd'",
+     "tags": {
+      "right": 3,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "invoice_number",
+       "seller",
+       "buyer",
+       "incoterm",
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": ".:",
+       "invoice_date": "14/09/2026",
+       "seller": null,
+       "buyer": null,
+       "currency": "EUR",
+       "total_amount": "EUR: 4,914.90",
+       "incoterm": null,
+       "hs_code": "Qty"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got None want 'PL-10330'; invoice_number: got '.:' want 'INV-76393'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": null,
+       "invoice_number": ".:",
+       "total_packages": "254",
+       "gross_weight_kg": "3372.3",
+       "net_weight_kg": "3205.3",
+       "container_number": "MSKU9489387"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-03",
+     "passed": false,
+     "score": 0.5,
+     "detail": "bl_number: got '.:' want 'MEDU38929507'; vessel: got '/ Voyage:' want 'EVER GIVEN II'; voyage: got 'EVER GIVEN II / 586S .' want '586S'",
+     "tags": {
+      "right": 4,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number",
+       "vessel",
+       "voyage",
+       "container_number"
+      ],
+      "got": {
+       "bl_number": ".:",
+       "shipper": "Pacific Rim Timber Pte Ltd",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "/ Voyage:",
+       "voyage": "EVER GIVEN II / 586S .",
+       "port_of_loading": "Hamburg",
+       "port_of_discharge": "Fremantle",
+       "container_number": "/ Seal:"
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-04",
+     "passed": false,
+     "score": 0.6,
+     "detail": "certificate_number: got '.:' want 'CO913509'; hs_code: got None want '9403.60'",
+     "tags": {
+      "right": 3,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number",
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": ".:",
+       "exporter": "Pacific Rim Timber Pte Ltd",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "country_of_origin": "Germany",
+       "hs_code": null
+      }
+     },
+     "cost_usd": 0.0018,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "field_accuracy": 0.4735973597359736,
+    "page_all_fields_right": 0.0
+   },
+   "cost_usd": 0.1656,
+   "wall_s": 0.04,
+   "gated": true
+  },
+  {
+   "system": "llm-layout",
+   "is_baseline": false,
+   "results": [
+    {
+     "case_id": "test-B00-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-86387",
+       "invoice_date": "14/07/2026",
+       "seller": "HANSEATIC FURNITURE GMBH",
+       "buyer": "Wattle & Co Wholesale Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "7,373.73",
+       "incoterm": "DAP",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.012326,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-17602",
+       "invoice_number": "INV-86387",
+       "total_packages": "1533",
+       "gross_weight_kg": "14706.2",
+       "net_weight_kg": "13300.3",
+       "container_number": "MSKU7135241"
+      }
+     },
+     "cost_usd": 0.01234,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-03",
+     "passed": false,
+     "score": 0.875,
+     "detail": "port_of_loading: got 'Izmir:' want 'Izmir'",
+     "tags": {
+      "right": 7,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "port_of_loading"
+      ],
+      "got": {
+       "bl_number": "MAEU15032582",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "MSC ARIANNA",
+       "voyage": "346N",
+       "port_of_loading": "Izmir:",
+       "port_of_discharge": "Adelaide",
+       "container_number": "MSKU7135241"
+      }
+     },
+     "cost_usd": 0.012371,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC223514",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.012259,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-37060",
+       "invoice_date": "11/07/2026",
+       "seller": "NORDIC PINE SAWMILLS AB",
+       "buyer": "Southern Cross Imports Pty Ltd",
+       "currency": "AUD",
+       "total_amount": "25,148.94",
+       "incoterm": "CFR",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.012324,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-02",
+     "passed": false,
+     "score": 0.8333333333333334,
+     "detail": "invoice_number: got 'INV-3.7060' want 'INV-37060'",
+     "tags": {
+      "right": 5,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": "PL-95134",
+       "invoice_number": "INV-3.7060",
+       "total_packages": "1047",
+       "gross_weight_kg": "21640.1",
+       "net_weight_kg": "19590. 0",
+       "container_number": "MSKU3069294"
+      }
+     },
+     "cost_usd": 0.012341,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-03",
+     "passed": false,
+     "score": 0.875,
+     "detail": "bl_number: got 'MEDU48520.404' want 'MEDU48520404'",
+     "tags": {
+      "right": 7,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number"
+      ],
+      "got": {
+       "bl_number": "MEDU48520.404",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "EVER GIVEN II",
+       "voyage": "149W",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Sydney",
+       "container_number": "MSKU3069294"
+      }
+     },
+     "cost_usd": 0.01236,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO589528",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.012255,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO500802",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "24",
+       "date_of_fumigation": "05/07/2026",
+       "container_number": "MSKU3069294"
+      }
+     },
+     "cost_usd": 0.0123,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC914013",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "Prunus armeniaca",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.012224,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-44231",
+       "invoice_date": "28/08/2026",
+       "seller": "LANKA SPICE MILLS (PVT) LTD",
+       "buyer": "Riverina Trading Pty Ltd",
+       "currency": "USD",
+       "total_amount": "7,204.10",
+       "incoterm": "DAP",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.01242,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-42911",
+       "invoice_number": "INV-44231",
+       "total_packages": "1181",
+       "gross_weight_kg": "20296.2",
+       "net_weight_kg": "18867.4",
+       "container_number": "MSCU4989904"
+      }
+     },
+     "cost_usd": 0.012335,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MEDU24776678",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Riverina Trading Pty. Ltd",
+       "vessel": "ONE HARMONY",
+       "voyage": "234S",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Fremantle.",
+       "container_number": "MSCU4989904"
+      }
+     },
+     "cost_usd": 0.012366,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC591692",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd.",
+       "consignee": "Riverina Trading Pty Ltd",
+       "botanical_name": "Prunus armeniaca",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.012278,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-64463",
+       "invoice_date": "16/09/2026",
+       "seller": "NORDIC PINE SAWMILLS AB",
+       "buyer": "Wattle & Co Wholesale Pty Ltd",
+       "currency": "USD",
+       "total_amount": "552.08",
+       "incoterm": "CIF",
+       "hs_code": "0904.11"
+      }
+     },
+     "cost_usd": 0.012323,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-02",
+     "passed": false,
+     "score": 0.8333333333333334,
+     "detail": "invoice_number: got 'INV-6446.3' want 'INV-64463'",
+     "tags": {
+      "right": 5,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "invoice_number"
+      ],
+      "got": {
+       "packing_list_number": "PL-42760",
+       "invoice_number": "INV-6446.3",
+       "total_packages": "268.",
+       "gross_weight_kg": "4543.5",
+       "net_weight_kg": "4324.0",
+       "container_number": "OOLU6530326"
+      }
+     },
+     "cost_usd": 0.012336,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU38462634",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "COSCO LIBRA",
+       "voyage": "325N",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Fremantle",
+       "container_number": "OOLU6530326"
+      }
+     },
+     "cost_usd": 0.012365,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO294523",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "botanical_name": "Piper nigrum",
+       "place_of_origin": "Sri Lanka"
+      }
+     },
+     "cost_usd": 0.012232,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-53940",
+       "invoice_date": "27/09/2026",
+       "seller": "LANKA SPICE MILLS (PVT) LTD.",
+       "buyer": "Riverina Trading Pty Ltd",
+       "currency": "USD",
+       "total_amount": "32,605.44",
+       "incoterm": "CFR",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.012421,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-53215",
+       "invoice_number": "INV-53940",
+       "total_packages": "1213",
+       "gross_weight_kg": "26611.9",
+       "net_weight_kg": "25585.2",
+       "container_number": "TGHU4492083"
+      }
+     },
+     "cost_usd": 0.012336,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "ONEY17833133",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Riverina Trading Pty Ltd",
+       "vessel": "MSC ARIANNA",
+       "voyage": "669N",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Sydney",
+       "container_number": "TGHU4492083"
+      }
+     },
+     "cost_usd": 0.012359,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC354523",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Riverina Trading Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.01226,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-33924",
+       "invoice_date": "08/08/2026",
+       "seller": "NORDIC PINE SAWMILLS AB",
+       "buyer": "Harbourside Fresh Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "35,271.18",
+       "incoterm": "CFR",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.012326,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-02",
+     "passed": false,
+     "score": 0.6666666666666666,
+     "detail": "packing_list_number: got 'PL-416.70' want 'PL-41670'; container_number: got 'CMAU34.35592' want 'CMAU3435592'",
+     "tags": {
+      "right": 4,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "packing_list_number",
+       "container_number"
+      ],
+      "got": {
+       "packing_list_number": "PL-416.70",
+       "invoice_number": "INV-33924",
+       "total_packages": "1302",
+       "gross_weight_kg": "31476.3",
+       "net_weight_kg": "28118.7",
+       "container_number": "CMAU34.35592"
+      }
+     },
+     "cost_usd": 0.012342,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MEDU91747120",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "CMA CGM TAGE",
+       "voyage": "444N",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Brisbane",
+       "container_number": "CMAU3435592"
+      }
+     },
+     "cost_usd": 0.012374,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC477115",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": "0813.10."
+      }
+     },
+     "cost_usd": 0.012261,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC721725",
+       "fumigant": "Methyl bromide",
+       "dosage": "48 g/m3",
+       "exposure_hours": "24",
+       "date_of_fumigation": "08/08/2026",
+       "container_number": "CMAU3435592"
+      }
+     },
+     "cost_usd": 0.012293,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-06",
+     "passed": false,
+     "score": 0.8,
+     "detail": "certificate_number: got 'CO91-5766' want 'CO915766'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number"
+      ],
+      "got": {
+       "certificate_number": "CO91-5766",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "Prunus armeniaca",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.012279,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-01",
+     "passed": false,
+     "score": 0.875,
+     "detail": "seller: got 'LANKA SPICE MILLS (PVT) LTD 206 Industrial Rd, Vietnam' want 'Lanka Spice Mills (Pvt) Ltd'",
+     "tags": {
+      "right": 7,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "seller"
+      ],
+      "got": {
+       "invoice_number": "INV-12449",
+       "invoice_date": "01/09/2026",
+       "seller": "LANKA SPICE MILLS (PVT) LTD 206 Industrial Rd, Vietnam",
+       "buyer": "Southern Cross Imports Pty Ltd",
+       "currency": "USD",
+       "total_amount": "18,736.80",
+       "incoterm": "FOB",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.012414,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-18107",
+       "invoice_number": "INV-12449",
+       "total_packages": "888",
+       "gross_weight_kg": "19858.2",
+       "net_weight_kg": "18408.5.",
+       "container_number": "CMAU7244107"
+      }
+     },
+     "cost_usd": 0.012334,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MAEU35794888",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "COSCO LIBRA",
+       "voyage": "797W",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Sydney",
+       "container_number": "CMAU7244107"
+      }
+     },
+     "cost_usd": 0.012377,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO844521",
+       "exporter": "Lanka Spice. Mills (Pvt) Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "Anacardium occidentale",
+       "place_of_origin": "Vietnam"
+      }
+     },
+     "cost_usd": 0.012233,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-38675",
+       "invoice_date": "14/08/2026",
+       "seller": "HANSEATIC FURNITURE GMBH",
+       "buyer": "Kookaburra Home Furnishings Pty Ltd",
+       "currency": "AUD",
+       "total_amount": "9,727.74",
+       "incoterm": "DAP",
+       "hs_code": "0904.11"
+      }
+     },
+     "cost_usd": 0.012333,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-77110",
+       "invoice_number": "INV-38675",
+       "total_packages": "561",
+       "gross_weight_kg": "9423.0",
+       "net_weight_kg": "8873.3",
+       "container_number": "MSCU8477661"
+      }
+     },
+     "cost_usd": 0.012337,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-03",
+     "passed": false,
+     "score": 0.875,
+     "detail": "bl_number: got 'MEDU973998.60' want 'MEDU97399860'",
+     "tags": {
+      "right": 7,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "bl_number"
+      ],
+      "got": {
+       "bl_number": "MEDU973998.60",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "vessel": "MSC ARIANNA",
+       "voyage": "173N",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Brisbane",
+       "container_number": "MSCU8477661"
+      }
+     },
+     "cost_usd": 0.012367,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC269264",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "24",
+       "date_of_fumigation": "09/09/2026",
+       "container_number": "MSCU8477661"
+      }
+     },
+     "cost_usd": 0.0123,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "AU330068",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "country_of_origin": "Sri Lanka",
+       "hs_code": "0904.11"
+      }
+     },
+     "cost_usd": 0.01227,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO931747",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "botanical_name": "Piper nigrum",
+       "place_of_origin": "Sri Lanka"
+      }
+     },
+     "cost_usd": 0.012236,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-65533",
+       "invoice_date": "07/07/2026",
+       "seller": "CASCADE ORCHARDS LLC",
+       "buyer": "Southern Cross Imports Pty Ltd.",
+       "currency": "EUR",
+       "total_amount": "19,183.29",
+       "incoterm": "FOB",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.012315,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-49298",
+       "invoice_number": "INV-65533",
+       "total_packages": "547",
+       "gross_weight_kg": "5559.9",
+       "net_weight_kg": "4978.9",
+       "container_number": "MSKU7375393"
+      }
+     },
+     "cost_usd": 0.01233,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU50801816",
+       "shipper": "Cascade Orchards LLC",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "CMA CGM TAGE",
+       "voyage": "554S",
+       "port_of_loading": "Ho Chi Minh. City",
+       "port_of_discharge": "Brisbane",
+       "container_number": "MSKU7375393"
+      }
+     },
+     "cost_usd": 0.01236,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC416181",
+       "exporter": "Cascade Orchards LLC",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "country_of_origin": "Vietnam",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.01225,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO771879",
+       "exporter": "Cascade Orchards LLC",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "Anacardium occidentale",
+       "place_of_origin": "Vietnam"
+      }
+     },
+     "cost_usd": 0.012219,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-01",
+     "passed": false,
+     "score": 0.875,
+     "detail": "seller: got 'GOLDEN VALLEY EXPORTS CO. LTD 204 Industrial Rd, Turkey' want 'Golden Valley Exports Co. Ltd'",
+     "tags": {
+      "right": 7,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "seller"
+      ],
+      "got": {
+       "invoice_number": "INV-59341",
+       "invoice_date": "01/08/2026",
+       "seller": "GOLDEN VALLEY EXPORTS CO. LTD 204 Industrial Rd, Turkey",
+       "buyer": "Southern Cross Imports Pty Ltd",
+       "currency": "USD",
+       "total_amount": "35,031.36",
+       "incoterm": "EXW",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.012425,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-49148",
+       "invoice_number": "INV-59341",
+       "total_packages": "1203",
+       "gross_weight_kg": "13217.4",
+       "net_weight_kg": "12268.9",
+       "container_number": "CMAU5744210"
+      }
+     },
+     "cost_usd": 0.012336,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU60686170",
+       "shipper": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "ONE HARMONY",
+       "voyage": "898W",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Fremantle",
+       "container_number": "CMAU5744210"
+      }
+     },
+     "cost_usd": 0.012371,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "EX867941",
+       "exporter": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "Prunus armeniaca",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.012227,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-50762",
+       "invoice_date": "02/07/2026",
+       "seller": "LANKA SPICE MILLS (PVT) LTD",
+       "buyer": "Harbourside Fresh Pty Ltd",
+       "currency": "USD",
+       "total_amount": "33, 623.21",
+       "incoterm": "EXW",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.012335,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-02",
+     "passed": false,
+     "score": 0.8333333333333334,
+     "detail": "net_weight_kg: got '3.5650.8' want '35650.8'",
+     "tags": {
+      "right": 5,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "net_weight_kg"
+      ],
+      "got": {
+       "packing_list_number": "PL-31376",
+       "invoice_number": "INV-50762",
+       "total_packages": "1699",
+       "gross_weight_kg": "39694.4",
+       "net_weight_kg": "3.5650.8",
+       "container_number": "MSCU7345092"
+      }
+     },
+     "cost_usd": 0.01234,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU28874090",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "MSC ARIANNA",
+       "voyage": "501W",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Brisbane",
+       "container_number": "MSCU7345092"
+      }
+     },
+     "cost_usd": 0.012372,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "EX571873",
+       "fumigant": "Phosphine",
+       "dosage": "2 g/m3",
+       "exposure_hours": "120",
+       "date_of_fumigation": "06/09/2026",
+       "container_number": "MSCU7345092"
+      }
+     },
+     "cost_usd": 0.012292,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "EX992268",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Vietnam",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.012264,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-13579",
+       "invoice_date": "19/09/2026",
+       "seller": "SIERRA CITRUS COOPERATIVA",
+       "buyer": "Harbourside Fresh Pty Ltd",
+       "currency": "USD",
+       "total_amount": "30,287.60",
+       "incoterm": "CFR",
+       "hs_code": "0802.31"
+      }
+     },
+     "cost_usd": 0.012325,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-02",
+     "passed": false,
+     "score": 0.8333333333333334,
+     "detail": "container_number: got 'TGHU628.9625' want 'TGHU6289625'",
+     "tags": {
+      "right": 5,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "container_number"
+      ],
+      "got": {
+       "packing_list_number": "PL-39126",
+       "invoice_number": "INV-13579",
+       "total_packages": "1015",
+       "gross_weight_kg": "13658.9",
+       "net_weight_kg": "12240.2",
+       "container_number": "TGHU628.9625"
+      }
+     },
+     "cost_usd": 0.012341,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MEDU15819713",
+       "shipper": "Sierra Citrus Cooperativa",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "ONE HARMONY",
+       "voyage": "489N",
+       "port_of_loading": "Oakland",
+       "port_of_discharge": "Brisbane",
+       "container_number": "TGHU6289625"
+      }
+     },
+     "cost_usd": 0.01237,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO893597",
+       "exporter": "Sierra Citrus Cooperativa",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "Juglans regia",
+       "place_of_origin": "United States"
+      }
+     },
+     "cost_usd": 0.012263,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-70494",
+       "invoice_date": "25/07/2026",
+       "seller": "HANSEATIC FURNITURE GMBH",
+       "buyer": "Harbourside Fresh Pty Ltd",
+       "currency": "AUD",
+       "total_amount": "41,630.52",
+       "incoterm": "CIF",
+       "hs_code": "0805.10"
+      }
+     },
+     "cost_usd": 0.012326,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-49914",
+       "invoice_number": "INV-70494",
+       "total_packages": "1083",
+       "gross_weight_kg": "12987.7",
+       "net_weight_kg": "12470.0",
+       "container_number": "OOLU3552106"
+      }
+     },
+     "cost_usd": 0.01234,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-03",
+     "passed": false,
+     "score": 0.875,
+     "detail": "container_number: got 'COLU3552106' want 'OOLU3552106'",
+     "tags": {
+      "right": 7,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [
+       "container_number"
+      ],
+      "got": {
+       "bl_number": "MAEU58970940",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "ONE HARMONY",
+       "voyage": "554W",
+       "port_of_loading": "Valencia",
+       "port_of_discharge": "Brisbane",
+       "container_number": "COLU3552106"
+      }
+     },
+     "cost_usd": 0.012364,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO340275",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Spain",
+       "hs_code": "0805.10"
+      }
+     },
+     "cost_usd": 0.012252,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO666697",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "Citrus sinensis",
+       "place_of_origin": "Spain"
+      }
+     },
+     "cost_usd": 0.012218,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-96972",
+       "invoice_date": "12/07/2026",
+       "seller": "NORDIC PINE SAWMILLS AB",
+       "buyer": "Riverina Trading Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "35,721.28",
+       "incoterm": "CFR",
+       "hs_code": "4407.11"
+      }
+     },
+     "cost_usd": 0.01236,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-92091",
+       "invoice_number": "INV-96972",
+       "total_packages": "1184",
+       "gross_weight_kg": "25210.0",
+       "net_weight_kg": "22815.7",
+       "container_number": "TGHU1770200"
+      }
+     },
+     "cost_usd": 0.012335,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "ONEY24431385",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Riverina Trading Pty Ltd",
+       "vessel": "CMA CGM TAGE",
+       "voyage": "315N",
+       "port_of_loading": "Gothenburg",
+       "port_of_discharge": "Brisbane",
+       "container_number": "TGHU1770200"
+      }
+     },
+     "cost_usd": 0.012373,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "AU759255",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Riverina Trading Pty Ltd",
+       "country_of_origin": "Sweden",
+       "hs_code": "4407.11"
+      }
+     },
+     "cost_usd": 0.012261,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-90180",
+       "invoice_date": "11/08/2026",
+       "seller": "ANATOLIA DRIED FRUITS A.S.",
+       "buyer": "Kookaburra Home Furnishings Pty Ltd",
+       "currency": "USD",
+       "total_amount": "28,761.60",
+       "incoterm": "DAP",
+       "hs_code": "0904.11"
+      }
+     },
+     "cost_usd": 0.012338,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-91991",
+       "invoice_number": "INV-90180",
+       "total_packages": "1344",
+       "gross_weight_kg": "18261.5",
+       "net_weight_kg": "16719.3",
+       "container_number": "OOLU8561634"
+      }
+     },
+     "cost_usd": 0.012337,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU92109642",
+       "shipper": "Anatolia Dried Fruits A.S.",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "vessel": "MAERSK KOWLOON",
+       "voyage": "972E",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Sydney",
+       "container_number": "OOLU8561634"
+      }
+     },
+     "cost_usd": 0.012386,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC297333",
+       "exporter": "Anatolia Dried Fruits A.S ..",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "botanical_name": "Piper nigrum",
+       "place_of_origin": "Sri Lanka"
+      }
+     },
+     "cost_usd": 0.012244,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-01",
+     "passed": false,
+     "score": 0.875,
+     "detail": "hs_code: got '0904:11' want '0904.11'",
+     "tags": {
+      "right": 7,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": "INV-69686",
+       "invoice_date": "01/09/2026",
+       "seller": "HANSEATIC FURNITURE GMBH",
+       "buyer": "Wattle & Co Wholesale Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "15,914.40",
+       "incoterm": "FOB",
+       "hs_code": "0904:11"
+      }
+     },
+     "cost_usd": 0.012343,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-38663",
+       "invoice_number": "INV-69686",
+       "total_packages": "456",
+       "gross_weight_kg": "9447.3",
+       "net_weight_kg": "9051.3",
+       "container_number": "TGHU8859774"
+      }
+     },
+     "cost_usd": 0.012336,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "ONEY66948127",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "EVER GIVEN II",
+       "voyage": "218E",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Brisbane",
+       "container_number": "TGHU8859774"
+      }
+     },
+     "cost_usd": 0.012359,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC956096",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "country_of_origin": "Sri Lanka",
+       "hs_code": "0904.11"
+      }
+     },
+     "cost_usd": 0.012263,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-84536",
+       "invoice_date": "12/07/2026",
+       "seller": "GOLDEN VALLEY EXPORTS CO. LTD",
+       "buyer": "Southern Cross Imports Pty Ltd",
+       "currency": "AUD",
+       "total_amount": "19,882.50",
+       "incoterm": "EXW",
+       "hs_code": "4407.11"
+      }
+     },
+     "cost_usd": 0.012365,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-11896",
+       "invoice_number": "INV-84536",
+       "total_packages": "1375",
+       "gross_weight_kg": "22220.8",
+       "net_weight_kg": "21009.4",
+       "container_number": "MSCU4284394"
+      }
+     },
+     "cost_usd": 0.012336,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MAEU35625917",
+       "shipper": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "MSC ARIANNA",
+       "voyage": "574E",
+       "port_of_loading": "Gothenburg",
+       "port_of_discharge": "Fremantle",
+       "container_number": "MSCU4284394"
+      }
+     },
+     "cost_usd": 0.012365,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "EX200984",
+       "exporter": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "country_of_origin": "Sweden",
+       "hs_code": "4407.11."
+      }
+     },
+     "cost_usd": 0.012259,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC453348",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3 .",
+       "exposure_hours": "24",
+       "date_of_fumigation": "19/08/2026",
+       "container_number": "MSCU4284394"
+      }
+     },
+     "cost_usd": 0.0123,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-01",
+     "passed": false,
+     "score": 0.875,
+     "detail": "seller: got 'LANKA SPICE MILLS (PVT) LTD 316 Industrial Rd, Vietnam' want 'Lanka Spice Mills (Pvt) Ltd'",
+     "tags": {
+      "right": 7,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "seller"
+      ],
+      "got": {
+       "invoice_number": "INV-10420",
+       "invoice_date": "15/07/2026",
+       "seller": "LANKA SPICE MILLS (PVT) LTD 316 Industrial Rd, Vietnam",
+       "buyer": "Harbourside Fresh Pty Ltd",
+       "currency": "USD",
+       "total_amount": "20,793.28",
+       "incoterm": "FOB",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.012432,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-98454",
+       "invoice_number": "INV-10420",
+       "total_packages": "1436",
+       "gross_weight_kg": "17487.8",
+       "net_weight_kg": "15803.5",
+       "container_number": "MSKU7382045"
+      }
+     },
+     "cost_usd": 0.012336,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MAEU92571902",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "EVER GIVEN II",
+       "voyage": "653W",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Melbourne",
+       "container_number": "MSKU7382045"
+      }
+     },
+     "cost_usd": 0.012368,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC256619",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "Anacardium occidentale",
+       "place_of_origin": "Vietnam"
+      }
+     },
+     "cost_usd": 0.012271,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-05",
+     "passed": false,
+     "score": 0.8,
+     "detail": "hs_code: got '08.01.32' want '0801.32'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "hs_code"
+      ],
+      "got": {
+       "certificate_number": "AU367506",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd.",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Vietnam",
+       "hs_code": "08.01.32"
+      }
+     },
+     "cost_usd": 0.012262,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "AU150253",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "24",
+       "date_of_fumigation": "24/08/2026",
+       "container_number": "MSKU7382045"
+      }
+     },
+     "cost_usd": 0.012295,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-91474",
+       "invoice_date": "17/09/2026",
+       "seller": "NORDIC PINE SAWMILLS AB",
+       "buyer": "Bluegum Food Distributors Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "5,576.34",
+       "incoterm": "EXW",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.012328,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-55216",
+       "invoice_number": "INV-91474",
+       "total_packages": "781",
+       "gross_weight_kg": "9843.0",
+       "net_weight_kg": "8902.0",
+       "container_number": "MSKU7072385"
+      }
+     },
+     "cost_usd": 0.01233,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU50265103",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Bluegum Food Distributors Pty Ltd",
+       "vessel": "COSCO LIBRA",
+       "voyage": "222N",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Sydney",
+       "container_number": "MSKU7072385"
+      }
+     },
+     "cost_usd": 0.012373,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO713515",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Bluegum Food Distributors Pty Ltd",
+       "botanical_name": "Anacardium occidentale",
+       "place_of_origin": "Vietnam."
+      }
+     },
+     "cost_usd": 0.012232,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-76393",
+       "invoice_date": "14/09/2026",
+       "seller": "PACIFIC RIM TIMBER PTE LTD.",
+       "buyer": "Wattle & Co. Wholesale Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "4,914.90",
+       "incoterm": "CIF",
+       "hs_code": "9403.60"
+      }
+     },
+     "cost_usd": 0.01233,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-10330",
+       "invoice_number": "INV-76393",
+       "total_packages": "254",
+       "gross_weight_kg": "3372.3",
+       "net_weight_kg": "3205.3",
+       "container_number": "MSKU9489387"
+      }
+     },
+     "cost_usd": 0.012331,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MEDU38929507",
+       "shipper": "Pacific Rim Timber Pte Ltd",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "EVER GIVEN II",
+       "voyage": "586S",
+       "port_of_loading": "Hamburg",
+       "port_of_discharge": "Fremantle",
+       "container_number": "MSKU9489387"
+      }
+     },
+     "cost_usd": 0.012365,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO913509",
+       "exporter": "Pacific Rim Timber Pte Ltd",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "country_of_origin": "Germany",
+       "hs_code": "9403.60"
+      }
+     },
+     "cost_usd": 0.012259,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "field_accuracy": 0.9735973597359736,
+    "page_all_fields_right": 0.8369565217391305
+   },
+   "cost_usd": 1.133514,
+   "wall_s": 0.06,
+   "gated": true
+  },
+  {
+   "system": "llm-vision",
+   "is_baseline": false,
+   "results": [
+    {
+     "case_id": "test-B00-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-86387",
+       "invoice_date": "14/07/2026",
+       "seller": "HANSEATIC FURNITURE GMBH",
+       "buyer": "Wattle & Co Wholesale Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "7,373.73",
+       "incoterm": "DAP",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.000875,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-17602",
+       "invoice_number": "INV-86387",
+       "total_packages": "1533",
+       "gross_weight_kg": "14706.2",
+       "net_weight_kg": "13300.3",
+       "container_number": "MSKU7135241"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MAEU15032582",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "MSC ARIANNA",
+       "voyage": "346N",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Adelaide",
+       "container_number": "MSKU7135241"
+      }
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC223514",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-37060",
+       "invoice_date": "11/07/2026",
+       "seller": "NORDIC PINE SAWMILLS AB",
+       "buyer": "Southern Cross Imports Pty Ltd",
+       "currency": "AUD",
+       "total_amount": "25,148.94",
+       "incoterm": "CFR",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.000871,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-95134",
+       "invoice_number": "INV-37060",
+       "total_packages": "1047",
+       "gross_weight_kg": "21640.1",
+       "net_weight_kg": "19590.0",
+       "container_number": "MSKU3069294"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MEDU48520404",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "EVER GIVEN II",
+       "voyage": "149W",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Sydney",
+       "container_number": "MSKU3069294"
+      }
+     },
+     "cost_usd": 0.00087,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "certificate_number: got 'C0589528' want 'CO589528'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [
+       "certificate_number"
+      ],
+      "got": {
+       "certificate_number": "C0589528",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-05",
+     "passed": false,
+     "score": 0.8333333333333334,
+     "detail": "certificate_number: got 'C0500802' want 'CO500802'",
+     "tags": {
+      "right": 5,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [
+       "certificate_number"
+      ],
+      "got": {
+       "certificate_number": "C0500802",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "24",
+       "date_of_fumigation": "05/07/2026",
+       "container_number": "MSKU3069294"
+      }
+     },
+     "cost_usd": 0.000834,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC914013",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "Prunus armeniaca",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.000802,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-44231",
+       "invoice_date": "28/08/2026",
+       "seller": "LANKA SPICE MILLS (PVT) LTD",
+       "buyer": "Riverina Trading Pty Ltd",
+       "currency": "USD",
+       "total_amount": "7,204.10",
+       "incoterm": "DAP",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.000875,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-42911",
+       "invoice_number": "INV-44231",
+       "total_packages": "1181",
+       "gross_weight_kg": "20296.2",
+       "net_weight_kg": "18867.4",
+       "container_number": "MSCU4989904"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MEDU24776678",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Riverina Trading Pty Ltd",
+       "vessel": "ONE HARMONY",
+       "voyage": "234S",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Fremantle",
+       "container_number": "MSCU4989904"
+      }
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC591692",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Riverina Trading Pty Ltd",
+       "botanical_name": "Prunus armeniaca",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.000806,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-64463",
+       "invoice_date": "16/09/2026",
+       "seller": "NORDIC PINE SAWMILLS AB",
+       "buyer": "Wattle & Co Wholesale Pty Ltd",
+       "currency": "USD",
+       "total_amount": "552.08",
+       "incoterm": "CIF",
+       "hs_code": "0904.11"
+      }
+     },
+     "cost_usd": 0.000871,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-42760",
+       "invoice_number": "INV-64463",
+       "total_packages": "268",
+       "gross_weight_kg": "4543.5",
+       "net_weight_kg": "4324.0",
+       "container_number": "OOLU6530326"
+      }
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU38462634",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "COSCO LIBRA",
+       "voyage": "325N",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Fremantle",
+       "container_number": "OOLU6530326"
+      }
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "certificate_number: got 'C0294523' want 'CO294523'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number"
+      ],
+      "got": {
+       "certificate_number": "C0294523",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "botanical_name": "Piper nigrum",
+       "place_of_origin": "Sri Lanka"
+      }
+     },
+     "cost_usd": 0.000808,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-53940",
+       "invoice_date": "27/09/2026",
+       "seller": "LANKA SPICE MILLS (PVT) LTD",
+       "buyer": "Riverina Trading Pty Ltd",
+       "currency": "USD",
+       "total_amount": "32,605.44",
+       "incoterm": "CFR",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-02",
+     "passed": false,
+     "score": 0.8333333333333334,
+     "detail": "container_number: got 'TGH04492083' want 'TGHU4492083'",
+     "tags": {
+      "right": 5,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "container_number"
+      ],
+      "got": {
+       "packing_list_number": "PL-53215",
+       "invoice_number": "INV-53940",
+       "total_packages": "1213",
+       "gross_weight_kg": "26611.9",
+       "net_weight_kg": "25585.2",
+       "container_number": "TGH04492083"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "ONEY17833133",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Riverina Trading Pty Ltd",
+       "vessel": "MSC ARIANNA",
+       "voyage": "669N",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Sydney",
+       "container_number": "TGHU4492083"
+      }
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC354523",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Riverina Trading Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.000799,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-33924",
+       "invoice_date": "08/08/2026",
+       "seller": "NORDIC PINE SAWMILLS AB",
+       "buyer": "Harbourside Fresh Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "35,271.18",
+       "incoterm": "CFR",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.000873,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-41670",
+       "invoice_number": "INV-33924",
+       "total_packages": "1302",
+       "gross_weight_kg": "31476.3",
+       "net_weight_kg": "28118.7",
+       "container_number": "CMAU3435592"
+      }
+     },
+     "cost_usd": 0.000831,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MEDU91747120",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "CMA CGM TAGE",
+       "voyage": "444N",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Brisbane",
+       "container_number": "CMAU3435592"
+      }
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC477115",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Turkey",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC721725",
+       "fumigant": "Methyl bromide",
+       "dosage": "48 g/m3",
+       "exposure_hours": "24",
+       "date_of_fumigation": "08/08/2026",
+       "container_number": "CMAU3435592"
+      }
+     },
+     "cost_usd": 0.00083,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-06",
+     "passed": false,
+     "score": 0.8,
+     "detail": "certificate_number: got 'C0915766' want 'CO915766'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number"
+      ],
+      "got": {
+       "certificate_number": "C0915766",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "Prunus armeniaca",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.000806,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-12449",
+       "invoice_date": "01/09/2026",
+       "seller": "LANKA SPICE MILLS (PVT) LTD",
+       "buyer": "Southern Cross Imports Pty Ltd",
+       "currency": "USD",
+       "total_amount": "18,736.80",
+       "incoterm": "FOB",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-18107",
+       "invoice_number": "INV-12449",
+       "total_packages": "888",
+       "gross_weight_kg": "19858.2",
+       "net_weight_kg": "18408.5",
+       "container_number": "CMAU7244107"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MAEU35794888",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "COSCO LIBRA",
+       "voyage": "797W",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Sydney",
+       "container_number": "CMAU7244107"
+      }
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "certificate_number: got 'C0844521' want 'CO844521'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number"
+      ],
+      "got": {
+       "certificate_number": "C0844521",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "Anacardium occidentale",
+       "place_of_origin": "Vietnam"
+      }
+     },
+     "cost_usd": 0.000808,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-38675",
+       "invoice_date": "14/08/2026",
+       "seller": "HANSEATIC FURNITURE GMBH",
+       "buyer": "Kookaburra Home Furnishings Pty Ltd",
+       "currency": "AUD",
+       "total_amount": "9,727.74",
+       "incoterm": "DAP",
+       "hs_code": "0904.11"
+      }
+     },
+     "cost_usd": 0.00088,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-77110",
+       "invoice_number": "INV-38675",
+       "total_packages": "561",
+       "gross_weight_kg": "9423.0",
+       "net_weight_kg": "8873.3",
+       "container_number": "MSCU8477661"
+      }
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MEDU97399860",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "vessel": "MSC ARIANNA",
+       "voyage": "173N",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Brisbane",
+       "container_number": "MSCU8477661"
+      }
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC269264",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "24",
+       "date_of_fumigation": "09/09/2026",
+       "container_number": "MSCU8477661"
+      }
+     },
+     "cost_usd": 0.000832,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "AU330068",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "country_of_origin": "Sri Lanka",
+       "hs_code": "0904.11"
+      }
+     },
+     "cost_usd": 0.000805,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-06",
+     "passed": false,
+     "score": 0.8,
+     "detail": "certificate_number: got 'C0931747' want 'CO931747'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number"
+      ],
+      "got": {
+       "certificate_number": "C0931747",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "botanical_name": "Piper nigrum",
+       "place_of_origin": "Sri Lanka"
+      }
+     },
+     "cost_usd": 0.000812,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-65533",
+       "invoice_date": "07/07/2026",
+       "seller": "CASCADE ORCHARDS LLC",
+       "buyer": "Southern Cross Imports Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "19,183.29",
+       "incoterm": "FOB",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.000865,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-49298",
+       "invoice_number": "INV-65533",
+       "total_packages": "547",
+       "gross_weight_kg": "5559.9",
+       "net_weight_kg": "4978.9",
+       "container_number": "MSKU7375393"
+      }
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU50801816",
+       "shipper": "Cascade Orchards LLC",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "CMA CGM TAGE",
+       "voyage": "554S",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Brisbane",
+       "container_number": "MSKU7375393"
+      }
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC416181",
+       "exporter": "Cascade Orchards LLC",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "country_of_origin": "Vietnam",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.00079,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-05",
+     "passed": false,
+     "score": 0.8,
+     "detail": "certificate_number: got 'C0771879' want 'CO771879'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number"
+      ],
+      "got": {
+       "certificate_number": "C0771879",
+       "exporter": "Cascade Orchards LLC",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "Anacardium occidentale",
+       "place_of_origin": "Vietnam"
+      }
+     },
+     "cost_usd": 0.000798,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-59341",
+       "invoice_date": "01/08/2026",
+       "seller": "GOLDEN VALLEY EXPORTS CO. LTD",
+       "buyer": "Southern Cross Imports Pty Ltd",
+       "currency": "USD",
+       "total_amount": "35,031.36",
+       "incoterm": "EXW",
+       "hs_code": "0813.10"
+      }
+     },
+     "cost_usd": 0.000873,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-49148",
+       "invoice_number": "INV-59341",
+       "total_packages": "1203",
+       "gross_weight_kg": "13217.4",
+       "net_weight_kg": "12268.9",
+       "container_number": "CMAU5744210"
+      }
+     },
+     "cost_usd": 0.000831,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU60686170",
+       "shipper": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "ONE HARMONY",
+       "voyage": "898W",
+       "port_of_loading": "Izmir",
+       "port_of_discharge": "Fremantle",
+       "container_number": "CMAU5744210"
+      }
+     },
+     "cost_usd": 0.00088,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "EX867941",
+       "exporter": "Golden Valley Exports Co Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "botanical_name": "Prunus armeniaca",
+       "place_of_origin": "Turkey"
+      }
+     },
+     "cost_usd": 0.0008,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-50762",
+       "invoice_date": "02/07/2026",
+       "seller": "LANKA SPICE MILLS (PVT) LTD",
+       "buyer": "Harbourside Fresh Pty Ltd",
+       "currency": "USD",
+       "total_amount": "33,623.21",
+       "incoterm": "EXW",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.000878,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-31376",
+       "invoice_number": "INV-50762",
+       "total_packages": "1699",
+       "gross_weight_kg": "39694.4",
+       "net_weight_kg": "35650.8",
+       "container_number": "MSCU7345092"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU28874090",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "MSC ARIANNA",
+       "voyage": "501W",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Brisbane",
+       "container_number": "MSCU7345092"
+      }
+     },
+     "cost_usd": 0.000884,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "EX571873",
+       "fumigant": "Phosphine",
+       "dosage": "2 g/m3",
+       "exposure_hours": "120",
+       "date_of_fumigation": "06/09/2026",
+       "container_number": "MSCU7345092"
+      }
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "EX992268",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Vietnam",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.000801,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-13579",
+       "invoice_date": "19/09/2026",
+       "seller": "SIERRA CITRUS COOPERATIVA",
+       "buyer": "Harbourside Fresh Pty Ltd",
+       "currency": "USD",
+       "total_amount": "30,287.60",
+       "incoterm": "CFR",
+       "hs_code": "0802.31"
+      }
+     },
+     "cost_usd": 0.000873,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-39126",
+       "invoice_number": "INV-13579",
+       "total_packages": "1015",
+       "gross_weight_kg": "13658.9",
+       "net_weight_kg": "12240.2",
+       "container_number": "TGHU6289625"
+      }
+     },
+     "cost_usd": 0.000831,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MEDU15819713",
+       "shipper": "Sierra Citrus Cooperativa",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "ONE HARMONY",
+       "voyage": "489N",
+       "port_of_loading": "Oakland",
+       "port_of_discharge": "Brisbane",
+       "container_number": "TGHU6289625"
+      }
+     },
+     "cost_usd": 0.000874,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "certificate_number: got 'C0893597' want 'CO893597'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number"
+      ],
+      "got": {
+       "certificate_number": "C0893597",
+       "exporter": "Sierra Citrus Cooperativa",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "Juglans regia",
+       "place_of_origin": "United States"
+      }
+     },
+     "cost_usd": 0.000802,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-70494",
+       "invoice_date": "25/07/2026",
+       "seller": "HANSEATIC FURNITURE GMBH",
+       "buyer": "Harbourside Fresh Pty Ltd",
+       "currency": "AUD",
+       "total_amount": "41,630.52",
+       "incoterm": "CIF",
+       "hs_code": "0805.10"
+      }
+     },
+     "cost_usd": 0.000875,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-49914",
+       "invoice_number": "INV-70494",
+       "total_packages": "1083",
+       "gross_weight_kg": "12987.7",
+       "net_weight_kg": "12470.0",
+       "container_number": "OOLU3552106"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MAEU58970940",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "ONE HARMONY",
+       "voyage": "554W",
+       "port_of_loading": "Valencia",
+       "port_of_discharge": "Brisbane",
+       "container_number": "OOLU3552106"
+      }
+     },
+     "cost_usd": 0.000874,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO340275",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Spain",
+       "hs_code": "0805.10"
+      }
+     },
+     "cost_usd": 0.000795,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO666697",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "Citrus sinensis",
+       "place_of_origin": "Spain"
+      }
+     },
+     "cost_usd": 0.0008,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-01",
+     "passed": false,
+     "score": 0.875,
+     "detail": "total_amount: got '35,721:28' want '35,721.28'",
+     "tags": {
+      "right": 7,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "total_amount"
+      ],
+      "got": {
+       "invoice_number": "INV-96972",
+       "invoice_date": "12/07/2026",
+       "seller": "NORDIC PINE SAWMILLS AB",
+       "buyer": "Riverina Trading Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "35,721:28",
+       "incoterm": "CFR",
+       "hs_code": "4407.11"
+      }
+     },
+     "cost_usd": 0.000871,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-92091",
+       "invoice_number": "INV-96972",
+       "total_packages": "1184",
+       "gross_weight_kg": "25210.0",
+       "net_weight_kg": "22815.7",
+       "container_number": "TGHU1770200"
+      }
+     },
+     "cost_usd": 0.000831,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "ONEY24431385",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Riverina Trading Pty Ltd",
+       "vessel": "CMA CGM TAGE",
+       "voyage": "315N",
+       "port_of_loading": "Gothenburg",
+       "port_of_discharge": "Brisbane",
+       "container_number": "TGHU1770200"
+      }
+     },
+     "cost_usd": 0.00088,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "AU759255",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Riverina Trading Pty Ltd",
+       "country_of_origin": "Sweden",
+       "hs_code": "4407.11"
+      }
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-90180",
+       "invoice_date": "11/08/2026",
+       "seller": "ANATOLIA DRIED FRUITS A.S.",
+       "buyer": "Kookaburra Home Furnishings Pty Ltd",
+       "currency": "USD",
+       "total_amount": "28,761.60",
+       "incoterm": "DAP",
+       "hs_code": "0904.11"
+      }
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-91991",
+       "invoice_number": "INV-90180",
+       "total_packages": "1344",
+       "gross_weight_kg": "18261.5",
+       "net_weight_kg": "16719.3",
+       "container_number": "OOLU8561634"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU92109642",
+       "shipper": "Anatolia Dried Fruits A.S.",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "vessel": "MAERSK KOWLOON",
+       "voyage": "972E",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Sydney",
+       "container_number": "OOLU8561634"
+      }
+     },
+     "cost_usd": 0.000889,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "PC297333",
+       "exporter": "Anatolia Dried Fruits A.S.",
+       "consignee": "Kookaburra Home Furnishings Pty Ltd",
+       "botanical_name": "Piper nigrum",
+       "place_of_origin": "Sri Lanka"
+      }
+     },
+     "cost_usd": 0.000814,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-01",
+     "passed": false,
+     "score": 0.875,
+     "detail": "hs_code: got '0904:11' want '0904.11'",
+     "tags": {
+      "right": 7,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [
+       "hs_code"
+      ],
+      "got": {
+       "invoice_number": "INV-69686",
+       "invoice_date": "01/09/2026",
+       "seller": "HANSEATIC FURNITURE GMBH",
+       "buyer": "Wattle & Co Wholesale Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "15,914.40",
+       "incoterm": "FOB",
+       "hs_code": "0904:11"
+      }
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-38663",
+       "invoice_number": "INV-69686",
+       "total_packages": "456",
+       "gross_weight_kg": "9447.3",
+       "net_weight_kg": "9051.3",
+       "container_number": "TGHU8859774"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "ONEY66948127",
+       "shipper": "Hanseatic Furniture GmbH",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "EVER GIVEN II",
+       "voyage": "218E",
+       "port_of_loading": "Colombo",
+       "port_of_discharge": "Brisbane",
+       "container_number": "TGHU8859774"
+      }
+     },
+     "cost_usd": 0.000874,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC956096",
+       "exporter": "Hanseatic Furniture GmbH",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "country_of_origin": "Sri Lanka",
+       "hs_code": "0904.11"
+      }
+     },
+     "cost_usd": 0.000799,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-84536",
+       "invoice_date": "12/07/2026",
+       "seller": "GOLDEN VALLEY EXPORTS CO. LTD",
+       "buyer": "Southern Cross Imports Pty Ltd",
+       "currency": "AUD",
+       "total_amount": "19,882.50",
+       "incoterm": "EXW",
+       "hs_code": "4407.11"
+      }
+     },
+     "cost_usd": 0.000873,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-11896",
+       "invoice_number": "INV-84536",
+       "total_packages": "1375",
+       "gross_weight_kg": "22220.8",
+       "net_weight_kg": "21009.4",
+       "container_number": "MSCU4284394"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MAEU35625917",
+       "shipper": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "vessel": "MSC ARIANNA",
+       "voyage": "574E",
+       "port_of_loading": "Gothenburg",
+       "port_of_discharge": "Fremantle",
+       "container_number": "MSCU4284394"
+      }
+     },
+     "cost_usd": 0.00088,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "EX200984",
+       "exporter": "Golden Valley Exports Co. Ltd",
+       "consignee": "Southern Cross Imports Pty Ltd",
+       "country_of_origin": "Sweden",
+       "hs_code": "4407.11"
+      }
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC453348",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "24",
+       "date_of_fumigation": "19/08/2026",
+       "container_number": "MSCU4284394"
+      }
+     },
+     "cost_usd": 0.000832,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-10420",
+       "invoice_date": "15/07/2026",
+       "seller": "LANKA SPICE MILLS (PVT) LTD",
+       "buyer": "Harbourside Fresh Pty Ltd",
+       "currency": "USD",
+       "total_amount": "20,793.28",
+       "incoterm": "FOB",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.000878,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-98454",
+       "invoice_number": "INV-10420",
+       "total_packages": "1436",
+       "gross_weight_kg": "17487.8",
+       "net_weight_kg": "15803.5",
+       "container_number": "MSKU7382045"
+      }
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MAEU92571902",
+       "shipper": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "vessel": "EVER GIVEN II",
+       "voyage": "653W",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Melbourne",
+       "container_number": "MSKU7382045"
+      }
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "FC256619",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "botanical_name": "Anacardium occidentale",
+       "place_of_origin": "Vietnam"
+      }
+     },
+     "cost_usd": 0.000808,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "AU367506",
+       "exporter": "Lanka Spice Mills (Pvt) Ltd",
+       "consignee": "Harbourside Fresh Pty Ltd",
+       "country_of_origin": "Vietnam",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.000801,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "fumigation_certificate",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "AU150253",
+       "fumigant": "Sulfuryl fluoride",
+       "dosage": "1500 g-h/m3",
+       "exposure_hours": "24",
+       "date_of_fumigation": "24/08/2026",
+       "container_number": "MSKU7382045"
+      }
+     },
+     "cost_usd": 0.000832,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-91474",
+       "invoice_date": "17/09/2026",
+       "seller": "NORDIC PINE SAWMILLS AB",
+       "buyer": "Bluegum Food Distributors Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "5,576.34",
+       "incoterm": "EXW",
+       "hs_code": "0801.32"
+      }
+     },
+     "cost_usd": 0.000875,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 6,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [],
+      "got": {
+       "packing_list_number": "PL-55216",
+       "invoice_number": "INV-91474",
+       "total_packages": "781",
+       "gross_weight_kg": "9843.0",
+       "net_weight_kg": "8902.0",
+       "container_number": "MSKU7072385"
+      }
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "CMDU50265103",
+       "shipper": "Nordic Pine Sawmills AB",
+       "consignee": "Bluegum Food Distributors Pty Ltd",
+       "vessel": "COSCO LIBRA",
+       "voyage": "222N",
+       "port_of_loading": "Ho Chi Minh City",
+       "port_of_discharge": "Sydney",
+       "container_number": "MSKU7072385"
+      }
+     },
+     "cost_usd": 0.00088,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "certificate_number: got 'C0713515' want 'CO713515'",
+     "tags": {
+      "right": 4,
+      "total": 5,
+      "class": "phytosanitary_certificate",
+      "wrong_fields": [
+       "certificate_number"
+      ],
+      "got": {
+       "certificate_number": "C0713515",
+       "exporter": "Nordic Pine Sawmills AB",
+       "consignee": "Bluegum Food Distributors Pty Ltd",
+       "botanical_name": "Anacardium occidentale",
+       "place_of_origin": "Vietnam"
+      }
+     },
+     "cost_usd": 0.000808,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "commercial_invoice",
+      "wrong_fields": [],
+      "got": {
+       "invoice_number": "INV-76393",
+       "invoice_date": "14/09/2026",
+       "seller": "PACIFIC RIM TIMBER PTE LTD",
+       "buyer": "Wattle & Co. Wholesale Pty Ltd",
+       "currency": "EUR",
+       "total_amount": "4,914.90",
+       "incoterm": "CIF",
+       "hs_code": "9403.60"
+      }
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-02",
+     "passed": false,
+     "score": 0.8333333333333334,
+     "detail": "container_number: got 'MSK09489387' want 'MSKU9489387'",
+     "tags": {
+      "right": 5,
+      "total": 6,
+      "class": "packing_list",
+      "wrong_fields": [
+       "container_number"
+      ],
+      "got": {
+       "packing_list_number": "PL-10330",
+       "invoice_number": "INV-76393",
+       "total_packages": "254",
+       "gross_weight_kg": "3372.3",
+       "net_weight_kg": "3205.3",
+       "container_number": "MSK09489387"
+      }
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 8,
+      "total": 8,
+      "class": "bill_of_lading",
+      "wrong_fields": [],
+      "got": {
+       "bl_number": "MEDU38929507",
+       "shipper": "Pacific Rim Timber Pte Ltd",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "vessel": "EVER GIVEN II",
+       "voyage": "586S",
+       "port_of_loading": "Hamburg",
+       "port_of_discharge": "Fremantle",
+       "container_number": "MSKU9489387"
+      }
+     },
+     "cost_usd": 0.000878,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "right": 5,
+      "total": 5,
+      "class": "certificate_of_origin",
+      "wrong_fields": [],
+      "got": {
+       "certificate_number": "CO913509",
+       "exporter": "Pacific Rim Timber Pte Ltd",
+       "consignee": "Wattle & Co Wholesale Pty Ltd",
+       "country_of_origin": "Germany",
+       "hs_code": "9403.60"
+      }
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "field_accuracy": 0.9785478547854786,
+    "page_all_fields_right": 0.8586956521739131
+   },
+   "cost_usd": 0.077484,
+   "wall_s": 0.06,
+   "gated": true
+  }
+ ]
+}

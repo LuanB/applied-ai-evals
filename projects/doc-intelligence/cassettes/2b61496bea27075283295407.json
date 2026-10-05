@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-085",
+  "markdown": false
+ },
+ "response": {
+  "content": "ACCOMODATION ADVERTISING\n---\n2070329366",
+  "pages": 1,
+  "fields": {}
+ }
+}

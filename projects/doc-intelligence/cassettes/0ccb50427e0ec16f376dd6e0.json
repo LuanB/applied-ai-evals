@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B01-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\nB/L No .:\nMEDU48520.404\nShipper:\nNordic Pine Sawmills AB\nConsignee;\nSouthern Cross Imports Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nEVER GIVEN II / 149W\nPort of loading:\nIzmir.\nPort of discharge: Sydney\nContainer / Seal:\nMSKU3069294 / SL894747\n1047 PACKAGES SAID TO CONTAIN DRIED APRICOTS GROSS WEIGHT 21640.1 KG$ INVOICE INV-37060 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

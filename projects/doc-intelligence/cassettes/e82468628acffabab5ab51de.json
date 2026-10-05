@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-150",
+  "markdown": false
+ },
+ "response": {
+  "content": "PHILIP MORRIS USA\nINTER-OFFICE CORRESPONDENCE 120 PARK AVENUE, NEW YORK, NY 10017\nTO: Select Senior Management DATE: September 24, 1997\nFROM: Craig Johnson / Senior VP, Sales\nSUBJECT: July Sales Performance Package\nAttached is the July Sales Performance Package for Sections and Regions.\nAttachments\ncc: J. Amado\nS. Bloom\nJ. Gilbert\nJ. Mortensen\nK. Murphy\nB. Neidle\nD. Oramas\nE. Reese\nB. Schuyler\nR. Webster\nCOMMUNICATED MS MAIL 9/24/97 TO VPRSs, TMDs, SSDs, AND RSAS. NO HARD COPIES PROVIDED BY NYO. FOR INTERNAL USE ONLY.\nDOC. #540\n2063451768",
+  "pages": 1,
+  "fields": {}
+ }
+}

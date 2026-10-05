@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-050",
+  "markdown": false
+ },
+ "response": {
+  "content": "5_95.ppt HHM/URO\nPRIORITY\nReview of the Biological Activity of Nitric Oxide\n2050963039",
+  "pages": 1,
+  "fields": {}
+ }
+}

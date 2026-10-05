@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-003",
+  "markdown": false
+ },
+ "response": {
+  "content": "September 10, 1957\nDr. Sydney C. Rittenberg Professor of Bacteriology University of Southern California Los Angeles 7, California\nDear Dr. Rittenberg:\nUpon the recommendation of the Scientific Advisory Board to the Tobacco Industry Research Committee a grant in the amount of $7,344.00 has been approved for continuing your research project, which became active on October 1, 1956, through a second calendar year beginning October 1, 1957.\nSince your original research proposal out- lined a two-year plan, it is expected that the present grant will permit completion of the study as contemplated, and it is therefore made without commitment with respect to further support.\nNew applications may, of course, be submitted to the Board in the future for consideration on the same basis as those from other qualified scientific laboratories and in the light of the situation that may then exist in the over all program.\nWe are pleased that this continuation of support has been possible and trust that it will afford you a fruitful opportunity to acquire additional data of mutual interest and broad scientific value.\nSincerely yours,\nW. T. Hoyt Executive Secretary\ncc: Mr. Paul, A. Walgren Controller",
+  "pages": 1,
+  "fields": {}
+ }
+}

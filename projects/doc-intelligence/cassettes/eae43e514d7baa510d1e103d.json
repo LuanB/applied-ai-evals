@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nKRAVEL / 142\nseria; bacterial physiology. Address Special Reference Labe, Veloruns Administration Hospital, 600/113R, 5901 E. Seventh Se, Long Beach, CA\nKRASNOW, MARVIN EILLMAN), b. Chicago, In, Apr. 27, 24; m. 4); e. 5. PHYSICAL CHEMISTRY, Ph. D.(chem), Ohio State, 52. Rel. amnoc. electron scattering, Ohio State, 52-53; res. chemist polyethylene, Viating Corp, 51- S\u1ed1; mgr. chem, physich & petrol lab, Endand Testing Labr, 56-39; dr. govt. res. & develop, Hallicrafters Co. 59-64, COORD, DIDUST, RELA, COL. ENG. UNTY. ILL, URBANA, 64- Spot. Elec, & Electronica Eng; Optical Soc. Am: Am. Lrut. Physics; Am. Soc. Eng. Educ. Electron scattering by pues; Stresti gation of structure of polyethylene; interaction of etectracingnetic radiation with walter, wralsation of fuels and bibelenets; quantum phwennm+ INa: Address: 800 Brighton Dr, Urbana, IL. 4180L.\nKRASNY, JOHN FRIEDRICH), b. Vienna, Austria, Oct. 22, 14; out; a. 4 e. 3. TEXTILE PHYSICS, Dipl, Textile Col, Vienna, 36; B. S, Denver, 00; American Univ. 54. Terale physicist, Nat. Bur. Standards, 45-51; GROUP LEADER, GILLETTE RES. INST, SI. U.S.A, 41-45, M/Sgt. AAAS; Fiber Soc; Am. Phys. Soc; Am. Asn. Textile Crem. & Colorists, Textile Res. Inst. Fiber and tahrie properties; fabric flammability: correlation of laboratory tests and behavise in use. Address: Gillette Research lesti- Duke, 1415 Research Bind, Rochelle, MD 20450.\nKRAST, ALLAN SIKALEJ, b. Milwaukee, Wis, May 16, 35; div. THEORETI- CAL PSIYSICS. 8.8. Cornel0, 58: 1n\u00ba, Bus, Mach. tel, Sanford, 59-80, Ph.D. (heoret, phyalea). 63. Res. Assoc. PHYSICS, Jowa, 62-64; Beetr, UNIV. CALIT. SANTA BARBARA, M-65, ASST. PROT, 65- Scruiters, mem. ris. Ralf, Blandord Lingar Accelerator Cir, 64, 65. Am. Phyt. Soc. Elemen- tary particle physics; theoretical high energy physics, Address: Dept. of Physics, University of Caldorais, Santa Barbara, CA 13104.\nKRASSNER, STUART M. b. N.Y.C. Aug. 31, 25; m. St. PARASITOLOGY, INVERTEBRATE ZOOLOGY. D.S. Brooklyn Col, 31; Nal. Lis, Health fel. S.D.(paramtol), Mogklax, 61. bat. trata, Health Tel, Int. coop. med. PME. & training prog, Hopkins-sch. trop. med, Univ. Calcutta, 61-62; guest im- veste. C Nat. Loste. Health til. trainen, Rockefeller tirdv, 87-65; Inatr. In- vert. . A, Hunter Col, 84-65; 1314. prof. ORGANISMIC BIOL, UNIV, CALIF, PRIVIN) . 63-59, ASSOC. PROF. & V.CHHN, DEPT. DEVELOP. & CELL B101, 19- AAAS: Am. Soc. Parasitel; Soc. Protozool, Age and infectivity la coccidiasis; antibacterial factors in pipuncutid worms, metaboli ams und transformation in hemenageliates. Address: Dept. of Developmental & Cell Biology, University of Caldornia, Irvine, CA 92694.\nKRASSO, OSCAR TANG. b. Tuhier, Hungary, May 2, 01; rat; m. 30. OR- GANIC CHEMISTRY. Berlin, 20, 14; Ph.D.(cham), Viena, 3L. Asst. mer. wiener Olwerke, Austria, 28-31; det, mgr, Soiubracmaslo, Russia, 32-39; Kwiada Chem. Works, Austria, 34-30; mgr, Swast &: Cil Mills, India. 33-03; Borghay Chem. Mig. Co, 44-46; ed, Merck & Co, 47-86; OWHER 4 MOR, INTER-TRANS, 66. Am. Chem. Soc. Vegetable ells and lais; activated car - hom and fuller'a garth; pharmaceutical and cosesetic products; fine cham. Ic ata and pharmaceuticals; chemical Uterature. Address: 253 Fairesount Ave, Plainfield, NU 07060.\nKRASTINS, GUNAR, b. Riga, Latvia, Sept. 20, 28; U.S. citizen; m. 57; e. 7. NUCLEAR PHYSICS. B.A. Connecticut, 53, Ph.D. (phys. chem), 57. Mat. ener, KNOLLS ATONOC POWER LAB. GEN. ELEC, CO, SCHENECTADY, $7-81, mipv. engr. Irradiation ellecis, 61-44, poisas irradiations, 64-68, Ege, irradiation abeline & eval, 68-11, MOHL, ADVAN. FUEL & POISON SYST. BEHAV. TI- Am. Chem. Soc. Nuclear fuel elemint fabrication de- velopment; study of effects of aurtear reactor environment on materials and material Systems to be used In nuclear reactor ceres; ellecin ol tau- tren irradiation en materials and material systeme; nuclear fuel and poissa ragincering design, development, irradiatien, testing and application. Ad- dress 2 Coroast Court, Niskayuna, NY 12 309.\nKRATCHMAN, JACK, b. N.Y.C, Oct. 12, 28; m. 48; e. 3. GEOLOGY. B.S. Chry Col New York, 18; M.S. N.Y. Univ, 52; LL.D. George Washington, H. Staff geologist, div. raw mat, U.S. Atomic Energy Cocan, 51-61; stift officer, CHr. Corressimal & Pub. Altairy, Nal Sca. Found, $7-11; ASSOC. PROF. LECTH, NAT. LAW CTR, GEORGE WASHINGTON UNIV, 11- U.S.A. 44-46. Economie ciology of uranium. Address: 11612 Greeniase De, Potomac, MD\nKRATOCHVIL, BTRON, b. Ounond, Nebe, Sept, 15, 11; m. 00; c. 4. ANA- LYTICAL CHEMISTRY. B.S, lowa Stale, $1, M.S. 39, Ph. D.agal. cham), 51. Enstr. CHEM, Chis. Wie, Madison, 61.62, aust. prof. 62-51; ASCC. PROF, UNTY, ALTA, ST. U.S.4, 53.55. Am, Cham. Soc; Chem, Inst, Can. Electron transfer reactions; metal complex studies; conaqutous solvents; polrent-solute laterattitas; analysis using nonakcesus solvents, Address: Dept. et Chemistry, University of Alberta, Edmonton, Alta, Cie,\nKRATOCHVIL, CILYDES KARDINC), b. Racine, Wis, Aug. 1, 23; m. +4; e. 5. PHYSIOLOGY, BIOCHEMISTRY. B.S. Wisconsin, Madison, 50, M.D. 17. Fh.b.(phys ed, boochem), 64. Med. Corps, U.S. Air Force, S2-70, Intern, William Beaument Army Hesp, Tex, 52-53, officer in charge depl. physial. 4 binphys. Sch. Aviation Med, Randolph AFB, 55-59. proj- etticer bioncl. Av. Carapean CIT. Off. Aerospace Res, Brussels, Belgium, 58-EL, chiet bio- get. die, 65463. comdr. WSTisi Aeromed. Res. Lab, Holloman AFB, N.Mex 83-68. 6570ch Rercapace med. res. labs, Wright Patterson AFD, 80-10; GROUP MCR. MED. SERV, UPICHN CO. 70- Flight controller for Pro). Mercury, 58-87; consult, Manned Spacecraft Cir, HASA, 02.1 \u00f8d, several woln. Primates in Med. Karger Series, 64 .; chut. ceof, prev. med. Ohlo Seale Wrav, 89-11. U.S.N. & U.S.C.O, 41-45; Med.C. U.S.A.F. 52-70, Col. AAAS: Am. Med. Asn; fel. Aprenpace Med, Aan; Transplantation Soc: Ink Acad. Avtalion & Space Med: Am. Physiol. Soc; Undersea Med. Soc; fel. Am Int. Chem; Int. Acad. Astronaut. Aerospace medical research, un- wunohematology; use of primates in medical research; pre"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89HWNy44Ee32vO9dR7aUh3HfnPq",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"scientific publication\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088199,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 11,
+   "prompt_tokens": 2372,
+   "total_tokens": 2383,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 67,
+    "engine_ttlt_ms": 126,
+    "pre_inference_ms": 93,
+    "service_tbt_ms": 13,
+    "service_ttft_ms": 540,
+    "service_ttlt_ms": 681,
+    "user_visible_ttft_ms": 446
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930073022-a2a457f0-default-r2-dp0-default"
+  }
+ }
+}

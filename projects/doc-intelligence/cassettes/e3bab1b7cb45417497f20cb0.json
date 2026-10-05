@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B15-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH 356 Industrial Rd, Sri Lanka\nEXPORT INVOICE\nInvoice No .:\nINV-69686\nDate:\n01/09/2026\nSold to:\nWattle & Co Wholesale Pty Ltd.\nPacking List No .:\nPL-38663\nTerms of delivery:\nFOB\nCurrency:\nEUR\nDescription\nHS Code\nQt\u1ef7 Unit price Amount\nBlack pepper, whole\n0904.11\n456 34.9\n15,914.40\nTOTAL EUR: 15,914.40\nCountry of origin: Sri Lanka",
+  "pages": 1,
+  "fields": {}
+ }
+}

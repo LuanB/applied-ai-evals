@@ -1,0 +1,51 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-invoice",
+  "doc": "test-B16-01",
+  "markdown": false,
+  "locale": "en-AU"
+ },
+ "response": {
+  "content": "GOLDEN VALLEY EXPORTS CO. LTD\n275 Industrial Rd, Sweden\nINVOICE\nInvoice No .:\nINV-84536\nDate:\n12/07/2026\nSold to:\nSouthern Cross Imports Pty Ltd\nPacking List No .:\nPL-11896\nTerms of delivery:\nEXW\nCurrency:\nAUD\nDescription\nHS Code\nQty\nUnit price\nAmount\nSawn timber, pine, kil 4407.11\n1375\n14.46\n19,882.50\nTOTAL AUD:\n19,882.50\nCountry of origin: Sweden",
+  "pages": 1,
+  "fields": {
+   "CustomerName": {
+    "value": "Southern Cross Imports Pty Ltd",
+    "confidence": 0.887
+   },
+   "InvoiceDate": {
+    "value": "2026-07-12",
+    "confidence": 0.989
+   },
+   "InvoiceId": {
+    "value": "INV-84536",
+    "confidence": 0.988
+   },
+   "InvoiceTotal": {
+    "value": 19882.5,
+    "confidence": 0.798
+   },
+   "Items": {
+    "value": null,
+    "confidence": null
+   },
+   "PaymentTerm": {
+    "value": "EXW",
+    "confidence": 0.986
+   },
+   "VendorAddress": {
+    "value": "275 Industrial Rd, Sweden",
+    "confidence": 0.906
+   },
+   "VendorAddressRecipient": {
+    "value": "GOLDEN VALLEY EXPORTS CO. LTD",
+    "confidence": 0.89
+   },
+   "VendorName": {
+    "value": "GOLDEN VALLEY EXPORTS CO. LTD",
+    "confidence": 0.89
+   }
+  }
+ }
+}

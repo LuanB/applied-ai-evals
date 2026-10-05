@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B15-02",
+  "markdown": true
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH\n228 Industrial Rd, Sri Lanka\n\n\n# PACKING SPECIFICATION\n\n\n<table>\n<tr>\n<td>Ref No .:</td>\n<td>PL-38663</td>\n</tr>\n<tr>\n<td>Invoice No .:</td>\n<td>INV-69686</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Wattle &amp; Co. Wholesale Pty Ltd</td>\n</tr>\n<tr>\n<td>Container:</td>\n<td>TGHU8859774</td>\n</tr>\n<tr>\n<td>Marks:</td>\n<td>WATTLE/BRISBANE</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<th>Pkgs</th>\n<th>Description</th>\n<th>Net kg</th>\n<th>Gross kg</th>\n</tr>\n<tr>\n<td>456</td>\n<td>Black pepper, whole</td>\n<td>9051.3</td>\n<td>9447,3</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>Total packages:</td>\n<td>456</td>\n</tr>\n<tr>\n<td>Total gross weight (kg):</td>\n<td>9447.3</td>\n</tr>\n<tr>\n<td>Total net weight (kg):</td>\n<td>9051.3</td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

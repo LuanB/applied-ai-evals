@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B01-06",
+  "markdown": false
+ },
+ "response": {
+  "content": "NATIONAL PLANT PROTECTION ORGANIZATION OF TURKEY\nPHYTOSANITARY CERTIFICATE\nNo .:\nPC914013\nName of exporter:\nNordic Pine Sawmills AB\nDeclared consignee:\nSouthern Cross Imports Pty Ltd\nBotanical name of plants:\nPrunus armeniaca\nPlace of origin:\nTurkey\nDeclared means of conveyanceEVER GIVEN II\nPoint of entry:\nSydney\nThe plants or plant products described herein have been inspected and are considered free from quarantine pests of the importing contracting party.",
+  "pages": 1,
+  "fields": {}
+ }
+}

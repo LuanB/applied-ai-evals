@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app4-002] (APP 4, paras 4.5\u20134.9, \u2018Unsolicited\u2019 personal information)\n4.5 All personal information received by an APP entity is either solicited or unsolicited personal information. Section 6(1) defines \u2018solicit\u2019 but does not define \u2018unsolicited\u2019. Therefore, personal information received by an entity that does not fall within the definition of \u2018solicited\u2019 is unsolicited personal information.\n4.6 The term \u2018solicit\u2019 is discussed in Chapter 3 (APP 3), including examples of solicited personal information collected by APP entities. An APP entity solicits personal information if it requests another agency, organisation, individual or small business operator to provide the personal information, or to provide a kind of information in which that personal information is included. A \u2018request\u2019 is an active step taken by an entity to collect information, and may not involve direct communication between the entity and an individual.\n4.7 Applying that definition of \u2018solicit\u2019, unsolicited personal information is personal information that an APP entity receives but has taken no active steps to collect. Examples include:\nmisdirected mail received by an entity\ncorrespondence to Ministers and Government departments from members of the community, or other unsolicited correspondence to an entity\na petition sent to an entity that contains names and addresses\nan employment application sent to an entity on an individual\u2019s own initiative and not in response to an advertised vacancy\na promotional flyer containing personal information, sent to an entity by an individual promoting the individual\u2019s business or services.\n4.8 As a general rule, personal information provided to an APP entity that is additional to the information that has been requested by the entity should be treated as unsolicited personal information. For example, if an individual completes an application form provided by an entity but attaches financial records that have not been requested by the entity, these should be treated as unsolicited personal information. The entity must determine whether it could have collected the personal information under APP 3 (APP 4.1), and deal with the unsolicited personal information as required by either APP 4.3 or 4.4 (see below).\n4.9 In some instances, an APP entity may have difficulty deciding whether personal information it receives falls within the terms of the entity\u2019s request and is therefore solicited personal information. In such circumstances, an entity should focus on the nature of the additional personal information and the connection it has with the entity\u2019s request. Where it is unclear whether the information is solicited or unsolicited personal information, the entity should err on the side of caution and treat the personal information as unsolicited personal information.\n\n[b-035] (B, paras B.145\u2013B.147, Key concepts R to Z > Use)\nB.145 \u2018Use\u2019 is not defined in the Privacy Act. Use is a separate concept from disclosure, which is discussed at paragraphs B.63\u2013B.68. As noted at paragraph B.69, many APP requirements apply to both the \u2018use\u2019 and \u2018disclosure\u2019 of personal information, and in those situations it is not necessary to distinguish both concepts.\nB.146 Generally, an APP entity uses personal information when it handles and manages that information within the entity\u2019s effective control. Examples include:\nthe entity accessing and reading the personal information\nthe entity searching records for the personal information\nthe entity making a decision based on the personal information\nthe entity passing the personal information from one part of the entity to another\nunauthorised access by an employee of the entity. [46]\nB.147 In limited circumstances, providing personal information to a contractor to perform services on behalf of the APP entity may be a use, rather than a disclosure (see paragraph B.63\u2013B.68). This occurs where the entity does not release the subsequent handling of personal information from its effective control. For example, if an entity provides personal information to a cloud service provider for the limited purpose of performing the services of storing and ensuring the entity may access the personal information, this may be a \u2018use\u2019 by the entity in the following circumstances:\na binding contract between the entity and the provider requires the provider only to handle the personal information for these limited purposes\nthe contract requires any subcontractors to agree to the same obligations, and\nthe contract gives the entity effective control of how the information is handled by the provider. Issues to consider include whether the entity retains the right or power to access, change or retrieve the information, who else will be able to access the information and for what purposes, the security measures that will be used for the storage and management of the personal information (see also APP 11.1, Chapter 11) and whether the information can be retrieved or permanently deleted by the entity when no longer required or at the end of the contract. [47]\n\n[b-022] (B, paras B.95\u2013B.99, Health information > Personal information)\nB.95 The following are given as examples of how those considerations may apply to particular items of information:\nMost entities and individuals would encounter difficulty in using a licence plate number to identify the registrant of a car, as they would not have access to the car registration database. By contrast, an agency or individual with access to that database may be able to identify the registrant. Accordingly, the licence plate number may be \u2018personal information\u2019 held by that agency or individual, but may not be personal information if held by another entity.\nInformation that an unnamed person with a certain medical condition lives in a specific postcode area may not enable the individual to be identified, and would not therefore be personal information. By contrast, it may be personal information if held by an entity or individual with specific knowledge that could link an individual to the medical condition and the postcode. [30]\nA common surname that is shared by many people may not be personal information that would reasonably identify a particular individual. However, combined with other information, such as address or other contact information, it may be personal information.\nB.96 Whether a person is \u2018reasonably identifiable\u2019 is an objective test that has practical regard to the context in which the issue arises. Even though it may be technically possible to identify an individual from information, if doing so is so impractical that there is almost no likelihood of it occurring, the information would not generally be regarded as \u2018personal information\u2019. [31] An individual may not be reasonably identifiable if the steps required to do so are excessively time-consuming or costly in all the circumstances.\nB.97 Where it is unclear whether an individual is \u2018reasonably identifiable\u2019, an APP entity should err on the side of caution and treat the information as personal information.\nB.98 The definition of \u2018personal information\u2019 in s 6(1) refers to information or an opinion about an \u2018individual.\u2019 An \u2018individual\u2019 means \u2018a natural person\u2019 (s 6(1)). The ordinary meaning of \u2018natural person\u2019 does not include deceased persons. [32]\nB.99 Information about a deceased person may include information about a living individual and be \u2018personal information\u2019 for the purposes of the Privacy Act. For example, information that a deceased person had an inheritable medical condition may indicate that the deceased person\u2019s descendants have an increased risk of that condition. If the descendants are identifiable, that information would be personal information about the descendants. The privacy interests of family members could therefore be considered when handling information about deceased persons.\n\n[app3-003] (APP 3, paras 3.11, \u2018Solicit\u2019 and \u2018collect\u2019)\nPrivacy tip : If an entity engages a third party to collect personal information, they should make sure the arrangements (such as a contract) cover how personal information will be handled and that the third party is aware of the Privacy Act obligations. This is particularly important if the third party is located offshore as the entity may be held liable for the acts of that third party.\n3.11 Examples of solicited personal information collected by an APP entity include the following, where they are collected for inclusion in a record or generally available publication:\npersonal information provided by an individual in response to a request, direction or order\npersonal information gathered from the internet by the entity, including via automated collection methods such as data scraping, web crawling [8] and third-party tracking pixels\npersonal information about an individual provided by another entity in response to a request, direction, order or arrangement for sharing or transferring information between both entities\npersonal information that is collected and held by an entity momentarily before being destroyed or disclosed to another entity, for example where an entity is collecting personal information through facial recognition technology [9] or where an entity is functioning as a router or hub for a service or system, such as a digital identity exchange\npersonal information purchased from another entity, including from a data broker\npersonal information provided at a business meeting, where it relates to the subject matter of the meeting, including personal information from online professional networking platforms, business cards exchanged at the meeting, and, where the meeting is online, recordings and transcripts, including those generated by systems including AI\npersonal information provided by an individual to an AI chatbot or agent on the entity\u2019s website\na completed form or application submitted by an individual\na complaint letter sent in response to a general invitation on an APP entity\u2019s website to individuals to complain to the entity\nan employment application sent in response to either a job advertisement published by an entity or an expression of interest register maintained by the entity\na form completed to enter a competition being conducted by an entity\n\n[app4-006] (APP 4, paras 4.19\u20134.25, Dealing with unsolicited personal information that could not have been collected)\n4.19 Unsolicited personal information received by an organisation, that could not have been collected under APP 3 must, as soon as practicable, be destroyed or de-identified if it is lawful and reasonable to do so (APP 4.3).\n4.20 After an organisation has decided that the destruction or de-identification is lawful and reasonable, it should destroy or de-identify the personal information as promptly as practicable. In adopting a timetable that is \u2018practicable\u2019 an organisation can take technical and resource considerations into account. However, it is the responsibility of the organisation to be able to justify any delay in destroying or de-identifying the personal information.\n4.21 The term \u2018lawful\u2019 is not defined in the Privacy Act. It is lawful for an organisation to destroy or de-identify unsolicited personal information if it is not unlawful to do so. That is, if the destruction or de-identification is not criminal, illegal or prohibited or proscribed by law. Unlawful activity does not include breach of a contract.\n4.22 Examples of where destruction may not be lawful include:\na legislative provision in an Act or subordinate instrument requires an organisation to retain the personal information for a specified purpose \u2014 for example, for auditing, inspection or reporting purposes\na court, tribunal or body with legal power to issue binding orders, has made an order requiring the personal information to be retained for a specified purpose or period.\n4.23 As those examples illustrate, it is important that each organisation is aware of the legal rules or orders that may prevent it from destroying or de-identifying unsolicited personal information.\n4.24 Whether destruction or de-identification is reasonable is a question of fact in each individual case. It is an objective standard that has regard to how a reasonable person, who is properly informed, would be expected to act in the circumstances. It is the responsibility of the organisation to be able to justify that its conduct was reasonable.\n4.25 Relevant considerations may include:\nthe amount and sensitivity of the personal information\nwhether the personal information is commingled with solicited personal information, and it would be impractical for the organisation to separate the personal information (see paragraph 4.26 below for an example of where it may be practicable to separate solicited and unsolicited personal information)\n\nQuestion: How does the California Consumer Privacy Act define a sale of personal information?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U6WB06h5Z0rfNfqerCcbA9E2ui",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided guidelines do not cover the definition of a sale of personal information under the California Consumer Privacy Act.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089490,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 34,
+   "prompt_tokens": 2610,
+   "total_tokens": 2644,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 194,
+    "engine_ttlt_ms": 373,
+    "pre_inference_ms": 78,
+    "service_tbt_ms": 10,
+    "service_ttft_ms": 909,
+    "service_ttlt_ms": 1238,
+    "user_visible_ttft_ms": 831
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822211338-5b02d512-default-r0-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B14-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# TRANS-PACIFIC CARRIERS\n\n\n# OCEAN BILL OF LADING\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>CMDU92109642</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Anatolia Dried Fruits A.S.</td>\n</tr>\n<tr>\n<td>Consign\u00e9e:</td>\n<td>Kookaburra Home Furnishings Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>MAERSK KOWLOON / 972E</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Colombo</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Sydney</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>OOLU8561634 / SL168221</td>\n</tr>\n</table>\n\n\n1344 PACKAGES SAID TO CONTAIN BLACK PEPPER, WHOLE\nGROSS WEIGHT 18261.5 KGS\nINVOICE INV-90180\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

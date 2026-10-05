@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B16-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "GOLDEN VALLEY EXPORTS CO. LTD 165 Industrial Rd, Sweden\nPACKING SPECIFICATION\nRef No .:\nPL-11896\nInvoice No .:\nINV-84536\nConsignee:\nSouthern Cross Imports Pty Ltd\nContainer:\nMSCU4284394\nMarks:\nSOUTHERN/ FREMANTLE\nPkgs\nDescription\nNet kg Gross kg\n21009.4 22220.8\n1375 Sawn timber, pine, kiln\nTotal packages:\n1375\nTotal gross weight (kg):\n22220.8\nTotal net weight (kg):\n21009.4",
+  "pages": 1,
+  "fields": {}
+ }
+}

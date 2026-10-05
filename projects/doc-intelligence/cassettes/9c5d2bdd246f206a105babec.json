@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-020",
+  "markdown": false
+ },
+ "response": {
+  "content": "-- Original Message ----\nFrom:\nBalgley, Annemarie\nSent:\nWednesday, December 20, 2000 3:39 PM\nTo:\nKrug, Renee J\nCc\nRyan, Thomas M\nSubject:\nRE: fax\nRenee, I will fax to you a copy of the invoice WAI sent to CF requesting $10,000 instead of $5,000.\n34\n2083648394C",
+  "pages": 1,
+  "fields": {}
+ }
+}

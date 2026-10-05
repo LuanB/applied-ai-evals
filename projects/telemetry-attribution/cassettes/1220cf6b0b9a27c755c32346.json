@@ -1,0 +1,269 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You explain movements in software telemetry by attributing them to a commit.\n\nTHE NUMBERS ARE ALREADY COMPUTED AND ARE NOT YOURS TO RECOMPUTE.\nThe finding was produced by a deterministic detector. Treat its numbers as fact. Your\njob is judgement, not arithmetic: given that this movement happened, which commit in\nthe window explains it, and what is the evidence?\n\nMethod:\n- Start with list_commits_in_window. You get subjects and file-change counts.\n- Use describe_commit on the few that plausibly relate. Look at which files changed.\n- Use sample_telemetry_rows only if you need to see the shape of the raw data.\n- Then call submit_answer. You MUST finish by calling submit_answer.\n\nREFUSAL IS A CORRECT ANSWER AND IS EXPECTED SOMETIMES.\nThere is always a commit in a window. That does not mean one of them caused the\nmovement. If no commit plausibly explains it, call submit_answer with refused=true and\ncommits=[]. A confident wrong attribution is worse than an honest refusal, because it\nwill be believed. Check dates: a commit after the movement cannot have caused it.\n\nName at most 3 commits.\n"
+   },
+   {
+    "role": "user",
+    "content": "FINDING step:tool_calls_per_run\n  metric : tool calls per agent run\n  movement: p90 rose from 7 (median of the 5 preceding active days) to 27 on 2026-07-18 \u2014 a 3.9x step.\n  window : 2026-07-15 .. 2026-07-20\n\n26 commits are in this window. Attribute the movement, or refuse."
+   },
+   {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+     {
+      "id": "call_0usAwi4FycAaoFms2ZxDeFUe",
+      "function": {
+       "arguments": "{\"only_touching\":\"tool\"}",
+       "name": "list_commits_in_window"
+      },
+      "type": "function"
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_0usAwi4FycAaoFms2ZxDeFUe",
+    "content": "[{\"sha\": \"0cacdb5\", \"date\": \"2026-07-26\", \"repo\": \"mayah-desktop\", \"subject\": \"alpha-telemetry: one telemetry envelope, agent_run role/provider attribution, drop tier\", \"files_changed\": 15}, {\"sha\": \"6d2b408\", \"date\": \"2026-07-26\", \"repo\": \"mayah\", \"subject\": \"chore: delete the cloud-brain remnants (61 files, ~10.9k lines)\", \"files_changed\": 63}]"
+   },
+   {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+     {
+      "id": "call_9xVX25nmOXKJYpPiOD4BYYXB",
+      "function": {
+       "arguments": "{}",
+       "name": "list_commits_in_window"
+      },
+      "type": "function"
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_9xVX25nmOXKJYpPiOD4BYYXB",
+    "content": "[{\"sha\": \"02662ed\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"bakeoff: per-window latency + real-time gate in the fused report\", \"files_changed\": 2}, {\"sha\": \"6c4e8a2\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"google: map thinkingBudget -> thinkingLevel per model (unblocks 3.6 / 3.5-flash-lite)\", \"files_changed\": 4}, {\"sha\": \"f313dd9\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"pricing: add gemini-3.6-flash + gemini-3.5-flash-lite rows (model-upgrade-2026-07)\", \"files_changed\": 2}, {\"sha\": \"4a5aab7\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"alpha-telemetry: capture_session stamps perceptionMode + inferenceMode (both call sites)\", \"files_changed\": 3}, {\"sha\": \"addc28c\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"RED: capture_session must stamp perceptionMode + inferenceMode (both call sites)\", \"files_changed\": 2}, {\"sha\": \"6cb52e8\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"fix: attendee-roster seeding must not cache an empty roster (early capture start)\", \"files_changed\": 1}, {\"sha\": \"71fff2c\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"RED: attendee-roster seeding must not cache an empty roster (early capture start)\", \"files_changed\": 2}, {\"sha\": \"7d1486e\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"alpha-telemetry: card_event.surface \\u2014 sanitizer whitelist for live vs review\", \"files_changed\": 1}, {\"sha\": \"f15449e\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"alpha-telemetry: RED for card_event.surface (live vs review sightings)\", \"files_changed\": 2}, {\"sha\": \"f1fe97e\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"alpha-telemetry S7c/G11: per-window ASR channel-health stamp + telemetry off the live path\", \"files_changed\": 5}, {\"sha\": \"1a4bdc5\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"alpha-telemetry: RED for per-window ASR channel-health stamp (G11)\", \"files_changed\": 2}, {\"sha\": \"98ecd00\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"S6.5 (alpha-telemetry): fix the two joinability defects + de-bias the value metric\", \"files_changed\": 7}, {\"sha\": \"b2ad272\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"S6: offline scorers (spoke-it-aloud, chat-missed-detect, calendar diff)\", \"files_changed\": 8}, {\"sha\": \"6aabb5f\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"alpha-telemetry S5 (G3): detect negatives \\u2014 reason taxonomy + skeleton event\", \"files_changed\": 7}, {\"sha\": \"e91cfa0\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"S4 (alpha-telemetry G4): interactions dump \\u2014 the content twin + unified question corpus\", \"files_changed\": 11}, {\"sha\": \"7be66a8\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"alpha-telemetry S3: label event kinds + sanitizer + smoke verifier\", \"files_changed\": 3}, {\"sha\": \"986b476\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"alpha-telemetry S2: renderer UX events \\u2014 bridge + kinds + main-side sanitizer\", \"files_changed\": 4}, {\"sha\": \"52a5e8b\", \"date\": \"2026-07-25\", \"repo\": \"mayah-desktop\", \"subject\": \"S1 alpha-telemetry: trace threading + version stamps (bundles in-tree workstream WIP)\", \"files_changed\": 29}, {\"sha\": \"0cacdb5\", \"date\": \"2026-07-26\", \"repo\": \"mayah-desktop\", \"subject\": \"alpha-telemetry: one telemetry envelope, agent_run role/provider attribution, drop tier\", \"files_changed\": 15}, {\"sha\": \"a119a87\", \"date\": \"2026-07-26\", \"repo\": \"mayah-desktop\", \"subject\": \"RED: telemetry envelope at all three construction sites + agent_run role attribution\", \"files_changed\": 3}, {\"sha\": \"2105175\", \"date\": \"2026-07-26\", \"repo\": \"mayah-desktop\", \"subject\": \"fix(tests): repair 11 stale pins left red by the registry flattening\", \"files_changed\": 3}, {\"sha\": \"18fd599\", \"date\": \"2026-07-26\", \"repo\": \"mayah-desktop\", \"subject\": \"registry: chat is a PAID surface, not vestigial -- tier it accordingly; decouple enrichment env\", \"files_changed\": 4}, {\"sha\": \"1353a79\", \"date\": \"2026-07-26\", \"repo\": \"mayah-desktop\", \"subject\": \"registry: enrichment runs the FLAGSHIP model in both tiers\", \"files_changed\": 3}, {\"sha\": \"6d2b408\", \"date\": \"2026-07-26\", \"repo\": \"mayah\", \"subject\": \"chore: delete the cloud-brain remnants (61 files, ~10.9k lines)\", \"files_changed\": 63}, {\"sha\": \"4d467a7\", \"date\": \"2026-07-29\", \"repo\": \"mayah-desktop\", \"subject\": \"fix(asr): keep fused perception when a window has no meetingId\", \"files_changed\": 2}, {\"sha\": \"cd04261\", \"date\": \"2026-07-30\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(corpus): bake-off recorder default ON (temporary \\u2014 remove at production)\", \"files_changed\": 6}]"
+   }
+  ],
+  "temperature": 0.0,
+  "tools": [
+   {
+    "type": "function",
+    "function": {
+     "name": "list_commits_in_window",
+     "description": "Commits in the finding's window: sha, date, subject, files_changed.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "only_touching": {
+        "type": "string",
+        "description": "Optional path substring filter, e.g. 'telemetry'."
+       }
+      }
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "describe_commit",
+     "description": "One commit in detail: subject, file count, and the file list (truncated).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "sha": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "sha"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "sample_telemetry_rows",
+     "description": "A few raw telemetry rows of a given kind on a given day (YYYY-MM-DD).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "kind": {
+        "type": "string"
+       },
+       "day": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "kind",
+       "day"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "submit_answer",
+     "description": "Terminal. Submit the attribution, or refuse.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "commits": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "description": "Short SHAs. Empty if refusing."
+       },
+       "refused": {
+        "type": "boolean"
+       },
+       "rationale": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "commits",
+       "refused",
+       "rationale"
+      ]
+     }
+    }
+   }
+  ],
+  "_salt": "trial0"
+ },
+ "response": {
+  "id": "chatcmpl-EV7p2qx1X0lmp2BMMqb2NugAbmQTJ",
+  "choices": [
+   {
+    "finish_reason": "tool_calls",
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "annotations": [],
+     "tool_calls": [
+      {
+       "id": "call_yFcwcqpp3BROyfhl0JpCm3Uf",
+       "function": {
+        "arguments": "{\"sha\": \"52a5e8b\"}",
+        "name": "describe_commit"
+       },
+       "type": "function"
+      },
+      {
+       "id": "call_9ce2zjchpEvmUYCf5wI0z2By",
+       "function": {
+        "arguments": "{\"sha\": \"0cacdb5\"}",
+        "name": "describe_commit"
+       },
+       "type": "function"
+      },
+      {
+       "id": "call_POtbaIYNW0lHLucr9I8HTvUs",
+       "function": {
+        "arguments": "{\"sha\": \"a119a87\"}",
+        "name": "describe_commit"
+       },
+       "type": "function"
+      }
+     ]
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791086944,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 69,
+   "prompt_tokens": 2257,
+   "total_tokens": 2326,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 55,
+    "engine_ttlt_ms": 545,
+    "pre_inference_ms": 85,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 453,
+    "service_ttlt_ms": 929,
+    "user_visible_ttft_ms": 369
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044429-7adf8486-default-r1-dp0-default"
+  }
+ }
+}

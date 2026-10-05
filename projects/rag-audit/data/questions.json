@@ -1,0 +1,489 @@
+[
+ {
+  "id": "q01",
+  "q": "What annual turnover generally makes a business a small business operator that the Privacy Act does not cover?",
+  "facts": [
+   "3 million|3,000,000|$3m|3m"
+  ],
+  "evidence": {
+   "phrase": "3,000,000"
+  }
+ },
+ {
+  "id": "q02",
+  "q": "Can a customer agree to let a company use their Medicare number as the company's own customer ID?",
+  "facts": [
+   "cannot consent|can not consent|can't consent|cannot agree|not able to consent|unable to consent|consent is not|consent does not|cannot give consent"
+  ],
+  "evidence": {
+   "phrase": "cannot consent to the adoption"
+  }
+ },
+ {
+  "id": "q03",
+  "q": "How long does a federal government agency have to respond to a request to correct someone's personal information?",
+  "facts": [
+   "30"
+  ],
+  "evidence": {
+   "phrase": "within 30 calendar days",
+   "chapter": "APP 13"
+  }
+ },
+ {
+  "id": "q04",
+  "q": "What deadline applies to a private-sector organisation responding to a correction request?",
+  "facts": [
+   "reasonable period"
+  ],
+  "evidence": {
+   "phrase": "organisation must respond within a reasonable period",
+   "chapter": "APP 13"
+  }
+ },
+ {
+  "id": "q05",
+  "q": "At which two moments must an entity take reasonable steps to make sure the personal information is accurate and up to date?",
+  "facts": [
+   "collect",
+   "use|disclos"
+  ],
+  "evidence": {
+   "phrase": "two distinct points"
+  }
+ },
+ {
+  "id": "q06",
+  "q": "If a company cannot permanently erase personal data held electronically, what is it expected to do instead?",
+  "facts": [
+   "beyond use"
+  ],
+  "evidence": {
+   "phrase": "beyond use"
+  }
+ },
+ {
+  "id": "q07",
+  "q": "What are the four key elements of valid consent under the privacy guidelines?",
+  "facts": [
+   "inform",
+   "voluntar",
+   "current",
+   "capacity"
+  ],
+  "evidence": {
+   "phrase": "four key elements of consent"
+  }
+ },
+ {
+  "id": "q08",
+  "q": "If a company outsources storage of customer records to a third-party provider but can still access and amend them, does it still hold that information?",
+  "facts": [
+   "right or power|retains the right|effective control|possession or control|still holds|does hold|it holds"
+  ],
+  "evidence": {
+   "phrase": "right or power to deal with"
+  }
+ },
+ {
+  "id": "q09",
+  "q": "Can a carer tell an unconscious patient's family about the patient's condition?",
+  "facts": [
+   "compassionate"
+  ],
+  "evidence": {
+   "phrase": "compassionate reasons"
+  }
+ },
+ {
+  "id": "q10",
+  "q": "Does an organisation need consent to use someone's sensitive information for direct marketing if it already has a relationship with that person?",
+  "facts": [
+   "consent",
+   "even|regardless|pre-existing|existing relationship|still"
+  ],
+  "evidence": {
+   "phrase": "pre-existing relationship",
+   "chapter": "APP 7"
+  }
+ },
+ {
+  "id": "q11",
+  "q": "What must a written notice refusing someone access to their personal information include?",
+  "facts": [
+   "reason",
+   "complain"
+  ],
+  "evidence": {
+   "phrase": "complaint mechanisms available",
+   "chapter": "APP 12"
+  }
+ },
+ {
+  "id": "q12",
+  "q": "When does an entity have to notify someone about the collection of their personal information?",
+  "facts": [
+   "at or before",
+   "as soon as practicable"
+  ],
+  "evidence": {
+   "phrase": "at or before the time",
+   "chapter": "APP 5"
+  }
+ },
+ {
+  "id": "q13",
+  "q": "Would gathering personal information by hacking into a computer count as collecting by lawful means?",
+  "facts": [
+   "not lawful|unlawful|would not be lawful|not be lawful|isn't lawful|is not lawful"
+  ],
+  "evidence": {
+   "phrase": "computer hacking"
+  }
+ },
+ {
+  "id": "q14",
+  "q": "How many permitted general situations does section 16A list, and how many apply only to agencies?",
+  "facts": [
+   "seven|7",
+   "two|2"
+  ],
+  "evidence": {
+   "phrase": "seven permitted general situations"
+  }
+ },
+ {
+  "id": "q15",
+  "q": "Can a company collect non-sensitive personal information from a related company in its corporate group without meeting the usual APP 3 collection requirements?",
+  "facts": [
+   "13b|without satisfying|without meeting|does not need to|doesn't need to|not required|need not|can collect|may collect"
+  ],
+  "evidence": {
+   "phrase": "related body corporate without satisfying"
+  }
+ },
+ {
+  "id": "q16",
+  "q": "What are the two situations in which a person may not have the option to deal with an entity anonymously or under a pseudonym?",
+  "facts": [
+   "law|court",
+   "impracticable"
+  ],
+  "evidence": {
+   "phrase": "impracticable for the APP entity to deal with individuals who have not identified"
+  }
+ },
+ {
+  "id": "q17",
+  "q": "Why do the privacy principles restrict private organisations from adopting government identifiers like tax file or Medicare numbers?",
+  "facts": [
+   "universal identifier"
+  ],
+  "evidence": {
+   "phrase": "do not become universal identifiers"
+  }
+ },
+ {
+  "id": "q18",
+  "q": "Are healthcare providers allowed to use their patients' individual healthcare identifiers as their own way of identifying patients?",
+  "facts": [
+   "authorised|permitted|allowed|yes|can"
+  ],
+  "evidence": {
+   "phrase": "individual healthcare identifiers of their patients"
+  }
+ },
+ {
+  "id": "q19",
+  "q": "If personal information given to an overseas contractor counts as a use rather than a disclosure, can the Australian entity be in breach if the contractor mishandles it?",
+  "facts": [
+   "hold|effective control"
+  ],
+  "evidence": {
+   "phrase": "mishandled while in the overseas contractor"
+  }
+ },
+ {
+  "id": "q20",
+  "q": "What counts as unauthorised modification of personal information?",
+  "facts": [
+   "alter"
+  ],
+  "evidence": {
+   "phrase": "Unauthorised modification",
+   "chapter": "APP 11"
+  }
+ },
+ {
+  "id": "q21",
+  "q": "What circumstances affect which reasonable steps an entity should take to ensure the quality of personal information?",
+  "facts": [
+   "sensitiv",
+   "adverse",
+   "practicab|cost"
+  ],
+  "evidence": {
+   "phrase": "possible adverse consequences for an individual if the quality"
+  }
+ },
+ {
+  "id": "q22",
+  "q": "Is a record about a past event automatically out of date?",
+  "facts": [
+   "purpose"
+  ],
+  "evidence": {
+   "phrase": "overtaken by a later development"
+  }
+ },
+ {
+  "id": "q23",
+  "q": "What kind of test is the 'reasonably expect' test for direct marketing?",
+  "facts": [
+   "objective",
+   "reasonable person"
+  ],
+  "evidence": {
+   "phrase": "objective test",
+   "chapter": "APP 7"
+  }
+ },
+ {
+  "id": "q24",
+  "q": "Under what conditions can an organisation use health information for public health research without the person's consent?",
+  "facts": [
+   "impracticable",
+   "95a|guidelines"
+  ],
+  "evidence": {
+   "phrase": "approved under s 95A"
+  }
+ },
+ {
+  "id": "q25",
+  "q": "How long does an organisation generally have to stop sending direct marketing after a person asks it to stop?",
+  "facts": [
+   "30 days|thirty days|30 calendar days"
+  ],
+  "evidence": {
+   "phrase": "no more than 30 days",
+   "chapter": "APP 7"
+  },
+  "note": "First draft pointed at 7.47 ('would generally be 30 days'), which is about notifying the SOURCE of information, not opt-outs. The evidence check caught it; opt-out is 7.37/7.41."
+ },
+ {
+  "id": "q26",
+  "q": "How quickly must a federal agency respond to a request for access to personal information?",
+  "facts": [
+   "30"
+  ],
+  "evidence": {
+   "phrase": "30 calendar days",
+   "chapter": "APP 12"
+  }
+ },
+ {
+  "id": "q27",
+  "q": "Can an organisation charge a person for giving them access to their personal information?",
+  "facts": [
+   "excessive"
+  ],
+  "evidence": {
+   "phrase": "excessive",
+   "chapter": "APP 12"
+  }
+ },
+ {
+  "id": "q28",
+  "q": "Does an entity have to make its privacy policy available for free?",
+  "facts": [
+   "free"
+  ],
+  "evidence": {
+   "phrase": "free of charge",
+   "chapter": "APP 1"
+  }
+ },
+ {
+  "id": "q29",
+  "q": "What must an organisation do with personal information it no longer needs for any purpose?",
+  "facts": [
+   "destroy",
+   "de-identif|deidentif"
+  ],
+  "evidence": {
+   "phrase": "no longer needs",
+   "chapter": "APP 11"
+  }
+ },
+ {
+  "id": "q30",
+  "q": "What must an organisation provide so people can ask not to receive direct marketing?",
+  "facts": [
+   "simple"
+  ],
+  "evidence": {
+   "phrase": "simple means",
+   "chapter": "APP 7"
+  }
+ },
+ {
+  "id": "q31",
+  "q": "If someone asks where a company got their details for a marketing message, does the company have to tell them?",
+  "facts": [
+   "source"
+  ],
+  "evidence": {
+   "phrase": "its source",
+   "chapter": "APP 7"
+  }
+ },
+ {
+  "id": "q32",
+  "q": "Which section makes an Australian entity accountable for what an overseas recipient does with personal information it disclosed?",
+  "facts": [
+   "16c"
+  ],
+  "evidence": {
+   "phrase": "16C",
+   "chapter": "APP 8"
+  }
+ },
+ {
+  "id": "q33",
+  "q": "When can an entity disclose personal information overseas without taking reasonable steps to ensure the recipient complies with the APPs, because of the recipient's own legal regime?",
+  "facts": [
+   "substantially similar"
+  ],
+  "evidence": {
+   "phrase": "substantially similar",
+   "chapter": "APP 8"
+  }
+ },
+ {
+  "id": "q34",
+  "q": "Generally, what extra requirement applies before an entity collects sensitive information, compared with ordinary personal information?",
+  "facts": [
+   "consent"
+  ],
+  "evidence": {
+   "phrase": "sensitive information if the individual consents|additional requirement of consent"
+  },
+  "note": "Gold set was too narrow on first run: app3-012 ('APP 3.3 imposes an additional requirement of consent') supports the answer but did not contain the original phrase. Widened after reading the failure; rescored from cassettes."
+ },
+ {
+  "id": "q35",
+  "q": "For a secondary use of sensitive information based on reasonable expectation, how closely must it relate to the primary purpose?",
+  "facts": [
+   "directly related"
+  ],
+  "evidence": {
+   "phrase": "directly related to the primary purpose",
+   "chapter": "APP 6"
+  }
+ },
+ {
+  "id": "q36",
+  "q": "Does a privacy policy have to say whether the entity is likely to send personal information overseas?",
+  "facts": [
+   "overseas"
+  ],
+  "evidence": {
+   "phrase": "overseas recipients",
+   "chapter": "APP 1"
+  }
+ },
+ {
+  "id": "q37",
+  "q": "Do biometric templates count as sensitive information?",
+  "facts": [
+   "yes|are sensitive|is sensitive|count as sensitive|included|includes|considered sensitive|form of sensitive"
+  ],
+  "evidence": {
+   "phrase": "biometric templates"
+  }
+ },
+ {
+  "id": "q38",
+  "q": "When is personal information considered de-identified?",
+  "facts": [
+   "no longer about an identifiable individual|no longer about an identifiable|not reasonably identifiable|no longer identifiable|reasonably identifiable"
+  ],
+  "evidence": {
+   "phrase": "no longer about an identifiable individual"
+  }
+ },
+ {
+  "id": "q39",
+  "q": "Can an organisation refuse an access request that is frivolous or vexatious?",
+  "facts": [
+   "frivolous"
+  ],
+  "evidence": {
+   "phrase": "frivolous or vexatious",
+   "chapter": "APP 12"
+  }
+ },
+ {
+  "id": "q40",
+  "q": "If an entity refuses to correct a record, what can the person ask the entity to attach to the record?",
+  "facts": [
+   "statement"
+  ],
+  "evidence": {
+   "phrase": "associate a statement",
+   "chapter": "APP 13"
+  }
+ },
+ {
+  "id": "x01",
+  "q": "How many days does a business have to assess a suspected eligible data breach before notifying the OAIC?",
+  "ooc": true
+ },
+ {
+  "id": "x02",
+  "q": "What is the maximum fine under the EU General Data Protection Regulation?",
+  "ooc": true
+ },
+ {
+  "id": "x03",
+  "q": "How does the California Consumer Privacy Act define a sale of personal information?",
+  "ooc": true
+ },
+ {
+  "id": "x04",
+  "q": "Under the Spam Act, how many working days does a business have to action an unsubscribe request?",
+  "ooc": true
+ },
+ {
+  "id": "x05",
+  "q": "What does the Children's Online Privacy Code require of social media platforms?",
+  "ooc": true,
+  "note": "The corpus mentions the Online Safety Act's under-16 rule (3.40) but not the Children's Online Privacy Code. bm25/hybrid RAG merged the two and cited app3-013: a grounded-looking wrong answer."
+ },
+ {
+  "id": "x06",
+  "q": "What must a plaintiff prove to succeed under the statutory tort for serious invasions of privacy?",
+  "ooc": true
+ },
+ {
+  "id": "x07",
+  "q": "What is the maximum civil penalty for a serious interference with privacy under the Privacy Act?",
+  "ooc": true
+ },
+ {
+  "id": "x08",
+  "q": "How long must telecommunications providers retain customer metadata under the data retention scheme?",
+  "ooc": true
+ },
+ {
+  "id": "x09",
+  "q": "What time limits apply to credit reporting bodies correcting credit information under Part IIIA?",
+  "ooc": true
+ },
+ {
+  "id": "x10",
+  "q": "How long must an employer keep employee records under the Fair Work Act?",
+  "ooc": true
+ }
+]

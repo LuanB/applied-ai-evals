@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app6-017] (APP 6, paras 6.47\u20136.51, Using or disclosing personal information for a secondary purpose > Using or disc)\n6.47 An organisation may use or disclose personal information if a \u2018permitted health situation\u2019 exists in relation to the use or disclosure (APP 6.2(d)). This exception applies only to organisations, and not to agencies.\n6.48 Section 16B lists three permitted health situations that relate to the use or disclosure of health information or genetic information by an organisation. The three situations are set out below, and are discussed in Chapter D (Permitted health situations), including the meaning of relevant terms.\n6.49 An organisation may use or disclose health information about an individual for a secondary purpose if the use or disclosure is necessary for research, or the compilation or analysis of statistics, relevant to public health or public safety, and:\nit is impracticable to obtain the individual\u2019s consent to the use or disclosure\nthe use or disclosure is conducted in accordance with guidelines approved under s 95A, [18] and\nin the case of disclosure, the organisation reasonably believes that the recipient of the information will not disclose the information, or personal information derived from that information (s 16B(3)).\n6.50 An example of where this permitted health situation might apply is where an organisation discloses health information to a researcher who is conducting public health research in circumstances where the age of the information makes it impracticable to obtain consent. The disclosing organisation should have a written agreement with the researcher which requires the researcher not to disclose the health information, or any personal information that is derived from that health information. The disclosure must be carried out in accordance with guidelines approved under s 95A.\n6.51 An organisation may use or disclose genetic information about an individual for a secondary purpose if:\nthe organisation has obtained the information in the course of providing a health service to the individual\nthe organisation reasonably believes that the use or disclosure is necessary to lessen or prevent a serious threat to the life, health or safety of another individual who is a genetic relative of the individual\nthe use or disclosure is conducted in accordance with guidelines approved under s 95AA, [19] and\nin the case of disclosure, the recipient of the information is a genetic relative of the individual (s 16B(4)).\n\n[app3-017] (APP 3, paras 3.62\u20133.67, Collecting sensitive information > Collecting sensitive information where a perm)\n3.62 An organisation may collect sensitive information if a \u2018permitted health situation\u2019 exists in relation to the collection (APP 3.4(c)). This exception applies only to organisations, and not to agencies.\n3.63 Section 16B lists two permitted health situations that relate to the collection of health information by an organisation. The two situations are set out below, and are discussed in Chapter D (Permitted health situations), including the meaning of relevant terms.\n3.64 An organisation may collect health information about an individual if the health information is necessary to provide a health service to the individual, and either:\nthe collection is required or authorised by or under an Australian law (other than the Privacy Act), or\nthe health information is collected in accordance with rules established by competent health or medical bodies that deal with obligations of professional confidentiality which bind the organisation (s 16B(1)).\n3.65 An example of where this permitted health situation might apply is where a participant in the My Health Record system collects health information included in a consumer\u2019s My Health Record as authorised by the My Health Records Act 2012. [33]\n3.66 \u2018Health information\u2019 is defined in s 6(1) and discussed in more detail in Chapter B (Key concepts).\n3.67 An organisation may collect health information about an individual if the collection is necessary for research relevant to public health or public safety, the compilation or analysis of statistics relevant to public health or public safety, or the management, funding or monitoring of a health service, and:\nthe particular purpose cannot be served by collecting de-identified information\nit is impracticable to obtain the individual\u2019s consent, and\nthe collection is either: required by or under an Australian law (other than the Privacy Act) in accordance with rules established by competent health or medical bodies that deal with obligations of professional confidentiality which bind the organisation, or in accordance with guidelines approved under s 95A (s 16B(2)). [34]\nrequired by or under an Australian law (other than the Privacy Act)\nin accordance with rules established by competent health or medical bodies that deal with obligations of professional confidentiality which bind the organisation, or\n\n[app6-023] (APP 6, paras 6.71\u20136.74, De-identifying certain health information before disclosure)\n6.71 APP 6.4 applies where an organisation collects health information under an exception to APP 3 in s 16B(2). Section 16B(2) outlines the permitted health situation that allows an organisation to collect health information about an individual if the collection is necessary for research relevant to public health or safety, the compilation or analysis of statistics relevant to public health or public safety, or the management, funding or monitoring of a health service and certain other criteria are satisfied (see Chapter D (Permitted health situations)).\n6.72 In these circumstances, APP 6.4 requires the organisation to take reasonable steps to ensure that the information is de-identified, before it discloses the information in accordance with APPs 6.1 or 6.2.\n6.73 Personal information is de\u2011identified \u2018if the information is no longer about an identifiable individual or an individual who is reasonably identifiable\u2019 (s 6(1)). De\u2011identification is discussed in more detail in Chapter B (Key concepts). [22]\n6.74 The reasonable steps that an organisation should take will depend upon circumstances that include:\nthe possible adverse consequences for an individual if their health information is not de-identified before it is disclosed. More rigorous steps may be required as the risk of adversity increases\nthe practicability, including time and cost involved. However, an organisation is not excused from taking particular steps to de-identify health information by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take a particular step will depend on whether the burden is excessive in all the circumstances.\n\n[app8-018] (APP 8, paras 8.42\u20138.43, Exception 5 \u2014 Disclosing personal information to an overseas recipient where a p)\n8.42 An APP entity may disclose personal information to an overseas recipient without complying with APP 8.1 where:\nit is unreasonable or impracticable to obtain the individual\u2019s consent to the disclosure, and\nthe entity reasonably believes the disclosure is necessary to lessen or prevent a serious threat to the life, health or safety of any individual, or to public health or safety (s 16A(1), Item 1)\n8.43 For example, this permitted general situation might apply where an APP entity discloses the personal information of an individual to a foreign authority, based on a reasonable belief that this disclosure will lessen a serious threat to the health or safety of that individual\u2019s children, but seeking the individual\u2019s consent may increase the threat.\n\n[app3-018] (APP 3, paras 3.68\u20133.69, Collecting sensitive information > Collecting sensitive information where a perm)\nin accordance with guidelines approved under s 95A (s 16B(2)). [34]\n3.68 An example of where this permitted health situation might apply is an organisation conducting longitudinal research into heart disease and requiring health information about a large number of individuals from different data sources for research linkage. In this case, the collection must be required by an Australian law or carried out in accordance with the rules or guidelines referred to in s 16B(2).\n3.69 \u2018Health information\u2019 is defined in s 6(1) and discussed in more detail in Chapter B (Key concepts).\n\nQuestion: Under what conditions can an organisation use health information for public health research without the person's consent?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SjsCDaF9oXTjqB6PEeO4oNBSYx",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"An organisation may use or disclose health information for public health research without the individual's consent if it is impracticable to obtain consent, the use or disclosure is necessary for research relevant to public health or safety, it is conducted in accordance with guidelines approved under s 95A, and the organisation reasonably believes the recipient will not further disclose the information. Additionally, the use or disclosure must comply with the permitted health situations outlined in s 16B.\",\"citations\":[\"app6-017\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089405,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 107,
+   "prompt_tokens": 1854,
+   "total_tokens": 1961,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 89,
+    "engine_ttlt_ms": 821,
+    "pre_inference_ms": 84,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 703,
+    "service_ttlt_ms": 1420,
+    "user_visible_ttft_ms": 619
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102744-c1ac330c-default-r2-dp0-default"
+  }
+ }
+}

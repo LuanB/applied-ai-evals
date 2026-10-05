@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-056",
+  "markdown": false
+ },
+ "response": {
+  "content": "MA 8 MICROBIOLOGICAL ASSOCIATES, INC.\n88179659",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-039",
+  "markdown": false
+ },
+ "response": {
+  "content": "....\n10-19-98\nGentlemen:\nSeveral months ago, I received 2 packs of Smokeis Option cigarettes in the mail. I've finally decided to quit smoking and am finding your product very helpful . Could you please advise me where I can find this product . Thank you . Sincerely , Emma Rowland\nMrs. Emma Rowland 348 N. Old Bethalto Rd Bethalto, IL 62010-1004\n52447 3696",
+  "pages": 1,
+  "fields": {}
+ }
+}

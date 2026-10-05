@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B04-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "PESTGUARD FUMIGATION SERVICES\nCertificate No .:\nPC775722\nFumigant:\nSulfuryl fluoride\nDosage rate:\n1500 g-h/m3\nExposure period (hrs):\n24\nDate of fumigation:\n27/08/2026\nContainer No .:\nCMAU1353139\nCommodity:\nFresh oranges, navel\nConsignment link:\nB/L MAEU58615632",
+  "pages": 1,
+  "fields": {}
+ }
+}

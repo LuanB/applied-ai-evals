@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-019",
+  "markdown": false
+ },
+ "response": {
+  "content": "copy\nTP WORKSHEET\nPage-1\nDATE OF ANALYSIS: 3-23-94\nTIME OF ANALYSIS: 0110 TECH:\nSAMPLE DATE\nSAMPLE ID\nABS. AT 650 nm\nTP CONCN SAMPLE FROM CURVE DILUTION mg/L as P\nTP Reportablo CONCN mg/L as P\n3-23-94\n0.050 mg/L as P Std\n10.080\n-\n0.100 mg/L as P Std\n0.300 mg/L as P Std\n0.120\n-\nV\n0.600 mg/L as P Std\n0.239\n3 23-14\n0.250 mg/L as P Control\n0.098. 0.243 Confidential\n0.243\n3-22-14\nFinal Effluent 24 hr. Comp.\n0, 167 : 0,41 philip Morris v.ABO\n1500\n1045\n3-22-94\nFinal Effluent 24 hr. Comp.\n0,169 0420\n200/500\n21.04 1050\n3-23-94\nFinal Effluent 24 hr. Comp. 0.20 ppm Spiked\n0.254 : 0.634\nRileted To 200/500 Them spiked\n1\n3-23-94\nBLANK\nAuto Zero\n-\n3-23-94\n0.600 mg/L as P Std\nAuto Conc.\n15/50\n1.09\nPri. Eff. 24 hr. Comp.\n0.223\n0.5/50\n22,3\nL-1 Inf. 24 hr. Comp.\n0.370\n0.3/50\n61.7\nL-2 Inf. 24 hr. Comp.\n0.280\n0.3/50\n46.7\nV\nL-3 Inf. 24 hr. Comp.\n0.201\n0.5/50\n20.1\n% R = 100\n( Xs - Xu ) / K\n=\n(0.634-0.417)=0,20\nXs = 0.634\n-\n108.5 %\nX 4: 0.419199.6:100=\n0.417\nK= 0.400 mlx 50mg /L\nFile name: AATPSpWS.wkl\n100 ml\n2030140884\n= 0.200 mg/L\n-\nBLANK\nAuto Zero\n0.040\n-\nJ-22-94\nSec. Eff. 24 hr. Comp.\n0,327\n110",
+  "pages": 1,
+  "fields": {}
+ }
+}

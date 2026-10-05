@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nAs of 3/17/95 INVOICE APPROVAL SHEET\nOPERATING COMPANY: PHILIP MORRIS MANAGEMENT CORP. BUSINESS ENTITY: WORLDWIDE REGULATORY AFFAIRS (9-060-612-00-301- 1\nFIRM: Wachtell, Lipton, Rosen & Katz\nINVOICE DATE: March 29, 1995\nINVOICE NUMBER:\nDATE OF SERVICE: February 1995 TO\nINVOICE TOTAL: $774,903.65\nMatter ID Matter Name\nFees Disbursements\nDiscount\n$668,077.25 $237,325.99\n$130,499.59 10%\n21142\nPMMC ABC Litigation\n21220\nPMMC Advertising issues\n21143\nPMMC Congressional Hearings\n20450\nPMMC Dept. of Justice CID\n22087\nPMMC DOJ Criminal Investig.\n20152\nPMMC EPA\n20151 PMMC ETS\n20644 PMMC ETS Coalition\n21223\nPMMC ETS International\n21965\nPMMC Federal Osha\n20857\nPMMC FDA/Nicotine\n21224 PMMC Fire Safety\n21219\nPMMC FTC Issues\n21222\nPMMC ingredients\n21272\nPMMC General\nNEW MATTER:\nMatter ID Matter Name\nS. Parrish\nC. Wall\nD. Keane\nM. Firestone\nA. Reiman\nA. Andrade\nR. Whidden M. Bring\n2076999608\nPLEASE RETURN TO HELEN FRUSTACE FOR PROCESSING.\nIf you want invoices tracked in more detail, please indicate new matters above. Updated cover sheets will be sent periodically."
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV892L1vOGtBN3XDCpN1WjeemoKb6",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"invoice\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088184,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 546,
+   "total_tokens": 555,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 27,
+    "engine_ttlt_ms": 94,
+    "pre_inference_ms": 90,
+    "service_tbt_ms": 16,
+    "service_ttft_ms": 757,
+    "service_ttlt_ms": 898,
+    "user_visible_ttft_ms": 666
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822214445-53f1f986-default-r1-dp0-default"
+  }
+ }
+}

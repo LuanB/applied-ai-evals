@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B05-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB 168 Industrial Rd. Turkey\nCOMMERCIAL INVOICE\nInvoice No .:\nINV-33924\nDate:\n08/08/2026\nSold to: Harbourside Fresh Pty Ltd\nPacking List No .:\nPL-41670\nTerms of delivery: CFR\nCurrency:\nEUR\nDescription\nHS Code\nQty\nUnit price Amount\nDried apricots\n0813.10\n13.02\n27.09\n35,271.18\nTOTAL EUR: 35,271.18\nCountry of origin: Turkey",
+  "pages": 1,
+  "fields": {}
+ }
+}

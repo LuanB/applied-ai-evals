@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-017",
+  "markdown": false
+ },
+ "response": {
+  "content": "PUBLICATION VERIFICATION\nI am the Senior Vice President of Johnson Publishing Co. Inc.\nI certify that EBONY (title of publication) is not directed primarily to those under 21 years of age.\n-\nSignature\nJeff Burns, Jr.\nName (please print)\nSenior Vice President\nTitle\nMay 25, 1999\nDate\n2084093295\nMAR 11 '99 02:32PM PM MEDIA DEPT\nP.4",
+  "pages": 1,
+  "fields": {}
+ }
+}

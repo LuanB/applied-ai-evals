@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-152",
+  "markdown": false
+ },
+ "response": {
+  "content": "N.Y.O. 625\nTO\nMEMORANDUM The American Tobacco Company\nMr. E. S. Harlow, Managing Director\nDATE January 30, 1969 Research and Development\nFROM J. B. MoCarthy Vice President - Manufacture and Leaf SUBJECT\nAttached is a copy of a letter directed to Mr. J. H. Hager by Mr. W. D. K. Wilson of Gallaher regarding the four samples of cigarettes we sent them for paneling. These of course were the original samples of SILVA THINS for Canada.\nPerhaps this information may be of some value to you in putting together future experimental models.\nY\nAttachment\ncc: Mr. J. H. Hager --\nYour original letter is returned herewith. A copy has been retained for my files.",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,3017 @@
+{
+ "suite": "review",
+ "headline": "auto_accept_precision",
+ "mode": "replay",
+ "generated": "2026-10-04T15:35:00",
+ "gate": {
+  "passed": true,
+  "reasons": [
+   "ok   two-reader: auto_accept_precision 0.998 beats best baseline 0.979 (margin 0.01)",
+   "ok   two-reader: review_rate 0.043 <= 0.1"
+  ]
+ },
+ "runs": [
+  {
+   "system": "accept-all(llm-vision)",
+   "is_baseline": true,
+   "results": [
+    {
+     "case_id": "test-B00-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000875,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000871,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.00087,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "flagged []; auto-accepted wrong ['certificate_number']",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 4,
+      "flagged": 0,
+      "missed": [
+       "certificate_number"
+      ],
+      "total": 5
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-05",
+     "passed": false,
+     "score": 0.8333333333333334,
+     "detail": "flagged []; auto-accepted wrong ['certificate_number']",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [
+       "certificate_number"
+      ],
+      "total": 6
+     },
+     "cost_usd": 0.000834,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000802,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000875,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000806,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000871,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "flagged []; auto-accepted wrong ['certificate_number']",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 4,
+      "flagged": 0,
+      "missed": [
+       "certificate_number"
+      ],
+      "total": 5
+     },
+     "cost_usd": 0.000808,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-02",
+     "passed": false,
+     "score": 0.8333333333333334,
+     "detail": "flagged []; auto-accepted wrong ['container_number']",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [
+       "container_number"
+      ],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000799,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000873,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000831,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.00083,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-06",
+     "passed": false,
+     "score": 0.8,
+     "detail": "flagged []; auto-accepted wrong ['certificate_number']",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 4,
+      "flagged": 0,
+      "missed": [
+       "certificate_number"
+      ],
+      "total": 5
+     },
+     "cost_usd": 0.000806,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "flagged []; auto-accepted wrong ['certificate_number']",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 4,
+      "flagged": 0,
+      "missed": [
+       "certificate_number"
+      ],
+      "total": 5
+     },
+     "cost_usd": 0.000808,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.00088,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000832,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000805,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-06",
+     "passed": false,
+     "score": 0.8,
+     "detail": "flagged []; auto-accepted wrong ['certificate_number']",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 4,
+      "flagged": 0,
+      "missed": [
+       "certificate_number"
+      ],
+      "total": 5
+     },
+     "cost_usd": 0.000812,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000865,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.00079,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-05",
+     "passed": false,
+     "score": 0.8,
+     "detail": "flagged []; auto-accepted wrong ['certificate_number']",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 4,
+      "flagged": 0,
+      "missed": [
+       "certificate_number"
+      ],
+      "total": 5
+     },
+     "cost_usd": 0.000798,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000873,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000831,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.00088,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.0008,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000878,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000884,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000801,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000873,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000831,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000874,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "flagged []; auto-accepted wrong ['certificate_number']",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 4,
+      "flagged": 0,
+      "missed": [
+       "certificate_number"
+      ],
+      "total": 5
+     },
+     "cost_usd": 0.000802,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000875,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000874,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000795,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.0008,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-01",
+     "passed": false,
+     "score": 0.875,
+     "detail": "flagged []; auto-accepted wrong ['total_amount']",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 7,
+      "flagged": 0,
+      "missed": [
+       "total_amount"
+      ],
+      "total": 8
+     },
+     "cost_usd": 0.000871,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000831,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.00088,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000889,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000814,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-01",
+     "passed": false,
+     "score": 0.875,
+     "detail": "flagged []; auto-accepted wrong ['hs_code']",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 7,
+      "flagged": 0,
+      "missed": [
+       "hs_code"
+      ],
+      "total": 8
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000874,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000799,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000873,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.00088,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000832,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000878,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000829,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000882,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000808,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000801,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000832,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000875,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.00088,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-04",
+     "passed": false,
+     "score": 0.8,
+     "detail": "flagged []; auto-accepted wrong ['certificate_number']",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 4,
+      "flagged": 0,
+      "missed": [
+       "certificate_number"
+      ],
+      "total": 5
+     },
+     "cost_usd": 0.000808,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000876,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-02",
+     "passed": false,
+     "score": 0.8333333333333334,
+     "detail": "flagged []; auto-accepted wrong ['container_number']",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [
+       "container_number"
+      ],
+      "total": 6
+     },
+     "cost_usd": 0.000827,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.000878,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.000797,
+     "wall_s": 0.0,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "auto_accept_precision": 0.9785478547854786,
+    "review_rate": 0.0,
+    "wrong_fields_auto_accepted": 13.0,
+    "pages_needing_no_review": 1.0
+   },
+   "cost_usd": 0.077484,
+   "wall_s": 0.06,
+   "gated": true
+  },
+  {
+   "system": "two-reader",
+   "is_baseline": false,
+   "results": [
+    {
+     "case_id": "test-B00-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.0132,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013169,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-03",
+     "passed": true,
+     "score": 0.875,
+     "detail": "flagged ['port_of_loading']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 7,
+      "accepted_right": 7,
+      "flagged": 1,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013247,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B00-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013056,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013194,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-02",
+     "passed": true,
+     "score": 0.8333333333333334,
+     "detail": "flagged ['invoice_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 1,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.01317,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-03",
+     "passed": true,
+     "score": 0.875,
+     "detail": "flagged ['bl_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 7,
+      "accepted_right": 7,
+      "flagged": 1,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.01323,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-04",
+     "passed": true,
+     "score": 0.8,
+     "detail": "flagged ['certificate_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 4,
+      "accepted_right": 4,
+      "flagged": 1,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013053,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-05",
+     "passed": true,
+     "score": 0.8333333333333334,
+     "detail": "flagged ['certificate_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 1,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013134,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B01-06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013026,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013295,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013164,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013248,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B02-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013084,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013194,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-02",
+     "passed": true,
+     "score": 0.8333333333333334,
+     "detail": "flagged ['invoice_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 1,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013163,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013247,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "test-B03-04",
+     "passed": true,
+     "score": 0.8,
+     "detail": "flagged ['certificate_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 4,
+      "accepted_right": 4,
+      "flagged": 1,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.01304,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013297,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-02",
+     "passed": true,
+     "score": 0.8333333333333334,
+     "detail": "flagged ['container_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 1,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013164,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013235,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B04-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013059,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013199,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-02",
+     "passed": true,
+     "score": 0.6666666666666666,
+     "detail": "flagged ['packing_list_number', 'container_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 4,
+      "accepted_right": 4,
+      "flagged": 2,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013173,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013256,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013058,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013123,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B05-06",
+     "passed": true,
+     "score": 0.8,
+     "detail": "flagged ['certificate_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 4,
+      "accepted_right": 4,
+      "flagged": 1,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013085,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-01",
+     "passed": true,
+     "score": 0.875,
+     "detail": "flagged ['seller']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 7,
+      "accepted_right": 7,
+      "flagged": 1,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.01329,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013163,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013259,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B06-04",
+     "passed": true,
+     "score": 0.8,
+     "detail": "flagged ['certificate_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 4,
+      "accepted_right": 4,
+      "flagged": 1,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013041,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013213,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013164,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-03",
+     "passed": true,
+     "score": 0.875,
+     "detail": "flagged ['bl_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 7,
+      "accepted_right": 7,
+      "flagged": 1,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013248,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013132,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013075,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B07-06",
+     "passed": true,
+     "score": 0.8,
+     "detail": "flagged ['certificate_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 4,
+      "accepted_right": 4,
+      "flagged": 1,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013048,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.01318,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013157,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013236,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.01304,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B08-05",
+     "passed": true,
+     "score": 0.8,
+     "detail": "flagged ['certificate_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 4,
+      "accepted_right": 4,
+      "flagged": 1,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013018,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-01",
+     "passed": true,
+     "score": 0.875,
+     "detail": "flagged ['seller']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 7,
+      "accepted_right": 7,
+      "flagged": 1,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013297,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013166,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.01325,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B09-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013027,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013213,
+     "wall_s": 0.0,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-02",
+     "passed": true,
+     "score": 0.8333333333333334,
+     "detail": "flagged ['net_weight_kg']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 1,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013169,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013255,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013118,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B10-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013065,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013198,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-02",
+     "passed": true,
+     "score": 0.8333333333333334,
+     "detail": "flagged ['container_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 1,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013172,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013244,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B11-04",
+     "passed": true,
+     "score": 0.8,
+     "detail": "flagged ['certificate_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 4,
+      "accepted_right": 4,
+      "flagged": 1,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013065,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.0132,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013169,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-03",
+     "passed": true,
+     "score": 0.875,
+     "detail": "flagged ['container_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 7,
+      "accepted_right": 7,
+      "flagged": 1,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013238,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013048,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B12-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013019,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-01",
+     "passed": true,
+     "score": 0.875,
+     "detail": "flagged ['total_amount']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 7,
+      "accepted_right": 7,
+      "flagged": 1,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013231,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013165,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013253,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "test-B13-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013058,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013221,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013166,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013276,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "test-B14-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013057,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-01",
+     "passed": false,
+     "score": 0.875,
+     "detail": "flagged []; auto-accepted wrong ['hs_code']",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 7,
+      "flagged": 0,
+      "missed": [
+       "hs_code"
+      ],
+      "total": 8
+     },
+     "cost_usd": 0.013219,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013165,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013233,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B15-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013062,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013238,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013164,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013245,
+     "wall_s": 0.02,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013056,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B16-05",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013132,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-01",
+     "passed": true,
+     "score": 0.875,
+     "detail": "flagged ['seller']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 7,
+      "accepted_right": 7,
+      "flagged": 1,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.01331,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013164,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013249,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013079,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-05",
+     "passed": true,
+     "score": 0.8,
+     "detail": "flagged ['hs_code']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 4,
+      "accepted_right": 4,
+      "flagged": 1,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013063,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B17-06",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013127,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013203,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-02",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 6,
+      "accepted_right": 6,
+      "flagged": 0,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013157,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013253,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B18-04",
+     "passed": true,
+     "score": 0.8,
+     "detail": "flagged ['certificate_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 4,
+      "accepted_right": 4,
+      "flagged": 1,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.01304,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-01",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013207,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-02",
+     "passed": true,
+     "score": 0.8333333333333334,
+     "detail": "flagged ['container_number']; auto-accepted wrong []",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 1,
+      "missed": [],
+      "total": 6
+     },
+     "cost_usd": 0.013158,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-03",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 8,
+      "accepted_right": 8,
+      "flagged": 0,
+      "missed": [],
+      "total": 8
+     },
+     "cost_usd": 0.013243,
+     "wall_s": 0.01,
+     "error": ""
+    },
+    {
+     "case_id": "test-B19-04",
+     "passed": true,
+     "score": 1.0,
+     "detail": "",
+     "tags": {
+      "accepted": 5,
+      "accepted_right": 5,
+      "flagged": 0,
+      "missed": [],
+      "total": 5
+     },
+     "cost_usd": 0.013056,
+     "wall_s": 0.01,
+     "error": ""
+    }
+   ],
+   "metrics": {
+    "auto_accept_precision": 0.9982758620689656,
+    "review_rate": 0.0429042904290429,
+    "wrong_fields_auto_accepted": 1.0,
+    "pages_needing_no_review": 0.7282608695652174
+   },
+   "cost_usd": 1.21099,
+   "wall_s": 0.12,
+   "gated": true
+  }
+ ]
+}

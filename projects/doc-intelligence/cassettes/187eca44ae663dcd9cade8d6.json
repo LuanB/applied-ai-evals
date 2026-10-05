@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B00-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "NATIONAL PLANT PROTECTION ORGANIZATION OF TURKEY\nPHYTOSANITARY CERTIFICATE\nNo .:\nFC969827\nName of exporter:\nMekong Agri Trading JSC\nDeclared consignee:\nHarbourside Fresh Pty Ltd\nBotanical name of plants:\nPrunus armeniaca\nPlace of origin:\nTurkey\nDeclared means of conveyanceDNE HARMONY\nPoint of entry:\nAdelaide\nThe plants or plant products described herein have been inspected and are. considered free from quarantine pests of the importing contracting party.",
+  "pages": 1,
+  "fields": {}
+ }
+}

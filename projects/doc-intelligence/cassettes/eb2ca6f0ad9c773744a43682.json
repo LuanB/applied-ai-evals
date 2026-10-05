@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-087",
+  "markdown": false
+ },
+ "response": {
+  "content": "CS - Current Transfer Lists\n87926239",
+  "pages": 1,
+  "fields": {}
+ }
+}

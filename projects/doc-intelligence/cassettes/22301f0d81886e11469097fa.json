@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nstaple\nLIMIT REVISION REQUEST FORM\nRev 1/94\n1. Requested By:\nD. Mertz\nExt\n3189\nDate Requested:\n1-4-95\nDate Required:\n2. SPC System:\nTOM\nOn-Line\nOff-Line (not TQM) Dept: RL LS ME EE\nOP ER PH Prod\nSystem Report Form #:\n05\n3. Quality Measure:\nL3\nSize Prep Ureg\n4. Reason For Change:\nNew Limiti\n5. Data Range (dates):\n1/7/95- 2/19/95\nExclude:\n6. Current Limits:\nUCL\nCL\nLCL\n**\n1 Through 6 To Be Filled Out By The Requestor **\nRecommendation:\nImplement New\nReviewer Comments:\nCenterline\nVariation\nHold Until\nBecause:\nChart Type:\nX-Bar\nS\nX\nP\nC\nOther:\nProposed Limits:\nUCL\n3. 089\nCL\n2,833\nLCL 2.577\nAnalyst: CSB , DTL,\nDate:\n3-1-95\nQuality Plan:\nInitials:\nDate:\nReviewed By:\nDate:\n-\nFile System:\nSPC\nFile Number: 33. 413\nData Coordinator: (TJH,\n19H\nDate:\n3/9/95\nDate:\n3-16-95\nInitials:\nAK\nAutoCad changes made (date):\nMaster Printed (date): 11\" X 17\" printed (date):\nAnalysis Summary: Data Removed:\nSuspect: 14 dati pts.\nTrimmed: I data of\nDistribution: Normal\nK-S\nChi-Sq\nNormality Test:\nOriginal Data -\n1,19\nNormal\nNon-Normal\nSample #:\n641\nTrimmed Data - -\n20\nNormal\nNon-Normal\nSample #: 640\nPercent Trimmed: < 19.\nPercent OOC (data against proposed limits): 24 %\nT-Test Results:\nSignificant difference in the means\nNo significant difference in the means\nF-Test Results:\nDetectable difference in the variation\nNo detectable difference in the variation\nDrive, Subdirectories (or Floppy Disk) and data filename: JAGROUPSIQSIDATAANALYSIS\\ (online) (offline) \\ L3\nLISPUREA.st\nDiscussions and History (use back if needed):\n2050314356"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV893o2pzY4tXiZsW7zlrmYb6MBsa",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"form\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088185,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 694,
+   "total_tokens": 703,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 38,
+    "engine_ttlt_ms": 87,
+    "pre_inference_ms": 87,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 501,
+    "service_ttlt_ms": 641,
+    "user_visible_ttft_ms": 414
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260823114745-bbc5cbf3-default-r2-dp0-default"
+  }
+ }
+}

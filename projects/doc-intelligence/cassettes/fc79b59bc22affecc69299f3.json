@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B19-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "PACIFIC RIM TIMBER PTE LTD. 181 Industrial Rd, Germany\nCOMMERCIAL INVOICE\nInvoice No .:\nINV-76393\nDate:\n14/09/2026\nSold to:\nWattle & Co. Wholesale Pty Ltd.\nPacking List No .:\nPL-10330\nTerms of delivery:\nCIF\nCurrency:\nEUR\nDescription\nHS Code\nQty\nUnit price Amount\nWooden dining chairs\n9403.60\n254\n19.35\n4,914.90\nTOTAL EUR: 4,914.90\nCountry of origin: Germany",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B06-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD 220 Industrial Rd, Vietnam\nPACKING SPECIFICATION\nRef No .:\nPL-18107\nInvoice No .:\nINV-12449\nConsignee:\nSouthern Cross Imports Pty Ltd\nContainer:\nCMAU7244107\nMarks: SOUTHERN/SYDNEY\nPkgs\nDescription\nNet kg\nGross kg :\n888\nCashew: kernels\n18408.5\n19858.2\nTotal packages: 888\nTotal gross weight (kg):\n19858.2\nTotal net weight (kg):\n18408.5",
+  "pages": 1,
+  "fields": {}
+ }
+}

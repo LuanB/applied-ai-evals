@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B10-05",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - VIETNAM\nORIGIN DECLARATION\nCertificate No .:\nEX992268\nExporter:\nLanka Spice Mills (Pvt) Ltd\nConsignee:\nHarbourside Fresh Pty Ltd\nMeans of transport:\nMSC ARIANNA from Ho Chi Minh City\nHS heading:\n0801.32\nGoods:\nCashew kernels\nCountry of origin:\nVietnam\nWe certify the goods described in invoice INV-50762 originate in Vietnam.",
+  "pages": 1,
+  "fields": {}
+ }
+}

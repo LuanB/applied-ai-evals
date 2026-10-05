@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-108",
+  "markdown": false
+ },
+ "response": {
+  "content": "20-Jul-93\nCRC CONTRACT RESEARCH CENTER JGB\nINCOME STATEMENT CRC FOR THE PERIOD:\nJUN.93\nPEG REGIONAL DESCRIPTION ACCOUNT\nAMOUNT BEC\nUSD\n015\n4100 . Intercompany Sales\n5,880,200\n180,153\n021\n4580 Cost of Sales\n4,092,247\n125,375\nAVAILABLE PROFIT\n1,787,953\n54,778\n060\n6050\nGeneral & Administrative Expenses\n2,09\n73\n64,227\nOPERATING PROFIT\n(308,420)\n(9,449)\n078\n6350 Gain on Sale Fixed Assets-Affiliates\n0\n0\n073\n6505\nInterest Income - Bank\n18,904\n.579\n073\n6515\nInterest Income - Other\n0\n0\n081\n6550 Interest Expense - Bank\n(18,450)\n(565)\n086\n6560 Interest.Expense - Non Debt Related\n0\n0\n080\n6580 | Interest Expense Affiliates\n5\n1,009\n31\n082\n6100 Realized Transaction\u00ae\nEARNINGS BEFORE INCOME TAXES\n(306,957)\n(9,404)\n098\n6870 Foreign Federal Income Tax 1993\n512,000\n15,686\nNET EARNINGS\n(818,957)\n(25;090)\n2028707141\n0\n0",
+  "pages": 1,
+  "fields": {}
+ }
+}

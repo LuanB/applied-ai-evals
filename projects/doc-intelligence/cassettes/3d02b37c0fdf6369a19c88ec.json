@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-022",
+  "markdown": false
+ },
+ "response": {
+  "content": "----- Original Message _____\nDebbie Sinclair [SMTP:debbie@wechter.com]\nFrom: Sent: Tuesday, November 16, 1999 12:11 PM\nSubject:\nTo: Yonich, Cynthia Stress Balls\nPacking factor for red stress balls is 250/case. Sample will arrive to you tomorrow via Fed-Ex. Debbie\n2078337712A\n1",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B07-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH 198 Industrial Rd, Sri Lanka\nWEIGHT & PACKING NOTE\nRef No .:\nPL-77110\nInvoice No .:\nINV-38675\nConsignee:\nKookaburra Home Furnishings Pty Ltd\nContainer:\nMSCU8477661\nMarks:\nKOOKABURRA/BRISBANE\nPkgs\nDescription\nN\u1eb9t kg\nGross kg\n561 Black pepper, whole\n8873.3 9423.0\nTotal packages:\n561\nTotal gross weight (kg): 9423.0\nTotal net weight (kg):\n8873.3",
+  "pages": 1,
+  "fields": {}
+ }
+}

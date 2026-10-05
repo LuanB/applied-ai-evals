@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app7-005] (APP 7, paras 7.15\u20137.18, Using and disclosing personal information for the purpose of direct marketing wh)\n7.15 The \u2018reasonably expect\u2019 test is an objective test that has regard to what a reasonable person, who is properly informed, would expect in the circumstances. This is a question of fact in each individual case. It is the responsibility of the organisation to be able to justify its conduct.\n7.16 Factors that may be important in deciding whether an individual has a reasonable expectation that their personal information will be used or disclosed for the purpose of direct marketing include where:\nthe individual has consented to the use or disclosure of their personal information for that purpose (see discussion in paragraph 7.23 below and Chapter B (Key concepts) for further information about the elements of consent)\nthe organisation has notified the individual that one of the purposes for which it collects the personal information is for the purpose of direct marketing under APP 5.1 (see Chapter 5 (APP 5))\nthe organisation made the individual aware that they could request not to receive direct marketing communications from the organisation, and the individual does not make such a request (see paragraph 7.21).\n7.17 An organisation should not assume that an individual would reasonably expect their personal information to be used or disclosed for the purpose of direct marketing just because the organisation believes that the individual would welcome the direct marketing, for example, because of the individual\u2019s profession, interest or hobby.\n7.18 An individual is not likely to have a reasonable expectation that their personal information will be used or disclosed for the purpose of direct marketing where the organisation has notified the individual that their personal information will only be used for a particular purpose unrelated to direct marketing. For example, where an individual provides personal information to their bank when setting up internet banking, and the bank tells the individual that it will only use that personal information for enabling security for internet banking, the individual is not likely to have a reasonable expectation that their personal information will then be used or disclosed for the purpose of direct marketing. [6]\n\n[app7-007] (APP 7, paras 7.22, Using and disclosing personal information for the purpose of direct marketing wh)\n7.22 APP 7.3 provides that an organisation may use or disclose personal information (other than sensitive information) about an individual for the purpose of direct marketing if:\nthe organisation collected the information from: the individual, but the individual would not reasonably expect their information to be used or disclosed for that purpose, or a third party, and\nthe individual, but the individual would not reasonably expect their information to be used or disclosed for that purpose, or\na third party, and\nthe individual has consented to use or disclosure for that purpose, or it is impracticable to obtain that consent, and\nthe organisation provides a simple way for the individual to opt out of receiving direct marketing communications from the organisation, and\nin each direct marketing communication with the individual, the organisation includes a prominent statement, or otherwise draws the individual\u2019s attention to the fact that the individual may make such a request (referred to as an \u2018opt out statement\u2019), and\nthe individual has not made such a request to the organisation.\n\n[app7-004] (APP 7, paras 7.14, Using and disclosing personal information for the purpose of direct marketing wh)\n7.14 APP 7.2 provides that an organisation may use or disclose personal information (other than sensitive information) about an individual for the purpose of direct marketing if:\nthe organisation collected the personal information from the individual\nthe individual would reasonably expect the organisation to use or disclose the personal information for that purpose\nthe organisation provides a simple way for the individual to request not to receive direct marketing communications from the organisation (also known as \u2018opting out\u2019), and\nthe individual has not made such a request to the organisation.\n\n[app7-001] (APP 7, paras 7.1\u20137.6, What does APP 7 say?)\n7.1 An organisation must not use or disclose the personal information that it holds about an individual for the purpose of direct marketing (APP 7.1). The term \u2018holds\u2019 is discussed in Chapter B (Key concepts).\n7.2 There are a number of exceptions to this requirement. The exceptions in APP 7.2 and 7.3 apply to personal information other than sensitive information. They draw a distinction between the use or disclosure of personal information by an organisation where:\nthe personal information has been collected directly from an individual, and the individual would reasonably expect their personal information to be used for the purpose of direct marketing (APP 7.2), and\nthe personal information has been collected from a third party, or from the individual directly but the individual does not have a reasonable expectation that their personal information will be used for the purpose of direct marketing (APP 7.3). Sources of third party data include data list providers, third party mobile applications, third party lead generation and enhancement data.\n7.3 Both of these exceptions require an organisation to provide a simple means by which an individual can request not to receive direct marketing communications (also known as \u2018opting out\u2019). However, in the circumstances where the organisation has not obtained personal information from the individual, or the individual would not reasonably expect their personal information to be used in this way, there are additional requirements to ensure that the individual is made aware of their right to opt out of receiving direct marketing communications from the organisation.\n7.4 Exceptions to this principle also apply in relation to:\nsensitive information (APP 7.4), and\nan organisation that is a contracted service provider for a Commonwealth contract (APP 7.5).\n7.5 APP 7 may apply to an agency in the circumstances set out in s 7A (see paragraph 7.13 below).\n7.6 An individual may request an organisation not to use or disclose their personal information for the purpose of direct marketing, or for the purpose of facilitating direct marketing by other organisations (APP 7.6). The organisation must give effect to any such request by an individual within a reasonable period of time and for free (APP 7.7).\n\n[b-028] (B, paras B.115\u2013B.120, Key concepts R to Z > Reasonably necessary and necessary)\nB.115 A number of APPs require a collection, use or disclosure to be \u2018reasonably necessary\u2019 for a particular purpose \u2013 see APPs 3, 6, 8 and 9. Certain permitted general situations and permitted health situations refer to a collection, use or disclosure being \u2018necessary\u2019 for a particular purpose (see Chapters C and D), and APP 7 refers to a use or disclosure being \u2018necessary\u2019 to meet a contractual obligation (see Chapter 7).\nB.116 The term \u2018reasonable\u2019 is discussed at paragraphs B.104\u2013B.106. \u2018Necessary\u2019 is not defined in the Privacy Act. The High Court of Australia has noted that \u2018there is, in Australia, a long history of judicial and legislative use of the term \u2019necessary\u2019, not as meaning essential or indispensable, but as meaning reasonably appropriate and adapted\u2019. [38] However, in the context of the Privacy Act, it would not be sufficient if the collection, use or disclosure is merely helpful, desirable or convenient.\nB.117 The \u2018reasonably necessary\u2019 test is an objective test: whether a reasonable person who is properly informed would agree that the collection, use or disclosure is necessary. It is the responsibility of an APP entity to be able to justify that the particular collection, use or disclosure is reasonably necessary.\nB.118 The test must be applied in a practical sense. For example, under APP 3 if an entity cannot in practice effectively pursue a function or activity without collecting personal information, the collection would usually be considered reasonably necessary for that function or activity. However, a collection, use or disclosure of personal information will not usually be considered reasonably necessary if there are reasonable alternatives available, for example, if de-identified information would be sufficient for the function or activity.\nB.119 An APP entity cannot rely solely on normal business practice in assessing whether a collection, use or disclosure is reasonably necessary. The primary issue is whether, in the circumstances of a particular entity, a collection, use or disclosure is reasonably necessary for a particular function or activity.\nB.120 The term \u2018necessary\u2019 rather than \u2018reasonably necessary\u2019 is used in certain permitted general situations and permitted health situations, and in APP 7. The context explains this different usage. For example, a permitted health situation may exist if the collection of personal information is \u2018necessary\u2019 for public health research that is conducted in accordance with relevant guidelines. Similarly, APP 7.5 refers to the use or disclosure of personal information for the purpose of direct marketing where that is \u2018necessary\u2019 to meet a contractual obligation. In some of the permitted general situations and permitted health situations the test is whether an APP entity \u2018reasonably believes\u2019 that the collection, use or disclosure of personal information is \u2018necessary\u2019 for a particular purpose, such as lessening or preventing a serious threat to a person\u2019s health or safety.\n\nQuestion: What kind of test is the 'reasonably expect' test for direct marketing?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U3QKSIOM7SoSjnnA3MZRw1dPsq",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The 'reasonably expect' test is an objective test that considers what a reasonable person, who is properly informed, would expect in the circumstances. It is a question of fact in each individual case, and the organisation must be able to justify its conduct.\",\"citations\":[\"app7-005\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089487,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 69,
+   "prompt_tokens": 2067,
+   "total_tokens": 2136,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 38,
+    "engine_ttlt_ms": 424,
+    "pre_inference_ms": 88,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 745,
+    "service_ttlt_ms": 1206,
+    "user_visible_ttft_ms": 657
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822214445-b466cd4e-default-r1-dp0-default"
+  }
+ }
+}

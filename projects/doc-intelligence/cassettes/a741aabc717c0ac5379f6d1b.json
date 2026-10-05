@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\n.\n-2.\nHeidi Nelson\nMariboro Bar Program (C) Sweepstakes / MSA Questions\n1. Where must the game rules be posted the night of the event? By the door, by the.\n2. What two other posters must be displayed in a highly visible location the night of the event? The tre de poster. The Drawer\n3. How long is the Marlboro Party at the Ranch or Racing School sweepstakes trip?\n4. What form of ID is acceptable for a consumer to participate in the Mariboro Ranch Sweepstakes? 6 (Drivers lies. - papper\n5. At a minimum, what are the two locations where the sweepstakes rules must be posted?\n1. Door\n2. Kiosk\n6. A) Does the consumer need to be present when the sweepstakes drawing takes place? N B) Does the consumer need to be present when the high end incentive drawings take place?\n7. What is the minimum distance required from a place of worship or educational institution for a bar to be included in the Marlboro bar program? 1000 JeCT\n8 During any Marlboro promotion, what is the minimum age requirement for anyone to enter the venue ?\nVr\u00e1\n9. Does the bar need to be checking Ids at the door during the night of a Marlboro event?\n10. List the two people whose initials must be on a completed sweeps entry form or survey card.\nProda: er\n11 If a consumer from a foreign country fills out an entry form with a US address and presents a foreign driver's license, are they qualified to enter the Ranch promotion?\nAre they qualified to enter the Racing promotion? \u00c9 NO\n12. If a consumer submits an entry form with the wrong event code, what do you do?\nC.\nA. Tell the consumer they can not enter. Cross out the incorrect event code and hand write the correct event code. Take the incorrect entry and ask the consumer to fill out a new entry.\n13. When checking a consumer's entry form against their ID, if the address or name does not match, what do you do? ask why- check appropriate bax.\n14. A) Can an employee of venue A who is not working the night of an event enter the sweepstakes at venue A? No\nB) Can an employee of venue B, a Mariboro venue, enter the sweepstakes at venue A? Yes\n15. What are the two pieces of information that must be added to the \" night of \" poster in order to be in compliance with the sweepstake rules?\nTrip Code\n2083716738"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89HupgW138dA4CSZtX6oqsdGPAE",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"questionnaire\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088199,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 729,
+   "total_tokens": 739,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 53,
+    "engine_ttlt_ms": 134,
+    "pre_inference_ms": 82,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 574,
+    "service_ttlt_ms": 717,
+    "user_visible_ttft_ms": 492
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003053040-8a14068b-default-r1-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\n. PHILIP MORRIS U.S.A.\nNEWS RELEASE\n. Corporate Affairs 120 Park Avenue New York, New York 10017 (212) 880-5000 FAX (212) 907-5361\nFOR IMMEDIATE RELEASE April 13, 1994\nCONTACT:\nVictor Han\n(202) 637-1566\nSIX MAJOR AMERICAN CIGARETTE COMPANIES RELEASE COMBINED INGREDIENTS LIST\nNew York -- Philip Morris U.S.A., along with the five other major American cigarette manufacturers, today approved the release of the industry's combined list of ingredients added to tobacco in cigarettes manufactured and sold in the United States.\n\"The industry's decision to make this proprietary information publicly available to our consumers is in response to misleading allegations recently made about the nature of the ingredients used in our products,\" said Steven Parrish, senior vice president and general counsel for Philip Morris U.S.A.\nHe said the six major American cigarette manufacturers decided to voluntarily disclose the combined ingredients list to \"demonstrate to our consumers that cigarette ingredients are similar to ingredients used in a wide variety of consumer products and are not harmful to smokers.\"\nParrish said that Philip Morris and the other five companies had been submitting a list of ingredients added to tobacco used in cigarettes manufactured and sold in the United States to the Secretary of the Department of Health and Human Services (HHS) as required by the Federal Cigarette Labeling and Advertising Act each year since 1986. The Act recognizes that cigarette ingredients are trade secrets and requires that HHS maintain strict confidentiality.\n\"Unfortunately,\" Parrish said, \"the confidentiality that Congress mandated for cigarette ingredients information has been mischaracterized as an attempt by cigarette manufacturers to be 'secretive' and keep information from the American public.\u201c\nmore\n2059754625\nMARLBORO BENSON & HEDGES MERIT VIRGINIA SLIMS PARLIAMENT LIGHTS CAMBRIDGE ALPINE PLAYERS SARATOGA"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89C2AaiMfx4UlzP9mdNomOC0rYc",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"news article\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088194,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 601,
+   "total_tokens": 611,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 26,
+    "engine_ttlt_ms": 83,
+    "pre_inference_ms": 90,
+    "service_tbt_ms": 16,
+    "service_ttft_ms": 499,
+    "service_ttlt_ms": 655,
+    "user_visible_ttft_ms": 409
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930073022-50351f8a-default-r1-dp0-default"
+  }
+ }
+}

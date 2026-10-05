@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-089",
+  "markdown": false
+ },
+ "response": {
+  "content": "RJR COMMENTS\n2025382118",
+  "pages": 1,
+  "fields": {}
+ }
+}

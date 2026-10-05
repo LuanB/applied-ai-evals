@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B03-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB 104 Industrial Rd, Sri Lanka\nRef No .:\nPL-42760\nInvoice No .:\nINV-6446.3\nConsignee:\nWattle & Co Wholesale Pty Ltd\nContainer:\nOOLU6530326\nMarks:\nWATTLE/FREMANTLE\nPkgs\nDescription\nNet kg Gross kg\n268 Black pepper, whole\n4324.0 4543.5\nTotal packages:\n268:\nTotal gross weight (kg):\n4543.5\nTotal net weight (kg):\n4324.0",
+  "pages": 1,
+  "fields": {}
+ }
+}

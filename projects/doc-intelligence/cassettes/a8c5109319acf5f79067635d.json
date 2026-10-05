@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-011",
+  "markdown": false
+ },
+ "response": {
+  "content": "14017/018\nCOVINTON & BURLING\n10/18/99 19:19 FAX\nExhibit #2\nADDITIVES LIST [Insert Product Class]\nPARTICIPATING COMPANY CERTIFICATE IN RESPECT OF CALENDAR YEAR TO 31 DECEMBER 1999\n[Insert name and title] of [insert company name] (the \"Company\") hereby certifies in respect of the Company's attached product class list of additives that:\n(a) All additives which have been or will be used in tobacco in the Company's brands in the product class for sale in New Zealand have been listed.\n(b) The Company has not included in the list any additive which was not or will not be used in its brands in the product class for sale in New Zealand.\n(c) No additive has been or will be used in the product class in excess of the \"Quantity not exceeded\" as specified in the Company's list for that product class.\nDATED this\nday of 2000.\n[Insert name]\nDRAFT\n2071972159",
+  "pages": 1,
+  "fields": {}
+ }
+}

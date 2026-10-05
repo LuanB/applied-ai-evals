@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B05-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "CASCADE ORCHARDS LLC 187 Industrial Rd, Sri Lanka\nInvoice No .:\nINV-60119\nDate:\n27/07/2026\nSold to:\nKookaburra Home Furnishings. Pty Ltd.\nPacking List No .:\nPL-83215\nTerms of delivery:\nDAP\nCurrency:\nAUD\nDescription\nHS Code\nQty\nUnit price Amount\nBlack pepper, whole.\n0904.11\n1677\n25.73\n43,149.21\nTOTAL AUD:\n43,149.21\nCountry of origin: Sri Lanka",
+  "pages": 1,
+  "fields": {}
+ }
+}

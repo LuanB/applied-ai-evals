@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-074",
+  "markdown": false
+ },
+ "response": {
+  "content": "CPB Convert SCT100 TO Cigt Design\n24:40 mm\nCigarette Design Model Worksheet\nYellow = specs available\nCigt. Specs: 2000861BC Filt. Specs: 2801283AC\nReference\nforget\nModel\nModel\n0.8204\n0.7856\n0.4157\n0.935\nTobacco Weight. gms\n24,83\n24.48\n21.07\n27.10\nCigt Circumference, mm\n68.0\n67.0\n56\n85\nTobacco Rod Length, mm\n0.2475\n0.2475\n0.1564\n0.2580\nDensity, g/cc\n435\n435\n413\n651\nFilling Capacity\n12.25\n12.25\n11.01\n12.27\nPack Moisture, %\n0.9447\n0.9447\n0.8334\n1.0002\nFill Ratio\nTobacco\n2795\n(1935 filter .78526 tab. 10452 c.P , 0410 tipping\n1.0653 ast wt 8868 tobrod\nACTUAL Referance\n108.0\n108.3\n109.8\n109.6\n183\nNIA\nNA\nHoles Open Draft, mm\n173.0\n166.0\n168.6\n175.6\n87\n284\n0.00\nDec.94\nHoles Closed Draft, mmm\n9.0\n8.7\nFirmness, 0.1 mm\n10.\n10.3\n10.1\n10.5\n5.6\n12.5\n0.98\nOd-94\nPuff Count\n8.5\n8.0\n7,9\n0.80\nNJA\nNA\nNJA\n08-94\nTar/Puff, mg\n33.6\n31.6\n30.7\n32.7\nNIA\nN/A\n0.96\nOc-94\nBase Tar\n0.73\n0.69\n0.68\n0.72\n0\n1.61\nNJA\nOct-94\nFTC Nicoline, mg\n0.07\n0.07\n0.0\n0.07\nN/A\nNicoline/Puff, mg\n2.54\n2.41\n2.33\n2.46\nNA\nNA\n0.95\nOch-94\nBase Nicotine\n0.0\n3\nCarbon Monoxide, mg\nUpdated 1/6/95\nCiTag'5 .2000739\nbutt : 38\n1.7 98 24.48\nHO12\n0025641 use tipping\nC.p. 00.37,77\n14tholes 24 869-L\n200\n72 400\nPage 1\n2D7442-24.40 PD 740 Control\n51909 8390\n68/31\nmk9\n67/31 24.40\n1933\n92.8\nFilter Dilution, %\n38\n38\n23\n42\nButt Length\n456\n456\nCigarette Paper Grade\nCitrate in paper\n24.00\n24.00\n10\n38\nPaper Porosity\n646\n646\nPlug Wrap Grade\n0.0390\n0.0390\nPW Caliper, mm\nN\n48.0\n176\n109.0\n110.0\nFilter Seg. Draft, mm\n24.43\n24,08\n26.8\nFilter Circumference, mm\n31\n31\nO\n35\nFilter Seg. Length, mm\n2.7\n2.7\n2.1\n3.6\nDPF\n13\n13\n17\nPerforation Distance From Mouthend, mm\n48.0\n48.0\n1.75\n0.55\n0.55\n9.0\n5.9\n10.0\n0.61\nDec.94\nFTC 'Tar, mg\n0.79\n0.77\n0.78\n11.7\n0.0\n12.1\n13mm\n0452015+ paper 3410 tipping\n22\nNA\n00.94\nOct-94\n0.88\n1988\nFixed Ventilation System? (Y or N) New Dilution for Target == >",
+  "pages": 1,
+  "fields": {}
+ }
+}

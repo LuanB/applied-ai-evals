@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nWERE YOU MISLED?\nTHIS WEEK, READ ANOTHER SIDE OF THE STORY ABOUT SECONDHAND SMOKE.\nEver since the EPA issued its report about the \"dangers\" of secondhand smoke in 1993. serious questions have been raised about the report's validity. Here are some of those questions ::\n. If there were doubts about the report, why weren't they widely publicized?\n. Of 11 U.S. studies used by the EPA, not a single one concluded that there is a statistically significant overall association between secondhand smoke and lung cancer. What did the EPA do to find a link, using the very same studies?\n. Why did an article in a major scientific magazine call the EPA's report \"fancy statistical footwork\"?\n. Why, in its assessment of secondhand smoke, did the EPA suddenly disregard generally accepted standards of statistical analysis?\n. A large U.S. study, published in The American Journal of Public Health, found no overall statistically significant link between secondhand smoke and lung cancer. Why did the EPA not include this study?\n-\n5 . Is it possible the EPA decided that secondhand smoke was harmful years before their assessment was done?\nThis week, Philip Morris brings you the answers to these questions in a four-part series entitled: Passive Reporting on Passive Smoke, from an article in Forbes MediaCritic, by Jacob Sullum, Managing Editor of Rew.w Magazine. This is one of the most comprehensive articles ever written about the EPA's risk assessment of secondhand smoke .. We believe that both smokers and non-smokers should consider these facts and draw their own conclusions about the issue of secondhand smoke ..\n2023702621\nPHILIP MORRIS U.S.A.\nIN ANY CONTROVERSY, FACTS MUST MATTER."
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV896kyy9ef58Nnd7Vu6DCHxGD7HQ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"advertisement\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088188,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 559,
+   "total_tokens": 569,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 9,
+    "engine_ttft_ms": 22,
+    "engine_ttlt_ms": 116,
+    "pre_inference_ms": 87,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 506,
+    "service_ttlt_ms": 650,
+    "user_visible_ttft_ms": 419
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927065411-4ba314b8-default-r0-dp0-default"
+  }
+ }
+}

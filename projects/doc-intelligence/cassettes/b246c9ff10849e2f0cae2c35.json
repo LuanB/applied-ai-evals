@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B10-02",
+  "markdown": true
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD\n240 Industrial Rd, Vietnam\n\nPACKING LIST\n\n\n<table>\n<tr>\n<td>Ref No .:</td>\n<td>PL-31376</td>\n</tr>\n<tr>\n<td>Invoice No .:</td>\n<td>INV-50762</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Container:</td>\n<td>MSCU7345092</td>\n</tr>\n<tr>\n<td>Marks:</td>\n<td>HARBOURSIDE/BRISBANE</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<th>Pkgs</th>\n<th>Description</th>\n<th>Net kg</th>\n<th>Gross kg</th>\n</tr>\n<tr>\n<td>1699</td>\n<td>Cashew kernels</td>\n<td>35650.8</td>\n<td>39694.4</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>Total packages:</td>\n<td>1699</td>\n</tr>\n<tr>\n<td>Total gross weight (kg):</td>\n<td>39694.4</td>\n</tr>\n<tr>\n<td>Total net weight (kg):</td>\n<td>3.5650.8</td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

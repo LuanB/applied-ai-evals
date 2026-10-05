@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app3-021] (APP 3, paras 3.81\u20133.82, Collecting by lawful and fair means > Collecting by lawful means)\n3.81 The term \u2018lawful\u2019 is not defined in the Privacy Act. It is lawful for an organisation to destroy or de-identify unsolicited personal information if it is not unlawful to do so. That is, if the destruction or de-identification is not criminal, illegal or prohibited or proscribed by law. Unlawful activity does not include breach of a contract.\n3.82 Examples of collection that would not be lawful include:\ncollecting in breach of legislation, for example: collecting via computer hacking [40] collecting using telephone interception or a listening device except under the authority of a warrant [41] requesting or requiring information in connection with, or for the purpose of, an act of discrimination [42]\ncollecting via computer hacking [40]\ncollecting using telephone interception or a listening device except under the authority of a warrant [41]\nrequesting or requiring information in connection with, or for the purpose of, an act of discrimination [42]\ncollecting by a means that would constitute a civil wrong, for example, by trespassing on private property or threatening damage to a person unless information is provided\ncollecting information contrary to a court or tribunal order, for example, contrary to an injunction issued against the collector.\n\n[app3-022] (APP 3, paras 3.83\u20133.87, Collecting by lawful and fair means > Collecting by fair means)\n3.83 The term \u2018fair\u2019 is not defined in the Privacy Act. The standard of what is \u2018fair\u2019 presents an open-textured and evaluative criterion against which collection by an entity is to be assessed. [43] What is \u2018fair\u2019 under APP 3.5 is to be determined having regard to the consideration of the text, context and purpose of the Privacy Act. When assessing whether a collection is by \u2018unfair\u2019 means for the purposes of APP 3.5, all the circumstances must be considered. [44] Consistent with a contextual approach, [45] the meaning of \u2018fair\u2019 is not fixed; the concept of \u2018fairness\u2019 should be adapted to changing circumstances viewed in context and in accordance with community values. [46]\n3.84 A \u2018fair means\u2019 of collecting information includes one that does not involve intimidation or deception. [47] For example, collection may be by unfair means (some may also be unlawful) if it involves:\ndeception, for example, wrongly claiming to be a police officer, doctor or trusted organisation, or\nmisrepresenting the purpose or effect of collection, or the consequences for the individual of not providing the requested information.\n3.85 A \u2018fair means\u2019 of collection also extends to the obligation not to use means that are unreasonably intrusive. [48] For example, collection may be by unfair means (some may also be unlawful) if it involves:\nexcessive collection of personal information\ncollecting personal information of an unnecessarily sensitive nature\ncollecting personal information from too many individuals, or\ncollecting in a way that unreasonably interferes with an individual\u2019s daily life, such as by telephoning an individual in the middle of the night.\n3.86 There may be other means of collection which are not fair, yet do not fit within the meaning of intimidation, deception, or unreasonable intrusion.\n3.87 Following are examples of factors that may influence whether a collection is by fair means. It is important to consider a range of factors and all surrounding circumstances when determining whether a collection is by fair means:\nWhether the individual is aware of their personal information being collected The level of transparency that has been provided to individuals will be relevant here. For example, whether the individual is aware of the collection of their personal information from the entity\u2019s APP 1 privacy policy, terms of service and APP 5 collection notices. [49] It would usually be unfair to collect personal information covertly without the knowledge of the individual. However, this may be a fair means of collection if undertaken in connection with a fraud investigation. By way of further example, it may be unfair to collect from a document discarded by accident on a street, or from an electronic device which is lost or left unattended. An APP entity should not consider collection to be fair simply because they have provided individuals with notice of a proposed collection of personal information.\n\n[b-016] (B, paras B.74\u2013B.76, Enforcement related activities)\nB.74 \u2018Enforcement related activity\u2019 is defined to mean:\nthe prevention, detection, investigation, prosecution or punishment of criminal offences or breaches of a law imposing a penalty or sanction\nthe conduct of surveillance activities, intelligence gathering activities or monitoring activities\nthe conduct of protective or custodial activities\nthe enforcement of laws relating to the confiscation of the proceeds of crime\nthe protection of the public revenue\nthe prevention, detection, investigation or remedying of misconduct of a serious nature, or other conduct prescribed by the regulations\nthe preparation for, or conduct of, proceedings before any court or tribunal, or the implementation of court/tribunal orders (s 6(1)).\nB.75 This definition recognises that \u2018enforcement related activities\u2019 can include lawful surveillance, intelligence gathering or monitoring activities where there may not be an existing investigation. [23] Those activities are distinct but may also overlap.\nB.76 Examples of surveillance activities include optical surveillance of an individual or property where information obtained from that surveillance may lead to an investigation of a criminal offence. Examples of intelligence gathering include the collection of personal information about an individual to detect whether an offence has occurred, or to determine whether to initiate an investigation into that offence; the collection of information about whether an individual is planning to commit an offence and whether there are fellow criminal associates. Examples of monitoring activities include the monitoring by an enforcement body of a person who has presented themself to that body in compliance with a court order. [24]\n\n[app3-026] (APP 3, paras 3.88, Collecting by lawful and fair means > Collecting by fair means)\n\u2018At-risk\u2019 groups could include children, older people, people from culturally and linguistically diverse communities, and people lacking digital resources such as appropriate device and internet access. [59]\nFor example, it may be unfair to collect from an individual who is traumatised, in a state of shock or intoxicated.\nIt may further be unfair to collect in a way that disrespects cultural differences.\nAn individual may also be vulnerable due to inherent and significant power imbalances. For example, the power imbalance in the rental property market results in individuals feeling that they have no choice but to engage with and submit personal information to rental platforms, even if they are not comfortable doing so, for fear that their applications may be rejected. [60]\n3.88 Where a collection of personal information is by unfair means, it may also be unlawful and/or in breach of the requirement to only collect personal information (including sensitive information) that is \u2018reasonably necessary\u2019 (APP 3.1, 3.2 and 3.3).\n\n[app3-023] (APP 3, paras n/a, Collecting by lawful and fair means > Collecting by fair means)\nThe level of transparency that has been provided to individuals will be relevant here. For example, whether the individual is aware of the collection of their personal information from the entity\u2019s APP 1 privacy policy, terms of service and APP 5 collection notices. [49]\nIt would usually be unfair to collect personal information covertly without the knowledge of the individual. However, this may be a fair means of collection if undertaken in connection with a fraud investigation.\nBy way of further example, it may be unfair to collect from a document discarded by accident on a street, or from an electronic device which is lost or left unattended.\nAn APP entity should not consider collection to be fair simply because they have provided individuals with notice of a proposed collection of personal information.\nWhether the individual would reasonably expect their personal information to be collected and used in this manner/for this purpose This is to be determined objectively, having regard to what a reasonable person, who is properly informed, would expect in the circumstances. [50] Factors that could inform an individual\u2019s reasonable expectations include the purpose for which the personal information was originally made available, what was communicated in privacy policies, collection notices, and other information on online platforms such as terms and conditions of service. A reasonable person might not, for example, expect their personal information to be collected for a purpose unrelated to what they have been informed of. Where personal information is publicly available on the internet, that does not allow it to be collected and used in whatever way the APP entity chooses without regard to the knowledge and reasonable expectations of the person whose information it concerns. [51]\nThis is to be determined objectively, having regard to what a reasonable person, who is properly informed, would expect in the circumstances. [50] Factors that could inform an individual\u2019s reasonable expectations include the purpose for which the personal information was originally made available, what was communicated in privacy policies, collection notices, and other information on online platforms such as terms and conditions of service. A reasonable person might not, for example, expect their personal information to be collected for a purpose unrelated to what they have been informed of.\n\nQuestion: Would gathering personal information by hacking into a computer count as collecting by lawful means?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8ShuBXKJEFLGIOMobNeON4VK6aQ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"No, collecting personal information by hacking into a computer would not count as collecting by lawful means, as it is considered unlawful under the Privacy Act.\",\"citations\":[\"app3-021\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089403,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 47,
+   "prompt_tokens": 2101,
+   "total_tokens": 2148,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 67,
+    "engine_ttlt_ms": 404,
+    "pre_inference_ms": 90,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 679,
+    "service_ttlt_ms": 1010,
+    "user_visible_ttft_ms": 589
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102744-c1ac330c-default-r2-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B14-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "ANATOLIA DRIED FRUITS A.S. 340 Industrial Rd, Sri Lanka\nPACKING SPECIFICATION\nRef No .:\nPL-91991\nInvoice No .:\nINV-90180\nConsignee:\nKookaburra Home Furnishings Pty Ltd\nContainer:\nOOLU8561634\nMarks:\nKOOKABURRA/SYDNEY\nPkgs Description\nNet kg\nGross kg\n1344 Black pepper, whole\n16719.3\n18261.5\nTotal packages:\n1344\nTotal gross weight (kg): 18261.5\nTotal net weight (kg):\n16719.3",
+  "pages": 1,
+  "fields": {}
+ }
+}

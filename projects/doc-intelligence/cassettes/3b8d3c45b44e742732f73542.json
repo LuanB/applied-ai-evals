@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-001",
+  "markdown": false
+ },
+ "response": {
+  "content": "PHILIP MORRIS\nU.S.A.\nRESEARCH CENTER: P.O. BOX 26583, RICHMOND, VIRGINIA 23261 TELEPHONE (804) 271-2000\nAugust 17, 1979\nDr. S. J. Feinhandler Social Systems Analysts 2 Calvin Road Watertown, MA 02172\nDear Dr. Feinhandler:\nEnclosed are two Philip Morris checks in payment of your invoices dated August 2, 1979:\nConsulting services, July 1-31, 1979 $3,982.00\nWork on Project-studies, July 1-31, 1979 $4,484.70\nCross-cultural study, July 1-31, 1979 $4,365.00\n)\nRemaining balance for 1979:\n$54,153.52\nSincerely, Kanne D . Stay\nKarol G. Sharp\nSecretary to Dr. H. Wakeham\n/kgs\nEnclosures\n1000215807\nMARLBORO BENSON & HEDGES PARLIAMENT VIRGINIA SLIMS MULTIFILTER ALPINE SARATOGA PERSONNA BLADES",
+  "pages": 1,
+  "fields": {}
+ }
+}

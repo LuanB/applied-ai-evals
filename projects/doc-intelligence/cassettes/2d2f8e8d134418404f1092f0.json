@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nStatement of Philip Morris U.S.A. New York, July 13, 1995\nFor further information, contact: Karen Daragan (212) 880-4146\nPhilip Morris and tobacco industry critics agree on one thing, at least -- kids should not smoke.\n. In fact, Philip Morris has already voluntarily undertaken a sweeping initiative to prevent minors' access to cigarettes. Our initiative, which we call Action Against Access, has ten major elements that will go a long way toward ensuring that the only way to acquire cigarettes legally will be in a face-to-face transaction, where proof of age can be checked in person. In addition to Philip Morris' own actions such as discontinuance of sampling, we are supporting state legislation to restrict vending sales and to require retailer licensing. And it is, in fact, the states to which Congress has given responsibility for curbing youth access.\nWith this sort of tough action, and the involvement of parents, teachers and others to convince minors not to smoke, we can make great progress in keeping kids away from cigarettes, and cigarettes away from kids.\nAs committed as Philip Morris is to preventing youth access to cigarettes, we are equally committed to ensuring that adult smokers can continue to purchase cigarettes in a free marketplace. That free marketplace includes the right of manufacturers to get information to smokers, including advertising and promotional activities that allow us to help maintain brand loyalty and to persuade adult smokers to switch to our brands.\nAs to regulation of cigarettes by the Food and Drug Administration, there is a simple answer: The FDA has no authority to regulate cigarettes. Both Congress and the FDA, itself, have repeatedly and consistently stated that the FDA has no such authority, a position that the courts have upheld.\nAt a time when Congress is responding to the message of last year's election by trying to shrink the size of the federal government, Commissioner Kessler, an unelected federal regulator, is trying to expand the role of his agency into an area Congress has reserved to others.\nCommissioner Kessler's continuing crusade against the tobacco industry also raises serious questions about FDA priorities and its management of scarce tax dollars. Should the FDA be attempting to add to its regulatory burden while it is ' . being scrutinized for its inability to meet its current obligations to approve new\n2078223558"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89FXOJTxRQlMwtsrgWEFuAed5rt",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"memo\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088197,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 661,
+   "total_tokens": 670,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 63,
+    "engine_ttlt_ms": 131,
+    "pre_inference_ms": 67,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 509,
+    "service_ttlt_ms": 647,
+    "user_visible_ttft_ms": 442
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260823114745-bbc5cbf3-default-r1-dp0-default"
+  }
+ }
+}

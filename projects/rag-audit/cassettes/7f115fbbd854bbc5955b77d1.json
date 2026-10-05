@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app11-020] (APP 11, paras 11.51\u201311.53, Taking reasonable steps to destroy or deidentify personal information > Destroyi)\n11.51 Where it is not possible for an organisation to irretrievably destroy personal information held in electronic format, reasonable steps to destroy it would include putting the personal information \u2018beyond use\u2019. However, an organisation could instead consider whether de-identifying the data would be appropriate (see paragraphs 11.54 \u201311.58 below) and if so, take reasonable steps to de-identify the personal information.\n11.52 Personal information is \u2018beyond use\u2019 if the organisation:\nis not able, and will not attempt, to use or disclose the personal information\ncannot give any other entity access to the personal information\nsurrounds the personal information with appropriate technical, physical and organisational security. This should include, at a minimum, access controls including logs and audit trails, and\ncommits to take reasonable steps to irretrievably destroy the personal information if, or when, this becomes possible.\n11.53 It is expected that only in very limited circumstances would it not be possible for an organisation to destroy personal information held in electronic format. For example, where technical reasons may make it impossible to irretrievably destroy the personal information without also irretrievably destroying other information held with that personal information, which the entity is required to retain.\n\n[app11-019] (APP 11, paras 11.49\u201311.50, Taking reasonable steps to destroy or deidentify personal information > Destroyi)\n11.49 Personal information is destroyed when it can no longer be retrieved. The steps that are reasonable for an organisation to take to destroy personal information will depend on whether the personal information is held in hard copy or electronic form.\n11.50 For example, for personal information held:\nin hard copy, disposal through garbage or recycling collection would not ordinarily constitute taking reasonable steps to destroy the personal information, unless the personal information had already been destroyed through a process such as pulping, burning, pulverising, disintegrating or shredding\nin electronic form, reasonable steps will vary depending on the kind of hardware used to store the personal information. In some cases, it may be possible to \u2018sanitise\u2019 the hardware to completely remove stored personal information. [12] For hardware that cannot be sanitised, reasonable steps must be taken to destroy the personal information in another way, such as by irretrievably destroying it. Where it is not possible to irretrievably destroy personal information held in electronic format, an organisation could instead comply with APP 11.2 by taking reasonable steps to de-identify the personal information (see paragraphs 11.54 11.58 below), or should put the information beyond use (see paragraphs 11.51 \u201353 below), or\non a third party\u2019s hardware, such as cloud storage, where the organisation has instructed the third party to irretrievably destroy the personal information, reasonable steps would include taking steps to verify that this has occurred.\n\n[app11-015] (APP 11, paras 11.38\u201311.40, Destroying or de-identifying personal information > Personal information held by)\n11.38 Where an organisation \u2018holds\u2019 personal information it no longer needs for a purpose that is permitted under the APPs, it must ensure that it takes reasonable steps to destroy or de-identify the personal information. This obligation applies even where the organisation does not physically possess the personal information, but has the right or power to deal with it. \u2018Holds\u2019 is discussed in more detail in paragraphs 11.5 \u2013 11.7 above and Chapter B (Key concepts).\n11.39 Where an organisation holds personal information that needs to be destroyed or de-identified, it must take reasonable steps to destroy or de-identify all copies it holds of that personal information, including copies that have been archived or are held as back-ups.\n11.40 An organisation should have practices, procedures and systems in place to identify personal information that needs to be destroyed or de-identified (see APP 1.2, Chapter 1).\n\n[app4-007] (APP 4, paras 4.26\u20134.27, Dealing with unsolicited personal information that could not have been collected)\nwhether a law enforcement authority has requested that the personal information be retained pending the completion of an investigation\nwhether the organisation has considered a range of options for destroying or de-identifying the personal information\nwhether the individual that the personal information is about has expressly requested the organisation to return the information to the individual, rather than destroying or de-identifying the information, and the organisation does not retain another copy of the personal information\nwhere destruction or de-identification is unreasonable within a short timeframe, whether the destruction or de-identification task could be undertaken using a staged approach\nthe practicability, including time and cost involved. However, an organisation is not excused from destroying or de-identifying the personal information by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to destroy or de-identify the personal information will depend on whether the burden is excessive in all the circumstances.\n4.26 Those and other relevant considerations should be applied cautiously. Before deciding that it is reasonable to retain unsolicited personal information, an organisation should examine viable options for destroying or de-identifying it. For example, it may be practicable to transcribe or convert, and produce a new record of, solicited personal information that is commingled with unsolicited personal information. The original record containing the unsolicited personal information could then be destroyed or de-identified.\n4.27 For further discussion of destroying and de-identifying personal information, see Chapter B (Key concepts) and Chapter 11 (APP 11).\n\n[app11-017] (APP 11, paras 11.43\u201311.46, Taking reasonable steps to destroy or deidentify personal information)\n11.43 The \u2018reasonable steps\u2019 that an organisation should take to destroy or de-identify personal information will depend upon circumstances that include:\nthe amount and sensitivity of the personal information \u2014 more rigorous steps may be required as the quantity of personal information increases, or if the information is \u2018sensitive information\u2019 (defined in s 6(1) and discussed in Chapter B (Key concepts)) or other personal information of a sensitive nature\nthe nature of the organisation. Relevant considerations include an organisation\u2019s size, resources and its business model. For example, the reasonable steps expected of an organisation that operates through franchises or dealerships, or gives database and network access to contractors, may differ from the reasonable steps required of a centralised organisation\nthe possible adverse consequences for an individual if their personal information is not destroyed or de-identified \u2014 more rigorous steps may be required as the risks and adverse consequences increase.\nthe organisation\u2019s information handling practices, such as how it collects, uses and stores personal information, including whether personal information handling practices are outsourced to third parties, and\nthe practicability, including time and cost involved \u2014 however an organisation is not excused from destroying or de-identifying personal information by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take a particular step will depend on whether the burden is excessive in all the circumstances.\n11.44 The reasonable steps an APP entity must take for the purposes of destroying or de-identifying personal information that is no longer needed include both technical and organisational measures (APP 11.3).\n11.45 Technical measures include physical and technological methods to destroy or de-identify personal information. Examples of technical measures may include (but are not limited to) shredding, disintegrating and pulping, sanitisation of hardware and de-identification techniques.\n11.46 Organisational measures involve implementing policies, processes and procedures to ensure personal information that is no longer needed is destroyed or de-identified. Examples of organisational measures may include (but are not limited to) staff training, policies and procedures to determine if personal information needs to be retained, destroyed or de-identified, and verifying and documenting when and what personal information is destroyed or de-identified.\n\nQuestion: If a company cannot permanently erase personal data held electronically, what is it expected to do instead?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TqmxxiqpjP12JCAaf8dQFhkpSW",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"If a company cannot irretrievably destroy personal information held electronically, it is expected to take reasonable steps to put the personal information 'beyond use' or consider whether de-identifying the data would be appropriate and take reasonable steps to de-identify it.\",\"citations\":[\"app11-020\",\"app11-019\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089474,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 74,
+   "prompt_tokens": 1856,
+   "total_tokens": 1930,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 67,
+    "engine_ttlt_ms": 541,
+    "pre_inference_ms": 88,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 560,
+    "service_ttlt_ms": 1007,
+    "user_visible_ttft_ms": 473
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927095522-7b977cfa-default-r0-dp0-default"
+  }
+ }
+}

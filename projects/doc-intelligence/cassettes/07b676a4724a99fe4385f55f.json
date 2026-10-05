@@ -1,0 +1,51 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-invoice",
+  "doc": "test-B09-01",
+  "markdown": false,
+  "locale": "en-AU"
+ },
+ "response": {
+  "content": "GOLDEN VALLEY EXPORTS CO. LTD\n204 Industrial Rd, Turkey\nInvoice No .:\nINV-59341\nDate:\n01/08/2026\nSold to:\nSouthern Cross Imports Pty Ltd\nPacking List No .:\nPL-49148\nTerms of delivery:\nEXW\nCurrency:\nUSD\nDescription\nHS Code\nQty\nUnit price\nAmount\nDried apricots\n0813.10\n1203\n29.12\n35,031.36\nTOTAL USD:\n35,031.36\nCountry of origin: Turkey",
+  "pages": 1,
+  "fields": {
+   "CustomerName": {
+    "value": "Southern Cross Imports Pty Ltd",
+    "confidence": 0.887
+   },
+   "InvoiceDate": {
+    "value": "2026-08-01",
+    "confidence": 0.988
+   },
+   "InvoiceId": {
+    "value": "INV-59341",
+    "confidence": 0.987
+   },
+   "InvoiceTotal": {
+    "value": 35031.36,
+    "confidence": 0.982
+   },
+   "Items": {
+    "value": null,
+    "confidence": null
+   },
+   "PaymentTerm": {
+    "value": "EXW",
+    "confidence": 0.984
+   },
+   "VendorAddress": {
+    "value": "204 Industrial Rd, Turkey",
+    "confidence": 0.895
+   },
+   "VendorAddressRecipient": {
+    "value": "GOLDEN VALLEY EXPORTS CO. LTD",
+    "confidence": 0.882
+   },
+   "VendorName": {
+    "value": "GOLDEN VALLEY EXPORTS CO. LTD",
+    "confidence": 0.882
+   }
+  }
+ }
+}

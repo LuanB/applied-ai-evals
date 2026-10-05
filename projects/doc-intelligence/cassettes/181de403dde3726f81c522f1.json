@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B08-05",
+  "markdown": true
+ },
+ "response": {
+  "content": "# NATIONAL PLANT PROTECTION ORGANIZATION OF VIETNAM\n\n\n## PHYTOSANITARY CERTIFICATE\n\nNo .:\n\nCO771879\n\nName of exporter:\n\nCascade Orchards LLC\n\nDeclared consignee:\n\nSouthern Cross Imports Pty Ltd\n\nBotanical name of plants:\n\nAnacardium occidentale\n\nPlace of origin:\n\nVietnam\n\nDeclared means of conveyanceCMA CGM TAGE\n\nPoint of entry:\n\nBrisbane\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

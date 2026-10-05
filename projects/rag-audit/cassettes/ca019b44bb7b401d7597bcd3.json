@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[b-006] (B, paras B.32\u2013B.36, Key concepts A to D > Commonwealth record)\nB.32 A \u2018Commonwealth record\u2019 has the same meaning as in the Archives Act 1983 (s 6(1)).\nB.33 The Archives Act states that a \u2018Commonwealth record\u2019 means:\na record [15] that is the property of the Commonwealth or a Commonwealth institution, or\na record that is deemed to be a Commonwealth record either by a regulation made under the Archives Act or under s 22 of the Archives Act (which applies to records kept by a Royal Commission or Commission of inquiry) (s 3(1)).\nB.34 Some categories of records are excluded from that definition:\n\u2018exempt material\u2019, which includes, for example, material included in the memorial collection of the Australian War Memorial, and material included in the collections maintained by the National Library of Australia, the National Gallery of Australia, the National Portrait Gallery of Australia, and the National Museum of Australia\na register or guide maintained by the Archives, namely, the Australian National Register of Records, Australian National Guide to Archival Material or Australian National Register of Research Involving Archives (see Part VIII, Archives Act).\nB.35 It is likely that all or most personal information collected or received by an agency will be included in a \u2018Commonwealth record\u2019. Where an organisation is a contracted service provider under a Commonwealth contract, the records collected, received or held by that organisation under the contract may also be Commonwealth records.\nB.36 APPs 4.3 and 11.2 require the destruction or de-identification of personal information in certain circumstances (see Chapters 4 and 11). These requirements do not apply to information contained in a Commonwealth record. Retention, destruction and alteration of Commonwealth records is governed by the Archives Act. A Commonwealth record can, as a general rule, only be destroyed or altered in accordance with s 24 of the Archives Act. The grounds on which this may be done include with the permission of the National Archives of Australia (as set out in a records disposal authority) or in accordance with \u2018normal administrative practice\u2019. Further information about Archives Act requirements is available from the National Archives of Australia at <www.naa.gov.au>.\n\n[b-002] (B, paras B.8\u2013B.9, Key concepts A to D > APP entity)\nactivities of reporting entities or authorised agents relating to the Anti-Money Laundering and Counter-Terrorism Financing Act 2006 and its Regulations and Rules (s 6E(1A))\ncertain acts and practices in connection with the operation of a residential tenancy database (s 6E(2)) and regulation 7 of Privacy Regulation 2013\nactivities related to the conduct of a protection action ballot (s 6E(1)(B)) [1]\nB.8 \u2018Agency\u2019 refers to Australian Government (and Norfolk Island Government) agencies, [2] but does not include State and Territory agencies. An \u2018agency\u2019 is defined to be:\na Minister\na Department\na body (whether incorporated or not), or a tribunal, established or appointed for a public purpose by or under a Commonwealth enactment, not being: an incorporated company, society or association; or an organisation that is registered under the Fair Work (Registered Organisations) Act 2009 or a branch of such an organisation\nan incorporated company, society or association; or\nan organisation that is registered under the Fair Work (Registered Organisations) Act 2009 or a branch of such an organisation\na body established or appointed by the Governor-General, or by a Minister, other than by or under a Commonwealth enactment\na person holding or performing the duties of an office established by or under, or an appointment made under, a Commonwealth enactment, other than a person who, by virtue of holding that office, is the Secretary of a Department\na person holding or performing the duties of an appointment, being an appointment made by the Governor-General, or by a Minister, other than under a Commonwealth enactment\na federal court\nthe Australian Federal Police\na Norfolk Island agency\nthe nominated AGHS company [3]\nan eligible hearing service provider, or\nthe service operator under the Healthcare Identifiers Act 2010 (s 6(1)).\nB.9 Section 6(5) clarifies that a person shall not be taken to be an agency merely because the person is the holder of, or performs the duties of, certain offices, such as a judicial office or of an office of magistrate.\n\n[app8-027] (APP 8, paras n/a, When is an APP entity accountable for personal information that it discloses to )\n[3] Section 6(8) provides \u2018for the purposes of this Act, the question whether bodies corporate are related to each other is determined in the manner in which that question is determined under the Corporations Act 2001.\u2019\n[4] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012 states \u2018APP 8 will apply where an organisation sends personal information to a \u2018related body corporate\u2019 located outside Australia\u2019 (p 83). While s 13B(1) permits related bodies corporate to share personal information (unless an exception applies), it does not exempt an APP entity from complying with APP 8 before it discloses personal information to a related body corporate located overseas.\n[5] An APP entity is taken to have \u2018disclosed\u2019 personal information where an employee carries out an unauthorised disclosure \u2018in the performance of the duties of the person\u2019s employment\u2019 (s 8(1)).\n[6] See OAIC, Sony PlayStation Network / Qriocity: Own Motion Investigation Report, September 2011, OAIC website <https://www.oaic.gov.au>.\n[7] The actions of an employee will be attributed to the APP entity where it was carried out \u2018in the performance of the duties of the person\u2019s employment\u2019 (s 8(1)).\n[8] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[9] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[10] For further discussion of cloud computing considerations for agencies, see Secure Cloud Strategy, Digital Transformation Agency website <https://www.dta.gov.au>.\n[11] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[12] See OAIC, Data Breach Preparation and Response, OAIC website <https://www.oaic.gov.au>.\n[13] European Commission website <https://ec.europa.eu/info/law/law-topic/data-protection_en>.\n[14] Available at European Commission website <https://ec.europa.eu/info/law/law-topic/data-protection_en>. See in particular documents WP 133 (2007), WP 153 (2008), WP 154 (2008), WP 155 (2008).\n[15] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[16] See the Federal Register of Legislation for up-to-date versions of the regulations made under the Privacy Act.\n[17] This exception was introduced by the Privacy and Other Legislation Amendment Act 2024 . It applies to information disclosed from 11 December 2024 regardless of whether the information was acquired or created before or after that date.\n[18] See the Federal Register of Legislation for up-to-date versions of regulations made under the Privacy Act.\n\n[app13-019] (APP 13, paras 13.48, Being satisfied and taking reasonable steps > Reasonable steps to correct)\n13.48 Special considerations apply to Commonwealth records. The term \u2018Commonwealth record\u2019 is defined in s 3 of the Archives Act and is discussed in more detail in Chapter B (Key concepts). [9] The definition is likely to include, in almost all cases, all personal information held by agencies. It may also include personal information held by contracted service providers. A Commonwealth record can, as a general rule, only be destroyed or altered in accordance with s 24 of the Archives Act. Further, s 26 of the Archives Act makes it an offence to alter a Commonwealth record that is over 15 years old. [10] In relation to such records, and more generally, it may be reasonable (and consistent with statutory requirements) to:\nretain a version of a record which contains incorrect personal information (see paragraph 13.47)\nassociate a statement to clarify that, having regard to the purpose for which the personal information is held, the personal information is not accurate, up-to-date, complete, relevant or is misleading, and either including the correct personal information in the note or cross referencing where it is held (such as in an attachment to the record).\n\n[app4-005] (APP 4, paras 4.15\u20134.18, Dealing with unsolicited personal information that could not have been collected)\n4.15 The term \u2018Commonwealth record\u2019 in s 6(1) has the same meaning as in s 3 of the Archives Act 1983 (the Archives Act) and is discussed in more detail in Chapter B (Key concepts). [1] The term is likely to include all or most personal information received by agencies. It may also include personal information received by contracted service providers.\n4.16 If the unsolicited personal information is contained in a Commonwealth record, the agency is not required to destroy or de-identify the personal information under APP 4.3, even if it determines that it could not have collected the information under APP 3. The agency will instead be required to comply with the provisions of the Archives Act in relation to the Commonwealth record.\n4.17 A Commonwealth record can, as a general rule, only be destroyed or altered in accordance with s 24 of the Archives Act. The grounds on which this may be done include with the permission of the National Archives of Australia (as set out in a records disposal authority) or in accordance with \u2018normal administrative practice\u2019. See Chapter B (Key concepts) for more information about Commonwealth records.\n4.18 Unsolicited personal information held by an agency in a Commonwealth record must be dealt with in accordance with APPs 5\u201313 (APP 4.4) (see paragraphs 4.28 to 4.30 below).\n\nQuestion: How long must an employer keep employee records under the Fair Work Act?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U7AEZ0nt89CwXkmXnE5HdBup6j",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not cover the duration for which an employer must keep employee records under the Fair Work Act.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089491,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 35,
+   "prompt_tokens": 2339,
+   "total_tokens": 2374,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 67,
+    "engine_ttlt_ms": 267,
+    "pre_inference_ms": 100,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 601,
+    "service_ttlt_ms": 795,
+    "user_visible_ttft_ms": 500
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044527-34d4254c-default-r2-dp0-default"
+  }
+ }
+}

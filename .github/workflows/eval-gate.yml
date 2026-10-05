@@ -1,0 +1,73 @@
+name: eval-gate
+
+# Every PR replays each project's labelled eval set from recorded responses ($0,
+# deterministic) and blocks the merge if a candidate stops beating its baselines or
+# regresses past its blessed floor. A prompt/model/tool change misses the cassette
+# and fails loudly: re-record locally (EVALGATE_MODE=record) and commit the result.
+#
+# The `live` job is manual and bills Azure: it needs repo secrets
+# AZURE_OPENAI_ENDPOINT / AZURE_OPENAI_API_KEY / AZURE_AI_SERVICES_ENDPOINT.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      project:
+        description: "project to run live (bills Azure)"
+        required: true
+        default: telemetry-attribution
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [telemetry-attribution, "doc-intelligence:classify", "doc-intelligence:extract", "doc-intelligence:review", rag-audit, agent-guardrails]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv venv --python 3.13 && uv pip install -e ".[docs,rag,agent,dev]"
+      - name: gate unit tests
+        run: .venv/bin/pytest -q tests
+      - name: skip projects not built yet
+        id: exists
+        run: |
+          P="${{ matrix.project }}"; P="${P%%:*}"
+          echo "dir=$P" >> "$GITHUB_OUTPUT"
+          test -f "projects/$P/suite.py" && echo "yes=1" >> "$GITHUB_OUTPUT" || echo "yes=0" >> "$GITHUB_OUTPUT"
+      - name: eval gate (replay)
+        if: steps.exists.outputs.yes == '1'
+        env:
+          EVALGATE_MODE: replay
+        run: .venv/bin/evalgate run ${{ matrix.project }}
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.exists.outputs.yes == '1'
+        with:
+          name: eval-${{ strategy.job-index }}
+          path: |
+            projects/${{ steps.exists.outputs.dir }}/results/
+            traces/
+
+  live:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv venv --python 3.13 && uv pip install -e ".[docs,rag,agent]"
+      - name: eval gate (live — bills Azure, capped by evalgate.spend)
+        env:
+          EVALGATE_MODE: live
+          EVALGATE_CAP_AZURE_USD: "5"
+          AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+          AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
+          AZURE_AI_SERVICES_ENDPOINT: ${{ secrets.AZURE_AI_SERVICES_ENDPOINT }}
+        run: .venv/bin/evalgate run ${{ inputs.project }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-${{ inputs.project }}
+          path: projects/${{ inputs.project }}/results/

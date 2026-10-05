@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app12-024] (APP 12, paras 12.66, APP 12 minimum access requirements > Timeframe for responding to a request for a)\n12.66 APP 12.4(a)(i) provides that an agency must \u2018respond\u2019 to a request for access within 30 calendar days. The 30 day time period commences on the day after the day the agency receives the request. The agency must respond by giving access to the personal information that is requested, or by notifying its refusal to give access. If this is impracticable (for example, there is a justifiable need to clarify the scope of an individual\u2019s request, or to locate and assemble the requested information, or to consult a third party), the agency is expected to contact the individual to explain the delay and provide an expected timeframe for finalising the request. These are matters the Information Commissioner may examine if a complaint is made about an agency\u2019s failure to comply with the timeframe in APP 12.4(a).\n\n[app12-025] (APP 12, paras 12.67, APP 12 minimum access requirements > Timeframe for responding to a request for a)\n12.67 APP 12.4(a)(ii) provides that an organisation must respond \u2018within a reasonable period after the request is made\u2019. As with agencies, an organisation must respond by giving access to the personal information that is requested, or by notifying its refusal to give access. Factors that may be relevant in deciding what is a reasonable period include the scope and clarity of a request, whether the information can be readily located and assembled, and whether consultation with the individual or other parties is required. However, as a general guide, a reasonable period should not exceed 30 calendar days.\n\n[app13-024] (APP 13, paras 13.63\u201313.64, APP 13 minimum procedural requirements > Timeframe for responding to a request f)\n13.63 APP 13.5 provides that an agency must respond to a request to correct a record or to associate a statement within 30 calendar days. The 30 day time period commences on the day after the day the agency receives the request. An organisation must respond within a reasonable period after the request is made. As a general guide, a reasonable period should not exceed 30 calendar days.\n13.64 The APP entity must respond by correcting the personal information as requested by the individual, or by notifying the individual of its refusal to correct it.\n\n[app12-006] (APP 12, paras 12.22\u201312.24, Verifying an individual\u2019s identity > Giving access under APP 12 \u2014 further proces)\n12.22 Agencies should ensure that APP 12 access procedures are integrated with FOI Act procedures. The FOI Act sets out comprehensive rules about requesting and providing access to documents held by most Australian Government agencies, including documents containing personal information, and resolving access disputes. An important FOI requirement is that an agency has a duty to take reasonable steps to assist an individual to make an access request that complies with the FOI Act access requirements (FOI Act, s 15(3)). That means an agency could refer to the FOI Act in the agency\u2019s APP Privacy Policy and, in appropriate circumstances, draw the FOI Act to an individual\u2019s attention. Agencies should also consider providing this information through an \u2018Access to information\u2019 link on the agency\u2019s website homepage. [5]\n12.23 Agencies are not required to advise individuals to request personal information under the FOI Act rather than under an administrative arrangement or by relying on APP 12. As explained in the FOI Guidelines, [6] agencies should consider establishing administrative access arrangements that operate alongside the FOI Act and that provide easier and less formal means for individuals to obtain access to government information, including personal information. Providing access to personal information under an administrative arrangement will fulfil an agency\u2019s obligation under APP 12 to provide access upon request, provided the arrangement meets the minimum access requirements in APP 12.\n12.24 In some circumstances it may be preferable for an agency to suggest that an individual make an access request under the FOI Act:\nAn FOI access request can relate to any document in the possession of an agency (FOI Act, s 15(1)) and is not limited to personal information held in an agency record (APP 12.1).\nThe FOI Act contains a consultation process for dealing with requests for documents that contain personal or business information about a person other than the requester (FOI Act, ss 27, 27A).\nAn applicant who applies for access under the FOI Act can complain to the Information Commissioner about an action taken by an agency under that Act (FOI Act, s 70) (complaint mechanisms under the Privacy Act are discussed in paragraph 12.30 and 12.87 below).\n\n[app12-005] (APP 12, paras 12.18\u201312.21, Verifying an individual\u2019s identity > Giving access under APP 12 \u2014 general proces)\n12.18 APP 12 requires that personal information be given to an individual \u2018on request\u2019. APP 12 does not stipulate formal requirements for making a request, or require that a request be made in writing, or require the individual to state that it is an APP 12 request. [4]\n12.19 It is open to an APP entity to provide access to personal information on an informal basis, provided the minimum access requirements in APP 12 are met. The access requirements in APP 12 relate to response times (see paragraphs 12.66\u201312.67 below), how access is to be given (see paragraphs 12.68\u201312.75 below), access charges (see paragraphs 12.76\u201312.81 below), and providing a written notice, including the reasons for the refusal, if access is refused (see paragraphs 12.82\u201312.87 below). These are only the minimum requirements. An entity should endeavour to provide access in a manner that is as prompt, uncomplicated and inexpensive as possible.\n12.20 An APP entity is required by APP 1.4(d) to state in an APP Privacy Policy \u2018how an individual may access personal information about the individual\u2019 (see Chapter 1 (APP 1)). An APP entity is also required by APP 5.2(g) to take reasonable steps to notify an individual, or ensure they are aware, of the fact that the entity\u2019s APP Privacy Policy contains information about how the individual may access their personal information held by the entity.\n12.21 If an APP entity wishes an individual to follow a particular procedure in requesting access to their personal information, the entity could publish that procedure and draw attention to it, for example, by providing a link in the entity\u2019s APP Privacy Policy and on the entity\u2019s website homepage to the access procedure, to an online request form, or to an online portal that enables an individual to access their personal information. However, an entity cannot require an individual to follow a particular procedure, use a designated form or explain the reason for making the request. Any recommended procedure should be regularly reviewed to ensure that it is flexible and facilitates rather than hinders access.\n\nQuestion: How quickly must a federal agency respond to a request for access to personal information?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U3mhgkjaVYiy4G2f0XXxttPa4y",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"A federal agency must respond to a request for access to personal information within 30 calendar days, starting the day after the agency receives the request. The agency must either provide access or notify the refusal within this timeframe.\",\"citations\":[\"app12-024\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089487,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 61,
+   "prompt_tokens": 1651,
+   "total_tokens": 1712,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 9,
+    "engine_ttft_ms": 47,
+    "engine_ttlt_ms": 632,
+    "pre_inference_ms": 77,
+    "service_tbt_ms": 9,
+    "service_ttft_ms": 558,
+    "service_ttlt_ms": 1130,
+    "user_visible_ttft_ms": 481
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927152840-13a18399-default-r0-dp0-default"
+  }
+ }
+}

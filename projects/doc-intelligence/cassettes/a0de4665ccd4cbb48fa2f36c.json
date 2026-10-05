@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-082",
+  "markdown": false
+ },
+ "response": {
+  "content": "EASTERN STATES\n2074696187",
+  "pages": 1,
+  "fields": {}
+ }
+}

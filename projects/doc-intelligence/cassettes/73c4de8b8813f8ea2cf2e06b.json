@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B12-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "OCEANIC CONTAINER LINE\nB/L No .:\nMAEU58970940\nShipper:\nHanseatic Furniture GmbH\nConsignee:\nHarbourside Fresh Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nONE HARMONY / 554W\nPort of loading:\nValencia\nPort of discharge:\nBrisbane\nContainer / Seal:\nCOLU3552106 / SL659138\n1083 PACKAGES SAID TO CONTAIN FRESH ORANGES, NAV\u0116L GROSS WEIGHT 12987.7 KGS INVOICE INV-70494 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

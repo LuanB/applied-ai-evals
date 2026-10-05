@@ -1,0 +1,50 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-invoice",
+  "doc": "test-B01-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB\n117 Industrial Rd, Turkey\nCOMMERCIAL INVOICE\nInvoice No .:\nINV-37060\nDate:\n11/07/2026\nSold to:\nSouthern Cross Imports Pty Ltd\nPacking List No .:\nPL-95134\nTerms of delivery:\nCFR\nCurrency:\nAUD\nDescription\nHS Code\nQty\nUnit price\nAmount\nDried apricots\n0813.10\n1047\n24.02\n25,148.94\nTOTAL AUD:\n25,148.94\nCountry of origin: Turkey",
+  "pages": 1,
+  "fields": {
+   "CustomerName": {
+    "value": "Southern Cross Imports Pty Ltd",
+    "confidence": 0.893
+   },
+   "InvoiceDate": {
+    "value": "2026-11-07",
+    "confidence": 0.982
+   },
+   "InvoiceId": {
+    "value": "INV-37060",
+    "confidence": 0.981
+   },
+   "InvoiceTotal": {
+    "value": 25148.94,
+    "confidence": 0.808
+   },
+   "Items": {
+    "value": null,
+    "confidence": null
+   },
+   "PaymentTerm": {
+    "value": "CFR",
+    "confidence": 0.411
+   },
+   "VendorAddress": {
+    "value": "117 Industrial Rd, Turkey",
+    "confidence": 0.891
+   },
+   "VendorAddressRecipient": {
+    "value": "NORDIC PINE SAWMILLS AB",
+    "confidence": 0.917
+   },
+   "VendorName": {
+    "value": "NORDIC PINE SAWMILLS AB",
+    "confidence": 0.917
+   }
+  }
+ }
+}

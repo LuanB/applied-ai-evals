@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nBIONETICS\nLitton\n5516 Nicholson Lane Kensington, MD 20795 L 301-881-5600\nINVOICE\nREISSUE OF 4491 N\u00ba 4504 USE THIS NUMBER FOR CHECK REMITTANCE AND CORRESPONDENCE\nBilled To:\nLorillard Research Center 420 English Street Greensboro, North Carolina 27420 ATTN: Harry Minnemeyer\nDate: January 24, 1984\nAmount $ 4,000.00\nOK\nHynnemeyer 3-16-84 Dept. 9590 Acct. 4111\nPayment Address: LITTON BIONETICS, INC.\" - (103). Box 2087 Washington, D.C .- 20013\nY\nDate Delivered:\nDecember 12, 1983\nAuthorization:\nP.O. #354B\nService Rendered: Mouse Lymphoma Assay on the compound B94. Draft Report was submitted on December 12, 1983.\nSubmitted By: Crime Reichelt\nName:\nCorinne Reichelt\nTitle: Supervisor, Cost. Accounting\nProject Code:\n20989-285\nBilling No .:\n9\nCustomer Code:\nAccount Code: 110\nWhite & Goldenrod. Customer: Green, Contract; Canary, Project; Pink. Chronological\n89001822\nB2\nTerms: Due on Submission 1 United States Dollars Only."
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89EHlTDGojBZRruLG3BzfGnzdf2",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"invoice\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088196,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 493,
+   "total_tokens": 502,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 10,
+    "engine_ttft_ms": 38,
+    "engine_ttlt_ms": 136,
+    "pre_inference_ms": 81,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 570,
+    "service_ttlt_ms": 708,
+    "user_visible_ttft_ms": 489
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927112209-9589c874-default-r0-dp0-default"
+  }
+ }
+}

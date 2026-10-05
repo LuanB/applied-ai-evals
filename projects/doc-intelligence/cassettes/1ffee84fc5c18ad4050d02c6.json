@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-130",
+  "markdown": false
+ },
+ "response": {
+  "content": "ATTACHMENT I. Appointment Date:\nTime :\nID: (1-3)\nFEMALE\nName :\nTel.#:( 1 Home\nAddress :\n1\n1\nWork/\nAlternate\nCity:\nState:\nZip: :\nInterviewer:\nDate:\n1. \"Do you smoke cigarettes?\"\nYes 1 CONTINUE\nNo. 2 ASK IF ANYONE ELSE IN HOUSEHOLD SMOKES\n2. \"To be sure we are including people of all ages in our survey,\nplease tell me which of the following best described your age - Are you .. . \"\nUnder 18 1\n18-24\n2\n25-34 3\n35-44\n4\n45-54.\n5\n55-64.\n6\n65 or over. 7\n3. \"On the average, how many cigarettes do you smoke per day?\n(WRITE IN# ) (MUST SMOKE AT LEAST 20 CIGARETTES PER DAY TO CONTINUE)\n50703 7640\n-26-\nMALE",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-116",
+  "markdown": false
+ },
+ "response": {
+  "content": "INVOICE\nWestern Region\nCovington & Burling 1201 Pennsylvania Avenue. W PO Box 7566 Washington, DC 20044\nMr. James Goold\nCH307 Jan 31, 1996\nCrowell & Hor ing\nFor Crowell & Moring services and expenses during August and September 1995 as per attached invo ce dated January 10, 1996.\nTotal price now due for payment $ 7,149.64\nFo: HBI Ine Dee Ann Huss\nEnclosure\nTI1526-9544",
+  "pages": 1,
+  "fields": {}
+ }
+}

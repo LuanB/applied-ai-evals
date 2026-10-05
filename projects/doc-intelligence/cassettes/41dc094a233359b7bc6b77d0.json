@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-051",
+  "markdown": false
+ },
+ "response": {
+  "content": "PROJECT NUMBER: 1313 PROJECT TITLE : Semiworks Process Development\nPROJECT LEADER: D. E. Albertson\nPERIOD COVERED: October, 1987\n. Objective: Provide engineering and technical support to improve the performance and efficiency of the Semiworks operation.\n1\nB. Results:\n1\nProduction of 150-1b Samples of Filler in the Semiworks (Skidmore] - A project was initiated to determine the minimum sample size that can be processed in the Semiworks primary. Emphasis of the project will center on the ADT dryer operation and control which is currently the limiting factor on running small samples. The project is expected to take 60 to 90 days and will be coordinated with the Semiworks Process Control group.\n1\nMake/Pack (Albertson) - Installation of the third Max-S tipper and Accuray unit was completed in October. The fourth and final unit is scheduled to be installed during the early part of November, completing the upgrade of the Semiworks Mk-9 complexes.\n1\nC. Plans: Transfer the technology developed for the TLA primary process to the Semiworks small scale primary. Complete the upgrade of the make/pack equipment in the Semiworks. Continue work to improve the performance of the burley Pas dryer.\nI\n1\nL\n1\n2001287679\n26",
+  "pages": 1,
+  "fields": {}
+ }
+}

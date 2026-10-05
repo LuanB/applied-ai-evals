@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B10-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\nOCEAN BILL OF LADING\nB/L No .:\nCMDU28874090\nShipper:\nLanka Spice Mills (Pvt) Ltd\nConsignee:\nHarbourside Fresh Pty Ltd\nNotify party:\nSame as consignee.\nVessel / Voyage:\nMSC ARIANNA / 501W\nPort of loading:\nHo Chi Minh City\nPort of discharge:\nBrisbane\nContainer / Seal:\nMSCU7345092 / SL607841\n1.699 PACKAGES SAID TO CONTAIN CASHEW KERNELS GROSS WEIGHT 39694.4 KGS INVOICE INV-50762",
+  "pages": 1,
+  "fields": {}
+ }
+}

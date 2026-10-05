@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app1-021] (APP 1, paras 1.81\u20131.83, Making an APP Privacy Policy publicly available > Making an APP Privacy Policy a)\n1.81 APP 1.5 requires an APP entity to take reasonable steps to make its APP Privacy Policy available free of charge and in an appropriate form. This furthers the objective of APP 1 of ensuring personal information is managed in an open and transparent way.\n1.82 An APP entity is generally expected to make its policy available by publishing it on its website (see Note to APP 1.5). The information in the policy may be provided using a layered approach (see paragraph 1.12 above). The policy should be prominently displayed, accessible and easy to download. For example, a prominent link or privacy icon, displayed on each page of the entity\u2019s website, could provide a direct link to the APP Privacy Policy. If it is foreseeable that the policy may be accessed by individuals with special needs (such as individuals with a vision impairment, or individuals from a non-English speaking background), appropriate accessibility measures should be available. Agencies are also required to comply with any applicable government or statutory accessibility requirements. [20]\n1.83 Online publication may not be appropriate in some circumstances, for example, where the APP entity does not have an online presence or where individuals who regularly interact with the entity may not have internet access. In these circumstances, options an entity should consider include:\ndisplaying the policy on a stand at the entity\u2019s premises so it can be seen by members of the public\ndistributing a printout of the policy on request\nincluding details about how to access the policy at the bottom of all correspondence to individuals\nwhere the entity interacts with individuals by telephone, informing them during the telephone call of how the policy may be accessed in a particular form.\n\n[app1-022] (APP 1, paras 1.84\u20131.87, Making an APP Privacy Policy publicly available > Making an APP Privacy Policy a)\n1.84 APP 1.6 requires an APP entity, upon request, to take reasonable steps to provide a person or body with a copy of its APP Privacy Policy in the form requested. This should be done as soon as reasonably practicable after the request is received.\n1.85 The reference to a \u2018body\u2019 requesting a copy of a policy makes it clear that a request may be made other than by an individual or entity that is subject to the Privacy Act.\n1.86 An APP entity can decline to provide a copy of its APP Privacy Policy in a particular form if it would not be reasonable in the circumstances to meet the request. The steps that are reasonable will depend upon:\nother steps taken by the entity to make its policy publicly available and accessible\nthe practicability, including time and cost involved. However, an entity is not excused from providing a copy in a particular form by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take a particular step will depend on whether the burden is excessive in all the circumstances\nthe sensitivity of the personal information held. More rigorous steps may be required where the entity holds \u2018sensitive information\u2019 (defined in s 6(1) and discussed in Chapter B (Key concepts)) or information of a sensitive nature\nwhether the entity has unique or unusual information handling practices\nany reasons given by the body or person for requesting the policy in a particular form, and\nany accessibility or other specific needs of the body or person requesting the policy. For example, it may be reasonable to provide the policy in a form that can be accessed via assistive technology where appropriate.\n1.87 Inherent in the obligation to take \u2018reasonable steps\u2019 is an expectation that an APP Privacy Policy will usually be made available free of charge. The cost of doing so should be treated as part of an APP entity\u2019s normal operating costs. If a charge is imposed, the reason for the charge and the basis of calculation should be clearly communicated and explained before the policy is made available in the requested form, and the charge should be calculated at the lowest reasonable cost.\n\n[app1-023] (APP 1, paras 1.88, Making an APP Privacy Policy publicly available > Making an APP Privacy Policy a)\n1.88 If a request for access in a particular form is declined, the APP entity should explain this decision to the person or body making the request. The entity should be prepared to undertake reasonable consultation with the requester about the request.\n\n[app1-018] (APP 1, paras 1.68\u20131.74, Developing an APP Privacy Policy > Information that must be included in an APP P)\n1.68 Entities must ensure that meaningful and accessible information is provided to individuals.\n1.69 Entities should strike an appropriate balance to ensure information is:\narticulated clearly and in plain language and easy to understand\nstructured to enable consumers to request further information, where required\nappropriately tailored \u2013 sufficiently specific to be meaningful, while avoiding overwhelming levels of detail\norganised so similar information is grouped in a logical manner\nframed in a way that allows the information and the decision to be challenged or contested.\n1.70 In complying with the APP 1.7-1.9 transparency obligation, APP entities may group information about the categories of decisions and types of personal information in their privacy policy to comply with the transparency obligation. However, the level of detail provided about these processes must be meaningful to a reasonable person.\n1.71 Where an APP entity chooses to group information about categories of decisions and types of personal information used to inform a decision, this should be considered with regard to the sensitivity of the information relied upon by the computer program. Privacy policies should be able to clearly articulate where more sensitive types of information (e.g. health information or biometric templates) are used in the making of a computer\u2019s decision.\n1.72 In circumstances where all decisions made by an entity rely on the use of the same type of personal information, APP entities are not required to separate out each decision on a granular basis in their privacy policy but should still consider presenting the information in ways that assist an individual\u2019s understanding.\n1.73 For example, an APP entity may use a range of different computer programs for fraud detection, scam identification, and cybersecurity which may prevent access to significant goods or services. In this case, an APP privacy policy may outline it uses a range of fraud prevention technologies which process an individual\u2019s personal information (e.g. identity information, geolocation data, biometric information, and IP addresses) to decode whether to permit, flag or deny access to an account with the APP entity.\nGovernment agencies\u2019 disclosure obligations under the Information Publication Scheme (IPS)\n1.74 All Government agencies that are subject to the FOI Act are required to comply with obligations of disclosure under the Information Publication Scheme (IPS).\n\n[app1-007] (APP 1, paras 1.22\u20131.25, Developing an APP Privacy Policy > Information that must be included in an APP P)\n1.22 An APP Privacy Policy must describe the purposes for which personal information is usually collected, held, used and disclosed (APP 1.4(c)). An APP entity is not expected to publish details of purposes that form part of normal internal business practices, such as auditing, business planning, billing, and de-identifying personal information. The description of purposes could indicate the range of people or entities to which personal information is usually disclosed, and details about an entity\u2019s functions or activities that involve personal information that are contracted out. An organisation could also indicate if personal information is shared with a related body corporate. [5] Discussion of the terms \u2018purpose\u2019, \u2018collects\u2019, \u2018holds\u2019, \u2018uses\u2019 and \u2018discloses\u2019 is in Chapter B (Key concepts).\n1.23 An APP Privacy Policy must explain the procedure an individual can follow to gain access to or seek correction of personal information the APP entity holds (APP 1.4(d)). At a minimum, the policy should state:\nthat individuals have a right to request access to their personal information and to request its correction (APPs 12 and 13), and\nthe position title, telephone number, postal address and email address of a contact person for requests to access and correct personal information. An APP entity could establish a generic telephone number and email address that will not change with staff movements (for example privacy@agency.gov.au). [6]\n1.24 If an APP entity wishes an individual to follow a particular procedure in requesting access to or correction of their personal information, the entity could publish that procedure and draw attention to it, for example, by providing a link in the entity\u2019s APP Privacy Policy. However, an APP entity cannot require the individual to follow a particular procedure to make the access or correction request (see Chapter 12 (APP 12) and Chapter 13 (APP 13)).\n1.25 An agency\u2019s APP Privacy Policy could also refer to the Freedom of Information Act 1982 (FOI Act) and explain that the access and correction requirements in the Privacy Act operate alongside and do not replace other informal or legal procedures by which an individual can be provided with access to, or correction of, their personal information, including the FOI Act (this is discussed in more detail in Chapter 12 (APP 12) and Chapter 13 (APP 13)).\n\nQuestion: Does an entity have to make its privacy policy available for free?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TvIKOTxiCVCi11bbq6PJ07TbFo",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, an APP entity is generally expected to make its APP Privacy Policy available free of charge as part of taking reasonable steps to make it accessible. If a charge is imposed, it must be clearly communicated and calculated at the lowest reasonable cost.\",\"citations\":[\"app1-021\",\"app1-022\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089479,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 71,
+   "prompt_tokens": 2096,
+   "total_tokens": 2167,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 38,
+    "engine_ttlt_ms": 587,
+    "pre_inference_ms": 82,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 498,
+    "service_ttlt_ms": 1043,
+    "user_visible_ttft_ms": 416
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930073022-65635bb1-default-r0-dp0-default"
+  }
+ }
+}

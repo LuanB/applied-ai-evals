@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-025",
+  "markdown": false
+ },
+ "response": {
+  "content": "----- Original Message -----\nFrom:\nSent:\nWednesday, August 04, 1999 12:13 PM\nEd Palomo ITS/QS-NYC [SMTP:EPalomo@itsqs.com]\nTo: Borger, Susan D. Subject: RE: CRI Inspections - B&H\nThanks!\n2078339733C",
+  "pages": 1,
+  "fields": {}
+ }
+}

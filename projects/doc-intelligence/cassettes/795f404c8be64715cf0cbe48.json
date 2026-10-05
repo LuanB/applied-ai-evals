@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B15-01",
+  "markdown": true
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH\n356 Industrial Rd, Sri Lanka\n\n\n# EXPORT INVOICE\n\nInvoice No .:\n\nINV-69686\n\nDate:\n\n01/09/2026\n\nSold to:\n\nWattle & Co Wholesale Pty Ltd\n\nPacking List No .:\n\nPL-38663\n\nTerms of delivery:\n\nFOB\n\nCurrency:\n\nEUR\n\n\n<table>\n<tr>\n<th>Description</th>\n<th>HS Code</th>\n<th>Qty</th>\n<th>Unit price</th>\n<th>Amount</th>\n</tr>\n<tr>\n<td>Black pepper, whole</td>\n<td>0904:11</td>\n<td>456</td>\n<td>34.9</td>\n<td>15,914.40</td>\n</tr>\n<tr>\n<td>TOTAL EUR:</td>\n<td>15,914.40</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</table>\n\n\nCountry of origin: Sri Lanka\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

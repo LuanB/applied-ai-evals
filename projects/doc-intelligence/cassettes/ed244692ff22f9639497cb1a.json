@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B01-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEKONG AGRI TRADING JSC 205 Industrial Rd, Turkey\nInvoice No .:\nINV-41634\nDate:\n02/08/2026\nSold to:\nSouthern Cross Imports Pty Ltd\nPacking List No .:\nPL-63435\nTerms of delivery:\nDAP\nCurrency:\nEUR\nDescription\nHS Code\nQty\nUnit price Amount\nDried apricots\n0813.10\n17.63\n38.13 67,223.19\nTOTAL EUR: 67,223.19\nCountry of origin: Turkey",
+  "pages": 1,
+  "fields": {}
+ }
+}

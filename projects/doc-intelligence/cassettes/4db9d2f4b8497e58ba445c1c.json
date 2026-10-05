@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B08-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "CASCADE ORCHARDS LLC 218 Industrial Rd, Vietnam\nWEIGHT & PACKING NOTE\nRef No .:\nPL-49298\nInvoice No .:\nINV-65533\nConsignee:\nSouthern Cross Imports Pty Ltd\nContainer:\nMSKU7375393 *\nMarks:\nSOUTHERN/BRISBANE\nPkgs\nDescription\nNet kg\nGross kg\n547 Cashew kernels\n4978.9 5559.9\nTotal packages: 547\nTotal gross weight (kg):\n5559.9\nTotal net weight (kg):\n4978.9",
+  "pages": 1,
+  "fields": {}
+ }
+}

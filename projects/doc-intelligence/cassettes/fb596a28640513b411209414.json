@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B16-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\nB/L No .:\nMAEU35625917\nShipper:\nGolden Valley Exports Co. Ltd\nConsignee:\nSouthern Cross Imports Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nMSC ARIANNA / 574E\nPort of loading:\nGothenburg\nPort of discharge:\nFremantle\nContainer / Seal:\nMSCU4284394 / SL628311\n1375 PACKAGES SAID TO CONTAIN SAWN TIMBER, PINE, KILN DRIED GROSS WEIGHT 22220.8 KGS INVOICE INV-84536",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-invoice",
+  "doc": "test-B07-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH\n251 Industrial Rd, Sri Lanka\nInvoice No .:\nINV-38675\nDate:\n14/08/2026\nSold to:\nKookaburra Home Furnishings Pty Ltd\nPacking List No .:\nPL-77110\nTerms of delivery:\nDAP\nCurrency:\nAUD\nDescription\nHS Code\nQty\nUnit price\nAmount.\nBlack\npepper,\nwhole\n0904.11\n561\n17.34\n9,727.74\nTOTAL AUD:\n9,727.74\nCountry of origin: Sri Lanka",
+  "pages": 1,
+  "fields": {
+   "CustomerName": {
+    "value": "Kookaburra Home Furnishings Pty Ltd",
+    "confidence": 0.892
+   },
+   "InvoiceDate": {
+    "value": "2026-08-14",
+    "confidence": 0.985
+   },
+   "InvoiceId": {
+    "value": "INV-38675",
+    "confidence": 0.985
+   },
+   "InvoiceTotal": {
+    "value": 9727.74,
+    "confidence": 0.848
+   },
+   "Items": {
+    "value": null,
+    "confidence": null
+   },
+   "PaymentTerm": {
+    "value": "DAP",
+    "confidence": 0.982
+   },
+   "VendorAddress": {
+    "value": "251 Industrial Rd, Sri Lanka",
+    "confidence": 0.915
+   },
+   "VendorAddressRecipient": {
+    "value": "HANSEATIC FURNITURE GMBH",
+    "confidence": 0.887
+   },
+   "VendorName": {
+    "value": "HANSEATIC FURNITURE GMBH",
+    "confidence": 0.887
+   }
+  }
+ }
+}

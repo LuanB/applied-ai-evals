@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B09-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# OCEANIC CONTAINER LINE\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>CMDU60686170</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Golden Valley Exports Co. Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Southern Cross Imports Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>ONE HARMONY / 898W</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Izmir</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Fremantle</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>CMAU5744210 / SL427043</td>\n</tr>\n</table>\n\n\n1203 PACKAGES SAID TO CONTAIN DRIED APRICOTS\nGROSS WEIGHT 13217.4 KGS\nINVOICE . INV-59.341\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

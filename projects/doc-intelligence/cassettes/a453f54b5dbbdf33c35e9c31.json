@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B08-05",
+  "markdown": false
+ },
+ "response": {
+  "content": "SAFEHOLD QUARANTINE TREATMENTS\nCertificate No .:\nEX994214\nFumigant:\nSulfuryl fluoride\nDosage rate:\n1500 g-h/m3\nExposure period (hrs):\n24\nDate of fumigation:\n22/08/2026\nContainer No .:\nCMAU5583718\nCommodity:\nWooden dining chairs\nConsignment link:\nB/L MAEU3.3706122",
+  "pages": 1,
+  "fields": {}
+ }
+}

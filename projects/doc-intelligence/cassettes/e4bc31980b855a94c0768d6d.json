@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-080",
+  "markdown": false
+ },
+ "response": {
+  "content": "1\n2024114256\n1\n1",
+  "pages": 1,
+  "fields": {}
+ }
+}

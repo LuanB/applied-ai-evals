@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B12-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH 67 Industrial Rd, Spain\nInvoice No .:\nINV-70494\n25/07/2026\nDate:\nHarbourside Fresh Pty Ltd\nSold to:\nPacking List No .:\nPL-49914\nTerms of delivery:\nCIF\nCurrency:\nAUD\nDescription\nHS Code Qty Unit price Amount\nFresh oranges, navel\n0805.10\n1083 : 38.44\n41,630.52\nTOTAL AUD: 41,630.52\nCountry of origin: Spain",
+  "pages": 1,
+  "fields": {}
+ }
+}

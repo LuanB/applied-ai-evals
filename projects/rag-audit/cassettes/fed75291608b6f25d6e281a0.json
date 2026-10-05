@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app7-011] (APP 7, paras 7.31\u20137.33, Using and disclosing sensitive information for the purpose of direct marketing w)\n7.31 APP 7.4 provides that an organisation may use or disclose sensitive information for the purpose of direct marketing if the individual has consented to the use or disclosure for that purpose.\n7.32 The requirement to obtain consent applies even if the individual and the organisation have a pre-existing relationship. [7] If consent is not obtained, the organisation cannot rely on this exception, even if obtaining consent is impracticable or impossible in the circumstances.\n7.33 Consent is discussed in paragraph 7.23 below, and generally in Chapter B (Key concepts). \u2018Sensitive information\u2019 is defined in s 6(1) and discussed in Chapter B (Key concepts).\n\n[app7-007] (APP 7, paras 7.22, Using and disclosing personal information for the purpose of direct marketing wh)\n7.22 APP 7.3 provides that an organisation may use or disclose personal information (other than sensitive information) about an individual for the purpose of direct marketing if:\nthe organisation collected the information from: the individual, but the individual would not reasonably expect their information to be used or disclosed for that purpose, or a third party, and\nthe individual, but the individual would not reasonably expect their information to be used or disclosed for that purpose, or\na third party, and\nthe individual has consented to use or disclosure for that purpose, or it is impracticable to obtain that consent, and\nthe organisation provides a simple way for the individual to opt out of receiving direct marketing communications from the organisation, and\nin each direct marketing communication with the individual, the organisation includes a prominent statement, or otherwise draws the individual\u2019s attention to the fact that the individual may make such a request (referred to as an \u2018opt out statement\u2019), and\nthe individual has not made such a request to the organisation.\n\n[app7-009] (APP 7, paras 7.24\u20137.26, Using and disclosing personal information for the purpose of direct marketing wh)\n7.24 Whether it is \u2018impracticable\u2019 for an organisation to obtain consent will depend on a number of factors, including the time and cost involved in seeking consent. However, an organisation is not excused from obtaining consent by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it impracticable to obtain consent will depend on whether the burden is excessive in all the circumstances.\n7.25 An organisation may obtain the consent from the individual in relation to a subsequent use or disclosure of the individual\u2019s personal information for the purpose of direct marketing at the time it collects the personal information. In order to rely on this consent, the organisation must be satisfied that it is still current at the time of the use or disclosure. \u2018Current\u2019 consent is discussed in Chapter B (Key concepts).\n7.26 Where an organisation did not obtain the individual\u2019s consent at the time of collection, it must obtain the consent of the individual for the proposed use or disclosure, unless it is impracticable to do so. In that case, the organisation should assess whether it is impracticable to obtain consent at the time of the proposed use or disclosure.\n\n[app7-005] (APP 7, paras 7.15\u20137.18, Using and disclosing personal information for the purpose of direct marketing wh)\n7.15 The \u2018reasonably expect\u2019 test is an objective test that has regard to what a reasonable person, who is properly informed, would expect in the circumstances. This is a question of fact in each individual case. It is the responsibility of the organisation to be able to justify its conduct.\n7.16 Factors that may be important in deciding whether an individual has a reasonable expectation that their personal information will be used or disclosed for the purpose of direct marketing include where:\nthe individual has consented to the use or disclosure of their personal information for that purpose (see discussion in paragraph 7.23 below and Chapter B (Key concepts) for further information about the elements of consent)\nthe organisation has notified the individual that one of the purposes for which it collects the personal information is for the purpose of direct marketing under APP 5.1 (see Chapter 5 (APP 5))\nthe organisation made the individual aware that they could request not to receive direct marketing communications from the organisation, and the individual does not make such a request (see paragraph 7.21).\n7.17 An organisation should not assume that an individual would reasonably expect their personal information to be used or disclosed for the purpose of direct marketing just because the organisation believes that the individual would welcome the direct marketing, for example, because of the individual\u2019s profession, interest or hobby.\n7.18 An individual is not likely to have a reasonable expectation that their personal information will be used or disclosed for the purpose of direct marketing where the organisation has notified the individual that their personal information will only be used for a particular purpose unrelated to direct marketing. For example, where an individual provides personal information to their bank when setting up internet banking, and the bank tells the individual that it will only use that personal information for enabling security for internet banking, the individual is not likely to have a reasonable expectation that their personal information will then be used or disclosed for the purpose of direct marketing. [6]\n\n[app7-004] (APP 7, paras 7.14, Using and disclosing personal information for the purpose of direct marketing wh)\n7.14 APP 7.2 provides that an organisation may use or disclose personal information (other than sensitive information) about an individual for the purpose of direct marketing if:\nthe organisation collected the personal information from the individual\nthe individual would reasonably expect the organisation to use or disclose the personal information for that purpose\nthe organisation provides a simple way for the individual to request not to receive direct marketing communications from the organisation (also known as \u2018opting out\u2019), and\nthe individual has not made such a request to the organisation.\n\nQuestion: Does an organisation need consent to use someone's sensitive information for direct marketing if it already has a relationship with that person?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U1aRBllOIndCJAOiTP4sEb1wgk",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, an organisation must obtain consent to use or disclose sensitive information for direct marketing purposes even if there is a pre-existing relationship with the individual.\",\"citations\":[\"app7-011\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089485,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 47,
+   "prompt_tokens": 1441,
+   "total_tokens": 1488,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 28,
+    "engine_ttlt_ms": 358,
+    "pre_inference_ms": 89,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 553,
+    "service_ttlt_ms": 885,
+    "user_visible_ttft_ms": 464
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927061522-179374b7-default-r0-dp0-default"
+  }
+ }
+}

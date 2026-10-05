@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B19-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# CHAMBER OF COMMERCE - GERMANY\n\n\n## CERTIFICATE OF ORIGIN\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>CO913509</td>\n</tr>\n<tr>\n<td>Exporter:</td>\n<td>Pacific Rim Timber Pte Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Wattle &amp; Co Wholesale Pty Ltd</td>\n</tr>\n<tr>\n<td>Means of transport:</td>\n<td>EVER GIVEN II: from Hamburg</td>\n</tr>\n<tr>\n<td>HS heading:</td>\n<td>9403.60</td>\n</tr>\n<tr>\n<td>Goods:</td>\n<td>Wooden dining chairs</td>\n</tr>\n<tr>\n<td>Country of origin:</td>\n<td>Germany</td>\n</tr>\n</table>\n\n\nWe certify the goods described in invoice INV-76393 originate in Germany.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

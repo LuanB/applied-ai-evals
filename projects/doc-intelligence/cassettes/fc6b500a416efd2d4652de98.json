@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nFILE\nREC'D\nSA Wi LIAMSON TURACCO CORPTING TIO+\nINTERNAL CORRESPONDENCE\nA. R. NAGLE\nTO\nDEPT\nR. O. STEWART\nH. D, LEWIS\nM. M. MATTESOF\nC. C. to\nDR. R. A. SANFORD\nC. D. WHITE\nM. L. REYNOLDS\nF. E. MCKEOWN\nJ. H .. SEXSTONE\nA. WILLETS\nH. L. SPRIGGS.\nJANUARY 19, 1978\nD. M. HOLMES/cw/280\nDATE_\nFROM SUBJECT\nASL 84 PRODUCT RECOMMENDATION\nAt the last NPCC meeting, the Committee discussed the possibility of adopt- ing an untested XSL 84 improvement candidate.\" The intent is to have an Improved formulation which can be produced immediately to coincide with the February ad campaign.\nWe believe a modest increase in menthol content (0.36 to 0.40%) provides Improvement. Therefore, we propose KS1 84 at 0.40% menthol be adopted without testing.\nThree experimental KSL 84 will soon be tested against the current product as potential improvements. Original plans called for top. lines in early January with possible produce change in time for February's accelerated advertising campaign. However, recent cigarette rejections delay results to mid March or later.\nTwo of the three experimental products are quite different from KSL 84. Both use KSL 99 casing (much heavier) , higher menthol and a flavor (KSL 84 has none). Adopting either of these two prior to CPT results would represent a major risk.\nA third experimental candidate is simply current KSL 84 ot 0.40% mun chol (now 0.36%). Increased menthol affects KSL 84 smoke quality to a lesser degree than flavorings or heavier cavinga.\nAlthough small, the effect is a positive one. Higher menthol brings the . balance of menthol and tobacco sensations more in line with the parent brand, At its current level, KSL 84 is tobacco dominant, particularly in the case of aged products.\nD. M. H.\nNOTICE IF THE FILM IMAGE IS LESS CLEAR THAN THIS NOTICE. IT IS DUE TO THE QUALITY OF THE DOCUMENT BRING FLLNED.\n776134247\n7-234 235\nP. J ._ TICHE"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89I7PxS8Kkg6a7ZgTyX3LeLKjS2",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"memo\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088200,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 717,
+   "total_tokens": 726,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 14,
+    "engine_ttft_ms": 25,
+    "engine_ttlt_ms": 163,
+    "pre_inference_ms": 80,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 531,
+    "service_ttlt_ms": 670,
+    "user_visible_ttft_ms": 451
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927111935-e948106b-default-r1-dp0-default"
+  }
+ }
+}

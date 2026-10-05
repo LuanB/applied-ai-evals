@@ -1,0 +1,172 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: phytosanitary_certificate\n\nPage (markdown from layout analysis):\n# NATIONAL PLANT PROTECTION ORGANIZATION OF VIETNAM\n\n\n## PHYTOSANITARY CERTIFICATE\n\nNo .:\n\nCO771879\n\nName of exporter:\n\nCascade Orchards LLC\n\nDeclared consignee:\n\nSouthern Cross Imports Pty Ltd\n\nBotanical name of plants:\n\nAnacardium occidentale\n\nPlace of origin:\n\nVietnam\n\nDeclared means of conveyanceCMA CGM TAGE\n\nPoint of entry:\n\nBrisbane\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "certificate_number",
+      "exporter",
+      "consignee",
+      "botanical_name",
+      "place_of_origin"
+     ],
+     "properties": {
+      "certificate_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "certificate number"
+      },
+      "exporter": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "exporter"
+      },
+      "consignee": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "consignee"
+      },
+      "botanical_name": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "botanical name"
+      },
+      "place_of_origin": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "place of origin"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8CNzaFlZsb14XCcolSG91RPosbZ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"certificate_number\":\"CO771879\",\"exporter\":\"Cascade Orchards LLC\",\"consignee\":\"Southern Cross Imports Pty Ltd\",\"botanical_name\":\"Anacardium occidentale\",\"place_of_origin\":\"Vietnam\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088391,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 42,
+   "prompt_tokens": 289,
+   "total_tokens": 331,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 29,
+    "engine_ttlt_ms": 276,
+    "pre_inference_ms": 77,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 630,
+    "service_ttlt_ms": 916,
+    "user_visible_ttft_ms": 553
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822105807-1ba5e5a3-default-r1-dp0-default"
+  }
+ }
+}

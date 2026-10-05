@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B10-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "SAFEHOLD QUARANTINE TREATMENTS\nFUMIGATION CERTIFICATE\nCertificate No .:\nEX571873\nFumigant:\nPhosphine\nDosage rate:\n2 g/m3\nExposure period (hrs):\n120\nDate of fumigation:\n06/09/2026\nContainer No .:\nMSCU7345092\nCommodity:\n\"Cashew kernels\nConsignment link:\nB/L CMDU28874090",
+  "pages": 1,
+  "fields": {}
+ }
+}

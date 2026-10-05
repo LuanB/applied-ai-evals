@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-148",
+  "markdown": false
+ },
+ "response": {
+  "content": "BIOGRAPHICAL SKETCHS\nNAME\nROLE\nKatya Ravid, DSc/PhD\nPrincipal Investigator\nZhihui Zhao, MD, PhD\nPostdoctoral Fellow\nGary Stiles, MD\nConsultant\nRichard Cohen, MD\nCollaborator\n40005703",
+  "pages": 1,
+  "fields": {}
+ }
+}

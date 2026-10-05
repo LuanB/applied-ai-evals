@@ -1,0 +1,172 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: certificate_of_origin\n\nPage (markdown from layout analysis):\n# CHAMBER OF COMMERCE - TURKEY\n\n\n# CERTIFICATE OF ORIGIN\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>FC477115</td>\n</tr>\n<tr>\n<td>Exporter:</td>\n<td>Nordic Pine Sawmills AB</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Means of transport:</td>\n<td>CMA CGM TAGE from Izmir</td>\n</tr>\n<tr>\n<td>HS heading:</td>\n<td>0813.10.</td>\n</tr>\n<tr>\n<td>Goods:</td>\n<td>Dried apricots</td>\n</tr>\n<tr>\n<td>Country of origin:</td>\n<td>Turkey</td>\n</tr>\n</table>\n\n\nWe certify the goods described in invoice INV-33924 originate in Turkey.\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "certificate_number",
+      "exporter",
+      "consignee",
+      "country_of_origin",
+      "hs_code"
+     ],
+     "properties": {
+      "certificate_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "certificate number"
+      },
+      "exporter": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "exporter"
+      },
+      "consignee": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "consignee"
+      },
+      "country_of_origin": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "country of origin"
+      },
+      "hs_code": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "HS tariff code"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8CCaUsZRgMy6VPScSrfVYv1Wogi",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"certificate_number\":\"FC477115\",\"exporter\":\"Nordic Pine Sawmills AB\",\"consignee\":\"Harbourside Fresh Pty Ltd\",\"country_of_origin\":\"Turkey\",\"hs_code\":\"0813.10.\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088380,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 44,
+   "prompt_tokens": 367,
+   "total_tokens": 411,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 36,
+    "engine_ttlt_ms": 289,
+    "pre_inference_ms": 84,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 557,
+    "service_ttlt_ms": 844,
+    "user_visible_ttft_ms": 473
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044527-34d4254c-default-r2-dp0-default"
+  }
+ }
+}

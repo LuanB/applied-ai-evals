@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B07-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "SIERRA CITRUS COOPERATIVA 387 Industrial Rd, United States\nRef No .:\nPL-11085\nInvoice No .:\nINV-70890\nConsignee:\nBluegum Food Distributors Pty Ltd\nContainer:\nMSKU1073801\nMarks:\nBLUEGUM/SYDNEY\nPkgs\nDescription\nNet kg Gross kg\n1329 Walnuts, in shell\n26911.3\n28495.2\nTotal packages:\n1329\nTotal gross weight (kg):\n28495.2\nTotal net weight (kg):\n26911.3",
+  "pages": 1,
+  "fields": {}
+ }
+}

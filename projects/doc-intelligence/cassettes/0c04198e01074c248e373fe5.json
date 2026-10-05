@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B19-02",
+  "markdown": true
+ },
+ "response": {
+  "content": "# PACIFIC RIM TIMBER PTE LTD 211 Industrial Rd, Germany\n\n\n<table>\n<tr>\n<td>Ref No .:</td>\n<td>PL-10330</td>\n</tr>\n<tr>\n<td>Invoice No .:</td>\n<td>INV-76393</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Wattle &amp; Co Wholesale Pty Ltd</td>\n</tr>\n<tr>\n<td>Container:</td>\n<td>MSKU9489387</td>\n</tr>\n<tr>\n<td>Marks:</td>\n<td>WATTLE/FREMANTLE</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<th>Pkgs</th>\n<th>Description</th>\n<th>Net kg</th>\n<th>Gross. kg</th>\n</tr>\n<tr>\n<td>254</td>\n<td>Wooden dining chairs</td>\n<td>3205.3</td>\n<td>3372.3</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>Total packages:</td>\n<td>254</td>\n</tr>\n<tr>\n<td>Total gross weight (kg):</td>\n<td>3372.3</td>\n</tr>\n<tr>\n<td>Total net weight (kg):</td>\n<td>3205.3</td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

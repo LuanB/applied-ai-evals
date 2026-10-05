@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[b-004] (B, paras B.17\u2013B.20, Key concepts A to D > Australian link)\nB.17 Whether a business is carried on \u2018in Australia\u2019 focusses upon whether activity is undertaken in Australia as part of the entity\u2019s business. There is \u2018a need for some physical activity in Australia through human instrumentalities, being activity that itself forms part of the course of conducting business\u2019. [8] However, as noted in another decision, \u2018provided that there are acts within Australia which are part of the company's business, the company will be doing business in Australia although the bulk of its business is conducted elsewhere and it maintains no office in Australia\u2019. [9]\nB.18 An important consideration in applying this territorial requirement in the context of the Privacy Act is that the Act, though technologically-neutral, operates in an environment where personal information is regularly collected, held, used and disclosed online by organisations that may simultaneously carry on business through the web in many countries. In addition, an object of the Privacy Act is to \u2018promote the protection of the privacy of individuals\u2019 (s 2A(a)), which requires that regard be had to contemporary and practical circumstances.\nB.19 In this context, factors that may be considered in assessing if an entity carries on business in Australia include whether:\nthe entity has a place of business in Australia\npeople who undertake business acts for the entity are located in Australia \u2013 for example, an entity may carry on business in Australia where an agent acting on its behalf carries on its business from some fixed place in Australia [10]\nthe entity has a website that offers goods or services to countries including Australia\nAustralia is one of the countries on the drop-down menu appearing on the entity\u2019s website\nweb content that forms part of carrying on the business, was uploaded by or on behalf of the entity, in Australia\nbusiness or purchase orders are assessed or acted upon in Australia\nthe entity is the registered proprietor of trademarks in Australia. [11]\nB.20 The presence or absence of one of these factors may not be determinative in assessing whether an entity carries on business in Australia. For example, where an entity does not have a place of business in Australia, this does not necessarily mean that it does not carry on business in Australia.\n\n[app7-017] (APP 7, paras 7.48\u20137.49, Interaction with other legislation)\n7.48 The Spam Act 2003 (Spam Act) and the Do Not Call Register Act 2006 (DNCR Act) contain specific provisions regarding direct marketing. Where the act or practice of an APP entity is subject to the Spam Act, DNCR Act, or other legislation prescribed under the regulations, APP 7 does not apply to the extent that this legislation applies (APP 7.8).\n7.49 If an organisation that is an APP entity is exempt or partially exempt from the Spam Act or DNCR Act, APP 7 will still apply to the acts and practices of that organisation to the extent of that exemption.\n\n[app12-023] (APP 12, paras 12.65, APP 12 minimum access requirements > Difference with access requirements applyin)\n12.65 The APP 12 minimum access requirements and the Privacy Act complaint and review mechanisms differ in important respects from those applying to agencies in relation to requests for information received under the FOI Act. [14] For example, the FOI Act requires an agency to acknowledge receipt of an FOI request within 14 days, and to make a decision on the request within 30 calendar days. The processing period can be extended with the agreement of the applicant, to enable an agency to consult a third party, or with the approval of the Information Commissioner for complex and voluminous requests. [15] If an agency fails to make a decision within the statutory processing period (including an authorised extension) the agency is deemed to have made a decision refusing access. The applicant may then apply for internal review or Information Commissioner review, although the OAIC can extend the time for an agency to make a decision on the request. The FOI Act also contains special requirements on charges, the form of access and statements of reasons.\n\n[app7-002] (APP 7, paras 7.7\u20137.8, What does APP 7 say?)\n7.7 An organisation must, on request, notify an individual of its source of the individual\u2019s personal information that it has used or disclosed for the purpose of direct marketing unless this is unreasonable or impracticable to do so (APP 7.6).\n7.8 APP 7 does not apply to the extent that the Do Not Call Register Act 2006 , the Spam Act 2003 or any other legislation prescribed by the regulations apply (APP 7.8). APP 7 will still apply to the acts or practices of an organisation that are exempt from these Acts.\n\n[app6-011] (APP 6, paras 6.23\u20136.26, Using or disclosing personal information for a secondary purpose > Using or disc)\nthe entity has notified the individual of the particular secondary purpose under APP 5.1 (see Chapter 5 (APP 5))\nthe secondary purpose is a normal internal business practice, such as as auditing, business planning, billing or de-identifying the personal information.\n6.23 This exception is limited to using or disclosing personal information for a secondary purpose that is \u2018related\u2019, or for sensitive information \u2018directly related\u2019, to the primary purpose of collection.\n6.24 A related secondary purpose is one which is connected to or associated with the primary purpose. There must be more than a tenuous link. [10]\n6.25 Examples of where a secondary purpose is related to the primary purpose of collection include:\nAn organisation collects personal information about an individual for the primary purpose of collecting a debt. A law firm, acting on behalf of that organisation in relation to the debt collection, contacts the individual\u2019s neighbour and seeks information from the neighbour about the individual\u2019s whereabouts (but does not disclose any specific information about the debt). This disclosure to the neighbour, for the secondary purpose of locating the individual, is related to the primary purpose of debt collection and would be within the individual\u2019s reasonable expectations. [11]\nAn agency collects personal information to include in an employee\u2019s personnel file for the primary purpose of administering that individual\u2019s employment. [12] It then uses this personal information as part of an investigation into complaints by the individual about working conditions. In these circumstances, the use for the secondary purpose of investigating a complaint in the workplace is related to the primary purpose of collection, and would be within the individual\u2019s reasonable expectations. [13]\nAn APP entity uses personal information for the purpose of de-identifying the information.\n6.26 For the use or disclosure of sensitive information, the secondary purpose must be \u2018directly related\u2019 to the primary purpose of collection. A directly related secondary purpose is one which is closely associated with the primary purpose, even if it is not strictly necessary to achieve that primary purpose. This requirement for a direct relationship recognises that the use and disclosure of sensitive information can have serious ramifications for the individual or their associates, including humiliation, embarrassment or loss of dignity.\n\nQuestion: Under the Spam Act, how many working days does a business have to action an unsubscribe request?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Snl7gMhopdBF6Qmsu545oYzBnW",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The guidelines provided do not cover the specific timeframe under the Spam Act for actioning an unsubscribe request.\",\"citations\":[\"app7-017\",\"app7-002\"],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089409,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 43,
+   "prompt_tokens": 1655,
+   "total_tokens": 1698,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 19,
+    "engine_ttft_ms": 68,
+    "engine_ttlt_ms": 906,
+    "pre_inference_ms": 96,
+    "service_tbt_ms": 19,
+    "service_ttft_ms": 532,
+    "service_ttlt_ms": 1364,
+    "user_visible_ttft_ms": 436
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260928220809-de4ad82b-default-r2-dp0-default"
+  }
+ }
+}

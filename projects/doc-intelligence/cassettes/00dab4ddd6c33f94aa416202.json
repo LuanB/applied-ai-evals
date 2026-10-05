@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B03-05",
+  "markdown": false
+ },
+ "response": {
+  "content": "NATIONAL PLANT PROTECTION ORGANIZATION OF TURKEY\nPHYTOSANITARY CERTIFICATE\nNo .:\nPC794914\nName of exporter:\nAnatolia Dried Fruits A.S.\nDeclared consignee:\nRiverina Trading Pty Ltd\nBotanical name of plants:\nPrunus armeniaca\nPlace of origin:\nTurkey\nDeclared means of conveyanceMAERSK KOWLOON\nPoint of entry:\nAdelaide\nThe plants or plant products described herein have been inspected and are considered free from quarantine pests of the importing contracting party.",
+  "pages": 1,
+  "fields": {}
+ }
+}

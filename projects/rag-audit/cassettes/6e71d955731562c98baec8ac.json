@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app6-019] (APP 6, paras 6.55, Using or disclosing personal information for a secondary purpose > Using or disc)\n6.55 Another example is where a carer discloses health information to an unconscious patient\u2019s family members about the patient\u2019s condition. In these circumstances, the exception would apply where the carer is satisfied that the disclosure is necessary for compassionate reasons. The disclosure must be limited to the extent reasonable and necessary for the compassionate reasons.\n\n[app6-018] (APP 6, paras 6.52\u20136.54, Using or disclosing personal information for a secondary purpose > Using or disc)\n6.52 An example of where this permitted health situation might apply is:\nin the course of providing a health service, an organisation obtains information that a patient has a pathogenic mutation in the Huntington disease gene, and\nthe individual refuses to consent to the organisation disclosing any information to their genetic relatives, even after the individual has participated in discussions and counselling, and received information about the implications of the diagnosis for the individual\u2019s genetic relatives\ndespite this refusal, the organisation may disclose the genetic information to genetic relatives under this exception, providing any disclosure is in accordance with the guidelines approved under s95AA.\n6.53 An organisation may disclose health information about an individual for a secondary purpose if:\nthe organisation provides a health service to the individual\nthe recipient of the information is a \u2018responsible person\u2019 for the individual\nthe individual is either physically or legally incapable of giving consent to the disclosure, or physically cannot communicate consent to the disclosure\nthe individual providing the health service (the \u2018carer\u2019) is satisfied that either the disclosure is necessary to provide appropriate care or treatment of the individual, or the disclosure is made for compassionate reasons\nthe disclosure is not contrary to any wish expressed by the individual before the individual became unable to give or communicate consent of which the carer is aware or of which the carer could reasonably be expected to be aware\nthe disclosure is limited to the extent reasonable and necessary for providing appropriate care or fulfilling compassionate reasons (s 16B(5)).\n6.54 An example of where this permitted health situation might apply is where an individual who cannot give consent is released from hospital into the care of family members. The health service provider (referred to in this exception as the \u2018carer\u2019) discloses health information to the family members to enable them to monitor the individual\u2019s progress and administer medication. In these circumstances, the exception would apply where the carer is satisfied that the disclosure is necessary to provide appropriate care for the individual. The disclosure must be limited to the extent reasonable and necessary to provide appropriate care.\n\n[app5-004] (APP 5, paras 5.7, Taking reasonable steps to notify or ensure awareness > When not taking any step)\n5.7 APP 5.1 acknowledges that it may be reasonable for an APP entity to not take any steps to provide a notice or ensure awareness of all or some of the APP 5 matters. It is the responsibility of the entity to be able to justify not taking any steps. The following are given as examples of when this may be reasonable:\nThe individual is aware that personal information is being collected, the purpose of collection and other APP 5 matters relating to the collection, for example, a doctor has informed a patient that a specialist to whom the patient is referred for treatment will obtain the patient\u2019s health information from the doctor.\nAn entity collects personal information from an individual on a recurring basis in relation to the same matter. However, if a long period of time has elapsed since the notice was provided and the individual may no longer be aware of the APP 5 matters, the entity may need to take steps to notify or ensure awareness. Similarly, if a change in circumstances as to how personal information is collected affects any of the APP 5 matters, the entity should take reasonable steps to ensure an individual is aware of those matters.\nNotification may pose a serious threat to the life, health or safety of an individual or pose a threat to public health or safety, for example, a law enforcement agency obtaining personal information from a confidential source for the purpose of an investigation.\nNotification may jeopardise the purpose of collection or the integrity of the personal information collected and there is a clear public interest in the purpose of collection, for example, a law enforcement agency undertaking lawful covert surveillance of an individual in connection with a criminal investigation.\nNotification would be inconsistent with another legal obligation, for example, by breaching a statutory secrecy provision, a client\u2019s legal professional privilege, or a legal obligation of confidence.\nAn entity collects personal information about a person who poses (or is alleged to pose) a risk of committing family violence and this collection is permitted by a legislated family violence information sharing scheme, such as that established by the Family Violence Protection Act 2008 (Vic).\n\n[b-022] (B, paras B.95\u2013B.99, Health information > Personal information)\nB.95 The following are given as examples of how those considerations may apply to particular items of information:\nMost entities and individuals would encounter difficulty in using a licence plate number to identify the registrant of a car, as they would not have access to the car registration database. By contrast, an agency or individual with access to that database may be able to identify the registrant. Accordingly, the licence plate number may be \u2018personal information\u2019 held by that agency or individual, but may not be personal information if held by another entity.\nInformation that an unnamed person with a certain medical condition lives in a specific postcode area may not enable the individual to be identified, and would not therefore be personal information. By contrast, it may be personal information if held by an entity or individual with specific knowledge that could link an individual to the medical condition and the postcode. [30]\nA common surname that is shared by many people may not be personal information that would reasonably identify a particular individual. However, combined with other information, such as address or other contact information, it may be personal information.\nB.96 Whether a person is \u2018reasonably identifiable\u2019 is an objective test that has practical regard to the context in which the issue arises. Even though it may be technically possible to identify an individual from information, if doing so is so impractical that there is almost no likelihood of it occurring, the information would not generally be regarded as \u2018personal information\u2019. [31] An individual may not be reasonably identifiable if the steps required to do so are excessively time-consuming or costly in all the circumstances.\nB.97 Where it is unclear whether an individual is \u2018reasonably identifiable\u2019, an APP entity should err on the side of caution and treat the information as personal information.\nB.98 The definition of \u2018personal information\u2019 in s 6(1) refers to information or an opinion about an \u2018individual.\u2019 An \u2018individual\u2019 means \u2018a natural person\u2019 (s 6(1)). The ordinary meaning of \u2018natural person\u2019 does not include deceased persons. [32]\nB.99 Information about a deceased person may include information about a living individual and be \u2018personal information\u2019 for the purposes of the Privacy Act. For example, information that a deceased person had an inheritable medical condition may indicate that the deceased person\u2019s descendants have an increased risk of that condition. If the descendants are identifiable, that information would be personal information about the descendants. The privacy interests of family members could therefore be considered when handling information about deceased persons.\n\n[b-010] (B, paras B.55\u2013B.59, Key concepts A to D > Consent)\nB.55 An individual must have the capacity to consent. This means that the individual is capable of understanding the nature of a consent decision, including the effect of giving or withholding consent, forming a view based on reasoned judgement and how to communicate a consent decision. An APP entity can ordinarily presume that an individual has the capacity to consent, unless there is something to alert it otherwise, for example, the individual is a child or young person (see below). If an entity is uncertain as to whether an individual has capacity to consent at a particular time, it should not rely on any statement of consent given by the individual at that time.\nB.56 Issues that could affect an individual\u2019s capacity to consent include:\nage\nphysical or mental disability\ntemporary incapacity, for example during a psychotic episode, a temporary psychiatric illness, or because the individual is unconscious, in severe distress or suffering dementia\nlimited understanding of English.\nB.57 An APP entity should consider whether any such issue could be addressed by providing the individual with appropriate support to enable them to have capacity to consent. If an individual does not have capacity to consent, even with support or the provision of additional resources such as an interpreter or alternative communication methods, and consent is required, an entity should consider who can act on the individual\u2019s behalf. Options include:\na guardian\nsomeone with an enduring power of attorney\na person recognised by other relevant laws, for example in NSW, a \u2018person responsible\u2019 under the Guardianship Act 1987 (NSW) (this may be an individual\u2019s spouse, partner, carer, family member or close friend), or\na person who has been nominated in writing by the individual while they were capable of giving consent.\nB.58 An individual who lacks the capacity to consent should nevertheless be involved, as far as practicable, in any decision-making process. To the extent practicable in the circumstances, an APP entity should ensure that privacy issues are discussed with individuals who have impaired decision-making capacity in a way that is understandable and comprehensible.\nB.59 The Privacy Act does not specify an age after which individuals can make their own privacy decisions. An APP entity will need to determine on a case-by-case basis whether an individual under the age of 18 has the capacity to consent.\n\nQuestion: Can a carer tell an unconscious patient's family about the patient's condition?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U1Cv8ciRiJpBY5W5knZFJ3w1DC",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, a carer can disclose health information to an unconscious patient's family members about the patient's condition if the carer is satisfied that the disclosure is necessary for compassionate reasons, and the disclosure is limited to what is reasonable and necessary for those reasons.\",\"citations\":[\"app6-019\",\"app6-018\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089485,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 72,
+   "prompt_tokens": 2183,
+   "total_tokens": 2255,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 1024
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 34,
+    "engine_ttlt_ms": 428,
+    "pre_inference_ms": 99,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 530,
+    "service_ttlt_ms": 962,
+    "user_visible_ttft_ms": 431
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930073022-35fca056-default-r1-dp0-default"
+  }
+ }
+}

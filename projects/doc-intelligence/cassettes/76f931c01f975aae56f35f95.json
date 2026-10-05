@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B11-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "SIERRA CITRUS COOPERATIVA 91 Industrial Rd, United States\nPACKING LIST\nRef No .:\nPL-39126\nInvoice No .:\nINV-13579\nConsignee:\nHarbourside Fresh Pty Ltd\nContainer:\nTGHU6289625\nMarks:\nHARBOURSIDE/BRISBANE\nPkgs\nDescription :\nNet.kg\nGross kg\n1015\nWalnuts, in shell\n12240.2\n13658.9\nTotal packages:\n1015\nTotal gross weight (kg):\n13658.9\nTotal net weight (kg):\n12240. 2",
+  "pages": 1,
+  "fields": {}
+ }
+}

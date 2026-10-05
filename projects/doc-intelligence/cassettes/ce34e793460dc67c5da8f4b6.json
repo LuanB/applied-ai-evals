@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-087",
+  "markdown": false
+ },
+ "response": {
+  "content": "1190 Leitz \u013d\nLDso Maus s. C.\n0268/1305 1306 1307 1308 130g\n1310 1320 13217 1322\nLD50 Rutte i.v. 0268/1294. 1293\n2501525285\n2055",
+  "pages": 1,
+  "fields": {}
+ }
+}

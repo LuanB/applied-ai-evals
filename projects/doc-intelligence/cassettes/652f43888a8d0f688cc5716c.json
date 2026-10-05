@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-071",
+  "markdown": false
+ },
+ "response": {
+  "content": "JMB-1\n005581\nMaterial Safety Data Sheet May be used to comply with OSHA's Hazard Communication Standard. 29 CFR 1910.1200. Standard must be consulted for specific requirements.\nIDENTITY (As Used on Label and List)\nPropane\nU.S. Department of Labor Occupational Safety and Health Administration (Non-Mandatory Form) Form Approved OMB No. 1218-0072\nNote: Blank spaces are not permitted. If any item is not applicable, or no information is available, the space must be marked to indicate that.\nSection I\nKaputackx'I Alapok Supplier's Name\nBernzOmatic\nEmergency Telephone Number\n716-798-4949\nAddress (Number, Street, City, State, and ZIP Code)\nOne BernzOmatic Drive\nTelephone Number for Information\n716-798-4949\nMedina, NY 14103\nDate Prepared\n5-13-86\nLoger ogna) Maxcon\nSection II - Hazardous Ingredients/Identity Information\nHazardous Components (Specific Chemical Identity; Common Name(s))\nOSHA PEL ACGIH TLV\nOther Limits Recommended\n% (optional)\nPropane\nCAS #74-98-6\nNA 1000 ppm\nNA\n100\nSection III - Physical/Chemical Characteristics\nBoiling Point\n-44\u00baF\nSpecific Gravity (H2O = 1)\nLiquid @ 60\u00baF\n.51\nVapor Pressure (mm Hg.)\n@ 100\u00b0F\n197 psig\nN/A\nVapor Density (AIR = 1)\n@ 1 ATM @ 60\u00b0F\n1.56\nEvaporation Rate\n(Butyl Acetate = 1)\nN/A\nSolubility in Water\nNot Soluble\nAppearance and Odor\nColorless - Rotten Egg Odor\nSection IV - Fire and Explosion Hazard Data\nFlash Point (Method Used)\n-156\u00b0F Closed Cup\nFlammable Limits\nLEL\n2.1\nUEL\n9.5\nExtinguishing Media\nStop flow of gas or oxygen\nSpecial Fire Fighting Procedures\nUse water to cool tanks\nUnusual Fire and Explosion Hazards\nAuto ignition temp. 842\u00baF Heavier than air (vapor density 1.5)\nMay travel a considerable distance to a source of ignition and flashback.\n(Reproduce locally)\nOSHA 174, Sept. 1985\n2057445465\nMelting Point",
+  "pages": 1,
+  "fields": {}
+ }
+}

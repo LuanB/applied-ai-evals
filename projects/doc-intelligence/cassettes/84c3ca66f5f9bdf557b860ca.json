@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B03-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "ANATOLIA DRIED FRUITS A.S. 233 Industrial Rd, Turkey\nEXPORT INVOICE\nInvoice No .:\nINV-24735\nDate:\n11/07/2026\nSold to:\nRiverina Trading Pty Ltd\nPacking List No .:\nPL-94837\nTerms of delivery:\nCFR\nCurrency:\nEUR\nDescription.\nHS Code Qty\nUnit price\nAmount\nDried apricots\n0813.10\n1453\n12.57\n18,264.21\nTOTAL EUR:\n18,264.21\nCountry of origin: Turkey",
+  "pages": 1,
+  "fields": {}
+ }
+}

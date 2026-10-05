@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B09-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "GOLDEN VALLEY EXPORTS CO. LTD 277 Industrial Rd, Turkey\nPACKING SPECIFICATION\nRef No .:\nPL-49148\nInvoice No .:\n. INV-59341\nConsignee:\nSouthern Cross Imports Pty Ltd\nContainer:\nCMAU5744210\nMarks:\nSOUTHERN/FREMANTLE\nPkgs\nDescription\nNet kg\n. Gross kg\n1203\nDried apricots\n12268.9 13217.4\nTotal packages:\n1203\nTotal gross weight (kg): 13217.4\nTotal net weight (kg):\n12268.9",
+  "pages": 1,
+  "fields": {}
+ }
+}

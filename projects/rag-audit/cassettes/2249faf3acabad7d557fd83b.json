@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app8-008] (APP 8, paras 8.20, Exception 1 \u2014 Disclosing personal information to an overseas recipient that is s)\n8.20 An APP entity may disclose personal information to an overseas recipient without complying with APP 8.1 where the entity reasonably believes that:\nthe overseas recipient is subject to a law, or binding scheme, that has the effect of protecting the information in a way that, overall, is at least substantially similar to the way the APPs protect the information, and\nmechanisms can be accessed by the individual to enforce that protection of the law or binding scheme (APP 8.2(a)).\n\n[app8-000] (APP 8, paras n/a, Key points)\nBefore an APP entity discloses personal information to an overseas recipient, the entity must take such steps as are reasonable in the circumstances to ensure that the overseas recipient does not breach the APPs (other than APP 1) in relation to the information (APP 8.1).\nAn APP entity that discloses personal information to an overseas recipient is accountable for any acts or practices of the overseas recipient in relation to the information that would breach the APPs (s 16C).\nThere are exceptions to the requirement in APP 8.1 to take reasonable steps and to the accountability provision in s 16C.\n\n[app8-005] (APP 8, paras 8.15, When does an APP entity \u2018disclose\u2019 personal information about an individual to a)\n8.15 Where the provision of personal information to an overseas contractor is a use, an APP entity may breach the APPs if the information is mishandled while in the overseas contractor\u2019s physical possession. This is because the APP entity is considered to still \u2018hold\u2019 the information (as it has effective control of the information), and a number of APPs apply to an entity that \u2018holds\u2019 personal information (\u2018holds\u2019 is discussed in Chapter B (Key Concepts)).\n\n[app8-013] (APP 8, paras 8.31, Exception 3 \u2014 Disclosing personal information to an overseas recipient with the )\n8.31 An APP entity may disclose personal information to an overseas recipient without complying with APP 8.1 where:\nthe APP entity expressly informs the individual that if they consent to the disclosure, this principle will not apply, and\nthe individual then consents to the disclosure (APP 8.2(b)).\n\n[app8-019] (APP 8, paras 8.44\u20138.45, Exception 5 \u2014 Disclosing personal information to an overseas recipient where a p)\n8.44 An APP entity may disclose personal information to an overseas recipient without complying with APP 8.1 where the entity:\nhas reason to suspect that unlawful activity, or misconduct of a serious nature, that relates to the entity\u2019s functions or activities has been, is being or may be engaged in, and\nreasonably believes that the cross-border disclosure is necessary for the entity to take appropriate action in relation to the matter (s 16A(1), Item 2).\n8.45 For example, this permitted general situation may apply where an APP entity that is a global organisation has reason to suspect that an individual is engaging in transnational fraud affecting the entity\u2019s activities, and the entity reasonably believes that disclosing personal information to an overseas authority is necessary to take appropriate action.\n\nQuestion: When can an entity disclose personal information overseas without taking reasonable steps to ensure the recipient complies with the APPs, because of the recipient's own legal regime?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TvVXW4k9S76Wdl3ZWHBqdUk1vb",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"An entity can disclose personal information overseas without taking reasonable steps to ensure the recipient complies with the APPs if it reasonably believes that the overseas recipient is subject to a law or binding scheme that protects the information in a way that is at least substantially similar to the APPs, and that mechanisms are available for the individual to enforce that protection.\",\"citations\":[\"app8-008\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089479,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 85,
+   "prompt_tokens": 892,
+   "total_tokens": 977,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 67,
+    "engine_ttlt_ms": 666,
+    "pre_inference_ms": 77,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 451,
+    "service_ttlt_ms": 1040,
+    "user_visible_ttft_ms": 374
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003055525-929f9fcc-default-r1-dp0-default"
+  }
+ }
+}

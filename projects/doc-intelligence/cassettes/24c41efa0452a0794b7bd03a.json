@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-110",
+  "markdown": false
+ },
+ "response": {
+  "content": "ACC: 77\nWILLIAM ESTY COMPAN INC. ADVERTISING\n100 EAST 42nd STREET . NEW YORK, N. Y. 10017\nClient R. J. REYNOLDS TOBACCO COMPANY Invoice # 6-340\nvaio\n6/25/70\nPayable Date 7/10/70\nEstimato # Product MISCELLAN GUS\nMARKETING REGRARCH\nMAID #02-2088\nCost of conducting cigarette product tout\n625.00\nSupervisory Expense\n93.75\nTelophone charges\n22,00\n$740.75\nL\n50023 4954",
+  "pages": 1,
+  "fields": {}
+ }
+}

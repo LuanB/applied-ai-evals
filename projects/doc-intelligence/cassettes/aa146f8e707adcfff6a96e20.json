@@ -1,0 +1,196 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: bill_of_lading\n\nPage (markdown from layout analysis):\nMEDITERRANEAN LINES\n\n\n# BILL OF LADING\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>ONEY17833133</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Lanka Spice Mills (Pvt) Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Riverina Trading Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>MSC ARIANNA /: 669N</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Izmir</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Sydney</td>\n</tr>\n<tr>\n<td>Container / Seal;</td>\n<td>TGHU4492083 / SL309353</td>\n</tr>\n</table>\n\n\n1213 PACKAGES SAID TO CONTAIN DRIED APRICOTS\nGROSS WEIGHT 26611.9 KGS\nINVOICE INV-53940\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "bl_number",
+      "shipper",
+      "consignee",
+      "vessel",
+      "voyage",
+      "port_of_loading",
+      "port_of_discharge",
+      "container_number"
+     ],
+     "properties": {
+      "bl_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "bill of lading number"
+      },
+      "shipper": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "shipper"
+      },
+      "consignee": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "consignee"
+      },
+      "vessel": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "vessel name"
+      },
+      "voyage": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "voyage number"
+      },
+      "port_of_loading": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "port of loading"
+      },
+      "port_of_discharge": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "port of discharge"
+      },
+      "container_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "container number (without seal)"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8C8RRs1WrtN31FBzkBUSfaE1Omt",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"bl_number\":\"ONEY17833133\",\"shipper\":\"Lanka Spice Mills (Pvt) Ltd\",\"consignee\":\"Riverina Trading Pty Ltd\",\"vessel\":\"MSC ARIANNA\",\"voyage\":\"669N\",\"port_of_loading\":\"Izmir\",\"port_of_discharge\":\"Sydney\",\"container_number\":\"TGHU4492083\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088376,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 69,
+   "prompt_tokens": 472,
+   "total_tokens": 541,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 27,
+    "engine_ttlt_ms": 583,
+    "pre_inference_ms": 90,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 745,
+    "service_ttlt_ms": 1290,
+    "user_visible_ttft_ms": 656
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822214445-dc6f8bc1-default-r1-dp0-default"
+  }
+ }
+}

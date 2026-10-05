@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B17-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "NATIONAL PLANT PROTECTION ORGANIZATION OF VIETNAM\nNo .:\nFC256619\nName of exporter:\nLanka Spice Mills (Pvt) Ltd\nDeclared consignee:\nHarbourside Fresh Pty Ltd\nBotanical name of plants:\nAnacardium occidentale\nPlace of origin:\nVietnam\nDeclared means of conveyanceEVER GIVEN II\nPoint of entry:\nMelbourne\nThe plants or plant products described herein have been inspected and are considered free from quarantine pests of the importing contracting party.",
+  "pages": 1,
+  "fields": {}
+ }
+}

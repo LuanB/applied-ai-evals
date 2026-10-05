@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B11-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "SIERRA CITRUS COOPERATIVA 16 Industrial Rd, United States\nInvoice No .:\nINV-13579\nDate:\n19/09/2026\nSold to:\nHarbourside Fresh Pty Ltd\nPacking List No .:\nPL-39126\nTerms of delivery:\nCFR\nCurrency:\nUSD\nDescription\n.HS Code Qty\nUnit price Amount\nWalnuts, in shell\n0802.31 1015\n29.84 30,287.60\nTOTAL USD:\n30,287.60\nCountry of origin: United States",
+  "pages": 1,
+  "fields": {}
+ }
+}

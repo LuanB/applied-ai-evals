@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B10-01",
+  "markdown": true
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD\n262 Industrial Rd, Vietnam.\n\n\n# EXPORT INVOICE\n\nInvoice No .:\n\nINV-50762\n\nDate:\n\n02/07/2026\n\nSold to:\n\nHarbourside Fresh Pty Ltd\n\nPacking List No .:\n\nPL-31376\n\nTerms of delivery:\n\nEXW\n\nCurrency:\n\nUSD\n\n\n<table>\n<tr>\n<th>Description</th>\n<th>HS Code</th>\n<th>Qty</th>\n<th>Unit price</th>\n<th>Amount</th>\n</tr>\n<tr>\n<td>Cashew kernels</td>\n<td>0801.32</td>\n<td>1699</td>\n<td>19.79</td>\n<td>33, 623.21</td>\n</tr>\n</table>\n\n\nTOTAL USD:\n\n33, 623.21\n\nCountry of origin: Vietnam\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

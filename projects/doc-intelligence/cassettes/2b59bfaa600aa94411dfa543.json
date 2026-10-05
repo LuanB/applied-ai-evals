@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B08-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "CASCADE ORCHARDS LLC 131 Industrial Rd, Germany\nEXPORT INVOICE\nInvoice No .:\nINV-23089\nDate:\n17/07/2026\n:\nSold to:\nRiverina Trading Pty Ltd\nPacking List No .:\nPL-45982\nTerms of delivery:\nEXW\nCurrency:\nEUR\nDescription\nHS Code Qty\nUnit price\nAmount\nWooden dining chairs 9403. 60 28.9\n35.34\n10,213.26\nTOTAL EUR: 10,213.26.\nCountry of origin: Germany",
+  "pages": 1,
+  "fields": {}
+ }
+}

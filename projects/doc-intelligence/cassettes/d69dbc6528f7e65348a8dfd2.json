@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B07-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "NATIONAL PLANT PROTECTION ORGANIZATION OF UNITED STATES\nPHYTOSANITARY CERTIFICATE\nNo .:\nFC877459\nName of exporter:\nSierra Citrus Cooperativa.\nDeclared consignee:\nBluegum Food Distributors Pty Ltd\nBotanical name of plants:\nJuglans regia\nPlace of origin:\nUnited States\nDeclared means of conveyance:CMA CGM TAGE\nPoint of entry:\nSydney\nThe plants or plant products described herein have been inspected and are considered free from quarantine pests of the importing contracting party.",
+  "pages": 1,
+  "fields": {}
+ }
+}

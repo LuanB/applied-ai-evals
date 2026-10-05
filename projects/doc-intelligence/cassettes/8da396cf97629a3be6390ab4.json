@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-153",
+  "markdown": false
+ },
+ "response": {
+  "content": "Lorillard\nMEMORANDUM\nDecember 6, 1983\nTO:\nM.S. Ireland\nFROM: J.M. Johnson\nSUBJECT: Six-Fold Increase in Percent Free Nicotine Using Phenethylamine as a Filter Additive\nThe object of this experiment was to increase smoke pH and therefore increase free nicotine in smoke by adding an aryl alkyl amine to the filter. A patent on cigarette filters which contain an aryl alkyl amine, of the form shown in Figure 1A, supported on charcoal or added to the tobacco rod has claimed increased smoke pH, free nicotine concentration and physiological impact. Free nicotine was calculated with smoke pH data and the Henderson- Haselbach equation. See the Appendix for an example.\nIn this experiment, phenethylamine (PEA, Figure 1B) was absorbed onto activated charcoal at 20% w/w. Cigarettes were constructed by emptying the cavity filters of Lark Lights 85 mm cigarettes and repacking the cavity with 150 mg treated charcoal. Controls were packed with 150 mg untreated charcoal. See Figure 2. Smoking data are shown in Tables 1 and 2.\nLark Lights treated with PEA showed increased smoke pH and a six-fold increase in free nicotine while mainstream nicotine and CPM levels remained almost unchanged. This data is consistent with values reported in the patent.\nReference:\n1. HF and Ph.F. Reemtsma Gmbh & Co., 2000 Hamburg, DE, German Patent 3 150 582, June 30, 1983.\n/ J.M. Johnson\n/jw: 1\nXc : R.W. Hurst R.S. Marmor H.J. Minnemeyer V. Norman R.W. Slaven M.A. Sudholt\n87259246",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-012",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANSMISSION RESULT REPORT ************** (APR 07 '99 11:52AM) *** PM EVENT MARKETING\n(AUTO) .\nTHE FOLLOWING FILE(S) ERASED\nFILE FILE TYPE OPTION\nTEL NO.\nPAGE RESULT\n057 MEMORY TX\n912039322736\n04/04 OK\nERRORS 1) HANG UP OR LINE FAIL 2) BUSY 3) NO ANSWER 4) NO FACSIMILE CONNECTION\n.\nPM\nPHILIP MORRIS\nU.S.A.\nPHILIP MORRIS USA MEDIA DEPARTMENT 120 PARK AVENUE, NEW YORK CITY PHONE: (917) 663-5000. FAX: (917) 663-5313\n10017\n2084085736\nJohn E, Barrett, G MICOO (Barrett Outdoor)\nTo",
+  "pages": 1,
+  "fields": {}
+ }
+}

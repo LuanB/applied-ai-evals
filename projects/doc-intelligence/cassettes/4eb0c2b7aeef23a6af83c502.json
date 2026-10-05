@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B11-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# NATIONAL PLANT PROTECTION ORGANIZATION OF UNITED STATES\n\n\n<table>\n<tr>\n<td>No .:</td>\n<td>CO893597</td>\n</tr>\n<tr>\n<td>Name of exporter:</td>\n<td>Sierra Citrus Cooperativa</td>\n</tr>\n<tr>\n<td>Declared consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Botanical name of plants:</td>\n<td>Juglans regia</td>\n</tr>\n<tr>\n<td>Place of origin:</td>\n<td>United States</td>\n</tr>\n<tr>\n<td colspan=\"2\">Declared means of conveyanceDNE, HARMONY</td>\n</tr>\n<tr>\n<td>Point of entry:</td>\n<td>Brisbane</td>\n</tr>\n</table>\n\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

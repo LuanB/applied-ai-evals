@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-154",
+  "markdown": false
+ },
+ "response": {
+  "content": "THE LAW DEPARTMENT BROWN & WILLIAMSON TOBACCO CORPORATION\nGreen\nJuly 6, 1972\nTo: Dr. R. A. Sanford Mr. C. W. Moss Mr. R. A. Brown Mr. J. H. Sexstone\nFrom: V. A. Smith\nRe: Benchwork Meetings\nMarty Goldstein and I will be holding benchwork on July 18 and 19. To facilitate scheduling, we plan to meet with R&D on July 18 and Engineering/Manufacturing on the morning of the 19th. If you foresee any conflicts, please contact me at your earliest conven- ience.\nVance\ncj\ncc: Dr. I. W. Hughes\n650207824",
+  "pages": 1,
+  "fields": {}
+ }
+}

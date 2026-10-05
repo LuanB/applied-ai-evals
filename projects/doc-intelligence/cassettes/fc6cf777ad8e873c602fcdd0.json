@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B00-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEKONG AGRI TRADING JSC 389.Industrial Rd, Turkey\nCOMMERCIAL INVOICE\nInvoice No .:\nINV-76369\nDate:\n07/08/2026-\nSold to:\nHarbourside Fresh Pty Ltd\nPacking List No .:\nPL-37446\nTerms of delivery:\nFOB\nCurrency:\nEUR\nDescription\nHS Code\nQty\nUnit price\nAmount\nDried apricots\n0813.10.\n458\n2.67\n1,222.86\nTOTAL EUR: 1,222.86\nCountry of origin: Turkey",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B11-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# TRANS-PACIFIC CARRIERS\n\n\n# OCEAN BILL OF LADING\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MEDU15819713</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Sierra Citrus Cooperativa</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>ONE HARMONY / 489N</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Oakland</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Brisbane</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>TGHU6289625 / SL42.6825</td>\n</tr>\n</table>\n\n\n1015 PACKAGES, SAID TO CONTAIN WALNUTS, IN SHELL\nGROSS WEIGHT 13658.9 KGS\nINVOICE INV-13579\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

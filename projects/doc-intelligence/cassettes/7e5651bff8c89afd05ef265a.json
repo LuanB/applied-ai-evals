@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-055",
+  "markdown": false
+ },
+ "response": {
+  "content": "C\nENVIRONMENTAL TOBACCO SMOKE EFFECTS ON THE\nNON-SMOKER\nReport from a Workshop\nGuest editor :\nR. Rylander\n1\nThe Scandinavian Journal of Respiratory Diseases Supplement 1974.\nH 1\n0000260009",
+  "pages": 1,
+  "fields": {}
+ }
+}

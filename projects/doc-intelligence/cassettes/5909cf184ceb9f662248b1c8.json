@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-130",
+  "markdown": false
+ },
+ "response": {
+  "content": "RAP Questions for the Laptop\n[Answer the following questions for packs if In pack outlets or cartons if in carton outlets]\n1. Which has a larger pack/carton discount, Basic or GPC?\nBasic\nGPC\nNeither has a discount (Skip to Q. 5)\n2. What is the base retail price for a pack/carton of [Brand from Q. 1]?\n$XX.XX\n3. What is the promoted price that the smoker will pay for a pack/carton of [Brand from Q. 1]?\n$XX.XX\n4. How many weeks during the month of [auto-fill with the current work plan month] will [Brand from Q. 1] be on deal?\nOne week\nTwo weeks\nThree weeks\nEntire month\n5. Is Marlboro discounted?\nYes No (SKIP to Q. 9)\n6. What is the base retail price for a pack/carton of Mariboro?\n$XX.XX [Auto-fill this response in Q.10 If needed]\n7. What is the promoted price that the smoker will pay for a pack/carton of Marlboro? $XX.XX\n8. How many weeks during the month of [auto-fill with the current work plan] will Marlboro be on deal?\nOne week\nTwo weeks\nThree weeks\nEntire month\n58002 2379",
+  "pages": 1,
+  "fields": {}
+ }
+}

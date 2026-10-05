@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B08-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - VIETNAM\nCERTIFICATE OF ORIGIN\nCertificate No .:\nPC416181\nExporter:\nCascade Orchards LLC\nConsignee:\nSouthern Cross Imports Pty Ltd\nMeans of transport:\nCMA CGM TAGE from Ho Chi Minh City\nHS heading:\n0801.32\nGoods:\nCashew kernels\nCountry of origin: Vietnam\nWe certify the goods described in invoice INV-65533 originate in Vietnam.",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app11-006] (APP 11, paras 11.18, What are the security considerations?)\n11.18 The six terms listed in APP 11, \u2018misuse\u2019, \u2018interference\u2019, \u2018loss\u2019, \u2018unauthorised access\u2019, \u2018unauthorised modification\u2019 and \u2018unauthorised disclosure\u2019, are not defined in the Privacy Act. The following analysis and examples of each term draws on the ordinary meaning of the terms. As the analysis indicates, there is overlap in the meaning of the terms.\n\n[app3-021] (APP 3, paras 3.81\u20133.82, Collecting by lawful and fair means > Collecting by lawful means)\n3.81 The term \u2018lawful\u2019 is not defined in the Privacy Act. It is lawful for an organisation to destroy or de-identify unsolicited personal information if it is not unlawful to do so. That is, if the destruction or de-identification is not criminal, illegal or prohibited or proscribed by law. Unlawful activity does not include breach of a contract.\n3.82 Examples of collection that would not be lawful include:\ncollecting in breach of legislation, for example: collecting via computer hacking [40] collecting using telephone interception or a listening device except under the authority of a warrant [41] requesting or requiring information in connection with, or for the purpose of, an act of discrimination [42]\ncollecting via computer hacking [40]\ncollecting using telephone interception or a listening device except under the authority of a warrant [41]\nrequesting or requiring information in connection with, or for the purpose of, an act of discrimination [42]\ncollecting by a means that would constitute a civil wrong, for example, by trespassing on private property or threatening damage to a person unless information is provided\ncollecting information contrary to a court or tribunal order, for example, contrary to an injunction issued against the collector.\n\n[app6-024] (APP 6, paras 6.75\u20136.76, Related bodies corporate > Disclosing personal information to a related body cor)\n6.75 Section 13B(1)(b) provides that where a body corporate discloses personal information (other than sensitive information) to a related body corporate, this is generally not considered \u2018an interference with the privacy of an individual\u2019 under the Privacy Act (interferences with privacy are discussed in Chapter A (Introductory matters)). This provision applies to related bodies corporate and not to other corporate relationships, such as a franchise or joint-venture relationship. [23]\n6.76 The effect of this provision is that an APP entity may disclose personal information (other than sensitive information) to a related body corporate without relying on an exception in APP 6.2.\n\n[app12-019] (APP 12, paras 12.50\u201312.56, Refusing to give access under APP 12 \u2014 organisations > Giving access would likel)\n12.50 There are a number of separate elements to this ground.\n12.51 First, an organisation must have reason to suspect that unlawful activity or misconduct of a serious nature has been, is being or may be engaged in. The term \u2018unlawful activity\u2019 is not defined in the Privacy Act. The core meaning is activity that is criminal, illegal or prohibited or proscribed by law, and can include unlawful discrimination or harassment, but does not include breach of a contract. Examples of unlawful activity include criminal offences, unlawful discrimination, and trespass.\n12.52 Misconduct is defined in s 6(1) to include \u2018fraud, negligence, default, breach of trust, breach of duty, breach of discipline or any other misconduct in the course of duty\u2019. An added requirement of this ground is that the misconduct is \u2018serious\u2019 in nature. This excludes minor breaches or transgressions.\n12.53 The organisation must have \u2018reason to suspect\u2019 the unlawful activity or serious misconduct has been, is being or may be engaged in. This is a different and lesser standard to \u2018reasonably believes\u2019, which is used in some other APPs (see Chapter B (Key concepts)). There should nevertheless be a reasonable basis for the suspicion. It is the responsibility of the organisation to be able to justify its reasonable basis for the suspicion.\n12.54 The suspected unlawful activity or serious misconduct must relate to the organisation\u2019s functions or activities. As discussed in Chapter 3 (APP 3), an organisation\u2019s functions or activities include current, proposed and support functions and activities.\n12.55 Lastly, giving access must be likely to prejudice the organisation in taking appropriate action in relation to the suspected unlawful activity or serious misconduct. The proposed action may include investigation of the activity or misconduct, or reporting it to the police or another relevant person or authority. There should again be a reasonable basis for this expectation of prejudice. For example, in some instances giving an individual access would not prejudice the taking of appropriate action, but would allow the individual to provide further information relevant to the suspected unlawful activity.\n12.56 An example of where this ground might apply is where giving access to the requested personal information would reveal that, covertly but lawfully, an organisation is investigating suspected misconduct of a client and disclosure would prejudice the covert investigation.\n\n[app11-008] (APP 11, paras 11.21, What are the security considerations? > Interference)\n11.21 \u2018Interference\u2019 with personal information occurs where there is an attack on personal information that an APP entity holds that interferes with the personal information but does not necessarily modify its content. \u2018Interference\u2019 includes an attack on a computer system that, for example, leads to exposure of personal information.\n\nQuestion: What is the maximum civil penalty for a serious interference with privacy under the Privacy Act?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U7KvogD59OOxOjKGlXlNt3vR1H",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not specify the maximum civil penalty for a serious interference with privacy under the Privacy Act.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089491,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 34,
+   "prompt_tokens": 1338,
+   "total_tokens": 1372,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 33,
+    "engine_ttlt_ms": 200,
+    "pre_inference_ms": 86,
+    "service_tbt_ms": 9,
+    "service_ttft_ms": 756,
+    "service_ttlt_ms": 1061,
+    "user_visible_ttft_ms": 669
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822214445-b466cd4e-default-r1-dp0-default"
+  }
+ }
+}

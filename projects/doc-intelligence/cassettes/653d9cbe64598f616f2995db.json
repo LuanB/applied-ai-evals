@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B17-01",
+  "markdown": true
+ },
+ "response": {
+  "content": "# LANKA SPICE MILLS (PVT) LTD 316 Industrial Rd, Vietnam\n\n\n<table>\n<tr>\n<td>Invoice No .:</td>\n<td colspan=\"2\">INV-10420</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Date:</td>\n<td colspan=\"3\">15/07/2026</td>\n<td></td>\n</tr>\n<tr>\n<td>Sold to:</td>\n<td colspan=\"3\">Harbourside Fresh Pty Ltd</td>\n<td></td>\n</tr>\n<tr>\n<td>Packing List No .:</td>\n<td colspan=\"2\">PL-98454</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Terms of delivery:</td>\n<td>FOB</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Currency:</td>\n<td>USD</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Description</td>\n<td>HS Code</td>\n<td>Qty</td>\n<td>Unit price.</td>\n<td>Amount</td>\n</tr>\n<tr>\n<td>Cashew kernels</td>\n<td>0801.32</td>\n<td>1436</td>\n<td>14.48</td>\n<td>20,793.28</td>\n</tr>\n<tr>\n<td>TOTAL USD:</td>\n<td>20,793.28</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Country of origin: Vietnam</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

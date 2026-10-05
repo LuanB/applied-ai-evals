@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B12-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# OCEANIC CONTAINER LINE\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MAEU58970940</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Hanseatic Furniture GmbH</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>ONE HARMONY / 554W</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Valencia</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Brisbane</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>COLU3552106 / SL659138</td>\n</tr>\n</table>\n\n\n1083 PACKAGES SAID TO CONTAIN FRESH ORANGES, NAVEL.\nGROSS WEIGHT 12987.7 KGS\nINVOICE INV-70494\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

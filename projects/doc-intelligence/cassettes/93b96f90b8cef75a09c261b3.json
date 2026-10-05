@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B03-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB 386 Industrial Rd, Sri Lanka\nCOMMERCIAL INVOICE\nInvoice No .:\nINV-64463\nDate:\n16/09/2026\nWattle & Co Wholesale Pty Ltd\nSold to:\nPacking List No .:\nPL-42760\nTerms of delivery:\nCIF\nCurrency:\nUSD\nDescription\nHS Code\nQty\nUnit price Amount\nBlack pepper, whole\n.0904.11\n268\n2.06\n:552.08\nTOTAL USD: 552.08\nCountry of origin: Sri Lanka",
+  "pages": 1,
+  "fields": {}
+ }
+}

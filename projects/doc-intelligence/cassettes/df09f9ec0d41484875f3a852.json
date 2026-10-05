@@ -1,0 +1,196 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: bill_of_lading\n\nPage (markdown from layout analysis):\nMEDITERRANEAN LINES\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>CMDU38462634</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Nordic Pine Sawmills AB</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Wattle &amp; Co Wholesale Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>COSCO LIBRA / 325N</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Colombo</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Fremantle</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>OOLU6530326 / SL132384</td>\n</tr>\n</table>\n\n\n268 PACKAGES SAID TO CONTAIN BLACK PEPPER, WHOLE\nGROSS WEIGHT 4543.5 KGS\nINVOICE INV-64463\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "bl_number",
+      "shipper",
+      "consignee",
+      "vessel",
+      "voyage",
+      "port_of_loading",
+      "port_of_discharge",
+      "container_number"
+     ],
+     "properties": {
+      "bl_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "bill of lading number"
+      },
+      "shipper": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "shipper"
+      },
+      "consignee": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "consignee"
+      },
+      "vessel": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "vessel name"
+      },
+      "voyage": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "voyage number"
+      },
+      "port_of_loading": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "port of loading"
+      },
+      "port_of_discharge": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "port of discharge"
+      },
+      "container_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "container number (without seal)"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8C671lE8K1C682hiNMfddtIUNLe",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"bl_number\":\"CMDU38462634\",\"shipper\":\"Nordic Pine Sawmills AB\",\"consignee\":\"Wattle & Co Wholesale Pty Ltd\",\"vessel\":\"COSCO LIBRA\",\"voyage\":\"325N\",\"port_of_loading\":\"Colombo\",\"port_of_discharge\":\"Fremantle\",\"container_number\":\"OOLU6530326\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088374,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 72,
+   "prompt_tokens": 472,
+   "total_tokens": 544,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 38,
+    "engine_ttlt_ms": 570,
+    "pre_inference_ms": 79,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 565,
+    "service_ttlt_ms": 1091,
+    "user_visible_ttft_ms": 486
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927112209-9589c874-default-r0-dp0-default"
+  }
+ }
+}

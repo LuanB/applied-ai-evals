@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nMay\nTO J. M. LANTERNA ROM SCO VIA RODEO PLACENTIA, CA 92670\nFROM: RJ REYNOLDS TOBACCO COMPANY 401 NORTH MAIN STREET WINSTON-SALEM, NC 27102\nTHE FOLLOWING ITEMS HAVE BEEN SHIPPED TO: CORE-MARK #35 SIS ACCOUNT NUMBER 763890 353 MEYER CIR CORONA CA 91719 FROM ADVANCE NC BY WATKINS MOTOR LINES BILL LADING NUMBER 1244030# ON 05/04/94: ORDERED SHIPPED BACKORDER ITEM NO. ITEM DESCRIPTION\n450\n450 460203 SELECT MAY '94 B2OP CAN HLDR W\nYOUR COMPLETE SHIPMENT 13 ESTIMATED TO ARRIVE ON 05/13/94.\nREFERENCE ORDER NUMBER 4123-0028 ON ANY INQUIRIES ABOUT THIS SHIPMENT WHICH WAS ENTERED 05/02/94.\nFOLLOWING SHIPPING INSTRUCTIONS WERE PRINTED ON THE BILL OF LADING: ****** P.O. # 35-1101380 **\nCONSIGNEE CALL RJR REP: (714) 572-8644\nDel 5/12\nwill call 18 with status\n51819 2758"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89Eq5WsCrM4WKjBGKOviKGfvM9O",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"invoice\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088196,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 460,
+   "total_tokens": 469,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 33,
+    "engine_ttlt_ms": 92,
+    "pre_inference_ms": 93,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 643,
+    "service_ttlt_ms": 783,
+    "user_visible_ttft_ms": 551
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102744-c1ac330c-default-r0-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B17-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# NATIONAL PLANT PROTECTION ORGANIZATION OF VIETNAM\n\n\n<table>\n<tr>\n<td>No .:</td>\n<td>FC256619</td>\n</tr>\n<tr>\n<td>Name of exporter:</td>\n<td>Lanka Spice Mills (Pvt) Ltd</td>\n</tr>\n<tr>\n<td>Declared consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Botanical name of plants:</td>\n<td>Anacardium occidentale</td>\n</tr>\n<tr>\n<td>Place of origin:</td>\n<td>Vietnam</td>\n</tr>\n<tr>\n<td colspan=\"2\">Declared means of conveyanceEVER GIVEN II</td>\n</tr>\n<tr>\n<td>Point of entry:</td>\n<td>Melbourne</td>\n</tr>\n</table>\n\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

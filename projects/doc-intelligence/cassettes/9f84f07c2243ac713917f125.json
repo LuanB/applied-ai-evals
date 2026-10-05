@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-053",
+  "markdown": false
+ },
+ "response": {
+  "content": "20-07-99\nread.asp?obj=0000000058D413F3EEF6D211BAC10008C7C9AABC0700C8COBBF6F0E3D211BAC00008C7C9AABC0000010885 B50000CBCOB8F6F0E3D211BAC0000BC7C9AABC00000108CDD90000&alt=ATT-1-F30B9E9FF03DD311BACB0008C7C9AABC- 1999-%7E31.DOC 1 of 1\nInitiative:\nScientific Issues\nProject name: Scientific review on \"Low-tar Products\"\nObjective: Develop as a team effort a scientific review on \"Low-tar Products\" by September 1999\nProject Leader: Roger Walk\nTactics and Milestones:\n1. Prepare draft of a review using the presentation by Dr. Carchman earlier this year by July 1999.\n2. Obtain review of epidemiology from Dr. P. Lee by June 1999.\n3. Obtain product-related information from other PM sources by July 1999.\n4. Obtain biology-related information from INBIFO by July 1999.\n5. Prepare reference list and collect all referenced articles as copies by July 1999.\n6. As we go forward, present draft review and intermediate drafts at WSA internal meetings for discussion among peers.\n7. Organize comprehensive presentation and discussion meeting on draft review in mid September 1999.\n8. Decide about submission of publication by end September 1999.\nV\nInternal Resource Allocation:\nH .- J. Haussmann\n5%\nR. Walk\n20%\nLibrary\n1%\nD. Mawyer 10% WSA peers 3 mandays\nExternal Expenses:\nR. Carchman (consultant) 2 days/week, approx. 3 months\nP. Lee (consultant) 1 day/week, approx. 3 months\nCapital Expenses: None Anticipated\n2505162513",
+  "pages": 1,
+  "fields": {}
+ }
+}

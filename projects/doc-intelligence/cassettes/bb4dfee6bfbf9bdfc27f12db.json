@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-040",
+  "markdown": false
+ },
+ "response": {
+  "content": "Marlboro\nMarlboro\n98402732\nSURGEON GENERAL'S WARNING: Quitting Smoking Now Greatly Reduces Serious Risks to Your Health.\nPenthouse Apr. 199",
+  "pages": 1,
+  "fields": {}
+ }
+}

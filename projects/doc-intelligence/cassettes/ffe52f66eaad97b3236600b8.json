@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-133",
+  "markdown": false
+ },
+ "response": {
+  "content": "Name Dale That\nDate 6/5/87\nPlease smoke and evaluate Products A, B, and C. Allow a 2 minute interval between test products. Comment on any attributes of each product below. Please signal test administer after each product.\nProduct\nComments\n-\nA\nslight offraste into sweet taste Not harsh\nB\ndet chiant inhet 05-6/ less sweet them A Liberce - like\nSeinis the best is more reste is Not harsh\nC\nAftale in intid 3.4123 out similes to B in sachen\n50588 2809",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-158",
+  "markdown": false
+ },
+ "response": {
+  "content": "8401\nPHILIP MORRIS U. S. A. INTER - OFFICE CORRESPONDENCE RICHMOND, VIRGINIA\nTo:\nMr. W. G. Longest\nDate:\nNovember 17, 1977\nFrom: R. E. Grizzel\nSubject: Chemical Composition of Dealer Strip Tobacco Samples, 1977 Crop Bright Tobacco (L7ANS)\nTobacco Processors, Inc. Wilson, N.C. \" East Lab\nTotal Lbs.\nBelt\nGrade\n% Total Alkaloids\n% Total Nitrogen\n\u0110\u1eb9p TVB\nPEE\nSugars\nAsh\n365,739\nE.C.\nE-1\n4.05\n3.0\n0.6\n8.0\n3.4\n11.7\n647,395\nE.C.\nE-40\n3.93\n3.1\n0.6\n7.8\n2.7\n12.3\n74,942\nE.C.\nP2\n2.41\n2.4\n0.4\n7.4\n<2.0\n18.2\nResults reported on 12% moisture basis.\nREG: gmm\ncc:\nDr. P. A. Eichorn\nMr. J. Thomas\nAnalytical File\nRon Grizel\nC77-02585\n1000750356",
+  "pages": 1,
+  "fields": {}
+ }
+}

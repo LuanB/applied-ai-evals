@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B07-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "SIERRA CITRUS COOPERATIVA 222 Industrial Rd, United States\nEXPORT INVOICE\nInvoice.No .:\nINV-70890\nDate:\n24/09/2026\nSold to:\nBluegum Food Distributors Pty Ltd\nPacking List No .:\nPL-11085\nTerms of delivery:\nEXW\nCurrency;\nAUD\nDescription\nHS Code Qty Unit price\nAmount\nWalnuts, in shell\n0802.31 1329\n23.28\n30,939.12.\nTOTAL AUD: 30,939.12\nCountry of origin: United States",
+  "pages": 1,
+  "fields": {}
+ }
+}

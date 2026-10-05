@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B05-01",
+  "markdown": true
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB\n168 Industrial Rd. Turkey\n\n\n# COMMERCIAL INVOICE\n\nInvoice No .:\n\nINV-33924\n\nDate:\n\n08/08/2026\n\nSold to:\n\nHarbourside Fresh Pty Ltd\n\nPacking List No .:\n\nPL-41670\n\nTerms of delivery:\n\nCFR\n\nCurrency:\n\nEUR\n\n\n<table>\n<tr>\n<th>Description</th>\n<th>HS Code</th>\n<th>Qty</th>\n<th>Unit price</th>\n<th>Amount</th>\n</tr>\n<tr>\n<td>Dried apricots</td>\n<td>0813.10</td>\n<td>13.02</td>\n<td>27.09</td>\n<td>:35,271.18</td>\n</tr>\n</table>\n\n\nTOTAL EUR:\n\n35,271.18\n\nCountry of origin: Turkey\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

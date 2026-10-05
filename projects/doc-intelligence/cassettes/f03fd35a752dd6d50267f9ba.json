@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B02-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "GOLDEN VALLEY EXPORTS CO. LTD 246 Industrial Rd, Sweden\nPACKING SPECIFICATION\nRef No .:\nPL-70114\nInvoice No .:\nINV-76282\nConsignee:\nSouthern Cross Imports Pty Ltd\nContainer:\nOOLU4849033\nMarks:\nSOUTHERN/BRISBANE\nPkgs\nDescription\nNet kg Gross kg\n410\nSawn timber, pine, kiln\n6622.4\n7054.1\nTotal packages:\n410\nTotal gross weight (kg): 7054.1.\nTotal net weight (kg):\n6622.4",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B16-01",
+  "markdown": true
+ },
+ "response": {
+  "content": "GOLDEN VALLEY EXPORTS CO. LTD\n275 Industrial Rd, Sweden\n\n\n# INVOICE\n\n\n<table>\n<tr>\n<td>Invoice No .:</td>\n<td>INV-84536</td>\n</tr>\n<tr>\n<td>Date:</td>\n<td>12/07/2026</td>\n</tr>\n<tr>\n<td>Sold to:</td>\n<td>Southern Cross Imports Pty Ltd</td>\n</tr>\n<tr>\n<td>Packing List No .:</td>\n<td>PL-11896</td>\n</tr>\n<tr>\n<td>Terms of delivery:</td>\n<td>EXW</td>\n</tr>\n<tr>\n<td>Currency:</td>\n<td>AUD</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<th>Description</th>\n<th>HS Code</th>\n<th>Qty</th>\n<th>Unit price</th>\n<th>Amount</th>\n</tr>\n<tr>\n<td colspan=\"2\">Sawn timber, pine, kil 4407.11</td>\n<td>1375</td>\n<td>14.46</td>\n<td>19,882.50</td>\n</tr>\n</table>\n\n\nTOTAL AUD:\n\n19,882.50\n\nCountry of origin: Sweden\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

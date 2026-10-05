@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app1-009] (APP 1, paras 1.31\u20131.34, Developing an APP Privacy Policy > Information that must be included in an APP P)\n1.31 An APP entity is required to set out in the policy only likely disclosures of personal information to overseas recipients, and not likely uses of personal information by the entity. For example, routing personal information, in transit, through a server located outside Australia would usually be considered a \u2018use\u2019. [8] Similarly, it would also be a use and not a disclosure for an entity to make personal information accessible to an overseas office of the entity, such as a consular office. [9] For further discussion of the requirements applying to a cross-border disclosure of personal information, and what is considered a disclosure, see Chapter 8 (APP 8).\n1.32 An example of when it may be impracticable to specify the countries in which overseas recipients of personal information are likely to be located is where personal information is likely to be disclosed to numerous overseas recipients and the burden of determining where those recipients are likely to be located is excessively time-consuming, costly or inconvenient in all the circumstances. However, an APP entity is not excused from specifying the countries by reason only that it would be inconvenient, time-consuming or impose some cost to do so. As in other examples, it is the responsibility of the entity to be able to justify that this is impracticable.\n1.33 If personal information is disclosed to numerous overseas locations, one practical option may be to list those countries in an appendix to the APP Privacy Policy rather than in the body of the policy. Another option in these circumstances may be to include a link in the APP Privacy Policy to a regularly updated list of those countries, accessible from the APP entity\u2019s website. Where it is not practicable to specify the countries, the entity could instead identify general regions (such as European Union countries).\n1.34 This requirement to describe overseas disclosure practices in an APP Privacy Policy complements the obligation on an APP entity under APP 5.2(j) and (i) to notify an individual when personal information is being collected if the personal information is likely to be disclosed to overseas recipients and the location of those recipients (see Chapter 5 (APP 5)).\n\n[app5-013] (APP 5, paras 5.28\u20135.31, Matters about which an individual must be notified or made aware > Likely cross-)\n5.28 The matters set out in APP 5.2(i) and (j) are:\nwhether the APP entity is likely to disclose the personal information to overseas recipients (APP 5.2(i)), and\nif so, the countries in which such recipients are likely to be located if it is practicable to specify those counties in the notice or to otherwise make the individual aware of them (APP 5.2(j)).\n5.29 This requirement only applies to a likely disclosure of personal information to an overseas recipient. It does not apply to a use of personal information by an APP entity that does not constitute a disclosure. For example, routing personal information, in transit, through servers located outside Australia would usually be considered a \u2018use\u2019 and not a \u2018disclosure\u2019. [2] Similarly, if an entity makes personal information accessible to an overseas office of the entity (for example, a consular office), this is a use and not a disclosure. [3] For further discussion of the requirements applying to a cross-border disclosure of personal information, and what is considered a disclosure, see Chapter 8 (APP 8).\n5.30 An example of when it may be impracticable to specify the countries in which overseas recipients of personal information are likely to be located is where personal information is likely to be disclosed to numerous overseas recipients and the burden of determining where those recipients are located is excessively time-consuming, costly or inconvenient in all the circumstances. However, an APP entity is not excused from specifying the countries by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it impracticable to specify the countries will depend on whether the burden is excessive in all the circumstances. In this, as in other examples, it is the responsibility of the entity to be able to justify that this is impracticable.\n5.31 The requirement to notify an individual or ensure awareness if information being collected is likely to be disclosed to overseas recipients, and the location of those recipients, complements the obligation on APP entities under APP 1.4(f) and (g) to describe overseas disclosure practices in an APP Privacy Policy (see Chapter 1 (APP 1)).\n\n[app5-014] (APP 5, paras 5.32\u20135.33, Matters about which an individual must be notified or made aware > Likely cross-)\n5.32 If the personal information is disclosed to numerous overseas locations, one practical option may be to list those countries in an appendix to the notice rather than in the body of the notice. Where it is not practicable to specify the countries, the entity could instead identify general regions (such as European Union countries).\n5.33 An APP entity that regularly discloses personal information overseas could consider including additional information in an APP 5 notice about these disclosures, to ensure transparent handling of personal information. For example, the APP 5 notice could explain:\nhow the overseas recipient might use, disclose and protect the personal information, including whether the overseas recipient may be required to disclose the personal information under a foreign law (see discussion of s 6A(4) in Chapter 8 (APP 8))\nhow the individual can request further information about laws or binding schemes that protect privacy in the country of receipt (this information may be particularly relevant if an entity intends to rely on the exception in APP 8.2(a) (see Chapter 8 (APP 8))\nhow the individual can access personal information held by the overseas recipient.\n\n[app1-008] (APP 1, paras 1.26\u20131.30, Developing an APP Privacy Policy > Information that must be included in an APP P)\n1.26 An APP entity may have other specific access or correction obligations outside the Privacy Act (for example the Consumer Data Right under Part IVD of the Competition and Consumer Act 2010). In such cases, the APP entity could also refer or explain those obligations where appropriate.\n1.27 An APP Privacy Policy must explain how an individual can complain about an APP entity\u2019s breach of the APPs or a binding registered APP code (APP 1.4(e)). It is implicit in this requirement that an entity which is bound by a binding, registered APP code should clearly state that fact and name the code.\n1.28 Details that should also be included in the APP Privacy Policy are the procedure and contact details for complaining directly to the APP entity (see for example, the generic contact details in paragraph 1.22) and, where applicable, the procedure for complaining to an external complaint body (such as an external dispute resolution scheme of which the entity is a member and that is recognised by the Information Commissioner). [7] The policy could inform individuals of the different stages in complaint handling: in most cases, a complaint should first be made in writing to the entity, as required by s 40(1A), and that the entity should be given a reasonable time (usually 30 days) to respond; following engagement with the entity, a complaint may be taken to a recognised external dispute resolution scheme of which the entity is a member; and, after those avenues have been considered, a complaint may be taken to the OAIC.\n1.29 The policy could refer to other complaint avenues that operate alongside the Privacy Act. For example, banks are required to provide information to customers about complaint handling and dispute resolution in relation to the bank\u2019s obligations under the Corporations Act 2001, the Code of Banking Practice, and the Electronic Funds Transfer Code of Conduct. In these circumstances, the APP Privacy Policy could note the different procedures for privacy and non-privacy complaints (or link to other explanatory material the APP entity has published).\n1.30 An APP Privacy Policy must set out whether personal information is likely to be disclosed to overseas recipients and the countries in which such recipients are likely to be located \u2018if it is practicable to specify those countries in the policy\u2019 (APP 1.4(f) and 1.4(g)). This includes a likely disclosure to a related body corporate located overseas, and the country in which that body is located. An APP entity can be regarded as likely to disclose personal information to an overseas recipient if it is the entity\u2019s current practice or it has established plans to do so.\n\n[app8-004] (APP 8, paras 8.12\u20138.14, When does an APP entity \u2018disclose\u2019 personal information about an individual to a)\n8.12 Where an APP entity engages a contractor located overseas to perform services on its behalf, in most circumstances, the provision of personal information to that contractor is a disclosure. This means that the entity will need to comply with APP 8 before making that disclosure. Where a subcontractor may be engaged, the entity should also take reasonable steps to ensure that the subcontractor does not breach the APPs in relation to the personal information. [9]\n8.13 For example, the provision of personal information to a contractor is generally considered a \u2018disclosure\u2019 where:\nan Australian based retailer outsources the processing of online purchases through its website to an overseas contractor and, in order to facilitate this, provides the overseas contractor with personal information about its customers\nan Australian entity, as part of a recruitment drive, provides the personal information of job applicants to an overseas services provider to perform reference checks on behalf of the Australian entity, or\nan Australian organisation relies on its overseas parent company to provide technical and billing support, and as part of this, provides the overseas parent company with access to its Australian customer database (which includes personal information).\n8.14 However, in limited circumstances providing personal information to an overseas contractor to perform services on behalf of the APP entity may be a use, rather than a disclosure. This occurs where the entity does not release the subsequent handling of personal information from its effective control. In these circumstances, the entity would not need to comply with APP 8. For example, where an APP entity provides personal information to a cloud service provider located overseas for the limited purpose of performing the services of storing and ensuring the entity may access the personal information, this may be a \u2018use\u2019 by the entity in the following circumstances:\na binding contract between the entity and the provider requires the provider only to handle the personal information for these limited purposes\nthe contract requires any subcontractors to agree to the same obligations, and\nthe contract gives the entity effective control of how the personal information is handled by the overseas recipient. Issues to consider include whether the entity retains the right or power to access, change or retrieve the personal information, who else will be able to access the personal information and for what purposes, what type of security measures will be used for the storage and management of the personal information (see also APP 11.1, Chapter 11) and whether the personal information can be retrieved or permanently deleted by the entity when no longer required or at the end of the contract. [10]\n\nQuestion: Does a privacy policy have to say whether the entity is likely to send personal information overseas?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U5WSezgTkxAVkMiT7nIPDPN98s",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, an APP Privacy Policy must set out whether personal information is likely to be disclosed to overseas recipients and the countries in which such recipients are likely to be located if it is practicable to specify those countries in the policy.\",\"citations\":[\"app1-008\",\"app1-009\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089489,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 68,
+   "prompt_tokens": 2503,
+   "total_tokens": 2571,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 1280
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 61,
+    "engine_ttlt_ms": 561,
+    "pre_inference_ms": 84,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 530,
+    "service_ttlt_ms": 1016,
+    "user_visible_ttft_ms": 447
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930073022-35fca056-default-r1-dp0-default"
+  }
+ }
+}

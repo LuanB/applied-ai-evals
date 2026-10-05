@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B13-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - SWEDEN\nORIGIN DECLARATION\nCertificate No .:\nAU759255\nExporter:\nNordic Pine Sawmills AB\nConsignee:\nRiverina Trading Pty Ltd\nMeans of transport:\nCMA CGM TAGE from Gothenburg\nHS heading:\n4407.11\nGoods:\nSawn timber, pine, kiln dried\nCountry of origin:\nSweden\nWe certify the goods described in invoice INV-96972 originate in Sweden.",
+  "pages": 1,
+  "fields": {}
+ }
+}

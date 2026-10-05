@@ -1,0 +1,376 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You explain movements in software telemetry by attributing them to a commit.\n\nTHE NUMBERS ARE ALREADY COMPUTED AND ARE NOT YOURS TO RECOMPUTE.\nThe finding was produced by a deterministic detector. Treat its numbers as fact. Your\njob is judgement, not arithmetic: given that this movement happened, which commit in\nthe window explains it, and what is the evidence?\n\nMethod:\n- Start with list_commits_in_window. You get subjects and file-change counts.\n- Use describe_commit on the few that plausibly relate. Look at which files changed.\n- Use sample_telemetry_rows only if you need to see the shape of the raw data.\n- Then call submit_answer. You MUST finish by calling submit_answer.\n\nREFUSAL IS A CORRECT ANSWER AND IS EXPECTED SOMETIMES.\nThere is always a commit in a window. That does not mean one of them caused the\nmovement. If no commit plausibly explains it, call submit_answer with refused=true and\ncommits=[]. A confident wrong attribution is worse than an honest refusal, because it\nwill be believed. Check dates: a commit after the movement cannot have caused it.\n\nName at most 3 commits.\n"
+   },
+   {
+    "role": "user",
+    "content": "FINDING step:tool_calls_per_run\n  metric : tool calls per agent run\n  movement: p90 rose from 7 (median of the 5 preceding active days) to 27 on 2026-07-18 \u2014 a 3.9x step.\n  window : 2026-07-15 .. 2026-07-20\n\n40 commits are in this window. Attribute the movement, or refuse."
+   },
+   {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+     {
+      "id": "call_y35QkpZjNPbXi68q8rBmS2Yr",
+      "function": {
+       "arguments": "{\"only_touching\":\"tool\"}",
+       "name": "list_commits_in_window"
+      },
+      "type": "function"
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_y35QkpZjNPbXi68q8rBmS2Yr",
+    "content": "[{\"sha\": \"a7bd7bb\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"reliability: bound gather + all Google fetches with explicit timeouts\", \"files_changed\": 11}, {\"sha\": \"c72bf46\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"cost-modes: gather fixed-floor trim + prompt-A/B gate seam\", \"files_changed\": 5}, {\"sha\": \"6af1125\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(openai): hosted web_search on the BYOK key (R2 Option 1)\", \"files_changed\": 7}, {\"sha\": \"84f253a\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai R5 (seam): optional per-role reasoning.effort, default unset\", \"files_changed\": 5}, {\"sha\": \"aed9ba8\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai R2: local web_search tool with a deterministic egress scrub\", \"files_changed\": 16}, {\"sha\": \"060d70d\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai: pin vision frame to detail:'high' (guardrail)\", \"files_changed\": 2}, {\"sha\": \"b3ef5ce\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai: prompt_cache_key on all Responses calls (gather cost lever)\", \"files_changed\": 6}, {\"sha\": \"df0d38a\", \"date\": \"2026-07-17\", \"repo\": \"mayah-desktop\", \"subject\": \"Capture vision frames at native resolution, cap sends at 2048/q92\", \"files_changed\": 4}, {\"sha\": \"0370d88\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Add contextLines + offset drill-downs to search_transcript\", \"files_changed\": 3}, {\"sha\": \"5346348\", \"date\": \"2026-07-18\", \"repo\": \"mayah-desktop\", \"subject\": \"Replace substring meeting search with stemmed ranked FTS5 index\", \"files_changed\": 6}]"
+   },
+   {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+     {
+      "id": "call_S9Ehjrw4wa821cksKO3W6Pc6",
+      "function": {
+       "arguments": "{\"sha\": \"a7bd7bb\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_L9P5L8TKnEDHFxhnNgLE1zdr",
+      "function": {
+       "arguments": "{\"sha\": \"c72bf46\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_qERFKeRqqZxAllyCA1wodKMQ",
+      "function": {
+       "arguments": "{\"sha\": \"6af1125\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_YY8G54g4uHTVa4R5oHfEHXPQ",
+      "function": {
+       "arguments": "{\"sha\": \"84f253a\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_b0r2roh4qUwRtvflIB1mkNmS",
+      "function": {
+       "arguments": "{\"sha\": \"aed9ba8\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_LJLYs0Zwr1oFZCTRM2kuh8Rr",
+      "function": {
+       "arguments": "{\"sha\": \"060d70d\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_7qcsdyw8UVJEZB1EPRE05WdT",
+      "function": {
+       "arguments": "{\"sha\": \"b3ef5ce\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_bW5aLWKQP4CQYRYEBtmCe6vp",
+      "function": {
+       "arguments": "{\"sha\": \"df0d38a\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_tD47uI7CBgM1PWtjPqTdo7OE",
+      "function": {
+       "arguments": "{\"sha\": \"0370d88\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_5skcNgqzG1MxVElgwfvmcyb2",
+      "function": {
+       "arguments": "{\"sha\": \"5346348\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_S9Ehjrw4wa821cksKO3W6Pc6",
+    "content": "{\"sha\": \"a7bd7bb\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"reliability: bound gather + all Google fetches with explicit timeouts\", \"files_changed\": 11, \"files\": [\"electron/agent/asr/geminiAsr.ts\", \"electron/agent/briefing/briefingRunner.ts\", \"electron/agent/loop.ts\", \"electron/agent/providers/google/completion.ts\", \"electron/agent/providers/google/toolLoop.timeout.test.ts\", \"electron/agent/providers/google/toolLoop.ts\", \"electron/agent/surfacing/cardChatRunner.ts\", \"electron/agent/surfacing/surfacingRunner.ts\", \"electron/shared/classifyLlmError.ts\", \"electron/shared/googleCallTimeout.test.ts\", \"electron/shared/googleCallTimeout.ts\"], \"files_truncated\": 0}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_L9P5L8TKnEDHFxhnNgLE1zdr",
+    "content": "{\"sha\": \"c72bf46\", \"date\": \"2026-07-15\", \"repo\": \"mayah-desktop\", \"subject\": \"cost-modes: gather fixed-floor trim + prompt-A/B gate seam\", \"files_changed\": 5, \"files\": [\"electron/agent/bakeoff/gatherAb.test.ts\", \"electron/agent/bakeoff/gatherAb.ts\", \"electron/agent/bakeoff/runGatherAb.ts\", \"electron/agent/providers/toolRegistry.ts\", \"electron/agent/surfacing/surfacingPrompt.ts\"], \"files_truncated\": 0}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_qERFKeRqqZxAllyCA1wodKMQ",
+    "content": "{\"sha\": \"6af1125\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(openai): hosted web_search on the BYOK key (R2 Option 1)\", \"files_changed\": 7, \"files\": [\"electron/agent/loop.ts\", \"electron/agent/providers/openai/toolLoop.ts\", \"electron/agent/providers/openai/toolLoop.webSearch.eval.test.ts\", \"electron/agent/providers/openai/toolLoop.webSearch.test.ts\", \"electron/agent/providers/types.ts\", \"electron/agent/surfacing/surfacingRunner.ts\", \"electron/agent/surfacing/surfacingRunner.webSearch.test.ts\"], \"files_truncated\": 0}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_YY8G54g4uHTVa4R5oHfEHXPQ",
+    "content": "{\"sha\": \"84f253a\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai R5 (seam): optional per-role reasoning.effort, default unset\", \"files_changed\": 5, \"files\": [\"electron/agent/providers/openai/completion.effort.test.ts\", \"electron/agent/providers/openai/completion.ts\", \"electron/agent/providers/openai/toolLoop.test.ts\", \"electron/agent/providers/openai/toolLoop.ts\", \"electron/agent/providers/types.ts\"], \"files_truncated\": 0}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_b0r2roh4qUwRtvflIB1mkNmS",
+    "content": "{\"sha\": \"aed9ba8\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai R2: local web_search tool with a deterministic egress scrub\", \"files_changed\": 16, \"files\": [\"electron/agent/connectorClients/braveService.test.ts\", \"electron/agent/connectorClients/braveService.ts\", \"electron/agent/connectorClients/readOnlyScope.test.ts\", \"electron/agent/connectorTools.ts\", \"electron/agent/connectorTools.webSearch.test.ts\", \"electron/agent/index.ts\", \"electron/agent/parity-2a.test.ts\", \"electron/agent/providers/toGeminiFunctionDeclarations.test.ts\", \"electron/agent/providers/toOpenAITools.test.ts\", \"electron/agent/providers/toolRegistry.connectorGating.test.ts\", \"electron/agent/providers/toolRegistry.discovery.test.ts\", \"electron/agent/providers/toolRegistry.test.ts\", \"electron/agent/providers/toolRegistry.ts\", \"electron/agent/webSearch/egressScrub.test.ts\", \"electron/agent/webSearch/egressScrub.ts\", \"electron/secureStore/keyStore.ts\"], \"files_truncated\": 0}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_LJLYs0Zwr1oFZCTRM2kuh8Rr",
+    "content": "{\"sha\": \"060d70d\", \"date\": \"2026-07-16\", \"repo\": \"mayah-desktop\", \"subject\": \"openai: pin vision frame to detail:'high' (guardrail)\", \"files_changed\": 2, \"files\": [\"electron/agent/providers/openai/toolLoop.ts\", \"electron/agent/providers/openai/toolLoop.vision.test.ts\"], \"files_truncated\": 0}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_7qcsdyw8UVJEZB1EPRE05WdT",
+    "content": "{\"error\": \"tool budget reached; submit_answer now\"}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_bW5aLWKQP4CQYRYEBtmCe6vp",
+    "content": "{\"error\": \"tool budget reached; submit_answer now\"}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_tD47uI7CBgM1PWtjPqTdo7OE",
+    "content": "{\"error\": \"tool budget reached; submit_answer now\"}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_5skcNgqzG1MxVElgwfvmcyb2",
+    "content": "{\"error\": \"tool budget reached; submit_answer now\"}"
+   }
+  ],
+  "temperature": 0.0,
+  "tool_choice": {
+   "type": "function",
+   "function": {
+    "name": "submit_answer"
+   }
+  },
+  "tools": [
+   {
+    "type": "function",
+    "function": {
+     "name": "list_commits_in_window",
+     "description": "Commits in the finding's window: sha, date, subject, files_changed.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "only_touching": {
+        "type": "string",
+        "description": "Optional path substring filter, e.g. 'telemetry'."
+       }
+      }
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "describe_commit",
+     "description": "One commit in detail: subject, file count, and the file list (truncated).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "sha": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "sha"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "sample_telemetry_rows",
+     "description": "A few raw telemetry rows of a given kind on a given day (YYYY-MM-DD).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "kind": {
+        "type": "string"
+       },
+       "day": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "kind",
+       "day"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "submit_answer",
+     "description": "Terminal. Submit the attribution, or refuse.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "commits": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "description": "Short SHAs. Empty if refusing."
+       },
+       "refused": {
+        "type": "boolean"
+       },
+       "rationale": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "commits",
+       "refused",
+       "rationale"
+      ]
+     }
+    }
+   }
+  ],
+  "_salt": "trial0"
+ },
+ "response": {
+  "id": "chatcmpl-EV7xBlDOFHiSxi3s52QwOwkqK2KCc",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "annotations": [],
+     "tool_calls": [
+      {
+       "id": "call_ba1AxAW2IIWbHhl1Qtupo2e7",
+       "function": {
+        "arguments": "{\"commits\":[\"aed9ba8\"],\"refused\":false,\"rationale\":\"The commit aed9ba8 on 2026-07-16 titled 'openai R2: local web_search tool with a deterministic egress scrub' changed 16 files including 'electron/agent/connectorTools.ts', 'electron/agent/providers/toolRegistry.ts', and 'electron/agent/webSearch/egressScrub.ts'. This commit likely introduced or modified a local web_search tool, which plausibly increased the number of tool calls per agent run, explaining the sharp rise in p90 tool calls from 7 to 27 on 2026-07-18.\"}",
+        "name": "submit_answer"
+       },
+       "type": "function"
+      }
+     ]
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791087449,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 138,
+   "prompt_tokens": 2304,
+   "total_tokens": 2442,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 1280
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 45,
+    "engine_ttlt_ms": 1129,
+    "pre_inference_ms": 102,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 869,
+    "service_ttlt_ms": 1949,
+    "user_visible_ttft_ms": 766
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044429-7adf8486-default-r1-dp0-default"
+  }
+ }
+}

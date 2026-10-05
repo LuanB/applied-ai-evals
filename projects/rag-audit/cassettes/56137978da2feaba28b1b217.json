@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app6-025] (APP 6, paras 6.77, Related bodies corporate > Using or disclosing personal information collected fr)\n6.77 An APP entity that collects personal information from a related body corporate is taken to have the same primary purpose of collection as its related body corporate (APP 6.6). Under APP 6, the entity may only use or disclose the personal information for that primary purpose, unless an exception to that principle applies (see paragraph 6.2 above). For example, an APP entity collects personal information about an applicant contractor for the purpose of assessing their suitability to perform work on its behalf. The parent company then collects that personal information from the entity. The primary purpose of this collection is taken to be the same as the original purpose of collection. The parent company may only disclose the personal information to a third party for another purpose, where an exception to APP 6 applies.\n\n[app3-031] (APP 3, paras 3.96\u20133.97, Collecting personal information from a related body corporate)\n3.96 Section 13B(1)(a) provides that the collection of personal information about an individual (other than sensitive information) by a body corporate from a related body corporate is generally not \u2018an interference with the privacy of an individual\u2019 (interferences with privacy are discussed in Chapter A (Introductory matters)). This provision applies to collection of information from related bodies corporate and not to other corporate relationships such as a franchise or joint-venture relationship. [62]\n3.97 The effect of s 13B(1)(a) is that an APP entity may collect personal information (other than sensitive information) from a related body corporate without satisfying the requirements of APP 3.1 or 3.2 (see paragraphs 3.12-3.30 above). However, s 13B(1A) sets out some exceptions to this, including where the related body corporate is not an organisation.\n\n[app6-024] (APP 6, paras 6.75\u20136.76, Related bodies corporate > Disclosing personal information to a related body cor)\n6.75 Section 13B(1)(b) provides that where a body corporate discloses personal information (other than sensitive information) to a related body corporate, this is generally not considered \u2018an interference with the privacy of an individual\u2019 under the Privacy Act (interferences with privacy are discussed in Chapter A (Introductory matters)). This provision applies to related bodies corporate and not to other corporate relationships, such as a franchise or joint-venture relationship. [23]\n6.76 The effect of this provision is that an APP entity may disclose personal information (other than sensitive information) to a related body corporate without relying on an exception in APP 6.2.\n\n[app3-020] (APP 3, paras 3.76\u20133.79, Collecting sensitive information > Collection of sensitive information by a non-)\n3.76 A non-profit organisation may collect sensitive information if:\nthe information relates to the activities of the organisation, and\nthe information relates solely to the members of the organisation, or to individuals who have regular contact with the organisation in connection with its activities (APP 3.4(e)). [39]\n3.77 \u2018Non-profit organisation\u2019 is defined in s 6(1) as an organisation \u2018that is a non-profit organisation; and that engages in activities for cultural, recreational, political, religious, philosophical, professional, trade or trade union purposes\u2019. The term \u2018cultural purposes\u2019 includes both racial and ethnic purposes.\n3.78 There are three criteria a non-profit organisation must meet to rely on this exception to collect sensitive information:\nFirstly, the non-profit organisation can rely on this exception only when collecting sensitive information for an activity that is undertaken for one of the specified purposes in the definition of \u2018non-profit organisation\u2019 (s 6(1)). An organisation conducting activities for some other purpose cannot rely on this exception to collect sensitive information for that purpose.\nSecondly, the sensitive information that is collected must \u2018relate\u2019 to the activity that is being conducted for a specified purpose. A clear relationship, assessed objectively, must exist between the information collected and that activity. For example, the information may relate to a fundraising activity undertaken by a non-profit organisation to support its cultural, recreational, political, religious, philosophical, professional, trade or trade union purpose.\nThirdly, the sensitive information must relate solely to a member of the organisation, or an individual who has regular contact with the organisation in connection with its activities. Collection of sensitive information about a relative of a member of the organisation would not be covered unless the relative was also a member or person in regular contact with the non-profit organisation.\n3.79 An example of where a non-profit organisation may be permitted to collect sensitive information is where a religious organisation collects information about the views of its members on religious or moral issues.\n\n[app3-012] (APP 3, paras 3.31\u20133.36, Collecting sensitive information)\n3.31 APP 3.3 imposes an additional requirement of consent for collecting sensitive information about an individual. Unless an exception applies, an APP entity must:\nsatisfy the criteria above, i.e. the collection of the sensitive information must be reasonably necessary for (or, for agencies, directly related to) one or more of the entity\u2019s functions or activities, and\nthe individual about whom the sensitive information relates must consent to the collection (APP 3.3(a)).\n3.32 \u2018Sensitive information\u2019 is defined in s 6(1), and is discussed in more detail in Chapter B (Key concepts). \u2018Consent\u2019 is defined in s 6(1) as \u2018express consent or implied consent\u2019, and is discussed in more detail in Chapter B (Key concepts). The four key elements of consent are:\nthe individual is adequately informed before giving consent\nthe individual gives consent voluntarily\nthe consent is current and specific, and\nthe individual has the capacity to understand and communicate their consent.\n3.33 An APP entity should generally seek express consent from an individual before collecting the individual\u2019s sensitive information, given the greater privacy impact this could have.\n3.34 Generally, it should not be assumed that an individual has given consent on the basis alone that they did not object to a proposal to handle personal information in a particular way. An APP entity cannot infer consent simply because they have provided individuals with notice of a proposed collection of personal information (including sensitive information). This is because all four elements of consent are unlikely to have been satisfied. Further notice is required to ensure informed consent can be provided.\n3.35 An APP entity should exercise particular caution when using automated collection methods such as data scraping or third-party tracking pixels, as these could inadvertently be configured to collect sensitive information.\n3.36 APP 3.4 lists five exceptions to the requirements outlined in paragraph 3.31. These are considered below.\n\nQuestion: Can a company collect non-sensitive personal information from a related company in its corporate group without meeting the usual APP 3 collection requirements?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U1FfR5bgd4pYZ7cpuf9svZKQEE",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, a company can collect non-sensitive personal information from a related body corporate without satisfying the usual APP 3.1 or 3.2 requirements, as this is generally not considered an interference with privacy under section 13B(1)(a).\",\"citations\":[\"app3-031\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089485,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 1616,
+   "total_tokens": 1686,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 43,
+    "engine_ttlt_ms": 578,
+    "pre_inference_ms": 89,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 786,
+    "service_ttlt_ms": 1317,
+    "user_visible_ttft_ms": 697
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822211338-5b02d512-default-r1-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-082",
+  "markdown": false
+ },
+ "response": {
+  "content": "InSiFO\ninsiro\nQ1 1. 10\n2501370890\nP 3043",
+  "pages": 1,
+  "fields": {}
+ }
+}

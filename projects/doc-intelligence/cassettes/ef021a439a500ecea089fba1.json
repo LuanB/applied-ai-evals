@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-067",
+  "markdown": false
+ },
+ "response": {
+  "content": "ELEMENT TO VOLUME 5\nOCTOBER, 1962 ..\nNUMBER 4\nJournal of the xperimental Analysis of Behavior\nOF MIND SCRIVE\nTABLE OF CONTENTS, 11\nKELLEHER, ROGER T .. Harvard Medical School, and COLLUB, LEWIS R., University of Maryland.\nA Review of Positive Conditioned Reinforcement\nVERSITY\nNOW 14 67\nESOTA\nLIBRARY\n543\n2060437870",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B10-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# SAFEHOLD QUARANTINE TREATMENTS\n\n\n## FUMIGATION CERTIFICATE\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>EX571873</td>\n</tr>\n<tr>\n<td>Fumigant:</td>\n<td>Phosphine</td>\n</tr>\n<tr>\n<td>Dosage rate:</td>\n<td>2 g/m3</td>\n</tr>\n<tr>\n<td>Exposure period (hrs):</td>\n<td>120</td>\n</tr>\n<tr>\n<td>Date of fumigation:</td>\n<td>06/09/2026</td>\n</tr>\n<tr>\n<td>Container No .:</td>\n<td>MSCU7345092</td>\n</tr>\n<tr>\n<td>Commodity:</td>\n<td>Cashew kernels</td>\n</tr>\n<tr>\n<td>Consignment link:</td>\n<td>B/L CMDU28874090</td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

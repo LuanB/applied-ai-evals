@@ -1,0 +1,50 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-invoice",
+  "doc": "test-B06-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD\n206 Industrial Rd, Vietnam\nInvoice No .:\nINV-12449\nDate:\n01/09/2026\nSold to:\nSouthern Cross Imports Pty Ltd\nPacking List No .:\nPL-18107\nTerms of delivery:\nFOB\nCurrency:\nUSD\nDescription\nHS Code.\nQty\nUnit price\nAmount\nCashew kernels\n0801.32\n888\n21.1\n18,736.80\nTOTAL USD:\n18,736.80\nCountry of origin: Vietnam",
+  "pages": 1,
+  "fields": {
+   "CustomerName": {
+    "value": "Southern Cross Imports Pty Ltd",
+    "confidence": 0.888
+   },
+   "InvoiceDate": {
+    "value": "2026-01-09",
+    "confidence": 0.985
+   },
+   "InvoiceId": {
+    "value": "INV-12449",
+    "confidence": 0.985
+   },
+   "InvoiceTotal": {
+    "value": 18736.8,
+    "confidence": 0.982
+   },
+   "Items": {
+    "value": null,
+    "confidence": null
+   },
+   "PaymentTerm": {
+    "value": "FOB",
+    "confidence": 0.978
+   },
+   "VendorAddress": {
+    "value": "206 Industrial Rd, Vietnam",
+    "confidence": 0.915
+   },
+   "VendorAddressRecipient": {
+    "value": "LANKA SPICE MILLS (PVT) LTD",
+    "confidence": 0.886
+   },
+   "VendorName": {
+    "value": "LANKA SPICE MILLS (PVT) LTD",
+    "confidence": 0.886
+   }
+  }
+ }
+}

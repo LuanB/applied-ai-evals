@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-084",
+  "markdown": false
+ },
+ "response": {
+  "content": "1\nTables from Reference #30\n2504095323",
+  "pages": 1,
+  "fields": {}
+ }
+}

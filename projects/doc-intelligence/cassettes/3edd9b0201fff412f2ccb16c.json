@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B14-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "ANATOLIA DRIED FRUITS A.S. 381 Industrial Rd, Sri Lanka\nEXPORT INVOICE\nInvoice No .:\nINV-90180\nDate:\nKookaburra Home Furnishings Pty Ltd\nSold to:\nPacking List No .:\nPL-91991\nTerms of delivery:\nDAP\nUSD\nCurrency:\nHS Code\nQty\nUnit price\nAmount\nDescription\nBlack pepper, whole\n0904.11\n1344\n21.4\n28,761.60\nTOTAL USD: 28,761.60\nCountry of origin: Sri Lanka\n11/08/2026",
+  "pages": 1,
+  "fields": {}
+ }
+}

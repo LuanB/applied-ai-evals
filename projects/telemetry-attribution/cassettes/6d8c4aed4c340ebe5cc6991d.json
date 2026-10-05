@@ -1,0 +1,213 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-5-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You explain movements in software telemetry by attributing them to a commit.\n\nTHE NUMBERS ARE ALREADY COMPUTED AND ARE NOT YOURS TO RECOMPUTE.\nThe finding was produced by a deterministic detector. Treat its numbers as fact. Your\njob is judgement, not arithmetic: given that this movement happened, which commit in\nthe window explains it, and what is the evidence?\n\nMethod:\n- Start with list_commits_in_window. You get subjects and file-change counts.\n- Use describe_commit on the few that plausibly relate. Look at which files changed.\n- Use sample_telemetry_rows only if you need to see the shape of the raw data.\n- Then call submit_answer. You MUST finish by calling submit_answer.\n\nREFUSAL IS A CORRECT ANSWER AND IS EXPECTED SOMETIMES.\nThere is always a commit in a window. That does not mean one of them caused the\nmovement. If no commit plausibly explains it, call submit_answer with refused=true and\ncommits=[]. A confident wrong attribution is worse than an honest refusal, because it\nwill be believed. Check dates: a commit after the movement cannot have caused it.\n\nName at most 3 commits.\n"
+   },
+   {
+    "role": "user",
+    "content": "FINDING step:tool_calls_per_run\n  metric : tool calls per agent run\n  movement: p90 rose from 7 (median of the 5 preceding active days) to 27 on 2026-07-18 \u2014 a 3.9x step.\n  window : 2026-07-15 .. 2026-07-20\n\n21 commits are in this window. Attribute the movement, or refuse."
+   }
+  ],
+  "tools": [
+   {
+    "type": "function",
+    "function": {
+     "name": "list_commits_in_window",
+     "description": "Commits in the finding's window: sha, date, subject, files_changed.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "only_touching": {
+        "type": "string",
+        "description": "Optional path substring filter, e.g. 'telemetry'."
+       }
+      }
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "describe_commit",
+     "description": "One commit in detail: subject, file count, and the file list (truncated).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "sha": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "sha"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "sample_telemetry_rows",
+     "description": "A few raw telemetry rows of a given kind on a given day (YYYY-MM-DD).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "kind": {
+        "type": "string"
+       },
+       "day": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "kind",
+       "day"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "submit_answer",
+     "description": "Terminal. Submit the attribution, or refuse.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "commits": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "description": "Short SHAs. Empty if refusing."
+       },
+       "refused": {
+        "type": "boolean"
+       },
+       "rationale": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "commits",
+       "refused",
+       "rationale"
+      ]
+     }
+    }
+   }
+  ],
+  "_salt": "trial2"
+ },
+ "response": {
+  "id": "chatcmpl-EV7sB5hRfSITotHTxgsP3FKQ9gKBI",
+  "choices": [
+   {
+    "finish_reason": "tool_calls",
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "annotations": [],
+     "tool_calls": [
+      {
+       "id": "call_BxtLFdT2w1ALO1iJ0VoA87jf",
+       "function": {
+        "arguments": "{}",
+        "name": "list_commits_in_window"
+       },
+       "type": "function"
+      }
+     ]
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791087139,
+  "model": "gpt-5-mini-2025-08-07",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "usage": {
+   "completion_tokens": 22,
+   "prompt_tokens": 607,
+   "total_tokens": 629,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 32,
+    "engine_ttlt_ms": 603,
+    "pre_inference_ms": 93,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 1516,
+    "service_ttlt_ms": 2082,
+    "user_visible_ttft_ms": 1422
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260929185156-4424d4af-default-r1-dp0-default"
+  }
+ }
+}

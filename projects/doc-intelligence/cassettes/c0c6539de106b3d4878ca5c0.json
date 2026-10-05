@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B09-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "OCEANIC CONTAINER LINE\nB/L No .:\nCMDU60686170\nShipper:\nGolden Valley Exports Co. Ltd\nConsignee: Southern Cross Imports Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nONE HARMONY / 898W\nPort of loading:\nIzmir\nPort of discharge:\nFremantle\nContainer / Seal:\nCMAU5744210 / SL427043\n1203 PACKAGES SAID TO CONTAIN DRIED APRICOTS GROSS WEIGHT 13217.4 KGS INVOICE INV-59.341 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

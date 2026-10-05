@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app1-018] (APP 1, paras 1.68\u20131.74, Developing an APP Privacy Policy > Information that must be included in an APP P)\n1.68 Entities must ensure that meaningful and accessible information is provided to individuals.\n1.69 Entities should strike an appropriate balance to ensure information is:\narticulated clearly and in plain language and easy to understand\nstructured to enable consumers to request further information, where required\nappropriately tailored \u2013 sufficiently specific to be meaningful, while avoiding overwhelming levels of detail\norganised so similar information is grouped in a logical manner\nframed in a way that allows the information and the decision to be challenged or contested.\n1.70 In complying with the APP 1.7-1.9 transparency obligation, APP entities may group information about the categories of decisions and types of personal information in their privacy policy to comply with the transparency obligation. However, the level of detail provided about these processes must be meaningful to a reasonable person.\n1.71 Where an APP entity chooses to group information about categories of decisions and types of personal information used to inform a decision, this should be considered with regard to the sensitivity of the information relied upon by the computer program. Privacy policies should be able to clearly articulate where more sensitive types of information (e.g. health information or biometric templates) are used in the making of a computer\u2019s decision.\n1.72 In circumstances where all decisions made by an entity rely on the use of the same type of personal information, APP entities are not required to separate out each decision on a granular basis in their privacy policy but should still consider presenting the information in ways that assist an individual\u2019s understanding.\n1.73 For example, an APP entity may use a range of different computer programs for fraud detection, scam identification, and cybersecurity which may prevent access to significant goods or services. In this case, an APP privacy policy may outline it uses a range of fraud prevention technologies which process an individual\u2019s personal information (e.g. identity information, geolocation data, biometric information, and IP addresses) to decode whether to permit, flag or deny access to an account with the APP entity.\nGovernment agencies\u2019 disclosure obligations under the Information Publication Scheme (IPS)\n1.74 All Government agencies that are subject to the FOI Act are required to comply with obligations of disclosure under the Information Publication Scheme (IPS).\n\n[app7-006] (APP 7, paras 7.19\u20137.21, Using and disclosing personal information for the purpose of direct marketing wh)\n7.19 A simple means for opting out should include:\na visible, clear and easily understood explanation of how to opt out, for example, instructions written in plain English and in a font size that is easy to read\na process for opting out, which requires minimal time and effort\nan opt out process that uses a straightforward and accessible communication channel, or channels. For example, the same communication channel that the organisation used to deliver the direct marketing communication. However, in some circumstances, a straightforward and accessible communication channel may be a different channel to that used to deliver the direct marketing communication, such as telephone and email, where the original channel was post, and\nan opt out process that is free, or that does not involve more than a nominal cost for the individual, for example, the cost of a local phone call, text message or postage stamp.\n7.20 The individual should be able to easily find out how to opt out. For example, an organisation could provide information about how to opt out in each direct marketing communication. An organisation should also consider whether the means for opting out is accessible to a person with a disability.\n7.21 If the individual has \u2018opted out\u2019, the organisation must not use or disclose their personal information for the purpose of direct marketing, in accordance with the individual\u2019s request (APP 7.2(d)). Further examples of a simple means to opt out are given in paragraphs 7.27\u20137.30 below.\n\n[app7-010] (APP 7, paras 7.27\u20137.30, Using and disclosing personal information for the purpose of direct marketing wh)\n7.27 APP 7.3 requires that an organisation provides a simple means for an individual to opt out of receiving direct marketing communications (see discussion at paragraphs 7.19\u20137.21 above).\n7.28 In addition, APP 7.3 requires an organisation to provide a prominent statement that the individual may request to opt out in each direct marketing communication. This statement should meet the following criteria:\nit should be written in plain English, and not use legal or industry jargon\nit should be positioned prominently, and not hidden amongst other text. Headings may be necessary to draw attention to the statement, and\nit should be published in a font size and type which is easy to read, for example, in at least the same font size as the main body of text in the communication.\n7.29 The following are given as examples of ways that an organisation may comply with the \u2018opt out\u2019 requirements of APP 7.3:\nclearly indicating in each direct marketing email that the individual can opt out of receiving future emails by replying with a single word instruction in the subject line (for example, \u2018unsubscribe\u2019). Alternatively, ensuring that a link is prominently located in the email, which takes the individual to a subscription control centre\nclearly indicating that the individual can opt out of future direct marketing by replying to a direct marketing text message with a single word instruction (for example, \u2018STOP\u2019)\ntelling the recipient of a direct marketing phone call that they can verbally opt out from any future calls\nincluding instructions about how to opt out from future direct marketing in each mailed communication.\n7.30 In each case, an organisation may use an opt out mechanism that provides the individual with the opportunity to indicate their direct marketing communication preferences, including the extent to which they wish to opt out. However, the organisation should always provide the individual with an option to opt out of all future direct marketing communications as one of these preferences.\n\n[app3-024] (APP 3, paras n/a, Collecting by lawful and fair means > Collecting by fair means)\nWhere personal information is publicly available on the internet, that does not allow it to be collected and used in whatever way the APP entity chooses without regard to the knowledge and reasonable expectations of the person whose information it concerns. [51]\nWhether the individual's choice is being distorted, manipulated or undermined, for example through poorly designed or misused \u2018online choice architecture\u2019 [52] The way that information is presented and choices are structured (\u2018online choice architecture\u2019) plays an important role in shaping individuals\u2019 decision-making and behaviour online. [53] Poor online choice architecture practices include \u2018harmful nudges and sludge\u2019, \u2018confirmshaming\u2019, \u2018biased framing\u2019, \u2018bundled consent\u2019 and \u2018default settings\u2019. [54] Such practices can steer individuals towards making choices that are otherwise misaligned with their preferences or choices they would normally voluntarily make. They may also force individuals to take multiple steps to find a privacy policy, log out or delete their account, or present them with repetitive prompts aimed at frustrating them and ultimately pushing them to give up more of their personal information than they would like. [55] An individual\u2019s choice can also be undermined due to being provided with limited options. For example, where they cannot choose which platform to use to access a service and are not provided with alternative pathways. [56]\nThe way that information is presented and choices are structured (\u2018online choice architecture\u2019) plays an important role in shaping individuals\u2019 decision-making and behaviour online. [53] Poor online choice architecture practices include \u2018harmful nudges and sludge\u2019, \u2018confirmshaming\u2019, \u2018biased framing\u2019, \u2018bundled consent\u2019 and \u2018default settings\u2019. [54] Such practices can steer individuals towards making choices that are otherwise misaligned with their preferences or choices they would normally voluntarily make. They may also force individuals to take multiple steps to find a privacy policy, log out or delete their account, or present them with repetitive prompts aimed at frustrating them and ultimately pushing them to give up more of their personal information than they would like. [55]\nAn individual\u2019s choice can also be undermined due to being provided with limited options. For example, where they cannot choose which platform to use to access a service and are not provided with alternative pathways. [56]\n\n[app8-027] (APP 8, paras n/a, When is an APP entity accountable for personal information that it discloses to )\n[3] Section 6(8) provides \u2018for the purposes of this Act, the question whether bodies corporate are related to each other is determined in the manner in which that question is determined under the Corporations Act 2001.\u2019\n[4] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012 states \u2018APP 8 will apply where an organisation sends personal information to a \u2018related body corporate\u2019 located outside Australia\u2019 (p 83). While s 13B(1) permits related bodies corporate to share personal information (unless an exception applies), it does not exempt an APP entity from complying with APP 8 before it discloses personal information to a related body corporate located overseas.\n[5] An APP entity is taken to have \u2018disclosed\u2019 personal information where an employee carries out an unauthorised disclosure \u2018in the performance of the duties of the person\u2019s employment\u2019 (s 8(1)).\n[6] See OAIC, Sony PlayStation Network / Qriocity: Own Motion Investigation Report, September 2011, OAIC website <https://www.oaic.gov.au>.\n[7] The actions of an employee will be attributed to the APP entity where it was carried out \u2018in the performance of the duties of the person\u2019s employment\u2019 (s 8(1)).\n[8] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[9] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[10] For further discussion of cloud computing considerations for agencies, see Secure Cloud Strategy, Digital Transformation Agency website <https://www.dta.gov.au>.\n[11] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[12] See OAIC, Data Breach Preparation and Response, OAIC website <https://www.oaic.gov.au>.\n[13] European Commission website <https://ec.europa.eu/info/law/law-topic/data-protection_en>.\n[14] Available at European Commission website <https://ec.europa.eu/info/law/law-topic/data-protection_en>. See in particular documents WP 133 (2007), WP 153 (2008), WP 154 (2008), WP 155 (2008).\n[15] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[16] See the Federal Register of Legislation for up-to-date versions of the regulations made under the Privacy Act.\n[17] This exception was introduced by the Privacy and Other Legislation Amendment Act 2024 . It applies to information disclosed from 11 December 2024 regardless of whether the information was acquired or created before or after that date.\n[18] See the Federal Register of Legislation for up-to-date versions of regulations made under the Privacy Act.\n\nQuestion: What does the Children's Online Privacy Code require of social media platforms?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TyRlrIB0CNzJnO249piR6EsWoL",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not contain information about the Children's Online Privacy Code or its requirements for social media platforms.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089482,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 34,
+   "prompt_tokens": 2533,
+   "total_tokens": 2567,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 195,
+    "engine_ttlt_ms": 408,
+    "pre_inference_ms": 99,
+    "service_tbt_ms": 9,
+    "service_ttft_ms": 921,
+    "service_ttlt_ms": 1239,
+    "user_visible_ttft_ms": 823
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822211338-f8b66dbf-default-r2-dp0-default"
+  }
+ }
+}

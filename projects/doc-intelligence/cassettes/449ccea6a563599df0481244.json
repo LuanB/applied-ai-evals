@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-033",
+  "markdown": false
+ },
+ "response": {
+  "content": "n= 12-16\n49TH TOBACCO CHEMISTS' RESEARCH CONFERENCE September 24-27, 1995 Lexington, Kentucky\nf\nVolume TRE\nI. Precision Msmtr.\nA) 3 / based B ) Colorimetric\nc) Gravimetric\nII. Prep'n. for Gravimetric Analysis A) Compared syringe (gartight ) vs micro-pipetter for accuracy of pression of delivery volumes (100ml, 500 ml) ) IGT Buffers. 1) Micro-pipettor was betterbased on actual delivery verrons theoretical mass delivery .\nB) Compared varioses volumes (100, 500,800, 1000 ml) 1) Initial delivery assessment - Hack 5 vs. pipetter - gravimetric det . Ilest, there was a signif. difference in volume deliving (gravimetric letos.) (2) Prober clend +. \u043f\u0435\u0440\u0435\u0434\u0435\u043b process. (\u0433/15/16) 2) determined that volume delivered was different between pipetter & MK5.\n( 2 ) Regressed ( Figures ) mass is volume for moment of Miks. ( b ) adjusted MKS settings\n3) Series of gravimetric comparisonof pipetter v. Mark 5 a) 100, 500, 800, 4 1000 ml - Manuel vs HRS - signif different b) Precision was very good for all prices of an total & CV. ( Figures ) ( c) Han to volumes of mars (petter) is Mus (MES) Regressions (Figures)\n51887 8162",
+  "pages": 1,
+  "fields": {}
+ }
+}

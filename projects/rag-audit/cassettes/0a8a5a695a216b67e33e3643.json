@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[b-018] (B, paras B.80\u2013B.81, Health information > Health service)\nB.80 \u2018Health service\u2019 is defined to mean:\nan activity performed in relation to an individual that is intended or claimed (expressly or otherwise) by the individual or the person performing it: to assess, record, maintain or improve the individual's health, or to diagnose the individual's illness or disability, or to treat the individual's illness or disability or suspected illness or disability, or\nto assess, record, maintain or improve the individual's health, or\nto diagnose the individual's illness or disability, or\nto treat the individual's illness or disability or suspected illness or disability, or\nthe dispensing or prescription of a drug or medicinal preparation by a pharmacist (s 6(1)).\nB.81 The Privacy Act generally applies to all organisations that provide a health service, including an organisation that is a small business. [25] Examples of organisations that provide a health service include:\ntraditional health service providers, such as private hospitals, day surgeries, medical practitioners, pharmacists and allied health professionals\ncomplementary therapists, such as naturopaths and chiropractors\ngyms and weight loss clinics\nchild care centres, private schools and private tertiary educational institutions.\n\n[app8-027] (APP 8, paras n/a, When is an APP entity accountable for personal information that it discloses to )\n[3] Section 6(8) provides \u2018for the purposes of this Act, the question whether bodies corporate are related to each other is determined in the manner in which that question is determined under the Corporations Act 2001.\u2019\n[4] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012 states \u2018APP 8 will apply where an organisation sends personal information to a \u2018related body corporate\u2019 located outside Australia\u2019 (p 83). While s 13B(1) permits related bodies corporate to share personal information (unless an exception applies), it does not exempt an APP entity from complying with APP 8 before it discloses personal information to a related body corporate located overseas.\n[5] An APP entity is taken to have \u2018disclosed\u2019 personal information where an employee carries out an unauthorised disclosure \u2018in the performance of the duties of the person\u2019s employment\u2019 (s 8(1)).\n[6] See OAIC, Sony PlayStation Network / Qriocity: Own Motion Investigation Report, September 2011, OAIC website <https://www.oaic.gov.au>.\n[7] The actions of an employee will be attributed to the APP entity where it was carried out \u2018in the performance of the duties of the person\u2019s employment\u2019 (s 8(1)).\n[8] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[9] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[10] For further discussion of cloud computing considerations for agencies, see Secure Cloud Strategy, Digital Transformation Agency website <https://www.dta.gov.au>.\n[11] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[12] See OAIC, Data Breach Preparation and Response, OAIC website <https://www.oaic.gov.au>.\n[13] European Commission website <https://ec.europa.eu/info/law/law-topic/data-protection_en>.\n[14] Available at European Commission website <https://ec.europa.eu/info/law/law-topic/data-protection_en>. See in particular documents WP 133 (2007), WP 153 (2008), WP 154 (2008), WP 155 (2008).\n[15] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[16] See the Federal Register of Legislation for up-to-date versions of the regulations made under the Privacy Act.\n[17] This exception was introduced by the Privacy and Other Legislation Amendment Act 2024 . It applies to information disclosed from 11 December 2024 regardless of whether the information was acquired or created before or after that date.\n[18] See the Federal Register of Legislation for up-to-date versions of regulations made under the Privacy Act.\n\n[app8-011] (APP 8, paras 8.26\u20138.27, Exception 1 \u2014 Disclosing personal information to an overseas recipient that is s)\n8.26 An enforcement mechanism should meet two key requirements: it should be accessible to the individual and it should have effective powers to enforce the privacy or data protections in the law or binding scheme. A range of mechanisms may satisfy those requirements, ranging from a regulatory body similar to the Office of the Australian Information Commissioner (the OAIC), to an accredited dispute resolution scheme, an independent tribunal or a court with judicial functions and powers. Factors that may be relevant in deciding whether there is an accessible and effective enforcement mechanism include whether the mechanism:\nis independent of the overseas recipient that is required by the law or binding scheme to comply with the privacy or data protections\nhas authority to consider a breach of any of the privacy or data protections in the law or binding scheme\nis accessible to an individual, for example, the existence of the scheme is publicly known, and can be accessed by individuals directly and without payment of any unreasonable charge\nhas the power to make a finding that the overseas recipient is in breach of the law or binding scheme and to provide a remedy to the individual\nis required to operate according to principles of procedural fairness.\n8.27 The mechanism may be a single mechanism or a combination of mechanisms. It may be established by the law or binding scheme that contains the privacy or data protections, or by another law or binding scheme. Alternatively, the mechanism may take effect through the operation of cross-border enforcement arrangements between the OAIC and an appropriate regulatory authority in the foreign jurisdiction. [15]\n\n[b-024] (B, paras B.104\u2013B.106, Health information > Purpose)\nB.104 How broadly a purpose can be described will depend on the circumstances and should be determined on a case-by-case basis. In cases of ambiguity, and with a view to protecting individual privacy, the primary purpose for collection, use or disclosure should be construed narrowly rather than expansively.\nB.105 The primary purpose may nevertheless be described in general terms, as long as the description is adequate to inform an individual of how the APP entity may use or disclose their personal information. A description \u2013 the information will be used \u2018for the functions of the entity\u2019 \u2013 would generally be considered too broad. Instead, the primary purpose of collection could be described as to:\nprovide a particular banking service\nmarket particular goods or services , or types of goods or services, to the individual\nassess an applicant\u2019s suitability for a job\nassess an applicant\u2019s eligibility for a loan\nresolve a complaint\nprovide further information about a particular service\nenable an agency to give someone a particular benefit or service.\nB.106 An APP entity does not need to include in its description internal purposes that form part of normal business practices, such as auditing, business planning, billing or de-identifying personal information.\n\n[app8-006] (APP 8, paras 8.16\u20138.17, Taking reasonable steps to ensure an overseas recipient does not breach the APPs)\n8.16 The requirement in APP 8.1 to ensure that an overseas recipient does not breach the APPs is qualified by a \u2018reasonable steps\u2019 test. It is generally expected that an APP entity will enter into an enforceable contractual arrangement with the overseas recipient that requires the recipient to handle the personal information in accordance with the APPs (other than APP 1). [11] Contractual arrangements may include:\nthe types of personal information to be disclosed and the purpose of disclosure\na requirement that the overseas recipient complies with the APPs in relation to the collection, use, disclosure, storage and destruction or de-identification of personal information. This should also require the overseas recipient to enter a similar contractual arrangement with any third parties to whom it discloses the personal information (for example, a subcontractor)\nthe complaint handling process for privacy complaints, and\na requirement that the recipient implement a data breach response plan which includes a mechanism for notifying the APP entity where there are reasonable grounds to suspect a data breach and outlines appropriate remedial action (based on the type of personal information to be handled under the contract). [12]\n8.17 However, whether reasonable steps to ensure the overseas recipient does not breach the APPs requires a contract to be entered into, the terms of the contract, and the steps the APP entity takes to monitor compliance with any contract (such as auditing), will depend upon the circumstances that include:\nthe sensitivity of the personal information. More rigorous steps may be required if the information is \u2018sensitive information\u2019 (defined in s 6(1) and discussed in Chapter B (Key concepts)) or other personal information of a sensitive nature\nthe entity\u2019s relationship with the overseas recipient. More rigorous steps may be required if an entity discloses information to an overseas recipient to which it has not previously disclosed personal information\nthe possible adverse consequences for an individual if the information is mishandled by the overseas recipient. More rigorous steps may be required as the risks and adverse consequences increase.\nexisting technical and operational safeguards implemented by the overseas recipient which will protect the privacy of the personal information \u2014 more rigorous steps may be required where the recipient has limited safeguards in place, and\n\nQuestion: How many days does a business have to assess a suspected eligible data breach before notifying the OAIC?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Smq1e3sTlnhqxJotgff1bz6T5K",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not specify the number of days a business has to assess a suspected eligible data breach before notifying the OAIC.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089408,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 39,
+   "prompt_tokens": 2152,
+   "total_tokens": 2191,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 35,
+    "engine_ttlt_ms": 256,
+    "pre_inference_ms": 82,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 732,
+    "service_ttlt_ms": 1055,
+    "user_visible_ttft_ms": 650
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822214107-14d77be2-default-r2-dp0-default"
+  }
+ }
+}

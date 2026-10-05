@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app8-027] (APP 8, paras n/a, When is an APP entity accountable for personal information that it discloses to )\n[3] Section 6(8) provides \u2018for the purposes of this Act, the question whether bodies corporate are related to each other is determined in the manner in which that question is determined under the Corporations Act 2001.\u2019\n[4] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012 states \u2018APP 8 will apply where an organisation sends personal information to a \u2018related body corporate\u2019 located outside Australia\u2019 (p 83). While s 13B(1) permits related bodies corporate to share personal information (unless an exception applies), it does not exempt an APP entity from complying with APP 8 before it discloses personal information to a related body corporate located overseas.\n[5] An APP entity is taken to have \u2018disclosed\u2019 personal information where an employee carries out an unauthorised disclosure \u2018in the performance of the duties of the person\u2019s employment\u2019 (s 8(1)).\n[6] See OAIC, Sony PlayStation Network / Qriocity: Own Motion Investigation Report, September 2011, OAIC website <https://www.oaic.gov.au>.\n[7] The actions of an employee will be attributed to the APP entity where it was carried out \u2018in the performance of the duties of the person\u2019s employment\u2019 (s 8(1)).\n[8] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[9] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[10] For further discussion of cloud computing considerations for agencies, see Secure Cloud Strategy, Digital Transformation Agency website <https://www.dta.gov.au>.\n[11] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[12] See OAIC, Data Breach Preparation and Response, OAIC website <https://www.oaic.gov.au>.\n[13] European Commission website <https://ec.europa.eu/info/law/law-topic/data-protection_en>.\n[14] Available at European Commission website <https://ec.europa.eu/info/law/law-topic/data-protection_en>. See in particular documents WP 133 (2007), WP 153 (2008), WP 154 (2008), WP 155 (2008).\n[15] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012, p 83.\n[16] See the Federal Register of Legislation for up-to-date versions of the regulations made under the Privacy Act.\n[17] This exception was introduced by the Privacy and Other Legislation Amendment Act 2024 . It applies to information disclosed from 11 December 2024 regardless of whether the information was acquired or created before or after that date.\n[18] See the Federal Register of Legislation for up-to-date versions of regulations made under the Privacy Act.\n\n[b-005] (B, paras B.21\u2013B.25, Key concepts A to D > Australian link)\nB.21 An entity will not generally be regarded as carrying on business in Australia solely on the basis that a purchase order can be placed in Australia or that it has a website that can be accessed from Australia. [12]\nB.22 The Privacy Legislation Amendment (Enforcement and Other Measures) Act 2022 came into force on 13 December 2022 and repealed s 5B(3)(c) of the Privacy Act. This means that the previous test under s 5B(3) will apply to acts and practices outside Australia and the external Territories that occurred before 13 December 2022.\nB.23 Prior to 13 December 2022, s 5B(3) provided that an organisation will have an Australian link where:\nit carries on business in Australia or an external Territory (s 5B(3)(b)), and\nit collected or held personal information in Australia or an external Territory, either before or at the time of an act or practice (s 5B(3)(c)).\nB.24 The phrase \u2018carries on business\u2019 is discussed above at B.13\u2013B.21.\nB.25 Personal information is collected \u2018in Australia\u2019, if it is collected from an individual who is physically present in Australia or an external Territory, regardless of where the collecting entity is located or incorporated. An example is the collection of personal information from an individual who is physically located in Australia or an external Territory, via a website that is hosted outside Australia. This applies even if the website is owned by a company that is located outside of Australia or that is not incorporated in Australia. [13]\n\n[app12-025] (APP 12, paras 12.67, APP 12 minimum access requirements > Timeframe for responding to a request for a)\n12.67 APP 12.4(a)(ii) provides that an organisation must respond \u2018within a reasonable period after the request is made\u2019. As with agencies, an organisation must respond by giving access to the personal information that is requested, or by notifying its refusal to give access. Factors that may be relevant in deciding what is a reasonable period include the scope and clarity of a request, whether the information can be readily located and assembled, and whether consultation with the individual or other parties is required. However, as a general guide, a reasonable period should not exceed 30 calendar days.\n\n[app4-008] (APP 4, paras 4.28\u20134.30, Dealing with unsolicited personal information that could have been collected und)\n4.28 An APP entity may retain unsolicited personal information if the entity has determined that it could have collected the personal information under APP 3, or the personal information is contained in a Commonwealth record, or the entity is not required to destroy or de-identify the personal information under APP 4.3 because it would be unlawful or unreasonable to do so. The personal information must then be dealt with in accordance with APPs 5\u201313 (APP 4.4). This means, for example, that a notice of collection may be required (see Chapter 5 (APP 5)), the personal information may only be used or disclosed for the primary purpose for which it was collected unless an exception applies (see paragraph 4.29 below and Chapter 6 (APP 6)), the security of the personal information must be protected (see Chapter 11 (APP 11)), an individual can request access to the personal information (see Chapter 12 (APP 12)) and an individual can request the entity to correct the personal information (see Chapter 13 (APP 13)).\n4.29 Two other matters should be borne in mind by an APP entity that retains personal information for one of the reasons listed in paragraph 4.28. The first is that the personal information, though retained by the APP entity, may not be information that could have been collected for a particular purpose under APP 3.1 (for example, where the personal information is retained because it is contained in a Commonwealth record, or because it is not lawful or reasonable for the entity to destroy or de-identify it). Consequently, if the entity has not collected the personal information for a particular primary purpose, the entity may only use or disclose it if an exception in APP 6 applies (see Chapter 6).\n4.30 Secondly, APP 11.2 requires an APP entity to destroy or de-identify personal information it holds but which it no longer needs for any purpose permitted by the APPs, unless the personal information is contained in a Commonwealth record or the entity is required by or under an Australian law, or a court/tribunal order, to retain the information. Consequently, personal information that is retained under APP 4.4 may nevertheless need to be destroyed or de-identified in accordance with APP 11.2 (see Chapter 11 (APP 11)).\n\n[app8-011] (APP 8, paras 8.26\u20138.27, Exception 1 \u2014 Disclosing personal information to an overseas recipient that is s)\n8.26 An enforcement mechanism should meet two key requirements: it should be accessible to the individual and it should have effective powers to enforce the privacy or data protections in the law or binding scheme. A range of mechanisms may satisfy those requirements, ranging from a regulatory body similar to the Office of the Australian Information Commissioner (the OAIC), to an accredited dispute resolution scheme, an independent tribunal or a court with judicial functions and powers. Factors that may be relevant in deciding whether there is an accessible and effective enforcement mechanism include whether the mechanism:\nis independent of the overseas recipient that is required by the law or binding scheme to comply with the privacy or data protections\nhas authority to consider a breach of any of the privacy or data protections in the law or binding scheme\nis accessible to an individual, for example, the existence of the scheme is publicly known, and can be accessed by individuals directly and without payment of any unreasonable charge\nhas the power to make a finding that the overseas recipient is in breach of the law or binding scheme and to provide a remedy to the individual\nis required to operate according to principles of procedural fairness.\n8.27 The mechanism may be a single mechanism or a combination of mechanisms. It may be established by the law or binding scheme that contains the privacy or data protections, or by another law or binding scheme. Alternatively, the mechanism may take effect through the operation of cross-border enforcement arrangements between the OAIC and an appropriate regulatory authority in the foreign jurisdiction. [15]\n\nQuestion: How long must telecommunications providers retain customer metadata under the data retention scheme?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Ty4e0kYnwirwNgCcwyjsTxso7E",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided guidelines do not cover the duration for which telecommunications providers must retain customer metadata under the data retention scheme.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089482,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 35,
+   "prompt_tokens": 2180,
+   "total_tokens": 2215,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 42,
+    "engine_ttlt_ms": 239,
+    "pre_inference_ms": 90,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 512,
+    "service_ttlt_ms": 800,
+    "user_visible_ttft_ms": 421
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260928224152-e96f62d6-default-r0-dp0-default"
+  }
+ }
+}

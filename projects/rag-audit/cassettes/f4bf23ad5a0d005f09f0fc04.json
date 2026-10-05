@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app6-022] (APP 6, paras 6.68\u20136.70, Using or disclosing personal information for a secondary purpose > Disclosing bi)\n6.68 An agency may disclose biometric information or biometric templates for a secondary purpose if:\nthe agency is not an enforcement body, and\nthe recipient of the information is an enforcement body, and\nthe disclosure is conducted in accordance with guidelines made by the Commissioner for the purposes of APP 6.3 (see APP 6.3, Chapter 6).\n6.69 This exception does not apply to organisations.\n6.70 \u2018Biometric information\u2019 and \u2018biometric templates\u2019 are types of \u2018sensitive information\u2019 (defined in s 6(1)). \u2018Enforcement body\u2019 is defined in s 6(1) and is discussed in more detail in Chapter B (Key concepts).\n\n[b-034] (B, paras B.141\u2013B.144, Key concepts R to Z > Sensitive information)\nB.141 \u2018Sensitive information\u2019 is a subset of personal information and is defined as:\ninformation or an opinion (that is also personal information) about an individual\u2019s: racial or ethnic origin political opinions membership of a political association religious beliefs or affiliations philosophical beliefs membership of a professional or trade association membership of a trade union sexual orientation or practices, or criminal record\nracial or ethnic origin\npolitical opinions\nmembership of a political association\nreligious beliefs or affiliations\nphilosophical beliefs\nmembership of a professional or trade association\nmembership of a trade union\nsexual orientation or practices, or\ncriminal record\nhealth information about an individual (see paragraphs B.74\u2013B.78)\ngenetic information (that is not otherwise health information)\nbiometric information that is to be used for the purpose of automated biometric verification or biometric identification, or\nbiometric templates (s 6(1)).\nB.142 Information may be sensitive information where it clearly implies one of these matters. For example, many surnames have a particular racial or ethnic origin, but that alone will not constitute sensitive information that clearly indicates the racial or ethnic origin of an individual with that surname.\nB.143 Terms such as \u2018political opinions\u2019 and \u2018philosophical beliefs\u2019 are not defined in the Privacy Act. They take their ordinary meaning and should be interpreted broadly. However, not every value, belief or opinion of an individual will be considered to be a political opinion or philosophical belief.\nB.144 Sensitive information is generally afforded a higher level of privacy protection under the APPs than other personal information (for example, see APPs 3, 6 and 7). This recognises that inappropriate handling of sensitive information can have adverse consequences for an individual or those associated with the individual. For example, discrimination or mistreatment is sometimes based on a person\u2019s race or ethnic origin or union membership. Mishandling of sensitive information may also cause humiliation or embarrassment or undermine an individual\u2019s dignity.\n\n[b-017] (B, paras B.77\u2013B.79, Health information)\nB.77 \u2018Health information\u2019 is defined to mean:\ninformation or an opinion, that is also personal information, about: the health or a disability (at any time) of an individual, or an individual's expressed wishes about the future provision of health services to him or her, or a health service provided, or to be provided, to an individual, or\nthe health or a disability (at any time) of an individual, or\nan individual's expressed wishes about the future provision of health services to him or her, or\na health service provided, or to be provided, to an individual, or\nother personal information collected to provide, or in providing, a health service, or\nother personal information about an individual collected in connection with the donation, or intended donation, by the individual of their body parts, organs or body substances, or\ngenetic information about an individual in a form that is, or could be, predictive of the health of the individual or a genetic relative of the individual (s 6(1)). (Other types of genetic information that are not health information fall within the definition of \u2018sensitive information\u2019, discussed at paragraphs B.138\u2013B.141).\nB.78 Examples of health information include:\ninformation about an individual\u2019s physical or mental health\nnotes of an individual\u2019s symptoms or diagnosis and the treatment given\nspecialist reports and test results\nappointment and billing details\nprescriptions and other pharmaceutical purchases\ndental records\nrecords held by a fitness club about an individual\ninformation about an individual\u2019s suitability for a job, if it reveals information about the individual\u2019s health\nan individual\u2019s healthcare identifier when it is collected to provide a health service\nany other personal information (such as information about an individual\u2019s date of birth, gender, race, sexuality, religion), collected for the purpose of providing a health service.\nB.79 The definition of \u2018sensitive information\u2019 in s 6(1) includes health information. Sensitive information, including health information, attracts additional privacy protections compared to other types of personal information (see for example, APP 3 in Chapter 3). There are also a number of provisions and APPs that deal specifically with health information, including the \u2018permitted health situation\u2019 exceptions set out in s 16B (see Chapter D (Permitted health situations)).\n\n[b-021] (B, paras B.88\u2013B.94, Health information > Personal information)\nB.88 \u2018Personal information\u2019 is defined as any \u2018information or an opinion about an identified individual, or an individual who is reasonably identifiable:\nwhether the information or opinion is true or not; and\nwhether the information or opinion is recorded in a material form or not\u2019 (s 6(1)).\nB.89 Common examples are an individual\u2019s name, signature, address, telephone number, date of birth, medical records, bank account details, employment details and commentary or opinion about a person.\nB.90 Personal information of one individual may also be personal information of another individual. Examples include a marriage certificate that contains personal information of both parties to a marriage, and a vocational reference that includes personal information about both the author and the subject of the reference.\nB.91 The personal information \u2018about\u2019 an individual may be broader than the item of information that identifies them. For example, a vocational reference or assessment may comment on a person\u2019s career, performance, attitudes and aptitude. Similarly, the views expressed by the author of the reference may also be personal information about the author.\nB.92 Personal information that has been de-identified will no longer be personal information. Personal information is de-identified if the information is no longer about an identifiable individual or an individual who is reasonably identifiable (see paragraph B.59).\nB.93 What constitutes personal information will vary, depending on whether an individual can be identified or is reasonably identifiable in the particular circumstances.\nB.94 Whether an individual is \u2018reasonably identifiable\u2019 from particular information will depend on considerations that include: [28]\nthe nature and amount of information\nthe circumstances of its receipt\nwho will have access to the information\nother information either held by or available to the APP entity that holds the information\nwhether it is possible for the individual or entity that holds the information to identify the individual, using available resources (including other information available to that individual or entity). Where it may be possible to identify an individual using available resources, the practicability, including the time and cost involved, will be relevant to deciding whether an individual is \u2018reasonably identifiable\u2019 [29]\nif the information is publicly released, whether a reasonable member of the public who accesses that information would be able to identify the individual.\n\n[app3-025] (APP 3, paras n/a, Collecting by lawful and fair means > Collecting by fair means)\nWhat the risk of harm would be to individuals as a result of the collection\nThe risk of harm increases with the sensitivity of the information. Inappropriate collection and handling of personal information, including sensitive information, can have adverse consequences for an individual or those associated with the individual.\nFor example, when considering collecting biometric templates and biometric information via facial recognition technology, an APP entity should consider if this would lead to unjustified adverse effects, such as unjust discrimination. [57]\nThe risk of harm also increases with the amount of personal information collected. Over-collection can increase risks for the security of personal information.\nWhether the individual is in, or is perceived to be in, a vulnerable or at-risk situation This includes whether the collection is seeking to capitalise on the vulnerability, or perceived vulnerability, of an individual. Vulnerability can be defined as heightened susceptibility to harm. Factors that may put an individual at higher risk of experiencing negative outcomes include age, language barriers, literacy barriers (including digital literacy barriers), cognitive impairment, remote location, financial distress, family or domestic violence, disability and health conditions. [58] \u2018At-risk\u2019 groups could include children, older people, people from culturally and linguistically diverse communities, and people lacking digital resources such as appropriate device and internet access. [59] For example, it may be unfair to collect from an individual who is traumatised, in a state of shock or intoxicated. It may further be unfair to collect in a way that disrespects cultural differences. An individual may also be vulnerable due to inherent and significant power imbalances. For example, the power imbalance in the rental property market results in individuals feeling that they have no choice but to engage with and submit personal information to rental platforms, even if they are not comfortable doing so, for fear that their applications may be rejected. [60]\nThis includes whether the collection is seeking to capitalise on the vulnerability, or perceived vulnerability, of an individual.\nVulnerability can be defined as heightened susceptibility to harm. Factors that may put an individual at higher risk of experiencing negative outcomes include age, language barriers, literacy barriers (including digital literacy barriers), cognitive impairment, remote location, financial distress, family or domestic violence, disability and health conditions. [58]\n\nQuestion: Do biometric templates count as sensitive information?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TwecM8gnyMbdRFXjvhF0XYHIi5",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, biometric templates are considered a type of sensitive information under the Privacy Act.\",\"citations\":[\"app6-022\",\"b-034\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089480,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 38,
+   "prompt_tokens": 2223,
+   "total_tokens": 2261,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 37,
+    "engine_ttlt_ms": 220,
+    "pre_inference_ms": 80,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 537,
+    "service_ttlt_ms": 816,
+    "user_visible_ttft_ms": 458
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927065148-66615b65-default-r0-dp0-default"
+  }
+ }
+}

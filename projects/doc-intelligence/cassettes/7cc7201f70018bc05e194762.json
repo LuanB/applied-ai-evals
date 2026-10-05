@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B09-01",
+  "markdown": true
+ },
+ "response": {
+  "content": "# GOLDEN VALLEY EXPORTS CO. LTD 204 Industrial Rd, Turkey\n\n\n<table>\n<tr>\n<td>Invoice No .:</td>\n<td colspan=\"2\">INV-59341</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Date:</td>\n<td colspan=\"3\">01/08/2026</td>\n<td></td>\n</tr>\n<tr>\n<td>Sold to:</td>\n<td colspan=\"3\">Southern Cross Imports Pty Ltd</td>\n<td></td>\n</tr>\n<tr>\n<td>Packing List No .:</td>\n<td>PL-49148</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Terms of delivery:</td>\n<td>EXW</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Currency:</td>\n<td>USD</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Description</td>\n<td>HS Code</td>\n<td>Qty</td>\n<td>Unit price</td>\n<td>Amount</td>\n</tr>\n<tr>\n<td>Dried apricots</td>\n<td>0813.10</td>\n<td>1203</td>\n<td>29.12</td>\n<td>35,031.36</td>\n</tr>\n<tr>\n<td>TOTAL USD:</td>\n<td>35,031.36</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Country of origin: Turkey</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B04-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEKONG AGRI TRADING JSC 191 Industrial Rd, Spain\nWEIGHT & PACKING NOTE\nRef No .:\nPL-478.24\nInvoice No .:\nINV-65704\nConsignee:\nKookaburra Home Furnishings Pty Ltd\nContainer:\nCMAU1353139\nMarks:\nKOOKABURRA/SYDNEY\nPkgs\nDescription\nNet kg\nGross. kg\n998 Fresh oranges, navel 8.767.7\n9768.3\nTotal packages:\n998\nTotal gross weight (kg): 97.68.3\nTotal net weight (kg):\n8767.7",
+  "pages": 1,
+  "fields": {}
+ }
+}

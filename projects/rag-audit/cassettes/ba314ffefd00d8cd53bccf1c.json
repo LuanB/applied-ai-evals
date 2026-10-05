@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app6-025] (APP 6, paras 6.77, Related bodies corporate > Using or disclosing personal information collected fr)\n6.77 An APP entity that collects personal information from a related body corporate is taken to have the same primary purpose of collection as its related body corporate (APP 6.6). Under APP 6, the entity may only use or disclose the personal information for that primary purpose, unless an exception to that principle applies (see paragraph 6.2 above). For example, an APP entity collects personal information about an applicant contractor for the purpose of assessing their suitability to perform work on its behalf. The parent company then collects that personal information from the entity. The primary purpose of this collection is taken to be the same as the original purpose of collection. The parent company may only disclose the personal information to a third party for another purpose, where an exception to APP 6 applies.\n\n[app7-006] (APP 7, paras 7.19\u20137.21, Using and disclosing personal information for the purpose of direct marketing wh)\n7.19 A simple means for opting out should include:\na visible, clear and easily understood explanation of how to opt out, for example, instructions written in plain English and in a font size that is easy to read\na process for opting out, which requires minimal time and effort\nan opt out process that uses a straightforward and accessible communication channel, or channels. For example, the same communication channel that the organisation used to deliver the direct marketing communication. However, in some circumstances, a straightforward and accessible communication channel may be a different channel to that used to deliver the direct marketing communication, such as telephone and email, where the original channel was post, and\nan opt out process that is free, or that does not involve more than a nominal cost for the individual, for example, the cost of a local phone call, text message or postage stamp.\n7.20 The individual should be able to easily find out how to opt out. For example, an organisation could provide information about how to opt out in each direct marketing communication. An organisation should also consider whether the means for opting out is accessible to a person with a disability.\n7.21 If the individual has \u2018opted out\u2019, the organisation must not use or disclose their personal information for the purpose of direct marketing, in accordance with the individual\u2019s request (APP 7.2(d)). Further examples of a simple means to opt out are given in paragraphs 7.27\u20137.30 below.\n\n[app3-009] (APP 3, paras 3.24\u20133.27, Collecting for an APP entity\u2019s \u2018functions or activities\u2019 > Collecting personal i)\n3.24 An APP entity may collect personal information that is \u2018reasonably necessary\u2019 for a function or activity of the entity (APP 3.1 and APP 3.2). [14] An APP entity may collect sensitive information with consent where the sensitive information is \u2018reasonably necessary\u2019 for a function or activity of the entity (APP 3.3).\n3.25 The \u2018reasonably necessary\u2019 test is an objective test: whether a reasonable person who is properly informed would agree that the collection is necessary. It is the responsibility of an APP entity to be able to justify that the particular collection is reasonably necessary. In the context of the Privacy Act, it would not be sufficient if the collection is merely helpful, desirable or convenient. \u2018Reasonably necessary\u2019 is discussed further in Chapter B (Key concepts).\n3.26 Proportionality is implicit in this \u2018reasonably necessary\u2019 requirement, and requires entities to take a data minimisation approach. [15] Data collected should be relevant, minimal, and not excessive. Data minimisation is an important risk mitigation measure and represents best practice for APP entities.\n3.27 Factors relevant to determining whether a collection of personal information is reasonably necessary for a function or activity include:\nthe primary purpose of collection (\u2018purpose\u2019 is discussed further in Chapter B (Key concepts))\nhow the personal information will be used in undertaking a function or activity of the APP entity (for example, in most circumstances collection on the basis that personal information could become necessary for a function or activity in the future, would not be reasonably necessary. This is distinct from collecting personal information for a foreseeable event that may never occur if that collection is reasonably necessary for a function or activity (see Example B below). It is also distinct from collecting personal information for a proposed function and activity for which there are established plans\nwhether the entity could undertake the function or activity without collecting that personal information, or by collecting a lesser amount of personal information\nwhether the collection is proportionate, which involves balancing the privacy impacts resulting from the collection against the benefits gained, with reference to the relevant function or activity.\nExample A: A delivery company must verify the residency status of its new couriers through the onboarding process. It gives its new couriers two options: to present their identity documents (such as passport or birth certificate) in person at one of their corporate offices ahead of their start date, or to verify their identity document online using a secure identity verification service. Regardless of which option the courier picks, the delivery company never collects or retains the identity document itself or any details from the document. It simply has a checkbox which is ticked when the residency status has been verified via either method.\n\n[app1-012] (APP 1, paras 1.44\u20131.45, Developing an APP Privacy Policy > Information that must be included in an APP P)\n1.44 This recognises that a computer program may be operated by one entity, but another entity is responsible for arranging for the computer program to make, or do a thing that is substantially and directly related to making, a decision. ( Example D )\nExample B: An employer permits or directs employees to use an artificial intelligence (AI) chat tool to draft performance assessments that determine promotion decisions.\nExample C: An entity contracts a third-party software company to automatically approve or decline refunds on its behalf.\nExample D: The National Taxation Authority (NTA) uses a third-party software called EzyTax to consider individual applications for their eligibility for a tax refund. EzyTax automatically approves or rejects the applications on behalf of the NTA depending on the personal information provided by the individual. The NTA has arranged for the EzyTax software to make decisions on its behalf.\nThe OAIC generally expects that the APP 1.7-1.9 transparency obligation typically remains with the APP entity who is using personal information to make a decision or do a thing that significantly affects the rights or interests of an individual.\n1.45 APP entities should actively identify, assess and keep oversight over the third-party computer programs that they use to make a decision, both during and after procurement. Amongst other considerations, entities should understand how a computer program is being used in a third-party product or service to make or assist decisions and what types of decisions are being made. In this regard, APP entities and third-party computer program providers should ensure their contractual arrangements are clear regarding which entity maintains ultimate decision-making capability or judgement.\nPrivacy Tip: APP entities should be aware of the impact of any contractual arrangements they have with other entities when considering their APP 1.7 obligations. APP entities may still be required to comply with APP 1.7 where they have a contractual arrangement in place with another entity who provides them with a computer program.\nThe OAIC outlines below a non-exhaustive list of examples that would generally be considered \u2018arranged for\u2019 for the purposes of the APP 1.7-1.9 transparency obligation:\nan entity procures another entity\u2019s AI system to screen and rank job applications leading to a decision being made on who to employ\n\n[b-004] (B, paras B.17\u2013B.20, Key concepts A to D > Australian link)\nB.17 Whether a business is carried on \u2018in Australia\u2019 focusses upon whether activity is undertaken in Australia as part of the entity\u2019s business. There is \u2018a need for some physical activity in Australia through human instrumentalities, being activity that itself forms part of the course of conducting business\u2019. [8] However, as noted in another decision, \u2018provided that there are acts within Australia which are part of the company's business, the company will be doing business in Australia although the bulk of its business is conducted elsewhere and it maintains no office in Australia\u2019. [9]\nB.18 An important consideration in applying this territorial requirement in the context of the Privacy Act is that the Act, though technologically-neutral, operates in an environment where personal information is regularly collected, held, used and disclosed online by organisations that may simultaneously carry on business through the web in many countries. In addition, an object of the Privacy Act is to \u2018promote the protection of the privacy of individuals\u2019 (s 2A(a)), which requires that regard be had to contemporary and practical circumstances.\nB.19 In this context, factors that may be considered in assessing if an entity carries on business in Australia include whether:\nthe entity has a place of business in Australia\npeople who undertake business acts for the entity are located in Australia \u2013 for example, an entity may carry on business in Australia where an agent acting on its behalf carries on its business from some fixed place in Australia [10]\nthe entity has a website that offers goods or services to countries including Australia\nAustralia is one of the countries on the drop-down menu appearing on the entity\u2019s website\nweb content that forms part of carrying on the business, was uploaded by or on behalf of the entity, in Australia\nbusiness or purchase orders are assessed or acted upon in Australia\nthe entity is the registered proprietor of trademarks in Australia. [11]\nB.20 The presence or absence of one of these factors may not be determinative in assessing whether an entity carries on business in Australia. For example, where an entity does not have a place of business in Australia, this does not necessarily mean that it does not carry on business in Australia.\n\nQuestion: If someone asks where a company got their details for a marketing message, does the company have to tell them?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SlDh2rXFZRTzS12d6fAbAHRmj5",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not specifically address whether a company must disclose the source of personal details used for a marketing message when asked by an individual.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089407,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 41,
+   "prompt_tokens": 2235,
+   "total_tokens": 2276,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 38,
+    "engine_ttlt_ms": 272,
+    "pre_inference_ms": 84,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 775,
+    "service_ttlt_ms": 1054,
+    "user_visible_ttft_ms": 691
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822211338-5b02d512-default-r1-dp0-default"
+  }
+ }
+}

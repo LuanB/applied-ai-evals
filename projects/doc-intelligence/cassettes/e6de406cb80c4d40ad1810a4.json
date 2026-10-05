@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B05-05",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - SRI LANKA\nCERTIFICATE OF ORIGIN\nCertificate No .:\nEX322197\nExporter:\nCascade Orchards. LLC\nConsignee:\nKookaburra Home Furnishings Pty Ltd\nMeans of transport:\nCMA CGM TAGE from Colombo\nHS heading:\n0904.11\nGoods:\nBlack pepper, whole\nCountry of origin:\nSri Lanka\nWe certify the goods described in invoice INV-60119 originate in Sri Lanka.",
+  "pages": 1,
+  "fields": {}
+ }
+}

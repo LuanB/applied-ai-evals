@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app12-025] (APP 12, paras 12.67, APP 12 minimum access requirements > Timeframe for responding to a request for a)\n12.67 APP 12.4(a)(ii) provides that an organisation must respond \u2018within a reasonable period after the request is made\u2019. As with agencies, an organisation must respond by giving access to the personal information that is requested, or by notifying its refusal to give access. Factors that may be relevant in deciding what is a reasonable period include the scope and clarity of a request, whether the information can be readily located and assembled, and whether consultation with the individual or other parties is required. However, as a general guide, a reasonable period should not exceed 30 calendar days.\n\n[app13-024] (APP 13, paras 13.63\u201313.64, APP 13 minimum procedural requirements > Timeframe for responding to a request f)\n13.63 APP 13.5 provides that an agency must respond to a request to correct a record or to associate a statement within 30 calendar days. The 30 day time period commences on the day after the day the agency receives the request. An organisation must respond within a reasonable period after the request is made. As a general guide, a reasonable period should not exceed 30 calendar days.\n13.64 The APP entity must respond by correcting the personal information as requested by the individual, or by notifying the individual of its refusal to correct it.\n\n[app12-024] (APP 12, paras 12.66, APP 12 minimum access requirements > Timeframe for responding to a request for a)\n12.66 APP 12.4(a)(i) provides that an agency must \u2018respond\u2019 to a request for access within 30 calendar days. The 30 day time period commences on the day after the day the agency receives the request. The agency must respond by giving access to the personal information that is requested, or by notifying its refusal to give access. If this is impracticable (for example, there is a justifiable need to clarify the scope of an individual\u2019s request, or to locate and assemble the requested information, or to consult a third party), the agency is expected to contact the individual to explain the delay and provide an expected timeframe for finalising the request. These are matters the Information Commissioner may examine if a complaint is made about an agency\u2019s failure to comply with the timeframe in APP 12.4(a).\n\n[app13-020] (APP 13, paras 13.49\u201313.51, APP 13 minimum procedural requirements > Taking reasonable steps to notify anoth)\n13.49 APP 13.2 provides that an APP entity must, on request, take reasonable steps to notify another APP entity of a correction made to personal information that was previously provided to that entity, unless it is impracticable or unlawful to do so. Implicit in this requirement is that an entity should take reasonable steps to inform the individual that they can make such a request. This information could be provided, for example, at the time, or as soon as practicable after, a correction is made.\n13.50 The reasonable steps for an APP entity will depend upon considerations that include:\nthe sensitivity of the personal information. More rigorous steps may be required for \u2018sensitive information\u2019 (defined in s 6(1) and discussed in Chapter B (Key concepts)) or other personal information of a sensitive nature.\nthe possible adverse consequences for an individual if notice is not provided to the other entity. More rigorous steps may be required as the risk of adversity increases.\nthe nature or importance of the correction. For example, it may not be reasonable to provide notice of a small typographical error that does not materially affect the quality of the personal information.\nthe length of time that has elapsed since the personal information was disclosed to the other entity, and the likelihood that it is still being used or disclosed by the other entity\nthe materiality of the correction\nthe practicability of providing notice to another entity. For example, it may be impracticable to do so if the other entity has ceased carrying on business or has been substantially restructured.\nthe practicability, including time and cost of providing a notice to all entities to which the personal information was previously provided. However, an entity is not excused from giving notification by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take a particular step will depend on whether the burden is excessive in all the circumstances.\n13.51 An APP entity is not required to provide notice of a correction if it would be impracticable or unlawful to do so. Impracticability is addressed in the list at paragraph 13.50. An entity should consider whether it would be practicable to notify some but not all of the other APP entities to which the entity previously disclosed the personal information. In these circumstances, the entity could discuss with the individual whether there are particular entities that they wish to be notified.\n\n[app13-008] (APP 13, paras 13.24, Taking reasonable steps to correct personal information > Correcting at the indi)\n13.24 APP 13 stipulates minimum procedural requirements that must be met by an APP entity when dealing with a request to correct personal information. These are discussed later in this chapter, and include taking reasonable steps if requested by the individual to notify other APP entities when a correction is made (see paragraphs 13.49\u201313.53), providing an individual with a written notice that includes the reasons for refusal if a correction request is refused (paragraphs 13.54\u201313.58), response times (paragraphs 13.63\u201313.64) and charging (paragraph 13.65). Provided an entity meets those minimum requirements, it may choose the arrangements (including an informal arrangement) for receiving and acting upon correction requests. An online portal through which individuals can access and correct their personal information is an example of an informal arrangement that may provide a fast and easy means of correction, and that can qualify as an APP 13 \u2018request\u2019 procedure.\n\nQuestion: What deadline applies to a private-sector organisation responding to a correction request?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TqXNO666KkQwPvFyhj3xq0gZ2R",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"A private-sector organisation must respond to a correction request within a reasonable period after the request is made, and as a general guide, this reasonable period should not exceed 30 calendar days.\",\"citations\":[\"app13-024\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089474,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 55,
+   "prompt_tokens": 1436,
+   "total_tokens": 1491,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 9,
+    "engine_ttft_ms": 41,
+    "engine_ttlt_ms": 548,
+    "pre_inference_ms": 94,
+    "service_tbt_ms": 9,
+    "service_ttft_ms": 518,
+    "service_ttlt_ms": 1020,
+    "user_visible_ttft_ms": 425
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930073022-35fca056-default-r1-dp0-default"
+  }
+ }
+}

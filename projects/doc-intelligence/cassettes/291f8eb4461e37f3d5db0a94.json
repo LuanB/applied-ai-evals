@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\n11/16/95 11:06 3202 637 1505 PHILIP MORRIS CO\nFROM R. T. HINES CONSULTING 202 393 0723\n11-15-1995 6:49PM -\nNOV 15 '95 17:08\nFROM CATO INSTITUTE\nTO 3936723\nPAGE. 002\nCATO INSTITUTE\nAVAILABILITY NOTICE\nNovember 14, 1995\nContact: Jerry Taylor, director of natural resource studies, 202-789-5240 Robin Hulsey, public affairs, 202-789-5293\nCato environmental expert available to comment on secondhand smoke study\nThe Congressional Research Service has released a report, \"Environmental Tobacco Smoke and Lung Cancer Risk,\" which raises serious questions about reports from EPA and OSHA that have purported to find major risks from secondhand smoke.\nThe CRS study notes that the meta-analysis performed by EPA is \"not staristically significant at a conventional 95 percent level\" and that if OSHA bad performed a mem- analysis it would probably have found \"no increased lung cancer risk from occupational [environmental tobacco smoke] exposure.\"\nJerry Taylor, director of natural resource studies at the Cato Institute, has studied the cationmental tobacco smoke issue and is available to discuss the CRS report. His January 1995 Wall Street Journal op-ed on cancer risks accompanies this fax.\n-- 30 --\n2048399881\nCato Institute . 1000 Massachusetts Avenue V. W .. Washington. D.C. 20001 . (202) 842-0200 Fax: (202) 842-3490\n2008/009 P.2\nNEWS RELEASE-"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89F4i3h0WO0Wy9Gy2EtluqPpEQ9",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"news article\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088197,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 551,
+   "total_tokens": 561,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 42,
+    "engine_ttlt_ms": 117,
+    "pre_inference_ms": 99,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 449,
+    "service_ttlt_ms": 590,
+    "user_visible_ttft_ms": 350
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044429-3f7e7dd0-default-r0-dp0-default"
+  }
+ }
+}

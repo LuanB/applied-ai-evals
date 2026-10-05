@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B13-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\nB/L No .:\nONEY24431385\nShipper:\nNordic Pine Sawmills AB\nConsignee:\nRiverina Trading Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCMA CGM TAGE / 315N\nPort of loading:\nGothenburg\nPort of discharge:\nBrisbane\nContainer / Seal:\nTGHU1770200 / SL350106\n1184 PACKAGES SAID TO CONTAIN SAWN TIMBER, PINE, KILN DRIED GROSS WEIGHT 25210.0 KGS INVOICE INV-96972.\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED.",
+  "pages": 1,
+  "fields": {}
+ }
+}

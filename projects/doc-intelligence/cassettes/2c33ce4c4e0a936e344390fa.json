@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nTHE TOBACCO INSTITUTE 18\"5 1 STREIT. NORTHWEST WASHINGTON, DC 20000\nTHE FIGOS NA' INA: 64%8 LINCOLN 841\n15 2\nCHECK NO\nCHEEK DATE\nAMCOAT\n026412\nNov 26, 1985 ****** 200.00\nPAY\nNO THE ORDER OF\n*TWO HUNDRED AND 00/100 DOLLARS*\nJEANETTE WILLIAMS CAMPAIGN COMMITTEE P.O. BOX 2608 SEATTLE, WA 98111\nAm chway\n\u2448026412\u2448 \u2446054000030\u2446 12\u244908219752\u2448\nDETACH BEFORE DEPOSITING NO OTHER RECEIPT REQUIRED\nTHE TOBACCO INSTITUTE :\": ISTRFIT NORTHWEST WASHINGTON, DC 2Ary\n026412\n#203115\n11-26-85\nVENDOR NUMBER\nCHECK DATE\nCHECK. NUMREE\n.VC CE ... M\u1eb8EL\nENTRY NUMBER\n11-18-85 WASHINGTON PC\n200 00\n28033\nCCEN 1401\nACCT 7720\nJCOS\nAmount 200.00\nTNWL 0021205\nTHE TOBACCO INSTITUTE, INC.\n28033\n200 00"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89DylBczZuxuPlA15S4vOX80xfB",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"invoice\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088195,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 480,
+   "total_tokens": 489,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 37,
+    "engine_ttlt_ms": 89,
+    "pre_inference_ms": 82,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 490,
+    "service_ttlt_ms": 629,
+    "user_visible_ttft_ms": 409
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260928231934-e7ea5aa7-default-r0-dp0-default"
+  }
+ }
+}

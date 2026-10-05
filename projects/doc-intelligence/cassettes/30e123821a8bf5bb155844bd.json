@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nBellomy-Carrigg, Inc. 2025 UNIVERSITY PARKWAY WINSTON-SALEM. N.C. 27106.\n1262\nX\nJob #0906 October, 1984\n(1 - 4)\n5-1\nAA EXTENDED USE CONCEPT/PRODUCT TEST\nSCREENER\nRESPONDENT'S NAME :\nKarenLauson\nADDRESS :\n250\nMonTpIce CITY: Kenmir-\nSTATE: 14:43\nAREA CODE: (\n716\n) PHONE :\n837-2670\nDATE: 1/7\nINTERVIEWED BY :\n(INTERVIEW WOMEN ONLY)\nHello, I'm from (YOUR COMPANY) , an independent marketing research company. We're conducting a survey with women about various consumer products. (ASK TO SPEAK TO FEMALE 18+ YEARS OR OLDER. )\n1. Into which of the following age groups does your age belong? Are you. . . . (READ LIST)\nUnder 18.\nTERMINATE, ERASE AND RE-USE\n18-24.\nX\n6-1\n25-34.\n-2\n35-49\n-3\n50+ ..\n-4\nRefused\nTERMINATE,. ERASE AND RE-USE\n2. Which of the following products do you use daily?\nBreathmints.\nMouthwash.\nCigarettes. X Gel toothpaste.\nCream toothpaste.\nCONTINUE ONLY IF CIGARETTES CHECKED ABOVE IN Q.2. OTHERWISE, ASK FOR ANOTHER FEMALE HOUSEHOLD MEMBER 18+ AND GO BACK TO Q.1. IF NONE, TERMINATE, ERASE AND RE-USE.\n3. Which of the following brands have you used in the past week?\nCerts breathmints.\nClorets breathmints.\nTopal toothpaste. Aqua Fresh toothpaste.\nClinomint.\nScope.\nListerine.\n50552 6678\nCHECK QUOTA TO DETERMINE IF NEEDED. IF OVER QUOTA, ASK FOR ANOTHER FEMALE IN AGE GROUP NEEDED."
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89HdY88lxVnm1QQjKKiNt2Wz0KB",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"questionnaire\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088199,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 619,
+   "total_tokens": 629,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 36,
+    "engine_ttlt_ms": 86,
+    "pre_inference_ms": 123,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 534,
+    "service_ttlt_ms": 673,
+    "user_visible_ttft_ms": 411
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260928224152-e96f62d6-default-r2-dp0-default"
+  }
+ }
+}

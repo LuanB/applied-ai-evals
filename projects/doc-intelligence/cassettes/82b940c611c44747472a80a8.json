@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B07-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "OCEANIC CONTAINER LINE\nOCEAN BILL OF LADING\nB/L No .:\nMAEU13721938\nShipper:\nSierra Citrus Cooperativa\nConsignee:\nBluegum Food Distributors Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCMA CGM TAGE / 874W\nPort of loading:\nOakland\nPort of discharge:\nSydney\nContainer / Seal:\nMSKU1073801 / SL553609\n1329 PACKAGES SAID TO CONTAIN WALNUTS, IN SHELL GROSS WEIGHT 28495.2 KGS INVOICE INV-70890",
+  "pages": 1,
+  "fields": {}
+ }
+}

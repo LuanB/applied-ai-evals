@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B02-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\nB/L No .:\nMEDU24776678\nShipper:\nLanka Spice Mills (Pvt) Ltd\nConsignee:\nRiverina Trading Pty. Ltd.\nNotify party:\nSame as consignee\nVessel / Voyage:\nONE HARMONY / 234S\nPort of loading:\nIzmir\nPort of discharge:\nFremantle\nContainer / Seal:\nMSCU4989904 / SL841480\n1181 PACKAGES SAID TO CONTAIN DRIED APRICOTS GROSS WEIGHT 20296.2 KGS INVOICE INV-44231",
+  "pages": 1,
+  "fields": {}
+ }
+}

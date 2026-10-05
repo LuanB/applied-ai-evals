@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B04-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\nB/L No .:\nMAEU58615632\nShipper:\nMekong Agri Trading JSC\nConsignee:\nKookaburra Home Furnishings Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCOSCO LIBRA / 322N\nPort of loading:\nValencia\nPort of discharge:\nSydney\nContainer / Seal:\nCMAU1353139 / SL558942\n998 PACKAGES SAID. TO CONTAIN FRESH ORANGES, NAVEL GROSS WEIGHT 9768.3 KGS INVOICE INV-65704",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app5-001] (APP 5, paras 5.1\u20135.2, What does APP 5 say?)\n5.1 APP 5 requires an APP entity that collects personal information about an individual to take reasonable steps either to notify the individual of certain matters or to ensure the individual is aware of those matters (generally referred to in this chapter as \u2018APP 5 matters\u2019). The term \u2018collects\u2019 is discussed in Chapter B (Key concepts). Reasonable steps must be taken at or before the time of collection, or as soon as practicable afterwards.\n5.2 The requirement to notify or ensure awareness of the APP 5 matters applies to all personal information \u2018collected\u2019 about an individual, either directly from the individual or from a third party. It applies to solicited personal information (APP 3) and also unsolicited personal information that is not destroyed or de-identified by the APP entity (APP 4) (see Chapter 3 (APP 3), Chapter 4 (APP 4) and Chapter B (Key concepts)).\n\n[app3-011] (APP 3, paras 3.30, Collecting for an APP entity\u2019s \u2018functions or activities\u2019 > Collecting personal i)\ncollecting more personal information than is required for a function or activity. For example, collecting all information entered on an individual\u2019s driver licence when the purpose is to establish if the individual is aged 18 years or over\ncollecting personal information that is not required for a function or activity but is being entered in a database in case it might be needed in the future (this is to be distinguished from the situation where personal information is required for a function or activity, but is not being used immediately)\nan organisation collecting personal information for or on behalf of a related body corporate where the collection of that personal information is not reasonably necessary for the organisation\u2019s own functions or activities\ncollecting personal information to train an AI model, when this training could be achieved with de-identified information or with a lesser amount of personal information. [22]\n3.30 Where a collection of personal information is not \u2018reasonably necessary\u2019, it may also be unfair and/or unlawful in breach of APP 3.5. See \u2018Collecting by lawful and fair means\u2019 below.\n\n[app3-001] (APP 3, paras n/a, Key points)\nAPP 3 outlines when an APP entity may collect solicited personal information.\nAn APP entity \u2018 solicits \u2019 personal information if it explicitly requests an individual or another entity to provide personal information, or it takes active steps to collect personal information. See Chapter 4 (APP 4) for where an entity has taken no active steps to collect the information.\nAPP 3 deals with when an APP entity can collect personal information, and how an APP entity must collect personal information.\nFor personal information (other than sensitive information), an APP entity that is: an agency, may only collect this information where it is reasonably necessary for, or directly related to, the agency\u2019s functions or activities an organisation, may only collect this information where it is reasonably necessary for the organisation\u2019s functions or activities .\nan agency, may only collect this information where it is reasonably necessary for, or directly related to, the agency\u2019s functions or activities\nan organisation, may only collect this information where it is reasonably necessary for the organisation\u2019s functions or activities .\nAPP 3 contains different requirements for the collection of sensitive information compared to other types of personal information. An APP entity may only collect sensitive information where the above conditions are met and the individual concerned consents to the collection, unless an exception applies.\nPersonal information must only be collected by lawful and fair means .\nPersonal information must be collected from the individual concerned , unless this is unreasonable or impracticable (additional exceptions apply to agencies).\nWhere personal information is publicly available on the internet, that does not allow it to be collected and used in whatever way the APP entity chooses without regard to the knowledge and reasonable expectations of the person whose information it concerns . [1] Publicly available personal information must still be collected in accordance with APP 3 or APP 4, and once collected is subject to the APPs.\nIt is implicit in the requirement that personal information collection be reasonably necessary for an entity\u2019s functions and activities that entities ensure proportionality in their collection of personal information. [2] Entities should adopt a data minimisation approach and limit collection of personal information to the minimum amount necessary in the circumstances. Over-collection may contravene the requirements of APP 3, as well as increase risks to the security of personal information and lead to greater potential harm in the event of a data breach.\n\n[app5-015] (APP 5, paras 5.34\u20135.38, When notification is to occur)\n5.34 An APP entity must take any reasonable steps to comply with APP 5:\nat or before the time an APP entity collects an individual\u2019s personal information, or\nif that is not practicable, as soon as practicable after the collection occurs.\n5.35 This requirement recognises that it is preferable that an individual can make an informed choice about whether to provide personal information to an APP entity.\n5.36 Examples of when it may not be practicable to take reasonable steps at or before the time of collection include where:\nurgent collection of the personal information is required and giving a notice or ensuring awareness would unreasonably delay the collection, for example, where there is a serious threat to an individual\u2019s life or health or to public safety\nthe medium through which personal information is collected makes it impracticable to provide a detailed APP 5 notice or ensure awareness at or before the time of collection. For example, where personal information is collected by telephone, it may be impracticable to notify or ensure the individual is aware of all of the APP 5 matters at the time of collection (see paragraph 5.5). [4]\n5.37 The test of practicability is an objective test. It is the responsibility of the APP entity to be able to justify that it is not practicable to give notification or ensure awareness before or at the time of collection. Options for providing early notification or ensuring awareness should, so far as practicable, be built into information collection processes and systems \u2013 for example, by including relevant information in standard forms and online collection mechanisms (see APP 1.2, Chapter 1).\n5.38 If notification does not occur before or at the time of collection, the APP entity must take reasonable steps to provide notification, or ensure the individual is aware, as soon as practicable after the collection. In adopting a timetable that is \u2018practicable\u2019, an entity can take technical and resource considerations into account. However, it is the responsibility of the entity to be able to justify any delay in notification.\n\n[app5-004] (APP 5, paras 5.7, Taking reasonable steps to notify or ensure awareness > When not taking any step)\n5.7 APP 5.1 acknowledges that it may be reasonable for an APP entity to not take any steps to provide a notice or ensure awareness of all or some of the APP 5 matters. It is the responsibility of the entity to be able to justify not taking any steps. The following are given as examples of when this may be reasonable:\nThe individual is aware that personal information is being collected, the purpose of collection and other APP 5 matters relating to the collection, for example, a doctor has informed a patient that a specialist to whom the patient is referred for treatment will obtain the patient\u2019s health information from the doctor.\nAn entity collects personal information from an individual on a recurring basis in relation to the same matter. However, if a long period of time has elapsed since the notice was provided and the individual may no longer be aware of the APP 5 matters, the entity may need to take steps to notify or ensure awareness. Similarly, if a change in circumstances as to how personal information is collected affects any of the APP 5 matters, the entity should take reasonable steps to ensure an individual is aware of those matters.\nNotification may pose a serious threat to the life, health or safety of an individual or pose a threat to public health or safety, for example, a law enforcement agency obtaining personal information from a confidential source for the purpose of an investigation.\nNotification may jeopardise the purpose of collection or the integrity of the personal information collected and there is a clear public interest in the purpose of collection, for example, a law enforcement agency undertaking lawful covert surveillance of an individual in connection with a criminal investigation.\nNotification would be inconsistent with another legal obligation, for example, by breaching a statutory secrecy provision, a client\u2019s legal professional privilege, or a legal obligation of confidence.\nAn entity collects personal information about a person who poses (or is alleged to pose) a risk of committing family violence and this collection is permitted by a legislated family violence information sharing scheme, such as that established by the Family Violence Protection Act 2008 (Vic).\n\nQuestion: When does an entity have to notify someone about the collection of their personal information?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8TrsMWf8MYiVM3vITPVL2LO3Djn",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"An entity must take reasonable steps to notify an individual about the collection of their personal information at or before the time of collection, or if that is not practicable, as soon as practicable after the collection occurs. This is to allow the individual to make an informed choice about providing their information. There are exceptions where notification may not be required, such as when the individual is already aware or notification would pose a serious threat or be inconsistent with legal obligations.\",\"citations\":[\"app5-001\",\"app5-015\",\"app5-004\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089475,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 119,
+   "prompt_tokens": 2016,
+   "total_tokens": 2135,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 58,
+    "engine_ttlt_ms": 810,
+    "pre_inference_ms": 106,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 611,
+    "service_ttlt_ms": 1357,
+    "user_visible_ttft_ms": 506
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044527-0b2d4cf6-default-r1-dp0-default"
+  }
+ }
+}

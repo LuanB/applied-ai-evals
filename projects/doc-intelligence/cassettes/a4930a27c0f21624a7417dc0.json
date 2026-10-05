@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nArticle # 10\nCopyright 1996 Gannett Company, Inc. USA TODAY August 30, 1996, Friday, FIRST EDITION\nSECTION: NEWS; Pg. 3A\nLENGTH: 885 words\nHEADLINE: Gore acknowledges his past profits from tobacco\nBYLINE: Richard Wolf; Peter Johnson; Martha T. Moore\nBODY:\nVice President Gore acknowledged Thursday that he continued to receive annual checks from his family's tobacco farm for several years after his sister's painful smoking-related death from cancer.\n\"Sometimes, you never fully face up to things that you ought to face up to,\" Gore told reporters Thursday.\nA day earlier Gore addressed the Democratic convention on how the death of his only sibling, Nancy Gore Hunger, in 1984 changed his views about tobacco. But he didn't tell delegates -- and a nationwide TV audience -- about his tobacco income.\nGore said Thursday that his father and mother also continued to grow tobacco on their farm in Carthage, Tenn., for several years after the death of his sister. who had started smoking when she was 13 and died at the age of 45.\n\"I did raise it all my life.\" Gore said. \"I did plant it, spray it, cut it, spike it, strip it. sell it. etc.\"\nEventually, he said, his parents quit growing the crop and he started surrendering the annual tobacco allocation lease check he had \"continued to receive . .. for several years, even after her death.\"\nGore brought the Democratic convention to stunned silence Wednesday night when he interrupted a political attack on Republican rivals to speak about his sister's death and her intimate \"final hours\" conversations with him.\nAs he recounted the story, Gore's mother, Pauline. watching in a skybox. took off her glasses and wiped tears from her eyes. Gore said Thursday he had \"considered\" but rejected telling the convention about his family's involvement in raising tobacco.\n\"I don't know; it just seemed like it might be better to focus on what was most important about this story,\" he said. \"Up until soon before the speech. I was unclear as to whether I could do it.\"\nTI3081-9620"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89CyDmXbiniuCioh4GoxGRUuPqO",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"news article\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088194,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 644,
+   "total_tokens": 654,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 30,
+    "engine_ttlt_ms": 111,
+    "pre_inference_ms": 87,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 501,
+    "service_ttlt_ms": 644,
+    "user_visible_ttft_ms": 414
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930073022-50351f8a-default-r2-dp0-default"
+  }
+ }
+}

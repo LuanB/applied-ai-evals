@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-103",
+  "markdown": false
+ },
+ "response": {
+  "content": "STAMP\nAnport Contract Administrator Washington Dulles International Airport\nRECEIPT Washington Dulles International Airport Washington Flyer Taxi Service (703) 661-8230 (703) 528-4440\nNAME\nS\n42\nFROM A/ A\nTO\nDATE\n11/1/74\nDRIVER\nCAB NO.\nTNWL 0009762",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B17-06",
+  "markdown": true
+ },
+ "response": {
+  "content": "# PESTGUARD FUMIGATION SERVICES\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>AU150253</td>\n</tr>\n<tr>\n<td>Fumigant:</td>\n<td>Sulfuryl fluoride</td>\n</tr>\n<tr>\n<td>Dosage rate:</td>\n<td>1500 g-h/m3</td>\n</tr>\n<tr>\n<td>Exposure period (hrs):</td>\n<td>24</td>\n</tr>\n<tr>\n<td>Date of fumigation:</td>\n<td>24/08/2026</td>\n</tr>\n<tr>\n<td>Container No .:</td>\n<td>MSKU7382045</td>\n</tr>\n<tr>\n<td>Commodity:</td>\n<td>Cashew kernels</td>\n</tr>\n<tr>\n<td>Consignment link:</td>\n<td>B/L MAEU92571902</td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

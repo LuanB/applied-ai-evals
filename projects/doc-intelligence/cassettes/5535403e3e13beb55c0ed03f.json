@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B05-06",
+  "markdown": true
+ },
+ "response": {
+  "content": "# NATIONAL PLANT PROTECTION ORGANIZATION OF TURKEY\n\n\n## PHYTOSANITARY CERTIFICATE\n\n\n<table>\n<tr>\n<td>No .:</td>\n<td>CO91-5766</td>\n</tr>\n<tr>\n<td>Name of exporter:</td>\n<td>Nordic Pine Sawmills AB</td>\n</tr>\n<tr>\n<td>Declared consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Botanical name of plants:</td>\n<td>Prunus armeniaca</td>\n</tr>\n<tr>\n<td>Place of origin:</td>\n<td>Turkey</td>\n</tr>\n<tr>\n<td>Declared means of conveyanceCMA</td>\n<td>CGM TAGE</td>\n</tr>\n<tr>\n<td>Point of entry:</td>\n<td>Brisbane</td>\n</tr>\n</table>\n\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

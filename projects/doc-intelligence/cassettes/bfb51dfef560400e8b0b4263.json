@@ -1,0 +1,172 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: phytosanitary_certificate\n\nPage (markdown from layout analysis):\n# NATIONAL PLANT PROTECTION ORGANIZATION OF SRI LANKA\n\n\n## PHYTOSANITARY CERTIFICATE\n\nNo .:\n\nPC297333\n\nName of exporter:\n\nAnatolia Dried Fruits A.S ..\n\nDeclared consignee:\n\nKookaburra Home Furnishings Pty Ltd\n\nBotanical name of plants:\n\nPiper nigrum\n\nPlace of origin:\n\nSri Lanka\n\nDeclared means of conveyanceMAERSK KOWLOON\n\nPoint of entry:\n\nSydney\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "certificate_number",
+      "exporter",
+      "consignee",
+      "botanical_name",
+      "place_of_origin"
+     ],
+     "properties": {
+      "certificate_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "certificate number"
+      },
+      "exporter": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "exporter"
+      },
+      "consignee": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "consignee"
+      },
+      "botanical_name": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "botanical name"
+      },
+      "place_of_origin": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "place of origin"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8ChyHDI0gxUhmL0ChWfu6PZxopD",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"certificate_number\":\"PC297333\",\"exporter\":\"Anatolia Dried Fruits A.S ..\",\"consignee\":\"Kookaburra Home Furnishings Pty Ltd\",\"botanical_name\":\"Piper nigrum\",\"place_of_origin\":\"Sri Lanka\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088411,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 52,
+   "prompt_tokens": 300,
+   "total_tokens": 352,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 25,
+    "engine_ttlt_ms": 345,
+    "pre_inference_ms": 80,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 727,
+    "service_ttlt_ms": 1065,
+    "user_visible_ttft_ms": 647
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822214107-b2039c55-default-r1-dp0-default"
+  }
+ }
+}

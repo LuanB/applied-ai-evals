@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[b-012] (B, paras B.62\u2013B.65, Key concepts A to D > De-identification)\nB.62 Personal information is de-identified \u2018if the information is no longer about an identifiable individual or an individual who is reasonably identifiable\u2019 (s 6(1)). De-identified information is not \u2018personal information\u2019 (see paragraphs B.85\u2013B.96).\nB.63 De-identification involves removing or altering information that identifies an individual or is reasonably likely to do so. Generally, de-identification includes two steps:\nremoving personal identifiers, such as an individual\u2019s name, address, date of birth or other identifying information, and\nremoving or altering other information that may allow an individual to be identified, for example, because of a rare characteristic of the individual, or a combination of unique or remarkable characteristics that enable identification.\nB.64 De-identification may not altogether remove the risk that an individual can be re-identified. There may, for example, be a possibility that another dataset or other information could be matched with the de-identified information. The risk of re-identification must be actively assessed and managed to mitigate this risk. Relevant factors to consider when determining whether information has been effectively de-identified could include the cost, difficulty, practicality and likelihood of re-identification. [16]\nB.65 For more information on when and how to de-identify information, and how to manage and mitigate the risk of re-identification, see De-identification and the Privacy Act. [17]\n\n[app11-021] (APP 11, paras 11.54\u201311.58, Taking reasonable steps to destroy or deidentify personal information > De-ident)\n11.54 Personal information is de-identified \u2018if the information is no longer about an identifiable individual or an individual who is reasonably identifiable\u2019 (s 6(1)). De-identification is discussed in more detail in Chapter B (Key concepts).\n11.55 An organisation that intends to comply with APP 11.2 by taking reasonable steps to ensure that personal information is de-identified should consider whether de-identification is appropriate in the circumstances. For more information on when and how to de-identify information, and how to manage and mitigate the risk of re-identification, see De-identification and the Privacy Act. [13]\n11.56 De-identification of personal information may be more appropriate than destruction where the de-identified information could provide further value or utility to the organisation or a third party. For example, where:\nan organisation shares de-identified information with researchers, or\nan organisation uses de-identified information to develop new products.\n11.57 Regardless of the de-identification technique chosen, the risk of re-identification must be actively assessed and managed to mitigate this risk. Where it is not possible for the risk of re-identification to be appropriately minimised, the organisation could instead consider taking reasonable steps to destroy the personal information (see paragraphs 11.49 \u2013 11.55 above).\n11.58 Where the personal information is held on a third party\u2019s hardware, such as cloud storage, and the organisation has instructed the third party to de-identify the personal information, reasonable steps to de-identify the personal information would include taking steps to verify that this has occurred.\n[1] See OAIC website <https://www.oaic.gov.au>.\n[2] Explanatory Memorandum, Privacy Amendment (Enhancing Privacy Protection) Bill 2012 (Cth), p 86.\n[3] APP 11.3 was introduced by the Privacy and Other Legislation Amendment Act 2024 . APP 11.3 applies to personal information held from 11 December 2024, regardless of whether the information was acquired or created before or after this date. APP 11.3 does not limit APP 11.1, APP 11.2 or any other provision in the Privacy Act.\n[4] Explanatory Memorandum, Privacy and Other Legislation Amendment Bill 2024 (Cth), paragraph 101.\n[5] Explanatory Memorandum, Privacy and Other Legislation Amendment Bill 2024 (Cth), paragraph 102.\n[6] See OAIC website <https://www.oaic.gov.au>. Agencies should also see the Attorney-General\u2019s Department\u2019s Protective Security Policy Framework and the Australian Signals Directorate\u2019s Australian Government Information Security Manual , which set out the Australian Government\u2019s requirements for protective security and standardise information security practices across government.\n\n[app4-007] (APP 4, paras 4.26\u20134.27, Dealing with unsolicited personal information that could not have been collected)\nwhether a law enforcement authority has requested that the personal information be retained pending the completion of an investigation\nwhether the organisation has considered a range of options for destroying or de-identifying the personal information\nwhether the individual that the personal information is about has expressly requested the organisation to return the information to the individual, rather than destroying or de-identifying the information, and the organisation does not retain another copy of the personal information\nwhere destruction or de-identification is unreasonable within a short timeframe, whether the destruction or de-identification task could be undertaken using a staged approach\nthe practicability, including time and cost involved. However, an organisation is not excused from destroying or de-identifying the personal information by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to destroy or de-identify the personal information will depend on whether the burden is excessive in all the circumstances.\n4.26 Those and other relevant considerations should be applied cautiously. Before deciding that it is reasonable to retain unsolicited personal information, an organisation should examine viable options for destroying or de-identifying it. For example, it may be practicable to transcribe or convert, and produce a new record of, solicited personal information that is commingled with unsolicited personal information. The original record containing the unsolicited personal information could then be destroyed or de-identified.\n4.27 For further discussion of destroying and de-identifying personal information, see Chapter B (Key concepts) and Chapter 11 (APP 11).\n\n[app6-023] (APP 6, paras 6.71\u20136.74, De-identifying certain health information before disclosure)\n6.71 APP 6.4 applies where an organisation collects health information under an exception to APP 3 in s 16B(2). Section 16B(2) outlines the permitted health situation that allows an organisation to collect health information about an individual if the collection is necessary for research relevant to public health or safety, the compilation or analysis of statistics relevant to public health or public safety, or the management, funding or monitoring of a health service and certain other criteria are satisfied (see Chapter D (Permitted health situations)).\n6.72 In these circumstances, APP 6.4 requires the organisation to take reasonable steps to ensure that the information is de-identified, before it discloses the information in accordance with APPs 6.1 or 6.2.\n6.73 Personal information is de\u2011identified \u2018if the information is no longer about an identifiable individual or an individual who is reasonably identifiable\u2019 (s 6(1)). De\u2011identification is discussed in more detail in Chapter B (Key concepts). [22]\n6.74 The reasonable steps that an organisation should take will depend upon circumstances that include:\nthe possible adverse consequences for an individual if their health information is not de-identified before it is disclosed. More rigorous steps may be required as the risk of adversity increases\nthe practicability, including time and cost involved. However, an organisation is not excused from taking particular steps to de-identify health information by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take a particular step will depend on whether the burden is excessive in all the circumstances.\n\n[b-021] (B, paras B.88\u2013B.94, Health information > Personal information)\nB.88 \u2018Personal information\u2019 is defined as any \u2018information or an opinion about an identified individual, or an individual who is reasonably identifiable:\nwhether the information or opinion is true or not; and\nwhether the information or opinion is recorded in a material form or not\u2019 (s 6(1)).\nB.89 Common examples are an individual\u2019s name, signature, address, telephone number, date of birth, medical records, bank account details, employment details and commentary or opinion about a person.\nB.90 Personal information of one individual may also be personal information of another individual. Examples include a marriage certificate that contains personal information of both parties to a marriage, and a vocational reference that includes personal information about both the author and the subject of the reference.\nB.91 The personal information \u2018about\u2019 an individual may be broader than the item of information that identifies them. For example, a vocational reference or assessment may comment on a person\u2019s career, performance, attitudes and aptitude. Similarly, the views expressed by the author of the reference may also be personal information about the author.\nB.92 Personal information that has been de-identified will no longer be personal information. Personal information is de-identified if the information is no longer about an identifiable individual or an individual who is reasonably identifiable (see paragraph B.59).\nB.93 What constitutes personal information will vary, depending on whether an individual can be identified or is reasonably identifiable in the particular circumstances.\nB.94 Whether an individual is \u2018reasonably identifiable\u2019 from particular information will depend on considerations that include: [28]\nthe nature and amount of information\nthe circumstances of its receipt\nwho will have access to the information\nother information either held by or available to the APP entity that holds the information\nwhether it is possible for the individual or entity that holds the information to identify the individual, using available resources (including other information available to that individual or entity). Where it may be possible to identify an individual using available resources, the practicability, including the time and cost involved, will be relevant to deciding whether an individual is \u2018reasonably identifiable\u2019 [29]\nif the information is publicly released, whether a reasonable member of the public who accesses that information would be able to identify the individual.\n\nQuestion: When is personal information considered de-identified?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U6jfthlHFNWUkzL7YPvAzYjAe0",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Personal information is considered de-identified if the information is no longer about an identifiable individual or an individual who is reasonably identifiable. This involves removing or altering information that identifies an individual or is reasonably likely to do so, including personal identifiers and other unique characteristics that enable identification. The risk of re-identification must be actively assessed and managed to mitigate this risk.\",\"citations\":[\"b-012\",\"app11-021\",\"b-021\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089490,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 97,
+   "prompt_tokens": 2276,
+   "total_tokens": 2373,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 1024
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 47,
+    "engine_ttlt_ms": 713,
+    "pre_inference_ms": 84,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 440,
+    "service_ttlt_ms": 1100,
+    "user_visible_ttft_ms": 356
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003051432-06c8fb07-default-r2-dp0-default"
+  }
+ }
+}

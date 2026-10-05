@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-108",
+  "markdown": false
+ },
+ "response": {
+  "content": "9/12/80\n1980 NEW YORK ADVERTISING & PROMOTION SPECIFICS\nTELEVISION\nCASH\nTRADE\n#TIX\n#SPOTS\nTOTAL VALUE\nCASH/TRADE/PROMO\nWNEW\n$12,000 $10,500\n1,000\n56 /\n/336\n$150,000 **\nRADIO\nWELS\n$10,140\n$2,700\n-200\n26 / 26\n/125\n$ 43,715\nWKTU\n9,720\n3,248\n224\n54 / 18\n1-\n12,968\nWABC\n3,675\n3,668\n253\n20 / 20\n/125\n14,606\nWNJR\n2,880\n2,075\n150\n36 / 36\n/100\n11,026\nWUSS\n574\n493\n34\n55 / 55\n/ 55\n1,722\nWWRL\n3,065\n$2,464\n120\n36 / 36\n/ -\n4,080\n$30,065 $14,648\n981\n227 /191 /405\n$ 87,657 **\nNEWSPAPER\nNew York Times\n7/27 & 3/17\n1,500 lines\n$12,135\nAmsterdam Recorder 7/26 & 8/9\n1,500\n435\nVillage Voice\n7/30 & 8/13\n1,500\n3,945\nNewark Star Ledger 7/27,8/17,8/23\n8/3,8/10,8/22\n2,300\n7,669\nBlack American\n7/27,8/3,8/10 8/17\n800\n960\nNY Daily News\n7/10,7/17,8/22\n800\n10,080\nPROMOTIONS\nFrasier's Clothing Store DOOPS Disco\n3,200\n$ 7,700\n$ 7,700 **\nTOTAL ADVERTISING & PROMOTION\n$280,581 ****\n660037245\n- 8/23\n$35,224\n$ 35,224 **\n$ 4,500",
+  "pages": 1,
+  "fields": {}
+ }
+}

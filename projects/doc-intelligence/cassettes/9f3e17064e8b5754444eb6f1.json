@@ -1,0 +1,50 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-invoice",
+  "doc": "test-B11-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "SIERRA CITRUS COOPERATIVA\n16 Industrial Rd, United States\nInvoice No .:\nINV-13579\nDate:\n19/09/2026\nSold to:\nHarbourside Fresh Pty Ltd\nPacking List No .:\nPL-39126\nTerms of delivery:\nCFR\nCurrency:\nUSD\nDescription\nHS. Code\nQty\nUnit price\nAmount\nWalnuts, in shell\n0802.31\n1015\n29.84\n30,287.60\nTOTAL USD:\n30,287.60\nCountry of origin: United States",
+  "pages": 1,
+  "fields": {
+   "CustomerName": {
+    "value": "Harbourside Fresh Pty Ltd",
+    "confidence": 0.915
+   },
+   "InvoiceDate": {
+    "value": "2026-09-19",
+    "confidence": 0.978
+   },
+   "InvoiceId": {
+    "value": "INV-13579",
+    "confidence": 0.978
+   },
+   "InvoiceTotal": {
+    "value": 30287.6,
+    "confidence": 0.976
+   },
+   "Items": {
+    "value": null,
+    "confidence": null
+   },
+   "PaymentTerm": {
+    "value": "CFR",
+    "confidence": 0.795
+   },
+   "VendorAddress": {
+    "value": "16 Industrial Rd, United States",
+    "confidence": 0.888
+   },
+   "VendorAddressRecipient": {
+    "value": "SIERRA CITRUS COOPERATIVA",
+    "confidence": 0.91
+   },
+   "VendorName": {
+    "value": "SIERRA CITRUS COOPERATIVA",
+    "confidence": 0.91
+   }
+  }
+ }
+}

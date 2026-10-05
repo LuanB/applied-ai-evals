@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app13-022] (APP 13, paras 13.54\u201313.58, APP 13 minimum procedural requirements > Giving written notice where correction )\n13.54 APP 13.3 provides that if an APP entity refuses to correct personal information as requested by an individual, the entity must give the individual a written notice setting out:\nthe reasons for the refusal, except to the extent that it would be unreasonable to do so\nthe complaint mechanisms available to the individual, and\nany other matters prescribed by regulations made under the Privacy Act.\n13.55 The reasons for refusal should explain, where applicable:\nthat the APP entity does not hold the personal information that the individual wishes to correct\nthat the entity is satisfied that the personal information it holds is accurate, up-to-date, complete, relevant and not misleading having regard to the purposes for which it is held, or\nthat the steps necessary to correct the personal information as requested are not reasonable in the circumstances.\n13.56 An APP entity is not required to provide its reasons for refusing to correct personal information to the extent that it would be unreasonable to do so. This course should be adopted only in justifiable circumstances. An example would be where providing reasons would prejudice an investigation of unlawful activity, or prejudice enforcement action by an enforcement body.\n13.57 The description of the complaint mechanisms available to an individual should explain the internal and external complaint options, and the steps that should be followed. In particular, the individual should be advised that:\na complaint should first be made in writing to the APP entity (s 40(1A))\nthe entity should be given a reasonable time (usually 30 days) to respond\na complaint may then be taken to a recognised external dispute resolution scheme of which the entity is a member (if any), and\nlastly, that a complaint may be made to the Information Commissioner (s 36).\n13.58 Other information can also be included in the notice advising an individual that a request to correct personal information has been refused. The individual should be advised of the right under APP 13.4 to request the APP entity to associate a statement with the personal information (see paragraphs 13.59\u201313.62). An agency could also advise an individual of the parallel right under the FOI Act to apply for a record to be amended or annotated, and of the right to Information Commissioner review of an adverse decision under that Act (see paragraphs 13.25\u201313.29).\n\n[app12-009] (APP 12, paras 12.27\u201312.30, Refusing to give access under APP 12 \u2014 agencies > Authority to refuse access und)\n12.27 The FOI Act lists several grounds on which an agency can refuse a request under the Act for access to documents. An agency may rely on any of those grounds to refuse access under APP 12. It is nevertheless open to an agency not to rely on any such ground and to provide access upon request, unless disclosure is prohibited, for example, by a secrecy provision. [7]\n12.28 The grounds on which an access request can be declined under the FOI Act include: [8]\na document is an exempt document under Part IV, Division 2 of the FOI Act, for example, the document is a Cabinet document, is subject to legal professional privilege, contains material obtained in confidence, or a secrecy provision applies\na document is a conditionally exempt document under Part IV, Division 3 of the FOI Act, for example, the document contains deliberative matter, or disclosure of the document would involve the unreasonable disclosure of personal information about another person and it would be contrary to the public interest to release the document at that time\nthe individual is not entitled to obtain access to a document of the kind requested, for example, the document is available for purchase from an agency (FOI Act, ss 12, 13)\nproviding access in the terms requested by a person would substantially and unreasonably divert an agency\u2019s resources from its other operations (s 24AA)\nprocessing a person\u2019s request would require an agency to disclose the existence or non\u2011existence of a document, where that would otherwise be exempt information (s 25).\n12.29 The FOI Act specifies consultation processes that may apply to requests made under that Act, for example, where a \u2018practical refusal reason\u2019 may apply (FOI Act, s 24) to the request, or where a requested document contains a third party\u2019s personal or business information (FOI Act, ss 27, 27A). An agency is not required to undertake any of those consultation processes before refusing access on any of those grounds under APP 12. This is required only if the person decides to make a request under the FOI Act.\n12.30 A decision to refuse access under APP 12.2(b)(i) (on one of the FOI grounds listed above) is a decision made under the Privacy Act, not the FOI Act. As required by APP 12.9, the agency must provide the individual with a written notice that sets out the reasons for the refusal and the complaint mechanisms available to the individual (see paragraph 12.87 below). The individual may have a right to complain to the Information Commissioner under the Privacy Act. After investigation, the Commissioner may make a determination that the agency has failed to comply with APP 12 and require, for example, that the agency give access (Privacy Act, s 52). However, the individual will not have a right to seek internal review or Information Commissioner review under the FOI Act.\n\n[app12-021] (APP 12, paras 12.61\u201312.62, Refusing to give access under APP 12 \u2014 organisations > Giving access would revea)\n12.61 This ground applies if giving access would reveal \u2018evaluative information\u2019 generated within an organisation in connection with a commercially sensitive decision-making process. An example of evaluative information is a score card weighting system and score card result. The ground applies only to the evaluative information, and not to personal information on which a decision was based. [13]\n12.62 APP 12.10 provides that if an organisation refuses to give access to personal information under this ground, its written notice explaining the reasons for refusal may include an explanation for the commercially sensitive decision. This may include explaining the reasons for the decision and giving a copy of the personal information that informed the decision. For discussion of the requirement to give a written notice refusing access, see paragraphs 12.82\u201312.87 below.\n\n[app12-031] (APP 12, paras 12.82\u201312.87, APP 12 minimum access requirements > Giving written notice where access is refus)\n12.82 APP 12.9 provides that if an APP entity refuses to give access, or to give access in the manner requested by the individual, the entity must give the individual a written notice setting out:\nthe reasons for the refusal, except to the extent that it would be unreasonable to do so, having regard to the grounds for refusal\nthe complaint mechanisms available to the individual, and\nany other matters prescribed by regulations made under the Privacy Act.\n12.83 The reasons for refusal should explain, where applicable:\nthat the entity does not hold the requested personal information\nthe ground of refusal. For example, if the entity is required or authorised by an Australian law to refuse access, notice should include the name of that law and, if practicable, could include the provision relied upon.\nthat access cannot be given in the manner requested by the individual, and the reason why\nthat the steps necessary to give access in a way that meets the needs of the entity and the individual under APP 12.5 are not reasonable in the circumstances.\n12.84 The notice could, in addition, set out any steps that may be taken by the individual that would mean that access would not be refused, for example, by re-framing or narrowing the scope of the individual\u2019s request.\n12.85 APP 12.10 additionally provides that, where an organisation relies on the commercially sensitive decision ground in APP 12.3(j), the written notice may provide an explanation for the commercially sensitive decision (see paragraphs 12.61\u201312.62 above).\n12.86 An APP entity is not required to explain the ground of refusal to the extent that it would be unreasonable to do so. This course should be adopted only in justifiable circumstances. Examples for organisations include that an explanation may prejudice action by an organisation to respond to unlawful activity (APP 12.3(h)); may prejudice enforcement action by an enforcement body (APP 12.3(i)). An example for agencies is that this would reveal the existence of a document whose existence an agency would be entitled to neither confirm nor deny under s 25 of the FOI Act.\n12.87 The description of the complaint mechanisms available to an individual should explain the internal and external complaint options, and the steps that should be followed. In particular, the individual should be advised that:\n\n[app12-027] (APP 12, paras 12.70\u201312.71, APP 12 minimum access requirements > Giving access by other means)\n12.70 APP 12.5 applies where an APP entity refuses to give access to personal information under APP 12 on a permitted ground, or refuses to give access in the manner requested by the individual. The entity must take reasonable steps to give access in a way that meets the needs of the entity and the individual. This should be done within 30 calendar days where practicable.\n12.71 The APP entity is expected to consult the individual to try to satisfy their request. [16] The following are given as examples of alternative manners of access that may meet the needs of the entity and the individual, and in particular result in more rather than less personal information being provided to an individual:\ndeleting any personal information for which there is a ground for refusing access and giving the redacted version to the individual\ngiving a summary of the requested personal information to the individual\ngiving access to the requested personal information in an alternative format\nfacilitating the inspection of a hard copy of the requested personal information and permitting the individual to take notes\nfacilitating access to the requested personal information through a mutually agreed intermediary (see paragraphs 12.72\u201312.75 below).\n\nQuestion: What must a written notice refusing someone access to their personal information include?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U1c0QYGNRJY80yfV6UbKqjmtQp",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"A written notice refusing access to personal information must include the reasons for the refusal (except where it would be unreasonable to do so), the complaint mechanisms available to the individual, and any other matters prescribed by regulations under the Privacy Act. The reasons should explain, where applicable, that the entity does not hold the requested information, the ground of refusal, or why access cannot be given in the manner requested. The notice may also include steps the individual can take to avoid refusal and, for organisations, an explanation of commercially sensitive decisions if relevant.\",\"citations\":[\"app12-031\"] ,\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089485,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 125,
+   "prompt_tokens": 2300,
+   "total_tokens": 2425,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 90,
+    "engine_ttlt_ms": 852,
+    "pre_inference_ms": 94,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 696,
+    "service_ttlt_ms": 1454,
+    "user_visible_ttft_ms": 603
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102744-d420b45c-default-r2-dp0-default"
+  }
+ }
+}

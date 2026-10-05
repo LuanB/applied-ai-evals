@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B18-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\nBILL OF LADING\nB/L No .:\nCMDU50265103\nShipper:\nNordic Pine Sawmills AB\nConsignee:\nBluegum Food Distributors Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCOSCO LIBRA / 222N\nPort of loading:\nHo Chi Minh City\nPort of discharge:\nSydney\nContainer / Seal:\nMSKU7072385 / SL489428\n781 PACKAGES SAID TO. CONTAIN CASHEW KERNELS GROSS WEIGHT 9843.0 KGS INVOICE INV-91474 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

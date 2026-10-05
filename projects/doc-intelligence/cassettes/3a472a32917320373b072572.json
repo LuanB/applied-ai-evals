@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B07-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH 251 Industrial Rd, Sri Lanka\nInvoice No .:\nINV-38675\nDate:\n14/08/2026.\nSold to:\nKookaburra Home Furnishings Pty Ltd\nPacking List No .:\nPL-77110\nTerms of delivery:\nDAP\nCurrency:\nAUD\nDescription\nHS Code\nQty\nUnit price\nAmount\nBlack pepper, whole\n0904.11\n561\n17.34\n9,727.74\nTOTAL AUD:\n9,727.74\nCountry of origin: Sri Lanka",
+  "pages": 1,
+  "fields": {}
+ }
+}

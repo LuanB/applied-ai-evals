@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app12-030] (APP 12, paras 12.77\u201312.81, APP 12 minimum access requirements > Access charges under APP 12 \u2014 organisations)\n12.77 An organisation cannot impose upon an individual a charge for the making of the request to access personal information.\n12.78 An organisation may, however, impose a charge for giving access to requested personal information, provided the charge is not excessive (APP 12.8). Items that may be charged for include:\nstaff costs in searching for, locating and retrieving the requested personal information, and deciding which personal information to provide to the individual\nstaff costs in reproducing and sending the personal information\ncosts of postage or materials involved in giving access\ncosts associated with using an intermediary (see paragraphs 12.72\u201312.75 above).\n12.79 Whether a charge is excessive will depend on the nature of the organisation, including the organisation\u2019s size, resources and functions, and the nature of the personal information held. The following charges may be considered excessive:\na charge that exceeds the actual cost incurred by the organisation in giving access\na charge associated with obtaining legal or other advice in deciding how to respond to an individual\u2019s request\na charge for consulting with the individual about how access is to be given\na charge that reflects shortcomings in the organisation\u2019s information management systems. An individual should not be disadvantaged because of the deficient record management practices of an organisation.\n12.80 An organisation should also consider waiving, reducing or sharing any charge that may be imposed, so that the charge is not excessive. In determining the amount to charge, an organisation should consider:\nthe organisation\u2019s relationship with the individual\nany known financial hardship factors claimed by the individual\nany known adverse consequences on the individual if they do not get access to the personal information.\n12.81 A charge by an organisation for giving access must not be used to discourage an individual from requesting access to personal information. To the extent practicable, an organisation should advise an individual in advance if a charge may be imposed, and the likely amount of the charge. The individual should be invited to discuss options for altering the request to minimise any charge. This may include options for giving access in another manner that meets the needs of the entity and the individual (see APP 12.5 and paragraphs 12.70\u201312.71 above). Any charge that is imposed should be clearly communicated and explained before access is given.\n\n[app12-029] (APP 12, paras 12.76, APP 12 minimum access requirements > Access charges under APP 12 \u2014 agencies)\n12.76 An agency cannot impose upon an individual any charge for providing access to personal information under APP 12 (APP 12.7). This includes:\na charge for the making of the request to access personal information\na charge for giving access to requested personal information, such as charges for copying costs, postage costs and costs associated with using an intermediary.\n\n[app12-013] (APP 12, paras 12.37\u201312.39, Refusing to give access under APP 12 \u2014 organisations > Giving access would have )\n12.37 This ground may apply where the record of personal information that an individual has requested contains personal information of another individual. As noted above (paragraph 12.12), a record of an individual\u2019s opinions or views (for example, a referee comment) may be personal information of that individual. [10]\n12.38 Before relying on this ground an organisation must be satisfied that giving access would have \u2018an unreasonable impact\u2019 on the privacy of another. Factors that may be relevant in deciding that issue include:\nthe nature of the personal information about the other individual. For example, if the personal information is of a sensitive or confidential nature it may be unreasonable to provide it to others\nthe reasonable expectation of the other individual about how that personal information will be handled (this should be assessed objectively and on the basis that the other individual may not have special knowledge of the industry or activity involved). For example, if both individuals were present when the personal information was collected, there may be a reasonable expectation that each individual could later access the personal information\nthe source of the personal information. For example, if the individual requesting access provided the personal information about the other individual, access may not have an unreasonable impact on that person\nwhether the personal information of another individual could be redacted from the record provided to the individual requesting access\nwhether access could be provided through an intermediary (see paragraphs 12.72\u201312.75 below)\nwhether the other individual consents to access being given to the individual requesting access.\n12.39 In applying this ground, an organisation may consult the other individual about whether giving access would have an unreasonable impact on their privacy. The view expressed by that individual may be relevant but not determinative. However, before consulting another individual, an organisation should consider whether doing so poses a privacy risk for the individual seeking access.\n\n[app12-011] (APP 12, paras 12.33\u201312.34, Refusing to give access under APP 12 \u2014 organisations)\n12.33 APP 12.3 lists ten grounds on which an organisation can refuse to give access to personal information. It is nevertheless open to an organisation not to rely on any such ground and to provide access upon request, unless disclosure is prohibited. Before relying on any of these grounds an organisation should consider whether redacting some information would enable access to be provided (for example, redacting personal information about another person).\n12.34 The grounds, which are considered separately below, are:\nthe organisation reasonably believes that giving access would pose a serious threat to the life, health or safety of any individual, or to public health or public safety (APP 12.3(a))\ngiving access would have an unreasonable impact on the privacy of other individuals (APP 12.3(b))\nthe request for access is frivolous or vexatious (APP 12.3(c))\nthe information relates to existing or anticipated legal proceedings between the organisation and the individual, and would not be accessible by the process of discovery in those proceedings (APP 12.3(d))\ngiving access would reveal the intentions of the organisation in relation to negotiations with the individual in such a way as to prejudice those negotiations (APP 12.3(e))\ngiving access would be unlawful (APP 12.3(f))\ndenying access is required or authorised by or under an Australian law or a court/tribunal order (APP 12.3(g))\nthe organisation has reason to suspect that unlawful activity, or misconduct of a serious nature, that relates to the organisation\u2019s functions or activities has been, is being or may be engaged in and giving access would be likely to prejudice the taking of appropriate action in relation to the matter (APP 12.3(h))\ngiving access would be likely to prejudice one or more enforcement related activities conducted by, or on behalf of, an enforcement body (APP 12.3(i))\ngiving access would reveal evaluative information generated within the organisation in connection with a commercially sensitive decision\u2011making process (APP 12.3(j)).\n\n[app12-016] (APP 12, paras 12.43\u201312.45, Refusing to give access under APP 12 \u2014 organisations > Giving access would preju)\n12.43 This ground applies where giving access would prejudice negotiations between the organisation and the individual by revealing the intentions of the organisation in relation to the negotiations. The negotiations may be current or reasonably anticipated.\n12.44 Examples of where this ground might apply is an organisation negotiating:\na claim brought by an individual for compensation (for example, for negligence or wrongful dismissal), and releasing the personal information requested by the individual may reveal the organisation\u2019s strategy to settle or defend the claim\na sponsorship arrangement with an individual, and releasing the personal information requested by the individual may reveal the organisation\u2019s strategy in relation to negotiating the arrangement.\n12.45 This exception applies only to personal information that would prejudice negotiations, and not to all information relevant to the negotiations. Access should be provided to other personal information that is requested, unless another exception applies.\n\nQuestion: Can an organisation charge a person for giving them access to their personal information?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U4rPjoz76euGATSgC9ecKpEU9b",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, an organisation can impose a charge for giving access to requested personal information, but the charge must not be excessive and should only cover actual costs such as staff time, copying, postage, or intermediary costs. The organisation should also consider waiving or reducing the charge in certain circumstances and must not use the charge to discourage access requests.\",\"citations\":[\"app12-030\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089488,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 85,
+   "prompt_tokens": 1835,
+   "total_tokens": 1920,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 70,
+    "engine_ttlt_ms": 545,
+    "pre_inference_ms": 75,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 718,
+    "service_ttlt_ms": 1188,
+    "user_visible_ttft_ms": 643
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260926075918-b119b4b5-default-r0-dp0-default"
+  }
+ }
+}

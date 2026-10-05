@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-030",
+  "markdown": false
+ },
+ "response": {
+  "content": "9/15/86 Lucy - Atditched will used / information\nfor A briefing Book to Assist Mir ling in his meeting with Mr. Guershey\nof the west Company.\n\"Please Double Space\"\nThisda mack\n50602 0183",
+  "pages": 1,
+  "fields": {}
+ }
+}

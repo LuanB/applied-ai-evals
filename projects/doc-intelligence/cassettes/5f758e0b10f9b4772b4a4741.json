@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B12-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH 194 Industrial Rd, Spain\nRef No .:\nPL-49914\nInvoice No .:\nINV-70494\nConsignee:\nHarbourside Fresh Pty Ltd\nContainer:\nOOLU3552106\nMarks:\nHARBOURSIDE/BRISBANE\nPkgs\nDescription\nNet kg Gross kg\n1083 Fresh oranges, navel\n12470.0 12987.7\nTotal packages:\n1083\nTotal gross weight (kg):\n12987.7\nTotal net weight (kg);\n12470.0",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B05-05",
+  "markdown": true
+ },
+ "response": {
+  "content": "# SAFEHOLD QUARANTINE TREATMENTS\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>PC721725</td>\n</tr>\n<tr>\n<td>Fumigant:</td>\n<td>Methyl bromide</td>\n</tr>\n<tr>\n<td>Dosage rate:</td>\n<td>48 g/m3</td>\n</tr>\n<tr>\n<td>Exposure period (hrs):</td>\n<td>24</td>\n</tr>\n<tr>\n<td>Date of fumigation:</td>\n<td>08/08/2026</td>\n</tr>\n<tr>\n<td>Container No .:</td>\n<td>CMAU3435592</td>\n</tr>\n<tr>\n<td>Commodity:</td>\n<td>Dried apricots</td>\n</tr>\n<tr>\n<td>Consignment link:</td>\n<td>B/L MEDU91747120</td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app13-002] (APP 13, paras 13.5\u201313.6, What does APP 13 say? > Interaction of APP 13 and other correction procedures)\n13.5 APP 13 operates alongside and does not replace other informal or legal procedures by which an individual can request that personal information be corrected. In particular, APP 13 does not prevent an APP entity from correcting personal information under an informal administrative arrangement, provided the arrangement satisfies the requirements of APP 13. For example, an entity may allow individuals to correct their personal information by providing updated information through an online portal.\n13.6 For agencies, APP 13 operates alongside the right to amend or annotate personal information in Part V of the Freedom of Information Act 1982 (FOI Act). The FOI Act procedures, criteria and review mechanisms differ in important respects from those applying under APP 13 and the Privacy Act. These differences, and when it is more appropriate to use one Act rather than another, are considered below at paragraphs 13.25\u201313.29.\n\n[app13-024] (APP 13, paras 13.63\u201313.64, APP 13 minimum procedural requirements > Timeframe for responding to a request f)\n13.63 APP 13.5 provides that an agency must respond to a request to correct a record or to associate a statement within 30 calendar days. The 30 day time period commences on the day after the day the agency receives the request. An organisation must respond within a reasonable period after the request is made. As a general guide, a reasonable period should not exceed 30 calendar days.\n13.64 The APP entity must respond by correcting the personal information as requested by the individual, or by notifying the individual of its refusal to correct it.\n\n[app13-000] (APP 13, paras n/a, Key points)\nAPP 13 requires an APP entity to take reasonable steps to correct personal information to ensure that, having regard to the purpose for which it is held, it is accurate, up-to-date, complete, relevant and not misleading.\nThis requirement applies where: the APP entity is satisfied the personal information is inaccurate, out-of-date, incomplete, irrelevant or misleading, having regard to a purpose for which it is held, or the individual requests the entity to correct the personal information.\nthe APP entity is satisfied the personal information is inaccurate, out-of-date, incomplete, irrelevant or misleading, having regard to a purpose for which it is held, or\nthe individual requests the entity to correct the personal information.\nSpecial considerations apply to Commonwealth records, which can only be destroyed or altered in accordance with the Archives Act 1983 (Archives Act).\nAPP 13 also sets out other minimum procedural requirements in relation to correcting personal information, including when an APP entity must: take reasonable steps to notify other APP entities of a correction give notice to the individual which includes reasons and available complaint mechanisms if correction is refused take reasonable steps to associate a statement with personal information it refuses to correct respond to a request for correction or to associate a statement, and not charge an individual for making a request, correcting personal information or associating a statement.\ntake reasonable steps to notify other APP entities of a correction\ngive notice to the individual which includes reasons and available complaint mechanisms if correction is refused\ntake reasonable steps to associate a statement with personal information it refuses to correct\nrespond to a request for correction or to associate a statement, and\nnot charge an individual for making a request, correcting personal information or associating a statement.\nAPP 13 operates alongside and does not replace other informal or legal procedures by which an individual can seek correction of their personal information, including informal arrangements and, for agencies, the Freedom of Information Act 1982 (FOI Act).\n\n[app13-018] (APP 13, paras 13.47, Being satisfied and taking reasonable steps > Reasonable steps to correct)\n13.47 A decision as to what constitutes \u2018reasonable steps\u2019 to correct personal information spans a range of options. These include making appropriate additions, deletions or alterations to a record, or declining to correct personal information if it would be unreasonable to take such steps. In some instances it may be appropriate to destroy or de-identify the personal information (there are separate requirements to destroy or de-identify personal information in APPs 4 and 11 \u2014 see Chapters 4 and 11 respectively). The reasonable steps that an APP entity should take will depend upon considerations that include:\nthe sensitivity of the personal information. More rigorous steps may be required if the incorrect information is \u2018sensitive information\u2019 (defined in s 6(1) and discussed in Chapter B (Key concepts)) or other personal information of a sensitive nature.\nthe possible adverse consequences for an individual if a correction is not made. More rigorous steps may be required as the risk of adversity increases.\nthe practicability, including time and cost involved. However, an entity is not excused from correcting personal information by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take a particular step will depend on whether the burden is excessive in all the circumstances.\nthe likelihood that the entity will use or disclose the personal information. For example, the likelihood of the entity using or disclosing the personal information may be relevant if it would be difficult or costly to make the correction requested by an individual.\nthe purpose for which the personal information is held. As noted at paragraph 13.32, personal information may be held for multiple purposes, and require correction for one purpose but not for another purpose. Reasonable steps in these circumstances may require the entity to retain the original record of personal information for one purpose and create a record with the corrected personal information for another.\nrecord-keeping requirements that apply to the personal information under an Australian law or court/ tribunal order. For example, the \u00adHealth Practitioner Regulation 2010 (NSW), Schedule 2, clause 2.\nwhether the personal information is in the physical possession of the entity or a third party. For example, where personal information is in the physical possession of a third party, the entity may still \u2018hold\u2019 it (see discussion of \u2018holds\u2019 at paragraph 13.11) and be required to take reasonable steps to correct it. In these circumstances, it may be a reasonable step for the entity to notify the third party that the information is incorrect and request that it be corrected. It will not generally be sufficient to refer the individual to the third party with physical possession. However, the third party with physical possession may also \u2018hold\u2019 the personal information, and if so, the individual will have a separate right to request the third party to correct it.\n\n[app13-011] (APP 13, paras 13.30\u201313.32, Grounds for correcting personal information)\n13.30 The five grounds listed in APP 13 \u2014 \u2018accurate\u2019, \u2018up-to-date\u2019, \u2018complete\u2019, \u2018relevant\u2019 and \u2018not misleading\u2019 \u2014 are not defined in the Privacy Act. The first four terms are listed in APP 10.1, which deals with the quality of personal information that an APP entity can collect, use and disclose. Similar terms are used also in Part V of the FOI Act concerning a person\u2019s right to apply to an agency to amend or annotate personal information (see paragraph 13.26 above).\n13.31 The following analysis of each term draws on the ordinary dictionary meaning of the terms, as well as case law concerning the meaning of those terms in the Privacy Act, FOI Act and other legislation. [5] As the analysis indicates, there is considerable overlap in the meaning of the terms.\n13.32 In applying the terms to personal information, it is necessary to have regard to \u2018the purpose for which it is held\u2019. Personal information may be incorrect having regard to one purpose for which it is held, but not another. For a discussion of relevant considerations where personal information is held for multiple purposes, see paragraph 13.47.\n\nQuestion: What time limits apply to credit reporting bodies correcting credit information under Part IIIA?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U7BLRAvr7yVlxZRBzglfNBsOkt",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not cover the time limits for credit reporting bodies correcting credit information under Part IIIA of the Privacy Act.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089491,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 38,
+   "prompt_tokens": 1820,
+   "total_tokens": 1858,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 51,
+    "engine_ttlt_ms": 326,
+    "pre_inference_ms": 84,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 567,
+    "service_ttlt_ms": 846,
+    "user_visible_ttft_ms": 483
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003053040-8a14068b-default-r2-dp0-default"
+  }
+ }
+}

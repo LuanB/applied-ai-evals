@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B04-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD. 31 Industrial Rd, Turkey\nInvoice No .:\n\u0130NV-53940\nDate:\n27/09/2026\nSold to:\nRiverina Trading Pty Ltd\nPacking List No .:\nPL-53215\nTerms of delivery:\nCFR\nCurrency:\nUSD\nDescription\n. HS Code\nQty\nUnit price\nAmount\nDried apricots\n0813.10\n1213\n26.88\n32,605.44\nTOTAL USD: 32,605.44\nCountry of origin: Turkey",
+  "pages": 1,
+  "fields": {}
+ }
+}

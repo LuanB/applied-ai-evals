@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-065",
+  "markdown": false
+ },
+ "response": {
+  "content": "1.\nSUGAR: DANGEROUS TO THE HEART? From this Barbados storage shed and countless other sources, thousands of tons of sugar pour daily into the American diet-and some research now points to an . intriguing link with atherosclerosis ....\n12/6-38/09 POb 12, 1971.",
+  "pages": 1,
+  "fields": {}
+ }
+}

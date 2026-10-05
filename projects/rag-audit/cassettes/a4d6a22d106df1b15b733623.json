@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app8-017] (APP 8, paras 8.41, Exception 5 \u2014 Disclosing personal information to an overseas recipient where a p)\n8.41 The cross-border principle will not apply if a permitted general situation exists for that disclosure (APP 8.2(d)). Section 16A lists five permitted general situations that may exist for a cross border disclosure. These situations are set out below, and are discussed in more detail in Chapter C (Permitted general situations) (including the meaning of relevant terms).\n\n[app9-013] (APP 9, paras 9.35\u20139.39, Using and disclosing government related identifiers > Using or disclosing a gove)\n9.35 An organisation may use or disclose a government related identifier of an individual if a \u2018permitted general situation\u2019 (other than the situations referred to in Items 3, 4 or 5 of the table in subsection 16A(1)) exists in relation to the use or disclosure of the identifier (APP 9.2(d)).\n9.36 Section 16A lists two permitted general situations that apply to the use or disclosure of government related identifiers. The two situations are set out below, and are discussed in Chapter C (Permitted general situations) (including the meaning of relevant terms).\n9.37 An organisation may use or disclose a government related identifier of an individual if:\nthe organisation reasonably believes the use or disclosure is necessary to lessen or prevent a serious threat to the life, health or safety of any individual, or to public health or safety, and\nit is unreasonable or impracticable to obtain consent (s 16A(1), Item 1).\n9.38 An organisation may use or disclose a government related identifier of an individual if:\nthe organisation has reason to suspect that unlawful activity, or misconduct of a serious nature, that relates to the organisation\u2019s functions or activities has been, is being or may be engaged in, and\nthe organisation reasonably believes that the use or disclosure is necessary in order for the organisation to take appropriate action in relation to the matter (s 16A(1), Item 2).\n9.39 For example, this permitted general situation might apply where the organisation uses or discloses a government related identifier, such as a customer\u2019s Centrelink number, as part of an investigation into suspected fraud by a client in relation to the organisation\u2019s functions or activities.\n\n[app8-021] (APP 8, paras 8.47\u20138.48, Exception 5 \u2014 Disclosing personal information to an overseas recipient where a p)\n8.47 An agency may disclose personal information to an overseas recipient without complying with APP 8.1 where the agency reasonably believes that the disclosure is necessary for the agency\u2019s diplomatic or consular functions or activities (s 16A(1), Item 6). The permitted general situation applies only to agencies, and not to organisations.\n8.48 For example, this permitted general situation may apply where an agency discloses personal information to an overseas recipient to assist an Australian citizen who is in distress overseas, such as where an Australian individual is detained or is the victim of crime, where assistance is required with repatriation in the case of death or serious illness, or to provide assistance in response to a crisis or emergency overseas.\n\n[app3-016] (APP 3, paras 3.54\u20133.61, Collecting sensitive information > Collecting sensitive information where a perm)\n3.54 An APP entity may collect sensitive information if:\nthe entity reasonably believes that the collection is reasonably necessary to assist any APP entity, body or person to locate a person who has been reported as missing, and\nthe collection complies with rules made by the Information Commissioner under s 16A(2) (s 16A(1), Item 3).\n3.55 An APP entity may collect sensitive information if the collection is reasonably necessary to establish, exercise or defend a legal or equitable claim (s 16A(1), Item 4).\n3.56 An example of where this permitted general situation might apply is an insurer collecting health information about an individual who has made an insurance compensation claim but is suspected of misrepresenting their claim or the extent of their injuries. [32]\n3.57 An APP entity may collect sensitive information if the collection is reasonably necessary for the purposes of a confidential alternative dispute resolution (ADR) process (s 16A(1), Item 5).\n3.58 An example of where this permitted general situation might apply is an alternative dispute resolution practitioner making a record of a party recounting their version of events, where that account includes the disclosure of sensitive information about an individual who is directly or indirectly involved in the dispute. This permitted general situation will only apply where the parties to the dispute and the ADR provider are bound by confidentiality obligations.\n3.59 An agency may collect sensitive information if the agency reasonably believes the collection is necessary for the agency\u2019s diplomatic or consular functions or activities (s 16A(1), Item 6). This permitted general situation applies only to agencies, and not to organisations.\n3.60 An example of where this permitted general situation might apply is where an agency with diplomatic or consular functions collects sensitive information about an individual who is overseas and in need of consular assistance because the individual is in distress, for example due to being detained or a victim of crime, going missing, or needing repatriation in the case of death or serious illness.\n3.61 The Defence Force (as defined in s 6(1)) may collect sensitive information if it reasonably believes the collection to be necessary for a warlike operation, peacekeeping, civil aid, humanitarian assistance, a medical emergency, a civil emergency or disaster relief occurring outside Australia and the external Territories (s 16A(1), Item 7).\n\n[app6-015] (APP 6, paras 6.38\u20136.43, Using or disclosing personal information for a secondary purpose > Using or disc)\nan APP entity that is investigating fraudulent conduct by a professional adviser or a client in relation to the entity\u2019s functions or activities\nan agency that is investigating a suspected serious breach by a staff member of the Australian Public Service Code of Conduct.\n6.38 An APP entity may use or disclose personal information for a secondary purpose where the entity:\nreasonably believes that the use or disclosure is reasonably necessary to assist any APP entity, body or person to locate a person who has been reported as missing, and\nthe use or disclosure complies with rules made by the Commissioner under s 16A(2) (s 16A(1), Item 3).\n6.39 An APP entity may use or disclose personal information for a secondary purpose where the use or disclosure is reasonably necessary for the establishment, exercise or defence of a legal or equitable claim (s 16A(1) Item 4).\n6.40 An example of where this permitted general situation might apply is where an individual has made a claim under their life insurance policy and the insurer is preparing to dispute the claim. The insurer may use or disclose personal information about the individual to establish its defence of the claim.\n6.41 An APP entity may use or disclose personal information for a secondary purpose where the use or disclosure is reasonably necessary for the purposes of a confidential alternative dispute resolution (ADR) process (s 16A(1), Item 5).\n6.42 An example of where this permitted general situation might apply is where an APP entity discloses their version of events during a confidential ADR process, where that account includes the disclosure of personal information about an individual who is directly or indirectly involved in the dispute. This permitted general situation will only apply where the parties to the dispute and the ADR provider are bound by confidentiality obligations.\n6.43 An agency may use or disclose personal information for a secondary purpose where the agency reasonably believes that the use or disclosure is necessary for the agency\u2019s diplomatic or consular functions or activities (s 16A(1), Item 6). This permitted general situation applies only to agencies, and not to organisations.\n\nQuestion: How many permitted general situations does section 16A list, and how many apply only to agencies?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U1PEKKcrp84iVhQKj6MkVTj8ra",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Section 16A lists five permitted general situations in total, with one of these situations (Item 6) applying only to agencies and not to organisations.\",\"citations\":[\"app8-017\",\"app8-021\",\"app3-054\",\"app6-015\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089485,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 64,
+   "prompt_tokens": 1839,
+   "total_tokens": 1903,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 34,
+    "engine_ttlt_ms": 408,
+    "pre_inference_ms": 96,
+    "service_tbt_ms": 5,
+    "service_ttft_ms": 758,
+    "service_ttlt_ms": 1062,
+    "user_visible_ttft_ms": 662
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822214107-14d77be2-default-r2-dp0-default"
+  }
+ }
+}

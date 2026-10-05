@@ -1,0 +1,180 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: fumigation_certificate\n\nPage (markdown from layout analysis):\n# SAFEHOLD QUARANTINE TREATMENTS\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>FC453348</td>\n</tr>\n<tr>\n<td>Fumigant:</td>\n<td>Sulfuryl fluoride</td>\n</tr>\n<tr>\n<td>Dosage rate:</td>\n<td>1500 g-h/m3 .</td>\n</tr>\n<tr>\n<td>Exposure period (hrs):</td>\n<td>24</td>\n</tr>\n<tr>\n<td>Date of fumigation:</td>\n<td>19/08/2026</td>\n</tr>\n<tr>\n<td>Container No .:</td>\n<td>MSCU4284394</td>\n</tr>\n<tr>\n<td>Commodity:</td>\n<td>Sawn timber, pine, kiln dried</td>\n</tr>\n<tr>\n<td>Consignment link:</td>\n<td>B/L MAEU35625917</td>\n</tr>\n</table>\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "certificate_number",
+      "fumigant",
+      "dosage",
+      "exposure_hours",
+      "date_of_fumigation",
+      "container_number"
+     ],
+     "properties": {
+      "certificate_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "certificate number"
+      },
+      "fumigant": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "fumigant"
+      },
+      "dosage": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "dosage rate"
+      },
+      "exposure_hours": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "exposure period in hours"
+      },
+      "date_of_fumigation": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "date of fumigation"
+      },
+      "container_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "container number"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8CnBun3gS7SzkrHprAwrheozCQq",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"certificate_number\":\"FC453348\",\"fumigant\":\"Sulfuryl fluoride\",\"dosage\":\"1500 g-h/m3 .\",\"exposure_hours\":\"24\",\"date_of_fumigation\":\"19/08/2026\",\"container_number\":\"MSCU4284394\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088417,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 56,
+   "prompt_tokens": 401,
+   "total_tokens": 457,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 25,
+    "engine_ttlt_ms": 331,
+    "pre_inference_ms": 85,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 746,
+    "service_ttlt_ms": 1150,
+    "user_visible_ttft_ms": 662
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822214107-b2039c55-default-r2-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B07-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# SAFEHOLD QUARANTINE TREATMENTS\n\n\n## CERTIFICATE OF TREATMENT\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>FC269264</td>\n</tr>\n<tr>\n<td>Fumigant:</td>\n<td>Sulfuryl fluoride</td>\n</tr>\n<tr>\n<td>Dosage rate:</td>\n<td>1500 g-h/m3</td>\n</tr>\n<tr>\n<td>Exposure period (hrs):</td>\n<td>24</td>\n</tr>\n<tr>\n<td>Date of fumigation:</td>\n<td>09/09/2026</td>\n</tr>\n<tr>\n<td>Container No .:</td>\n<td>MSCU8477661</td>\n</tr>\n<tr>\n<td>Commodity:</td>\n<td>Black pepper, whole</td>\n</tr>\n<tr>\n<td>Consignment link:</td>\n<td>B/L MEDU97399860</td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

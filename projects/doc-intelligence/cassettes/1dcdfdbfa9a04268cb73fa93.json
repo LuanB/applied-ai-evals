@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-026",
+  "markdown": false
+ },
+ "response": {
+  "content": "---- Original Message ----\nFrom:\nDowney, Kathryn A\nSent:\nTuesday, April 27, 1999 10:07 AM\nTo:\nLevy, Carolyn J.\nSubject:\nStock\nCarolyn,\nJust to let you know, your stock award recommendations arrived in this morning's mail. However, the amounts differ slightly from what we dicussed yesterday. Per your sheet, Eisen is at 105 (we discussed 103) and Sansone is at 181 (we discussed 183). Daragan remains at 300. Which amounts would you like to recommend? Thanks, Kathryn\n2070045060A",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,202 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "vision_extract": "test-B10-01",
+  "schema": {
+   "invoice_number": "invoice number",
+   "invoice_date": "invoice date",
+   "seller": "seller / exporter name",
+   "buyer": "buyer / importer name",
+   "currency": "ISO currency code",
+   "total_amount": "invoice total",
+   "incoterm": "Incoterm (e.g. FOB, CIF)",
+   "hs_code": "HS tariff code"
+  },
+  "prompt": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to.",
+  "_salt": "",
+  "_params": {
+   "temperature": 0.0,
+   "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+     "name": "fields",
+     "strict": true,
+     "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "invoice_number",
+       "invoice_date",
+       "seller",
+       "buyer",
+       "currency",
+       "total_amount",
+       "incoterm",
+       "hs_code"
+      ],
+      "properties": {
+       "invoice_number": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "invoice number"
+       },
+       "invoice_date": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "invoice date"
+       },
+       "seller": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "seller / exporter name"
+       },
+       "buyer": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "buyer / importer name"
+       },
+       "currency": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "ISO currency code"
+       },
+       "total_amount": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "invoice total"
+       },
+       "incoterm": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "Incoterm (e.g. FOB, CIF)"
+       },
+       "hs_code": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "HS tariff code"
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8DBWQ14vSZvlnGl8FF1tQh2n1M5",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"invoice_number\":\"INV-50762\",\"invoice_date\":\"02/07/2026\",\"seller\":\"LANKA SPICE MILLS (PVT) LTD\",\"buyer\":\"Harbourside Fresh Pty Ltd\",\"currency\":\"USD\",\"total_amount\":\"33,623.21\",\"incoterm\":\"EXW\",\"hs_code\":\"0801.32\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088441,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8d7b600b57",
+  "usage": {
+   "completion_tokens": 71,
+   "prompt_tokens": 1546,
+   "total_tokens": 1617,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": 816
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 10,
+    "engine_ttft_ms": 241,
+    "engine_ttlt_ms": 973,
+    "pre_inference_ms": 151,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 879,
+    "service_ttlt_ms": 1445,
+    "user_visible_ttft_ms": 728
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822211338-5b02d512-default-r1-dp0-default"
+  }
+ }
+}

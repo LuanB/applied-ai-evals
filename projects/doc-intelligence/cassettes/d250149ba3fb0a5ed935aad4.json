@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B16-05",
+  "markdown": true
+ },
+ "response": {
+  "content": "# SAFEHOLD QUARANTINE TREATMENTS\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>FC453348</td>\n</tr>\n<tr>\n<td>Fumigant:</td>\n<td>Sulfuryl fluoride</td>\n</tr>\n<tr>\n<td>Dosage rate:</td>\n<td>1500 g-h/m3 .</td>\n</tr>\n<tr>\n<td>Exposure period (hrs):</td>\n<td>24</td>\n</tr>\n<tr>\n<td>Date of fumigation:</td>\n<td>19/08/2026</td>\n</tr>\n<tr>\n<td>Container No .:</td>\n<td>MSCU4284394</td>\n</tr>\n<tr>\n<td>Commodity:</td>\n<td>Sawn timber, pine, kiln dried</td>\n</tr>\n<tr>\n<td>Consignment link:</td>\n<td>B/L MAEU35625917</td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

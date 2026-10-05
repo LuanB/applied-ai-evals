@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-103",
+  "markdown": false
+ },
+ "response": {
+  "content": "PREPARED BY LORILLARD MEDIA DEPT.\nDATE 1/27/93 PABE 1\nTRUE\n993 OUT-OF-HOME/TRANSIT ESTIMATE REPORT\nX 3006\nAPPROVED BY: BRAKD AGENCY\n14/5 (Goff Losalar)\nMIE: 2/5/93\nBRAND MANAGER\nNichligger\nDATE: 2/12/93\nLORILLARD DO\nVATE 2/9/93\n96444667",
+  "pages": 1,
+  "fields": {}
+ }
+}

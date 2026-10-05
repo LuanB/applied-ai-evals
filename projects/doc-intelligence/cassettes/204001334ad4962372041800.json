@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-159",
+  "markdown": false
+ },
+ "response": {
+  "content": "PHILIP MORRIS COMPANIES INC.\nINTER-OFFICE CORRESPONDENCE 120 PARK AVENUE, NEW YORK, N.Y. 10017-5592\nTO:\nFROM:\nWilliam Lynch III Charies R. Wall\nDATE: February 7, 1994\nSUBJECT: Document Retention\nBecause of litigation involving Philip Morris Industrial, Milprint Inc. and Polymer Industries, I would appreciate it if you would suspend the destruction of all documents relating to those entities until further notice from me.\nThese entities are now doing business as Colonial Heights Packaging Inc., and documents regarding that corporation should also be kept until further notice. Thank you.\nCAN\n/1w cc: Arthur A. Vogel, Jr., Esq. Quaries & Brady\n2054495072",
+  "pages": 1,
+  "fields": {}
+ }
+}

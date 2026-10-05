@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-140",
+  "markdown": false
+ },
+ "response": {
+  "content": "CURRICULUM VITAE.\nNAME: Tsao, Ming-Sound.\nCURRENT ADDRESS: Department of Pathology, Montreal General Hospital, 1650 Cedar Ave., Montreal, PQ, CANADA, H3G 1A4.\nPOSITION: Associate Professor of Pathology, McGill University, Montreal, Quebec.\nDATE AND PLACE OF BIRTH: January 23, 1952, Bogor, Indonesia.\nCITIZENSHIP: Canadian.\nEDUCATION: B.Sc. (Hons), Biochemistry, Simon Fraser University, 1973. M.D., University of British Columbia, 1976.\nPOST-GRADUATE TRAINING:\n1976-1977: Rotating internship, Montreal General Hospital, Montreal, Canada.\n1978-1982: Residency in Anatomic Pathology, McGill University.\n1982-1984: Centennial Fellow of the Medical Research Council of Canada, Research Fellow at the Department of Pathology, University of North Carolina School of Medicine, Chapel Hill, NC, USA. ( Joe W. Grisham, MD, supervisor).\nAWARDS: 1973: Governor General's Gold Medal, Simon Fraser University. 1985: Montreal General Hospital Research Institute Scholarship. 1986-1991: Medical Research Council of Canada Scholarship.\nSELECTED PUBLICATIONS:\n1) Tsao M-S, Smith JD, Nelson KG, Grisham, JW. A diploid epithelial cell line from normal adult rat liver with phenotypic properties of oval cells. Exp Cell Res 154: 38 (1984).\n2) Tsao M-S, Nelson KG, Grisham, JW. Biochemical effects of 12-O-tetrade- canoyl-phorbol-13-acetate, retinoic acid, phenobarbital and 5-azacytidine on a normal rat liver epithelial cell line. J Cell Physiol 121:1 (1984).",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-075",
+  "markdown": false
+ },
+ "response": {
+  "content": "(CS 13PRNT) 1/31/96\nBrown & Williamson Tobacco Corporation Corporate Manufacturing Specifications System All Products with Mfct Product Code . 8216\nMfg. Prod Product .\nCASE\nChange Effective\nGroup 1104\n8216\nDescription CAPRI 100 (WH) US CAUTION CAPRI 100\nSize Status 6000 DEVELOPMENTAL\n96-0010\n2/ 15/96\nItem \u00b7 FILTER ROD *\nMaterial\nMaterial Description\nLength/Qty\nPURCHASED RODS.\nFilter Rod code.\nFR-9168\nRod length.\n108\nCircumference\n16.75\nPressure drop\n16.00 in\nPlasticizer.\n0.00 %\nAnchor line.\nTips in rod.\n\" CIG MAKER *\nPrimary Cigarette design\nCG-11040\nCut Tobacco code.\nMT-025\nCIGARETTE PAPERS.\nTIPPINGS. .\nPlug/Tob. section length\n27\n1 70.0\nTipping - Cut length ..\n19.00\n= Length on cig. - Bobbin dimensions\n32.00 m\nCigarette circumference\nVentilation rate.\n17.0 m 55.00 % 448\nFilter Rod code,\nFR-9168\nGlue roller type.\nFULL\n. CIG PACKER .\nFILMS\nFOILS\n14-7900\nINNERFRAMES\n31-0621\nLABELS,\n55-0033\nSPACERS\n28-0180\nSPACER MATERIAL 2.05\" 12 PT\n3.2300000\n6.1250000 IN\n*EMBOSS FOIL WITH WORD \"CAPRI\". (B19266)\"\n* CIG CARTON FILL *\nCARTONS\nCARTON TEAR TAPE.\n34-0010\nFILMS\n14-7520\nCode printing method.\nEmboss and Ink\n\u00b7 CIG CASE FILL *\nCASES\n27-9842\nMISCELLANEOUS SEALING TAPES.\n64-0771\nExport Stock code GEX-18\n39-0230\nCASE TAPE #371 P.S. 2\" TAN\n52.0000000 IN\n40 CASES PER PALLET\n1.0000000 EACH\nTT CLEAR 2.4MM CARTON-GD\n12.6250000 IN\nFILM 13 11/16\" HOECHST (MEX) CA 20\n12.6250000\nSPACER CAPRI CARTON AUTOMATED\n3.0000000 EACH\n30 CARTONS PER CASE\nCASE CAPRI LTS 100 BX 6M 1.0000000 EXP. SHIP LAB 3-1/2\"X3-15/16\"THERMAL 2.0000000\n1.2800000\nLBL CAPRI 100 GE W/US CAUTION (DW)\n1.0000000 EACH\nTEAR TAPES ..\n36-0301\nCIGT. PAPER E-656 19 X 6500 FLAX TIPP CAPRI NM 64X3500-3540LP\n20 STICKS PER PACK\nFILM 4 15/16\" HOECHST HB 120 GA\n6.1250000 IN\nFOIL 114MM GOLD 28# GD-X2\n5.1930000\n30-0220\nINNERFRAME 85MN PLAIN CAPRI GO\nTT 3/16\" CAPRI N/M PINK-ASBX\n10 PACKS PER CRTN\nCTN CAPRI 100 FDB\n91-1915\nSPACERS.\n28-0020\nNet tobacco weight\n64MM X 3500M\n13-0381 37-3052\nFILT ROO CAPRI 100'S(afe)\n38-0352\n01/31/96 11:09:53 Page - 1\nCode . Type\nNumber pate\n398013657",
+  "pages": 1,
+  "fields": {}
+ }
+}

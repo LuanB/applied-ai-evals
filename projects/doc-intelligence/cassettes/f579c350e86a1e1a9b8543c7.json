@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B13-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB 132 Industrial Rd, Sweden\nInvoice No .:\nINV-96972\nDate:\n12/07/2026\nSold to:\nRiverina Trading Pty Ltd\nPacking List No .:\nPL-92091\nTerms of delivery:\nCFR\nCurrency:\nEUR\nDescription\nHS Code\nQty\nUnit price Amount\nSawn timber, pine, kil 4407.11\n. 1184\n30.17\n35,721.28\nTOTAL EUR: 35,721.28\nCountry of origin: Sweden",
+  "pages": 1,
+  "fields": {}
+ }
+}

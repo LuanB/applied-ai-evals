@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B12-01",
+  "markdown": true
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH\n67 Industrial Rd, Spain\n\nInvoice No .:\n\nINV-70494\n\nDate:\n\n25/07/2026\n\nSold to:\n\nHarbourside Fresh Pty Ltd\n\nPacking List No .:\n\nPL-49914\n\nTerms of delivery:\n\nCIF\n\nCurrency:\n\nAUD\n\n\n<table>\n<tr>\n<th>Description</th>\n<th>HS Code</th>\n<th>Qty</th>\n<th>Unit price</th>\n<th>Amount</th>\n</tr>\n<tr>\n<td>Fresh oranges, navel</td>\n<td>0805.10</td>\n<td>1083</td>\n<td>38.44</td>\n<td>41,630.52</td>\n</tr>\n</table>\n\n\nTOTAL AUD:\n\n41,630.52\n\nCountry of origin: Spain\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

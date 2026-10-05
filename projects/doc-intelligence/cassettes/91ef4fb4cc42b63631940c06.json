@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B03-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# NATIONAL PLANT PROTECTION ORGANIZATION OF SRI LANKA\n\n\n## PHYTOSANITARY CERTIFICATE\n\nNo .:\n\nCO294523\n\nName of exporter:\n\nNordic Pine Sawmills AB\n\nDeclared consignee:\n\nWattle & Co Wholesale Pty Ltd\n\nBotanical name of plants:\n\nPiper nigrum\n\nPlace of origin:\n\nSri Lanka\n\nDeclared means of conveyanceCOSCO LIBRA\n\nPoint of entry:\n\nFremantle\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

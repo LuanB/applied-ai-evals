@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app8-011] (APP 8, paras 8.26\u20138.27, Exception 1 \u2014 Disclosing personal information to an overseas recipient that is s)\n8.26 An enforcement mechanism should meet two key requirements: it should be accessible to the individual and it should have effective powers to enforce the privacy or data protections in the law or binding scheme. A range of mechanisms may satisfy those requirements, ranging from a regulatory body similar to the Office of the Australian Information Commissioner (the OAIC), to an accredited dispute resolution scheme, an independent tribunal or a court with judicial functions and powers. Factors that may be relevant in deciding whether there is an accessible and effective enforcement mechanism include whether the mechanism:\nis independent of the overseas recipient that is required by the law or binding scheme to comply with the privacy or data protections\nhas authority to consider a breach of any of the privacy or data protections in the law or binding scheme\nis accessible to an individual, for example, the existence of the scheme is publicly known, and can be accessed by individuals directly and without payment of any unreasonable charge\nhas the power to make a finding that the overseas recipient is in breach of the law or binding scheme and to provide a remedy to the individual\nis required to operate according to principles of procedural fairness.\n8.27 The mechanism may be a single mechanism or a combination of mechanisms. It may be established by the law or binding scheme that contains the privacy or data protections, or by another law or binding scheme. Alternatively, the mechanism may take effect through the operation of cross-border enforcement arrangements between the OAIC and an appropriate regulatory authority in the foreign jurisdiction. [15]\n\n[app8-010] (APP 8, paras 8.24\u20138.25, Exception 1 \u2014 Disclosing personal information to an overseas recipient that is s)\n8.24 A substantially similar law or binding scheme would provide a comparable, or a higher level of privacy protection to that provided by the APPs. Each provision of the law or scheme is not required to correspond directly to an equivalent APP. Rather, the overall effect of the law or scheme is of central importance.\n8.25 Whether there is substantial similarity is a question of fact. Factors that may indicate that the overall effect is substantially similar, include:\nthe law or scheme includes a comparable definition of personal information that would apply to the personal information disclosed to the recipient\nthe law or scheme regulates the collection of personal information in a comparable way\nthe law or scheme requires the recipient to notify individuals about the collection of their personal information\nthe law or scheme requires the recipient to only use or disclose the personal information for authorised purposes\nthe law or scheme includes comparable data quality and data security standards, and\nthe law or scheme includes a right to access and seek correction of personal information.\n\n[app1-011] (APP 1, paras 1.41\u20131.43, Developing an APP Privacy Policy > Information that must be included in an APP P)\nExample A: Glowride, a rideshare company, uses a computer program to analyse customer\u2019s personal information to manage the customer\u2019s ongoing usage of the service, including feedback or payment data or ratings provided by ride share drivers. One of the actions the computer program can execute is to suspend a user\u2019s account.\nWhile a decision to suspend a customer\u2019s account may have a relatively minor impact on some customers, for a customer experiencing vulnerability who relies on Glowride to attend medical appointments, access essential services or maintain employment, the decision could significantly affect their rights or interests.\nThe example demonstrates that for a decision to be one that could reasonably be expected to significantly affect the rights or interests of an individual, it will depend on the individual\u2019s circumstances (such as a child or a person experiencing vulnerability). The effects of a decision must be more than trivial and must have the potential to significantly influence the circumstances of the individual concerned.\n1.41 Other examples of the kinds of decisions that may affect the rights or interests of an individual include: [11]\na decision made under a provision of an Act or a legislative instrument to grant, or to refuse to grant, a benefit to the individual. For example, this may include a decision in relation to granting admission to a country or entitlement to a housing benefit.\na decision that affects the individual\u2019s rights under a contract, agreement or arrangement. For example, this may include a contract for a life insurance policy.\na decision that affects the individual\u2019s access to a significant service or support. For example, this may include access to healthcare services.\nImportantly, a decision may be within scope of the APP 1.7-1.9 transparency obligation even where a computer program output does not replace the entire decision-making process or is subject to human review.\n1.42 APP 1.7(a) uses the wording, \u2018the entity has arranged for a computer program\u2019.\n1.43 The words \u2018arranged for\u2019 clarify that it is the entity responsible for arranging the computer program to make, or do a thing that is substantially and directly related to making, a decision, which must meet the requirements in APP 1.7. ( Example B and C )\n\n[app1-020] (APP 1, paras 1.79\u20131.80, Developing an APP Privacy Policy > Other matters for inclusion in an APP Privacy)\n1.79 The list of matters that must be included in an APP Privacy Policy, as discussed above, is not exhaustive. In all cases, the policy should contain sufficient information to describe how the APP entity manages personal information.\n1.80 The following are examples of other information that could be included:\nany exemptions under the Privacy Act that apply to personal information held by the entity or to any of its acts or practices\nwhether the APP entity retains a record of personal information about all individuals (or categories of persons) with whom it deals\nwho, other than the individual, can access personal information, and the conditions for access\nthe entity\u2019s process or schedule for updating its APP Privacy Policy, and how changes will be publicised\nif the entity interacts with and collects personal information about a vulnerable segment of the community (such as children), the criteria that will be applied and the procedure that will be followed in collecting and holding that personal information\nthe situations in which a person can deal with the entity by not identifying themselves or by using a pseudonym (see APP 2, Chapter 2)\ninformation retention or destruction practices or obligations specific to the entity.\n\n[app1-008] (APP 1, paras 1.26\u20131.30, Developing an APP Privacy Policy > Information that must be included in an APP P)\n1.26 An APP entity may have other specific access or correction obligations outside the Privacy Act (for example the Consumer Data Right under Part IVD of the Competition and Consumer Act 2010). In such cases, the APP entity could also refer or explain those obligations where appropriate.\n1.27 An APP Privacy Policy must explain how an individual can complain about an APP entity\u2019s breach of the APPs or a binding registered APP code (APP 1.4(e)). It is implicit in this requirement that an entity which is bound by a binding, registered APP code should clearly state that fact and name the code.\n1.28 Details that should also be included in the APP Privacy Policy are the procedure and contact details for complaining directly to the APP entity (see for example, the generic contact details in paragraph 1.22) and, where applicable, the procedure for complaining to an external complaint body (such as an external dispute resolution scheme of which the entity is a member and that is recognised by the Information Commissioner). [7] The policy could inform individuals of the different stages in complaint handling: in most cases, a complaint should first be made in writing to the entity, as required by s 40(1A), and that the entity should be given a reasonable time (usually 30 days) to respond; following engagement with the entity, a complaint may be taken to a recognised external dispute resolution scheme of which the entity is a member; and, after those avenues have been considered, a complaint may be taken to the OAIC.\n1.29 The policy could refer to other complaint avenues that operate alongside the Privacy Act. For example, banks are required to provide information to customers about complaint handling and dispute resolution in relation to the bank\u2019s obligations under the Corporations Act 2001, the Code of Banking Practice, and the Electronic Funds Transfer Code of Conduct. In these circumstances, the APP Privacy Policy could note the different procedures for privacy and non-privacy complaints (or link to other explanatory material the APP entity has published).\n1.30 An APP Privacy Policy must set out whether personal information is likely to be disclosed to overseas recipients and the countries in which such recipients are likely to be located \u2018if it is practicable to specify those countries in the policy\u2019 (APP 1.4(f) and 1.4(g)). This includes a likely disclosure to a related body corporate located overseas, and the country in which that body is located. An APP entity can be regarded as likely to disclose personal information to an overseas recipient if it is the entity\u2019s current practice or it has established plans to do so.\n\nQuestion: How long must telecommunications providers retain customer metadata under the data retention scheme?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SoAG7vSRnx26EH5Znm1R9wxj6A",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not cover the duration for which telecommunications providers must retain customer metadata under the data retention scheme.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089410,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 35,
+   "prompt_tokens": 2058,
+   "total_tokens": 2093,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 10,
+    "engine_ttft_ms": 71,
+    "engine_ttlt_ms": 439,
+    "pre_inference_ms": 88,
+    "service_tbt_ms": 10,
+    "service_ttft_ms": 476,
+    "service_ttlt_ms": 829,
+    "user_visible_ttft_ms": 388
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003055525-929f9fcc-default-r1-dp0-default"
+  }
+ }
+}

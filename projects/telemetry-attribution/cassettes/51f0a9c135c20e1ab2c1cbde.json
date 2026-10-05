@@ -1,0 +1,305 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You explain movements in software telemetry by attributing them to a commit.\n\nTHE NUMBERS ARE ALREADY COMPUTED AND ARE NOT YOURS TO RECOMPUTE.\nThe finding was produced by a deterministic detector. Treat its numbers as fact. Your\njob is judgement, not arithmetic: given that this movement happened, which commit in\nthe window explains it, and what is the evidence?\n\nMethod:\n- Start with list_commits_in_window. You get subjects and file-change counts.\n- Use describe_commit on the few that plausibly relate. Look at which files changed.\n- Use sample_telemetry_rows only if you need to see the shape of the raw data.\n- Then call submit_answer. You MUST finish by calling submit_answer.\n\nREFUSAL IS A CORRECT ANSWER AND IS EXPECTED SOMETIMES.\nThere is always a commit in a window. That does not mean one of them caused the\nmovement. If no commit plausibly explains it, call submit_answer with refused=true and\ncommits=[]. A confident wrong attribution is worse than an honest refusal, because it\nwill be believed. Check dates: a commit after the movement cannot have caused it.\n\nName at most 3 commits.\n"
+   },
+   {
+    "role": "user",
+    "content": "FINDING step:tool_calls_per_run\n  metric : tool calls per agent run\n  movement: p90 rose from 7 (median of the 5 preceding active days) to 27 on 2026-07-18 \u2014 a 3.9x step.\n  window : 2026-07-15 .. 2026-07-20\n\n21 commits are in this window. Attribute the movement, or refuse."
+   },
+   {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+     {
+      "id": "call_C2m1iF47kmojch0OPcs5AW1F",
+      "function": {
+       "arguments": "{\"only_touching\":\"tool\"}",
+       "name": "list_commits_in_window"
+      },
+      "type": "function"
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_C2m1iF47kmojch0OPcs5AW1F",
+    "content": "[{\"sha\": \"7b99e09\", \"date\": \"2026-06-22\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(telemetry): cost-instrument ASR/detect/enrichment + fix cost overestimate\", \"files_changed\": 20}, {\"sha\": \"d05fad4\", \"date\": \"2026-06-22\", \"repo\": \"mayah\", \"subject\": \"feat(telemetry): cover live JIRA SDK 429s + attribute calls to meetingId\", \"files_changed\": 7}, {\"sha\": \"9cddd1d\", \"date\": \"2026-06-24\", \"repo\": \"mayah-desktop\", \"subject\": \"perf(surfacing): pre-load static discovery lists into the gather prompt (cost-modes Task 1)\", \"files_changed\": 7}, {\"sha\": \"1a6f26a\", \"date\": \"2026-06-24\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(telemetry): bake-off instrumentation on the google gather (turn-trace + decisiveness)\", \"files_changed\": 3}, {\"sha\": \"36a2807\", \"date\": \"2026-06-24\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(telemetry): per-turn tool_call traces on google/openai gather + config refresh-retry\", \"files_changed\": 9}]"
+   },
+   {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+     {
+      "id": "call_m7NiWgxmcpnZxpAqUO8pMgXO",
+      "function": {
+       "arguments": "{\"sha\": \"7b99e09\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_11t3HkyTD9AYrAw4xCSFqD0O",
+      "function": {
+       "arguments": "{\"sha\": \"d05fad4\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_8OkuBdP8cDn6qlxkoUCJKqIR",
+      "function": {
+       "arguments": "{\"sha\": \"9cddd1d\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_f8qZMYoBbDB64jIDmhI60ohW",
+      "function": {
+       "arguments": "{\"sha\": \"1a6f26a\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     },
+     {
+      "id": "call_oyGk9XxOMKtbsAO4jUmRiBCL",
+      "function": {
+       "arguments": "{\"sha\": \"36a2807\"}",
+       "name": "describe_commit"
+      },
+      "type": "function"
+     }
+    ]
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_m7NiWgxmcpnZxpAqUO8pMgXO",
+    "content": "{\"sha\": \"7b99e09\", \"date\": \"2026-06-22\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(telemetry): cost-instrument ASR/detect/enrichment + fix cost overestimate\", \"files_changed\": 20, \"files\": [\"electron/agent/asr/geminiAsr.test.ts\", \"electron/agent/asr/geminiAsr.ts\", \"electron/agent/asr/runAsrWindow.test.ts\", \"electron/agent/asr/runAsrWindow.ts\", \"electron/agent/providers/google/completion.test.ts\", \"electron/agent/providers/google/completion.ts\", \"electron/agent/providers/google/toolLoop.ts\", \"electron/agent/providers/openai/toolLoop.ts\", \"electron/agent/providers/pricing.test.ts\", \"electron/agent/providers/pricing.ts\", \"electron/agent/surfacing/detectComplete.ts\", \"electron/agent/surfacing/surfacingRunner.test.ts\", \"electron/agent/surfacing/surfacingRunner.ts\", \"electron/agent/telemetry.ts\", \"electron/main.ts\", \"electron/memory/enrichmentModelGoogle.provider.test.ts\", \"electron/memory/llm.test.ts\", \"electron/memory/llm.ts\", \"electron/memory/meetingEnrichment.test.ts\", \"electron/memory/resolveEnrichmentModel.ts\"], \"files_truncated\": 0}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_11t3HkyTD9AYrAw4xCSFqD0O",
+    "content": "{\"sha\": \"d05fad4\", \"date\": \"2026-06-22\", \"repo\": \"mayah\", \"subject\": \"feat(telemetry): cover live JIRA SDK 429s + attribute calls to meetingId\", \"files_changed\": 7, \"files\": [\"lib/integrations/jira.ts\", \"lib/integrations/sdkTelemetry.test.ts\", \"lib/integrations/telemetry.ts\", \"lib/tools/streamTextAdapter.ts\", \"lib/tools/streamTextAdapterMeetingId.test.ts\", \"lib/tools/types.ts\", \"pages/api/meetings/[id]/qa.ts\"], \"files_truncated\": 0}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_8OkuBdP8cDn6qlxkoUCJKqIR",
+    "content": "{\"sha\": \"9cddd1d\", \"date\": \"2026-06-24\", \"repo\": \"mayah-desktop\", \"subject\": \"perf(surfacing): pre-load static discovery lists into the gather prompt (cost-modes Task 1)\", \"files_changed\": 7, \"files\": [\"electron/agent/index.ts\", \"electron/agent/parity-2a.test.ts\", \"electron/agent/providers/toolRegistry.ts\", \"electron/agent/surfacing/staticDiscovery.test.ts\", \"electron/agent/surfacing/staticDiscovery.ts\", \"electron/agent/surfacing/surfacingPrompt.test.ts\", \"electron/agent/surfacing/surfacingPrompt.ts\"], \"files_truncated\": 0}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_f8qZMYoBbDB64jIDmhI60ohW",
+    "content": "{\"sha\": \"1a6f26a\", \"date\": \"2026-06-24\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(telemetry): bake-off instrumentation on the google gather (turn-trace + decisiveness)\", \"files_changed\": 3, \"files\": [\"electron/agent/providers/google/toolLoop.test.ts\", \"electron/agent/providers/google/toolLoop.ts\", \"electron/agent/telemetry.ts\"], \"files_truncated\": 0}"
+   },
+   {
+    "role": "tool",
+    "tool_call_id": "call_oyGk9XxOMKtbsAO4jUmRiBCL",
+    "content": "{\"sha\": \"36a2807\", \"date\": \"2026-06-24\", \"repo\": \"mayah-desktop\", \"subject\": \"feat(telemetry): per-turn tool_call traces on google/openai gather + config refresh-retry\", \"files_changed\": 9, \"files\": [\"electron/agent/providers/google/toolLoop.test.ts\", \"electron/agent/providers/google/toolLoop.ts\", \"electron/agent/providers/openai/toolLoop.test.ts\", \"electron/agent/providers/openai/toolLoop.ts\", \"electron/agent/surfacing/surfacingRunner.test.ts\", \"electron/agent/surfacing/surfacingRunner.ts\", \"electron/agent/telemetry.ts\", \"electron/config/configCache.test.ts\", \"electron/config/configCache.ts\"], \"files_truncated\": 0}"
+   }
+  ],
+  "temperature": 0.0,
+  "tools": [
+   {
+    "type": "function",
+    "function": {
+     "name": "list_commits_in_window",
+     "description": "Commits in the finding's window: sha, date, subject, files_changed.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "only_touching": {
+        "type": "string",
+        "description": "Optional path substring filter, e.g. 'telemetry'."
+       }
+      }
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "describe_commit",
+     "description": "One commit in detail: subject, file count, and the file list (truncated).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "sha": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "sha"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "sample_telemetry_rows",
+     "description": "A few raw telemetry rows of a given kind on a given day (YYYY-MM-DD).",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "kind": {
+        "type": "string"
+       },
+       "day": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "kind",
+       "day"
+      ]
+     }
+    }
+   },
+   {
+    "type": "function",
+    "function": {
+     "name": "submit_answer",
+     "description": "Terminal. Submit the attribution, or refuse.",
+     "parameters": {
+      "type": "object",
+      "properties": {
+       "commits": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "description": "Short SHAs. Empty if refusing."
+       },
+       "refused": {
+        "type": "boolean"
+       },
+       "rationale": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "commits",
+       "refused",
+       "rationale"
+      ]
+     }
+    }
+   }
+  ],
+  "_salt": "trial0"
+ },
+ "response": {
+  "id": "chatcmpl-EV7oVioyPZcx9d4NXh8jlwCsoYYqI",
+  "choices": [
+   {
+    "finish_reason": "tool_calls",
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "annotations": [],
+     "tool_calls": [
+      {
+       "id": "call_obR6qSCeLvoD6OT1gzreohdG",
+       "function": {
+        "arguments": "{}",
+        "name": "list_commits_in_window"
+       },
+       "type": "function"
+      }
+     ]
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791086911,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 13,
+   "prompt_tokens": 1825,
+   "total_tokens": 1838,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 39,
+    "engine_ttlt_ms": 145,
+    "pre_inference_ms": 100,
+    "service_tbt_ms": 11,
+    "service_ttft_ms": 449,
+    "service_ttlt_ms": 590,
+    "user_visible_ttft_ms": 349
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044429-7adf8486-default-r2-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B01-05",
+  "markdown": false
+ },
+ "response": {
+  "content": "SAFEHOLD QUARANTINE TREATMENTS\nCERTIFICATE OF TREATMENT\nCertificate No .:\nCO500802\nFumigant:\nSulfuryl fluoride\nDosage rate:\n1500 g-h/m3\nExposure period (hrs):\n24\nDate of fumigation:\n05/07/2026\nContainer No .:\nMSKU3069294\nCommodity:\nDried apricots.\nConsignment link:\nB/L MEDU48520404",
+  "pages": 1,
+  "fields": {}
+ }
+}

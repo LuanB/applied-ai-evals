@@ -1,0 +1,666 @@
+[
+ {
+  "id": "B00-01",
+  "label": "commercial_invoice",
+  "titled": true,
+  "fields": {
+   "invoice_number": "INV-76369",
+   "invoice_date": "07/08/2026",
+   "seller": "Mekong Agri Trading JSC",
+   "buyer": "Harbourside Fresh Pty Ltd",
+   "currency": "EUR",
+   "total_amount": "1,222.86",
+   "incoterm": "FOB",
+   "hs_code": "0813.10"
+  }
+ },
+ {
+  "id": "B00-02",
+  "label": "packing_list",
+  "titled": true,
+  "fields": {
+   "packing_list_number": "PL-37446",
+   "invoice_number": "INV-76369",
+   "total_packages": "458",
+   "gross_weight_kg": "5115.6",
+   "net_weight_kg": "4902.3",
+   "container_number": "TGHU5151370"
+  }
+ },
+ {
+  "id": "B00-03",
+  "label": "bill_of_lading",
+  "titled": true,
+  "fields": {
+   "bl_number": "ONEY96150123",
+   "shipper": "Mekong Agri Trading JSC",
+   "consignee": "Harbourside Fresh Pty Ltd",
+   "vessel": "ONE HARMONY",
+   "voyage": "499W",
+   "port_of_loading": "Izmir",
+   "port_of_discharge": "Adelaide",
+   "container_number": "TGHU5151370"
+  }
+ },
+ {
+  "id": "B00-04",
+  "label": "phytosanitary_certificate",
+  "titled": true,
+  "fields": {
+   "certificate_number": "FC969827",
+   "exporter": "Mekong Agri Trading JSC",
+   "consignee": "Harbourside Fresh Pty Ltd",
+   "botanical_name": "Prunus armeniaca",
+   "place_of_origin": "Turkey"
+  }
+ },
+ {
+  "id": "B00-05",
+  "label": "certificate_of_origin",
+  "titled": false,
+  "fields": {
+   "certificate_number": "AU454878",
+   "exporter": "Mekong Agri Trading JSC",
+   "consignee": "Harbourside Fresh Pty Ltd",
+   "country_of_origin": "Turkey",
+   "hs_code": "0813.10"
+  }
+ },
+ {
+  "id": "B01-01",
+  "label": "commercial_invoice",
+  "titled": false,
+  "fields": {
+   "invoice_number": "INV-41634",
+   "invoice_date": "02/08/2026",
+   "seller": "Mekong Agri Trading JSC",
+   "buyer": "Southern Cross Imports Pty Ltd",
+   "currency": "EUR",
+   "total_amount": "67,223.19",
+   "incoterm": "DAP",
+   "hs_code": "0813.10"
+  }
+ },
+ {
+  "id": "B01-02",
+  "label": "packing_list",
+  "titled": false,
+  "fields": {
+   "packing_list_number": "PL-63435",
+   "invoice_number": "INV-41634",
+   "total_packages": "1763",
+   "gross_weight_kg": "37571.4",
+   "net_weight_kg": "34464.1",
+   "container_number": "OOLU8243054"
+  }
+ },
+ {
+  "id": "B01-03",
+  "label": "bill_of_lading",
+  "titled": true,
+  "fields": {
+   "bl_number": "MAEU72441392",
+   "shipper": "Mekong Agri Trading JSC",
+   "consignee": "Southern Cross Imports Pty Ltd",
+   "vessel": "CMA CGM TAGE",
+   "voyage": "826E",
+   "port_of_loading": "Izmir",
+   "port_of_discharge": "Sydney",
+   "container_number": "OOLU8243054"
+  }
+ },
+ {
+  "id": "B01-04",
+  "label": "phytosanitary_certificate",
+  "titled": false,
+  "fields": {
+   "certificate_number": "CO866763",
+   "exporter": "Mekong Agri Trading JSC",
+   "consignee": "Southern Cross Imports Pty Ltd",
+   "botanical_name": "Prunus armeniaca",
+   "place_of_origin": "Turkey"
+  }
+ },
+ {
+  "id": "B01-05",
+  "label": "certificate_of_origin",
+  "titled": true,
+  "fields": {
+   "certificate_number": "PC714551",
+   "exporter": "Mekong Agri Trading JSC",
+   "consignee": "Southern Cross Imports Pty Ltd",
+   "country_of_origin": "Turkey",
+   "hs_code": "0813.10"
+  }
+ },
+ {
+  "id": "B02-01",
+  "label": "commercial_invoice",
+  "titled": true,
+  "fields": {
+   "invoice_number": "INV-76282",
+   "invoice_date": "10/08/2026",
+   "seller": "Golden Valley Exports Co. Ltd",
+   "buyer": "Southern Cross Imports Pty Ltd",
+   "currency": "USD",
+   "total_amount": "3,632.60",
+   "incoterm": "FOB",
+   "hs_code": "4407.11"
+  }
+ },
+ {
+  "id": "B02-02",
+  "label": "packing_list",
+  "titled": true,
+  "fields": {
+   "packing_list_number": "PL-70114",
+   "invoice_number": "INV-76282",
+   "total_packages": "410",
+   "gross_weight_kg": "7054.1",
+   "net_weight_kg": "6622.4",
+   "container_number": "OOLU4849033"
+  }
+ },
+ {
+  "id": "B02-03",
+  "label": "bill_of_lading",
+  "titled": true,
+  "fields": {
+   "bl_number": "MEDU86081470",
+   "shipper": "Golden Valley Exports Co. Ltd",
+   "consignee": "Southern Cross Imports Pty Ltd",
+   "vessel": "MSC ARIANNA",
+   "voyage": "267S",
+   "port_of_loading": "Gothenburg",
+   "port_of_discharge": "Brisbane",
+   "container_number": "OOLU4849033"
+  }
+ },
+ {
+  "id": "B02-04",
+  "label": "fumigation_certificate",
+  "titled": false,
+  "fields": {
+   "certificate_number": "EX177545",
+   "fumigant": "Methyl bromide",
+   "dosage": "48 g/m3",
+   "exposure_hours": "24",
+   "date_of_fumigation": "11/09/2026",
+   "container_number": "OOLU4849033"
+  }
+ },
+ {
+  "id": "B02-05",
+  "label": "certificate_of_origin",
+  "titled": true,
+  "fields": {
+   "certificate_number": "EX743695",
+   "exporter": "Golden Valley Exports Co. Ltd",
+   "consignee": "Southern Cross Imports Pty Ltd",
+   "country_of_origin": "Sweden",
+   "hs_code": "4407.11"
+  }
+ },
+ {
+  "id": "B02-06",
+  "label": "phytosanitary_certificate",
+  "titled": true,
+  "fields": {
+   "certificate_number": "AU763072",
+   "exporter": "Golden Valley Exports Co. Ltd",
+   "consignee": "Southern Cross Imports Pty Ltd",
+   "botanical_name": "Pinus sylvestris",
+   "place_of_origin": "Sweden"
+  }
+ },
+ {
+  "id": "B03-01",
+  "label": "commercial_invoice",
+  "titled": true,
+  "fields": {
+   "invoice_number": "INV-24735",
+   "invoice_date": "11/07/2026",
+   "seller": "Anatolia Dried Fruits A.S.",
+   "buyer": "Riverina Trading Pty Ltd",
+   "currency": "EUR",
+   "total_amount": "18,264.21",
+   "incoterm": "CFR",
+   "hs_code": "0813.10"
+  }
+ },
+ {
+  "id": "B03-02",
+  "label": "packing_list",
+  "titled": true,
+  "fields": {
+   "packing_list_number": "PL-94837",
+   "invoice_number": "INV-24735",
+   "total_packages": "1453",
+   "gross_weight_kg": "21595.9",
+   "net_weight_kg": "20539.0",
+   "container_number": "TGHU6646257"
+  }
+ },
+ {
+  "id": "B03-03",
+  "label": "bill_of_lading",
+  "titled": true,
+  "fields": {
+   "bl_number": "MAEU44687811",
+   "shipper": "Anatolia Dried Fruits A.S.",
+   "consignee": "Riverina Trading Pty Ltd",
+   "vessel": "MAERSK KOWLOON",
+   "voyage": "398N",
+   "port_of_loading": "Izmir",
+   "port_of_discharge": "Adelaide",
+   "container_number": "TGHU6646257"
+  }
+ },
+ {
+  "id": "B03-04",
+  "label": "fumigation_certificate",
+  "titled": true,
+  "fields": {
+   "certificate_number": "FC401549",
+   "fumigant": "Methyl bromide",
+   "dosage": "48 g/m3",
+   "exposure_hours": "24",
+   "date_of_fumigation": "16/09/2026",
+   "container_number": "TGHU6646257"
+  }
+ },
+ {
+  "id": "B03-05",
+  "label": "phytosanitary_certificate",
+  "titled": true,
+  "fields": {
+   "certificate_number": "PC794914",
+   "exporter": "Anatolia Dried Fruits A.S.",
+   "consignee": "Riverina Trading Pty Ltd",
+   "botanical_name": "Prunus armeniaca",
+   "place_of_origin": "Turkey"
+  }
+ },
+ {
+  "id": "B04-01",
+  "label": "commercial_invoice",
+  "titled": false,
+  "fields": {
+   "invoice_number": "INV-65704",
+   "invoice_date": "10/08/2026",
+   "seller": "Mekong Agri Trading JSC",
+   "buyer": "Kookaburra Home Furnishings Pty Ltd",
+   "currency": "EUR",
+   "total_amount": "7,395.18",
+   "incoterm": "CFR",
+   "hs_code": "0805.10"
+  }
+ },
+ {
+  "id": "B04-02",
+  "label": "packing_list",
+  "titled": true,
+  "fields": {
+   "packing_list_number": "PL-47824",
+   "invoice_number": "INV-65704",
+   "total_packages": "998",
+   "gross_weight_kg": "9768.3",
+   "net_weight_kg": "8767.7",
+   "container_number": "CMAU1353139"
+  }
+ },
+ {
+  "id": "B04-03",
+  "label": "bill_of_lading",
+  "titled": false,
+  "fields": {
+   "bl_number": "MAEU58615632",
+   "shipper": "Mekong Agri Trading JSC",
+   "consignee": "Kookaburra Home Furnishings Pty Ltd",
+   "vessel": "COSCO LIBRA",
+   "voyage": "322N",
+   "port_of_loading": "Valencia",
+   "port_of_discharge": "Sydney",
+   "container_number": "CMAU1353139"
+  }
+ },
+ {
+  "id": "B04-04",
+  "label": "fumigation_certificate",
+  "titled": false,
+  "fields": {
+   "certificate_number": "PC775722",
+   "fumigant": "Sulfuryl fluoride",
+   "dosage": "1500 g-h/m3",
+   "exposure_hours": "24",
+   "date_of_fumigation": "27/08/2026",
+   "container_number": "CMAU1353139"
+  }
+ },
+ {
+  "id": "B05-01",
+  "label": "commercial_invoice",
+  "titled": false,
+  "fields": {
+   "invoice_number": "INV-60119",
+   "invoice_date": "27/07/2026",
+   "seller": "Cascade Orchards LLC",
+   "buyer": "Kookaburra Home Furnishings Pty Ltd",
+   "currency": "AUD",
+   "total_amount": "43,149.21",
+   "incoterm": "DAP",
+   "hs_code": "0904.11"
+  }
+ },
+ {
+  "id": "B05-02",
+  "label": "packing_list",
+  "titled": true,
+  "fields": {
+   "packing_list_number": "PL-83215",
+   "invoice_number": "INV-60119",
+   "total_packages": "1677",
+   "gross_weight_kg": "25254.6",
+   "net_weight_kg": "22729.8",
+   "container_number": "MSKU2038146"
+  }
+ },
+ {
+  "id": "B05-03",
+  "label": "bill_of_lading",
+  "titled": true,
+  "fields": {
+   "bl_number": "MAEU13424936",
+   "shipper": "Cascade Orchards LLC",
+   "consignee": "Kookaburra Home Furnishings Pty Ltd",
+   "vessel": "CMA CGM TAGE",
+   "voyage": "782N",
+   "port_of_loading": "Colombo",
+   "port_of_discharge": "Brisbane",
+   "container_number": "MSKU2038146"
+  }
+ },
+ {
+  "id": "B05-04",
+  "label": "phytosanitary_certificate",
+  "titled": true,
+  "fields": {
+   "certificate_number": "FC750906",
+   "exporter": "Cascade Orchards LLC",
+   "consignee": "Kookaburra Home Furnishings Pty Ltd",
+   "botanical_name": "Piper nigrum",
+   "place_of_origin": "Sri Lanka"
+  }
+ },
+ {
+  "id": "B05-05",
+  "label": "certificate_of_origin",
+  "titled": true,
+  "fields": {
+   "certificate_number": "EX322197",
+   "exporter": "Cascade Orchards LLC",
+   "consignee": "Kookaburra Home Furnishings Pty Ltd",
+   "country_of_origin": "Sri Lanka",
+   "hs_code": "0904.11"
+  }
+ },
+ {
+  "id": "B06-01",
+  "label": "commercial_invoice",
+  "titled": false,
+  "fields": {
+   "invoice_number": "INV-94446",
+   "invoice_date": "09/08/2026",
+   "seller": "Lanka Spice Mills (Pvt) Ltd",
+   "buyer": "Bluegum Food Distributors Pty Ltd",
+   "currency": "USD",
+   "total_amount": "48,904.66",
+   "incoterm": "FOB",
+   "hs_code": "0805.10"
+  }
+ },
+ {
+  "id": "B06-02",
+  "label": "packing_list",
+  "titled": true,
+  "fields": {
+   "packing_list_number": "PL-13169",
+   "invoice_number": "INV-94446",
+   "total_packages": "1289",
+   "gross_weight_kg": "23134.6",
+   "net_weight_kg": "20931.7",
+   "container_number": "TGHU2162297"
+  }
+ },
+ {
+  "id": "B06-03",
+  "label": "bill_of_lading",
+  "titled": true,
+  "fields": {
+   "bl_number": "ONEY49383924",
+   "shipper": "Lanka Spice Mills (Pvt) Ltd",
+   "consignee": "Bluegum Food Distributors Pty Ltd",
+   "vessel": "EVER GIVEN II",
+   "voyage": "284S",
+   "port_of_loading": "Valencia",
+   "port_of_discharge": "Brisbane",
+   "container_number": "TGHU2162297"
+  }
+ },
+ {
+  "id": "B06-04",
+  "label": "fumigation_certificate",
+  "titled": false,
+  "fields": {
+   "certificate_number": "FC447118",
+   "fumigant": "Sulfuryl fluoride",
+   "dosage": "1500 g-h/m3",
+   "exposure_hours": "24",
+   "date_of_fumigation": "23/08/2026",
+   "container_number": "TGHU2162297"
+  }
+ },
+ {
+  "id": "B07-01",
+  "label": "commercial_invoice",
+  "titled": true,
+  "fields": {
+   "invoice_number": "INV-70890",
+   "invoice_date": "24/09/2026",
+   "seller": "Sierra Citrus Cooperativa",
+   "buyer": "Bluegum Food Distributors Pty Ltd",
+   "currency": "AUD",
+   "total_amount": "30,939.12",
+   "incoterm": "EXW",
+   "hs_code": "0802.31"
+  }
+ },
+ {
+  "id": "B07-02",
+  "label": "packing_list",
+  "titled": false,
+  "fields": {
+   "packing_list_number": "PL-11085",
+   "invoice_number": "INV-70890",
+   "total_packages": "1329",
+   "gross_weight_kg": "28495.2",
+   "net_weight_kg": "26911.3",
+   "container_number": "MSKU1073801"
+  }
+ },
+ {
+  "id": "B07-03",
+  "label": "bill_of_lading",
+  "titled": true,
+  "fields": {
+   "bl_number": "MAEU13721938",
+   "shipper": "Sierra Citrus Cooperativa",
+   "consignee": "Bluegum Food Distributors Pty Ltd",
+   "vessel": "CMA CGM TAGE",
+   "voyage": "874W",
+   "port_of_loading": "Oakland",
+   "port_of_discharge": "Sydney",
+   "container_number": "MSKU1073801"
+  }
+ },
+ {
+  "id": "B07-04",
+  "label": "phytosanitary_certificate",
+  "titled": true,
+  "fields": {
+   "certificate_number": "FC877459",
+   "exporter": "Sierra Citrus Cooperativa",
+   "consignee": "Bluegum Food Distributors Pty Ltd",
+   "botanical_name": "Juglans regia",
+   "place_of_origin": "United States"
+  }
+ },
+ {
+  "id": "B07-05",
+  "label": "certificate_of_origin",
+  "titled": true,
+  "fields": {
+   "certificate_number": "AU927046",
+   "exporter": "Sierra Citrus Cooperativa",
+   "consignee": "Bluegum Food Distributors Pty Ltd",
+   "country_of_origin": "United States",
+   "hs_code": "0802.31"
+  }
+ },
+ {
+  "id": "B08-01",
+  "label": "commercial_invoice",
+  "titled": true,
+  "fields": {
+   "invoice_number": "INV-23089",
+   "invoice_date": "17/07/2026",
+   "seller": "Cascade Orchards LLC",
+   "buyer": "Riverina Trading Pty Ltd",
+   "currency": "EUR",
+   "total_amount": "10,213.26",
+   "incoterm": "EXW",
+   "hs_code": "9403.60"
+  }
+ },
+ {
+  "id": "B08-02",
+  "label": "packing_list",
+  "titled": true,
+  "fields": {
+   "packing_list_number": "PL-45982",
+   "invoice_number": "INV-23089",
+   "total_packages": "289",
+   "gross_weight_kg": "5973.2",
+   "net_weight_kg": "5356.5",
+   "container_number": "CMAU5583718"
+  }
+ },
+ {
+  "id": "B08-03",
+  "label": "bill_of_lading",
+  "titled": true,
+  "fields": {
+   "bl_number": "MAEU33706122",
+   "shipper": "Cascade Orchards LLC",
+   "consignee": "Riverina Trading Pty Ltd",
+   "vessel": "COSCO LIBRA",
+   "voyage": "844N",
+   "port_of_loading": "Hamburg",
+   "port_of_discharge": "Brisbane",
+   "container_number": "CMAU5583718"
+  }
+ },
+ {
+  "id": "B08-04",
+  "label": "certificate_of_origin",
+  "titled": false,
+  "fields": {
+   "certificate_number": "PC952782",
+   "exporter": "Cascade Orchards LLC",
+   "consignee": "Riverina Trading Pty Ltd",
+   "country_of_origin": "Germany",
+   "hs_code": "9403.60"
+  }
+ },
+ {
+  "id": "B08-05",
+  "label": "fumigation_certificate",
+  "titled": false,
+  "fields": {
+   "certificate_number": "EX994214",
+   "fumigant": "Sulfuryl fluoride",
+   "dosage": "1500 g-h/m3",
+   "exposure_hours": "24",
+   "date_of_fumigation": "22/08/2026",
+   "container_number": "CMAU5583718"
+  }
+ },
+ {
+  "id": "B09-01",
+  "label": "commercial_invoice",
+  "titled": true,
+  "fields": {
+   "invoice_number": "INV-25096",
+   "invoice_date": "02/08/2026",
+   "seller": "Cascade Orchards LLC",
+   "buyer": "Wattle & Co Wholesale Pty Ltd",
+   "currency": "USD",
+   "total_amount": "13,328.84",
+   "incoterm": "CFR",
+   "hs_code": "4407.11"
+  }
+ },
+ {
+  "id": "B09-02",
+  "label": "packing_list",
+  "titled": true,
+  "fields": {
+   "packing_list_number": "PL-97695",
+   "invoice_number": "INV-25096",
+   "total_packages": "526",
+   "gross_weight_kg": "11039.2",
+   "net_weight_kg": "10108.9",
+   "container_number": "TGHU9416753"
+  }
+ },
+ {
+  "id": "B09-03",
+  "label": "bill_of_lading",
+  "titled": true,
+  "fields": {
+   "bl_number": "MAEU75999823",
+   "shipper": "Cascade Orchards LLC",
+   "consignee": "Wattle & Co Wholesale Pty Ltd",
+   "vessel": "MSC ARIANNA",
+   "voyage": "407N",
+   "port_of_loading": "Gothenburg",
+   "port_of_discharge": "Fremantle",
+   "container_number": "TGHU9416753"
+  }
+ },
+ {
+  "id": "B09-04",
+  "label": "fumigation_certificate",
+  "titled": true,
+  "fields": {
+   "certificate_number": "PC620483",
+   "fumigant": "Methyl bromide",
+   "dosage": "48 g/m3",
+   "exposure_hours": "24",
+   "date_of_fumigation": "15/07/2026",
+   "container_number": "TGHU9416753"
+  }
+ },
+ {
+  "id": "B09-05",
+  "label": "certificate_of_origin",
+  "titled": true,
+  "fields": {
+   "certificate_number": "EX726109",
+   "exporter": "Cascade Orchards LLC",
+   "consignee": "Wattle & Co Wholesale Pty Ltd",
+   "country_of_origin": "Sweden",
+   "hs_code": "4407.11"
+  }
+ }
+]

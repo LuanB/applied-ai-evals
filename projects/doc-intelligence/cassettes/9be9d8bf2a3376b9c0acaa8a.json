@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-104",
+  "markdown": false
+ },
+ "response": {
+  "content": "Proposed Budget Smoking Behavior Feasibility Study\n1. Purchase of small primates $400\n2. Special laboratory equipment 300\n3. Maintenance of animals 200\n4. Library research (graduate student) 700\n5. Overhead (53.72% of item 4) 376\nEstimate $1,976\nRounded\n$2,000\nCOR TI 12916",
+  "pages": 1,
+  "fields": {}
+ }
+}

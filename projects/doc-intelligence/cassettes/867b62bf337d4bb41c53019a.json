@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-114",
+  "markdown": false
+ },
+ "response": {
+  "content": "Invoice\nRemit To: Clarion Marketing and Communications P.O. Box 77204 Detroit, MI 48273\nClarion Marketing and Communication 340 Pemberwick Road Greenwich, Connecticut 06831\n203.531.3600 FAX: 203.532.0116\nAPPROVALS\nDLU 12/16\nvig. 2/17 R-65 00065\nClarion\nJanuary 27, 1993\nMr. Charles Brown\nProduct Manager, Misty\nThe American Tobacco Company Six Stamford Forum P.O. Box 10380 Stamford, CT 06904-2380\nInvoice #01-0273 Job #DAM-M-4781, 4998ACCOUNT #\nHIS-DRM-PRO\nMisty Look Book - Data Entry Processing\nData Entry \"Look Book\" Requests (4,384 pcs. @ $470.60/M)\n$2,063.11\nOutput labvels for fulfillment\n58.82\nProgramming for data entry\n346.48\nManagement Fee covering supervision of data entry and reporting\n- A. Kominsky (19.75 hrs.)\n1,659.00\nMisc. (copies, freight, faxes, etc.)\n317.44\n$4,444.85\nConn. Tax - 6% (On $1659.00)\n99.54\nTotal Due & Payable Upon Receipt\n$4,544.39\n(As per ATCo. authorization R-65/Misty Trial #4 Direct Marketing)\nPlease remit to: Clarion Marketing and Communications, P.O. Box 77204, Detroit, MI 48278",
+  "pages": 1,
+  "fields": {}
+ }
+}

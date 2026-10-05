@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B09-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# NATIONAL PLANT PROTECTION ORGANIZATION OF TURKEY\n\n\n## PHYTOSANITARY CERTIFICATE\n\nNo .:\n\nEX867941\n\nName of exporter:\n\nGolden Valley Exports Co. Ltd\n\nDeclared consignee:\n\nSouthern Cross Imports Pty Ltd\n\nBotanical name of plants:\n\nPrunus armeniaca:\n\nPlace of origin:\n\nTurkey\n\nDeclared means of conveyanceDNE HARMONY\n\nPoint of entry:\n\nFremantle\n\nThe plants or plant products described herein have been inspected and are'\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

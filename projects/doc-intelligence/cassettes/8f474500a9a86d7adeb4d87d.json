@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B04-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\nBILL OF LADING\nB/L No .:\n\u00b7ONEY17833133\nShipper:\n.Lanka Spice Mills (Pvt) Ltd\nConsignee:\nRiverina Trading Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nMSC ARIANNA / 669N\nPort of loading:\nIzmir\nPort of discharge:\nSydney\nContainer / Seal;\nTGHU4492083 / SL309353\n1213 PACKAGES SAID TO CONTAIN DRIED APRICOTS GROSS WEIGHT 26611.9 KGS INVOICE INV-53940",
+  "pages": 1,
+  "fields": {}
+ }
+}

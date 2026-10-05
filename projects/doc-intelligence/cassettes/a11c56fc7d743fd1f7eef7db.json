@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-080",
+  "markdown": false
+ },
+ "response": {
+  "content": "B-100 Stems\n2050140653\nC3",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B14-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\nOCEAN BILL OF LADING\nB/L No .:\nCMDU92109642\nShipper:\nAnatolia Dried Fruits A.S.\nConsign\u00e9e: Kookaburra Home Furnishings Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage: MAERSK KOWLOON / 972E\nPort of loading: Colombo\nPort of discharge:\nSydney\nContainer / Seal:\nOOLU8561634 / SL168221\n1344 PACKAGES SAID TO CONTAIN BLACK PEPPER, WHOLE GROSS WEIGHT 18261.5 KGS INVOICE INV-90180 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

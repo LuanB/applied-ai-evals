@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B04-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\n\n\n# BILL OF LADING\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>ONEY17833133</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Lanka Spice Mills (Pvt) Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Riverina Trading Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>MSC ARIANNA /: 669N</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Izmir</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Sydney</td>\n</tr>\n<tr>\n<td>Container / Seal;</td>\n<td>TGHU4492083 / SL309353</td>\n</tr>\n</table>\n\n\n1213 PACKAGES SAID TO CONTAIN DRIED APRICOTS\nGROSS WEIGHT 26611.9 KGS\nINVOICE INV-53940\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

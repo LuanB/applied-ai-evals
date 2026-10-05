@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-143",
+  "markdown": false
+ },
+ "response": {
+  "content": "GENES CONTROLLING METHIONINE DEPENDENCE IN HUMAN CANCER\nRobert M. Hoffman, Ph.D.\nAPPENDIX\nTHE COUNCIL FOR TOBACCO RESEARCH -- U.S.A., INC.\n40032315",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app11-020] (APP 11, paras 11.51\u201311.53, Taking reasonable steps to destroy or deidentify personal information > Destroyi)\n11.51 Where it is not possible for an organisation to irretrievably destroy personal information held in electronic format, reasonable steps to destroy it would include putting the personal information \u2018beyond use\u2019. However, an organisation could instead consider whether de-identifying the data would be appropriate (see paragraphs 11.54 \u201311.58 below) and if so, take reasonable steps to de-identify the personal information.\n11.52 Personal information is \u2018beyond use\u2019 if the organisation:\nis not able, and will not attempt, to use or disclose the personal information\ncannot give any other entity access to the personal information\nsurrounds the personal information with appropriate technical, physical and organisational security. This should include, at a minimum, access controls including logs and audit trails, and\ncommits to take reasonable steps to irretrievably destroy the personal information if, or when, this becomes possible.\n11.53 It is expected that only in very limited circumstances would it not be possible for an organisation to destroy personal information held in electronic format. For example, where technical reasons may make it impossible to irretrievably destroy the personal information without also irretrievably destroying other information held with that personal information, which the entity is required to retain.\n\n[app5-010] (APP 5, paras 5.18\u20135.20, Matters about which an individual must be notified or made aware > The consequen)\n5.18 The matter set out in APP 5.2(e) is the main consequences (if any) for the individual if all or some of the personal information is not collected by the APP entity.\n5.19 An APP entity is not required to list all possible or remote consequences or those that would be obvious to a reasonable person. Instead, it should describe significant consequences that could be expected to result. If the individual can avoid or lessen those consequences by providing some but not other personal information, this should be explained.\n5.20 The following are given as examples of consequences that may result if personal information is not collected:\nan application for a licence, benefit, allowance or concession cannot be processed\nan APP entity cannot properly investigate or resolve an individual\u2019s complaint\na different level of service will be provided to the individual. For example, the individual may not be eligible to purchase a discounted flight without providing personal information about a medical emergency in the individual\u2019s family.\n\n[app11-009] (APP 11, paras 11.22\u201311.24, What are the security considerations? > Loss)\n11.22 \u2018Loss\u2019 of personal information covers the accidental or inadvertent loss of personal information held by an APP entity. This includes when an APP entity:\nphysically loses personal information, (including hard copy documents, computer equipment or portable storage devices containing personal information), for example, by leaving it in a public place, or\nelectronically loses personal information, such as failing to keep adequate backups of personal information in the event of a systems failure.\n11.23 Loss may also occur as a result of theft following unauthorised access or modification of personal information or as a result of natural disasters such as floods, fires or power outages.\n11.24 However, it does not apply to intentional destruction or de-identification of that personal information that is done in accordance with the APPs.\n\n[app3-009] (APP 3, paras 3.24\u20133.27, Collecting for an APP entity\u2019s \u2018functions or activities\u2019 > Collecting personal i)\n3.24 An APP entity may collect personal information that is \u2018reasonably necessary\u2019 for a function or activity of the entity (APP 3.1 and APP 3.2). [14] An APP entity may collect sensitive information with consent where the sensitive information is \u2018reasonably necessary\u2019 for a function or activity of the entity (APP 3.3).\n3.25 The \u2018reasonably necessary\u2019 test is an objective test: whether a reasonable person who is properly informed would agree that the collection is necessary. It is the responsibility of an APP entity to be able to justify that the particular collection is reasonably necessary. In the context of the Privacy Act, it would not be sufficient if the collection is merely helpful, desirable or convenient. \u2018Reasonably necessary\u2019 is discussed further in Chapter B (Key concepts).\n3.26 Proportionality is implicit in this \u2018reasonably necessary\u2019 requirement, and requires entities to take a data minimisation approach. [15] Data collected should be relevant, minimal, and not excessive. Data minimisation is an important risk mitigation measure and represents best practice for APP entities.\n3.27 Factors relevant to determining whether a collection of personal information is reasonably necessary for a function or activity include:\nthe primary purpose of collection (\u2018purpose\u2019 is discussed further in Chapter B (Key concepts))\nhow the personal information will be used in undertaking a function or activity of the APP entity (for example, in most circumstances collection on the basis that personal information could become necessary for a function or activity in the future, would not be reasonably necessary. This is distinct from collecting personal information for a foreseeable event that may never occur if that collection is reasonably necessary for a function or activity (see Example B below). It is also distinct from collecting personal information for a proposed function and activity for which there are established plans\nwhether the entity could undertake the function or activity without collecting that personal information, or by collecting a lesser amount of personal information\nwhether the collection is proportionate, which involves balancing the privacy impacts resulting from the collection against the benefits gained, with reference to the relevant function or activity.\nExample A: A delivery company must verify the residency status of its new couriers through the onboarding process. It gives its new couriers two options: to present their identity documents (such as passport or birth certificate) in person at one of their corporate offices ahead of their start date, or to verify their identity document online using a secure identity verification service. Regardless of which option the courier picks, the delivery company never collects or retains the identity document itself or any details from the document. It simply has a checkbox which is ticked when the residency status has been verified via either method.\n\n[app1-006] (APP 1, paras 1.15\u20131.21, Developing an APP Privacy Policy > Information that must be included in an APP P)\n1.15 APP 1.4 contains a non-exhaustive list of information that an APP entity must include in its APP Privacy Policy:\nthe kinds of personal information collected and held by the entity (APP 1.4(a))\nhow personal information is collected and held (APP 1.4(b))\nthe purposes for which personal information is collected, held, used and disclosed (APP 1.4(c))\nhow an individual may access their personal information and seek its correction (APP 1.4(d))\nhow an individual may complain if the entity breaches the APPs or any registered binding APP code, and how the complaint will be handled (APP 1.4(e)), and\nwhether the entity is likely to disclose personal information to overseas recipients (APP 1.4(f)), and if so, the countries in which such recipients are likely to be located if it is practicable to specify those countries in the policy (APP 1.4(g)).\n1.16 Entities must also include information if it arranges for a computer program to use personal information to make, or do a thing that is substantially and directly related to making, a decision, that could reasonably be expected to significantly affect the rights or interests of an individual (APP 1.7-1.9).\n1.17 Further guidance is set out below.\n1.18 An APP Privacy Policy must describe in general terms the kinds of personal information an APP entity usually collects and holds (APP 1.4(a)). The terms \u2018collects\u2019 and \u2018holds\u2019 are discussed in Chapter B (Key concepts). For example, the policy may list personal information holdings as \u2018contact details\u2019, \u2018employment history\u2019, \u2018educational qualifications\u2019 and \u2018complaint details\u2019.\n1.19 \u2018Sensitive information\u2019 collected or held by the entity could be separately listed (\u2018sensitive information\u2019 is defined in s 6(1) and discussed in Chapter B (Key concepts)). For example, a policy may list sensitive information relating to \u2018health information about an individual\u2019, \u2018racial or ethnic origin\u2019, \u2018criminal records\u2019, \u2018religious affiliation\u2019 and \u2018political opinions.\u2019\n1.20 An APP Privacy Policy must explain an APP entity\u2019s usual approach to collecting personal information (APP 1.4(b)). For example, the policy may explain whether personal information is collected directly from individuals or from list purchases, competitions, or referrals from individuals or other entities.\n1.21 The policy must describe an APP entity\u2019s usual approach to holding personal information. This should include how the entity stores and secures personal information. For example, the policy may explain that personal information is stored by a third party data storage provider, or is combined or linked to other information held about an individual. The description of security measures should not provide details that jeopardise the effectiveness of those measures.\n\nQuestion: If a company cannot permanently erase personal data held electronically, what is it expected to do instead?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SgERaQKoNweNEFmCPU8rwpZDag",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"If a company cannot irretrievably destroy personal information held electronically, it is expected to take reasonable steps to put the personal information 'beyond use', which includes not using or disclosing the information, preventing access by others, securing it with appropriate controls, and committing to destroy it when possible. Alternatively, the company could consider de-identifying the data if appropriate and take reasonable steps to do so.\",\"citations\":[\"app11-020\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089402,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 98,
+   "prompt_tokens": 2079,
+   "total_tokens": 2177,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 36,
+    "engine_ttlt_ms": 776,
+    "pre_inference_ms": 88,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 558,
+    "service_ttlt_ms": 1280,
+    "user_visible_ttft_ms": 470
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927095522-7b977cfa-default-r0-dp0-default"
+  }
+ }
+}

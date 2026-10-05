@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B08-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\nBILL OF LADING\nB/L No .:\nMAEU33706122\nShipper:\nCascade Orchards LLC\nConsignee:\nRiverina Trading Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCOSCO LIBRA / 844N\nPort of loading:\nHamburg\nPort of discharge:\nBrisbane\nContainer / Seal:\nCMAU5583718 / SL595510\n289 PACKAGES SAID TO CONTAIN WOODEN DINING CHAIRS GROSS WEIGHT 5973.2 KGS INVOICE INV-23089\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

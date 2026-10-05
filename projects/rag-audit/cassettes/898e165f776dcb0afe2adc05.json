@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[b-001] (B, paras B.2\u2013B.7, Key concepts A to D > APP entity)\nB.2 An \u2018APP entity\u2019 is defined to be an agency or organisation (s 6(1)).\nB.3 An \u2018organisation\u2019 is defined to be:\nan individual (including a sole trader)\na body corporate\na partnership\nany other unincorporated association, or\na trust.\nunless it is a small business operator, registered political party, State or Territory authority or a prescribed instrumentality of a State (s 6C).\nB.4 The following terms are also defined in the Privacy Act: \u2018small business operator\u2019 (s 6D), \u2018registered political party\u2019 (s 6(1)) and \u2018State or Territory authority\u2019 (s 6C).\nB.5 In general, a small business operator is an individual (including a sole trader), body corporate, partnership, unincorporated association or trust that has an annual turnover of $3,000,000 or less for a financial year, unless an exception applies (s 6D). If an exception applies this kind of business may be an organisation. The exceptions include businesses that:\nprovide a health service and hold health information other than in an employee record\ndisclose personal information about another individual for a benefit, service or advantage, or provide a benefit, service or advantage to collect personal information about another individual from anyone else, unless they do so with the consent of the individual or are required or authorised by or under legislation to do so\nare contracted service providers for a Commonwealth contract (s 6D(4)).\nB.6 Following are two examples of how the second exception may apply:\nAn example of an entity that discloses personal information for a benefit, service or advantage is an entity that sells a list of personal information to another entity so that the other entity can use that information for the purpose of direct marketing.\nAn example of an entity that provides a benefit, service or advantage to collect personal information is a lobby group that pays another entity to collect information about the political preferences of an individual.\nB.7 A non-APP entity may be treated as an organisation (and therefore as an APP entity) in certain circumstances, for example, a small business operator that is related to an organisation covered by the Privacy Act (s 6D(9)), an entity that chooses to be treated as an organisation (s 6EA) or a small business operator that is accredited under the Consumer Data Right System under Part IVD of the Competition and Consumer Act 2010 (s 6E(1D)). Also, some small business operators are treated as organisations (and therefore an APP entity) in relation to the following activities they carry out:\n\n[b-003] (B, paras B.10\u2013B.16, Key concepts A to D > Australian link)\nB.10 The APPs extend to an act done, or practice engaged in, outside Australia and the external Territories by an organisation, or small business operator, that has an Australian link (s 5B(1A)).\nB.11 An organisation or small business operator has an Australian link where it is:\nan Australian citizen or a person whose continued presence in Australia is not subject to a legal time limitation\na partnership formed, or a trust created, in Australia or an external Territory\na body corporate incorporated in Australia or an external Territory, or\nan unincorporated association that has its central management and control in Australia or an external Territory (s 5B(2)).\nB.12 An organisation that does not fall within one of those categories will also have an Australian link where it carries on business in Australia or an external Territory (s 5B(3)(b)).\nB.13 The phrase \u2018carries on business in Australia\u2019 in s 5B(3)(b) is not defined in the Privacy Act. However, it arises in other areas of law, including corporations and consumer law. Guidance may be drawn from judicial consideration of the phrase in those contexts.\nB.14 The two elements \u2014 \u2018carries on business\u2019 and \u2018in Australia\u2019 \u2014 are connected but can be considered separately. Australian courts have held that both are questions of fact. [4] An assessment should be made having regard to all relevant circumstances, particularly the nature of the enterprise conducted by an entity, and the particular Act being applied. [5] In this instance, it is the Privacy Act being applied.\nB.15 The general law concept of \u2018carrying on business\u2019 has been said to \u2018generally involve conducting some form of commercial enterprise, systematically and regularly with a view to profit\u2019 [6] ; or to embrace \u2018activities undertaken as a commercial enterprise in the nature of a going concern, that is, activities engaged in for the purpose of profit on a continuous and repetitive basis\u2019. [7]\nB.16 The focus of those definitions upon conducting or establishing a commercial enterprise for the purpose of profit is important. Nevertheless, a necessary modification of the concept in the context of the Privacy Act is that the Act can apply to a non-profit entity that is an \u2018organisation\u2019 as defined in s 6C(1). As to those entities, the more important element may be the repetition of commercial acts on a systematic or continuing basis as part of the activities of the entity.\n\n[b-004] (B, paras B.17\u2013B.20, Key concepts A to D > Australian link)\nB.17 Whether a business is carried on \u2018in Australia\u2019 focusses upon whether activity is undertaken in Australia as part of the entity\u2019s business. There is \u2018a need for some physical activity in Australia through human instrumentalities, being activity that itself forms part of the course of conducting business\u2019. [8] However, as noted in another decision, \u2018provided that there are acts within Australia which are part of the company's business, the company will be doing business in Australia although the bulk of its business is conducted elsewhere and it maintains no office in Australia\u2019. [9]\nB.18 An important consideration in applying this territorial requirement in the context of the Privacy Act is that the Act, though technologically-neutral, operates in an environment where personal information is regularly collected, held, used and disclosed online by organisations that may simultaneously carry on business through the web in many countries. In addition, an object of the Privacy Act is to \u2018promote the protection of the privacy of individuals\u2019 (s 2A(a)), which requires that regard be had to contemporary and practical circumstances.\nB.19 In this context, factors that may be considered in assessing if an entity carries on business in Australia include whether:\nthe entity has a place of business in Australia\npeople who undertake business acts for the entity are located in Australia \u2013 for example, an entity may carry on business in Australia where an agent acting on its behalf carries on its business from some fixed place in Australia [10]\nthe entity has a website that offers goods or services to countries including Australia\nAustralia is one of the countries on the drop-down menu appearing on the entity\u2019s website\nweb content that forms part of carrying on the business, was uploaded by or on behalf of the entity, in Australia\nbusiness or purchase orders are assessed or acted upon in Australia\nthe entity is the registered proprietor of trademarks in Australia. [11]\nB.20 The presence or absence of one of these factors may not be determinative in assessing whether an entity carries on business in Australia. For example, where an entity does not have a place of business in Australia, this does not necessarily mean that it does not carry on business in Australia.\n\n[app4-002] (APP 4, paras 4.5\u20134.9, \u2018Unsolicited\u2019 personal information)\n4.5 All personal information received by an APP entity is either solicited or unsolicited personal information. Section 6(1) defines \u2018solicit\u2019 but does not define \u2018unsolicited\u2019. Therefore, personal information received by an entity that does not fall within the definition of \u2018solicited\u2019 is unsolicited personal information.\n4.6 The term \u2018solicit\u2019 is discussed in Chapter 3 (APP 3), including examples of solicited personal information collected by APP entities. An APP entity solicits personal information if it requests another agency, organisation, individual or small business operator to provide the personal information, or to provide a kind of information in which that personal information is included. A \u2018request\u2019 is an active step taken by an entity to collect information, and may not involve direct communication between the entity and an individual.\n4.7 Applying that definition of \u2018solicit\u2019, unsolicited personal information is personal information that an APP entity receives but has taken no active steps to collect. Examples include:\nmisdirected mail received by an entity\ncorrespondence to Ministers and Government departments from members of the community, or other unsolicited correspondence to an entity\na petition sent to an entity that contains names and addresses\nan employment application sent to an entity on an individual\u2019s own initiative and not in response to an advertised vacancy\na promotional flyer containing personal information, sent to an entity by an individual promoting the individual\u2019s business or services.\n4.8 As a general rule, personal information provided to an APP entity that is additional to the information that has been requested by the entity should be treated as unsolicited personal information. For example, if an individual completes an application form provided by an entity but attaches financial records that have not been requested by the entity, these should be treated as unsolicited personal information. The entity must determine whether it could have collected the personal information under APP 3 (APP 4.1), and deal with the unsolicited personal information as required by either APP 4.3 or 4.4 (see below).\n4.9 In some instances, an APP entity may have difficulty deciding whether personal information it receives falls within the terms of the entity\u2019s request and is therefore solicited personal information. In such circumstances, an entity should focus on the nature of the additional personal information and the connection it has with the entity\u2019s request. Where it is unclear whether the information is solicited or unsolicited personal information, the entity should err on the side of caution and treat the personal information as unsolicited personal information.\n\n[b-018] (B, paras B.80\u2013B.81, Health information > Health service)\nB.80 \u2018Health service\u2019 is defined to mean:\nan activity performed in relation to an individual that is intended or claimed (expressly or otherwise) by the individual or the person performing it: to assess, record, maintain or improve the individual's health, or to diagnose the individual's illness or disability, or to treat the individual's illness or disability or suspected illness or disability, or\nto assess, record, maintain or improve the individual's health, or\nto diagnose the individual's illness or disability, or\nto treat the individual's illness or disability or suspected illness or disability, or\nthe dispensing or prescription of a drug or medicinal preparation by a pharmacist (s 6(1)).\nB.81 The Privacy Act generally applies to all organisations that provide a health service, including an organisation that is a small business. [25] Examples of organisations that provide a health service include:\ntraditional health service providers, such as private hospitals, day surgeries, medical practitioners, pharmacists and allied health professionals\ncomplementary therapists, such as naturopaths and chiropractors\ngyms and weight loss clinics\nchild care centres, private schools and private tertiary educational institutions.\n\nQuestion: What annual turnover generally makes a business a small business operator that the Privacy Act does not cover?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SggPLx9ScbQTYfA9xIhl453jgI",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"A small business operator is generally defined as an individual, body corporate, partnership, unincorporated association or trust that has an annual turnover of $3,000,000 or less for a financial year, and such small business operators are generally not covered by the Privacy Act unless exceptions apply.\",\"citations\":[\"b-001\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089402,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 76,
+   "prompt_tokens": 2523,
+   "total_tokens": 2599,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 122,
+    "engine_ttlt_ms": 696,
+    "pre_inference_ms": 110,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 685,
+    "service_ttlt_ms": 1243,
+    "user_visible_ttft_ms": 575
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044527-5ac5cbd3-default-r1-dp0-default"
+  }
+ }
+}

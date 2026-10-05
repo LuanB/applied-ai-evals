@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B07-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "SAFEHOLD QUARANTINE TREATMENTS\nCERTIFICATE OF TREATMENT\nCertificate No .:\nFC269264\nFumigant:\nSulfuryl fluoride\nDosage rate:\n1500 g-h/m3\nExposure period (hrs):\n24\nDate of fumigation:\n09/09/2026\nContainer No .:\nMSCU8477661\nCommodity:\nBlack pepper, whole\nConsignment link:\nB/L MEDU97399860",
+  "pages": 1,
+  "fields": {}
+ }
+}

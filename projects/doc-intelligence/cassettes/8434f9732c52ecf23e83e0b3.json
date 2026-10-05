@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B05-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB 362 Industrial Rd, Turkey\nPACKING LIST\nRef No .:\nPL-41670\nInvoice No .:\nINV-33924\nConsignee;\nHarbourside Fresh Pty Ltd\nContainer:\nCMAU34.35592\nMarks:\nHARBOURSIDE/BRISBANE\nPkgs\nDescription\nNet kg\nGross kg\n1302 Dried apricots\n28118.7 31476.3\nTotal packages:\n1302\nTotal gross weight (kg):\n31476.3\nTotal net weight (kg):\n28118.7",
+  "pages": 1,
+  "fields": {}
+ }
+}

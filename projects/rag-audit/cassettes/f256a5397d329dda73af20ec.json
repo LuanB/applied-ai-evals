@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app12-014] (APP 12, paras 12.40\u201312.41, Refusing to give access under APP 12 \u2014 organisations > The request for access is)\n12.40 A request should not be refused on this ground unless there is a clear and convincing basis for deciding that a request is frivolous or vexatious. It is not a sufficient basis, for example, that a request would cause inconvenience or irritation to an organisation.\n12.41 The following are given as examples of requests that may be treated as frivolous or vexatious:\nRepeated requests for access to personal information that has already been provided to the requester.\nA request that contains offensive or abusive language, or that does not appear to be a genuine request for personal information.\nA repeat request for personal information that an organisation has earlier explained to an individual it does not hold, has been destroyed, or cannot be located after a reasonable search.\nA request made for the apparent purpose of harassing or intimidating the staff of an organisation, or interfering unreasonably with its operations.\n\n[app12-011] (APP 12, paras 12.33\u201312.34, Refusing to give access under APP 12 \u2014 organisations)\n12.33 APP 12.3 lists ten grounds on which an organisation can refuse to give access to personal information. It is nevertheless open to an organisation not to rely on any such ground and to provide access upon request, unless disclosure is prohibited. Before relying on any of these grounds an organisation should consider whether redacting some information would enable access to be provided (for example, redacting personal information about another person).\n12.34 The grounds, which are considered separately below, are:\nthe organisation reasonably believes that giving access would pose a serious threat to the life, health or safety of any individual, or to public health or public safety (APP 12.3(a))\ngiving access would have an unreasonable impact on the privacy of other individuals (APP 12.3(b))\nthe request for access is frivolous or vexatious (APP 12.3(c))\nthe information relates to existing or anticipated legal proceedings between the organisation and the individual, and would not be accessible by the process of discovery in those proceedings (APP 12.3(d))\ngiving access would reveal the intentions of the organisation in relation to negotiations with the individual in such a way as to prejudice those negotiations (APP 12.3(e))\ngiving access would be unlawful (APP 12.3(f))\ndenying access is required or authorised by or under an Australian law or a court/tribunal order (APP 12.3(g))\nthe organisation has reason to suspect that unlawful activity, or misconduct of a serious nature, that relates to the organisation\u2019s functions or activities has been, is being or may be engaged in and giving access would be likely to prejudice the taking of appropriate action in relation to the matter (APP 12.3(h))\ngiving access would be likely to prejudice one or more enforcement related activities conducted by, or on behalf of, an enforcement body (APP 12.3(i))\ngiving access would reveal evaluative information generated within the organisation in connection with a commercially sensitive decision\u2011making process (APP 12.3(j)).\n\n[app12-008] (APP 12, paras 12.25\u201312.26, Refusing to give access under APP 12 \u2014 agencies)\n12.25 An agency is not required by APP 12 to give access to personal information if the agency is required or authorised to refuse access to that information by or under:\nthe FOI Act (APP 12.2(b)(i))\nany other Act of the Commonwealth, or a Norfolk Island enactment, that provides for access by persons to documents (APP 12.2(b)(ii)).\n12.26 The meaning of \u2018required or authorised\u2019 is discussed in Chapter B (Key concepts). In summary, an agency is \u2018required\u2019 to refuse access by an Act that prohibits the disclosure of the personal information; and an agency is \u2018authorised\u2019 to refuse access by an Act that authorises or confers discretion on the agency to refuse a request for access to the personal information.\n\n[app12-003] (APP 12, paras 12.11\u201312.14, Access to \u2018personal information\u2019)\n12.11 APP 12 requires an APP entity to provide access to \u2018personal information\u2019. It does not provide a right of access to other kinds of information. \u2018Personal information\u2019 is defined in s 6(1) as \u2018information or an opinion about an identified individual, or an individual who is reasonably identifiable:\nwhether the information or opinion is true or not, and\nwhether the information or opinion is recorded in a material form or not.\n12.12 Personal information of one individual may also be personal information of another individual. For example:\ninformation in a marriage certificate may be personal information of both parties to the marriage\nan opinion may be personal information of both the subject and the giver of the opinion.\n12.13 APP 12 requires an APP entity to provide access to all of an individual\u2019s personal information it holds, even if that information is also the personal information of another individual, unless a ground to refuse access applies. The grounds are discussed below, and include the ground that giving access would have an unreasonable impact on the privacy of another individual. \u2018Personal information\u2019 is discussed in more detail in Chapter B (Key concepts).\n12.14 As to other requested information that is not personal information:\nIf the APP entity is an organisation, it could consider whether the person has a right of access to that information under other legislation. If not, the organisation may make a discretionary decision either to grant access to that other information or to refuse access.\nIf the entity is an agency, it could consider whether access to that information can be granted under the FOI Act, or on an administrative basis. Before refusing access to that other information, the agency should advise the individual to consider making the request under the FOI Act.\n\n[app12-018] (APP 12, paras 12.48\u201312.49, Refusing to give access under APP 12 \u2014 organisations > Denying access is require)\n12.48 The meaning of \u2018required or authorised by or under an Australian law or a court/tribunal order\u2019 is discussed in Chapter B (Key concepts). This ground applies where an Australian law or court or tribunal order forbids the disclosure of information; or a law or order authorises or confers discretion on an organisation to refuse a request from an individual for access to their personal information. (There is overlap between this ground and the preceding ground \u2018giving access would be unlawful\u2019.)\n12.49 An example of where this ground might apply is a court order providing that an organisation is not required to provide personal information to an individual who is in the care of or is undergoing treatment by the organisation.\n\nQuestion: Can an organisation refuse an access request that is frivolous or vexatious?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SmZuTKYy9rBM7e6wQdN36uFDx6",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, an organisation can refuse an access request if it is frivolous or vexatious, but there must be a clear and convincing basis for this decision. Examples include repeated requests for information already provided, requests with offensive language, or requests made to harass staff.\",\"citations\":[\"app12-014\",\"app12-011\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089408,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 77,
+   "prompt_tokens": 1589,
+   "total_tokens": 1666,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 11,
+    "engine_ttft_ms": 57,
+    "engine_ttlt_ms": 901,
+    "pre_inference_ms": 143,
+    "service_tbt_ms": 11,
+    "service_ttft_ms": 756,
+    "service_ttlt_ms": 1596,
+    "user_visible_ttft_ms": 614
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102744-d420b45c-default-r0-dp0-default"
+  }
+ }
+}

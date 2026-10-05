@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B19-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "TRANS-PACIFIC CARRIERS\nOCEAN BILL OF LADING\nB/L No .:\nMEDU38929507.\nShipper:\nPacific Rim Timber Pte Ltd\nConsignee:\nWattle & Co Wholesale Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nEVER GIVEN II / 586S .\nPort of loading:\nHamburg\nPort of discharge:\nFremantle\nContainer / Seal:\nMSKU9489387 / SL321547\n254 PACKAGES SAID TO CONTAIN WOODEN DINING CHAIRS GROSS WEIGHT 3372.3 KGS INVOICE INV-76393",
+  "pages": 1,
+  "fields": {}
+ }
+}

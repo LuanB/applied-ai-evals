@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-059",
+  "markdown": false
+ },
+ "response": {
+  "content": "3_95.ppt WGO/RPE\nPRIORITY\nStatistical Evaluation\n2050883847",
+  "pages": 1,
+  "fields": {}
+ }
+}

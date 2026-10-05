@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B07-05",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - UNITED STATES\nORIGIN DECLARATION\nCertificate No .:\nAU927046\nExporter:\nSierra Citrus Cooperativa\nConsignee:\nBluegum Food Distributors Pty Ltd\nMeans of transport:\nCMA CGM TAGE from Oakland\nHS heading:\n0802.31\nGoods:\nWalnuts, in shell\nCountry of origin:\nUnited States\nWe certify the goods described in invoice INV-70890 originate in United States.",
+  "pages": 1,
+  "fields": {}
+ }
+}

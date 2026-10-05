@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B05-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "OCEANIC CONTAINER LINE\nSEA WAYBILL\nB/L No .:\nMEDU91747120\nShipper:\nNordic Pine Sawmills AB\nConsignee:\nHarbourside Fresh Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCMA CGM TAGE / 444N\nPort of loading:\nIzmir\nPort of discharge:\nBrisbane\nContainer / Seal:\nCMAU3435592 / SL436599\n1302 PACKAGES SAID TO CONTAIN DRIED APRICOTS GROSS WEIGHT 31476. 3 KGS INVOICE INV-33924 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

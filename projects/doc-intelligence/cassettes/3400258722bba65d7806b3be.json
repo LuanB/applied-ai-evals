@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B00-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\nBILL OF LADING\nB/L No .:\nMAEU15032582\nShipper:\nHanseatic Furniture GmbH\nConsignee:\nWattle & Co Wholesale Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nMSC ARIANNA / 346N\nPort of loading:\nIzmir.\nPort of discharge:\nAdelaide\nContainer / Seal:\nMSKU7135241 / SL148845\n1533 PACKAGES SAID TO CONTAIN DRIED APRICOTS GROSS WEIGHT 14706.2 KGS INVOICE INV-86387 FUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED",
+  "pages": 1,
+  "fields": {}
+ }
+}

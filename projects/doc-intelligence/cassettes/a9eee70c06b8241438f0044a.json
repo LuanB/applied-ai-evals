@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nJERRY W. SHAY\nEducation:\nUniversity of Texas at Austin University of Kansas\nB.A., M.A. 1966, 1969\nPh.D. 1972\nGenetics\nCell Biology\nProfessional Appointments:\n1972-1975 Postdoctoral Fellow (Laboratory of Dr. Keith Porter)\nUniversity of Colorado, Department of Molecular, Cellular and Developmental Biology\n1975-1980 Assistant Professor of Cell Biology, University of Texas Southwestern Medical Center at Dallas\n1980-present Associate Professor of Cell Biology University of Texas Southwestern Medical Center at Dallas\nHonors:\nNIH Research Career Development Award 1978-1983\nRepresentative early publications (of 87 total):\nVeomett, G., Prescott, D., Shay, J. W., and K. R. Porter 1974 Reconstruction of mammalian cells from nuclear and cytoplasmic components separated by treatment with cytochalasin B. Proc. Natl, Acad, Sci. (U.S.A.) 71:5: 1999-2002.\nShay, J. W., K. R. Porter, and D. M. Prescott 1974 The surface morphology and fine structure of CHO cells following enucleation. Proc Natl. Acad, Sci, (U.S.A.) 71: 3059-3063.\nShay, J. W., M. R. Gershenbaum, and K. R. Porter 1975 Enucleation of CHO cells by means of cytochalasin B and centrifugation: The topography of enucleation. Exp. Cell Res. 94: 47-55.\n*Shay, J. W. and M. A. Clark 1977 Morphological studies on the enucleation of colchicine treated L-929 cells. J. Ultrastruct, Res. 58: 155-161.\nShay, J. W., K. R. Porter, and T.C. Krueger 1977 Motile behavior and topography of whole and enucleate mammalian cells on modified substrates. Exp. Cell Res. 105: 1-8.\nShay, J. W. 1977 Selection of reconstituted cells from karyoplasts fused to chloramphenicol resistant cytoplasts. Proc. Natl, Acad. Sci. (U.S.A.) 74: 2461-2464.\n*Shay, J. W., T. T. Peters, and J. W. Fuseler 1978 Cytoplasmic transfer of chloramphenicol-resistance, intracisternal A virus particles, and microtubule organizing centers in mouse tissue culture cells. Cell 14: 835-842.\nShay, J. W. and M. A. Clark 1979 Nuclear control of tumorigenicity in reconstructed cells by PEG-induced fusion of cell fragments. J. Supramolec, Struct, 11: 33-49.\nShay, J. W. and M. A. Clark 1980 A new method for identifying reconstituted cells. Proc. Natl. Acad. Sci.(U.S.A.), 77: 381-384.\nClark, M. A., L. Goldstein, and J. W. Shay 1980 Techniques for purifying L-cell karyoplasts that do not regenerate. Somatic Cell Genetics, 6: 455-464.\nShay, J. W., G. Lorkowski, and M. A. Clark 1981 Suppression of tumorigenicity in cybrids. J. Supramolec. Struct, and Cellular Biochem. 16: 75-82.\nWeide, L. G., M. A. Clark, C. S. Rupert, and J. W. Shay 1982 Detrimental effect of mitochondria on hybrid cell survival. Somatic Cell Genetics 8: 15-21.\nClark, M.A. and J.W. Shay 1982 Mitochondrial transformation of mammalian cells. Nature 295: 605-607. Clark, M. A. and J. W. Shay 1982 Long lived factors that suppress adrenal steroidogenesis Proc, Nat. Acad, Sci. (U.S.A.) 79: 1144-1148.\nFuseler, J. W. and J. W. Shay 1982 The association of desmin with the developing myofibrils of cultured embryonic rat heart myocytes. Developmental Biology 91:448-457.\nWalker, C. and J. W. Shay 1983 The effect of mitochondrial dosage on the transfer of chloramphenicol resistance. Somatic Cell Genetics, 9: 469-476.\nCuthbert, J. A. and J. W. Shay 1983 Microtubules and lymphocyte responses: effect of colchicine and taxol on mitogen-induced human lymphocyte activation and proliferation. J. Cell Physiol, 116: 127- 134.\nShay, J. W. 1983 Cytoplasmic modification of nuclear gene expression. Mol. Cell Biochem. 57: 17-26.\n40043731"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89HmJyuWNtWq9QwDgEbnl0tHrGI",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"resume\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088199,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 9,
+   "prompt_tokens": 1282,
+   "total_tokens": 1291,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 4,
+    "engine_ttft_ms": 32,
+    "engine_ttlt_ms": 76,
+    "pre_inference_ms": 80,
+    "service_tbt_ms": 16,
+    "service_ttft_ms": 490,
+    "service_ttlt_ms": 632,
+    "user_visible_ttft_ms": 410
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260928231934-e7ea5aa7-default-r2-dp0-default"
+  }
+ }
+}

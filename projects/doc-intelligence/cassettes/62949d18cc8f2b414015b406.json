@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B00-05",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - TURKEY\nCertificate No .:\nAU454878\nExporter:\nMekong Agri Trading JSC\nConsignee:\nHarbourside Fresh Pty Ltd\nMeans of transport:\nONE HARMONY from Izmir\nHS heading:\n0813.10\nGoods:\nDried apricots\nCountry of origin:\nTurkey\nWe certify the goods described in invoice INV-76369 originate in Turkey.",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B10-05",
+  "markdown": true
+ },
+ "response": {
+  "content": "# CHAMBER OF COMMERCE - VIETNAM\n\n\n## ORIGIN DECLARATION\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>EX992268</td>\n</tr>\n<tr>\n<td>Exporter:</td>\n<td>Lanka Spice Mills (Pvt) Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Means of transport:</td>\n<td>MSC ARIANNA from Ho Chi Minh City</td>\n</tr>\n<tr>\n<td>HS heading:</td>\n<td>0801.32</td>\n</tr>\n<tr>\n<td>Goods:</td>\n<td>Cashew kernels</td>\n</tr>\n<tr>\n<td>Country of origin:</td>\n<td>Vietnam</td>\n</tr>\n</table>\n\nWe certify the goods described in invoice INV-50762 originate in Vietnam.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

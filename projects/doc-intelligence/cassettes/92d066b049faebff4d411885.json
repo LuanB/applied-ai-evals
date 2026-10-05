@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-101",
+  "markdown": false
+ },
+ "response": {
+  "content": "Attachment A\nGENERAL CONSUMER* July - December 1993 \"Tobacco: Helping Youth Say No\"\nPublication\nApproved Buy\nRecommended Buy\nCost\nWoman's Day\nNov. 5\nSept. 1\n(Oct. 13)\n(Aug. 10)\n$ 58,485\nCirculation: 4,521,050\nParade\nSept. 5\n(Sept. 5)\nSee Decision- Makers Schedule\nCirculation: 36,324,000 1/2 page, 4/c\nSouthern Living\nSept. (Aug. 15)\n(Sept. 25)\n57,205\nCirculation: 2,361,076\nMcCalls **\nSept.\nNov.\n(Aug. 13)\n(Oct. 12)\n66,045\nCirculation: 5,066,849\nFamily Circle **\nOct. 12\nNov. 23\n(Sept. 21)\n(Nov. 2)\n43,596\nCirculation: 5,065,131\nInvestment:\n$ 225,331\nInsertions: 5x\n**\n* Full page, 4/c, except where otherwise noted. Must be purchased in tandem to obtain discount.\nCONFIDENTIAL: MINNESOTA TOBACCO LITIGATION TIMN 427305\nOct.",
+  "pages": 1,
+  "fields": {}
+ }
+}

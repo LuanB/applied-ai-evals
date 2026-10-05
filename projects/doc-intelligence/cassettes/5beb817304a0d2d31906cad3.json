@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B00-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "# CHAMBER OF COMMERCE - TURKEY\n\n\n# CERTIFICATE OF ORIGIN\n\n\n<table>\n<tr>\n<td>Certificate No .:</td>\n<td>FC223514</td>\n</tr>\n<tr>\n<td>Exporter:</td>\n<td>Hanseatic Furniture GmbH</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Wattle &amp; Co Wholesale Pty Ltd</td>\n</tr>\n<tr>\n<td>Means of transport:</td>\n<td>MSC ARIANNA from Izmir</td>\n</tr>\n<tr>\n<td>HS heading:</td>\n<td>0813.10</td>\n</tr>\n<tr>\n<td>Goods:</td>\n<td>Dried apricots</td>\n</tr>\n<tr>\n<td>Country of origin:</td>\n<td>Turkey</td>\n</tr>\n</table>\n\n\nWe certify the goods described in invoice INV-86387 originate in Turkey.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

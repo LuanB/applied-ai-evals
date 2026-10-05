@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nPsychopharmacology (1992) 107:285-289\nPsychopharmacology & Springer-Verlag 1992\nThe mesolimbic dopaminergic system is implicated in the reinforcing effects of nicotine\nWilliam A. Corrigall', Keith B.J. Franklin2, Kathleen M. Coen1, and Paul B.S. Clarke?\n! Neurobiology Section, Addiction Research Foundation, Toronto, Ontario, Canada M5S 2S1\nDepartment of Psychology, McGill University, Montreal, Quebec, Canada H3A 1B!\n\" Department of Pharmacology and Therapeutics, McGill University, Montreal, Quebec, Canada H3G 1Y6\nReceived April 19, 1991 / Final version August 12, 1991\nAbstract. Rats were trained to self-administer nicotine on a fixed-ratio schedule of reinforcement. Infusion of the nicotinic antagonist chlorisondamine into the cerebral ventricles produced a sustained reduction in nicotine self-administration compared to vehicle-treated controls. Lesions of the mesolimbic dopamine system were produced by microinfusion of 6-hydroxydopamine into the nucleus accumbens. Following production of the lesions, nicotine self-administration was markedly re- duced for the 3-week test period; motor impairment did not appear to be responsible. Post mortem analysis of brain tissue showed that the lesion produced a pro- nounced decrease in dopamine content of the nucleus accumbens and the olfactory tubercle, and a small depletion in the striatum. These data demonstrate that the reinforcing effects of nicotine occur within the central nervous system, and that the mesolimbic dopamine projection plays an important role in these effects.\nKey words: Nicotine - Mesolimbic dopamine - Rein- forcement - Nucleus accumbens - Dopamine - 6-Hy- droxydopamine\nThe pharmacology of nicotine has been much studied, but little is known about the neurobiological mechanisms that are responsible for the reinforcing properties of this alkaloid (Corrigall 1991a). Indeed, although there has been a convergence of evidence suggesting that the rein- forcing effects of nicotine result from its action within the central nervous system, a convincing single demonstra- tion of this fact is lacking. Intravenous self-administra- tion of nicotine in animals is attenuated by pre-treatment with mecamylamine, a nicotinic antagonist that is both centrally and peripherally active (Goldberg et al. 1981; Corrigall and Coen 1989), but not by hexamethonium, a nicotinic antagonist which passes the blood-brain bar- rier less readily (Corrigall and Coen 1989). However, this constitutes weak evidence for a central reinforcing effect\nOfprint requesis io : W.A. Corrigall\nof nicotine because it is questionable whether hexame- thonium, in the doses tested, would exert sufficient peripheral blockade in this species (Romano 1981).\nCertain dependence-producing drugs (most notably cocaine and d-amphetamine), when administered system- ically. appear to exert their reinforcing effects through an activation of the brain's mesolimbic dopamine system (Roberts el al. 1980; Pettit et al. 1984; Martin-Iverson et al. 1986; Wisc and Rompre 1989), and the mesolimbic dopamine system does appear to be a target for nicotine. Neuroanatomical mapping techniques indicate that in rat brain, mesolimbic dopaminergie neurons possess nic- otinic receptors at the level of cell bodies and/or den- drites within the ventral tegmental area (VTA), and also in mesolimbic terminal fields (nucleus accumbens. olfac- tory tubercle) (Clarke and Pert 1985: Deutsch et al. 1987; Swanson et al. 1987; Wada et al. 1989). Nicotine directly excites dopaminergic cells of the ventral tegmental area in vitro (Calabresi et al. 1989), and systemic administra- tion of nicoline in vivo increases extracellular concentra- tions of dopamine in the nucleus accumbens terminal field in rats (Imperato et al. 1986). As with psychomotor stimulant drugs such as cocaine and d-amphetamine, an activation of mesolimbic dopamine appears to underlie the locomotor stimulant effect of systemically-adminis- tered nicotine, since this is abolished after neurotoxic lesions of the mesolimbic dopaminergie system (Clarke et al. 1988a); locomotor stimulation can also be produced by focal administration of nicotine into the VTA region (Reavill and Stolerman 1990).\nData such as these raise the possibility that the mesolimbic dopamine system may contribute also to the reinforcing properties of nicotine. This possibility is given even more credence by the recent demonstration that selective dopamine antagonists reduce nicotine self- administration in rats (Corrigall 1991c: Corrigall and Coen 1991). The present study sought to examine two questions. namely. (i) are the reinforcing effects of nico- tine mediated via a direct central action, and (ii) is the mesolimbic dopaminergic projection important to nico- tine reinforcement?\n40021420"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV898Xfa8xRXN9mYh6YTmNirNE0Ka",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"scientific publication\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088190,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 11,
+   "prompt_tokens": 1324,
+   "total_tokens": 1335,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 4,
+    "engine_ttft_ms": 30,
+    "engine_ttlt_ms": 84,
+    "pre_inference_ms": 82,
+    "service_tbt_ms": 13,
+    "service_ttft_ms": 515,
+    "service_ttlt_ms": 660,
+    "user_visible_ttft_ms": 433
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927065411-ef00fbca-default-r2-dp0-default"
+  }
+ }
+}

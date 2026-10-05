@@ -1,0 +1,196 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Extract the requested fields from this shipping document page. Copy each value\nexactly as printed (same spelling, same number format). Use null when a field is not\non the page. Do not infer values from other documents the page refers to."
+   },
+   {
+    "role": "user",
+    "content": "Document type: bill_of_lading\n\nPage (markdown from layout analysis):\n# TRANS-PACIFIC CARRIERS\n\n\n## OCEAN BILL OF LADING\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MAEU35794888</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Lanka Spice Mills (Pvt) Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Southern Cross Imports Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>COSCO LIBRA / 797W</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Ho Chi Minh City</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Sydney</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>CMAU7244107 / SL492396</td>\n</tr>\n</table>\n\n\n888 PACKAGES. SAID TO CONTAIN CASHEW KERNELS\nGROSS WEIGHT 19858.2 KGS\nINVOICE INV-12449\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED\n"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "fields",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "bl_number",
+      "shipper",
+      "consignee",
+      "vessel",
+      "voyage",
+      "port_of_loading",
+      "port_of_discharge",
+      "container_number"
+     ],
+     "properties": {
+      "bl_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "bill of lading number"
+      },
+      "shipper": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "shipper"
+      },
+      "consignee": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "consignee"
+      },
+      "vessel": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "vessel name"
+      },
+      "voyage": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "voyage number"
+      },
+      "port_of_loading": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "port of loading"
+      },
+      "port_of_discharge": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "port of discharge"
+      },
+      "container_number": {
+       "type": [
+        "string",
+        "null"
+       ],
+       "description": "container number (without seal)"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8CDtI92gTp8zEmrKoy4j6BNN1fI",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"bl_number\":\"MAEU35794888\",\"shipper\":\"Lanka Spice Mills (Pvt) Ltd\",\"consignee\":\"Southern Cross Imports Pty Ltd\",\"vessel\":\"COSCO LIBRA\",\"voyage\":\"797W\",\"port_of_loading\":\"Ho Chi Minh City\",\"port_of_discharge\":\"Sydney\",\"container_number\":\"CMAU7244107\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088381,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 72,
+   "prompt_tokens": 497,
+   "total_tokens": 569,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 9,
+    "engine_ttft_ms": 41,
+    "engine_ttlt_ms": 698,
+    "pre_inference_ms": 94,
+    "service_tbt_ms": 9,
+    "service_ttft_ms": 570,
+    "service_ttlt_ms": 1222,
+    "user_visible_ttft_ms": 476
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044527-0b2d4cf6-default-r1-dp0-default"
+  }
+ }
+}

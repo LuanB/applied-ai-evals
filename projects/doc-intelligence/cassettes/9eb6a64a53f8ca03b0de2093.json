@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\ncopy\nTP WORKSHEET\nPage-1\nDATE OF ANALYSIS: 3-23-94\nTIME OF ANALYSIS: 0110 TECH:\nSAMPLE DATE\nSAMPLE ID\nABS. AT 650 nm\nTP CONCN SAMPLE FROM CURVE DILUTION mg/L as P\nTP Reportablo CONCN mg/L as P\n3-23-94\n0.050 mg/L as P Std\n10.080\n-\n0.100 mg/L as P Std\n0.300 mg/L as P Std\n0.120\n-\nV\n0.600 mg/L as P Std\n0.239\n3 23-14\n0.250 mg/L as P Control\n0.098. 0.243 Confidential\n0.243\n3-22-14\nFinal Effluent 24 hr. Comp.\n0, 167 : 0,41 philip Morris v.ABO\n1500\n1045\n3-22-94\nFinal Effluent 24 hr. Comp.\n0,169 0420\n200/500\n21.04 1050\n3-23-94\nFinal Effluent 24 hr. Comp. 0.20 ppm Spiked\n0.254 : 0.634\nRileted To 200/500 Them spiked\n1\n3-23-94\nBLANK\nAuto Zero\n-\n3-23-94\n0.600 mg/L as P Std\nAuto Conc.\n15/50\n1.09\nPri. Eff. 24 hr. Comp.\n0.223\n0.5/50\n22,3\nL-1 Inf. 24 hr. Comp.\n0.370\n0.3/50\n61.7\nL-2 Inf. 24 hr. Comp.\n0.280\n0.3/50\n46.7\nV\nL-3 Inf. 24 hr. Comp.\n0.201\n0.5/50\n20.1\n% R = 100\n( Xs - Xu ) / K\n=\n(0.634-0.417)=0,20\nXs = 0.634\n-\n108.5 %\nX 4: 0.419199.6:100=\n0.417\nK= 0.400 mlx 50mg /L\nFile name: AATPSpWS.wkl\n100 ml\n2030140884\n= 0.200 mg/L\n-\nBLANK\nAuto Zero\n0.040\n-\nJ-22-94\nSec. Eff. 24 hr. Comp.\n0,327\n110"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV893ZqlLUP32J3rS0ZSB1MeQhxvG",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"scientific report\",\"confidence\":\"medium\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088185,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 11,
+   "prompt_tokens": 747,
+   "total_tokens": 758,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 49,
+    "engine_ttlt_ms": 124,
+    "pre_inference_ms": 87,
+    "service_tbt_ms": 15,
+    "service_ttft_ms": 450,
+    "service_ttlt_ms": 617,
+    "user_visible_ttft_ms": 363
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044429-7adf8486-default-r1-dp0-default"
+  }
+ }
+}

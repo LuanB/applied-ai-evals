@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B18-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\n\nBILL OF LADING\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>CMDU50265103</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Nordic Pine Sawmills AB</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Bluegum Food Distributors Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>COSCO LIBRA / 222N</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Ho Chi Minh City</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Sydney</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>MSKU7072385 / SL489428</td>\n</tr>\n</table>\n\n\n781 PACKAGES SAID TO. CONTAIN CASHEW KERNELS.\nGROSS WEIGHT 9843.0 KGS\nINVOICE INV-91474\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

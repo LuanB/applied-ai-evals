@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B17-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\nSEA WAYBILL\nB/L No .:\nMAEU92571902\nShipper:\nLanka Spice Mills (Pvt) Ltd\nConsignee:\nHarbourside Fresh Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nEVER GIVEN II / 653W\nPort of loading:\nHo Chi Minh City\nPort of discharge:\nMelbourne\nContainer / Seal:\nMSKU7382045 / SL320186\n1436 PACKAGES SAID TO CONTAIN CASHEW KERNELS GROSS WEIGHT 17487.8 KGS INVOICE INV-10420",
+  "pages": 1,
+  "fields": {}
+ }
+}

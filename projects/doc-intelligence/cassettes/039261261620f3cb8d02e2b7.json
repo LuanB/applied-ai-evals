@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-055",
+  "markdown": false
+ },
+ "response": {
+  "content": "November 11, 1987\nGERANYL BUTYRATE\nBACKGROUND\nSynonyms : Butyric acid, 3, 7-dimethy1-2, 6-octadienyl ester 2, 6-Octadien-1-o1, 3,7-dimethyl-, butyrate\ntrans-3, 7-Dimethyl-2, 6-octadien-1-yl butyrate Geraniol butyrate\nGeranyl n-butyrate Geranyl butanoate\nCAS No. : 106-29-6\nFEMA No. : 2512\nCoE No. : 274\nMolecular Wt. : 224.4\nSpecific Gravity: 0.899-0.904\nBoiling Point: 151-153\u00b0\u2103 at 18 mm Hg 253\u2103\nChemical Structure:\nCH, CH,-O-C-(CH2) .- CH, 0\n\u043d,\u0421 \u0441\u043d,\nGeranyl butyrate is a colorless to pale yellow oily liquid having a rosey-fruit odor (FEMA, 1985; Arctander, 1969). Geranyl butyrate has been found to occur naturally in celery, kumquot, lemon oil, orange oil, and tomatoes (FEMA, 1985). It has also been identified in the essential oil of Darwinia grandifolia and lavender oil as well as other essential oils (Opdyke, 1979) . Geranyl butyrate may be synthesized by the \"esterification of geraniol\" (Opdyke, 1979) . Based on a 1970 FEMA survey, it is reportedly used in foods at levels ranging from 0.03 to 23 ppm; based on these levels, a possible average daily intake of 4.13 mg was calculated (FEMA, 1985) .\nREGULATORY STATUS\nFEMA: GRAS\nFDA: Cleared under 21 CFR 172.515 (synthetic flavoring substances and adjuvants)\nCoE: The average daily intake is listed as 0.5 mg/kg body weight for total geraniols (including geranyl acetate, butyrate, formate, hexanoate, isovalerate and propionate) and geranyl esters.\n87619023",
+  "pages": 1,
+  "fields": {}
+ }
+}

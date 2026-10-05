@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B15-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - SRI LANKA\nCERTIFICATE OF ORIGIN\nCertificate No .:\nFC956096\nExporter:\nWattle & Co Wholesale Pty Ltd\nConsignee:\nEVER GIVEN II from Colombo\nMeans of transport:\n0904.11\nHS heading:\nBlack pepper, whole\nGoods:\nSri Lanka\nCountry of origin:\nHanseatic Furniture GmbH\nWe certify the goods described in invoice INV-69686 originate in Sri Lanka.",
+  "pages": 1,
+  "fields": {}
+ }
+}

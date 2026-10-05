@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B17-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "MEDITERRANEAN LINES\n\nSEA WAYBILL\u00ae\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>MAEU92571902</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Lanka Spice Mills (Pvt) Ltd</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Harbourside Fresh Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>EVER GIVEN II / 653W</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Ho Chi Minh City</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Melbourne</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>MSKU7382045 / SL320186</td>\n</tr>\n</table>\n\n\n1436 PACKAGES SAID TO CONTAIN CASHEW KERNELS\nGROSS WEIGHT 1.7487.8 KGS\nINVOICE INV-10420\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

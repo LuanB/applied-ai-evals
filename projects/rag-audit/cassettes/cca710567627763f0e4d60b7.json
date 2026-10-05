@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app3-013] (APP 3, paras 3.37\u20133.41, Collecting sensitive information > Collecting sensitive information as required )\n3.37 An APP entity may collect sensitive information if the collection \u2018is required or authorised by or under an Australian law or a court/tribunal order\u2019 (APP 3.4(a)). The meaning of \u2018required or authorised by or under an Australian law or a court/tribunal order\u2019 is discussed in more detail in Chapter B (Key concepts).\n3.38 An example of where a law or order may require or authorise collection of sensitive information is the collection by an authorised officer under the Migration Act 1958 of personal identifiers (that may include biometric information) from a non-citizen who is in immigration detention. [23]\n3.39 Where an APP entity has discretion as to what and/or how they will collect information under the relevant law, they should collect only what sensitive information is reasonably necessary to fulfil their obligation under that law. The entity should, in addition, ensure their handling of the information is proportionate to the aim of fulfilling the legal obligation.\n3.40 For example, the Online Safety Act 2021 authorises the collection of personal information through requiring age-restricted social media platforms to take \u2018reasonable steps\u2019 to prevent users under 16 years of age from having an account with the platform. [24] In narrow circumstances and depending on the deployment context, this may extend to the collection of sensitive information inputs that are necessary to achieve the objective of preventing users under 16 years of age from having accounts. The entity should minimise what it collects to fulfil this obligation. The entity should further process information temporarily, for example use technology solutions that temporarily process personal information inputs as part of age assurance and do not retain them. [25]\n3.41 Where this exception is not engaged, the requirements outlined in paragraph 3.31 including for the collection of personal or sensitive information to be \u2018reasonably necessary\u2019 will apply to collection of any such information. This limits what information may be collected to those steps that would fulfil an APP entity\u2019s function to comply with the relevant law.\n\n[app3-023] (APP 3, paras n/a, Collecting by lawful and fair means > Collecting by fair means)\nThe level of transparency that has been provided to individuals will be relevant here. For example, whether the individual is aware of the collection of their personal information from the entity\u2019s APP 1 privacy policy, terms of service and APP 5 collection notices. [49]\nIt would usually be unfair to collect personal information covertly without the knowledge of the individual. However, this may be a fair means of collection if undertaken in connection with a fraud investigation.\nBy way of further example, it may be unfair to collect from a document discarded by accident on a street, or from an electronic device which is lost or left unattended.\nAn APP entity should not consider collection to be fair simply because they have provided individuals with notice of a proposed collection of personal information.\nWhether the individual would reasonably expect their personal information to be collected and used in this manner/for this purpose This is to be determined objectively, having regard to what a reasonable person, who is properly informed, would expect in the circumstances. [50] Factors that could inform an individual\u2019s reasonable expectations include the purpose for which the personal information was originally made available, what was communicated in privacy policies, collection notices, and other information on online platforms such as terms and conditions of service. A reasonable person might not, for example, expect their personal information to be collected for a purpose unrelated to what they have been informed of. Where personal information is publicly available on the internet, that does not allow it to be collected and used in whatever way the APP entity chooses without regard to the knowledge and reasonable expectations of the person whose information it concerns. [51]\nThis is to be determined objectively, having regard to what a reasonable person, who is properly informed, would expect in the circumstances. [50] Factors that could inform an individual\u2019s reasonable expectations include the purpose for which the personal information was originally made available, what was communicated in privacy policies, collection notices, and other information on online platforms such as terms and conditions of service. A reasonable person might not, for example, expect their personal information to be collected for a purpose unrelated to what they have been informed of.\n\n[b-030] (B, paras B.124\u2013B.128, Key concepts R to Z > Registered APP code)\nB.124 A \u2018registered APP code\u2019 is defined as an APP code that is included on the Codes Register and that is in force (s 26B(1)). A registered APP code is a legislative instrument (s 26B(2)). The requirements in relation to registered APP codes are set out in Division 2 of Part IIIB.\nB.125 An \u2018APP code\u2019 is defined as a written code of practice about information privacy (s 26C). It can be developed by an APP entity, either on its own initiative or on request from the Information Commissioner, or by the Information Commissioner directly (ss 26E and 26G). A code may be expressed to apply to all or a specified type of personal information, a specified activity or class of activities of an APP entity, a specified industry sector or professions or specified class of industry sectors or professions, or APP entities that use technology of a specified kind (s 26C(4)).\nB.126 The Information Commissioner has power to approve and register an APP code (provided certain conditions are met) by including it on the Codes Register (s 26H).\nB.127 Once an APP code is registered, an APP entity bound by the code must not do an act, or engage in a practice, that breaches that code. A breach of a registered APP code will be \u2018an interference with the privacy of an individual\u2019 by the entity under s 13(1)(b).\nB.128 A registered APP code does not replace the APPs for the entities which it binds, but operates in addition to the requirements of the APPs. [41] For further discussion about the development of APP codes, and the requirements and process for recognition, see the Guidelines for Developing Codes. [42]\n\n[app1-001] (APP 1, paras 1.1\u20131.3, What does APP 1 say?)\n1.1 The declared object of APP 1 is \u2018to ensure that APP entities manage personal information in an open and transparent way\u2019 (APP 1.1). This enhances the accountability of APP entities for their personal information handling practices and can build community trust and confidence in those practices.\n1.2 APP 1 imposes obligations upon an APP entity to:\ntake reasonable steps to implement practices, procedures and systems that will ensure the entity complies with the APPs and any binding registered APP code, and is able to deal with related inquiries and complaints (APP 1.2)\nhave a clearly expressed and up-to-date APP Privacy Policy about how the entity manages personal information (APP 1.3 and 1.4)\ntake reasonable steps to make its APP Privacy Policy available free of charge in an appropriate form (APP 1.5) and, upon request, in a particular form (APP 1.6)\nrequire entities to include additional information relating to automated decisions in an entity\u2019s privacy policy (APP 1.7-1.9).\n1.3 APP 1 lays down the first step in the information lifecycle \u2013 planning and explaining how personal information will be handled before it is collected. APP entities will be better placed to meet their privacy obligations under the Privacy Act if they embed privacy protections in the design of their information handling practices.\n\n[app13-007] (APP 13, paras 13.19\u201313.23, Taking reasonable steps to correct personal information > Correcting at the indi)\n13.19 An APP entity is required by APP 13.1 to take reasonable steps to correct an individual\u2019s personal information to ensure it is not incorrect when the individual \u2018requests\u2019 the entity to do so. Upon receiving a request an entity must decide if it is satisfied that the information is incorrect, and if so, take reasonable steps to correct it (see paragraphs 13.43\u201313.48 below).\n13.20 APP 13 does not stipulate formal requirements that an individual must follow to make a request, or require that a request be made in writing, or require the individual to state that it is an APP 13 request. [1]\n13.21 An APP entity is required by APP 1.4(d) to state in an APP Privacy Policy how an individual may seek the correction of their personal information held by the entity. An APP entity is also required by APP 5.2(g) to take reasonable steps to notify an individual, or ensure they are aware, of the fact the entity\u2019s APP Privacy Policy contains information about how the individual may seek correction of their personal information held by the entity.\n13.22 If an APP entity wishes an individual to follow a particular procedure in requesting correction of their personal information, the entity could publish that procedure and draw attention to it, for example, by providing a link in the APP Privacy Policy and on the entity\u2019s website homepage to the correction request procedure, to an online request form, or to an online portal that enables an individual to correct their personal information. However, an entity cannot require an individual to follow a particular procedure, use a designated form or explain the reason for making the request. Any recommended procedure should be regularly reviewed to ensure that it is flexible and facilitates rather than hinders correction of personal information.\n13.23 An APP entity must be satisfied that a request to correct personal information under APP 13 is made by the individual concerned, or by another person who is authorised to make a request on their behalf, for example, a legal guardian or authorised agent. The steps appropriate to verify an individual\u2019s identity will depend on the circumstances, and in particular, whether the individual is already known to or readily identifiable by the entity. The discussion in Chapter 12 (APP 12) of steps that can be taken to verify the identity of an individual seeking access to their personal information apply also to APP 13.\n\nQuestion: What does the Children's Online Privacy Code require of social media platforms?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SnHpJlfoOjBA92nJ9N8QERmcVh",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The Children's Online Privacy Code, as referenced in the context of the Online Safety Act 2021, requires age-restricted social media platforms to take 'reasonable steps' to prevent users under 16 years of age from having an account with the platform. This may include the collection of sensitive information inputs necessary to achieve this objective, with minimisation and temporary processing of such information.\",\"citations\":[\"app3-013\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089409,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 93,
+   "prompt_tokens": 2273,
+   "total_tokens": 2366,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 65,
+    "engine_ttlt_ms": 736,
+    "pre_inference_ms": 92,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 618,
+    "service_ttlt_ms": 1272,
+    "user_visible_ttft_ms": 525
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003053040-8a14068b-default-r2-dp0-default"
+  }
+ }
+}

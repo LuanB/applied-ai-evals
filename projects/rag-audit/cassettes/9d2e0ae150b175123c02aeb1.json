@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app8-011] (APP 8, paras 8.26\u20138.27, Exception 1 \u2014 Disclosing personal information to an overseas recipient that is s)\n8.26 An enforcement mechanism should meet two key requirements: it should be accessible to the individual and it should have effective powers to enforce the privacy or data protections in the law or binding scheme. A range of mechanisms may satisfy those requirements, ranging from a regulatory body similar to the Office of the Australian Information Commissioner (the OAIC), to an accredited dispute resolution scheme, an independent tribunal or a court with judicial functions and powers. Factors that may be relevant in deciding whether there is an accessible and effective enforcement mechanism include whether the mechanism:\nis independent of the overseas recipient that is required by the law or binding scheme to comply with the privacy or data protections\nhas authority to consider a breach of any of the privacy or data protections in the law or binding scheme\nis accessible to an individual, for example, the existence of the scheme is publicly known, and can be accessed by individuals directly and without payment of any unreasonable charge\nhas the power to make a finding that the overseas recipient is in breach of the law or binding scheme and to provide a remedy to the individual\nis required to operate according to principles of procedural fairness.\n8.27 The mechanism may be a single mechanism or a combination of mechanisms. It may be established by the law or binding scheme that contains the privacy or data protections, or by another law or binding scheme. Alternatively, the mechanism may take effect through the operation of cross-border enforcement arrangements between the OAIC and an appropriate regulatory authority in the foreign jurisdiction. [15]\n\n[app13-019] (APP 13, paras 13.48, Being satisfied and taking reasonable steps > Reasonable steps to correct)\n13.48 Special considerations apply to Commonwealth records. The term \u2018Commonwealth record\u2019 is defined in s 3 of the Archives Act and is discussed in more detail in Chapter B (Key concepts). [9] The definition is likely to include, in almost all cases, all personal information held by agencies. It may also include personal information held by contracted service providers. A Commonwealth record can, as a general rule, only be destroyed or altered in accordance with s 24 of the Archives Act. Further, s 26 of the Archives Act makes it an offence to alter a Commonwealth record that is over 15 years old. [10] In relation to such records, and more generally, it may be reasonable (and consistent with statutory requirements) to:\nretain a version of a record which contains incorrect personal information (see paragraph 13.47)\nassociate a statement to clarify that, having regard to the purpose for which the personal information is held, the personal information is not accurate, up-to-date, complete, relevant or is misleading, and either including the correct personal information in the note or cross referencing where it is held (such as in an attachment to the record).\n\n[app7-001] (APP 7, paras 7.1\u20137.6, What does APP 7 say?)\n7.1 An organisation must not use or disclose the personal information that it holds about an individual for the purpose of direct marketing (APP 7.1). The term \u2018holds\u2019 is discussed in Chapter B (Key concepts).\n7.2 There are a number of exceptions to this requirement. The exceptions in APP 7.2 and 7.3 apply to personal information other than sensitive information. They draw a distinction between the use or disclosure of personal information by an organisation where:\nthe personal information has been collected directly from an individual, and the individual would reasonably expect their personal information to be used for the purpose of direct marketing (APP 7.2), and\nthe personal information has been collected from a third party, or from the individual directly but the individual does not have a reasonable expectation that their personal information will be used for the purpose of direct marketing (APP 7.3). Sources of third party data include data list providers, third party mobile applications, third party lead generation and enhancement data.\n7.3 Both of these exceptions require an organisation to provide a simple means by which an individual can request not to receive direct marketing communications (also known as \u2018opting out\u2019). However, in the circumstances where the organisation has not obtained personal information from the individual, or the individual would not reasonably expect their personal information to be used in this way, there are additional requirements to ensure that the individual is made aware of their right to opt out of receiving direct marketing communications from the organisation.\n7.4 Exceptions to this principle also apply in relation to:\nsensitive information (APP 7.4), and\nan organisation that is a contracted service provider for a Commonwealth contract (APP 7.5).\n7.5 APP 7 may apply to an agency in the circumstances set out in s 7A (see paragraph 7.13 below).\n7.6 An individual may request an organisation not to use or disclose their personal information for the purpose of direct marketing, or for the purpose of facilitating direct marketing by other organisations (APP 7.6). The organisation must give effect to any such request by an individual within a reasonable period of time and for free (APP 7.7).\n\n[app8-012] (APP 8, paras 8.28\u20138.30, Exception 2 \u2014 Disclosing personal information to an overseas recipient where the)\n8.28 An APP entity may disclose personal information to an overseas recipient without complying with APP 8.1 where the overseas recipient of the relevant personal information is:\nsubject to the laws of a country prescribed by regulations, or a participant in a binding scheme prescribed by regulations, [16] and\nif the country or binding scheme is prescribed subject to conditions, those conditions are satisfied. [17]\n8.29 Laws and binding schemes are discussed above at paragraphs 8.22\u20138.23.\n8.30 The Governor-General may make regulations under the Privacy Act to prescribe these matters. [18]\n\n[app8-010] (APP 8, paras 8.24\u20138.25, Exception 1 \u2014 Disclosing personal information to an overseas recipient that is s)\n8.24 A substantially similar law or binding scheme would provide a comparable, or a higher level of privacy protection to that provided by the APPs. Each provision of the law or scheme is not required to correspond directly to an equivalent APP. Rather, the overall effect of the law or scheme is of central importance.\n8.25 Whether there is substantial similarity is a question of fact. Factors that may indicate that the overall effect is substantially similar, include:\nthe law or scheme includes a comparable definition of personal information that would apply to the personal information disclosed to the recipient\nthe law or scheme regulates the collection of personal information in a comparable way\nthe law or scheme requires the recipient to notify individuals about the collection of their personal information\nthe law or scheme requires the recipient to only use or disclose the personal information for authorised purposes\nthe law or scheme includes comparable data quality and data security standards, and\nthe law or scheme includes a right to access and seek correction of personal information.\n\nQuestion: How long must telecommunications providers retain customer metadata under the data retention scheme?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U7McbC6ZKcAe5Fr1fmgiJA5Hww",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not cover the duration for which telecommunications providers must retain customer metadata under the data retention scheme.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089491,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 35,
+   "prompt_tokens": 1646,
+   "total_tokens": 1681,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 45,
+    "engine_ttlt_ms": 259,
+    "pre_inference_ms": 95,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 447,
+    "service_ttlt_ms": 729,
+    "user_visible_ttft_ms": 352
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003055525-929f9fcc-default-r1-dp0-default"
+  }
+ }
+}

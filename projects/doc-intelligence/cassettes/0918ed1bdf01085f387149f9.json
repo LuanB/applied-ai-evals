@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B09-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "CASCADE ORCHARDS LLC 35 Industrial Rd, Sweden\nPACKING SPECIFICATION\nRef No .:\nPL-97695\nInvoice No .:\nINV-25096\nConsignee:\nWattle & Co Wholesale Pty Ltd\nContainer:\nTGHU9416753\nMarks:\nWATTLE/FREMANTLE\nN\u1eb9t kg\nGross\u00b7 kg\nPkgs\nDescription\n:11039.2.\n526 Sawn timber, pine, kiln 10108.9\nTotal packages:\n526\nTotal gross weight (kg):\n11039.2\nTotal net weight (kg):\n10108.9",
+  "pages": 1,
+  "fields": {}
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B04-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEKONG AGRI TRADING JSC 381 Industrial Rd, Spain\nInvoice No .:\nINV-65704\nDate:\n10/08/2026\nSold to:\nKookaburra Home Furnishings Pty Ltd\nPacking List No .:\nPL-47824\nTerms of delivery:\nCFR\nCurrency:\nEUR\nDescription\nHS Code\nQty Unit price Amount\nFresh oranges, navel\n0805.10\n9.98 .7.41\n7,395.18\nTOTAL EUR:\n7,395.18\nCountry of origin: Spain",
+  "pages": 1,
+  "fields": {}
+ }
+}

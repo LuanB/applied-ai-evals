@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B13-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "NORDIC PINE SAWMILLS AB 79 Industrial Rd, Sweden\nRef No .:\nPL-92091\nInvoice No .:\nINV-96972\nConsignee:\nRiverina Trading Pty Ltd\nContainer:\nTGHU1770200\nMarks:\nRIVERINA/BRISBANE\nPkgs\nDescription\nNet kg Gross kg 1184 Sawn timber, pine, kiln 22815.7 25210.0\nTotal packages:\n1184\nTotal gross weight (kg): 25210.0\nTotal net weight (kg):\n22815.7",
+  "pages": 1,
+  "fields": {}
+ }
+}

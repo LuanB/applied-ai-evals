@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B01-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "MEKONG AGRI TRADING JSC 173 Industrial Rd, Turkey\nRef No .: :\nPL-63435\nInvoice No .:\nINV-41634\nConsignee:\nSouthern Cross Imports Pty Ltd\nContainer:\nOOLU8243054\nMarks:\nSOUTHERN/SYDNEY\nPkgs\nDescription\nNet kg\nGross kg\n1763 Dried apricots\n34464.1\n37571.4\nTotal packages: 17.63\nTotal gross weight (kg): '37571.4\nTotal net weight (kg):\n34464.1",
+  "pages": 1,
+  "fields": {}
+ }
+}

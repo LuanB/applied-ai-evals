@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app11-011] (APP 11, paras 11.26, What are the security considerations? > Unauthorised modification)\n11.26 \u2018Unauthorised modification\u2019 of personal information occurs when personal information that an APP entity holds is altered by someone who is not permitted to do so, or is altered in a way that is not permitted under the Privacy Act. For example, unauthorised modification may occur as a result of unauthorised alteration by an employee, or following unauthorised access to databases by an external third party.\n\n[app11-010] (APP 11, paras 11.25, What are the security considerations? > Unauthorised access)\n11.25 \u2018Unauthorised access\u2019 of personal information occurs when personal information that an APP entity holds is accessed by someone who is not permitted to do so. This includes unauthorised access by an employee of the entity [7] or independent contractor, as well as unauthorised access by an external third party (such as hacking and other malicious activity). This can also involve the unauthorised copying of personal information and extracting that information.\n\n[app11-002] (APP 11, paras 11.1\u201311.4, What does APP 11 say?)\n11.1 APP 11 requires an APP entity to take active measures to ensure the security of personal information it holds, and to actively consider whether it is permitted to retain personal information. [2]\n11.2 An APP entity that holds personal information must take reasonable steps to protect the information from misuse, interference and loss, as well as unauthorised access, modification or disclosure (APP 11.1).\n11.3 An APP entity must take reasonable steps in the circumstances to destroy or de-identify the personal information it holds once the personal information is no longer needed for any purpose for which the personal information may be used or disclosed under the APPs. This requirement does not apply where the personal information is contained in a Commonwealth record or where the entity is required by or under an Australian law or a court/tribunal order to retain the personal information (APP 11.2).\n11.4 The reasonable steps an APP entity must take, for the purposes of ensuring the security of personal information and destroying or de-identifying personal information that is no longer needed, include technical and organisational measures (APP 11.3). [3]\n\n[app11-009] (APP 11, paras 11.22\u201311.24, What are the security considerations? > Loss)\n11.22 \u2018Loss\u2019 of personal information covers the accidental or inadvertent loss of personal information held by an APP entity. This includes when an APP entity:\nphysically loses personal information, (including hard copy documents, computer equipment or portable storage devices containing personal information), for example, by leaving it in a public place, or\nelectronically loses personal information, such as failing to keep adequate backups of personal information in the event of a systems failure.\n11.23 Loss may also occur as a result of theft following unauthorised access or modification of personal information or as a result of natural disasters such as floods, fires or power outages.\n11.24 However, it does not apply to intentional destruction or de-identification of that personal information that is done in accordance with the APPs.\n\n[app11-006] (APP 11, paras 11.18, What are the security considerations?)\n11.18 The six terms listed in APP 11, \u2018misuse\u2019, \u2018interference\u2019, \u2018loss\u2019, \u2018unauthorised access\u2019, \u2018unauthorised modification\u2019 and \u2018unauthorised disclosure\u2019, are not defined in the Privacy Act. The following analysis and examples of each term draws on the ordinary meaning of the terms. As the analysis indicates, there is overlap in the meaning of the terms.\n\nQuestion: What counts as unauthorised modification of personal information?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U2q8RufiYr3Ep2sfcZnaIG3JJQ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Unauthorised modification of personal information occurs when personal information held by an APP entity is altered by someone not permitted to do so, or altered in a way not permitted under the Privacy Act. Examples include unauthorised alteration by an employee or following unauthorised access by an external third party.\",\"citations\":[\"app11-011\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089486,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 77,
+   "prompt_tokens": 958,
+   "total_tokens": 1035,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 6,
+    "engine_ttft_ms": 37,
+    "engine_ttlt_ms": 518,
+    "pre_inference_ms": 84,
+    "service_tbt_ms": 6,
+    "service_ttft_ms": 551,
+    "service_ttlt_ms": 1027,
+    "user_visible_ttft_ms": 467
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044527-b594f105-default-r0-dp0-default"
+  }
+ }
+}

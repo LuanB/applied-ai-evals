@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B01-03",
+  "markdown": false
+ },
+ "response": {
+  "content": "OCEANIC CONTAINER LINE\nSEA WAYBILL\nB/L No .:\nMAEU72441392\nShipper:\nMekong Agri Trading JSC\nConsignee: Southern Cross Imports Pty Ltd\nNotify party:\nSame as consignee\nVessel / Voyage:\nCMA CGM TAGE / 826E\nPort of loading:\nIzmir\nPort of discharge:\nSydney\nContainer / Seal:\nOOLU8243054 / SL815443\n1763 PACKAGES SAID TO CONTAIN DRIED APRICOTS GROSS WEIGHT 37571.4 KGS INVOICE INV-41634",
+  "pages": 1,
+  "fields": {}
+ }
+}

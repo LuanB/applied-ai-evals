@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B00-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH 32 Industrial Rd, Turkey\nWEIGHT & PACKING NOTE\nRef No .:\nPL-17602\nInvoice No .:\nINV-86387\nConsignee:\nWattle & Co Wholesale Pty Ltd\nContainer:'\nMSKU7135241\nMarks:\nWATTLE/ADELAIDE\nPkgs\nDescription\nNet kg Gross kg\n1533 Dried apricots\n13300.3 14706.2\nTotal packages: 1533\nTotal gross weight (kg): .14706.2\nTotal net weight (kg):\n13300.3",
+  "pages": 1,
+  "fields": {}
+ }
+}

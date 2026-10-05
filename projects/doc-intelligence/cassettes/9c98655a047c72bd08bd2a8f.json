@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-014",
+  "markdown": false
+ },
+ "response": {
+  "content": "As of 3/17/95 INVOICE APPROVAL SHEET\nOPERATING COMPANY: PHILIP MORRIS MANAGEMENT CORP. BUSINESS ENTITY: WORLDWIDE REGULATORY AFFAIRS (9-060-612-00-301- 1\nFIRM: Wachtell, Lipton, Rosen & Katz\nINVOICE DATE: March 29, 1995\nINVOICE NUMBER:\nDATE OF SERVICE: February 1995 TO\nINVOICE TOTAL: $774,903.65\nMatter ID Matter Name\nFees Disbursements\nDiscount\n$668,077.25 $237,325.99\n$130,499.59 10%\n21142\nPMMC ABC Litigation\n21220\nPMMC Advertising issues\n21143\nPMMC Congressional Hearings\n20450\nPMMC Dept. of Justice CID\n22087\nPMMC DOJ Criminal Investig.\n20152\nPMMC EPA\n20151 PMMC ETS\n20644 PMMC ETS Coalition\n21223\nPMMC ETS International\n21965\nPMMC Federal Osha\n20857\nPMMC FDA/Nicotine\n21224 PMMC Fire Safety\n21219\nPMMC FTC Issues\n21222\nPMMC ingredients\n21272\nPMMC General\nNEW MATTER:\nMatter ID Matter Name\nS. Parrish\nC. Wall\nD. Keane\nM. Firestone\nA. Reiman\nA. Andrade\nR. Whidden M. Bring\n2076999608\nPLEASE RETURN TO HELEN FRUSTACE FOR PROCESSING.\nIf you want invoices tracked in more detail, please indicate new matters above. Updated cover sheets will be sent periodically.",
+  "pages": 1,
+  "fields": {}
+ }
+}

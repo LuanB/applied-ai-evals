@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-107",
+  "markdown": false
+ },
+ "response": {
+  "content": "5/25/94\nBRAND RESOURCE COMPARISON\nBrand Spending\nNet Contribution\nMedia Spending\n# Retail Promos\n# Direct Mailings\n# FSI's\nCurrent Staff\nBasic\n$ 136\n$ 312\n$ 38\n12(+Mega)\n2\n5\n3.5\nMerit\n73\n258\n29\n6\n8\n4\n4\nV.S.\n87\n230\n34\n5\n5\n4\n4\nB&H\n73\n247\n38\n4\n10\n1\n2\nCambridge\n$ 61\n$ 69\n$ ?\n7(+Mega)\n5\n5\n2\nParliament\n$ 21\n$ 68\n$ 10\n3\n5\n2\n2044679037",
+  "pages": 1,
+  "fields": {}
+ }
+}

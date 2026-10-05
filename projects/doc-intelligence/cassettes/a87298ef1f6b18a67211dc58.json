@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B05-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "CASCADE ORCHARDS LLC 46 Industrial Rd, Sri Lanka\nWEIGHT & PACKING NOTE\nRef No .:\nPL-83215\nInvoice No .:\nINV-60119\nConsignee:\nKookaburra Home Furnishings Pty Ltd\nContainer:\nMSKU2038146\nMarks:\nKOOKABURRA/BRISBANE\nPkgs\nDescription\nNet kg Gross kg\n1677 Black pepper, whole\n22729.8\n25254. 6\nTotal packages:\n1677\nTotal gross weight (kg):\n25254.6\nTotal net weight (kg):\n22729.8",
+  "pages": 1,
+  "fields": {}
+ }
+}

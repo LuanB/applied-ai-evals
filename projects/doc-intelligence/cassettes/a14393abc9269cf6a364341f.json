@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B07-01",
+  "markdown": true
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH\n251 Industrial Rd, Sri Lanka\n\nInvoice No .:\n\nINV-38675\n\nDate:\n\n14/08/2026\n\nSold to:\n\nKookaburra Home Furnishings Pty Ltd\n\nPacking List No .:\n\nPL-77110\n\nTerms of delivery:\n\nDAP\n\nCurrency:\n\nAUD\n\n\n<table>\n<tr>\n<th>Description</th>\n<th>HS Code</th>\n<th>Qty</th>\n<th>Unit price</th>\n<th>Amount.</th>\n</tr>\n<tr>\n<td>Black pepper, whole</td>\n<td>0904.11</td>\n<td>561</td>\n<td>17.34</td>\n<td>9,727.74</td>\n</tr>\n</table>\n\n\nTOTAL AUD:\n\n9,727.74\n\nCountry of origin: Sri Lanka\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

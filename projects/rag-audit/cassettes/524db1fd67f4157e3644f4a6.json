@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app12-014] (APP 12, paras 12.40\u201312.41, Refusing to give access under APP 12 \u2014 organisations > The request for access is)\n12.40 A request should not be refused on this ground unless there is a clear and convincing basis for deciding that a request is frivolous or vexatious. It is not a sufficient basis, for example, that a request would cause inconvenience or irritation to an organisation.\n12.41 The following are given as examples of requests that may be treated as frivolous or vexatious:\nRepeated requests for access to personal information that has already been provided to the requester.\nA request that contains offensive or abusive language, or that does not appear to be a genuine request for personal information.\nA repeat request for personal information that an organisation has earlier explained to an individual it does not hold, has been destroyed, or cannot be located after a reasonable search.\nA request made for the apparent purpose of harassing or intimidating the staff of an organisation, or interfering unreasonably with its operations.\n\n[app12-011] (APP 12, paras 12.33\u201312.34, Refusing to give access under APP 12 \u2014 organisations)\n12.33 APP 12.3 lists ten grounds on which an organisation can refuse to give access to personal information. It is nevertheless open to an organisation not to rely on any such ground and to provide access upon request, unless disclosure is prohibited. Before relying on any of these grounds an organisation should consider whether redacting some information would enable access to be provided (for example, redacting personal information about another person).\n12.34 The grounds, which are considered separately below, are:\nthe organisation reasonably believes that giving access would pose a serious threat to the life, health or safety of any individual, or to public health or public safety (APP 12.3(a))\ngiving access would have an unreasonable impact on the privacy of other individuals (APP 12.3(b))\nthe request for access is frivolous or vexatious (APP 12.3(c))\nthe information relates to existing or anticipated legal proceedings between the organisation and the individual, and would not be accessible by the process of discovery in those proceedings (APP 12.3(d))\ngiving access would reveal the intentions of the organisation in relation to negotiations with the individual in such a way as to prejudice those negotiations (APP 12.3(e))\ngiving access would be unlawful (APP 12.3(f))\ndenying access is required or authorised by or under an Australian law or a court/tribunal order (APP 12.3(g))\nthe organisation has reason to suspect that unlawful activity, or misconduct of a serious nature, that relates to the organisation\u2019s functions or activities has been, is being or may be engaged in and giving access would be likely to prejudice the taking of appropriate action in relation to the matter (APP 12.3(h))\ngiving access would be likely to prejudice one or more enforcement related activities conducted by, or on behalf of, an enforcement body (APP 12.3(i))\ngiving access would reveal evaluative information generated within the organisation in connection with a commercially sensitive decision\u2011making process (APP 12.3(j)).\n\n[app12-013] (APP 12, paras 12.37\u201312.39, Refusing to give access under APP 12 \u2014 organisations > Giving access would have )\n12.37 This ground may apply where the record of personal information that an individual has requested contains personal information of another individual. As noted above (paragraph 12.12), a record of an individual\u2019s opinions or views (for example, a referee comment) may be personal information of that individual. [10]\n12.38 Before relying on this ground an organisation must be satisfied that giving access would have \u2018an unreasonable impact\u2019 on the privacy of another. Factors that may be relevant in deciding that issue include:\nthe nature of the personal information about the other individual. For example, if the personal information is of a sensitive or confidential nature it may be unreasonable to provide it to others\nthe reasonable expectation of the other individual about how that personal information will be handled (this should be assessed objectively and on the basis that the other individual may not have special knowledge of the industry or activity involved). For example, if both individuals were present when the personal information was collected, there may be a reasonable expectation that each individual could later access the personal information\nthe source of the personal information. For example, if the individual requesting access provided the personal information about the other individual, access may not have an unreasonable impact on that person\nwhether the personal information of another individual could be redacted from the record provided to the individual requesting access\nwhether access could be provided through an intermediary (see paragraphs 12.72\u201312.75 below)\nwhether the other individual consents to access being given to the individual requesting access.\n12.39 In applying this ground, an organisation may consult the other individual about whether giving access would have an unreasonable impact on their privacy. The view expressed by that individual may be relevant but not determinative. However, before consulting another individual, an organisation should consider whether doing so poses a privacy risk for the individual seeking access.\n\n[app12-010] (APP 12, paras 12.31\u201312.32, Refusing to give access under APP 12 \u2014 agencies > Required or authorised to refu)\n12.31 APP 12.2(b)(ii) provides that an agency is not required to give access to personal information if it is required or authorised to refuse to give access by another Act that provides for access by persons to documents. An example is a statutory secrecy provision that requires or authorises that access be refused in certain circumstances.\n12.32 A further example is that the National Archives of Australia (NAA) is authorised to refuse access to certain \u2018exempt records\u2019 under the Archives Act 1983 (the Archives Act). The Archives Act provides that the NAA must make available for public access Commonwealth records in the open access period that are in the care of the NAA and that are not exempt records (s 31 of the Archives Act). The categories of exempt records include information whose disclosure would constitute a breach of confidence, would involve the unreasonable disclosure of information relating to the personal affairs of any person, or would unreasonably affect a person adversely in relation to his or her business, financial or professional affairs (s 33 of the Archives Act). [9]\n\n[app12-019] (APP 12, paras 12.50\u201312.56, Refusing to give access under APP 12 \u2014 organisations > Giving access would likel)\n12.50 There are a number of separate elements to this ground.\n12.51 First, an organisation must have reason to suspect that unlawful activity or misconduct of a serious nature has been, is being or may be engaged in. The term \u2018unlawful activity\u2019 is not defined in the Privacy Act. The core meaning is activity that is criminal, illegal or prohibited or proscribed by law, and can include unlawful discrimination or harassment, but does not include breach of a contract. Examples of unlawful activity include criminal offences, unlawful discrimination, and trespass.\n12.52 Misconduct is defined in s 6(1) to include \u2018fraud, negligence, default, breach of trust, breach of duty, breach of discipline or any other misconduct in the course of duty\u2019. An added requirement of this ground is that the misconduct is \u2018serious\u2019 in nature. This excludes minor breaches or transgressions.\n12.53 The organisation must have \u2018reason to suspect\u2019 the unlawful activity or serious misconduct has been, is being or may be engaged in. This is a different and lesser standard to \u2018reasonably believes\u2019, which is used in some other APPs (see Chapter B (Key concepts)). There should nevertheless be a reasonable basis for the suspicion. It is the responsibility of the organisation to be able to justify its reasonable basis for the suspicion.\n12.54 The suspected unlawful activity or serious misconduct must relate to the organisation\u2019s functions or activities. As discussed in Chapter 3 (APP 3), an organisation\u2019s functions or activities include current, proposed and support functions and activities.\n12.55 Lastly, giving access must be likely to prejudice the organisation in taking appropriate action in relation to the suspected unlawful activity or serious misconduct. The proposed action may include investigation of the activity or misconduct, or reporting it to the police or another relevant person or authority. There should again be a reasonable basis for this expectation of prejudice. For example, in some instances giving an individual access would not prejudice the taking of appropriate action, but would allow the individual to provide further information relevant to the suspected unlawful activity.\n12.56 An example of where this ground might apply is where giving access to the requested personal information would reveal that, covertly but lawfully, an organisation is investigating suspected misconduct of a client and disclosure would prejudice the covert investigation.\n\nQuestion: Can an organisation refuse an access request that is frivolous or vexatious?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8Tx2Vdg5ZR7a9sIkVacLM8exaHX",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"Yes, an organisation can refuse an access request if it is frivolous or vexatious, but there must be a clear and convincing basis for this decision. Examples include repeated requests for the same information, requests with offensive language, or requests made to harass staff.\",\"citations\":[\"app12-014\",\"app12-011\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089481,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 77,
+   "prompt_tokens": 2013,
+   "total_tokens": 2090,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 59,
+    "engine_ttlt_ms": 606,
+    "pre_inference_ms": 85,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 667,
+    "service_ttlt_ms": 1208,
+    "user_visible_ttft_ms": 582
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260822102744-d420b45c-default-r2-dp0-default"
+  }
+ }
+}

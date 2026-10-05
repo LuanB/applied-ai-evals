@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app8-006] (APP 8, paras 8.16\u20138.17, Taking reasonable steps to ensure an overseas recipient does not breach the APPs)\n8.16 The requirement in APP 8.1 to ensure that an overseas recipient does not breach the APPs is qualified by a \u2018reasonable steps\u2019 test. It is generally expected that an APP entity will enter into an enforceable contractual arrangement with the overseas recipient that requires the recipient to handle the personal information in accordance with the APPs (other than APP 1). [11] Contractual arrangements may include:\nthe types of personal information to be disclosed and the purpose of disclosure\na requirement that the overseas recipient complies with the APPs in relation to the collection, use, disclosure, storage and destruction or de-identification of personal information. This should also require the overseas recipient to enter a similar contractual arrangement with any third parties to whom it discloses the personal information (for example, a subcontractor)\nthe complaint handling process for privacy complaints, and\na requirement that the recipient implement a data breach response plan which includes a mechanism for notifying the APP entity where there are reasonable grounds to suspect a data breach and outlines appropriate remedial action (based on the type of personal information to be handled under the contract). [12]\n8.17 However, whether reasonable steps to ensure the overseas recipient does not breach the APPs requires a contract to be entered into, the terms of the contract, and the steps the APP entity takes to monitor compliance with any contract (such as auditing), will depend upon the circumstances that include:\nthe sensitivity of the personal information. More rigorous steps may be required if the information is \u2018sensitive information\u2019 (defined in s 6(1) and discussed in Chapter B (Key concepts)) or other personal information of a sensitive nature\nthe entity\u2019s relationship with the overseas recipient. More rigorous steps may be required if an entity discloses information to an overseas recipient to which it has not previously disclosed personal information\nthe possible adverse consequences for an individual if the information is mishandled by the overseas recipient. More rigorous steps may be required as the risks and adverse consequences increase.\nexisting technical and operational safeguards implemented by the overseas recipient which will protect the privacy of the personal information \u2014 more rigorous steps may be required where the recipient has limited safeguards in place, and\n\n[app8-025] (APP 8, paras 8.60\u20138.63, When is an APP entity accountable for personal information that it discloses to )\n8.60 An APP entity that discloses personal information to an overseas recipient is accountable, in certain circumstances, for an act or practice of the overseas recipient in relation to the information that would breach the APPs (s 16C(1)). Accountable means that the act or practice is taken to have been done by the APP entity and to be a breach of the APPs by that entity (s 16C(2)).\n8.61 This accountability provision applies where:\nAPP 8.1 applies to the disclosure. That is, none of the exceptions in APP 8.2 apply to the disclosure\nthe APPs do not apply to the overseas recipient in relation to the personal information (for more information about when the APPs will apply see Chapter A (Introductory matters)), and\nan act or practice by the overseas recipient would breach the APPs (other than APP 1) if they had applied (s 16C(1)).\n8.62 Under the accountability provision, an APP entity may be liable for the acts or practices of the overseas recipient (and the individual will have a means of redress) even where:\nthe entity has taken reasonable steps to ensure the overseas recipient complies with the APPs (see APP 8.1) and the overseas recipient subsequently does an act or practice that would breach the APPs\nthe overseas recipient discloses the individual\u2019s personal information to a subcontractor and the subcontractor breaches the APPs, [21] or\nthe overseas recipient inadvertently breaches the APPs in relation to the information.\n8.63 However, an APP entity will not be accountable where, for example, it discloses personal information to an overseas recipient under an exception in APP 8.2 (see paragraphs 8.20 8.59 above), or where personal information is disclosed to an overseas recipient with an \u2018Australian link\u2019. A recipient that has an \u2018Australian link\u2019 will be covered by the Privacy Act. \u2018Australian link\u2019 is defined in s 5B(2) and discussed in more detail in Chapter B (Key concepts).\n\n[app8-001] (APP 8, paras 8.1\u20138.4, What does APP 8 say?)\n8.1 APP 8 and s 16C create a framework for the cross-border disclosure of personal information. The framework generally requires an APP entity to ensure that an overseas recipient will handle an individual\u2019s personal information in accordance with the APPs, and makes the APP entity accountable if the overseas recipient mishandles the information. [1] This reflects a central object of the Privacy Act, to facilitate the free flow of information across national borders while ensuring that the privacy of individuals is respected (s 2A(f)).\n8.2 APP 8.1 provides that before an APP entity discloses personal information about an individual to an overseas recipient, the entity must take such steps as are reasonable in the circumstances to ensure that the recipient does not breach the APPs in relation to that information. Where an entity discloses personal information to an overseas recipient, it is accountable for an act or practice of the overseas recipient that would breach the APPs (s 16C).\n8.3 There are exceptions to the requirement in APP 8.1 and to the accountability provision in s 16C (see paragraphs 8.20 8.59 below).\n8.4 When an APP entity discloses personal information to an overseas recipient it will also need to comply with APP 6.1. That is, it must only disclose the personal information for the primary purpose for which it was collected unless the individual has consented to the disclosure or an exception to that principle applies (see Chapter 6 (APP 6)). A note to APP 6.1 cross-references the requirements for the cross-border disclosure of personal information in APP 8. It is implicit in this note, that APP 8 only applies to personal information covered by APP 6. That is, it only applies to personal information \u2018held\u2019 by an APP entity. The term \u2018holds\u2019 is discussed in Chapter B (Key concepts).\n\n[app8-020] (APP 8, paras 8.46, Exception 5 \u2014 Disclosing personal information to an overseas recipient where a p)\n8.46 An APP entity may disclose personal information to an overseas recipient without complying with APP 8.1 where:\nthe entity reasonably believes that the disclosure is reasonably necessary to assist any APP entity, body or person to locate a person who has been reported as missing, and\nthe disclosure complies with rules made by the Information Commissioner under s 16A(2) (s 16A(1), Item 3).\n\n[app8-005] (APP 8, paras 8.15, When does an APP entity \u2018disclose\u2019 personal information about an individual to a)\n8.15 Where the provision of personal information to an overseas contractor is a use, an APP entity may breach the APPs if the information is mishandled while in the overseas contractor\u2019s physical possession. This is because the APP entity is considered to still \u2018hold\u2019 the information (as it has effective control of the information), and a number of APPs apply to an entity that \u2018holds\u2019 personal information (\u2018holds\u2019 is discussed in Chapter B (Key Concepts)).\n\nQuestion: When can an entity disclose personal information overseas without taking reasonable steps to ensure the recipient complies with the APPs, because of the recipient's own legal regime?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SlmJ0b5wcv1ZngwMAEtLDFbO5y",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The guidelines provided do not cover an exception to the requirement to take reasonable steps based on the overseas recipient's own legal regime. The excerpts discuss exceptions under APP 8.2 and specific cases like locating missing persons, but do not mention an exception due to the recipient's legal regime.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089407,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 1801,
+   "total_tokens": 1871,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 8,
+    "engine_ttft_ms": 46,
+    "engine_ttlt_ms": 601,
+    "pre_inference_ms": 98,
+    "service_tbt_ms": 8,
+    "service_ttft_ms": 494,
+    "service_ttlt_ms": 1042,
+    "user_visible_ttft_ms": 396
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930073022-65635bb1-default-r1-dp0-default"
+  }
+ }
+}

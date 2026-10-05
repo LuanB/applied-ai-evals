@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B15-02",
+  "markdown": false
+ },
+ "response": {
+  "content": "HANSEATIC FURNITURE GMBH 228 Industrial Rd, Sri Lanka\nPACKING SPECIFICATION\nRef No .:\nPL-38663\nInvoice No .:\nINV-69686\nConsignee:\nWattle & Co. Wholesale Pty Ltd\nContainer:\nTGHU8859774\nMarks:\nWATTLE/BRISBANE\nPkgs\nDescription\nNet kg\nGross kg\n456\nBlack pepper, whole\n9051.3\n9447,3\nTotal packages:\n456\nTotal gross weight (kg): 9447.3\nTotal net weight (kg):\n9051.3",
+  "pages": 1,
+  "fields": {}
+ }
+}

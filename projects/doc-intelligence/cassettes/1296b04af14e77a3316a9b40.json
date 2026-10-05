@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B13-03",
+  "markdown": true
+ },
+ "response": {
+  "content": "# TRANS-PACIFIC CARRIERS\n\n\n<table>\n<tr>\n<td>B/L No .:</td>\n<td>ONEY24431385</td>\n</tr>\n<tr>\n<td>Shipper:</td>\n<td>Nordic Pine Sawmills AB</td>\n</tr>\n<tr>\n<td>Consignee:</td>\n<td>Riverina Trading Pty Ltd</td>\n</tr>\n<tr>\n<td>Notify party:</td>\n<td>Same as consignee</td>\n</tr>\n<tr>\n<td>Vessel / Voyage:</td>\n<td>CMA CGM TAGE / 315N</td>\n</tr>\n<tr>\n<td>Port of loading:</td>\n<td>Gothenburg</td>\n</tr>\n<tr>\n<td>Port of discharge:</td>\n<td>Brisbane</td>\n</tr>\n<tr>\n<td>Container / Seal:</td>\n<td>TGHU1770200 / SL350106</td>\n</tr>\n</table>\n\n\n1184 PACKAGES SAID TO CONTAIN SAWN TIMBER, PINE, KILN DRIED\nGROSS WEIGHT 25210.0 KGS\nINVOICE INV-96972.\nFUMIGATION CERTIFICATE AND PHYTOSANITARY CERTIFICATE ATTACHED\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

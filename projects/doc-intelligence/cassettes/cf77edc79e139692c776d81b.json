@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-134",
+  "markdown": false
+ },
+ "response": {
+  "content": "SAMPLE CONCEPT-PRODUCT QUESTIONNAIRE\nPART I\nDate:\nTime Started:\nTime Completed:\nTOTAL TIME IN MINUTES\nRespondent's Name:\nInterviewer:\nALL QUESTIONS SHOULD BE ASKED AS WRITTEN. ALL RESPONSES ARE TO BE RECORDED VERBATIM (THAT IS, IN THE FIRST PERSON) EXACTLY AS STATED BY THE RESPONDENT.\n1. First, I'd like to ask you some background questions. Please tell me into which of the following groups your age falls. (READ LIST.)\nUnder 18 1 (TERMINATE) 18-24. 2\n25-34.\n3 35-49.\n4 50+.\n5\n2. Do you currently smoke cigarettes at least daily? Yes. 1 2 (TERMINATE) No .\n3. Approximately how many cigarettes do you usually smoke per day? (DO NOT READ LIST.)\nLess than 5. 1 (TERMINATE)\n5 or more. 2\n4. Have you participated in a market research survey about cigarettes in the past year?\nYes 1 (TERMINATE)\nNo\n2\n50565 6949",
+  "pages": 1,
+  "fields": {}
+ }
+}

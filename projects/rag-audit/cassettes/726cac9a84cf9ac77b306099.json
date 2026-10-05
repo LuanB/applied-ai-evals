@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app1-011] (APP 1, paras 1.41\u20131.43, Developing an APP Privacy Policy > Information that must be included in an APP P)\nExample A: Glowride, a rideshare company, uses a computer program to analyse customer\u2019s personal information to manage the customer\u2019s ongoing usage of the service, including feedback or payment data or ratings provided by ride share drivers. One of the actions the computer program can execute is to suspend a user\u2019s account.\nWhile a decision to suspend a customer\u2019s account may have a relatively minor impact on some customers, for a customer experiencing vulnerability who relies on Glowride to attend medical appointments, access essential services or maintain employment, the decision could significantly affect their rights or interests.\nThe example demonstrates that for a decision to be one that could reasonably be expected to significantly affect the rights or interests of an individual, it will depend on the individual\u2019s circumstances (such as a child or a person experiencing vulnerability). The effects of a decision must be more than trivial and must have the potential to significantly influence the circumstances of the individual concerned.\n1.41 Other examples of the kinds of decisions that may affect the rights or interests of an individual include: [11]\na decision made under a provision of an Act or a legislative instrument to grant, or to refuse to grant, a benefit to the individual. For example, this may include a decision in relation to granting admission to a country or entitlement to a housing benefit.\na decision that affects the individual\u2019s rights under a contract, agreement or arrangement. For example, this may include a contract for a life insurance policy.\na decision that affects the individual\u2019s access to a significant service or support. For example, this may include access to healthcare services.\nImportantly, a decision may be within scope of the APP 1.7-1.9 transparency obligation even where a computer program output does not replace the entire decision-making process or is subject to human review.\n1.42 APP 1.7(a) uses the wording, \u2018the entity has arranged for a computer program\u2019.\n1.43 The words \u2018arranged for\u2019 clarify that it is the entity responsible for arranging the computer program to make, or do a thing that is substantially and directly related to making, a decision, which must meet the requirements in APP 1.7. ( Example B and C )\n\n[app8-004] (APP 8, paras 8.12\u20138.14, When does an APP entity \u2018disclose\u2019 personal information about an individual to a)\n8.12 Where an APP entity engages a contractor located overseas to perform services on its behalf, in most circumstances, the provision of personal information to that contractor is a disclosure. This means that the entity will need to comply with APP 8 before making that disclosure. Where a subcontractor may be engaged, the entity should also take reasonable steps to ensure that the subcontractor does not breach the APPs in relation to the personal information. [9]\n8.13 For example, the provision of personal information to a contractor is generally considered a \u2018disclosure\u2019 where:\nan Australian based retailer outsources the processing of online purchases through its website to an overseas contractor and, in order to facilitate this, provides the overseas contractor with personal information about its customers\nan Australian entity, as part of a recruitment drive, provides the personal information of job applicants to an overseas services provider to perform reference checks on behalf of the Australian entity, or\nan Australian organisation relies on its overseas parent company to provide technical and billing support, and as part of this, provides the overseas parent company with access to its Australian customer database (which includes personal information).\n8.14 However, in limited circumstances providing personal information to an overseas contractor to perform services on behalf of the APP entity may be a use, rather than a disclosure. This occurs where the entity does not release the subsequent handling of personal information from its effective control. In these circumstances, the entity would not need to comply with APP 8. For example, where an APP entity provides personal information to a cloud service provider located overseas for the limited purpose of performing the services of storing and ensuring the entity may access the personal information, this may be a \u2018use\u2019 by the entity in the following circumstances:\na binding contract between the entity and the provider requires the provider only to handle the personal information for these limited purposes\nthe contract requires any subcontractors to agree to the same obligations, and\nthe contract gives the entity effective control of how the personal information is handled by the overseas recipient. Issues to consider include whether the entity retains the right or power to access, change or retrieve the personal information, who else will be able to access the personal information and for what purposes, what type of security measures will be used for the storage and management of the personal information (see also APP 11.1, Chapter 11) and whether the personal information can be retrieved or permanently deleted by the entity when no longer required or at the end of the contract. [10]\n\n[app9-006] (APP 9, paras 9.13\u20139.16, Adopting government related identifiers > \u2018Adoption\u2019)\n9.13 The term \u2018adopt\u2019 is not defined in the Privacy Act and so it is appropriate to refer to its ordinary meaning. An organisation adopts a government related identifier if it collects a particular government related identifier of an individual and organises the personal information that it holds about that individual with reference to that identifier.\n9.14 The following are examples of when an organisation will be considered to have adopted a government related identifier of an individual:\na health service provider uses an individual\u2019s Medicare number as the basis for the provider\u2019s own identification system\nan accountant uses an individual\u2019s tax file number as the basis of the accountant\u2019s own identification system.\n9.15 Adoption is to be distinguished from merely collecting, using or disclosing a government related identifier. APP 9 does not specifically address the collection of government related identifiers. However, as noted in paragraph 9.4, if an organisation collects a government related identifier that is considered to be personal information, the organisation must comply with other APPs, including APP 3 (collection of solicited personal information) and APP 4 (dealing with unsolicited personal information). These APPs are discussed in Chapters 3 and 4 respectively.\n9.16 APP 3 provides that an organisation must only collect personal information that is reasonably necessary for one or more of the organisation\u2019s functions or activities. If an organisation collects an identifier that it cannot lawfully use or disclose under APP 9.2 (see paragraphs 9.22\u20139.46), then the collection is not reasonably necessary for one of the organisation\u2019s functions or activities. This means that the collection would not be permitted under APP 3.2.\n\n[app9-013] (APP 9, paras 9.35\u20139.39, Using and disclosing government related identifiers > Using or disclosing a gove)\n9.35 An organisation may use or disclose a government related identifier of an individual if a \u2018permitted general situation\u2019 (other than the situations referred to in Items 3, 4 or 5 of the table in subsection 16A(1)) exists in relation to the use or disclosure of the identifier (APP 9.2(d)).\n9.36 Section 16A lists two permitted general situations that apply to the use or disclosure of government related identifiers. The two situations are set out below, and are discussed in Chapter C (Permitted general situations) (including the meaning of relevant terms).\n9.37 An organisation may use or disclose a government related identifier of an individual if:\nthe organisation reasonably believes the use or disclosure is necessary to lessen or prevent a serious threat to the life, health or safety of any individual, or to public health or safety, and\nit is unreasonable or impracticable to obtain consent (s 16A(1), Item 1).\n9.38 An organisation may use or disclose a government related identifier of an individual if:\nthe organisation has reason to suspect that unlawful activity, or misconduct of a serious nature, that relates to the organisation\u2019s functions or activities has been, is being or may be engaged in, and\nthe organisation reasonably believes that the use or disclosure is necessary in order for the organisation to take appropriate action in relation to the matter (s 16A(1), Item 2).\n9.39 For example, this permitted general situation might apply where the organisation uses or discloses a government related identifier, such as a customer\u2019s Centrelink number, as part of an investigation into suspected fraud by a client in relation to the organisation\u2019s functions or activities.\n\n[app6-025] (APP 6, paras 6.77, Related bodies corporate > Using or disclosing personal information collected fr)\n6.77 An APP entity that collects personal information from a related body corporate is taken to have the same primary purpose of collection as its related body corporate (APP 6.6). Under APP 6, the entity may only use or disclose the personal information for that primary purpose, unless an exception to that principle applies (see paragraph 6.2 above). For example, an APP entity collects personal information about an applicant contractor for the purpose of assessing their suitability to perform work on its behalf. The parent company then collects that personal information from the entity. The primary purpose of this collection is taken to be the same as the original purpose of collection. The parent company may only disclose the personal information to a third party for another purpose, where an exception to APP 6 applies.\n\nQuestion: Can a customer agree to let a company use their Medicare number as the company's own customer ID?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8SgUYDgf6qVzJYZ5lsBh9kTbBME",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"No, a company cannot simply use a customer's Medicare number as its own customer ID without complying with APP 9. Adoption of a government related identifier, such as a Medicare number, means organizing personal information with reference to that identifier, which is regulated under APP 9. The company must ensure lawful use or disclosure under APP 9.2 and other relevant APPs, and mere customer agreement does not override these requirements.\",\"citations\":[\"app9-006\"] ,\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089402,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 102,
+   "prompt_tokens": 2141,
+   "total_tokens": 2243,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 61,
+    "engine_ttlt_ms": 785,
+    "pre_inference_ms": 78,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 586,
+    "service_ttlt_ms": 1295,
+    "user_visible_ttft_ms": 508
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20261003044527-34d4254c-default-r0-dp0-default"
+  }
+ }
+}

@@ -1,0 +1,4 @@
+.venv
+.env
+traces/*.jsonl
+**/__pycache__

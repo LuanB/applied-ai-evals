@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nMIRC\nCAMEL LTS 83MM BOX CONVERSION PRODUCT TEST CALLBACK FELT NM 85 (X RJR) M/A/R/C#: 146-0192 BID#: 90-94101\nMALES\n1\n18-24\n25-34\n35-49\n123\nCELL 1\nCELL 2\nCELL 3\nCELL 4\nCELL 5\n5\nCELL 6\n6\nCELL 7\n7\nCELL 8\n8\nDLW/abp\nTELEPHONE NUMBER\nState Code\nCounty Code\nGeo. Reg./ Co. Size\nArea Code\nPrefix\nSuffix\nInterviewer Number\nDate:\nTime Ended:\nam pn Time Started:\nan\npm No. Of Min .:\n1) May I please speak to [INSERT RESPONDENT'S NAME]? (IF ASKED WHO IS CALLING, SAY: \"I'm *01 from National Product Opinion Surveys. \") (INTERVIEWER ONLY: SMOKER INFORMATION FOR THE HOUSEHOLD IS LISTED BELOW. THIS INFORMATION SHOULD BE USED TO HELP IDENTIFY THE MEMBER WHO SMOKED THE PRODUCT. DO NOT ATTEMPT TO UPDATE THE HOUSEHOLD AT THIS TIME. THE FIRST PERSON LISTED IS THE PERSON DESIGNATED TO RECEIVE AND SMOKE THE PRODUCT. )\n[BUILDER NOTE: DISPLAY HOUSEHOLD SMOKER INFORMATION]\nRespondent available [SKIP TO Q.10] Respondent not 1 available 2\nOther family member smoked\n[SKIP TO Q.6] 3\nNo further contact\n[SKIP TO Q.4]\n2) Is there an adult, 18 years of age or older, who smokes cigarettes in your household who I could speak to? (IF NO OTHER FAMILY MEMBER AVAILABLE, ENTER CODE 2 AND SCHEDULE CALLBACK FOR 2 DAYS AND SAY: \"Would you please have (NAME AT TOP OF SCREEN) call our toll-free number with opinions regarding the cigarettes we recently mailed him/her. \")\n(TOLL FREE NUMBER: 1-800-535-8210)\nOther smoker available No other smoker available [SKIP TO CALLBACK GRID] 2\n(IF OTHER SMOKER AVAILABLE, ASK TO SPEAK TO HIM/HER AND ENTER CODE 1.)\n[BUILDER NOTE: IF OFM SMOKED, AND CODE 1, SKIP TO Q.7.]\n[BUILDER NOTE: DISPLAY HOUSEHOLD SMOKER INFORMATION. ]\n3) (IF NECESSARY REINTRODUCE YOURSELF AND SAY: ) I was calling today to ask (NAME AT TOP OF SCREEN) a few questions about the cigarettes we recently mailed [HIM/HER]. But since, [HE/SHE] is not available, I would like to take this opportunity to verify that the information I have concerning cigarette smokers in your household is correct. (IF UNWILLING TO UPDATE HOUSEHOLD, \\B TO PREVIOUS QUESTION AND CODE 2 \"NO OTHER SMOKER AVAILABLE\". ) [SKIP TO Q.26a.]\n4) (INTERVIEWER'S NOTE: IF RESPONDENT REFUSES, CLARIFY: This may not have been a good time to reach you for this test, however, would you or any other member of your household still be willing to participate in our cigarette surveys in the future? (CODE APPROPRIATE REFUSAL RESPONSE IN NEXT QUESTION. ) (IF RESPONDENT IS STILL WILLING TO PARTICIPATE IN THE FUTURE, CODE \"REFUSAL - TEST. \")\n50730 7949\nFOR FIELD USE:\nMonitored/ Validated By: Edited By: Completed [ ] Terminated [ ]\n1 1234 4"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV89GPxy7n1XmquMtNsUPDb0yJwR3",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"questionnaire\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088198,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_8957c4f4dd",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 958,
+   "total_tokens": 968,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 5,
+    "engine_ttft_ms": 34,
+    "engine_ttlt_ms": 89,
+    "pre_inference_ms": 81,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 492,
+    "service_ttlt_ms": 631,
+    "user_visible_ttft_ms": 412
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260930073022-35fca056-default-r2-dp0-default"
+  }
+ }
+}

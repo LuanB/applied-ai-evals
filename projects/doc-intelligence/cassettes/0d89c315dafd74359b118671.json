@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B08-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "CHAMBER OF COMMERCE - GERMANY\nCertificate No .:\nPC952782\nExporter:\nCascade Orchards LLC\nConsignee:\nRiverina Trading Pty Ltd\nMeans of transport:\nCOSCO LIBRA from Hamburg\nHS heading:\n9403.60\nGoods:\nWooden dining chairs\nCountry of origin:\nGermany\nWe certify the goods described in invoice INV-23089 originate in Germany.",
+  "pages": 1,
+  "fields": {}
+ }
+}

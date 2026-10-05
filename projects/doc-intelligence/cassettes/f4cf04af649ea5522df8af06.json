@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-054",
+  "markdown": false
+ },
+ "response": {
+  "content": "1\n:\n16 DETC\nRECEIVED L. F. MEYER > heo\nYI DEC 22 1981 Federal Trade Commission\nReport of \"TAR\", NICOTINE AND CARBON 'MONOXIDE OF THE SMOKE OF 200 VARIETIES OF CIGARETTES\nDECEMBER 1981\n2021648312",
+  "pages": 1,
+  "fields": {}
+ }
+}

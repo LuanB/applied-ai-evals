@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "test-B06-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD 206 Industrial Rd, Vietnam\nInvoice No .:\nINV-12449\nDate:\n01/09/2026\nSold to:\nSouthern Cross Imports Pty Ltd\nPacking List No .:\nPL-18107\nTerms of delivery:\nFOB\nCurrency:\nUSD\nDescription\nHS Code Qty Unit price Amount\nCashew kernels\n0801.32\n888 21.1\n18,736.80\nTOTAL USD;\n18,736.8.0\nCountry of origin: Vietnam",
+  "pages": 1,
+  "fields": {}
+ }
+}

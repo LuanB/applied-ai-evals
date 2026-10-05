@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-056",
+  "markdown": false
+ },
+ "response": {
+  "content": "12/14/1993 14:11:27 REQUEST CODE: TCSN\nANALYTICAL RESULTS REPORT\nSAMPLE ID: L931562\nPAGE\n1\nREQUESTOR: D.A. HILL CROP YEAR: MARK: SP 146-B-2 PACK POINT: COUNTRY : SAMPLE #: 137 COMMENT: TOBACCO SEED \\ TYPE: L VARIETY :\nRUN 1\nRUN 2\nAVERAGE\nTECHNICON ANALYTICAL\nALK\nZASIS\n4.6200\n4.4700\n4.5450\nTRS\nZASIS\n6.4900\n6.2300\n6.3600\nSON\nZASIS\n0.0500\n0.0500\n0.0500\nNIT\nZASIS\n0.0200\n0.0200\n0.0200\n2056301140\n:",
+  "pages": 1,
+  "fields": {}
+ }
+}

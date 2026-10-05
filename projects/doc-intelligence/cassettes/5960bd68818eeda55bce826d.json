@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B09-01",
+  "markdown": false
+ },
+ "response": {
+  "content": "CASCADE ORCHARDS LLC 315 Industrial Rd, Sweden\nINVOICE\nInvoice No .:\nINV-25096\nDate:\n02/08/2026\nSold to:\nWattle & Co Wholesale Pty Ltd\nPacking List No .:\nPL-97695\nTerms of delivery: CFR\nCurrency:\nUSD\nDescription\nHS Code\nQty .Unit price Amount\nSawn timber, pine, kil. 4407.11.\n526\n25.34\n13,328.84\nTOTAL USD:\n13,328.84\nCountry of origin: Sweden",
+  "pages": 1,
+  "fields": {}
+ }
+}

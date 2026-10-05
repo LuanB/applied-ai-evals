@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-002",
+  "markdown": false
+ },
+ "response": {
+  "content": "1\nRJR SEGRET INTEROFFICE MEMORANDUM No 307 By now\nDRF\nSUBJECT: Weekly Highlights Summary\nDATE: June 25, 1984\nTO: Dr. R. A. Lloyd\nFROM: M. D. Wallace\nProject CC\nResults from blind two-pack testing and Product/Concept Testing are expected 7/16/84.\nProject SA\nRoom Aroma panels are tentatively scheduled for late July of this year .\nA short overview of SA will be given to PPT and the new consultant from Cambridge Group (Rick Kash) 6/27/84.\nProject XG\nNew Personnel\nBill Needs was added to security clearance list and will be helping in statistical analysis of extended run data.\nWayne Mabe and Steve Kelly were assigned to this project from QA. An update of this project will be presented to them on 7/2/84.\nJune Newsome was assigned to XG from Established Brands. An orientation for June is scheduled for 6/29/84.\nPackaging\nDiane, Cheryl, Floyd Phillips, and Jim Joy had a meeting on 6/21/84. You will be receiving a memo summarizing this meeting.\nWave II NFO Test\nPrototype making is scheduled for 7/2.\nMilly's investigation of CM topdressing concluded that this flavor delivery system would not produce the same\n50464 8352",
+  "pages": 1,
+  "fields": {}
+ }
+}

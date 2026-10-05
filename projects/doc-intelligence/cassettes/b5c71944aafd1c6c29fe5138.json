@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-train-084",
+  "markdown": false
+ },
+ "response": {
+  "content": "ANALYTIC SUMMARY OF FLUE-CURED AND\n797244-034",
+  "pages": 1,
+  "fields": {}
+ }
+}

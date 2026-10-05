@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-026",
+  "markdown": false
+ },
+ "response": {
+  "content": "\"Homburger. Katy (BSMG)\" <KHomburger@BSMG.COM> 07/02/2001 04:20 PM\nTo Jordan Bressler/Lorillard/MLBA@MLBA\nCC \"Adam Goldfarb (E-mail)\" <agoldfar@newyork.bozell.com>. \"John Roth (E-mail)\" <jroth@newyork.bozell.com>, \"Winfrey. Tamara (BSMG)\" <twinfrey@BSMG.COM>. \"Williams, Hugh (BSMG)\" <hwilliams@BSMG.COM>, \"Michaels, Liza (BSMG)\" <Imichaels@BSMG.COM>. \"Trego, Sarah (BSMG)\" <STrego@BSMG.COM>. \"Abraham, Alex (BSMG)\" <AAbraham@BSMG.COM> bcc Subject Invite/Flyer\nJordan :\nPer my last email, attached are layouts for the Greensboro invite and flyer. Again, we look forward to hearing your input.\nPlease let us know if you have any questions.\nRegards,\nKaty\n> << take10flyer.pdf>> << take10postcard.pdf>>\nKaty Homburger Account Supervisor BSMG Worldwide 676 N. St. Clair, Suite 1000 Chicago, IL 60611-2927\n(p) 312/988-2347 (f) 312/988-2363\nkhomburger@bsmg. Com\n- att1.htm\n-takel Oflyer.pdf\n- take10postcard.pdf\n81879035",
+  "pages": 1,
+  "fields": {}
+ }
+}

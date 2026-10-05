@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app12-019] (APP 12, paras 12.50\u201312.56, Refusing to give access under APP 12 \u2014 organisations > Giving access would likel)\n12.50 There are a number of separate elements to this ground.\n12.51 First, an organisation must have reason to suspect that unlawful activity or misconduct of a serious nature has been, is being or may be engaged in. The term \u2018unlawful activity\u2019 is not defined in the Privacy Act. The core meaning is activity that is criminal, illegal or prohibited or proscribed by law, and can include unlawful discrimination or harassment, but does not include breach of a contract. Examples of unlawful activity include criminal offences, unlawful discrimination, and trespass.\n12.52 Misconduct is defined in s 6(1) to include \u2018fraud, negligence, default, breach of trust, breach of duty, breach of discipline or any other misconduct in the course of duty\u2019. An added requirement of this ground is that the misconduct is \u2018serious\u2019 in nature. This excludes minor breaches or transgressions.\n12.53 The organisation must have \u2018reason to suspect\u2019 the unlawful activity or serious misconduct has been, is being or may be engaged in. This is a different and lesser standard to \u2018reasonably believes\u2019, which is used in some other APPs (see Chapter B (Key concepts)). There should nevertheless be a reasonable basis for the suspicion. It is the responsibility of the organisation to be able to justify its reasonable basis for the suspicion.\n12.54 The suspected unlawful activity or serious misconduct must relate to the organisation\u2019s functions or activities. As discussed in Chapter 3 (APP 3), an organisation\u2019s functions or activities include current, proposed and support functions and activities.\n12.55 Lastly, giving access must be likely to prejudice the organisation in taking appropriate action in relation to the suspected unlawful activity or serious misconduct. The proposed action may include investigation of the activity or misconduct, or reporting it to the police or another relevant person or authority. There should again be a reasonable basis for this expectation of prejudice. For example, in some instances giving an individual access would not prejudice the taking of appropriate action, but would allow the individual to provide further information relevant to the suspected unlawful activity.\n12.56 An example of where this ground might apply is where giving access to the requested personal information would reveal that, covertly but lawfully, an organisation is investigating suspected misconduct of a client and disclosure would prejudice the covert investigation.\n\n[app3-023] (APP 3, paras n/a, Collecting by lawful and fair means > Collecting by fair means)\nThe level of transparency that has been provided to individuals will be relevant here. For example, whether the individual is aware of the collection of their personal information from the entity\u2019s APP 1 privacy policy, terms of service and APP 5 collection notices. [49]\nIt would usually be unfair to collect personal information covertly without the knowledge of the individual. However, this may be a fair means of collection if undertaken in connection with a fraud investigation.\nBy way of further example, it may be unfair to collect from a document discarded by accident on a street, or from an electronic device which is lost or left unattended.\nAn APP entity should not consider collection to be fair simply because they have provided individuals with notice of a proposed collection of personal information.\nWhether the individual would reasonably expect their personal information to be collected and used in this manner/for this purpose This is to be determined objectively, having regard to what a reasonable person, who is properly informed, would expect in the circumstances. [50] Factors that could inform an individual\u2019s reasonable expectations include the purpose for which the personal information was originally made available, what was communicated in privacy policies, collection notices, and other information on online platforms such as terms and conditions of service. A reasonable person might not, for example, expect their personal information to be collected for a purpose unrelated to what they have been informed of. Where personal information is publicly available on the internet, that does not allow it to be collected and used in whatever way the APP entity chooses without regard to the knowledge and reasonable expectations of the person whose information it concerns. [51]\nThis is to be determined objectively, having regard to what a reasonable person, who is properly informed, would expect in the circumstances. [50] Factors that could inform an individual\u2019s reasonable expectations include the purpose for which the personal information was originally made available, what was communicated in privacy policies, collection notices, and other information on online platforms such as terms and conditions of service. A reasonable person might not, for example, expect their personal information to be collected for a purpose unrelated to what they have been informed of.\n\n[app5-004] (APP 5, paras 5.7, Taking reasonable steps to notify or ensure awareness > When not taking any step)\n5.7 APP 5.1 acknowledges that it may be reasonable for an APP entity to not take any steps to provide a notice or ensure awareness of all or some of the APP 5 matters. It is the responsibility of the entity to be able to justify not taking any steps. The following are given as examples of when this may be reasonable:\nThe individual is aware that personal information is being collected, the purpose of collection and other APP 5 matters relating to the collection, for example, a doctor has informed a patient that a specialist to whom the patient is referred for treatment will obtain the patient\u2019s health information from the doctor.\nAn entity collects personal information from an individual on a recurring basis in relation to the same matter. However, if a long period of time has elapsed since the notice was provided and the individual may no longer be aware of the APP 5 matters, the entity may need to take steps to notify or ensure awareness. Similarly, if a change in circumstances as to how personal information is collected affects any of the APP 5 matters, the entity should take reasonable steps to ensure an individual is aware of those matters.\nNotification may pose a serious threat to the life, health or safety of an individual or pose a threat to public health or safety, for example, a law enforcement agency obtaining personal information from a confidential source for the purpose of an investigation.\nNotification may jeopardise the purpose of collection or the integrity of the personal information collected and there is a clear public interest in the purpose of collection, for example, a law enforcement agency undertaking lawful covert surveillance of an individual in connection with a criminal investigation.\nNotification would be inconsistent with another legal obligation, for example, by breaching a statutory secrecy provision, a client\u2019s legal professional privilege, or a legal obligation of confidence.\nAn entity collects personal information about a person who poses (or is alleged to pose) a risk of committing family violence and this collection is permitted by a legislated family violence information sharing scheme, such as that established by the Family Violence Protection Act 2008 (Vic).\n\n[app3-014] (APP 3, paras 3.42\u20133.48, Collecting sensitive information > Collecting sensitive information where a perm)\n3.42 An APP entity may collect sensitive information if a \u2018permitted general situation\u2019 exists in relation to the collection (APP 3.4(b)).\n3.43 Section 16A lists seven permitted general situations (two of which apply only to agencies). The seven situations are set out below, and are discussed further in Chapter C (Permitted general situations), including the meaning of relevant terms.\n3.44 An APP entity may collect sensitive information if:\nit is unreasonable or impracticable to obtain the individual\u2019s consent to the collection, and\nthe entity reasonably believes the collection is necessary to lessen or prevent a serious threat to the life, health or safety of any individual, or to public health or safety (s 16A(1), Item 1).\n3.45 For guidance on \u2018unreasonable or impracticable to obtain consent\u2019, see Chapter C (Permitted general situations).\n3.46 The following factors are relevant to whether an APP entity reasonably believes the collection of sensitive information is necessary: [26]\nthe suitability of the proposed collection, including its efficacy in addressing the serious threat\nthe alternatives available to lessen or prevent the serious threat, including whether less privacy-intrusive alternatives are available to address the serious threat,\nwhether the proposed collection is proportionate. This involves balancing the privacy impacts resulting from the collection of sensitive information against the benefits to be gained from doing so.\n3.47 For further guidance on \u2018reasonably believes the collection is necessary\u2019, see Chapter C (Permitted general situations).\n3.48 Examples of where this permitted general situation might apply are:\ncollecting health information about an individual who is seriously injured, requires treatment and, due to their injuries, cannot give informed consent, on the basis that it is impracticable to obtain the individual\u2019s consent\ncollecting sensitive information about a parent that is required to provide assistance to a child who may be at risk of physical or sexual abuse by the parent, on the basis that it would be unreasonable to obtain the parent\u2019s consent\ncollecting sensitive information using a facial recognition system for the limited purpose of combatting very significant retail crime, violence, abuse and intimidation, in a security environment that poses unique challenges such as products on sale that can be readily accessed by individuals and used as a weapon (e.g. axes, screwdrivers). [27]\n\n[app3-022] (APP 3, paras 3.83\u20133.87, Collecting by lawful and fair means > Collecting by fair means)\n3.83 The term \u2018fair\u2019 is not defined in the Privacy Act. The standard of what is \u2018fair\u2019 presents an open-textured and evaluative criterion against which collection by an entity is to be assessed. [43] What is \u2018fair\u2019 under APP 3.5 is to be determined having regard to the consideration of the text, context and purpose of the Privacy Act. When assessing whether a collection is by \u2018unfair\u2019 means for the purposes of APP 3.5, all the circumstances must be considered. [44] Consistent with a contextual approach, [45] the meaning of \u2018fair\u2019 is not fixed; the concept of \u2018fairness\u2019 should be adapted to changing circumstances viewed in context and in accordance with community values. [46]\n3.84 A \u2018fair means\u2019 of collecting information includes one that does not involve intimidation or deception. [47] For example, collection may be by unfair means (some may also be unlawful) if it involves:\ndeception, for example, wrongly claiming to be a police officer, doctor or trusted organisation, or\nmisrepresenting the purpose or effect of collection, or the consequences for the individual of not providing the requested information.\n3.85 A \u2018fair means\u2019 of collection also extends to the obligation not to use means that are unreasonably intrusive. [48] For example, collection may be by unfair means (some may also be unlawful) if it involves:\nexcessive collection of personal information\ncollecting personal information of an unnecessarily sensitive nature\ncollecting personal information from too many individuals, or\ncollecting in a way that unreasonably interferes with an individual\u2019s daily life, such as by telephoning an individual in the middle of the night.\n3.86 There may be other means of collection which are not fair, yet do not fit within the meaning of intimidation, deception, or unreasonable intrusion.\n3.87 Following are examples of factors that may influence whether a collection is by fair means. It is important to consider a range of factors and all surrounding circumstances when determining whether a collection is by fair means:\nWhether the individual is aware of their personal information being collected The level of transparency that has been provided to individuals will be relevant here. For example, whether the individual is aware of the collection of their personal information from the entity\u2019s APP 1 privacy policy, terms of service and APP 5 collection notices. [49] It would usually be unfair to collect personal information covertly without the knowledge of the individual. However, this may be a fair means of collection if undertaken in connection with a fraud investigation. By way of further example, it may be unfair to collect from a document discarded by accident on a street, or from an electronic device which is lost or left unattended. An APP entity should not consider collection to be fair simply because they have provided individuals with notice of a proposed collection of personal information.\n\nQuestion: What must a plaintiff prove to succeed under the statutory tort for serious invasions of privacy?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U7np1ej8qKKjFLn0kYhYSy7X7p",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"The provided excerpts do not cover the requirements a plaintiff must prove to succeed under the statutory tort for serious invasions of privacy.\",\"citations\":[],\"in_corpus\":false}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089491,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 38,
+   "prompt_tokens": 2718,
+   "total_tokens": 2756,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 12,
+    "engine_ttft_ms": 123,
+    "engine_ttlt_ms": 586,
+    "pre_inference_ms": 91,
+    "service_tbt_ms": 12,
+    "service_ttft_ms": 637,
+    "service_ttlt_ms": 1095,
+    "user_visible_ttft_ms": 546
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927162457-60ada031-default-r1-dp0-default"
+  }
+ }
+}

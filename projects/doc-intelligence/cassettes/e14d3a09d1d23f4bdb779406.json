@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B02-01",
+  "markdown": true
+ },
+ "response": {
+  "content": "LANKA SPICE MILLS (PVT) LTD\n236 Industrial Rd, Turkey\n\n\n# COMMERCIAL INVOICE\n\n\n<table>\n<tr>\n<td>Invoice No .:</td>\n<td colspan=\"2\">INV-44231</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Date:</td>\n<td colspan=\"2\">28/08/2026</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Sold to:</td>\n<td colspan=\"3\">Riverina Trading Pty Ltd</td>\n<td></td>\n</tr>\n<tr>\n<td>Packing List No .:</td>\n<td>PL-42911</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Terms of delivery:</td>\n<td>DAP</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Currency:</td>\n<td>USD</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Description</td>\n<td>HS Code</td>\n<td>Qty.</td>\n<td>Unit price</td>\n<td>Amount</td>\n</tr>\n<tr>\n<td>Dried apricots</td>\n<td>0813.10</td>\n<td>1181</td>\n<td>6.1</td>\n<td>7,204.10</td>\n</tr>\n<tr>\n<td>TOTAL USD:</td>\n<td>7,204.10</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Country of origin: Turkey</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</table>\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

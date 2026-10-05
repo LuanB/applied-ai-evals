@@ -1,0 +1,147 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You answer questions about Australian privacy law using ONLY the numbered\nexcerpts from the OAIC Australian Privacy Principles guidelines provided.\n\n- If the excerpts contain the answer, answer in 1-3 sentences and cite the excerpt ids\n  you relied on.\n- If the excerpts do not contain the answer, set in_corpus=false and say the\n  guidelines provided do not cover it. Do NOT answer from general knowledge, even if\n  you know the answer: an uncited answer cannot be checked."
+   },
+   {
+    "role": "user",
+    "content": "Excerpts:\n[app13-018] (APP 13, paras 13.47, Being satisfied and taking reasonable steps > Reasonable steps to correct)\n13.47 A decision as to what constitutes \u2018reasonable steps\u2019 to correct personal information spans a range of options. These include making appropriate additions, deletions or alterations to a record, or declining to correct personal information if it would be unreasonable to take such steps. In some instances it may be appropriate to destroy or de-identify the personal information (there are separate requirements to destroy or de-identify personal information in APPs 4 and 11 \u2014 see Chapters 4 and 11 respectively). The reasonable steps that an APP entity should take will depend upon considerations that include:\nthe sensitivity of the personal information. More rigorous steps may be required if the incorrect information is \u2018sensitive information\u2019 (defined in s 6(1) and discussed in Chapter B (Key concepts)) or other personal information of a sensitive nature.\nthe possible adverse consequences for an individual if a correction is not made. More rigorous steps may be required as the risk of adversity increases.\nthe practicability, including time and cost involved. However, an entity is not excused from correcting personal information by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take a particular step will depend on whether the burden is excessive in all the circumstances.\nthe likelihood that the entity will use or disclose the personal information. For example, the likelihood of the entity using or disclosing the personal information may be relevant if it would be difficult or costly to make the correction requested by an individual.\nthe purpose for which the personal information is held. As noted at paragraph 13.32, personal information may be held for multiple purposes, and require correction for one purpose but not for another purpose. Reasonable steps in these circumstances may require the entity to retain the original record of personal information for one purpose and create a record with the corrected personal information for another.\nrecord-keeping requirements that apply to the personal information under an Australian law or court/ tribunal order. For example, the \u00adHealth Practitioner Regulation 2010 (NSW), Schedule 2, clause 2.\nwhether the personal information is in the physical possession of the entity or a third party. For example, where personal information is in the physical possession of a third party, the entity may still \u2018hold\u2019 it (see discussion of \u2018holds\u2019 at paragraph 13.11) and be required to take reasonable steps to correct it. In these circumstances, it may be a reasonable step for the entity to notify the third party that the information is incorrect and request that it be corrected. It will not generally be sufficient to refer the individual to the third party with physical possession. However, the third party with physical possession may also \u2018hold\u2019 the personal information, and if so, the individual will have a separate right to request the third party to correct it.\n\n[app13-022] (APP 13, paras 13.54\u201313.58, APP 13 minimum procedural requirements > Giving written notice where correction )\n13.54 APP 13.3 provides that if an APP entity refuses to correct personal information as requested by an individual, the entity must give the individual a written notice setting out:\nthe reasons for the refusal, except to the extent that it would be unreasonable to do so\nthe complaint mechanisms available to the individual, and\nany other matters prescribed by regulations made under the Privacy Act.\n13.55 The reasons for refusal should explain, where applicable:\nthat the APP entity does not hold the personal information that the individual wishes to correct\nthat the entity is satisfied that the personal information it holds is accurate, up-to-date, complete, relevant and not misleading having regard to the purposes for which it is held, or\nthat the steps necessary to correct the personal information as requested are not reasonable in the circumstances.\n13.56 An APP entity is not required to provide its reasons for refusing to correct personal information to the extent that it would be unreasonable to do so. This course should be adopted only in justifiable circumstances. An example would be where providing reasons would prejudice an investigation of unlawful activity, or prejudice enforcement action by an enforcement body.\n13.57 The description of the complaint mechanisms available to an individual should explain the internal and external complaint options, and the steps that should be followed. In particular, the individual should be advised that:\na complaint should first be made in writing to the APP entity (s 40(1A))\nthe entity should be given a reasonable time (usually 30 days) to respond\na complaint may then be taken to a recognised external dispute resolution scheme of which the entity is a member (if any), and\nlastly, that a complaint may be made to the Information Commissioner (s 36).\n13.58 Other information can also be included in the notice advising an individual that a request to correct personal information has been refused. The individual should be advised of the right under APP 13.4 to request the APP entity to associate a statement with the personal information (see paragraphs 13.59\u201313.62). An agency could also advise an individual of the parallel right under the FOI Act to apply for a record to be amended or annotated, and of the right to Information Commissioner review of an adverse decision under that Act (see paragraphs 13.25\u201313.29).\n\n[app13-006] (APP 13, paras 13.16\u201313.18, Taking reasonable steps to correct personal information > Correcting at the APP )\n13.16 An APP entity is required to take reasonable steps to correct personal information it holds if the entity is satisfied, having regard to a purpose for which the personal information is held, that it is inaccurate, out-of-date, incomplete, irrelevant or misleading (that is, the personal information is incorrect). Implicit in that requirement is that an entity should be alert to the possibility that personal information it holds may be incorrect and may require correction.\n13.17 Generally, an APP entity may become aware that an item of personal information requires correction if it discovers an inconsistency during normal business practices. Examples include:\ninformation provided to the entity by the individual or a third party may be inconsistent with other personal information held by the entity. For example, an identity document, letter, medical record or photograph\na court or tribunal has made a finding about the personal information, in a case involving the entity or in another case that comes to the entity\u2019s notice\nthe entity may be notified by another entity or person that the personal information is incorrect, or that similar personal information held by the other entity has been corrected\na practice, procedure or system the entity has implemented in compliance with APP 1.2 (such as an auditing or monitoring program) indicates that personal information the entity holds requires correction.\n13.18 After becoming aware that personal information may require correction, the APP entity should satisfy itself that the information is incorrect, before taking reasonable steps to correct it (see paragraphs 13.30\u201313.41).\n\n[app13-023] (APP 13, paras 13.59\u201313.62, APP 13 minimum procedural requirements > Taking reasonable steps to associate a )\n13.59 APP 13.4 provides that if an APP entity refuses to correct personal information as requested by an individual, the individual can request the entity to associate a statement that the individual believes the personal information to be inaccurate, out-of-date, incomplete, irrelevant or misleading. Implicit in this requirement is that the entity should notify the individual of the right to request that a statement be associated, for example, in the written notice where correction is refused (see paragraphs 13.54\u201313.58).\n13.60 The APP entity must take reasonable steps to associate the statement in a way that will make it apparent to users of the personal information. For example, a statement may be attached physically to a paper record, or by an electronic link to a digital record of personal information. The statement should be associated with all records containing personal information claimed to be incorrect.\n13.61 The content and length of any statement will depend on the circumstances, but it is not intended that the statement be unreasonably lengthy. [11] A longer statement may be appropriate in some instances, such as where there is a large volume of personal information that the APP entity has refused to correct. If it is not practicable to attach an extensive statement to the personal information or otherwise create a link to the statement, a note could be included on, or attached to, the personal information referring to the statement and explaining where it can be found. Where it is not reasonable for the entity to associate an extensive statement to the personal information, reasonable steps would generally include giving the individual an opportunity to revise the statement.\n13.62 The reasonable steps for an APP entity will depend upon considerations that include:\nthe information management practices of the entity, including whether the personal information is stored in hard copy or electronic form (see paragraph 13.59)\nwhether content in a statement may be irrelevant, defamatory, offensive, abusive or breach another individual\u2019s privacy \u2014 it may be unreasonable to associate a statement containing that content, however the individual should be given the option of revising the statement\nthe practicability, including time and cost involved. However, an entity is not excused from associating a statement by reason only that it would be inconvenient, time-consuming or impose some cost to do so. Whether these factors make it unreasonable to take a particular step will depend on whether the burden is excessive in all the circumstances.\n\n[b-019] (B, paras B.82\u2013B.85, Health information > Holds)\nB.82 An APP entity \u2018holds\u2019 personal information if \u2018the entity has possession or control of a record that contains the personal information\u2019 (s 6(1)).\nB.83 The term \u2018record\u2019 is defined in s 6(1) and includes a document or an electronic or other device. Some items are excluded from the definition, such as anything kept in a library, art gallery or museum for the purposes of reference study or exhibition and Commonwealth records in the open access period.\nB.84 The term \u2018holds\u2019 extends beyond physical possession of a record to include a record that an APP entity has the right or power to deal with. Whether an APP entity \u2018holds\u2019 a particular item of personal information may therefore depend on the particular information collection, management and storage arrangements it has adopted. For example, an APP entity \u2018holds\u2019 personal information where:\nit physically possesses a record containing the personal information and can access that information physically or by use of an electronic device (such as decryption software)\nit has the right or power to deal with the personal information, even if it does not physically possess or own the medium on which the personal information is stored. For example, the entity has outsourced the storage of personal information to a third party but it retains the right to deal with it, including to access and amend that information.\nB.85 An agency that has placed a record of personal information in the care of the National Archives of Australia, or in the custody of the Australian War Memorial, is considered to be the agency that holds the record for the purposes of the Privacy Act (s 10(4)).\n\nQuestion: If an entity refuses to correct a record, what can the person ask the entity to attach to the record?"
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "answer",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "answer",
+      "citations",
+      "in_corpus"
+     ],
+     "properties": {
+      "answer": {
+       "type": "string"
+      },
+      "citations": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "in_corpus": {
+       "type": "boolean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV8U6eGWKSUYvoRFbFlJrzHJA8yoV",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"answer\":\"If an APP entity refuses to correct personal information as requested by an individual, the individual can request the entity to associate a statement that the individual believes the personal information to be inaccurate, out-of-date, incomplete, irrelevant or misleading. The entity must take reasonable steps to associate this statement in a way that will make it apparent to users of the personal information.\",\"citations\":[\"app13-023\"],\"in_corpus\":true}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791089490,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_51ebab882d",
+  "usage": {
+   "completion_tokens": 89,
+   "prompt_tokens": 2493,
+   "total_tokens": 2582,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 86,
+    "engine_ttlt_ms": 719,
+    "pre_inference_ms": 85,
+    "service_tbt_ms": 7,
+    "service_ttft_ms": 554,
+    "service_ttlt_ms": 1183,
+    "user_visible_ttft_ms": 469
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260823111336-d973a1fe-default-r2-dp0-default"
+  }
+ }
+}

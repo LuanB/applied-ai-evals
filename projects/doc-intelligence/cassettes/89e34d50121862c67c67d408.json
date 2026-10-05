@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "rvl-test-131",
+  "markdown": false
+ },
+ "response": {
+  "content": "RIReynolds Tobacco Company\nFebruary 1, 2000\n369673660 Margaret Scott 5520 N Ronita PI Tucson, AZ 85704\nConsumer Relations Winston-Salem, N. C. 27102\nDear Valued Customer:\nRecently you contacted R. J. Reynolds' Consumer Relations Department and gave us the opportunity to respond to your request for assistance with either a promotion or product related issue.\nIn an effort to better serve our customers, we are asking you to please take a few minutes to complete a questionnaire about how well you were treated by our company representative. After completing the survey on the reverse side of this letter, please return it in the enclosed postage-paid envelope. Please return within ten days of receipt.\nThank you for taking the time to let us know how our staff met your expectations. We value your opinion and appreciate your business.\nMark Conrad\nMark Conrad Consumer Satisfaction Research Manager\nWGZO5\n\"We work for smokers.\"\n: 52270 5697",
+  "pages": 1,
+  "fields": {}
+ }
+}

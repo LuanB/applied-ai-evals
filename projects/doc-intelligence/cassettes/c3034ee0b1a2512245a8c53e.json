@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-read",
+  "doc": "train-B02-04",
+  "markdown": false
+ },
+ "response": {
+  "content": "PESTGUARD FUMIGATION SERVICES\nCertificate No .:\nEX177545\nFumigant:\nMethyl bromide\nDosage rate:\n48 g/m3\nExposure period (hrs):\n24\nDate of fumigation:\n11/09/2026\nContainer No .:\nOOLU4849033\nSawn timber, pine, kiln dried\nCommodity:\nConsignment link:\nB/L MEDU86081470",
+  "pages": 1,
+  "fields": {}
+ }
+}

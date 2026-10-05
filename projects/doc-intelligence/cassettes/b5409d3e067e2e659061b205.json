@@ -1,0 +1,13 @@
+{
+ "kind": "di",
+ "request": {
+  "model": "prebuilt-layout",
+  "doc": "test-B18-04",
+  "markdown": true
+ },
+ "response": {
+  "content": "NATIONAL PLANT PROTECTION ORGANIZATION OF VIETNAM\n\n\n# PHYTOSANITARY CERTIFICATE\n\nNo .:\n\nCO713515\n\nName of exporter:\n\nNordic Pine Sawmills AB\n\nDeclared consignee:\n\nBluegum Food Distributors Pty Ltd\n\nBotanical name of plants:\n\nAnacardium occidentale\n\nPlace of origin:\n\nVietnam.\n\nDeclared means of conveyanceCOSCO LIBRA\n\nPoint of entry:\n\nSydney\n\nThe plants or plant products described herein have been inspected and are\nconsidered free from quarantine pests of the importing contracting party.\n",
+  "pages": 1,
+  "fields": {}
+ }
+}

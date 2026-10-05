@@ -1,0 +1,163 @@
+{
+ "kind": "chat",
+ "request": {
+  "model": "gpt-41-mini",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You classify one scanned document page. Choose exactly one label from the\nlist. Judge by what the document IS, not by documents it mentions: an invoice that\nquotes a packing list number is still an invoice. Report confidence honestly: \"high\"\nonly when the page is unambiguous."
+   },
+   {
+    "role": "user",
+    "content": "Labels: letter, form, email, handwritten, advertisement, scientific report, scientific publication, specification, file folder, news article, budget, invoice, presentation, questionnaire, resume, memo\n\nOCR text of the page:\nTHE Y R.S. 710 (PC)\n1981\nCIGARETTE DESCRIPTIVE FOR MERIT K. S. REGULAR S.I.\nLength - 84.0mm Circumference -. 25. Onall\nFilter - 25.0mm\nCigarette Rod:\nCOPY\nFiller - High Burley - Basic Merit Formula-\nCuts - 30/Inch\nPaper - Schweitzer 110-6/DeMauduit Ref. 110-6/Ecusta 12753; 27.5mm x 6500m; P.M. Material Code 10-123-A or DeMauduit Ref. 110-6; 27.5mm x 7000m ;; P.M. Material Code 10-145-A Print Dic - None\nInk - None\nCircumference - 25.0mm\nLength - 59.0mm\nCigarette:\nTipping - 64mm x 3200m DCL Merit Laser (GSR-156); P.M. Material Code 12-702-A USE UP AND REPLACE WITH 64mm x 3200m DGL Merit Laser; P.M. Material Code 12-702-B\nTipping. Adhesive - Fuller 3985; P.M. Material Code 60-285-A. - OR Q.A. APPROVI Rod Moisture - EQUAL 13.10%\nTotal R. T.D. - 5.40 inches of water (Diluted)\nPlug R. T.D. - 4.50 - 4.70 inches of water (Undiluted)\nCilution Target - 30% + 5% Glue Roller Drawing - #8-91548 (PA-8); #B-91551 (MAX S/MAX 80) -See Engineering Patch Size: - 8.5mm x 20mm\nlatest Revision Number\nPrepared By : Debbie J. Morgan . Approved By frames & Miracle\nOperations Services 2031304488\n/dyd *\nThis supersedes specification dated Dec. 10, 1980. Reason for change: Tipping Paper changed to 64mm x 3200m DGL Merit Laser; P.M. Material Code 12-702-B ON A USE UP AND REPLACE BASIS."
+   }
+  ],
+  "temperature": 0.0,
+  "response_format": {
+   "type": "json_schema",
+   "json_schema": {
+    "name": "page_label",
+    "strict": true,
+    "schema": {
+     "type": "object",
+     "additionalProperties": false,
+     "required": [
+      "label",
+      "confidence"
+     ],
+     "properties": {
+      "label": {
+       "type": "string",
+       "enum": [
+        "letter",
+        "form",
+        "email",
+        "handwritten",
+        "advertisement",
+        "scientific report",
+        "scientific publication",
+        "specification",
+        "file folder",
+        "news article",
+        "budget",
+        "invoice",
+        "presentation",
+        "questionnaire",
+        "resume",
+        "memo"
+       ]
+      },
+      "confidence": {
+       "type": "string",
+       "enum": [
+        "high",
+        "medium",
+        "low"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "id": "chatcmpl-EV899MyRYaXwIO2VkcU2wWX0StM3p",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "message": {
+     "content": "{\"label\":\"specification\",\"confidence\":\"high\"}",
+     "role": "assistant",
+     "annotations": []
+    },
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "protected_material_code": {
+      "detected": false,
+      "filtered": false
+     },
+     "protected_material_text": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "created": 1791088191,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "object": "chat.completion",
+  "service_tier": "default",
+  "system_fingerprint": "fp_92f9364fa2",
+  "usage": {
+   "completion_tokens": 10,
+   "prompt_tokens": 676,
+   "total_tokens": 686,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": 0,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cached_tokens": 0
+   },
+   "latency_checkpoint": {
+    "engine_tbt_ms": 7,
+    "engine_ttft_ms": 48,
+    "engine_ttlt_ms": 123,
+    "pre_inference_ms": 94,
+    "service_tbt_ms": 14,
+    "service_ttft_ms": 578,
+    "service_ttlt_ms": 719,
+    "user_visible_ttft_ms": 484
+   }
+  },
+  "prompt_filter_results": [
+   {
+    "prompt_index": 0,
+    "content_filter_results": {
+     "hate": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "jailbreak": {
+      "detected": false,
+      "filtered": false
+     },
+     "self_harm": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "sexual": {
+      "filtered": false,
+      "severity": "safe"
+     },
+     "violence": {
+      "filtered": false,
+      "severity": "safe"
+     }
+    }
+   }
+  ],
+  "routing": {
+   "serving_pipereplica": "d20260927112209-9589c874-default-r1-dp0-default"
+  }
+ }
+}
