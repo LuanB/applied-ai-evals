@@ -11,8 +11,16 @@ labelled set, what it costs per case, and the cases where it's still wrong.
 | P1 | [`evalgate`](evalgate/) + [telemetry-attribution](projects/telemetry-attribution/) | LLM eval gate in CI · record/replay · OpenTelemetry traces · spend cap | raw agent 17–25% balanced accuracy → 75% with a forced answer + date check; caught a wrong label in my own answer key |
 | P2 | [doc-intelligence](projects/doc-intelligence/) | Azure Document Intelligence + Azure OpenAI · page classification · field extraction · review routing | 99.8% of auto-accepted fields correct with 4.3% sent to review; prebuilt-invoice 94%→100% via `locale="en-AU"` |
 | P3 | [rag-audit](projects/rag-audit/) | RAG with retrieval evals · BM25 vs vector vs hybrid · citations · refusal on out-of-scope questions | vector RAG 96.2% grounded balanced (37/40 correct+cited, 10/10 refusals) vs no-retrieval 5%; retrievers too close to call at n=50 |
-| P4 | [agent-guardrails](projects/agent-guardrails/) | MCP agent · human approval gate · prompt-injection red-team suite | _in progress_ |
-| P5 | [bedrock-serverless](projects/bedrock-serverless/) | Same agent on AWS: Bedrock · Lambda · API Gateway · DynamoDB · CDK | _in progress_ |
+| P4 | agent-guardrails | MCP agent · human approval gate · prompt-injection red-team suite | _in progress, not yet published_ |
+| P5 | bedrock-serverless | Same agent on AWS: Bedrock · Lambda · API Gateway · DynamoDB · CDK | _in progress, not yet published_ |
+
+## Writing
+
+- [Reproducible and wrong](https://medium.com/@luan_bui/reproducible-and-wrong-6071a9adfaea): six models
+  through the attribution eval that P1 grew out of, on Azure, three runs each. The two that gave the same answer every time
+  were the two that were consistently wrong.
+- [An agent's cost is set by what it can't answer](https://medium.com/@luan_bui/an-agents-cost-is-set-by-what-it-can-t-answer-b53b459b6bf0):
+  an agent over corpus data took 3 turns on a question it could answer and 37 on one it couldn't.
 
 ## Run it
 
