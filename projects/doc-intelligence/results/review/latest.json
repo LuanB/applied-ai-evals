@@ -2,11 +2,12 @@
  "suite": "review",
  "headline": "auto_accept_precision",
  "mode": "replay",
- "generated": "2026-10-04T15:35:00",
+ "generated": "2026-10-07T18:25:57",
  "gate": {
   "passed": true,
   "reasons": [
    "ok   two-reader: auto_accept_precision 0.998 beats best baseline 0.979 (margin 0.01)",
+   "ok   two-reader: within tolerance of floor 0.998",
    "ok   two-reader: review_rate 0.043 <= 0.1"
   ]
  },
@@ -60,7 +61,7 @@
       "total": 8
      },
      "cost_usd": 0.000876,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -76,7 +77,7 @@
       "total": 5
      },
      "cost_usd": 0.000797,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -92,7 +93,7 @@
       "total": 8
      },
      "cost_usd": 0.000871,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -108,7 +109,7 @@
       "total": 6
      },
      "cost_usd": 0.000829,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -124,7 +125,7 @@
       "total": 8
      },
      "cost_usd": 0.00087,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -192,7 +193,7 @@
       "total": 8
      },
      "cost_usd": 0.000875,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -388,7 +389,7 @@
       "total": 8
      },
      "cost_usd": 0.000873,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -420,7 +421,7 @@
       "total": 8
      },
      "cost_usd": 0.000882,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -518,7 +519,7 @@
       "total": 8
      },
      "cost_usd": 0.000882,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -552,7 +553,7 @@
       "total": 8
      },
      "cost_usd": 0.00088,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -682,7 +683,7 @@
       "total": 8
      },
      "cost_usd": 0.000876,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -716,7 +717,7 @@
       "total": 5
      },
      "cost_usd": 0.000798,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -764,7 +765,7 @@
       "total": 8
      },
      "cost_usd": 0.00088,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -828,7 +829,7 @@
       "total": 8
      },
      "cost_usd": 0.000884,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -908,7 +909,7 @@
       "total": 8
      },
      "cost_usd": 0.000874,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -1024,7 +1025,7 @@
       "total": 8
      },
      "cost_usd": 0.000871,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -1154,7 +1155,7 @@
       "total": 8
      },
      "cost_usd": 0.000876,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -1250,7 +1251,7 @@
       "total": 8
      },
      "cost_usd": 0.00088,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -1266,7 +1267,7 @@
       "total": 5
      },
      "cost_usd": 0.000797,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -1314,7 +1315,7 @@
       "total": 6
      },
      "cost_usd": 0.000829,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -1330,7 +1331,7 @@
       "total": 8
      },
      "cost_usd": 0.000882,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -1346,7 +1347,7 @@
       "total": 5
      },
      "cost_usd": 0.000808,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -1521,7 +1522,7 @@
     "pages_needing_no_review": 1.0
    },
    "cost_usd": 0.077484,
-   "wall_s": 0.06,
+   "wall_s": 0.07,
    "gated": true
   },
   {
@@ -1797,7 +1798,7 @@
       "total": 8
      },
      "cost_usd": 0.013247,
-     "wall_s": 0.02,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -1845,7 +1846,7 @@
       "total": 6
      },
      "cost_usd": 0.013164,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -1893,7 +1894,7 @@
       "total": 8
      },
      "cost_usd": 0.013199,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -2085,7 +2086,7 @@
       "total": 8
      },
      "cost_usd": 0.013248,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -2149,7 +2150,7 @@
       "total": 8
      },
      "cost_usd": 0.01318,
-     "wall_s": 0.02,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -2293,7 +2294,7 @@
       "total": 8
      },
      "cost_usd": 0.013213,
-     "wall_s": 0.0,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -2373,7 +2374,7 @@
       "total": 8
      },
      "cost_usd": 0.013198,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -2517,7 +2518,7 @@
       "total": 8
      },
      "cost_usd": 0.013231,
-     "wall_s": 0.02,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -2549,7 +2550,7 @@
       "total": 8
      },
      "cost_usd": 0.013253,
-     "wall_s": 0.02,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -2613,7 +2614,7 @@
       "total": 8
      },
      "cost_usd": 0.013276,
-     "wall_s": 0.02,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -2743,7 +2744,7 @@
       "total": 8
      },
      "cost_usd": 0.013245,
-     "wall_s": 0.02,
+     "wall_s": 0.01,
      "error": ""
     },
     {
@@ -2759,7 +2760,7 @@
       "total": 5
      },
      "cost_usd": 0.013056,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -2951,7 +2952,7 @@
       "total": 8
      },
      "cost_usd": 0.013207,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -2967,7 +2968,7 @@
       "total": 6
      },
      "cost_usd": 0.013158,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -2983,7 +2984,7 @@
       "total": 8
      },
      "cost_usd": 0.013243,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     },
     {
@@ -2999,7 +3000,7 @@
       "total": 5
      },
      "cost_usd": 0.013056,
-     "wall_s": 0.01,
+     "wall_s": 0.0,
      "error": ""
     }
    ],
@@ -3010,7 +3011,7 @@
     "pages_needing_no_review": 0.7282608695652174
    },
    "cost_usd": 1.21099,
-   "wall_s": 0.12,
+   "wall_s": 0.09,
    "gated": true
   }
  ]

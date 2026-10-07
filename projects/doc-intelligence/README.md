@@ -113,4 +113,4 @@ python projects/doc-intelligence/generate_trade_docs.py
 EVALGATE_MODE=record evalgate run doc-intelligence:classify
 ```
 
-Total live spend for this project: **about $2.30** (see `../../spend/ledger.jsonl`).
+Total live spend for this project: **$2.78**, including $0.49 for the prebuilt-invoice comparison (see `../../spend/ledger.jsonl`).
